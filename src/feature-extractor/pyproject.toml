@@ -6,6 +6,9 @@ authors = ["Dimitri Podborski"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+beautifulsoup4 = "^4.10.0"
+lxml = "^4.6.3"
+GitPython = "^3.1.24"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -13,3 +16,6 @@ pytest = "^5.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+features-spec = "feature_extractor.main:feature_spec_gpac"
