@@ -1,0 +1,160 @@
+{
+  "description": "Boxes (also called atoms)",
+  "entries": [
+    {
+      "fourcc": "buff",
+      "description": "Buffering information",
+      "containers": []
+    },
+    {
+      "fourcc": "mstv",
+      "description": "MVC sub track view box",
+      "containers": []
+    },
+    {
+      "fourcc": "mvcg",
+      "description": "Multiview group",
+      "containers": [
+        "mvci"
+      ]
+    },
+    {
+      "fourcc": "mvci",
+      "description": "Multiview Information",
+      "containers": []
+    },
+    {
+      "fourcc": "mvdr",
+      "description": "MVDDepthResolutionBox",
+      "containers": []
+    },
+    {
+      "fourcc": "mvra",
+      "description": "Multiview Relation Attribute",
+      "containers": []
+    },
+    {
+      "fourcc": "sdep",
+      "description": "Sample dependency",
+      "containers": []
+    },
+    {
+      "fourcc": "seii",
+      "description": "SEI information box",
+      "containers": []
+    },
+    {
+      "fourcc": "sstl",
+      "description": "SVC sub track layer box",
+      "containers": []
+    },
+    {
+      "fourcc": "stmg",
+      "description": "MVC sub track multiview group box",
+      "containers": []
+    },
+    {
+      "fourcc": "stti",
+      "description": "Sub track tier box",
+      "containers": []
+    },
+    {
+      "fourcc": "swtc",
+      "description": "Multiview Group Relation",
+      "containers": []
+    },
+    {
+      "fourcc": "tibr",
+      "description": "Tier Bit rate",
+      "containers": []
+    },
+    {
+      "fourcc": "tiri",
+      "description": "Tier Information",
+      "containers": []
+    },
+    {
+      "fourcc": "tstb",
+      "description": "TileSubTrackGroupBox",
+      "containers": []
+    },
+    {
+      "fourcc": "vwdi",
+      "description": "Multiview Scene Information",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "avcC",
+      "containers": [
+        "avc1",
+        "avc2",
+        "avc3",
+        "avc4",
+        "encv",
+        "resv",
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "avcC",
+      "containers": [
+        "avc1",
+        "avc2",
+        "avc3",
+        "avc4",
+        "svc1",
+        "svc2",
+        "encv",
+        "resv"
+      ]
+    },
+    {
+      "fourcc": "avcC",
+      "containers": [
+        "avc1",
+        "avc2",
+        "avc3",
+        "avc4",
+        "mvc1",
+        "mvc2",
+        "encv",
+        "resv"
+      ]
+    },
+    {
+      "fourcc": "hvcC",
+      "containers": [
+        "hvc1",
+        "hev1",
+        "hvc2",
+        "hev2",
+        "encv",
+        "resv",
+        "ipco",
+        "dvhe"
+      ]
+    },
+    {
+      "fourcc": "hvcC",
+      "containers": [
+        "hvc1",
+        "hev1",
+        "hvc2",
+        "hev2",
+        "lhv1",
+        "lhe1",
+        "encv",
+        "resv",
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "vwid",
+      "containers": [
+        "video_sample_entry"
+      ]
+    }
+  ]
+}

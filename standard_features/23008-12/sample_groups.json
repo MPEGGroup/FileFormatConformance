@@ -1,0 +1,46 @@
+{
+  "description": "Sample group types",
+  "entries": [
+    {
+      "fourcc": "eqiv",
+      "description": "equivalent samples",
+      "containers": []
+    },
+    {
+      "fourcc": "refs",
+      "description": "Direct reference samples list",
+      "containers": []
+    },
+    {
+      "fourcc": "aebr",
+      "description": "Auto exposure bracketing",
+      "containers": []
+    },
+    {
+      "fourcc": "afbr",
+      "description": "Flash exposure bracketing",
+      "containers": []
+    },
+    {
+      "fourcc": "dobr",
+      "description": "Depth of field bracketing",
+      "containers": []
+    },
+    {
+      "fourcc": "fobr",
+      "description": "Focus bracketing exposure bracketing",
+      "containers": []
+    },
+    {
+      "fourcc": "pano",
+      "description": "Panorama sample group",
+      "containers": []
+    },
+    {
+      "fourcc": "wbbr",
+      "description": "White balance bracketing",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": []
+}

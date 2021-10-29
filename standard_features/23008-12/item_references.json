@@ -1,0 +1,46 @@
+{
+  "description": "Item reference types",
+  "entries": [
+    {
+      "fourcc": "auxl",
+      "description": "Auxiliary image item reference",
+      "containers": []
+    },
+    {
+      "fourcc": "base",
+      "description": "Pre-derived image item base reference",
+      "containers": []
+    },
+    {
+      "fourcc": "dimg",
+      "description": "Derived image item reference",
+      "containers": []
+    },
+    {
+      "fourcc": "dpnd",
+      "description": "Item coding dependency reference",
+      "containers": []
+    },
+    {
+      "fourcc": "exbl",
+      "description": "Scalable image item reference",
+      "containers": []
+    },
+    {
+      "fourcc": "grid",
+      "description": "Image item grid reference",
+      "containers": []
+    },
+    {
+      "fourcc": "thmb",
+      "description": "Thumbnail image item reference",
+      "containers": []
+    },
+    {
+      "fourcc": "pred",
+      "description": "Predictively coded item reference",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": []
+}

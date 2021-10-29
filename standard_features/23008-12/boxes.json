@@ -1,0 +1,114 @@
+{
+  "description": "Boxes (also called atoms)",
+  "entries": [
+    {
+      "fourcc": "ipco",
+      "description": "ItemPropertyContainerBox",
+      "containers": [
+        "iprp"
+      ]
+    },
+    {
+      "fourcc": "ipma",
+      "description": "ItemPropertyAssociation",
+      "containers": [
+        "iprp"
+      ]
+    },
+    {
+      "fourcc": "iprp",
+      "description": "Item Properties Box",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "md5i",
+      "description": "MD5IntegrityBox",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "ispe",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "colr",
+      "containers": [
+        "video_sample_entry",
+        "ipco",
+        "encv",
+        "resv"
+      ]
+    },
+    {
+      "fourcc": "colr",
+      "containers": [
+        "jp2h"
+      ]
+    },
+    {
+      "fourcc": "pixi",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "rloc",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "irot",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "grpl",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "ccst",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "auxi",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "altr",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "auxC",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "oinf",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "tols",
+      "containers": [
+        "ipco"
+      ]
+    }
+  ]
+}

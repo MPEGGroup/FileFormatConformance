@@ -1,0 +1,102 @@
+{
+  "description": "Track reference types",
+  "entries": [
+    {
+      "fourcc": "avcp",
+      "description": "AVC parameter set stream link",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "deps",
+      "description": "track containing the depth view",
+      "containers": []
+    },
+    {
+      "fourcc": "evcr",
+      "description": "EVC slice base track",
+      "containers": []
+    },
+    {
+      "fourcc": "mixn",
+      "description": "used in indicating combinations that result into mixed network abstraction layer unit types in a coded picture of VVC",
+      "containers": []
+    },
+    {
+      "fourcc": "oref",
+      "description": "track that contains an 'oref' sample group",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "recr",
+      "description": "resolved by extracting an indicated subset of the referenced VVC track to reconstruct a VVC bitstream",
+      "containers": []
+    },
+    {
+      "fourcc": "sabt",
+      "description": "HEVC Tile Track",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "sbas",
+      "description": "Scalable base",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "scal",
+      "description": "Scalable extraction",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "subp",
+      "description": "the referenced VVC subpicture tracks or 'alte' track groups of VVC subpicture tracks are used to reconstruct a VVC bitstream",
+      "containers": []
+    },
+    {
+      "fourcc": "swfr",
+      "description": "AVC Switch from",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "swto",
+      "description": "AVC Switch to",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "tbas",
+      "description": "HEVC Tile track base",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "vref",
+      "description": "reference to a track that contains a 'vopi' sample group for VVC video",
+      "containers": []
+    },
+    {
+      "fourcc": "vreg",
+      "description": "reference to a VVC operating point entity group",
+      "containers": []
+    },
+    {
+      "fourcc": "vvcN",
+      "description": "the referenced track is a non video coding layer track of VVC",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": []
+}

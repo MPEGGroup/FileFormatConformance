@@ -1,0 +1,247 @@
+{
+  "description": "Sample group types",
+  "entries": [
+    {
+      "fourcc": "aud ",
+      "description": "Access unit delimiter",
+      "containers": []
+    },
+    {
+      "fourcc": "avll",
+      "description": "AVC layer description group",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "avss",
+      "description": "AVC Sub-sequence group",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "dcfi",
+      "description": "VVC decoding capability information",
+      "containers": []
+    },
+    {
+      "fourcc": "dtrt",
+      "description": "SVC decode re-timing",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "eob ",
+      "description": "End of bitstream",
+      "containers": []
+    },
+    {
+      "fourcc": "eos ",
+      "description": "End of sequence",
+      "containers": []
+    },
+    {
+      "fourcc": "iroi",
+      "description": "SVC region of interest box",
+      "containers": []
+    },
+    {
+      "fourcc": "lbli",
+      "description": "HEVC External base layer",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "ldep",
+      "description": "Tier dependency box",
+      "containers": []
+    },
+    {
+      "fourcc": "linf",
+      "description": "L-HEVC and VVC layer information",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "minp",
+      "description": "VVC mixed NAL unit type pictures",
+      "containers": []
+    },
+    {
+      "fourcc": "mvif",
+      "description": "MVC Scalability Information",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "nalm",
+      "description": "NAL unit map entry",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "oinf",
+      "description": "L-HEVC operating points information",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "opth",
+      "description": "L-HEVC and VVC Operating Point Decode Time Hint",
+      "containers": []
+    },
+    {
+      "fourcc": "pase",
+      "description": "Parameter set",
+      "containers": []
+    },
+    {
+      "fourcc": "pss1",
+      "description": "In-band parameter set indication",
+      "containers": []
+    },
+    {
+      "fourcc": "rrgn",
+      "description": "SVC rect region box",
+      "containers": []
+    },
+    {
+      "fourcc": "rror",
+      "description": "Rectangular region order",
+      "containers": []
+    },
+    {
+      "fourcc": "scif",
+      "description": "SVC Scalability Information",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "scnm",
+      "description": "AVC/SVC/MVC map groups",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "spid",
+      "description": "VVC subpicture ID",
+      "containers": []
+    },
+    {
+      "fourcc": "spli",
+      "description": "VVC subpicture level information",
+      "containers": []
+    },
+    {
+      "fourcc": "spor",
+      "description": "VVC subpicture order",
+      "containers": []
+    },
+    {
+      "fourcc": "stsa",
+      "description": "Step-wise Temporal Layer",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "sulm",
+      "description": "VVC subpicture layout",
+      "containers": []
+    },
+    {
+      "fourcc": "svdr",
+      "description": "SVC dependency range",
+      "containers": []
+    },
+    {
+      "fourcc": "svip",
+      "description": "Initial parameter sets box for tiers",
+      "containers": []
+    },
+    {
+      "fourcc": "svpr",
+      "description": "Priority range",
+      "containers": []
+    },
+    {
+      "fourcc": "sync",
+      "description": "Sync sample groups",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tran",
+      "description": "SVC lightweight transcoding",
+      "containers": []
+    },
+    {
+      "fourcc": "trif",
+      "description": "HEVC Tile Region",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tsas",
+      "description": "Temporal Sub-Layer",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tscl",
+      "description": "Temporal Layer",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "vipr",
+      "description": "View priority",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "vopi",
+      "description": "VVC operating points information",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "seig",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    }
+  ]
+}

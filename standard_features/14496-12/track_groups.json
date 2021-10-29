@@ -1,0 +1,20 @@
+{
+  "description": "Track grouping types",
+  "entries": [
+    {
+      "fourcc": "msrc",
+      "description": "multi-source presentation track grouping",
+      "containers": [
+        "trgr"
+      ]
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "ster",
+      "containers": [
+        "trgr"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1140 @@
+{
+  "description": "Boxes (also called atoms)",
+  "entries": [
+    {
+      "fourcc": "assp",
+      "description": "alternative startup sequence properties",
+      "containers": []
+    },
+    {
+      "fourcc": "bxml",
+      "description": "binary XML container",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "cinf",
+      "description": "complete track information",
+      "containers": []
+    },
+    {
+      "fourcc": "clip",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "co64",
+      "description": "64-bit chunk offset",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "crgn",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "csgp",
+      "description": "compact sample to group",
+      "containers": []
+    },
+    {
+      "fourcc": "cslg",
+      "description": "composition to decode timeline mapping",
+      "containers": [
+        "stbl",
+        "trep"
+      ]
+    },
+    {
+      "fourcc": "ctab",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "ctts",
+      "description": "(composition) time to sample",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "dinf",
+      "description": "data information box, container",
+      "containers": [
+        "minf",
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "dref",
+      "description": "data reference box, declares source(s) of media data in track",
+      "containers": [
+        "dinf"
+      ]
+    },
+    {
+      "fourcc": "edts",
+      "description": "edit list container",
+      "containers": [
+        "trak"
+      ]
+    },
+    {
+      "fourcc": "elst",
+      "description": "an edit list",
+      "containers": [
+        "edts"
+      ]
+    },
+    {
+      "fourcc": "etyp",
+      "description": "extended type and type combination",
+      "containers": []
+    },
+    {
+      "fourcc": "fdel",
+      "description": "File delivery information (item info extension)",
+      "containers": []
+    },
+    {
+      "fourcc": "feci",
+      "description": "FEC Informatiom",
+      "containers": []
+    },
+    {
+      "fourcc": "fecr",
+      "description": "FEC Reservoir",
+      "containers": [
+        "paen"
+      ]
+    },
+    {
+      "fourcc": "fiin",
+      "description": "FD Item Information",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "fire",
+      "description": "File Reservoir",
+      "containers": []
+    },
+    {
+      "fourcc": "fpar",
+      "description": "File Partition",
+      "containers": [
+        "paen"
+      ]
+    },
+    {
+      "fourcc": "free",
+      "description": "free space",
+      "containers": [
+        "*"
+      ]
+    },
+    {
+      "fourcc": "frma",
+      "description": "original format box",
+      "containers": [
+        "sinf",
+        "rinf"
+      ]
+    },
+    {
+      "fourcc": "ftyp",
+      "description": "file type and compatibility",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "gitn",
+      "description": "Group ID to name",
+      "containers": [
+        "fiin"
+      ]
+    },
+    {
+      "fourcc": "grpl",
+      "description": "Groups list box",
+      "containers": []
+    },
+    {
+      "fourcc": "hdlr",
+      "description": "handler, declares the media (handler) type",
+      "containers": [
+        "mdia",
+        "meta",
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "hmhd",
+      "description": "hint media header, overall information (hint track only)",
+      "containers": [
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "idat",
+      "description": "Item data",
+      "containers": []
+    },
+    {
+      "fourcc": "iinf",
+      "description": "item information",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "iloc",
+      "description": "item location",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "imap",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "imda",
+      "description": "Identified media data",
+      "containers": []
+    },
+    {
+      "fourcc": "imif",
+      "description": "IPMP Information box",
+      "containers": []
+    },
+    {
+      "fourcc": "infe",
+      "description": "Item information entry",
+      "containers": [
+        "iinf"
+      ]
+    },
+    {
+      "fourcc": "ipmc",
+      "description": "IPMP Control Box",
+      "containers": []
+    },
+    {
+      "fourcc": "ipro",
+      "description": "item protection",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "iref",
+      "description": "Item reference",
+      "containers": []
+    },
+    {
+      "fourcc": "kmat",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "leva",
+      "description": "Leval assignment",
+      "containers": [
+        "mvex"
+      ]
+    },
+    {
+      "fourcc": "load",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "matt",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "mdat",
+      "description": "media data container",
+      "containers": [
+        "file",
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "mdhd",
+      "description": "media header, overall information about the media",
+      "containers": [
+        "mdia"
+      ]
+    },
+    {
+      "fourcc": "mdia",
+      "description": "container for the media information in a track",
+      "containers": [
+        "trak"
+      ]
+    },
+    {
+      "fourcc": "meco",
+      "description": "additional metadata container",
+      "containers": []
+    },
+    {
+      "fourcc": "mehd",
+      "description": "movie extends header box",
+      "containers": [
+        "mvex"
+      ]
+    },
+    {
+      "fourcc": "mere",
+      "description": "metabox relation",
+      "containers": []
+    },
+    {
+      "fourcc": "meta",
+      "description": "Metadata container",
+      "containers": [
+        "file",
+        "moov",
+        "trak",
+        "moof",
+        "traf",
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "mfhd",
+      "description": "movie fragment header",
+      "containers": [
+        "moof"
+      ]
+    },
+    {
+      "fourcc": "mfra",
+      "description": "Movie fragment random access",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "mfro",
+      "description": "Movie fragment random access offset",
+      "containers": [
+        "mfra"
+      ]
+    },
+    {
+      "fourcc": "minf",
+      "description": "media information container",
+      "containers": [
+        "mdia"
+      ]
+    },
+    {
+      "fourcc": "moof",
+      "description": "movie fragment",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "moov",
+      "description": "container for all the meta-data",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "mvex",
+      "description": "movie extends box",
+      "containers": [
+        "moov"
+      ]
+    },
+    {
+      "fourcc": "mvhd",
+      "description": "movie header, overall declarations",
+      "containers": [
+        "moov"
+      ]
+    },
+    {
+      "fourcc": "nmhd",
+      "description": "Null media header, overall information (some tracks only)",
+      "containers": [
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "otyp",
+      "description": "Original file type",
+      "containers": []
+    },
+    {
+      "fourcc": "padb",
+      "description": "sample padding bits",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "paen",
+      "description": "Partition Entry",
+      "containers": [
+        "fiin"
+      ]
+    },
+    {
+      "fourcc": "pdin",
+      "description": "Progressive download information",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "pitm",
+      "description": "primary item reference",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "pnot",
+      "description": "Reserved",
+      "containers": []
+    },
+    {
+      "fourcc": "prft",
+      "description": "Producer reference time",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "rinf",
+      "description": "restricted scheme information box",
+      "containers": []
+    },
+    {
+      "fourcc": "saio",
+      "description": "Sample auxiliary information offsets",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "saiz",
+      "description": "Sample auxiliary information sizes",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "sbgp",
+      "description": "Sample to Group box",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "schi",
+      "description": "scheme information box",
+      "containers": [
+        "sinf",
+        "rinf"
+      ]
+    },
+    {
+      "fourcc": "schm",
+      "description": "scheme type box",
+      "containers": [
+        "sinf",
+        "rinf"
+      ]
+    },
+    {
+      "fourcc": "sdtp",
+      "description": "Independent and Disposable Samples Box",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "segr",
+      "description": "file delivery session group",
+      "containers": [
+        "fiin"
+      ]
+    },
+    {
+      "fourcc": "sgpd",
+      "description": "Sample group definition box",
+      "containers": []
+    },
+    {
+      "fourcc": "sidx",
+      "description": "Segment Index Box",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "sinf",
+      "description": "protection scheme information box",
+      "containers": [
+        "ipro",
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "skip",
+      "description": "free space",
+      "containers": []
+    },
+    {
+      "fourcc": "smhd",
+      "description": "sound media header, overall information (sound track only)",
+      "containers": [
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "srpp",
+      "description": "STRP Process",
+      "containers": [
+        "srtp"
+      ]
+    },
+    {
+      "fourcc": "ssix",
+      "description": "Sub-sample index",
+      "containers": [
+        "file"
+      ]
+    },
+    {
+      "fourcc": "stbl",
+      "description": "sample table box, container for the time/space map",
+      "containers": [
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "stco",
+      "description": "chunk offset, partial data-offset information",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "stdp",
+      "description": "sample degradation priority",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "sthd",
+      "description": "Subtitle Media Header Box",
+      "containers": []
+    },
+    {
+      "fourcc": "strd",
+      "description": "Sub-track definition",
+      "containers": []
+    },
+    {
+      "fourcc": "stri",
+      "description": "Sub-track information",
+      "containers": [
+        "strk"
+      ]
+    },
+    {
+      "fourcc": "stsc",
+      "description": "sample-to-chunk, partial data-offset information",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "stsd",
+      "description": "sample descriptions (codec types, initialization etc.)",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "stsg",
+      "description": "Sub-track sample grouping",
+      "containers": [
+        "strd"
+      ]
+    },
+    {
+      "fourcc": "stsh",
+      "description": "shadow sync sample table",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "stss",
+      "description": "sync sample table (random access points)",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "stsz",
+      "description": "sample sizes (framing)",
+      "containers": []
+    },
+    {
+      "fourcc": "stts",
+      "description": "(decoding) time-to-sample",
+      "containers": [
+        "stbl"
+      ]
+    },
+    {
+      "fourcc": "styp",
+      "description": "Segment Type Box",
+      "containers": []
+    },
+    {
+      "fourcc": "stz2",
+      "description": "compact sample sizes (framing)",
+      "containers": []
+    },
+    {
+      "fourcc": "subs",
+      "description": "Sub-sample information",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tfdt",
+      "description": "Track fragment decode time",
+      "containers": [
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tfhd",
+      "description": "Track fragment header",
+      "containers": [
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "tfra",
+      "description": "Track fragment radom access",
+      "containers": [
+        "mfra"
+      ]
+    },
+    {
+      "fourcc": "tkhd",
+      "description": "Track header, overall information about the track",
+      "containers": [
+        "trak"
+      ]
+    },
+    {
+      "fourcc": "traf",
+      "description": "Track fragment",
+      "containers": [
+        "moof"
+      ]
+    },
+    {
+      "fourcc": "trak",
+      "description": "container for an individual track or stream",
+      "containers": [
+        "moov"
+      ]
+    },
+    {
+      "fourcc": "tref",
+      "description": "track reference container",
+      "containers": [
+        "trak"
+      ]
+    },
+    {
+      "fourcc": "trep",
+      "description": "track extension properties",
+      "containers": [
+        "mvex"
+      ]
+    },
+    {
+      "fourcc": "trex",
+      "description": "track extends defaults",
+      "containers": [
+        "mvex"
+      ]
+    },
+    {
+      "fourcc": "trgr",
+      "description": "Track grouping information",
+      "containers": [
+        "trak"
+      ]
+    },
+    {
+      "fourcc": "trun",
+      "description": "track fragment run",
+      "containers": [
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "ttyp",
+      "description": "track type and compatibility",
+      "containers": []
+    },
+    {
+      "fourcc": "tyco",
+      "description": "type and-combination",
+      "containers": []
+    },
+    {
+      "fourcc": "udta",
+      "description": "user-data",
+      "containers": [
+        "moov",
+        "trak",
+        "moof",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "uuid",
+      "description": "user-extension box",
+      "containers": []
+    },
+    {
+      "fourcc": "vmhd",
+      "description": "video media header, overall information (video track only)",
+      "containers": [
+        "minf"
+      ]
+    },
+    {
+      "fourcc": "xml ",
+      "description": "XML container",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "!mof",
+      "description": "Compressed movie fragment",
+      "containers": []
+    },
+    {
+      "fourcc": "!mov",
+      "description": "Compressed movie",
+      "containers": []
+    },
+    {
+      "fourcc": "!six",
+      "description": "Compressed segment index",
+      "containers": []
+    },
+    {
+      "fourcc": "!ssx",
+      "description": "Compressed subsegment index",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "url ",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "url ",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "urn ",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "urn ",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "cprt",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "kind",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "elng",
+      "containers": [
+        "mdia"
+      ]
+    },
+    {
+      "fourcc": "btrt",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "pasp",
+      "containers": [
+        "video_sample_entry",
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "clap",
+      "containers": [
+        "video_sample_entry",
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "mp4a",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "tsel",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "strk",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "mp4s",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "mp4s",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "mp4s",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "mp4s",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "metx",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "metx",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "stvi",
+      "containers": [
+        "schi"
+      ]
+    },
+    {
+      "fourcc": "chnl",
+      "containers": [
+        "audio_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "fdsa",
+      "containers": [
+        "fdp_sample"
+      ]
+    },
+    {
+      "fourcc": "fdpa",
+      "containers": [
+        "fdsa"
+      ]
+    },
+    {
+      "fourcc": "extr",
+      "containers": [
+        "fdsa"
+      ]
+    },
+    {
+      "fourcc": "ghnt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "ghnt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "ghnt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "ghnt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "ghnt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "hnti",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "sdp ",
+      "containers": [
+        "hnti"
+      ]
+    },
+    {
+      "fourcc": "hinf",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "trpy",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "nump",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "tpyl",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "totl",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "npck",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "tpay",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "maxr",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "dmed",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "dimm",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "drep",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "tmin",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "tmax",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "pmax",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "dmax",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "payt",
+      "containers": [
+        "hinf"
+      ]
+    },
+    {
+      "fourcc": "rtp ",
+      "containers": [
+        "hnti"
+      ]
+    },
+    {
+      "fourcc": "rtpo",
+      "containers": [
+        "rtp_packet"
+      ]
+    },
+    {
+      "fourcc": "rely",
+      "containers": [
+        "rtp",
+        "srtp"
+      ]
+    },
+    {
+      "fourcc": "tims",
+      "containers": [
+        "rtp",
+        "srtp",
+        "rrtp"
+      ]
+    },
+    {
+      "fourcc": "tsro",
+      "containers": [
+        "rtp",
+        "srtp",
+        "rrtp"
+      ]
+    },
+    {
+      "fourcc": "snro",
+      "containers": [
+        "rtp",
+        "srtp"
+      ]
+    },
+    {
+      "fourcc": "name",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "tssy",
+      "containers": [
+        "rrtp"
+      ]
+    },
+    {
+      "fourcc": "rssr",
+      "containers": [
+        "rrtp"
+      ]
+    },
+    {
+      "fourcc": "metx",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "txtC",
+      "containers": [
+        "stxt",
+        "mett",
+        "sbtt"
+      ]
+    },
+    {
+      "fourcc": "metx",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "metx",
+      "containers": [
+        "stsd"
+      ]
+    }
+  ]
+}

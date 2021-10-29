@@ -1,0 +1,24 @@
+{
+  "description": "Boxes (also called atoms)",
+  "entries": [],
+  "gpac_only_entries": [
+    {
+      "fourcc": "wvtt",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "vttc",
+      "containers": [
+        "vtt_sample"
+      ]
+    },
+    {
+      "fourcc": "vtte",
+      "containers": [
+        "vtt_sample"
+      ]
+    }
+  ]
+}

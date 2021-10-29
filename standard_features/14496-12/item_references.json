@@ -1,0 +1,39 @@
+{
+  "description": "Item reference types",
+  "entries": [
+    {
+      "fourcc": "fdel",
+      "description": "File delivery reference",
+      "containers": [
+        "iref"
+      ]
+    },
+    {
+      "fourcc": "iloc",
+      "description": "Item data location",
+      "containers": [
+        "iref"
+      ]
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "tbas",
+      "containers": [
+        "iref"
+      ]
+    },
+    {
+      "fourcc": "iref",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
+      "fourcc": "iref",
+      "containers": [
+        "meta"
+      ]
+    }
+  ]
+}

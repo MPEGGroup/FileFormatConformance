@@ -1,0 +1,72 @@
+{
+  "description": "Sample group types",
+  "entries": [
+    {
+      "fourcc": "alst",
+      "description": "Alternative startup sequence",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "drap",
+      "description": "Dependent random access point",
+      "containers": []
+    },
+    {
+      "fourcc": "prol",
+      "description": "Audio pre-roll",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "rap ",
+      "description": "Random access point",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "rash",
+      "description": "Rate share",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "roll",
+      "description": "Pre/Post roll group",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "sap ",
+      "description": "Stream access point",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    },
+    {
+      "fourcc": "stmi",
+      "description": "SampleToMetadataItemEntry",
+      "containers": []
+    },
+    {
+      "fourcc": "tele",
+      "description": "Temporal Level",
+      "containers": [
+        "stbl",
+        "traf"
+      ]
+    }
+  ],
+  "gpac_only_entries": []
+}

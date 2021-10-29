@@ -1,0 +1,86 @@
+{
+  "description": "Track reference types",
+  "entries": [
+    {
+      "fourcc": "auxl",
+      "description": "Auxiliary track reference",
+      "containers": []
+    },
+    {
+      "fourcc": "font",
+      "description": "this track uses fonts carried/defined in the referenced track",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "hind",
+      "description": "Hint dependency",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "hint",
+      "description": "links hint track to original media track",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "iloc",
+      "description": "Item data location (item reference)",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "subt",
+      "description": "subtitle or timed text or overlay graphical information",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "thmb",
+      "description": "Thumbnail track reference",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "vdep",
+      "description": "Auxiliary video depth",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "vplx",
+      "description": "Auxiliary video parallax",
+      "containers": [
+        "tref"
+      ]
+    }
+  ],
+  "gpac_only_entries": [
+    {
+      "fourcc": "cdsc",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "adda",
+      "containers": [
+        "tref"
+      ]
+    },
+    {
+      "fourcc": "adrc",
+      "containers": [
+        "tref"
+      ]
+    }
+  ]
+}

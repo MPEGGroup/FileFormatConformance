@@ -1,46 +1,72 @@
 import argparse
 import subprocess
 import sys
+import copy
 import os
 import bs4
+import csv
+import json
 from git import Repo
 
 
 MP4RA_PATH = './mp4ra'
 MP4RA_URL = 'https://github.com/mp4ra/mp4ra.github.io.git'
 
-SPEC_ENTRY = {
-    'feature_type': '...',
-    'type': '4CC',
-    'descritpion': 'bla bla',
-    'container': 'list of 4CCs'
+SPEC_FEATURES = {
+    'track_references': {
+        'description': 'Track reference types',
+        'entries': [],
+        'gpac_only_entries': []
+    },
+    'track_groups': {
+        'description': 'Track grouping types',
+        'entries': [],
+        'gpac_only_entries': []
+    },
+    'item_references': {
+        'description': 'Item reference types',
+        'entries': [],
+        'gpac_only_entries': []
+    },
+    'sample_groups': {
+        'description': 'Sample group types',
+        'entries': [],
+        'gpac_only_entries': []
+    },
+    'boxes': {
+        'description': 'Boxes (also called atoms)',
+        'entries': [],
+        'gpac_only_entries': []
+    }
 }
 
 SPECS = {
     '14496-12': {
         'aliases': ['ISO', 'p12'],
-        'mp4ra': [],
-        'gpac': []
+        'features': copy.deepcopy(SPEC_FEATURES),
     },
     '14496-15': {
         'aliases': ['NALu Video', 'p15'],
-        'mp4ra': [],
-        'gpac': []
+        'features': copy.deepcopy(SPEC_FEATURES),
     },
     '14496-30': {
         'aliases': ['ISO-Text', 'p30'],
-        'mp4ra': [],
-        'gpac': []
+        'features': copy.deepcopy(SPEC_FEATURES),
     },
     '23008-12': {
         'aliases': ['HEIF', 'iff'],
-        'mp4ra': [],
-        'gpac': []
+        'features': copy.deepcopy(SPEC_FEATURES),
     }
 }
 
-FEATURE_TYPES = ['track_references', 'track_groups', 'item_references', 'sample_groups', 'boxes']
-
+def make_dirs_if_not_exist(dir_path):
+    base, ext = os.path.splitext(dir_path)
+    if ext == '' and not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+    else:
+        head, tail = os.path.split(dir_path)
+        if not os.path.exists(head):
+            os.makedirs(head)
 
 def execute_cmd(cmd_string):
     ret_code = subprocess.call(cmd_string, shell=True)
@@ -48,19 +74,39 @@ def execute_cmd(cmd_string):
         print(f'ERROR: {cmd_string} returned {ret_code}')
     return ret_code
 
+def csv_to_spec(csv_file, feature_type):
+    code_idx = 0
+    description_idx = 1
+    spec_idx = 2
+    if feature_type == 'item_references' or feature_type == 'sample_groups':
+        spec_idx = 3
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    line_idx = 0
+    for row in csv_reader:
+        line_idx += 1
+        if line_idx == 1:
+            continue
+        code = row[code_idx].strip()
+        code = code.replace('$20', ' ')
+        description = row[description_idx].strip()
+        specification = row[spec_idx].strip()
+        entry = {
+            'fourcc': code,
+            'description': description,
+            'containers': []
+        }
+        if specification == 'ISO':
+            SPECS['14496-12']['features'][feature_type]['entries'].append(entry)
+        elif specification == 'NALu Video':
+            SPECS['14496-15']['features'][feature_type]['entries'].append(entry)
+        elif specification == 'ISO-Text':
+            SPECS['14496-30']['features'][feature_type]['entries'].append(entry)
+        elif specification == 'HEIF':
+            SPECS['23008-12']['features'][feature_type]['entries'].append(entry)
 
-def feature_spec_gpac():
-    print('Extract boxes using GPACs MP4Box and group them by the spec')
 
-    parser = argparse.ArgumentParser(description='Use GPAC MP4Box to create a set of standard features')
-    parser.add_argument('-o', '--out', help='Output directory where files will be written to')
-    args = parser.parse_args()
-
-    ret_code = execute_cmd('MP4Box')
-    if not ret_code == 0:
-        print('MP4Box is not installed on your system')
-        sys.exit(-1)
-
+def extract_spec_features_mp4ra():
+    print('Extract specification features using MP4RA repository')
     # get/update MP4RA source
     if not os.path.exists(MP4RA_PATH):
         print(f'clone MP4RA repo {MP4RA_URL} to {MP4RA_PATH}')
@@ -69,6 +115,80 @@ def feature_spec_gpac():
     #     print(f'pull MP4RA in {MP4RA_PATH}')
     #     repo = Repo(MP4RA_PATH)
     #     repo.remotes.origin.pull()
+
+    # track references
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'track-references.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'track_references')
+    # track groups
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'track-groups.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'track_groups')
+    # item references
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'item-references.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'item_references')
+    # sample groups
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'sample-groups.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'sample_groups')
+    # boxes
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'boxes.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'boxes')
+
+
+def update_entry_from_gpac(specification, feature_type, gpac_entry):
+    if not specification in SPECS:
+        print(f'No such specification found: {specification}')
+        sys.exit(-1)
+    if not feature_type in SPECS[specification]['features']:
+        print(f'Feature type is not supported: {feature_type}')
+        sys.exit(-1)
+    entries = SPECS[specification]['features'][feature_type]['entries']
+    gpac_only_entries = SPECS[specification]['features'][feature_type]['gpac_only_entries']
+
+    # find entry of the same type
+    entry = None
+    if gpac_entry['type'] == 'sgpd':
+        if gpac_entry.has_attr('grouping_type'):
+            entry = next((item for item in entries if item['fourcc'] == gpac_entry['grouping_type']), None)
+    else:
+        entry = next((item for item in entries if item['fourcc'] == gpac_entry['type']), None)
+
+    if entry is not None:
+        # we have this entry, update container if needed
+        containers = gpac_entry['container'].split(' ')
+        for container in containers:
+            if container not in entry['containers']:
+                entry['containers'].append(container)
+    else:
+        if gpac_entry['type'] == '00000000':
+            return
+        print(f'Not found: {gpac_entry["type"]} is missing in MP4RA {specification}:{feature_type}')
+        # add the missing entry to gpac_only list
+        if gpac_entry['type'] == 'sgpd':
+            if gpac_entry.has_attr('grouping_type'):
+                gpac_only_entry = {
+                    'fourcc': gpac_entry['grouping_type'],
+                    'containers': gpac_entry['container'].split(' ')
+                }
+                gpac_only_entries.append(gpac_only_entry)
+        else:
+            gpac_only_entry = {
+                'fourcc': gpac_entry['type'],
+                'containers': gpac_entry['container'].split(' ')
+            }
+            gpac_only_entries.append(gpac_only_entry)
+
+
+def extract_spec_features_gpac():
+    print('Extract specification features using GPACs MP4Box')
+
+    ret_code = execute_cmd('MP4Box')
+    if not ret_code == 0:
+        print('MP4Box is not installed on your system')
+        sys.exit(-1)
 
     # pipe MP4Box -boxes to stdout and store it in out
     process = subprocess.Popen(['MP4Box', '-boxes'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -82,13 +202,56 @@ def feature_spec_gpac():
     trgrs = soup.find_all('trackgrouptypebox')
 
     print(f'number of tref = {len(trefs)}')
-    specs = set()
     for box in soup.boxes:
         if not isinstance(box, bs4.Tag):
             continue
-        # print(f'box: {box}')
-        if box.has_attr('specification'):
-            # print(box['specification'])
-            specs.add(box['specification'])
-    for spec in specs:
-        print(spec)
+        if not box.has_attr('specification'):
+            continue
+        specification = None
+        feature_type = None
+        if box['specification'] == 'p12':
+            specification = '14496-12'
+        elif box['specification'] == 'p15':
+            specification = '14496-15'
+        elif box['specification'] == 'p30':
+            specification = '14496-30'
+        elif box['specification'] == 'iff':
+            specification = '23008-12'
+
+        if box.name == 'trackreferencetypebox':
+            feature_type = 'track_references'
+        elif box.name == 'trackgrouptypebox':
+            feature_type = 'track_groups'
+        elif box.name == 'itemreferencebox':
+            feature_type = 'item_references'
+        elif box.name == 'samplegroupdescriptionbox':
+            feature_type = 'sample_groups'
+        else:
+            # TODO: everyting else is treated as a box, however we might want to split to other types, e.g. sample entry, entity groups, etc.
+            feature_type = 'boxes'
+
+        if specification is None or feature_type is None:
+            print(f'skip {box["specification"]}:{box.name}')
+            continue
+
+        update_entry_from_gpac(specification, feature_type, box)
+
+
+def write_spec_features(output_dir):
+    for spec in SPECS:
+        for feature in SPECS[spec]['features']:
+            out_file = os.path.join(output_dir, spec, feature + '.json')
+            make_dirs_if_not_exist(out_file)
+            with open(out_file, 'w') as f:
+                json.dump(SPECS[spec]['features'][feature], f, indent=2)
+
+
+def extract_spec_features():
+    parser = argparse.ArgumentParser(description='Use GPAC MP4Box to create a set of standard features')
+    parser.add_argument('-o', '--out', help='Output directory where files will be written to', default='./out')
+    args = parser.parse_args()
+
+    extract_spec_features_mp4ra()
+    extract_spec_features_gpac()
+    write_spec_features(args.out)
+

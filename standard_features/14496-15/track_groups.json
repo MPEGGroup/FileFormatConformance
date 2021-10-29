@@ -1,0 +1,23 @@
+{
+  "description": "Track grouping types",
+  "entries": [
+    {
+      "fourcc": "alte",
+      "description": "alternative extraction source track grouping",
+      "containers": []
+    },
+    {
+      "fourcc": "cstg",
+      "description": "complete subset track grouping",
+      "containers": [
+        "trgr"
+      ]
+    },
+    {
+      "fourcc": "snut",
+      "description": "a group of VVC subpicture tracks where the VCL NAL units of the time-aligned samples have the same NAL unit type",
+      "containers": []
+    }
+  ],
+  "gpac_only_entries": []
+}
