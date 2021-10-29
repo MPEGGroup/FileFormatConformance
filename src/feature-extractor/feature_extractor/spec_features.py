@@ -247,7 +247,7 @@ def write_spec_features(output_dir):
 
 
 def extract_spec_features():
-    parser = argparse.ArgumentParser(description='Use GPAC MP4Box to create a set of standard features')
+    parser = argparse.ArgumentParser(description='Use MP4RA and GPAC MP4Box to create a set of standard features')
     parser.add_argument('-o', '--out', help='Output directory where files will be written to', default='./out')
     args = parser.parse_args()
 

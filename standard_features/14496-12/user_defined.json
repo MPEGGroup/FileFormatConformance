@@ -54,5 +54,5 @@
   "RTP sample contructor on self track": "The various forms of packet constructors are tested.",
   "RTP sampleDescription constructor": "The various forms of packet constructors are tested.",
   "MPEG-2 Transport hint track": "",
-  "RTP etc. reception hint track": "",
+  "RTP etc. reception hint track": ""
 }

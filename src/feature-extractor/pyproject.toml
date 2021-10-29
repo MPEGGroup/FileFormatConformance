@@ -18,4 +18,5 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-features-spec = "feature_extractor.main:extract_spec_features"
+features-spec = "feature_extractor.spec_features:extract_spec_features"
+features-files = "feature_extractor.file_features:extract_file_features"
