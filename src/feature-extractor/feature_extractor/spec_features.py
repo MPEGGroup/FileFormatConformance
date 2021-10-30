@@ -5,9 +5,8 @@ import copy
 import os
 import bs4
 import csv
-import json
 from git import Repo
-
+from .utils import make_dirs_from_path, execute_cmd, dump_to_json
 
 MP4RA_PATH = './mp4ra'
 MP4RA_URL = 'https://github.com/mp4ra/mp4ra.github.io.git'
@@ -59,20 +58,6 @@ SPECS = {
     }
 }
 
-def make_dirs_if_not_exist(dir_path):
-    base, ext = os.path.splitext(dir_path)
-    if ext == '' and not os.path.exists(dir_path):
-        os.makedirs(dir_path)
-    else:
-        head, tail = os.path.split(dir_path)
-        if not os.path.exists(head):
-            os.makedirs(head)
-
-def execute_cmd(cmd_string):
-    ret_code = subprocess.call(cmd_string, shell=True)
-    if not ret_code == 0:
-        print(f'ERROR: {cmd_string} returned {ret_code}')
-    return ret_code
 
 def csv_to_spec(csv_file, feature_type):
     code_idx = 0
@@ -139,10 +124,10 @@ def extract_spec_features_mp4ra():
 
 
 def update_entry_from_gpac(specification, feature_type, gpac_entry):
-    if not specification in SPECS:
+    if specification not in SPECS:
         print(f'No such specification found: {specification}')
         sys.exit(-1)
-    if not feature_type in SPECS[specification]['features']:
+    if feature_type not in SPECS[specification]['features']:
         print(f'Feature type is not supported: {feature_type}')
         sys.exit(-1)
     entries = SPECS[specification]['features'][feature_type]['entries']
@@ -196,19 +181,12 @@ def extract_spec_features_gpac():
 
     soup = bs4.BeautifulSoup(out, 'lxml')
 
-    trefs = soup.find_all('trackreferencetypebox')
-    irefs = soup.find_all('itemreferencebox')
-    sgpds = soup.find_all('samplegroupdescriptionbox')
-    trgrs = soup.find_all('trackgrouptypebox')
-
-    print(f'number of tref = {len(trefs)}')
     for box in soup.boxes:
         if not isinstance(box, bs4.Tag):
             continue
         if not box.has_attr('specification'):
             continue
         specification = None
-        feature_type = None
         if box['specification'] == 'p12':
             specification = '14496-12'
         elif box['specification'] == 'p15':
@@ -227,7 +205,8 @@ def extract_spec_features_gpac():
         elif box.name == 'samplegroupdescriptionbox':
             feature_type = 'sample_groups'
         else:
-            # TODO: everyting else is treated as a box, however we might want to split to other types, e.g. sample entry, entity groups, etc.
+            # TODO: everyting else is treated as a box, however we might want to split to other types,
+            #  e.g. sample entry, entity groups, etc.
             feature_type = 'boxes'
 
         if specification is None or feature_type is None:
@@ -241,9 +220,8 @@ def write_spec_features(output_dir):
     for spec in SPECS:
         for feature in SPECS[spec]['features']:
             out_file = os.path.join(output_dir, spec, feature + '.json')
-            make_dirs_if_not_exist(out_file)
-            with open(out_file, 'w') as f:
-                json.dump(SPECS[spec]['features'][feature], f, indent=2)
+            make_dirs_from_path(out_file)
+            dump_to_json(out_file, SPECS[spec]['features'][feature])
 
 
 def extract_spec_features():
@@ -254,4 +232,3 @@ def extract_spec_features():
     extract_spec_features_mp4ra()
     extract_spec_features_gpac()
     write_spec_features(args.out)
-
