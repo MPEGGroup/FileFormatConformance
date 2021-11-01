@@ -96,10 +96,10 @@ def extract_spec_features_mp4ra():
     if not os.path.exists(MP4RA_PATH):
         print(f'clone MP4RA repo {MP4RA_URL} to {MP4RA_PATH}')
         Repo.clone_from(MP4RA_URL, MP4RA_PATH, branch='dev')
-    # else:
-    #     print(f'pull MP4RA in {MP4RA_PATH}')
-    #     repo = Repo(MP4RA_PATH)
-    #     repo.remotes.origin.pull()
+    else:
+        print(f'pull MP4RA in {MP4RA_PATH}')
+        repo = Repo(MP4RA_PATH)
+        repo.remotes.origin.pull()
 
     # track references
     tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'track-references.csv')

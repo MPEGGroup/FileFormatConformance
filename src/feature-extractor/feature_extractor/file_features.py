@@ -3,8 +3,9 @@ import copy
 import os
 import json
 import sys
+from git import Repo
 from .utils import make_dirs_from_path, compute_file_md5, dump_to_json
-from openpyxl import Workbook, load_workbook
+from openpyxl import load_workbook
 
 FILE_ENTRY = {
     'contributor': '',
@@ -145,3 +146,49 @@ def update_heif_features():
                 }
 
             dump_to_json(input_path, data)
+
+
+def update_ff_conformance_xls():
+    parser = argparse.ArgumentParser(description='Update file features based on ff-conformance.xls processed in '
+                                                 'podborski/isobmff-conformance.git repository')
+    parser.add_argument('-d', '--fileDir', help='Directory with the file feature json files', required=True)
+    args = parser.parse_args()
+
+    if not os.path.exists('temp'):
+        Repo.clone_from('https://github.com/podborski/isobmff-conformance.git', 'temp')
+
+    # iterate json files from https://github.com/podborski/isobmff-conformance.git
+    podborski_files = {}
+    for root, subdirs, files in os.walk('temp'):
+        for f in files:
+            input_filename, input_extension = os.path.splitext(f)
+            if not input_extension == '.json' or '_excel' not in input_filename:
+                continue
+            input_path = os.path.join(root, f)
+            relative_path = os.path.relpath(root, 'temp/data/file_features')
+            input_filename = input_filename.replace('_excel', '')
+            key = os.path.join(relative_path, os.path.splitext(input_filename)[0])
+            podborski_files[key] = input_path
+
+    for root, subdirs, files in os.walk(args.fileDir):
+        for f in files:
+            input_filename, input_extension = os.path.splitext(f)
+            if not input_extension == '.json':
+                continue
+            input_path = os.path.join(root, f)
+            relative_path = os.path.relpath(root, args.fileDir)
+            key = os.path.join(relative_path, input_filename)
+            if key not in podborski_files:
+                # print(f'key "{key}" not found in ff-conformance.xls')
+                continue
+            print(f'{key} => {input_path} + {podborski_files[key]}')
+            with open(podborski_files[key], 'r') as file:
+                excel_data = json.load(file)
+            with open(input_path, 'r') as file:
+                file_data = json.load(file)
+
+            file_data['contributor'] = excel_data['company']
+            file_data['description'] = excel_data['concept']
+            file_data['features'] = excel_data['features']
+
+            dump_to_json(input_path, file_data)
