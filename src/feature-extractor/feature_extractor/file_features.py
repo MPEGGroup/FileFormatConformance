@@ -1,4 +1,5 @@
 import argparse
+import copy
 import os
 import sys
 from .utils import make_dirs_from_path, compute_file_md5, dump_to_json
@@ -9,8 +10,10 @@ FILE_ENTRY = {
     'md5': '',
     'filepath': '',
     'version': 1,
+    'published': False,
     'associated_files': [],
-    'features': []
+    'features': [],
+    'notes': ''
 }
 
 # ignore files with the following extensions
@@ -34,6 +37,7 @@ def init_file_features():
     args = parser.parse_args()
 
     contributor = input('Contributor organisation name: ')
+    published = input('Are the files published in ISO/IEC 14496-32? (yes/no): ')
 
     # get rid of the last slash if needed
     if args.input[-1] == '/':
@@ -63,15 +67,12 @@ def init_file_features():
             print(f'"{input_path}" => "{output_path}"')
             md5 = compute_file_md5(input_path)
 
-            file_entry = {
-                'contributor': contributor,
-                'description': '',
-                'md5': md5,
-                'filepath': os.path.join(relative_path, f),
-                'version': 1,
-                'associated_files': [],
-                'features': []
-            }
+            file_entry = copy.deepcopy(FILE_ENTRY)
+            file_entry['contributor'] = contributor.strip()
+            file_entry['md5'] = md5
+            file_entry['filepath'] = os.path.join(relative_path, f)
+            file_entry['version'] = 1
+            file_entry['published'] = published.lower() == 'yes'
             dump_to_json(output_path, file_entry)
             cnt += 1
     print(f'Processed {cnt} files.')
