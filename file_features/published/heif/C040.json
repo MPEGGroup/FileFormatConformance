@@ -1,11 +1,29 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "A pre-derived coded image (a pre-rendered 2x2 grid) as the primary item.",
   "md5": "f559555ab43e9bc21a574ed8765e45b5",
   "filepath": "published/heif/C040.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B014": {
+        "description": "A grid of 4 Images downsampled to 512x288 resolution and positioned to a 2x2 grid, then encoded as a single HD HEVC Main Profile bitstream."
+      },
+      "B015": {
+        "description": "Image downsampled to 512x288 and then encoded using HEVC Main Profile"
+      },
+      "B016": {
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile"
+      },
+      "B017": {
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile"
+      },
+      "B018": {
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile"
+      }
+    }
+  }
 }

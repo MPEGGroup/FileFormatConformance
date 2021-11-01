@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "Two \u201caltr\u201d grouped image items.",
   "md5": "1b67d66473f9fb28795df22a60cf2ec2",
   "filepath": "published/heif/C010.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      },
+      "B003": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "An image item with an associated alpha mask auxiliary image. Auxiliary image as the primary item.",
   "md5": "febd502949f4fbeea6d5654cac0d06fa",
   "filepath": "published/heif/C006.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      },
+      "B006": {
+        "description": "Alpha mask of the image - HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

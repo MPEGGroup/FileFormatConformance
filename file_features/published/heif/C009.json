@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "One of the images is set as hidden image.",
   "md5": "7c9f4f625dc269f622eb5ee0dadcd4e8",
   "filepath": "published/heif/C009.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      },
+      "B003": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "A base quality and an enhanced quality presentations of same image. The baselayer is an AVC-coded item.",
   "md5": "f32574c21db142781c120019b9f36580",
   "filepath": "published/heif/multilayer004.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B023": {
+        "description": "1 HEVC Scalable Main profile encoded enhancement layer for external baselayer, SNR scalability (1024x512 resolution)"
+      },
+      "B024": {
+        "description": "1 AVC encoded frame (1024x512 resolution)"
+      }
+    }
+  }
 }

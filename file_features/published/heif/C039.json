@@ -1,11 +1,17 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "Identity derived \u2018iden\u2019 item derived from another \u2018iden\u2019 item. Both \u2018iden\u2019 items have associated essential transformative \u2018clap\u2019 and \u2018irot\u2019 properties.",
   "md5": "ec0b22ebdead21d47180d108c441d420",
   "filepath": "published/heif/C039.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

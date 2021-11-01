@@ -1,11 +1,17 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "10 image items sharing the same decoder configuration property.",
   "md5": "e806d3367901fda18d5ba094036af679",
   "filepath": "published/heif/C004.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B004": {
+        "description": "HEVC Main Profile all-intra encoded bitstream made up of 10 frames (1280x720 resolution)"
+      }
+    }
+  }
 }

@@ -1,8 +1,10 @@
 import argparse
 import copy
 import os
+import json
 import sys
 from .utils import make_dirs_from_path, compute_file_md5, dump_to_json
+from openpyxl import Workbook, load_workbook
 
 FILE_ENTRY = {
     'contributor': '',
@@ -76,3 +78,70 @@ def init_file_features():
             dump_to_json(output_path, file_entry)
             cnt += 1
     print(f'Processed {cnt} files.')
+
+
+def update_heif_features():
+    parser = argparse.ArgumentParser(description='Update HEIF file features using the excel')
+    parser.add_argument('-i', '--inputExcel', help='Input excel sheet', required=True)
+    parser.add_argument('-d', '--fileDir', help='Directory with the HEIF json files', required=True)
+    args = parser.parse_args()
+
+    wb = load_workbook(args.inputExcel)
+    ws = wb.active
+    if not ws['A1'].value.lower() == 'file id' \
+            or not ws['B1'].value.lower() == 'description' \
+            or not ws['C1'].value.lower() == 'input bitstreams':
+        print(f'ERROR: worksheet "{args.inputExcel}" is not supported.')
+        sys.exit(0)
+    # iterate rows
+    heif_files = {}
+    bitstream_files = {}
+    rows = tuple(ws.rows)
+    bitstream_id_found = False
+    for row in rows:
+        if row[0].value is None:
+            continue
+        elif row[0].value.lower() == 'bitstream id':
+            bitstream_id_found = True
+            continue
+        if bitstream_id_found:
+            bitstream_files[row[0].value] = {
+                'description': row[1].value.strip()
+            }
+    for row in rows:
+        if row[0].value is None:
+            continue
+        elif row[0].value.lower() == 'file id':
+            continue
+        elif row[0].value.lower() == 'bitstream id':
+            break
+        bitstream_names = [i.strip() for i in row[2].value.split(',')]
+        bitstreams = {}
+        for bs_name in bitstream_names:
+            if bs_name not in bitstream_files:
+                print(f'WARNING: bitstream "{bs_name}" is not recognized')
+                continue
+            bitstreams[bs_name] = bitstream_files[bs_name]
+
+        heif_files[row[0].value] = {
+            'description': row[1].value.strip(),
+            'bitstreams': bitstreams
+        }
+    # iterate json files and update them
+    for root, subdirs, files in os.walk(args.fileDir):
+        for f in files:
+            input_filename, input_extension = os.path.splitext(f)
+            if not input_extension == '.json':
+                continue
+            if input_filename not in heif_files:
+                print(f'"{input_filename}" has no associated entry in the provided excel sheet')
+                continue
+            input_path = os.path.join(root, f)
+            with open(input_path, 'r') as file:
+                data = json.load(file)
+                data['description'] = heif_files[input_filename]['description']
+                data['notes'] = {
+                    'bitstreams': heif_files[input_filename]['bitstreams']
+                }
+
+            dump_to_json(input_path, data)

@@ -1,11 +1,17 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "A multi-layer multiview file with 'ster' grouping.",
   "md5": "fa2a67125c4ad5c920f6a8123a82ae76",
   "filepath": "published/heif/multilayer005.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B025": {
+        "description": "1 HEVC encoded multi-layer frame. Layer 0 is the left view, layer 1 is the right view.  (512x256 resolution)"
+      }
+    }
+  }
 }

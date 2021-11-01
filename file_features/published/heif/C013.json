@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "2 images, cropped with \"clap\" properties (0,0,300,300).",
   "md5": "fb96f8d247a24b80e80c5ca1c93421cb",
   "filepath": "published/heif/C013.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      },
+      "B003": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

@@ -1,11 +1,20 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "A derived image item where an image item is overlaid on another image. Total output w,h = 1440, 960. Second image on top of the first one with an offset of (160,240). All canvas_fill_values are 0 (fully transparent).",
   "md5": "20c120feedbd45ed41bda6bc43cb6f1b",
   "filepath": "published/heif/C015.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      },
+      "B003": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

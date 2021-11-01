@@ -9,6 +9,7 @@ python = "^3.9"
 beautifulsoup4 = "^4.10.0"
 lxml = "^4.6.3"
 GitPython = "^3.1.24"
+openpyxl = "^3.0.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -21,3 +22,4 @@ build-backend = "poetry.core.masonry.api"
 extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
 extract-file-features = "feature_extractor.file_features:extract_file_features"
 init-file-features = "feature_extractor.file_features:init_file_features"
+update-heif-features = "feature_extractor.file_features:update_heif_features"

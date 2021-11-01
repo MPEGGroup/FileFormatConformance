@@ -1,11 +1,17 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "1 image item",
   "md5": "e2a0b0217bf260a606b97a99df3773ef",
   "filepath": "published/heif/C002.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)"
+      }
+    }
+  }
 }

@@ -1,11 +1,17 @@
 {
   "contributor": "",
-  "description": "",
+  "description": "A derived image of type \"grid\" from first 4 images and it is set as primary image item. Output width and height = (1449, 960).",
   "md5": "b30a2a8c3d9d34bf74475c03c83b6c75",
   "filepath": "published/heif/C022.heic",
   "version": 1,
   "published": true,
   "associated_files": [],
   "features": [],
-  "notes": ""
+  "notes": {
+    "bitstreams": {
+      "B004": {
+        "description": "HEVC Main Profile all-intra encoded bitstream made up of 10 frames (1280x720 resolution)"
+      }
+    }
+  }
 }
