@@ -1,11 +1,24 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Telecom ParisTech",
+  "description": "bifs",
   "md5": "cc7fe4187bcb04792bfe1ff3bb320536",
   "filepath": "published/isobmff/06_bifs.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Free/skip",
+    "Movie box",
+    "late' order (mdat first)",
+    "track enabled bit",
+    "sync table",
+    "Copyright box",
+    "Systems tracks etc.",
+    "IOD box",
+    "mp4s sample entry",
+    "Single BIFS + IOD"
+  ],
   "notes": ""
 }

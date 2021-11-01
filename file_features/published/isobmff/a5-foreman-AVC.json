@@ -1,11 +1,21 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Apple",
+  "description": "AVC File",
   "md5": "da114d23f0e95b7f002836a29f0cfc8b",
   "filepath": "published/isobmff/a5-foreman-AVC.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "ctts offsets",
+    "sync table",
+    "sample dependency",
+    "avc1 sample entry"
+  ],
   "notes": ""
 }

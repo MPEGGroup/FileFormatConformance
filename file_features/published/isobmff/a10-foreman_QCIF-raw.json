@@ -1,11 +1,18 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Apple",
+  "description": "Unk video",
   "md5": "3762518688b90bc2234bb81fcd6d0a4f",
   "filepath": "published/isobmff/a10-foreman_QCIF-raw.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "video track",
+    "unknown codec type"
+  ],
   "notes": ""
 }

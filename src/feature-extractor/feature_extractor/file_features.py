@@ -179,9 +179,8 @@ def update_ff_conformance_xls():
             relative_path = os.path.relpath(root, args.fileDir)
             key = os.path.join(relative_path, input_filename)
             if key not in podborski_files:
-                # print(f'key "{key}" not found in ff-conformance.xls')
+                print(f'key "{key}" not found in ff-conformance.xls')
                 continue
-            print(f'{key} => {input_path} + {podborski_files[key]}')
             with open(podborski_files[key], 'r') as file:
                 excel_data = json.load(file)
             with open(input_path, 'r') as file:

@@ -1,11 +1,20 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Apple",
+  "description": "Fragmented",
   "md5": "bc0c9b2fbb3962c09e52af779024abf0",
   "filepath": "published/isobmff/a4-tone-fragmented.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "sync table",
+    "Movie fragment box",
+    "IOD box"
+  ],
   "notes": ""
 }

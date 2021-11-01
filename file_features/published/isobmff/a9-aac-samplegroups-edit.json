@@ -1,11 +1,21 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Apple",
+  "description": "Group",
   "md5": "37a4ed77ee71f0535fdddac1a9a88d0e",
   "filepath": "published/isobmff/a9-aac-samplegroups-edit.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "edit list",
+    "audio track",
+    "sync table",
+    "sample groups",
+    "pre-roll group",
+    "IOD box"
+  ],
   "notes": ""
 }

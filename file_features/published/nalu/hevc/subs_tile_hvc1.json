@@ -1,11 +1,13 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Nokia",
+  "description": "Tile sub-sample information box for HEVC",
   "md5": "2b2fbebfcfd77fe0484f39284900ff70",
   "filepath": "published/nalu/hevc/subs_tile_hvc1.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "sub-sample information"
+  ],
   "notes": ""
 }

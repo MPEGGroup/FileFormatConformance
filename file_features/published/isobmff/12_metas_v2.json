@@ -1,11 +1,23 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Telecom ParisTech",
+  "description": "metas",
   "md5": "8f27892078cd1ebb2befdf60f2b658a5",
   "filepath": "published/isobmff/12_metas_v2.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Free/skip",
+    "normal' order (moov-mdat)",
+    "track enabled bit",
+    "image track (no sync table)",
+    "file-level",
+    "movie-level",
+    "track-level",
+    "data refs",
+    "item naming etc."
+  ],
   "notes": ""
 }

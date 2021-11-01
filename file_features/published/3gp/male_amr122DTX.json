@@ -1,11 +1,19 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Ericsson",
+  "description": "Simple Audio",
   "md5": "b63538e2d017db79cf88a781dbfec410",
   "filepath": "published/3gp/male_amr122DTX.3gp",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "track reference",
+    "video track",
+    "audio track",
+    "sync table"
+  ],
   "notes": ""
 }

@@ -1,11 +1,20 @@
 {
-  "contributor": "",
-  "description": "",
+  "contributor": "Apple",
+  "description": "Protected",
   "md5": "0ca4e979d1baabb89559d72be35ae372",
   "filepath": "published/isobmff/a3-tone-protected.mp4",
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "sync table",
+    "Protected streams (basic)",
+    "IOD box"
+  ],
   "notes": ""
 }
