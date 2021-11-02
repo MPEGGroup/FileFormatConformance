@@ -10,6 +10,7 @@ beautifulsoup4 = "^4.10.0"
 lxml = "^4.6.3"
 GitPython = "^3.1.24"
 openpyxl = "^3.0.9"
+xmltodict = "^0.12.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
@@ -21,6 +22,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
 extract-file-features = "feature_extractor.file_features:extract_file_features"
+extract-file-boxes-gpac = "feature_extractor.file_features:extract_file_boxes_gpac"
 init-file-features = "feature_extractor.file_features:init_file_features"
 update-heif-features = "feature_extractor.file_features:update_heif_features"
 update-ff-conformance-xls = "feature_extractor.file_features:update_ff_conformance_xls"

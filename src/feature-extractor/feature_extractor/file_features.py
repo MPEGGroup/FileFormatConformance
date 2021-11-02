@@ -1,11 +1,10 @@
 import argparse
 import copy
-import os
-import json
 import sys
 from git import Repo
-from .utils import make_dirs_from_path, compute_file_md5, dump_to_json
+from .utils import *
 from openpyxl import load_workbook
+import xmltodict
 
 FILE_ENTRY = {
     'contributor': '',
@@ -191,3 +190,42 @@ def update_ff_conformance_xls():
             file_data['features'] = excel_data['features']
 
             dump_to_json(input_path, file_data)
+
+
+def extract_file_boxes_gpac():
+    parser = argparse.ArgumentParser(description='Extract box structure using MP4Box')
+    parser.add_argument('-d', '--fileDir', help='Directory with the file feature json files', required=True)
+    parser.add_argument('-r', '--rootDir', help='Root directory where conformance files are hosted', required=True)
+    args = parser.parse_args()
+
+    ret_code = execute_cmd('MP4Box')
+    if not ret_code == 0:
+        print('MP4Box is not installed on your system')
+        sys.exit(-1)
+
+    for root, subdirs, files in os.walk(args.fileDir):
+        for filename in files:
+            filename_noext, input_extension = os.path.splitext(filename)
+            if not input_extension == '.json' or '_gpac' in filename_noext:
+                continue
+            input_path = os.path.join(root, filename)
+            with open(input_path, 'r') as f:
+                json_data = json.load(f)
+            if 'filepath' not in json_data:
+                print(f'Skip {input_path} as no "filepath" key was found.')
+                continue
+            mp4_path = os.path.join(args.rootDir, json_data['filepath'])
+            if not os.path.exists(mp4_path):
+                print(f'WARNING: mp4 file "{mp4_path}" found in {filename} does not exist!')
+                continue
+            out_path = os.path.splitext(input_path)[0] + '_gpac.json'
+            # pipe MP4Box to stdout and store it in out
+            process = subprocess.Popen(['MP4Box', '-diso', '-stdb', mp4_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            out, err = process.communicate()
+            try:
+                gpac_dict = xmltodict.parse(out)
+            except xmltodict.expat.ExpatError:
+                print(f'WARNING: Skip "{filename}". Not valid xml output from "{mp4_path}".')
+                continue
+
+            dump_to_json(out_path, gpac_dict)
