@@ -22,7 +22,7 @@ If you conribute a file to the FF conformance suite, you need to provide the des
 ```
 
 - contributor: source of the file
-- descritpion: description of the file
+- descrtiption: description of the file
 - md5: md5 checksum of the file
 - file: path to the file relative to the base URL https://conformance.mpeg.expert/ISOBMFF/
 - version: version of the file

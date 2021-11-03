@@ -1,0 +1,566 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "hevc_tiles_single_track_nalm_all_intra.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@MajorBrand": "iso4",
+      "@MinorVersion": "1",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "iso4"
+        },
+        {
+          "@AlternateBrand": "hvc1"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "1078",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3559213447",
+        "@ModificationTime": "3559213447",
+        "@TimeScale": "600",
+        "@Duration": "600",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "962",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3559213447",
+          "@ModificationTime": "3559213447",
+          "@TrackID": "1",
+          "@Duration": "600",
+          "@Width": "1920.00",
+          "@Height": "1080.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "862",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3559213447",
+            "@ModificationTime": "3559213447",
+            "@TimeScale": "25000",
+            "@Duration": "25000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "89",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "hvc:novpsext:tiles@GPAC0.6.2-DEV-rev1025-g47a7127-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "733",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "669",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "232",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "HEVCSampleEntryBox": {
+                  "@Size": "216",
+                  "@Type": "hvc2",
+                  "@Specification": "p15",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "1920",
+                  "@Height": "1080",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "HEVCConfigurationBox": {
+                    "@Size": "110",
+                    "@Type": "hvcC",
+                    "@Specification": "p15",
+                    "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvhe",
+                    "HEVCDecoderConfigurationRecord": {
+                      "@nal_unit_size": "4",
+                      "@configurationVersion": "1",
+                      "@profile_space": "0",
+                      "@tier_flag": "0",
+                      "@profile_idc": "1",
+                      "@general_profile_compatibility_flags": "60000000",
+                      "@progressive_source_flag": "0",
+                      "@interlaced_source_flag": "0",
+                      "@non_packed_constraint_flag": "0",
+                      "@frame_only_constraint_flag": "0",
+                      "@constraint_indicator_flags": "0",
+                      "@level_idc": "186",
+                      "@min_spatial_segmentation_idc": "0",
+                      "@parallelismType": "2",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@luma_bit_depth": "8",
+                      "@chroma_bit_depth": "8",
+                      "@avgFrameRate": "0",
+                      "@constantFrameRate": "0",
+                      "@numTemporalLayers": "1",
+                      "@temporalIdNested": "1",
+                      "ParameterSetArray": [
+                        {
+                          "@nalu_type": "32",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "24",
+                            "@content": "data:application/octet-string,40010C01FFFF016000000300000300000300000300BAF020"
+                          }
+                        },
+                        {
+                          "@nalu_type": "33",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "32",
+                            "@content": "data:application/octet-string,420101016000000300000300000300000300BAA003C08010E7F97E491B67B690"
+                          }
+                        },
+                        {
+                          "@nalu_type": "34",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "8",
+                            "@content": "data:application/octet-string,4401C5909584DD12"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "BitRateBox": {
+                    "@Size": "20",
+                    "@Type": "btrt",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "@BufferSizeDB": "29802",
+                    "@avgBitRate": "5839736",
+                    "@maxBitRate": "0"
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1000",
+                  "@SampleCount": "25"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "20",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SyncSampleEntry": {
+                  "@sampleNumber": "1"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "13",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "2",
+                    "@SamplesPerChunk": "12",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "120",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "25",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "28013"
+                  },
+                  {
+                    "@Size": "28133"
+                  },
+                  {
+                    "@Size": "28947"
+                  },
+                  {
+                    "@Size": "28917"
+                  },
+                  {
+                    "@Size": "28929"
+                  },
+                  {
+                    "@Size": "29328"
+                  },
+                  {
+                    "@Size": "28824"
+                  },
+                  {
+                    "@Size": "28909"
+                  },
+                  {
+                    "@Size": "29165"
+                  },
+                  {
+                    "@Size": "29375"
+                  },
+                  {
+                    "@Size": "29202"
+                  },
+                  {
+                    "@Size": "28814"
+                  },
+                  {
+                    "@Size": "29274"
+                  },
+                  {
+                    "@Size": "29415"
+                  },
+                  {
+                    "@Size": "29419"
+                  },
+                  {
+                    "@Size": "29720"
+                  },
+                  {
+                    "@Size": "29777"
+                  },
+                  {
+                    "@Size": "29802"
+                  },
+                  {
+                    "@Size": "29523"
+                  },
+                  {
+                    "@Size": "29425"
+                  },
+                  {
+                    "@Size": "29706"
+                  },
+                  {
+                    "@Size": "29107"
+                  },
+                  {
+                    "@Size": "29442"
+                  },
+                  {
+                    "@Size": "29360"
+                  },
+                  {
+                    "@Size": "29441"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "24",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "ChunkEntry": [
+                  {
+                    "@offset": "1110"
+                  },
+                  {
+                    "@offset": "376940"
+                  }
+                ]
+              },
+              "SampleGroupDescriptionBox": [
+                {
+                  "@Size": "46",
+                  "@Type": "sgpd",
+                  "@Version": "1",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl traf",
+                  "@grouping_type": "nalm",
+                  "@default_length": "22",
+                  "NALUMap": {
+                    "@rle": "0",
+                    "@large_size": "0",
+                    "NALUMapEntry": [
+                      {
+                        "@groupID": "2"
+                      },
+                      {
+                        "@groupID": "3"
+                      },
+                      {
+                        "@groupID": "4"
+                      },
+                      {
+                        "@groupID": "5"
+                      },
+                      {
+                        "@groupID": "6"
+                      },
+                      {
+                        "@groupID": "7"
+                      },
+                      {
+                        "@groupID": "8"
+                      },
+                      {
+                        "@groupID": "9"
+                      },
+                      {
+                        "@groupID": "10"
+                      },
+                      {
+                        "@groupID": "0"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "@Size": "123",
+                  "@Type": "sgpd",
+                  "@Version": "1",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl traf",
+                  "@grouping_type": "trif",
+                  "@default_length": "11",
+                  "TileRegionGroupEntry": [
+                    {
+                      "@ID": "2",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "0",
+                      "@y": "0",
+                      "@w": "640",
+                      "@h": "320"
+                    },
+                    {
+                      "@ID": "3",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "640",
+                      "@y": "0",
+                      "@w": "640",
+                      "@h": "320"
+                    },
+                    {
+                      "@ID": "4",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "1280",
+                      "@y": "0",
+                      "@w": "640",
+                      "@h": "320"
+                    },
+                    {
+                      "@ID": "5",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "0",
+                      "@y": "320",
+                      "@w": "640",
+                      "@h": "384"
+                    },
+                    {
+                      "@ID": "6",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "640",
+                      "@y": "320",
+                      "@w": "640",
+                      "@h": "384"
+                    },
+                    {
+                      "@ID": "7",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "1280",
+                      "@y": "320",
+                      "@w": "640",
+                      "@h": "384"
+                    },
+                    {
+                      "@ID": "8",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "0",
+                      "@y": "704",
+                      "@w": "640",
+                      "@h": "384"
+                    },
+                    {
+                      "@ID": "9",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "640",
+                      "@y": "704",
+                      "@w": "640",
+                      "@h": "384"
+                    },
+                    {
+                      "@ID": "10",
+                      "@tileGroup": "1",
+                      "@independent": "2",
+                      "@full_picture": "0",
+                      "@filter_disabled": "1",
+                      "@x": "1280",
+                      "@y": "704",
+                      "@w": "640",
+                      "@h": "384"
+                    }
+                  ]
+                }
+              ],
+              "SampleGroupBox": {
+                "@Size": "32",
+                "@Type": "sbgp",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "nalm",
+                "@grouping_type_parameter": "trif",
+                "SampleGroupBoxEntry": {
+                  "@sample_count": "25",
+                  "@group_description_index": "1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "729975",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "729967"
+    },
+    "FreeSpaceBox": {
+      "@Size": "75",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "67"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 1.0.1-rev0-gd8538e8a-master"
+}

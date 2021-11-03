@@ -192,11 +192,20 @@ def update_ff_conformance_xls():
             dump_to_json(input_path, file_data)
 
 
+def get_gpac_version():
+    process = subprocess.Popen(['MP4Box', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = process.communicate()
+    version = err.decode("utf-8").split('\n')[0].strip()
+    return version
+
+
 def extract_file_boxes_gpac():
     parser = argparse.ArgumentParser(description='Extract box structure using MP4Box')
     parser.add_argument('-d', '--fileDir', help='Directory with the file feature json files', required=True)
     parser.add_argument('-r', '--rootDir', help='Root directory where conformance files are hosted', required=True)
     args = parser.parse_args()
+
+    mp4box_version = get_gpac_version()
 
     ret_code = execute_cmd('MP4Box')
     if not ret_code == 0:
@@ -220,12 +229,12 @@ def extract_file_boxes_gpac():
                 continue
             out_path = os.path.splitext(input_path)[0] + '_gpac.json'
             # pipe MP4Box to stdout and store it in out
-            process = subprocess.Popen(['MP4Box', '-diso', '-stdb', mp4_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            process = subprocess.Popen(['MP4Box', '-diso', '-std', mp4_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             out, err = process.communicate()
             try:
                 gpac_dict = xmltodict.parse(out)
             except xmltodict.expat.ExpatError:
                 print(f'WARNING: Skip "{filename}". Not valid xml output from "{mp4_path}".')
                 continue
-
+            gpac_dict['mp4boxVersion'] = mp4box_version
             dump_to_json(out_path, gpac_dict)
