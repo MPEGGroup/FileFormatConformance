@@ -7,6 +7,7 @@ List of features
 - search
   - box 4CC (+ optional version / flags)
   - feature ()
+  - 4CCs which are not box types (sample groups, sample entry, etc.)
 - view of all the files in the conformance suite 
   - for each file, basic info, contributor / description
   - more data if you select a file

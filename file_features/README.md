@@ -14,6 +14,8 @@ If you conribute a file to the FF conformance suite, you need to provide the des
   "md5": "...",
   "filepath": "...",
   "version": 1,
+  "date_created": "... movie header",
+  "date_modified": "... movie header",
   "features": [
     "...",
     "..."
