@@ -5,8 +5,7 @@
       "fourcc": "alst",
       "description": "Alternative startup sequence",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
@@ -18,40 +17,35 @@
       "fourcc": "prol",
       "description": "Audio pre-roll",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "rap ",
       "description": "Random access point",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "rash",
       "description": "Rate share",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "roll",
       "description": "Pre/Post roll group",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "sap ",
       "description": "Stream access point",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
@@ -63,10 +57,8 @@
       "fourcc": "tele",
       "description": "Temporal Level",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     }
-  ],
-  "gpac_only_entries": []
+  ]
 }

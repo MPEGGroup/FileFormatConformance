@@ -487,8 +487,13 @@
     },
     {
       "fourcc": "sgpd",
-      "description": "Sample group definition box",
-      "containers": []
+      "description": "Sample group description box",
+      "versions": [0, 1, 2],
+      "flags": [],
+      "containers": [
+        "stbl",
+        "traf"
+      ]
     },
     {
       "fourcc": "sidx",
