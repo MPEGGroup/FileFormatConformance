@@ -194,7 +194,9 @@
     },
     {
       "fourcc": "iloc",
-      "description": "item location",
+      "description": "item location box",
+      "versions": [0, 1, 2],
+      "flags": [],
       "containers": [
         "meta"
       ]
@@ -235,8 +237,12 @@
     },
     {
       "fourcc": "iref",
-      "description": "Item reference",
-      "containers": []
+      "description": "Item reference box",
+      "versions": [0, 1],
+      "flags": [],
+      "containers": [
+        "meta"
+      ]
     },
     {
       "fourcc": "kmat",

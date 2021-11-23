@@ -4,43 +4,65 @@
     {
       "fourcc": "auxl",
       "description": "Auxiliary image item reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "base",
       "description": "Pre-derived image item base reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "dimg",
       "description": "Derived image item reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "dpnd",
       "description": "Item coding dependency reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "exbl",
       "description": "Scalable image item reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "grid",
       "description": "Image item grid reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "thmb",
       "description": "Thumbnail image item reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
     },
     {
       "fourcc": "pred",
       "description": "Predictively coded item reference",
-      "containers": []
+      "containers": [
+        "iref"
+      ]
+    },
+    {
+      "fourcc": "tbas",
+      "description": "HEVC Tile track base item reference",
+      "containers": [
+        "iref"
+      ]
     }
-  ],
-  "gpac_only_entries": []
+  ]
 }

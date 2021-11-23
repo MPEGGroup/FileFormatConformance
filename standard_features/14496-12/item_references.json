@@ -15,25 +15,5 @@
         "iref"
       ]
     }
-  ],
-  "gpac_only_entries": [
-    {
-      "fourcc": "tbas",
-      "containers": [
-        "iref"
-      ]
-    },
-    {
-      "fourcc": "iref",
-      "containers": [
-        "meta"
-      ]
-    },
-    {
-      "fourcc": "iref",
-      "containers": [
-        "meta"
-      ]
-    }
   ]
 }
