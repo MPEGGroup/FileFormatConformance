@@ -2,6 +2,58 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "iroi",
+      "description": "SVC region of interest box",
+      "containers": [
+        "scif"
+      ]
+    },
+    {
+      "fourcc": "ldep",
+      "description": "Tier dependency box",
+      "containers": [
+        "scif",
+        "mvif"
+      ]
+    },
+    {
+      "fourcc": "svdr",
+      "description": "SVC dependency range",
+      "containers": [
+        "scif"
+      ]
+    },
+    {
+      "fourcc": "svip",
+      "description": "Initial parameter sets box for tiers",
+      "containers": [
+        "scif",
+        "mvif"
+      ]
+    },
+    {
+      "fourcc": "svpr",
+      "description": "Priority range",
+      "containers": [
+        "scif",
+        "mvif"
+      ]
+    },
+    {
+      "fourcc": "tran",
+      "description": "SVC lightweight transcoding",
+      "containers": [
+        "scif"
+      ]
+    },
+    {
+      "fourcc": "rrgn",
+      "description": "SVC rect region box",
+      "containers": [
+        "scif"
+      ]
+    },
+    {
       "fourcc": "buff",
       "description": "Buffering information",
       "containers": []

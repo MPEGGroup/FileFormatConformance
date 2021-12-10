@@ -51,22 +51,8 @@
       ]
     },
     {
-      "fourcc": "iroi",
-      "description": "SVC region of interest box",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
       "fourcc": "lbli",
       "description": "HEVC External base layer",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
-      "fourcc": "ldep",
-      "description": "Tier dependency box",
       "containers": [
         "sgpd"
       ]
@@ -128,13 +114,6 @@
       ]
     },
     {
-      "fourcc": "rrgn",
-      "description": "SVC rect region box",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
       "fourcc": "rror",
       "description": "Rectangular region order",
       "containers": [
@@ -191,36 +170,8 @@
       ]
     },
     {
-      "fourcc": "svdr",
-      "description": "SVC dependency range",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
-      "fourcc": "svip",
-      "description": "Initial parameter sets box for tiers",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
-      "fourcc": "svpr",
-      "description": "Priority range",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
       "fourcc": "sync",
       "description": "Sync sample groups",
-      "containers": [
-        "sgpd"
-      ]
-    },
-    {
-      "fourcc": "tran",
-      "description": "SVC lightweight transcoding",
       "containers": [
         "sgpd"
       ]
