@@ -11,17 +11,23 @@
     {
       "fourcc": "deps",
       "description": "track containing the depth view",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "evcr",
       "description": "EVC slice base track",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "mixn",
       "description": "used in indicating combinations that result into mixed network abstraction layer unit types in a coded picture of VVC",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "oref",
@@ -33,7 +39,9 @@
     {
       "fourcc": "recr",
       "description": "resolved by extracting an indicated subset of the referenced VVC track to reconstruct a VVC bitstream",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "sabt",
@@ -59,7 +67,9 @@
     {
       "fourcc": "subp",
       "description": "the referenced VVC subpicture tracks or 'alte' track groups of VVC subpicture tracks are used to reconstruct a VVC bitstream",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "swfr",
@@ -85,18 +95,23 @@
     {
       "fourcc": "vref",
       "description": "reference to a track that contains a 'vopi' sample group for VVC video",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "vreg",
       "description": "reference to a VVC operating point entity group",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "vvcN",
       "description": "the referenced track is a non video coding layer track of VVC",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     }
-  ],
-  "gpac_only_entries": []
+  ]
 }
