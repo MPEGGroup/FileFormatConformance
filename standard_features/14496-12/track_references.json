@@ -4,7 +4,9 @@
     {
       "fourcc": "auxl",
       "description": "Auxiliary track reference",
-      "containers": []
+      "containers": [
+        "tref"
+      ]
     },
     {
       "fourcc": "font",
@@ -23,13 +25,6 @@
     {
       "fourcc": "hint",
       "description": "links hint track to original media track",
-      "containers": [
-        "tref"
-      ]
-    },
-    {
-      "fourcc": "iloc",
-      "description": "Item data location (item reference)",
       "containers": [
         "tref"
       ]
@@ -61,23 +56,24 @@
       "containers": [
         "tref"
       ]
-    }
-  ],
-  "gpac_only_entries": [
+    },
     {
       "fourcc": "cdsc",
+      "description": "this track describes the referenced track",
       "containers": [
         "tref"
       ]
     },
     {
       "fourcc": "adda",
+      "description": "additional audio tracks im multi-track DRC configuration",
       "containers": [
         "tref"
       ]
     },
     {
       "fourcc": "adrc",
+      "description": "DRC metadata track containing dynamic DRC data",
       "containers": [
         "tref"
       ]
