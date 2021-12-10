@@ -4,243 +4,260 @@
     {
       "fourcc": "aud ",
       "description": "Access unit delimiter",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "avll",
       "description": "AVC layer description group",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "avss",
       "description": "AVC Sub-sequence group",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "dcfi",
       "description": "VVC decoding capability information",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "dtrt",
       "description": "SVC decode re-timing",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "eob ",
       "description": "End of bitstream",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "eos ",
       "description": "End of sequence",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "iroi",
       "description": "SVC region of interest box",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "lbli",
       "description": "HEVC External base layer",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "ldep",
       "description": "Tier dependency box",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "linf",
       "description": "L-HEVC and VVC layer information",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "minp",
       "description": "VVC mixed NAL unit type pictures",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "mvif",
       "description": "MVC Scalability Information",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "nalm",
       "description": "NAL unit map entry",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "oinf",
       "description": "L-HEVC operating points information",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "opth",
       "description": "L-HEVC and VVC Operating Point Decode Time Hint",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "pase",
       "description": "Parameter set",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "pss1",
       "description": "In-band parameter set indication",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "rrgn",
       "description": "SVC rect region box",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "rror",
       "description": "Rectangular region order",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "scif",
       "description": "SVC Scalability Information",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "scnm",
       "description": "AVC/SVC/MVC map groups",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "spid",
       "description": "VVC subpicture ID",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "spli",
       "description": "VVC subpicture level information",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "spor",
       "description": "VVC subpicture order",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "stsa",
       "description": "Step-wise Temporal Layer",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "sulm",
       "description": "VVC subpicture layout",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "svdr",
       "description": "SVC dependency range",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "svip",
       "description": "Initial parameter sets box for tiers",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "svpr",
       "description": "Priority range",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "sync",
       "description": "Sync sample groups",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "tran",
       "description": "SVC lightweight transcoding",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "trif",
       "description": "HEVC Tile Region",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "tsas",
       "description": "Temporal Sub-Layer",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "tscl",
       "description": "Temporal Layer",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "vipr",
       "description": "View priority",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     },
     {
       "fourcc": "vopi",
       "description": "VVC operating points information",
-      "containers": []
-    }
-  ],
-  "gpac_only_entries": [
-    {
-      "fourcc": "seig",
       "containers": [
-        "stbl",
-        "traf"
+        "sgpd"
       ]
     }
   ]

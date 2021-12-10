@@ -11,7 +11,9 @@
     {
       "fourcc": "drap",
       "description": "Dependent random access point",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "prol",
@@ -51,7 +53,9 @@
     {
       "fourcc": "stmi",
       "description": "SampleToMetadataItemEntry",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "tele",
