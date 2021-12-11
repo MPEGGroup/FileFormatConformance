@@ -4,43 +4,58 @@
     {
       "fourcc": "eqiv",
       "description": "equivalent samples",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "refs",
       "description": "Direct reference samples list",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "aebr",
       "description": "Auto exposure bracketing",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "afbr",
       "description": "Flash exposure bracketing",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "dobr",
       "description": "Depth of field bracketing",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "fobr",
       "description": "Focus bracketing exposure bracketing",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "pano",
       "description": "Panorama sample group",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     },
     {
       "fourcc": "wbbr",
       "description": "White balance bracketing",
-      "containers": []
+      "containers": [
+        "sgpd"
+      ]
     }
-  ],
-  "gpac_only_entries": []
+  ]
 }
