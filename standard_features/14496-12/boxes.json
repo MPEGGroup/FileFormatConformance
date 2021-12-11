@@ -2,6 +2,27 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "ipco",
+      "description": "ItemPropertyContainerBox",
+      "containers": [
+        "iprp"
+      ]
+    },
+    {
+      "fourcc": "ipma",
+      "description": "ItemPropertyAssociation",
+      "containers": [
+        "iprp"
+      ]
+    },
+    {
+      "fourcc": "iprp",
+      "description": "Item Properties Box",
+      "containers": [
+        "meta"
+      ]
+    },
+    {
       "fourcc": "assp",
       "description": "alternative startup sequence properties",
       "containers": []
