@@ -2,6 +2,20 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "auxi",
+      "description": "AuxiliaryTypeInfoBox",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "ccst",
+      "description": "Coding Constraints",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
       "fourcc": "md5i",
       "description": "MD5IntegrityBox",
       "containers": []
@@ -51,12 +65,6 @@
       "fourcc": "grpl",
       "containers": [
         "meta"
-      ]
-    },
-    {
-      "fourcc": "ccst",
-      "containers": [
-        "sample_entry"
       ]
     },
     {
