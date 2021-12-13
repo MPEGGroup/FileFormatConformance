@@ -56,12 +56,18 @@
     {
       "fourcc": "buff",
       "description": "Buffering information",
-      "containers": []
+      "containers": [
+        "scif",
+        "mvif",
+        "mvcg"
+      ]
     },
     {
       "fourcc": "mstv",
       "description": "MVC sub track view box",
-      "containers": []
+      "containers": [
+        "strd"
+      ]
     },
     {
       "fourcc": "mvcg",
@@ -73,139 +79,178 @@
     {
       "fourcc": "mvci",
       "description": "Multiview Information",
-      "containers": []
+      "containers": [
+        "minf"
+      ]
     },
     {
-      "fourcc": "mvdr",
+      "fourcc": "3dpr",
       "description": "MVDDepthResolutionBox",
-      "containers": []
+      "containers": [
+        "mvdC",
+        "a3dC"
+      ]
     },
     {
       "fourcc": "mvra",
       "description": "Multiview Relation Attribute",
-      "containers": []
+      "containers": [
+        "mvcg",
+        "swtc"
+      ]
     },
     {
       "fourcc": "sdep",
       "description": "Sample dependency",
-      "containers": []
+      "containers": [
+        "stbl"
+      ]
     },
     {
       "fourcc": "seii",
       "description": "SEI information box",
-      "containers": []
+      "containers": [
+        "schi",
+        "visual_sample_entry"
+      ]
     },
     {
       "fourcc": "sstl",
       "description": "SVC sub track layer box",
-      "containers": []
+      "containers": [
+        "strd"
+      ]
     },
     {
       "fourcc": "stmg",
       "description": "MVC sub track multiview group box",
-      "containers": []
+      "containers": [
+        "strd"
+      ]
     },
     {
       "fourcc": "stti",
       "description": "Sub track tier box",
-      "containers": []
+      "containers": [
+        "strd"
+      ]
     },
     {
       "fourcc": "swtc",
       "description": "Multiview Group Relation",
-      "containers": []
+      "containers": [
+        "mvci"
+      ]
     },
     {
       "fourcc": "tibr",
       "description": "Tier Bit rate",
-      "containers": []
+      "containers": [
+        "scif",
+        "mvif",
+        "mvcg"
+      ]
     },
     {
       "fourcc": "tiri",
       "description": "Tier Information",
-      "containers": []
+      "containers": [
+        "scif",
+        "mvif",
+        "mvcg"
+      ]
     },
     {
       "fourcc": "tstb",
       "description": "TileSubTrackGroupBox",
-      "containers": []
+      "containers": [
+        "strd"
+      ]
     },
     {
       "fourcc": "vwdi",
       "description": "Multiview Scene Information",
-      "containers": []
-    }
-  ],
-  "gpac_only_entries": [
-    {
-      "fourcc": "avcC",
       "containers": [
-        "avc1",
-        "avc2",
-        "avc3",
-        "avc4",
-        "encv",
-        "resv",
-        "ipco"
-      ]
-    },
-    {
-      "fourcc": "avcC",
-      "containers": [
-        "avc1",
-        "avc2",
-        "avc3",
-        "avc4",
-        "svc1",
-        "svc2",
-        "encv",
-        "resv"
-      ]
-    },
-    {
-      "fourcc": "avcC",
-      "containers": [
-        "avc1",
-        "avc2",
-        "avc3",
-        "avc4",
-        "mvc1",
-        "mvc2",
-        "encv",
-        "resv"
-      ]
-    },
-    {
-      "fourcc": "hvcC",
-      "containers": [
-        "hvc1",
-        "hev1",
-        "hvc2",
-        "hev2",
-        "encv",
-        "resv",
-        "ipco",
-        "dvhe"
-      ]
-    },
-    {
-      "fourcc": "hvcC",
-      "containers": [
-        "hvc1",
-        "hev1",
-        "hvc2",
-        "hev2",
-        "lhv1",
-        "lhe1",
-        "encv",
-        "resv",
-        "ipco"
+        "mvcg"
       ]
     },
     {
       "fourcc": "vwid",
+      "description": "View identifier",
       "containers": [
-        "video_sample_entry"
+        "mvif",
+        {
+          "visual_sample_entry": [
+            "avc1",
+            "avc2",
+            "avc3",
+            "avc4",
+            "mvc1",
+            "mvc2",
+            "mvc3",
+            "mvc4",
+            "mvd1",
+            "mvd2",
+            "mvd3",
+            "mvd4",
+            "a3d1",
+            "a3d2",
+            "a3d3",
+            "a3d4"
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "avcC",
+      "description": "AVC Configuration",
+      "containers": [
+        "ipco",
+        {
+          "visual_sample_entry": [
+            "resv",
+            "encv",
+            "avc1",
+            "avc2",
+            "avc3",
+            "avc4",
+            "avcp"
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "hvcC",
+      "description": "HEVC Configuration",
+      "containers": [
+        "ipco",
+        {
+          "visual_sample_entry": [
+            "resv",
+            "encv",
+            "hvc1",
+            "hev1",
+            "hvc2",
+            "hev2",
+            "hvc3",
+            "hev3"
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "lhvC",
+      "description": "Layered HEVC Configuration",
+      "containers": [
+        "ipco",
+        {
+          "visual_sample_entry": [
+            "resv",
+            "encv",
+            "lhv1",
+            "lhe1"
+          ]
+        }
       ]
     }
   ]
