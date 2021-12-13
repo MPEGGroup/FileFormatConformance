@@ -1,21 +1,52 @@
 {
   "description": "Boxes (also called atoms)",
-  "entries": [],
-  "gpac_only_entries": [
+  "entries": [
+    {
+      "fourcc": "vttC",
+      "description": "WebVTTConfigurationBox",
+      "containers": [
+        {
+          "plain_text_sample_entry": [
+            "wvtt"
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "vlab",
+      "description": "WebVTT Source Label",
+      "containers": [
+        {
+          "plain_text_sample_entry": [
+            "wvtt"
+          ]
+        }
+      ]
+    },
     {
       "fourcc": "wvtt",
+      "description": "WebVTT data",
       "containers": [
         "stsd"
       ]
     },
     {
       "fourcc": "vttc",
+      "description": "VTTCueBox",
       "containers": [
         "vtt_sample"
       ]
     },
     {
       "fourcc": "vtte",
+      "description": "VTTEmptyCueBox",
+      "containers": [
+        "vtt_sample"
+      ]
+    },
+    {
+      "fourcc": "vtta",
+      "description": "VTTAdditionalTextBox",
       "containers": [
         "vtt_sample"
       ]
