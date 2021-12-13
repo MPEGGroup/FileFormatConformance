@@ -1,0 +1,96 @@
+{
+  "description": "Entity group types",
+  "entries": [
+    {
+      "fourcc": "eqiv",
+      "description": "equivalent entity grouping",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "ster",
+      "description": "Stereo entity grouping",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "aebr",
+      "description": "Auto exposure bracketing entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "afbr",
+      "description": "Flash exposure information entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "albc",
+      "description": "Album Collection entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "brst",
+      "description": "Burst image entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "iaug",
+      "description": "Image item with an audio track",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "tsyn",
+      "description": "Time-synchronized capture entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "dobr",
+      "description": "Depth of field bracketing entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "favc",
+      "description": "Favorites Collection entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "fobr",
+      "description": "Focus bracketing exposure bracketing",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "pano",
+      "description": "Panorama entity group",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "wbbr",
+      "description": "White balance bracketing entity group",
+      "containers": [
+        "grpl"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "description": "Entity group types",
+  "entries": [
+    {
+      "fourcc": "acgl",
+      "description": "group of VVC subpicture tracks with common properties",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "amgl",
+      "description": "group of VVC subpicture tracks with different properties",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "opeg",
+      "description": "VVC operating points",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "swtk",
+      "description": "VVC switchable tracks",
+      "containers": [
+        "grpl"
+      ]
+    },
+    {
+      "fourcc": "vvcb",
+      "description": "VVC bitstream",
+      "containers": [
+        "grpl"
+      ]
+    }
+  ]
+}
