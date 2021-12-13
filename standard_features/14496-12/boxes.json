@@ -183,7 +183,9 @@
     {
       "fourcc": "grpl",
       "description": "Groups list box",
-      "containers": []
+      "containers": [
+        "meta"
+      ]
     },
     {
       "fourcc": "hdlr",

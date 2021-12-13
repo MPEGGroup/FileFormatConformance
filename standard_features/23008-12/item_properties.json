@@ -1,0 +1,261 @@
+{
+  "description": "Image item properties",
+  "entries": [
+    {
+      "fourcc": "auxC",
+      "type": "descriptive",
+      "description": "Auxiliary type",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "avcC",
+      "type": "descriptive",
+      "description": "AVC Image item configuration",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "clap",
+      "type": "transformative",
+      "description": "Clean aperture",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "colr",
+      "type": "descriptive",
+      "description": "Colour information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "hvcC",
+      "type": "descriptive",
+      "description": "HEVC Image item configuration",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "imir",
+      "type": "transformative",
+      "description": "Image mirroring",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "irot",
+      "type": "transformative",
+      "description": "Image rotation",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "ispe",
+      "type": "descriptive",
+      "description": "Image spatial extents",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "jpgC",
+      "type": "descriptive",
+      "description": "JPEG image item configuration",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "lhvC",
+      "type": "descriptive",
+      "description": "Layered HEVC Image item configuration",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "lsel",
+      "type": "descriptive",
+      "description": "Layer selection",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "oinf",
+      "type": "descriptive",
+      "description": "HEVC operating point",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "pasp",
+      "type": "descriptive",
+      "description": "Pixel aspect ratio",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "pixi",
+      "type": "descriptive",
+      "description": "Pixel information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "rloc",
+      "type": "descriptive",
+      "description": "Relative location",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "subs",
+      "type": "descriptive",
+      "description": "Subsample information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "tols",
+      "type": "descriptive",
+      "description": "Layered HEVC Target output layer set property",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "aebr",
+      "type": "descriptive",
+      "description": "Auto Exposure Information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "afbr",
+      "type": "descriptive",
+      "description": "Flash exposure information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "altt",
+      "type": "descriptive",
+      "description": "Accessibility text",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "crtt",
+      "type": "descriptive",
+      "description": "Creation time information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "dobr",
+      "type": "descriptive",
+      "description": "Depth of field information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "fobr",
+      "type": "descriptive",
+      "description": "Focus information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "iscl",
+      "type": "transformative",
+      "description": "Image scaling",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "mdft",
+      "type": "descriptive",
+      "description": "Modification time information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "pano",
+      "type": "descriptive",
+      "description": "Panorama information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "rref",
+      "type": "descriptive",
+      "description": "Required reference types",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "udes",
+      "type": "descriptive",
+      "description": "User description",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "wbbr",
+      "type": "descriptive",
+      "description": "White balance information",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "cclv",
+      "type": "descriptive",
+      "description": "Content colour volume",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "mdcv",
+      "type": "descriptive",
+      "description": "Mastering display colour volume",
+      "containers": [
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "clli",
+      "type": "descriptive",
+      "description": "Content light level",
+      "containers": [
+        "ipco"
+      ]
+    }
+  ]
+}

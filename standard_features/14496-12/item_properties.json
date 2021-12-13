@@ -1,0 +1,13 @@
+{
+  "description": "Image item properties",
+  "entries": [
+    {
+      "fourcc": "brnd",
+      "type": "descriptive",
+      "description": "Item brand (type)",
+      "containers": [
+        "ipco"
+      ]
+    }
+  ]
+}

@@ -32,6 +32,11 @@ SPEC_FEATURES = {
         'entries': [],
         'gpac_only_entries': []
     },
+    'item_properties': {
+        'description': 'Image item properties',
+        'entries': [],
+        'gpac_only_entries': []
+    },
     'boxes': {
         'description': 'Boxes (also called atoms)',
         'entries': [],
@@ -117,6 +122,10 @@ def extract_spec_features_mp4ra():
     tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'sample-groups.csv')
     with open(tmp_path, 'r') as f:
         csv_to_spec(f, 'sample_groups')
+    # item properties
+    tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'item-properties.csv')
+    with open(tmp_path, 'r') as f:
+        csv_to_spec(f, 'item_properties')
     # boxes
     tmp_path = os.path.join(MP4RA_PATH, 'CSV', 'boxes.csv')
     with open(tmp_path, 'r') as f:
