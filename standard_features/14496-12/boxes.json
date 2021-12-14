@@ -2,6 +2,69 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "cprt",
+      "description": "copyright",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "kind",
+      "description": "Track kind",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "tsel",
+      "description": "Track selection",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "strk",
+      "description": "Sub track information",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "hnti",
+      "description": "Hint information",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "hinf",
+      "description": "hint information (statistics)",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "ludt",
+      "description": "Track loudness container",
+      "containers": [
+        "udta"
+      ]
+    },
+    {
+      "fourcc": "tlou",
+      "description": "Track loudness base",
+      "containers": [
+        "ludt"
+      ]
+    },
+    {
+      "fourcc": "alou",
+      "description": "Album loudness base",
+      "containers": [
+        "ludt"
+      ]
+    },
+    {
       "fourcc": "url ",
       "description": "URL data location",
       "containers": [
@@ -829,18 +892,6 @@
   ],
   "gpac_only_entries": [
     {
-      "fourcc": "cprt",
-      "containers": [
-        "udta"
-      ]
-    },
-    {
-      "fourcc": "kind",
-      "containers": [
-        "udta"
-      ]
-    },
-    {
       "fourcc": "elng",
       "containers": [
         "mdia"
@@ -870,18 +921,6 @@
       "fourcc": "mp4a",
       "containers": [
         "stsd"
-      ]
-    },
-    {
-      "fourcc": "tsel",
-      "containers": [
-        "udta"
-      ]
-    },
-    {
-      "fourcc": "strk",
-      "containers": [
-        "udta"
       ]
     },
     {
@@ -981,21 +1020,9 @@
       ]
     },
     {
-      "fourcc": "hnti",
-      "containers": [
-        "udta"
-      ]
-    },
-    {
       "fourcc": "sdp ",
       "containers": [
         "hnti"
-      ]
-    },
-    {
-      "fourcc": "hinf",
-      "containers": [
-        "udta"
       ]
     },
     {
@@ -1128,12 +1155,6 @@
       "containers": [
         "rtp",
         "srtp"
-      ]
-    },
-    {
-      "fourcc": "name",
-      "containers": [
-        "udta"
       ]
     },
     {
