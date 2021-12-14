@@ -2,6 +2,119 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "elng",
+      "description": "ExtendedLanguageBox",
+      "containers": [
+        "mdia"
+      ]
+    },
+    {
+      "fourcc": "btrt",
+      "description": "Bit-rate information",
+      "containers": [
+        "sample_entry"
+      ]
+    },
+    {
+      "fourcc": "pasp",
+      "description": "Pixel aspect ratio",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "clap",
+      "description": "Clean aperture",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "cclv",
+      "description": "Content colour volume",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "colr",
+      "description": "Color information",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "clli",
+      "description": "Content Light Level",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "mdcv",
+      "description": "Mastering display colour volume",
+      "containers": [
+        "visual_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "scrb",
+      "description": "Scramble scheme information",
+      "containers": [
+        "sample_entry",
+        "ipco"
+      ]
+    },
+    {
+      "fourcc": "chnl",
+      "description": "Channel layout",
+      "containers": [
+        "audio_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "dmix",
+      "description": "Downmix instructions",
+      "containers": [
+        "audio_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "srat",
+      "description": "Sampling rate",
+      "containers": [
+        "audio_sample_entry"
+      ]
+    },
+    {
+      "fourcc": "txtC",
+      "description": "Text stream configuration",
+      "containers": [
+        {
+          "metadata_sample_entry": [
+            "mett"
+          ],
+          "plain_text_sample_entry": [
+            "stxt"
+          ],
+          "subtitle_sample_entry": [
+            "sbtt"
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "uriI",
+      "description": "URI Information",
+      "containers": [
+        {
+          "metadata_sample_entry": [
+            "urim"
+          ]
+        }
+      ]
+    },
+    {
       "fourcc": "cprt",
       "description": "copyright",
       "containers": [
@@ -892,32 +1005,6 @@
   ],
   "gpac_only_entries": [
     {
-      "fourcc": "elng",
-      "containers": [
-        "mdia"
-      ]
-    },
-    {
-      "fourcc": "btrt",
-      "containers": [
-        "sample_entry"
-      ]
-    },
-    {
-      "fourcc": "pasp",
-      "containers": [
-        "video_sample_entry",
-        "ipco"
-      ]
-    },
-    {
-      "fourcc": "clap",
-      "containers": [
-        "video_sample_entry",
-        "ipco"
-      ]
-    },
-    {
       "fourcc": "mp4a",
       "containers": [
         "stsd"
@@ -963,12 +1050,6 @@
       "fourcc": "stvi",
       "containers": [
         "schi"
-      ]
-    },
-    {
-      "fourcc": "chnl",
-      "containers": [
-        "audio_sample_entry"
       ]
     },
     {
@@ -1173,14 +1254,6 @@
       "fourcc": "metx",
       "containers": [
         "stsd"
-      ]
-    },
-    {
-      "fourcc": "txtC",
-      "containers": [
-        "stxt",
-        "mett",
-        "sbtt"
       ]
     },
     {
