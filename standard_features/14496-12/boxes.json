@@ -2,6 +2,38 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "metx",
+      "description": "XML timed metadata",
+      "type": "metadata_sample_entry",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "mett",
+      "description": "Text timed metadata that is not XML",
+      "type": "metadata_sample_entry",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "urim",
+      "description": "Binary timed metadata identified by URI",
+      "type": "metadata_sample_entry",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
+      "fourcc": "mebx",
+      "description": "Timed metadata multiplex",
+      "type": "metadata_sample_entry",
+      "containers": [
+        "stsd"
+      ]
+    },
+    {
       "fourcc": "elng",
       "description": "ExtendedLanguageBox",
       "containers": [
@@ -1012,51 +1044,9 @@
   ],
   "gpac_only_entries": [
     {
-      "fourcc": "metx",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "metx",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
       "fourcc": "stvi",
       "containers": [
         "schi"
-      ]
-    },
-    {
-      "fourcc": "ghnt",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "ghnt",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "ghnt",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "ghnt",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "ghnt",
-      "containers": [
-        "stsd"
       ]
     },
     {
@@ -1201,24 +1191,6 @@
       "fourcc": "rssr",
       "containers": [
         "rrtp"
-      ]
-    },
-    {
-      "fourcc": "metx",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "metx",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "metx",
-      "containers": [
-        "stsd"
       ]
     }
   ]
