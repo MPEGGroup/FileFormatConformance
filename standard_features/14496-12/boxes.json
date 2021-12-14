@@ -2,6 +2,34 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "url ",
+      "description": "URL data location",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "urn ",
+      "description": "URN data location",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "imdt",
+      "description": "identified media data",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
+      "fourcc": "snim",
+      "description": "sequence number identified media data",
+      "containers": [
+        "dref"
+      ]
+    },
+    {
       "fourcc": "ipco",
       "description": "ItemPropertyContainerBox",
       "containers": [
@@ -800,30 +828,6 @@
     }
   ],
   "gpac_only_entries": [
-    {
-      "fourcc": "url ",
-      "containers": [
-        "dref"
-      ]
-    },
-    {
-      "fourcc": "url ",
-      "containers": [
-        "dref"
-      ]
-    },
-    {
-      "fourcc": "urn ",
-      "containers": [
-        "dref"
-      ]
-    },
-    {
-      "fourcc": "urn ",
-      "containers": [
-        "dref"
-      ]
-    },
     {
       "fourcc": "cprt",
       "containers": [
