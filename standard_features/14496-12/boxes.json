@@ -150,6 +150,13 @@
       ]
     },
     {
+      "fourcc": "sdp ",
+      "description": "SDP information",
+      "containers": [
+        "hnti"
+      ]
+    },
+    {
       "fourcc": "hinf",
       "description": "hint information (statistics)",
       "containers": [
@@ -1005,36 +1012,6 @@
   ],
   "gpac_only_entries": [
     {
-      "fourcc": "mp4a",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "mp4s",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "mp4s",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "mp4s",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
-      "fourcc": "mp4s",
-      "containers": [
-        "stsd"
-      ]
-    },
-    {
       "fourcc": "metx",
       "containers": [
         "stsd"
@@ -1053,24 +1030,6 @@
       ]
     },
     {
-      "fourcc": "fdsa",
-      "containers": [
-        "fdp_sample"
-      ]
-    },
-    {
-      "fourcc": "fdpa",
-      "containers": [
-        "fdsa"
-      ]
-    },
-    {
-      "fourcc": "extr",
-      "containers": [
-        "fdsa"
-      ]
-    },
-    {
       "fourcc": "ghnt",
       "containers": [
         "stsd"
@@ -1098,12 +1057,6 @@
       "fourcc": "ghnt",
       "containers": [
         "stsd"
-      ]
-    },
-    {
-      "fourcc": "sdp ",
-      "containers": [
-        "hnti"
       ]
     },
     {
