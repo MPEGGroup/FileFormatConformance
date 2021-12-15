@@ -2,6 +2,68 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "rssr",
+      "description": "ReceivedSsrcBox",
+      "type": "Box",
+      "containers": [
+        {
+          "hint_sample_entry": ["rrtp"]
+        }
+      ]
+    },
+    {
+      "fourcc": "tssy",
+      "description": "timestamp synchronyzation",
+      "type": "Box",
+      "containers": [
+        {
+          "hint_sample_entry": ["rrtp"]
+        }
+      ]
+    },
+    {
+      "fourcc": "tims",
+      "description": "timescale entry",
+      "type": "Box",
+      "containers": [
+        {
+          "hint_sample_entry": [
+            "rrtp",
+            "srtp",
+            "rtp ",
+            "fdp "
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "tsro",
+      "description": "timeoffset",
+      "type": "Box",
+      "containers": [
+        {
+          "hint_sample_entry": [
+            "rrtp",
+            "srtp",
+            "rtp "
+          ]
+        }
+      ]
+    },
+    {
+      "fourcc": "snro",
+      "description": "sequenceoffset",
+      "type": "Box",
+      "containers": [
+        {
+          "hint_sample_entry": [
+            "srtp",
+            "rtp "
+          ]
+        }
+      ]
+    },
+    {
       "fourcc": "trpy",
       "description": "total bytes sent, including 12-byte RTP headers",
       "type": "Box",
@@ -416,9 +478,14 @@
     {
       "fourcc": "sdp ",
       "description": "SDP information",
-      "containers": [
-        "hnti"
-      ]
+      "type": "Box",
+      "containers": ["hnti"]
+    },
+    {
+      "fourcc": "rtp ",
+      "description": "RTP information",
+      "type": "Box",
+      "containers": ["hnti"]
     },
     {
       "fourcc": "hinf",
@@ -1272,62 +1339,6 @@
       "fourcc": "!ssx",
       "description": "Compressed subsegment index",
       "containers": []
-    }
-  ],
-  "gpac_only_entries": [
-    {
-      "fourcc": "rtp ",
-      "containers": [
-        "hnti"
-      ]
-    },
-    {
-      "fourcc": "rtpo",
-      "containers": [
-        "rtp_packet"
-      ]
-    },
-    {
-      "fourcc": "rely",
-      "containers": [
-        "rtp",
-        "srtp"
-      ]
-    },
-    {
-      "fourcc": "tims",
-      "containers": [
-        "rtp",
-        "srtp",
-        "rrtp"
-      ]
-    },
-    {
-      "fourcc": "tsro",
-      "containers": [
-        "rtp",
-        "srtp",
-        "rrtp"
-      ]
-    },
-    {
-      "fourcc": "snro",
-      "containers": [
-        "rtp",
-        "srtp"
-      ]
-    },
-    {
-      "fourcc": "tssy",
-      "containers": [
-        "rrtp"
-      ]
-    },
-    {
-      "fourcc": "rssr",
-      "containers": [
-        "rrtp"
-      ]
     }
   ]
 }
