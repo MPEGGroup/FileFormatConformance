@@ -335,51 +335,37 @@
     {
       "fourcc": "btrt",
       "description": "Bit-rate information",
-      "containers": [
-        "sample_entry"
-      ]
+      "containers": ["sample_entry"]
     },
     {
       "fourcc": "pasp",
       "description": "Pixel aspect ratio",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "clap",
       "description": "Clean aperture",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "cclv",
       "description": "Content colour volume",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "colr",
       "description": "Color information",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "clli",
       "description": "Content Light Level",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "mdcv",
       "description": "Mastering display colour volume",
-      "containers": [
-        "visual_sample_entry"
-      ]
+      "containers": ["visual_sample_entry"]
     },
     {
       "fourcc": "scrb",
@@ -392,38 +378,26 @@
     {
       "fourcc": "chnl",
       "description": "Channel layout",
-      "containers": [
-        "audio_sample_entry"
-      ]
+      "containers": ["audio_sample_entry"]
     },
     {
       "fourcc": "dmix",
       "description": "Downmix instructions",
-      "containers": [
-        "audio_sample_entry"
-      ]
+      "containers": ["audio_sample_entry"]
     },
     {
       "fourcc": "srat",
       "description": "Sampling rate",
-      "containers": [
-        "audio_sample_entry"
-      ]
+      "containers": ["audio_sample_entry"]
     },
     {
       "fourcc": "txtC",
       "description": "Text stream configuration",
       "containers": [
         {
-          "metadata_sample_entry": [
-            "mett"
-          ],
-          "plain_text_sample_entry": [
-            "stxt"
-          ],
-          "subtitle_sample_entry": [
-            "sbtt"
-          ]
+          "metadata_sample_entry": ["mett"],
+          "plain_text_sample_entry": ["stxt"],
+          "subtitle_sample_entry": ["sbtt"]
         }
       ]
     },
@@ -432,9 +406,7 @@
       "description": "URI Information",
       "containers": [
         {
-          "metadata_sample_entry": [
-            "urim"
-          ]
+          "metadata_sample_entry": ["urim"]
         }
       ]
     },
@@ -533,7 +505,7 @@
     {
       "fourcc": "assp",
       "description": "alternative startup sequence properties",
-      "containers": []
+      "containers": ["trep"]
     },
     {
       "fourcc": "bxml",
@@ -543,12 +515,11 @@
     {
       "fourcc": "cinf",
       "description": "complete track information",
-      "containers": []
-    },
-    {
-      "fourcc": "clip",
-      "description": "Reserved",
-      "containers": []
+      "containers": [
+        {
+          "visual_sample_entry": ["icpv"]
+        }
+      ]
     },
     {
       "fourcc": "co64",
@@ -556,14 +527,12 @@
       "containers": ["stbl"]
     },
     {
-      "fourcc": "crgn",
-      "description": "Reserved",
-      "containers": []
-    },
-    {
       "fourcc": "csgp",
       "description": "compact sample to group",
-      "containers": []
+      "containers": [
+        "stbl",
+        "traf"
+      ]
     },
     {
       "fourcc": "cslg",
@@ -572,11 +541,6 @@
         "stbl",
         "trep"
       ]
-    },
-    {
-      "fourcc": "ctab",
-      "description": "Reserved",
-      "containers": []
     },
     {
       "fourcc": "ctts",
@@ -594,9 +558,7 @@
     {
       "fourcc": "dref",
       "description": "data reference box, declares source(s) of media data in track",
-      "containers": [
-        "dinf"
-      ]
+      "containers": ["dinf"]
     },
     {
       "fourcc": "edts",
@@ -611,17 +573,21 @@
     {
       "fourcc": "etyp",
       "description": "extended type and type combination",
-      "containers": []
+      "containers": [
+        "file",
+        "ipco",
+        "otyp"
+      ]
     },
     {
       "fourcc": "fdel",
       "description": "File delivery information (item info extension)",
-      "containers": []
+      "containers": ["infe"]
     },
     {
       "fourcc": "feci",
       "description": "FEC Informatiom",
-      "containers": []
+      "containers": ["extr"]
     },
     {
       "fourcc": "fecr",
@@ -636,7 +602,7 @@
     {
       "fourcc": "fire",
       "description": "File Reservoir",
-      "containers": []
+      "containers": ["paen"]
     },
     {
       "fourcc": "fpar",
@@ -688,7 +654,7 @@
     {
       "fourcc": "idat",
       "description": "Item data",
-      "containers": []
+      "containers": ["meta"]
     },
     {
       "fourcc": "iinf",
@@ -703,31 +669,14 @@
       "containers": ["meta"]
     },
     {
-      "fourcc": "imap",
-      "description": "Reserved",
-      "containers": []
-    },
-    {
       "fourcc": "imda",
       "description": "Identified media data",
-      "containers": []
-    },
-    {
-      "fourcc": "imif",
-      "description": "IPMP Information box",
-      "containers": []
+      "containers": ["file"]
     },
     {
       "fourcc": "infe",
       "description": "Item information entry",
-      "containers": [
-        "iinf"
-      ]
-    },
-    {
-      "fourcc": "ipmc",
-      "description": "IPMP Control Box",
-      "containers": []
+      "containers": ["iinf"]
     },
     {
       "fourcc": "ipro",
@@ -742,24 +691,9 @@
       "containers": ["meta"]
     },
     {
-      "fourcc": "kmat",
-      "description": "Reserved",
-      "containers": []
-    },
-    {
       "fourcc": "leva",
       "description": "Leval assignment",
       "containers": ["mvex"]
-    },
-    {
-      "fourcc": "load",
-      "description": "Reserved",
-      "containers": []
-    },
-    {
-      "fourcc": "matt",
-      "description": "Reserved",
-      "containers": []
     },
     {
       "fourcc": "mdat",
@@ -780,19 +714,9 @@
       "containers": ["trak"]
     },
     {
-      "fourcc": "meco",
-      "description": "additional metadata container",
-      "containers": []
-    },
-    {
       "fourcc": "mehd",
       "description": "movie extends header box",
       "containers": ["mvex"]
-    },
-    {
-      "fourcc": "mere",
-      "description": "metabox relation",
-      "containers": []
     },
     {
       "fourcc": "meta",
@@ -809,9 +733,7 @@
     {
       "fourcc": "mfhd",
       "description": "movie fragment header",
-      "containers": [
-        "moof"
-      ]
+      "containers": ["moof"]
     },
     {
       "fourcc": "mfra",
@@ -856,7 +778,10 @@
     {
       "fourcc": "otyp",
       "description": "Original file type",
-      "containers": []
+      "containers": [
+        "file",
+        "otyp"
+      ]
     },
     {
       "fourcc": "padb",
@@ -879,11 +804,6 @@
       "containers": ["meta"]
     },
     {
-      "fourcc": "pnot",
-      "description": "Reserved",
-      "containers": []
-    },
-    {
       "fourcc": "prft",
       "description": "Producer reference time",
       "containers": ["file"]
@@ -891,7 +811,10 @@
     {
       "fourcc": "rinf",
       "description": "restricted scheme information box",
-      "containers": []
+      "containers": [
+        "sample_entry",
+        "restricted_sample_entry"
+      ]
     },
     {
       "fourcc": "saio",
@@ -972,7 +895,7 @@
     {
       "fourcc": "skip",
       "description": "free space",
-      "containers": []
+      "containers": ["*"]
     },
     {
       "fourcc": "smhd",
@@ -1007,12 +930,12 @@
     {
       "fourcc": "sthd",
       "description": "Subtitle Media Header Box",
-      "containers": []
+      "containers": ["minf"]
     },
     {
       "fourcc": "strd",
       "description": "Sub-track definition",
-      "containers": []
+      "containers": ["strk"]
     },
     {
       "fourcc": "stri",
@@ -1032,9 +955,7 @@
     {
       "fourcc": "stsg",
       "description": "Sub-track sample grouping",
-      "containers": [
-        "strd"
-      ]
+      "containers": ["strd"]
     },
     {
       "fourcc": "stsh",
@@ -1049,7 +970,7 @@
     {
       "fourcc": "stsz",
       "description": "sample sizes (framing)",
-      "containers": []
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stts",
@@ -1059,12 +980,12 @@
     {
       "fourcc": "styp",
       "description": "Segment Type Box",
-      "containers": []
+      "containers": ["file"]
     },
     {
       "fourcc": "stz2",
       "description": "compact sample sizes (framing)",
-      "containers": []
+      "containers": ["stbl"]
     },
     {
       "fourcc": "subs",
@@ -1097,9 +1018,7 @@
     {
       "fourcc": "traf",
       "description": "Track fragment",
-      "containers": [
-        "moof"
-      ]
+      "containers": ["moof"]
     },
     {
       "fourcc": "trak",
@@ -1134,12 +1053,12 @@
     {
       "fourcc": "ttyp",
       "description": "track type and compatibility",
-      "containers": []
+      "containers": ["trak"]
     },
     {
       "fourcc": "tyco",
       "description": "type and-combination",
-      "containers": []
+      "containers": ["etyp"]
     },
     {
       "fourcc": "udta",
@@ -1154,7 +1073,7 @@
     {
       "fourcc": "uuid",
       "description": "user-extension box",
-      "containers": []
+      "containers": ["*"]
     },
     {
       "fourcc": "vmhd",
@@ -1169,22 +1088,22 @@
     {
       "fourcc": "!mof",
       "description": "Compressed movie fragment",
-      "containers": []
+      "containers": ["file"]
     },
     {
       "fourcc": "!mov",
       "description": "Compressed movie",
-      "containers": []
+      "containers": ["file"]
     },
     {
       "fourcc": "!six",
       "description": "Compressed segment index",
-      "containers": []
+      "containers": ["file"]
     },
     {
       "fourcc": "!ssx",
       "description": "Compressed subsegment index",
-      "containers": []
+      "containers": ["file"]
     }
   ]
 }
