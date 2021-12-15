@@ -2,6 +2,102 @@
   "description": "Boxes (also called atoms)",
   "entries": [
     {
+      "fourcc": "trpy",
+      "description": "total bytes sent, including 12-byte RTP headers",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "nump",
+      "description": "total packets sent",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "tpyl",
+      "description": "total bytes sent, not including RTP headers",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "totl",
+      "description": "total bytes sent, including 12-byte RTP headers",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "npck",
+      "description": "total packets sent",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "tpay",
+      "description": "total bytes sent, not including RTP headers",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "maxr",
+      "description": "maximum data rate",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "dmed",
+      "description": "total bytes sent from media tracks",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "dimm",
+      "description": "total bytes sent immediate mode",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "drep",
+      "description": "total bytes in repeated packets",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "tmin",
+      "description": "smallest relative transmission time, milliseconds",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "tmax",
+      "description": "largest relative transmission time, milliseconds",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "pmax",
+      "description": "largest packet sent, including RTP header",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "dmax",
+      "description": "longest packet duration, milliseconds",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "payt",
+      "description": "payload ID used in RTP packets",
+      "type": "Box",
+      "containers": ["hinf"]
+    },
+    {
+      "fourcc": "stvi",
+      "description": "Stereo Video Box",
+      "type": "FullBox",
+      "containers": ["schi"]
+    },
+    {
       "fourcc": "metx",
       "description": "XML timed metadata",
       "type": "metadata_sample_entry",
@@ -1179,102 +1275,6 @@
     }
   ],
   "gpac_only_entries": [
-    {
-      "fourcc": "stvi",
-      "containers": [
-        "schi"
-      ]
-    },
-    {
-      "fourcc": "trpy",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "nump",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "tpyl",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "totl",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "npck",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "tpay",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "maxr",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "dmed",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "dimm",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "drep",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "tmin",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "tmax",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "pmax",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "dmax",
-      "containers": [
-        "hinf"
-      ]
-    },
-    {
-      "fourcc": "payt",
-      "containers": [
-        "hinf"
-      ]
-    },
     {
       "fourcc": "rtp ",
       "containers": [
