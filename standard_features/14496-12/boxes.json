@@ -330,9 +330,7 @@
     {
       "fourcc": "elng",
       "description": "ExtendedLanguageBox",
-      "containers": [
-        "mdia"
-      ]
+      "containers": ["mdia"]
     },
     {
       "fourcc": "btrt",
@@ -443,37 +441,27 @@
     {
       "fourcc": "cprt",
       "description": "copyright",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "kind",
       "description": "Track kind",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "tsel",
       "description": "Track selection",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "strk",
       "description": "Sub track information",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "hnti",
       "description": "Hint information",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "sdp ",
@@ -490,79 +478,57 @@
     {
       "fourcc": "hinf",
       "description": "hint information (statistics)",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "ludt",
       "description": "Track loudness container",
-      "containers": [
-        "udta"
-      ]
+      "containers": ["udta"]
     },
     {
       "fourcc": "tlou",
       "description": "Track loudness base",
-      "containers": [
-        "ludt"
-      ]
+      "containers": ["ludt"]
     },
     {
       "fourcc": "alou",
       "description": "Album loudness base",
-      "containers": [
-        "ludt"
-      ]
+      "containers": ["ludt"]
     },
     {
       "fourcc": "url ",
       "description": "URL data location",
-      "containers": [
-        "dref"
-      ]
+      "containers": ["dref"]
     },
     {
       "fourcc": "urn ",
       "description": "URN data location",
-      "containers": [
-        "dref"
-      ]
+      "containers": ["dref"]
     },
     {
       "fourcc": "imdt",
       "description": "identified media data",
-      "containers": [
-        "dref"
-      ]
+      "containers": ["dref"]
     },
     {
       "fourcc": "snim",
       "description": "sequence number identified media data",
-      "containers": [
-        "dref"
-      ]
+      "containers": ["dref"]
     },
     {
       "fourcc": "ipco",
       "description": "ItemPropertyContainerBox",
-      "containers": [
-        "iprp"
-      ]
+      "containers": ["iprp"]
     },
     {
       "fourcc": "ipma",
       "description": "ItemPropertyAssociation",
-      "containers": [
-        "iprp"
-      ]
+      "containers": ["iprp"]
     },
     {
       "fourcc": "iprp",
       "description": "Item Properties Box",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "assp",
@@ -572,9 +538,7 @@
     {
       "fourcc": "bxml",
       "description": "binary XML container",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "cinf",
@@ -589,9 +553,7 @@
     {
       "fourcc": "co64",
       "description": "64-bit chunk offset",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "crgn",
@@ -619,9 +581,7 @@
     {
       "fourcc": "ctts",
       "description": "(composition) time to sample",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "dinf",
@@ -641,16 +601,12 @@
     {
       "fourcc": "edts",
       "description": "edit list container",
-      "containers": [
-        "trak"
-      ]
+      "containers": ["trak"]
     },
     {
       "fourcc": "elst",
       "description": "an edit list",
-      "containers": [
-        "edts"
-      ]
+      "containers": ["edts"]
     },
     {
       "fourcc": "etyp",
@@ -670,16 +626,12 @@
     {
       "fourcc": "fecr",
       "description": "FEC Reservoir",
-      "containers": [
-        "paen"
-      ]
+      "containers": ["paen"]
     },
     {
       "fourcc": "fiin",
       "description": "FD Item Information",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "fire",
@@ -689,16 +641,12 @@
     {
       "fourcc": "fpar",
       "description": "File Partition",
-      "containers": [
-        "paen"
-      ]
+      "containers": ["paen"]
     },
     {
       "fourcc": "free",
       "description": "free space",
-      "containers": [
-        "*"
-      ]
+      "containers": ["*"]
     },
     {
       "fourcc": "frma",
@@ -711,23 +659,17 @@
     {
       "fourcc": "ftyp",
       "description": "file type and compatibility",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "gitn",
       "description": "Group ID to name",
-      "containers": [
-        "fiin"
-      ]
+      "containers": ["fiin"]
     },
     {
       "fourcc": "grpl",
       "description": "Groups list box",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "hdlr",
@@ -741,9 +683,7 @@
     {
       "fourcc": "hmhd",
       "description": "hint media header, overall information (hint track only)",
-      "containers": [
-        "minf"
-      ]
+      "containers": ["minf"]
     },
     {
       "fourcc": "idat",
@@ -753,18 +693,14 @@
     {
       "fourcc": "iinf",
       "description": "item information",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "iloc",
       "description": "item location box",
       "versions": [0, 1, 2],
       "flags": [],
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "imap",
@@ -796,18 +732,14 @@
     {
       "fourcc": "ipro",
       "description": "item protection",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "iref",
       "description": "Item reference box",
       "versions": [0, 1],
       "flags": [],
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "kmat",
@@ -817,9 +749,7 @@
     {
       "fourcc": "leva",
       "description": "Leval assignment",
-      "containers": [
-        "mvex"
-      ]
+      "containers": ["mvex"]
     },
     {
       "fourcc": "load",
@@ -842,16 +772,12 @@
     {
       "fourcc": "mdhd",
       "description": "media header, overall information about the media",
-      "containers": [
-        "mdia"
-      ]
+      "containers": ["mdia"]
     },
     {
       "fourcc": "mdia",
       "description": "container for the media information in a track",
-      "containers": [
-        "trak"
-      ]
+      "containers": ["trak"]
     },
     {
       "fourcc": "meco",
@@ -861,9 +787,7 @@
     {
       "fourcc": "mehd",
       "description": "movie extends header box",
-      "containers": [
-        "mvex"
-      ]
+      "containers": ["mvex"]
     },
     {
       "fourcc": "mere",
@@ -892,58 +816,42 @@
     {
       "fourcc": "mfra",
       "description": "Movie fragment random access",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "mfro",
       "description": "Movie fragment random access offset",
-      "containers": [
-        "mfra"
-      ]
+      "containers": ["mfra"]
     },
     {
       "fourcc": "minf",
       "description": "media information container",
-      "containers": [
-        "mdia"
-      ]
+      "containers": ["mdia"]
     },
     {
       "fourcc": "moof",
       "description": "movie fragment",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "moov",
       "description": "container for all the meta-data",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "mvex",
       "description": "movie extends box",
-      "containers": [
-        "moov"
-      ]
+      "containers": ["moov"]
     },
     {
       "fourcc": "mvhd",
       "description": "movie header, overall declarations",
-      "containers": [
-        "moov"
-      ]
+      "containers": ["moov"]
     },
     {
       "fourcc": "nmhd",
       "description": "Null media header, overall information (some tracks only)",
-      "containers": [
-        "minf"
-      ]
+      "containers": ["minf"]
     },
     {
       "fourcc": "otyp",
@@ -953,30 +861,22 @@
     {
       "fourcc": "padb",
       "description": "sample padding bits",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "paen",
       "description": "Partition Entry",
-      "containers": [
-        "fiin"
-      ]
+      "containers": ["fiin"]
     },
     {
       "fourcc": "pdin",
       "description": "Progressive download information",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "pitm",
       "description": "primary item reference",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "pnot",
@@ -986,9 +886,7 @@
     {
       "fourcc": "prft",
       "description": "Producer reference time",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "rinf",
@@ -1046,9 +944,7 @@
     {
       "fourcc": "segr",
       "description": "file delivery session group",
-      "containers": [
-        "fiin"
-      ]
+      "containers": ["fiin"]
     },
     {
       "fourcc": "sgpd",
@@ -1063,9 +959,7 @@
     {
       "fourcc": "sidx",
       "description": "Segment Index Box",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "sinf",
@@ -1083,44 +977,32 @@
     {
       "fourcc": "smhd",
       "description": "sound media header, overall information (sound track only)",
-      "containers": [
-        "minf"
-      ]
+      "containers": ["minf"]
     },
     {
       "fourcc": "srpp",
       "description": "STRP Process",
-      "containers": [
-        "srtp"
-      ]
+      "containers": ["srtp"]
     },
     {
       "fourcc": "ssix",
       "description": "Sub-sample index",
-      "containers": [
-        "file"
-      ]
+      "containers": ["file"]
     },
     {
       "fourcc": "stbl",
       "description": "sample table box, container for the time/space map",
-      "containers": [
-        "minf"
-      ]
+      "containers": ["minf"]
     },
     {
       "fourcc": "stco",
       "description": "chunk offset, partial data-offset information",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stdp",
       "description": "sample degradation priority",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "sthd",
@@ -1135,23 +1017,17 @@
     {
       "fourcc": "stri",
       "description": "Sub-track information",
-      "containers": [
-        "strk"
-      ]
+      "containers": ["strk"]
     },
     {
       "fourcc": "stsc",
       "description": "sample-to-chunk, partial data-offset information",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stsd",
       "description": "sample descriptions (codec types, initialization etc.)",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stsg",
@@ -1163,16 +1039,12 @@
     {
       "fourcc": "stsh",
       "description": "shadow sync sample table",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stss",
       "description": "sync sample table (random access points)",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "stsz",
@@ -1182,9 +1054,7 @@
     {
       "fourcc": "stts",
       "description": "(decoding) time-to-sample",
-      "containers": [
-        "stbl"
-      ]
+      "containers": ["stbl"]
     },
     {
       "fourcc": "styp",
@@ -1207,30 +1077,22 @@
     {
       "fourcc": "tfdt",
       "description": "Track fragment decode time",
-      "containers": [
-        "traf"
-      ]
+      "containers": ["traf"]
     },
     {
       "fourcc": "tfhd",
       "description": "Track fragment header",
-      "containers": [
-        "traf"
-      ]
+      "containers": ["traf"]
     },
     {
       "fourcc": "tfra",
       "description": "Track fragment radom access",
-      "containers": [
-        "mfra"
-      ]
+      "containers": ["mfra"]
     },
     {
       "fourcc": "tkhd",
       "description": "Track header, overall information about the track",
-      "containers": [
-        "trak"
-      ]
+      "containers": ["trak"]
     },
     {
       "fourcc": "traf",
@@ -1242,44 +1104,32 @@
     {
       "fourcc": "trak",
       "description": "container for an individual track or stream",
-      "containers": [
-        "moov"
-      ]
+      "containers": ["moov"]
     },
     {
       "fourcc": "tref",
       "description": "track reference container",
-      "containers": [
-        "trak"
-      ]
+      "containers": ["trak"]
     },
     {
       "fourcc": "trep",
       "description": "track extension properties",
-      "containers": [
-        "mvex"
-      ]
+      "containers": ["mvex"]
     },
     {
       "fourcc": "trex",
       "description": "track extends defaults",
-      "containers": [
-        "mvex"
-      ]
+      "containers": ["mvex"]
     },
     {
       "fourcc": "trgr",
       "description": "Track grouping information",
-      "containers": [
-        "trak"
-      ]
+      "containers": ["trak"]
     },
     {
       "fourcc": "trun",
       "description": "track fragment run",
-      "containers": [
-        "traf"
-      ]
+      "containers": ["traf"]
     },
     {
       "fourcc": "ttyp",
@@ -1309,16 +1159,12 @@
     {
       "fourcc": "vmhd",
       "description": "video media header, overall information (video track only)",
-      "containers": [
-        "minf"
-      ]
+      "containers": ["minf"]
     },
     {
       "fourcc": "xml ",
       "description": "XML container",
-      "containers": [
-        "meta"
-      ]
+      "containers": ["meta"]
     },
     {
       "fourcc": "!mof",
