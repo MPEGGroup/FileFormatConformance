@@ -7,7 +7,7 @@
       "type": "Box",
       "containers": [
         {
-          "hint_sample_entry": ["rrtp"]
+          "HintSampleEntry": ["rrtp"]
         }
       ]
     },
@@ -17,7 +17,7 @@
       "type": "Box",
       "containers": [
         {
-          "hint_sample_entry": ["rrtp"]
+          "HintSampleEntry": ["rrtp"]
         }
       ]
     },
@@ -27,7 +27,7 @@
       "type": "Box",
       "containers": [
         {
-          "hint_sample_entry": [
+          "HintSampleEntry": [
             "rrtp",
             "srtp",
             "rtp ",
@@ -42,7 +42,7 @@
       "type": "Box",
       "containers": [
         {
-          "hint_sample_entry": [
+          "HintSampleEntry": [
             "rrtp",
             "srtp",
             "rtp "
@@ -56,7 +56,7 @@
       "type": "Box",
       "containers": [
         {
-          "hint_sample_entry": [
+          "HintSampleEntry": [
             "srtp",
             "rtp "
           ]
@@ -162,25 +162,25 @@
     {
       "fourcc": "metx",
       "description": "XML timed metadata",
-      "type": "metadata_sample_entry",
+      "type": "MetaDataSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "mett",
       "description": "Text timed metadata that is not XML",
-      "type": "metadata_sample_entry",
+      "type": "MetaDataSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "urim",
       "description": "Binary timed metadata identified by URI",
-      "type": "metadata_sample_entry",
+      "type": "MetaDataSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "mebx",
       "description": "Timed metadata multiplex",
-      "type": "metadata_sample_entry",
+      "type": "MetaDataSampleEntry",
       "containers": ["stsd"]
     },
     {
@@ -198,7 +198,7 @@
     {
       "fourcc": "encm",
       "description": "Encrypted/Protected metadata",
-      "type": "metadata_sample_entry",
+      "type": "MetaDataSampleEntry",
       "containers": ["stsd"]
     },
     {
@@ -210,25 +210,25 @@
     {
       "fourcc": "enct",
       "description": "Encrypted Text",
-      "type": "plain_text_sample_entry",
+      "type": "PlainTextSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "encv",
       "description": "Encrypted/protected video",
-      "type": "visual_sample_entry",
+      "type": "VisualSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "fdp ",
       "description": "File delivery hints",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "icpv",
       "description": "Incomplete video",
-      "type": "visual_sample_entry",
+      "type": "VisualSampleEntry",
       "containers": ["stsd"]
     },
     {
@@ -252,31 +252,31 @@
     {
       "fourcc": "rrtp",
       "description": "RTP reception",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "rsrp",
       "description": "SRTP Reception",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "rtcp",
       "description": "RTCP reception hint track",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "rtp ",
       "description": "RTP Hints",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "sbtt",
       "description": "Text subtitles",
-      "type": "subtitle_sample_entry",
+      "type": "SubtitleSampleEntry",
       "containers": ["stsd"]
     },
     {
@@ -288,31 +288,31 @@
     {
       "fourcc": "srtp",
       "description": "SRTP Hints",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "stcp",
       "description": "SRTCP reception hint track",
-      "type": "hint_sample_entry",
+      "type": "HintSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "stpp",
       "description": "Subtitles (Timed Text)",
-      "type": "subtitle_sample_entry",
+      "type": "SubtitleSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "stxt",
       "description": "Simple timed text",
-      "type": "plain_text_sample_entry",
+      "type": "PlainTextSampleEntry",
       "containers": ["stsd"]
     },
     {
       "fourcc": "encu",
       "description": "Encrypted/Protected subtitles",
-      "type": "plain_text_sample_entry",
+      "type": "PlainTextSampleEntry",
       "containers": ["stsd"]
     },
     {
@@ -340,32 +340,32 @@
     {
       "fourcc": "pasp",
       "description": "Pixel aspect ratio",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "clap",
       "description": "Clean aperture",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "cclv",
       "description": "Content colour volume",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "colr",
       "description": "Color information",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "clli",
       "description": "Content Light Level",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "mdcv",
       "description": "Mastering display colour volume",
-      "containers": ["visual_sample_entry"]
+      "containers": ["VisualSampleEntry"]
     },
     {
       "fourcc": "scrb",
@@ -395,9 +395,9 @@
       "description": "Text stream configuration",
       "containers": [
         {
-          "metadata_sample_entry": ["mett"],
-          "plain_text_sample_entry": ["stxt"],
-          "subtitle_sample_entry": ["sbtt"]
+          "MetaDataSampleEntry": ["mett"],
+          "PlainTextSampleEntry": ["stxt"],
+          "SubtitleSampleEntry": ["sbtt"]
         }
       ]
     },
@@ -406,7 +406,7 @@
       "description": "URI Information",
       "containers": [
         {
-          "metadata_sample_entry": ["urim"]
+          "MetaDataSampleEntry": ["urim"]
         }
       ]
     },
@@ -517,7 +517,7 @@
       "description": "complete track information",
       "containers": [
         {
-          "visual_sample_entry": ["icpv"]
+          "VisualSampleEntry": ["icpv"]
         }
       ]
     },
