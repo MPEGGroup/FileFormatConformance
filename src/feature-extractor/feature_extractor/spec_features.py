@@ -264,8 +264,8 @@ def get_type(par):
         # if line_start < 0:
         #     line_start = 0
         # line_found = par[line_start:m.start()]
-        # if 'class' in line_found.lower():
-        return par[m.start():m.end()]
+        if 'class' in par:
+            return par[m.start():m.end()]
     return None
 
 def get_fourcc_params(fourcc, allcodeparagraphs):
@@ -286,7 +286,8 @@ def get_fourcc_params(fourcc, allcodeparagraphs):
                 if syntax4CC == fourcc:
                     element_type = get_type(par)
                     params['type'] = element_type
-                    params['syntax'] = par
+                    if 'class' in par:
+                        params['syntax'] = par
                     if element_type == 'FullBox':
                         params['versions'] = [0]
                         params['flags'] = []
@@ -342,9 +343,8 @@ def update_spec_features():
             entry['versions'] = params['versions']
         if params['flags'] is not None:
             entry['flags'] = params['flags']
-        if params['syntax'] is not None:
-            entry['syntax'] = params['syntax']
-        else:
+        entry['syntax'] = params['syntax']
+        if entry['syntax'] is None:
             print(f'no syntax found for {entry["fourcc"]}')
 
 

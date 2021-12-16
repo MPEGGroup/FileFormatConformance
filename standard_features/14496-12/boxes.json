@@ -1,3 +1,7 @@
+
+
+
+
 {
   "description": "Boxes (also called atoms)",
   "entries": [
@@ -259,18 +263,20 @@
     {
       "fourcc": "enca",
       "description": "Encrypted/Protected audio",
-      "type": "audio_sample_entry",
+      "type": "AudioSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class AudioSampleEntry(codingname) extends SampleEntry (codingname){\n\tconst unsigned int(32)[2] reserved = 0;\n\tunsigned int(16) channelcount;\n\ttemplate unsigned int(16) samplesize = 16;\n\tunsigned int(16) pre_defined = 0;\n\tconst unsigned int(16) reserved = 0 ;\n\ttemplate unsigned int(32) samplerate = { default samplerate of media}<<16;\n\t// optional boxes follow\n\tBox ();\t\t// further boxes as needed\n\tChannelLayout();\n\tDownMixInstructions() [];\n\tDRCCoefficientsBasic() [];\n\tDRCInstructionsBasic() [];\n\tDRCCoefficientsUniDRC() [];\n\tDRCInstructionsUniDRC() [];\n\t// we permit only one DRC Extension box:\n\tUniDrcConfigExtension();\n\t// optional boxes follow\n\tSamplingRateBox();\n\tChannelLayout();\n}\n\nclass AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\n\tunsigned int(16) entry_version;\t// shall be 1, \n\t// and shall be in an stsd with version ==1\n\tconst unsigned int(16)[3] reserved = 0;\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\n\ttemplate unsigned int(16) samplesize = 16;\n\tunsigned int(16) pre_defined = 0;\n\tconst unsigned int(16) reserved = 0 ;\n\ttemplate unsigned int(32) samplerate = 1<<16;\n\t// optional boxes follow\n\tSamplingRateBox();\n\tBox ();\t\t// further boxes as needed\n\tChannelLayout();\n\tDownMixInstructions() [];\n\tDRCCoefficientsBasic() [];\n\tDRCInstructionsBasic() [];\n\tDRCCoefficientsUniDRC() [];\n\tDRCInstructionsUniDRC() [];\n\t// we permit only one DRC Extension box:\n\tUniDrcConfigExtension();\n\t// optional boxes follow\n\tChannelLayout();\n}"
     },
     {
       "fourcc": "encf",
       "description": "Encrypted/Protected font",
-      "type": "font_sample_entry",
+      "type": "FontSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class FontSampleEntry(codingname) extends SampleEntry (codingname){\n\t//other boxes from derived specifications\n}"
     },
     {
       "fourcc": "encm",
@@ -278,7 +284,8 @@
       "type": "MetaDataSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": ""
     },
     {
       "fourcc": "encs",
@@ -286,7 +293,8 @@
       "type": "unknown",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": ""
     },
     {
       "fourcc": "enct",
@@ -294,7 +302,8 @@
       "type": "PlainTextSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": ""
     },
     {
       "fourcc": "encv",
@@ -326,7 +335,7 @@
     {
       "fourcc": "pm2t",
       "description": "Protected MPEG-2 Transport",
-      "type": "mpeg2ts_sample_entry",
+      "type": "MPEG2TSSampleEntry",
       "containers": [
         "stsd"
       ],
@@ -344,10 +353,11 @@
     {
       "fourcc": "rm2t",
       "description": "MPEG-2 Transport Reception",
-      "type": "mpeg2ts_sample_entry",
+      "type": "MPEG2TSSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class MPEG2TSReceptionSampleEntry extends MPEG2TSSampleEntry('rm2t') {}"
     },
     {
       "fourcc": "rrtp",
@@ -373,7 +383,8 @@
       "type": "HintSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class HintSampleEntry() extends SampleEntry (protocol) {\n}"
     },
     {
       "fourcc": "rtp ",
@@ -396,10 +407,11 @@
     {
       "fourcc": "sm2t",
       "description": "MPEG-2 Transport Server",
-      "type": "mpeg2ts_sample_entry",
+      "type": "MPEG2TSSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class MPEG2TSServerSampleEntry extends MPEG2TSSampleEntry('sm2t') {}"
     },
     {
       "fourcc": "srtp",
@@ -416,7 +428,8 @@
       "type": "HintSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": ""
     },
     {
       "fourcc": "stpp",
@@ -442,23 +455,26 @@
       "type": "PlainTextSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": ""
     },
     {
       "fourcc": "encp",
       "description": "Encrypted/Protected haptics",
-      "type": "haptic_sample_entry",
+      "type": "HapticSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "aligned(8) class HapticSampleEntry(codingname)\n\textends SampleEntry(codingname) {\n\tBox()[]\totherboxes;\n}"
     },
     {
       "fourcc": "enc3",
       "description": "Encrypted/Protected volumetric visual",
-      "type": "volumetric_visual_sample_entry",
+      "type": "VolumetricVisualSampleEntry",
       "containers": [
         "stsd"
-      ]
+      ],
+      "syntax": "class VolumetricVisualSampleEntry(codingname) \n\textends SampleEntry (codingname){\n\tunsigned int(8)[32] compressorname;\n\t// other boxes from derived specifications\n}"
     },
     {
       "fourcc": "elng",
@@ -477,7 +493,7 @@
       "fourcc": "btrt",
       "description": "Bit-rate information",
       "containers": [
-        "sample_entry"
+        "SampleEntry"
       ],
       "type": "Box",
       "syntax": "class BitRateBox extends Box('btrt'){\n\tunsigned int(32) bufferSizeDB;\n\tunsigned int(32) maxBitrate;\n\tunsigned int(32) avgBitrate;\n}"
@@ -540,7 +556,7 @@
       "fourcc": "scrb",
       "description": "Scramble scheme information",
       "containers": [
-        "sample_entry",
+        "SampleEntry",
         "ipco"
       ],
       "type": "Box",
@@ -550,7 +566,7 @@
       "fourcc": "chnl",
       "description": "Channel layout",
       "containers": [
-        "audio_sample_entry"
+        "AudioSampleEntry"
       ],
       "type": "FullBox",
       "versions": [
@@ -563,7 +579,7 @@
       "fourcc": "dmix",
       "description": "Downmix instructions",
       "containers": [
-        "audio_sample_entry"
+        "AudioSampleEntry"
       ],
       "type": "FullBox",
       "versions": [
@@ -576,7 +592,7 @@
       "fourcc": "srat",
       "description": "Sampling rate",
       "containers": [
-        "audio_sample_entry"
+        "AudioSampleEntry"
       ],
       "type": "FullBox",
       "versions": [
@@ -945,7 +961,8 @@
         "ipco",
         "otyp"
       ],
-      "syntax": "BoxIndexBox {\n\tindexed_box_type = 'ftyp';\n\tindexed_box_size = X1;\n}\nBoxIndexBox {\n\tindexed_box_type = 'etyp';\n\tindexed_box_size = X2;\n}\nBoxIndexBox {\n\tindexed_box_type = 'meta';\n\tindexed_box_size = X3;\n}\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X4;\n\tFrontPartBox {\t\tbox_content[4]; // containing imda_identifier\n\t}\n}\n... // one BoxIndexBox per IdentifiedMediaDataBox\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X5;\n\tFrontPartBox {\n\t\tbox_content[4]; // containing imda_identifier\n\t}\n}"
+      "type": "Box",
+      "syntax": "aligned(8) class ExtendedTypeBox extends Box('etyp') {\n\tTypeCombinationBox\tcompatible_combinations[];\t// to end of the box\n}"
     },
     {
       "fourcc": "fdel",
@@ -1018,7 +1035,9 @@
       "description": "free space",
       "containers": [
         "*"
-      ]
+      ],
+      "type": "Box",
+      "syntax": "aligned(8) class FreeSpaceBox extends Box('free') {\nunsigned int(8) data[];\n}"
     },
     {
       "fourcc": "frma",
@@ -1036,7 +1055,8 @@
       "containers": [
         "file"
       ],
-      "syntax": "BoxIndexBox {\n\tindexed_box_type = 'ftyp';\n\tindexed_box_size = X1;\n}\nBoxIndexBox {\n\tindexed_box_type = 'etyp';\n\tindexed_box_size = X2;\n}\nBoxIndexBox {\n\tindexed_box_type = 'meta';\n\tindexed_box_size = X3;\n}\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X4;\n\tFrontPartBox {\t\tbox_content[4]; // containing imda_identifier\n\t}\n}\n... // one BoxIndexBox per IdentifiedMediaDataBox\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X5;\n\tFrontPartBox {\n\t\tbox_content[4]; // containing imda_identifier\n\t}\n}"
+      "type": "GeneralTypeBox",
+      "syntax": "aligned(8) class FileTypeBox extends GeneralTypeBox ('ftyp')\n{}"
     },
     {
       "fourcc": "gitn",
@@ -1129,7 +1149,8 @@
       "containers": [
         "file"
       ],
-      "syntax": "BoxIndexBox {\n\tindexed_box_type = 'ftyp';\n\tindexed_box_size = X1;\n}\nBoxIndexBox {\n\tindexed_box_type = 'etyp';\n\tindexed_box_size = X2;\n}\nBoxIndexBox {\n\tindexed_box_type = 'meta';\n\tindexed_box_size = X3;\n}\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X4;\n\tFrontPartBox {\t\tbox_content[4]; // containing imda_identifier\n\t}\n}\n... // one BoxIndexBox per IdentifiedMediaDataBox\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X5;\n\tFrontPartBox {\n\t\tbox_content[4]; // containing imda_identifier\n\t}\n}"
+      "type": "Box",
+      "syntax": "aligned(8) class IdentifiedMediaDataBox extends Box('imda') {\n\tunsigned int(32) imda_identifier;\n\tbit(8) data[]; // until the end of the box\n}"
     },
     {
       "fourcc": "infe",
@@ -1239,11 +1260,12 @@
         "traf",
         "udta"
       ],
+      "type": "FullBox",
       "versions": [
         0
       ],
       "flags": [],
-      "syntax": "BoxIndexBox {\n\tindexed_box_type = 'ftyp';\n\tindexed_box_size = X1;\n}\nBoxIndexBox {\n\tindexed_box_type = 'etyp';\n\tindexed_box_size = X2;\n}\nBoxIndexBox {\n\tindexed_box_type = 'meta';\n\tindexed_box_size = X3;\n}\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X4;\n\tFrontPartBox {\t\tbox_content[4]; // containing imda_identifier\n\t}\n}\n... // one BoxIndexBox per IdentifiedMediaDataBox\nBoxIndexBox {\n\tindexed_box_type = 'imda';\n\tindexed_box_size = X5;\n\tFrontPartBox {\n\t\tbox_content[4]; // containing imda_identifier\n\t}\n}"
+      "syntax": "aligned(8) class MetaBox (handler_type)\n\textends FullBox('meta', version = 0, 0) {\n\tHandlerBox(handler_type)\ttheHandler;\n\tPrimaryItemBox\t\tprimary_resource;\t\t// optional\n\tDataInformationBox\tfile_locations;\t\t// optional\n\tItemLocationBox\t\titem_locations;\t\t// optional\n\tItemProtectionBox\tprotections;\t\t\t// optional\n\tItemInfoBox\t\t\titem_infos;\t\t\t\t// optional\n\tIPMPControlBox\t\tIPMP_control;\t\t\t// optional\n\tItemReferenceBox\t\titem_refs;\t\t\t\t\t// optional\n\tItemDataBox\t\t\titem_data;\t\t\t\t\t// optional\n\tBox\tother_boxes[];\t\t\t\t\t\t\t\t// optional\n}"
     },
     {
       "fourcc": "mfhd",
@@ -1417,8 +1439,8 @@
       "fourcc": "rinf",
       "description": "restricted scheme information box",
       "containers": [
-        "sample_entry",
-        "restricted_sample_entry"
+        "SampleEntry",
+        "RestrictedSampleEntry"
       ],
       "type": "Box",
       "syntax": "aligned(8) class RestrictedSchemeInfoBox(fmt) extends Box('rinf') {\n\tOriginalFormatBox(fmt)\toriginal_format;\n\tSchemeTypeBox\t\t\tscheme_type_box;\n\tSchemeInformationBox\tinfo;\t\t\t\t// optional\n}"
@@ -1544,7 +1566,7 @@
       "description": "protection scheme information box",
       "containers": [
         "ipro",
-        "sample_entry"
+        "SampleEntry"
       ],
       "type": "Box",
       "syntax": "aligned(8) class ProtectionSchemeInfoBox(fmt) extends Box('sinf') {\n\tOriginalFormatBox(fmt)\toriginal_format;\n\n\tSchemeTypeBox\t\t\tscheme_type_box;\t\t// optional\n\tSchemeInformationBox\tinfo;\t\t\t\t\t\t// optional\n}"
@@ -1554,7 +1576,9 @@
       "description": "free space",
       "containers": [
         "*"
-      ]
+      ],
+      "type": "Box",
+      "syntax": "aligned(8) class FreeSpaceBox extends Box('skip') {\nunsigned int(8) data[];\n}"
     },
     {
       "fourcc": "smhd",
@@ -1955,7 +1979,8 @@
       "containers": [
         "*"
       ],
-      "syntax": "write_uint32( object_size(object) );\nuuid := object_uuid_type(object);\nif (is_ISO_uuid(uuid) )\n\twrite_uint32( ISO_type_of(uuid) )\n\telse { write_uint32('uuid'); write_uuid(uuid); }"
+      "type": "Box",
+      "syntax": "aligned(8) class BoxHeader (\n\t\tunsigned int(32) boxtype,\n\t\toptional unsigned int(8)[16] extended_type) {\n\tunsigned int(32) size;\n\tunsigned int(32) type = boxtype;\n\tif (size==1) {\n\t\tunsigned int(64) largesize;\n\t} else if (size==0) {\n\t\t// box extends to end of file\n\t}\n\tif (boxtype=='uuid') {\n\t\tunsigned int(8)[16] usertype = extended_type;\n\t}\n}"
     },
     {
       "fourcc": "vmhd",
