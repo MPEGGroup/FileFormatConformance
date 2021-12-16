@@ -7,6 +7,9 @@ import bs4
 import csv
 from git import Repo
 from .utils import make_dirs_from_path, execute_cmd, dump_to_json
+from docx import Document
+import json
+import re
 
 MP4RA_PATH = './mp4ra'
 MP4RA_URL = 'https://github.com/mp4ra/mp4ra.github.io.git'
@@ -250,3 +253,102 @@ def extract_spec_features():
     extract_spec_features_mp4ra()
     extract_spec_features_gpac()
     write_spec_features(args.out)
+
+
+def get_type(par):
+    regex = "(?<=extends ).\w+"
+    for m in re.finditer(regex, par):
+        # line_start = par.rfind('\n', 0, m.start())
+        # print(line_start)
+        # print(m)
+        # if line_start < 0:
+        #     line_start = 0
+        # line_found = par[line_start:m.start()]
+        # if 'class' in line_found.lower():
+        return par[m.start():m.end()]
+    return None
+
+def get_fourcc_params(fourcc, allcodeparagraphs):
+    params = {
+        "fourcc": fourcc,
+        "type": None,
+        "versions": None,
+        "flags": None,
+        "syntax": None
+    }
+    for par in allcodeparagraphs:
+        regex = "[\'\‘\’].{4}[\'\‘\’]"
+        codesQuotes = re.findall(regex, par)
+        if codesQuotes:
+            for i in codesQuotes:
+                syntax4CC = i.strip("\'|\‘|\’")
+
+                if syntax4CC == fourcc:
+                    element_type = get_type(par)
+                    params['type'] = element_type
+                    params['syntax'] = par
+                    if element_type == 'FullBox':
+                        params['versions'] = [0]
+                        params['flags'] = []
+
+        regexCurly = "[\‘\’].{4}[\‘\’]"
+        codesBad = re.findall(regexCurly, par)
+        if codesBad:
+            for i in codesBad:
+                syntax4CC = i.strip("\'|\‘|\’")
+                print('implement me')
+                asdf
+                
+        # sys.exit(0)
+    return params
+
+def update_spec_features():
+    parser = argparse.ArgumentParser(description='Update standard features')
+    parser.add_argument('-i', '--input', help='Input json file with spec features')
+    parser.add_argument('-s', '--spec', help='Input specification .docx file')
+    args = parser.parse_args()
+
+    # load json file
+    with open(args.input, 'r') as json_file:
+        data = json.load(json_file)
+
+    # open and parse spec
+    doc = Document(args.spec)
+    # filter styles by string "code" in their names
+    codestyles = []
+    for style in doc.styles:
+        if 'code' in style.name.lower():
+            codestyles.append(style)
+    # get text of all code paragraphs
+    codeparagraphs = []
+    for par in doc.paragraphs:
+        if par.style in codestyles:
+            codeparagraphs.append(par.text)
+
+    # iterate json spec features entries
+    for entry in data['entries']:
+        # print(entry)
+        # entry['fourcc'] = 'uriI' # debug
+        params = get_fourcc_params(entry['fourcc'], codeparagraphs)
+        
+        if params['type'] is not None:
+            if 'type' not in entry:
+                entry['type'] = params['type']
+            elif entry['type'] != params['type']:
+                print(f'type mismatch in "{entry["fourcc"]}"! {entry["type"]} vs {params["type"]}')
+        elif 'type' not in entry:
+            print(f'no type found for {entry["fourcc"]}')
+        if params['versions'] is not None:
+            entry['versions'] = params['versions']
+        if params['flags'] is not None:
+            entry['flags'] = params['flags']
+        if params['syntax'] is not None:
+            entry['syntax'] = params['syntax']
+        else:
+            print(f'no syntax found for {entry["fourcc"]}')
+
+
+    # store json
+    out_file = args.input[:-5] + '_out.json'
+    with open(out_file, 'w') as json_file:
+        json.dump(data, json_file, indent=2)
