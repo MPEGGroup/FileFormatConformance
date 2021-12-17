@@ -311,7 +311,7 @@
         }
       ],
       "type": "Box",
-      "syntax": "\t// Visual Sequences\nclass AVCConfigurationBox extends Box('avcC') {\n\tAVCDecoderConfigurationRecord() AVCConfig;\n}"
+      "syntax": "class AVCConfigurationBox extends Box('avcC') {\n\tAVCDecoderConfigurationRecord() AVCConfig;\n}"
     },
     {
       "fourcc": "hvcC",
