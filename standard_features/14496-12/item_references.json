@@ -7,8 +7,8 @@
       "containers": [
         "iref"
       ],
-      "type": "ItemInfoExtension",
-      "syntax": "aligned(8) class FDItemInfoExtension() extends ItemInfoExtension ('fdel') {\n\tutf8string content_location;\n\tutf8string content_MD5;\n\tunsigned int(64) content_length;\n\tunsigned int(64) transfer_length;\n\tunsigned int(8) entry_count;\n\tfor (i=1; i <= entry_count; i++)\n\t\tunsigned int(32) group_id;\n}"
+      "type": "SingleItemTypeReferenceBox",
+      "syntax": "aligned(8) class SingleItemTypeReferenceBox(referenceType) extends Box(referenceType) {\n\tunsigned int(16) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(16) to_item_ID;\n\t}\n}\n\n\naligned(8) class SingleItemTypeReferenceBoxLarge(referenceType) extends Box(referenceType) {\n\tunsigned int(32) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(32) to_item_ID;\n\t}\n}"
     },
     {
       "fourcc": "iloc",
@@ -16,12 +16,8 @@
       "containers": [
         "iref"
       ],
-      "type": "FullBox",
-      "versions": [
-        0
-      ],
-      "flags": [],
-      "syntax": "aligned(8) class ItemLocationBox extends FullBox('iloc', version, 0) {\n\tunsigned int(4)\toffset_size;\n\tunsigned int(4)\tlength_size;\n\tunsigned int(4)\tbase_offset_size;\n\tif ((version == 1) || (version == 2)) {\n\t\tunsigned int(4)\tindex_size;\n\t} else {\n\t\tunsigned int(4)\treserved;\n\t}\n\tif (version < 2) {\n\t\tunsigned int(16)\titem_count;\n\t} else if (version == 2) {\n\t\tunsigned int(32)\titem_count;\n\t}\n\tfor (i=0; i<item_count; i++) {\n\t\tif (version < 2) {\n\t\t\tunsigned int(16)\titem_ID;\n\t\t} else if (version == 2) {\n\t\t\tunsigned int(32)\titem_ID;\n\t\t}\n\t\tif ((version == 1) || (version == 2)) {\n\t\t\tunsigned int(12)\treserved = 0;\n\t\t\tunsigned int(4)\tconstruction_method;\n\t\t}\n\t\tunsigned int(16)\tdata_reference_index;\n\t\tunsigned int(base_offset_size*8)\tbase_offset;\n\t\tunsigned int(16)\t\textent_count;\n\t\tfor (j=0; j<extent_count; j++) {\n\t\t\tif (((version == 1) || (version == 2)) && (index_size > 0)) {\n\t\t\t\tunsigned int(index_size*8)\titem_reference_index;\n\t\t\t}\n\t\t\tunsigned int(offset_size*8)\textent_offset;\n\t\t\tunsigned int(length_size*8)\textent_length;\n\t\t}\n\t}\n}"
+      "type": "SingleItemTypeReferenceBox",
+      "syntax": "aligned(8) class SingleItemTypeReferenceBox(referenceType) extends Box(referenceType) {\n\tunsigned int(16) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(16) to_item_ID;\n\t}\n}\n\n\naligned(8) class SingleItemTypeReferenceBoxLarge(referenceType) extends Box(referenceType) {\n\tunsigned int(32) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(32) to_item_ID;\n\t}\n}"
     }
   ]
 }
