@@ -23,6 +23,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
 update-spec-features = "feature_extractor.spec_features:update_spec_features"
+check-spec-features = "feature_extractor.spec_features:check_spec_features"
 extract-file-features = "feature_extractor.file_features:extract_file_features"
 extract-file-boxes-gpac = "feature_extractor.file_features:extract_file_boxes_gpac"
 init-file-features = "feature_extractor.file_features:init_file_features"

@@ -297,10 +297,15 @@ def get_fourcc_params(fourcc, allcodeparagraphs):
         if codesBad:
             for i in codesBad:
                 syntax4CC = i.strip("\'|\‘|\’")
-                print('implement me')
-                asdf
                 
-        # sys.exit(0)
+                if syntax4CC == fourcc:
+                    element_type = get_type(par)
+                    params['type'] = element_type
+                    if 'class' in par:
+                        params['syntax'] = par
+                    if element_type == 'FullBox':
+                        params['versions'] = [0]
+                        params['flags'] = []        
     return params
 
 def update_spec_features():
@@ -347,8 +352,46 @@ def update_spec_features():
         if entry['syntax'] is None:
             print(f'no syntax found for {entry["fourcc"]}')
 
-
     # store json
     out_file = args.input[:-5] + '_out.json'
     with open(out_file, 'w') as json_file:
         json.dump(data, json_file, indent=2)
+
+
+def check_spec_features():
+    parser = argparse.ArgumentParser(description='Check standard features')
+    parser.add_argument('-i', '--input', help='Input json file with spec features')
+    args = parser.parse_args()
+
+    # load json file
+    with open(args.input, 'r') as json_file:
+        data = json.load(json_file)
+
+    # iterate json spec features entries
+    for entry in data['entries']:
+        if 'fourcc' not in entry:
+            print(f'NO fourcc field: "{entry}"')
+        elif len(entry['fourcc']) != 4:
+            print(f'4CC length is != 4: "{entry["fourcc"]}"')
+        else:
+            print(f'Checking "{entry["fourcc"]}"')
+        
+        if 'description' not in entry:
+            print(f'\tNO description field: "{entry}"')
+        elif len(entry['description']) == 0:
+            print(f'\tEMPTY description in "{entry["fourcc"]}"')
+
+        if 'type' not in entry:
+            print(f'\tNO type field: "{entry}"')
+        elif len(entry['type']) == 0:
+            print(f'\tEMPTY type in "{entry["fourcc"]}"')
+
+        if 'containers' not in entry:
+            print(f'\tNO containers field: "{entry}"')
+        elif len(entry['containers']) == 0:
+            print(f'\tEMPTY containers in "{entry["fourcc"]}"')
+
+        if 'syntax' not in entry:
+            print(f'\tNO syntax field: "{entry}"')
+        elif len(entry['syntax']) == 0:
+            print(f'\tEMPTY syntax in "{entry["fourcc"]}"')
