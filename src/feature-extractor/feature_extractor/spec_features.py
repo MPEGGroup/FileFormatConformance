@@ -312,6 +312,7 @@ def update_spec_features():
     parser = argparse.ArgumentParser(description='Update standard features')
     parser.add_argument('-i', '--input', help='Input json file with spec features')
     parser.add_argument('-s', '--spec', help='Input specification .docx file')
+    parser.add_argument('--allpars', dest='allpars', action='store_true', help='Use all paragraphs and not only those which are formatted with code')
     args = parser.parse_args()
 
     # load json file
@@ -329,6 +330,8 @@ def update_spec_features():
     codeparagraphs = []
     for par in doc.paragraphs:
         if par.style in codestyles:
+            codeparagraphs.append(par.text)
+        elif args.allpars:
             codeparagraphs.append(par.text)
 
     # iterate json spec features entries
