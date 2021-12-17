@@ -381,20 +381,28 @@ def check_spec_features():
         
         if 'description' not in entry:
             print(f'\tNO description field: "{entry}"')
+        elif entry['description'] is None:
+            print(f'\tEMPTY description in "{entry["fourcc"]}"')
         elif len(entry['description']) == 0:
             print(f'\tEMPTY description in "{entry["fourcc"]}"')
 
         if 'type' not in entry:
             print(f'\tNO type field: "{entry}"')
+        elif entry['type'] is None:
+            print(f'\tEMPTY type in "{entry["fourcc"]}"')
         elif len(entry['type']) == 0:
             print(f'\tEMPTY type in "{entry["fourcc"]}"')
 
         if 'containers' not in entry:
             print(f'\tNO containers field: "{entry}"')
+        elif entry['containers'] is None:
+            print(f'\tEMPTY containers in "{entry["fourcc"]}"')
         elif len(entry['containers']) == 0:
             print(f'\tEMPTY containers in "{entry["fourcc"]}"')
 
         if 'syntax' not in entry:
             print(f'\tNO syntax field: "{entry}"')
+        elif entry['syntax'] is None:
+            print(f'\tEMPTY syntax in "{entry["fourcc"]}"')
         elif len(entry['syntax']) == 0:
             print(f'\tEMPTY syntax in "{entry["fourcc"]}"')
