@@ -361,13 +361,9 @@ def update_spec_features():
         json.dump(data, json_file, indent=2)
 
 
-def check_spec_features():
-    parser = argparse.ArgumentParser(description='Check standard features')
-    parser.add_argument('-i', '--input', help='Input json file with spec features')
-    args = parser.parse_args()
-
+def check_json(filepath):
     # load json file
-    with open(args.input, 'r') as json_file:
+    with open(filepath, 'r') as json_file:
         data = json.load(json_file)
 
     # iterate json spec features entries
@@ -406,3 +402,17 @@ def check_spec_features():
             print(f'\tEMPTY syntax in "{entry["fourcc"]}"')
         elif len(entry['syntax']) == 0:
             print(f'\tEMPTY syntax in "{entry["fourcc"]}"')
+
+def check_spec_features():
+    parser = argparse.ArgumentParser(description='Check standard features')
+    parser.add_argument('-i', '--input', help='Input json file with spec features. Or folder with json files')
+    args = parser.parse_args()
+
+    if os.path.isdir(args.input):
+        for filename in os.listdir(args.input):
+            if 'user_defined' in filename:
+                continue
+            print(f'\nCheck {filename}')
+            check_json(os.path.join(args.input, filename))
+    else:
+        check_json(args.input)
