@@ -3,11 +3,13 @@
   "entries": [
     {
       "fourcc": "brnd",
-      "type": "descriptive",
+      "itemtype": "descriptive",
+      "type": "GeneralTypeBox",
       "description": "Item brand (type)",
       "containers": [
         "ipco"
-      ]
+      ],
+      "syntax": "aligned(8) class BrandProperty extends GeneralTypeBox ('brnd') \n{ }"
     }
   ]
 }
