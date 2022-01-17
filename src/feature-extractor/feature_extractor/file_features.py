@@ -21,25 +21,17 @@ FILE_ENTRY = {
 # ignore files with the following extensions
 EXCLUDELIST = ['', '.xls', '.xlsx', '.js', '.html', '.xml', '.dat', '.doc', '.docx', '.txt', '.m4s']
 
-
-def extract_file_features():
-    parser = argparse.ArgumentParser(description='Extract features from conformance files')
-    parser.add_argument('-i', '--input', help='Input directory', required=True)
-    parser.add_argument('-o', '--out', help='Output directory where files will be written to', default='./out')
+def contribute_files():
+    parser = argparse.ArgumentParser(description='Contribute new files to the conformance suite')
+    parser.add_argument('-i', '--input', help='Input directory with new files', required=True)
     args = parser.parse_args()
 
-    # TODO: implement me
-    print(args)
-
-
-def init_file_features():
-    parser = argparse.ArgumentParser(description='Initialize file features metadata files')
-    parser.add_argument('-i', '--input', help='Input directory', required=True)
-    parser.add_argument('-o', '--out', help='Output directory where files will be written to', default='./out')
-    args = parser.parse_args()
-
-    contributor = input('Contributor organisation name: ')
-    published = input('Are the files published in ISO/IEC 14496-32? (yes/no): ')
+    print('Add (or update) conformance files in "under_consideration" folder.\n')
+    contributor = input('Your company name: ')
+    input_contrib = input('MPEG document number: ')
+    notes_text = ''
+    if len(input_contrib) != 0:
+        notes_text = f'please refer to {input_contrib} for more information'
 
     # get rid of the last slash if needed
     if args.input[-1] == '/':
@@ -48,8 +40,9 @@ def init_file_features():
         print('ERROR: input should be a directory')
         sys.exit(-1)
     input_base, input_last_folder = os.path.split(args.input)
+    output_root = os.path.join('../../file_features/under_consideration', input_last_folder)
 
-    print(f'{input_base} => {input_last_folder}')
+    print(f'Process files from "{input_last_folder}".')
 
     cnt = 0
     for root, subdirs, files in os.walk(args.input):
@@ -58,26 +51,57 @@ def init_file_features():
             if input_extension in EXCLUDELIST:
                 continue
             input_path = os.path.join(root, f)
+            if ' ' in input_path:
+                print(f'ERROR: spaces are not allowed. Remove spaces in "{input_path}"')
+                sys.exit(-1)
+            
             relative_path = os.path.relpath(root, args.input)
-
-            output_dir = os.path.join(args.out, relative_path)
-            output_dir = output_dir.replace(' ', '_')  # make sure we don't have spaces
+            mpegfs_rel_path = os.path.join('under_consideration', input_last_folder, relative_path, f)
+            mpegfs_rel_path = mpegfs_rel_path.replace('./', '')
+            output_dir = os.path.join(output_root, relative_path)
             output_filename = input_filename + '.json'
             output_path = os.path.join(output_dir, output_filename)
-            make_dirs_from_path(output_dir)
 
-            print(f'"{input_path}" => "{output_path}"')
+            print(f'\n* Processing: "{input_path}"')
             md5 = compute_file_md5(input_path)
 
-            file_entry = copy.deepcopy(FILE_ENTRY)
+            file_entry = None
+            version = 1
+            if os.path.exists(output_path):
+                existing_data = read_json(output_path)
+                if existing_data['md5'] == md5:
+                    print(f'skip duplicate file.')
+                    continue
+                else:
+                    print(f'* new file version detected for {f}')
+                    file_entry = existing_data
+                    version = file_entry['version'] + 1
+                    description = file_entry['description']
+
+            make_dirs_from_path(output_dir)
+            if file_entry is None:
+                description = input(f'* Provide short description for "{f}": ')
+            else:
+                new_description = input(f'* Update description for "{f}" (leave blank to keep the previous version): ')
+                if len(new_description) > 0:
+                    description = new_description
+            
+            if file_entry is None:
+                file_entry = copy.deepcopy(FILE_ENTRY)
             file_entry['contributor'] = contributor.strip()
             file_entry['md5'] = md5
-            file_entry['filepath'] = os.path.join(relative_path, f)
-            file_entry['version'] = 1
-            file_entry['published'] = published.lower() == 'yes'
+            file_entry['filepath'] = mpegfs_rel_path
+            file_entry['description'] = description
+            file_entry['notes'] = notes_text
+            file_entry['version'] = version
+            file_entry['published'] = False
             dump_to_json(output_path, file_entry)
             cnt += 1
     print(f'Processed {cnt} files.')
+
+    # remove part of the filepath (because we operate on our local dir here)
+    ignore_prefix = os.path.join('under_consideration', input_last_folder)
+    _extract_file_boxes_gpac(output_root, args.input, ignore_prefix)
 
 
 def update_heif_features():
@@ -198,21 +222,16 @@ def get_gpac_version():
     version = err.decode("utf-8").split('\n')[0].strip()
     return version
 
-
-def extract_file_boxes_gpac():
-    parser = argparse.ArgumentParser(description='Extract box structure using MP4Box')
-    parser.add_argument('-d', '--fileDir', help='Directory with the file feature json files', required=True)
-    parser.add_argument('-r', '--rootDir', help='Root directory where conformance files are hosted', required=True)
-    args = parser.parse_args()
-
+def _extract_file_boxes_gpac(fileDir, rootDir, ignorePath):
+    print(f'Run MP4Box on files in "{rootDir}". Process files as specified in "{fileDir}"')
     mp4box_version = get_gpac_version()
 
-    ret_code = execute_cmd('MP4Box')
+    ret_code = execute_cmd('MP4Box -version')
     if not ret_code == 0:
         print('MP4Box is not installed on your system')
         sys.exit(-1)
 
-    for root, subdirs, files in os.walk(args.fileDir):
+    for root, subdirs, files in os.walk(fileDir):
         for filename in files:
             filename_noext, input_extension = os.path.splitext(filename)
             if not input_extension == '.json' or '_gpac' in filename_noext:
@@ -223,7 +242,11 @@ def extract_file_boxes_gpac():
             if 'filepath' not in json_data:
                 print(f'Skip {input_path} as no "filepath" key was found.')
                 continue
-            mp4_path = os.path.join(args.rootDir, json_data['filepath'])
+            if ignorePath is None:
+                mp4_path = os.path.join(rootDir, json_data['filepath'])
+            else:
+                relpath = os.path.relpath(json_data['filepath'], ignorePath)
+                mp4_path = os.path.join(rootDir, relpath)
             if not os.path.exists(mp4_path):
                 print(f'WARNING: mp4 file "{mp4_path}" found in {filename} does not exist!')
                 continue
@@ -238,3 +261,11 @@ def extract_file_boxes_gpac():
                 continue
             gpac_dict['mp4boxVersion'] = mp4box_version
             dump_to_json(out_path, gpac_dict)
+
+def extract_file_boxes_gpac():
+    parser = argparse.ArgumentParser(description='Extract box structure using MP4Box')
+    parser.add_argument('-d', '--fileDir', help='Directory with the file feature json files', required=True)
+    parser.add_argument('-r', '--rootDir', help='Root directory where conformance files are hosted', required=True)
+    args = parser.parse_args()
+
+    _extract_file_boxes_gpac(args.fileDir, args.rootDir, None)

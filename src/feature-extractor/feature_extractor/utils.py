@@ -35,3 +35,8 @@ def compute_file_md5(file_path):
 def dump_to_json(out_file, obj):
     with open(out_file, 'w') as f:
         json.dump(obj, f, indent=2)
+
+def read_json(in_file):
+    with open(in_file, 'r') as f:
+        data = json.load(f)
+        return data
