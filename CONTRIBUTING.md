@@ -1,15 +1,44 @@
-# Contributing new file to conformance suite
+# How to contribute new files to conformance suite
 
-Let's ssay you want to add `FOO.mp4` to the conformance suite. The general apporach would look something like this:
+## 1. Install required tools
 
-- upload `FOO.mp4` to MPEG conformance file server: /MPEG-04/Part32-FF_Conformance
-  - if the file is approved by the MPEG FF group, upload it to `published` directory
-  - if the file is under consideration (TuC) upload it to `under_consideration` directory
-- run the helper script on your file to generate `FOO.json`
-- manually add or update information in `FOO.json`
-- run the helper script on your `FOO.json` to generate `FOO_structure.json` file
-- create a new pull request to this repository where you add `FOO.json` and `FOO_strucure.json` to [file_features](./file_features) folder
+- install [python-poetry](https://python-poetry.org/docs/)
+- install [GPAC](https://gpac.wp.imt.fr/downloads/gpac-nightly-builds/)
 
-TODO: provide more details on the tools and how to use them
+Make sure both are added to your `PATH` environment variable, so you can call `poetry` and `MP4Box` from any directory using terminal.
 
-After PR is submitted GitHub acion is executed to check for errors. It will go through all `filepath` entries which were modified and probe (HTTP HEAD) if files are accessible from `https://conformance.mpeg.expert/ISOBMFF/ + filepath`.
+## 2. Prepare your files
+
+Put all the files you want to contribute into a single directory (sub-directories are also allowed). E.g.:
+
+```shell
+compact_sample_groups
+├── samplegroups_defrag_compact.mp4
+├── samplegroups_defrag_normal.mp4
+└── samplegroups_fragmeted.mp4
+```
+
+Also upload this folder to MPEG **conformance** file server under `/MPEG-04/Part32-FF_Conformance/under_consideration`.
+
+## 3. Initialize file features json files
+
+Go to feature extractor folder and run the `contribute-files` command:
+
+```shell
+cd src/feature-extractor
+poetry run contribute-files -i <path_to_your_file_dir>
+```
+
+The script will ask you several questions. e.g.: who is the contributor (your company name), ask for a short description of each file and will create (or update) the json files inside `file_features` directory.
+
+## 4. Add more information (whenever possible)
+
+You can manually add additional information to generated json files. For example you can edit the following entries:
+
+- `associated_files`: provide a list of files related to this file (created from, needed for processing, etc.)
+- `features`: list of user-defined features (This should be automatically extracted in the future)
+- `notes`: Any other notes which would allow people to understand the conformance files better.
+
+## 5. Create a pull request
+
+Create a pull request with the new (or modified) files.
