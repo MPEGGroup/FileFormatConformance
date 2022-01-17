@@ -970,15 +970,6 @@
       "syntax": "aligned(8) class FDItemInfoExtension() extends ItemInfoExtension ('fdel') {\n\tutf8string content_location;\n\tutf8string content_MD5;\n\tunsigned int(64) content_length;\n\tunsigned int(64) transfer_length;\n\tunsigned int(8) entry_count;\n\tfor (i=1; i <= entry_count; i++)\n\t\tunsigned int(32) group_id;\n}"
     },
     {
-      "fourcc": "feci",
-      "description": "FEC Informatiom",
-      "containers": [
-        "extr"
-      ],
-      "type": "Box",
-      "syntax": "aligned(8) class FECInformationBox extends Box('feci') {\n\tunsigned int(8)\tFEC_encoding_ID;\n\tunsigned int(16)\tFEC_instance_ID;\n\tunsigned int(16)\tsource_block_number;\n\tunsigned int(16)\tencoding_symbol_ID;\n}"
-    },
-    {
       "fourcc": "fecr",
       "description": "FEC Reservoir",
       "containers": [
