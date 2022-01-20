@@ -26,6 +26,7 @@ Go to feature extractor folder and run the `contribute-files` command:
 
 ```shell
 cd src/feature-extractor
+poetry install #(if you are using for the first time)
 poetry run contribute-files -i <path_to_your_file_dir>
 ```
 
