@@ -1,0 +1,11 @@
+{
+  "contributor": "Apple Inc.",
+  "description": "Compact and normal sample groups in fragmented file",
+  "md5": "e40f05ac42edca17da4970f54b6efcd7",
+  "filepath": "under_consideration/compact_sample_groups/samplegroups_fragmented.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": ["./samplegroups_defrag_normal.mp4", "./samplegroups_defrag_compact.mp4"],
+  "features": [],
+  "notes": "please refer to m55791 for more information"
+}
