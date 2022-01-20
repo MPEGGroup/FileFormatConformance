@@ -1,7 +1,7 @@
 {
   "IsoMediaFile": {
     "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
-    "@Name": "samplegroups_defrag_normal.mp4",
+    "@Name": "samplegroups_defrag_compact.mp4",
     "FileTypeBox": {
       "@Size": "24",
       "@Type": "ftyp",
@@ -19,7 +19,7 @@
       ]
     },
     "MovieBox": {
-      "@Size": "1299",
+      "@Size": "1133",
       "@Type": "moov",
       "@Specification": "p12",
       "@Container": "file",
@@ -63,7 +63,7 @@
         }
       },
       "TrackBox": {
-        "@Size": "1110",
+        "@Size": "944",
         "@Type": "trak",
         "@Specification": "p12",
         "@Container": "moov",
@@ -93,7 +93,7 @@
           }
         },
         "MediaBox": {
-          "@Size": "1010",
+          "@Size": "844",
           "@Type": "mdia",
           "@Specification": "p12",
           "@Container": "trak",
@@ -123,7 +123,7 @@
             "@reserved2": "data:application/octet-string,000000000000000000000000"
           },
           "MediaInformationBox": {
-            "@Size": "933",
+            "@Size": "767",
             "@Type": "minf",
             "@Specification": "p12",
             "@Container": "mdia",
@@ -158,7 +158,7 @@
               }
             },
             "SampleTableBox": {
-              "@Size": "869",
+              "@Size": "703",
               "@Type": "stbl",
               "@Specification": "p12",
               "@Container": "minf",
@@ -375,19 +375,19 @@
                 "@EntryCount": "5",
                 "ChunkEntry": [
                   {
-                    "@offset": "1331"
+                    "@offset": "1165"
                   },
                   {
-                    "@offset": "1481"
+                    "@offset": "1315"
                   },
                   {
-                    "@offset": "1635"
+                    "@offset": "1469"
                   },
                   {
-                    "@offset": "1755"
+                    "@offset": "1589"
                   },
                   {
-                    "@offset": "1917"
+                    "@offset": "1751"
                   }
                 ]
               },
@@ -459,118 +459,76 @@
                   }
                 }
               ],
-              "SampleGroupBox": [
+              "CompactSampleGroupBox": [
                 {
-                  "@Size": "180",
-                  "@Type": "sbgp",
-                  "@Version": "0",
-                  "@Flags": "0",
+                  "@Size": "30",
+                  "@Type": "csgp",
                   "@Specification": "p12",
                   "@Container": "stbl traf",
+                  "@version": "0",
+                  "@index_msb_indicates_fragment_local_description": "0",
+                  "@grouping_type_parameter_present": "0",
+                  "@pattern_size_code": "0",
+                  "@count_size_code": "0",
+                  "@index_size_code": "0",
                   "@grouping_type": "colr",
-                  "SampleGroupBoxEntry": [
+                  "@pattern_count": "5",
+                  "Pattern": [
                     {
-                      "@sample_count": "1",
-                      "@group_description_index": "1"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "2"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "1"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "2"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "1"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "2"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "3"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "1"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "4"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "3"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "1"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "4"
-                    },
-                    {
+                      "@length": "2",
                       "@sample_count": "6",
-                      "@group_description_index": "0"
+                      "@sample_group_indices": "1 2"
                     },
                     {
-                      "@sample_count": "1",
-                      "@group_description_index": "2"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "3"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "4"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "2"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "3"
-                    },
-                    {
-                      "@sample_count": "1",
-                      "@group_description_index": "4"
-                    },
-                    {
+                      "@length": "3",
                       "@sample_count": "6",
-                      "@group_description_index": "0"
+                      "@sample_group_indices": "3 1 4"
+                    },
+                    {
+                      "@length": "1",
+                      "@sample_count": "6",
+                      "@sample_group_indices": "0"
+                    },
+                    {
+                      "@length": "3",
+                      "@sample_count": "6",
+                      "@sample_group_indices": "2 3 4"
+                    },
+                    {
+                      "@length": "1",
+                      "@sample_count": "6",
+                      "@sample_group_indices": "0"
                     }
                   ]
                 },
                 {
-                  "@Size": "44",
-                  "@Type": "sbgp",
-                  "@Version": "0",
-                  "@Flags": "20",
+                  "@Size": "28",
+                  "@Type": "csgp",
                   "@Specification": "p12",
                   "@Container": "stbl traf",
+                  "@version": "0",
+                  "@index_msb_indicates_fragment_local_description": "0",
+                  "@grouping_type_parameter_present": "0",
+                  "@pattern_size_code": "1",
+                  "@count_size_code": "1",
+                  "@index_size_code": "0",
                   "@grouping_type": "blck",
-                  "SampleGroupBoxEntry": [
+                  "@pattern_count": "3",
+                  "Pattern": [
                     {
+                      "@length": "1",
                       "@sample_count": "27",
-                      "@group_description_index": "0"
+                      "@sample_group_indices": "0"
                     },
                     {
+                      "@length": "1",
                       "@sample_count": "1",
-                      "@group_description_index": "1"
+                      "@sample_group_indices": "1"
                     },
                     {
+                      "@length": "1",
                       "@sample_count": "2",
-                      "@group_description_index": "0"
+                      "@sample_group_indices": "0"
                     }
                   ]
                 }

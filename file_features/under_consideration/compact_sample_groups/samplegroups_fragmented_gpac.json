@@ -590,7 +590,8 @@
             "SampleGroupBoxEntry": [
               {
                 "@sample_count": "1",
-                "@group_description_index": "-2147418111"
+                "@group_description_index": "1",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
@@ -598,11 +599,13 @@
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "-2147418110"
+                "@group_description_index": "2",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "-2147418111"
+                "@group_description_index": "1",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
@@ -610,11 +613,13 @@
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "-2147418110"
+                "@group_description_index": "2",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "",
-                "@group_description_index": ""
+                "@group_description_index": "",
+                "@group_description_in_traf": ""
               }
             ]
           }
@@ -755,11 +760,13 @@
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "65537"
+                "@group_description_index": "1",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "65538"
+                "@group_description_index": "2",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
@@ -767,11 +774,13 @@
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "65537"
+                "@group_description_index": "1",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "65538"
+                "@group_description_index": "2",
+                "@group_description_in_traf": "1"
               }
             ]
           }
@@ -855,7 +864,8 @@
               },
               {
                 "@sample_count": "1",
-                "@group_description_index": "65537"
+                "@group_description_index": "1",
+                "@group_description_in_traf": "1"
               },
               {
                 "@sample_count": "2",
@@ -904,5 +914,5 @@
       }
     ]
   },
-  "mp4boxVersion": "MP4Box - GPAC version 1.1.0-DEV-rev1632-gf2fddd04-master"
+  "mp4boxVersion": "MP4Box - GPAC version 1.1.0-DEV-rev1646-gddd7990b-master"
 }
