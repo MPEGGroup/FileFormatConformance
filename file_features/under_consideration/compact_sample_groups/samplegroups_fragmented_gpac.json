@@ -1,7 +1,7 @@
 {
   "IsoMediaFile": {
     "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
-    "@Name": "samplegroups_fragmeted.mp4",
+    "@Name": "samplegroups_fragmented.mp4",
     "FileTypeBox": {
       "@Size": "24",
       "@Type": "ftyp",
