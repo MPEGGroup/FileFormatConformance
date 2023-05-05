@@ -1,0 +1,11 @@
+{
+  "contributor": "Fraunhofer IIS",
+  "description": "MP4 file containing MPEG-H Audio with 2 preselections showcasing most audio element and audio element selection boxes within a single track preselection.",
+  "md5": "a6cafb8d26b817fc11482a560c67e506",
+  "filepath": "under_consideration/mhm1_preselections/mhm1_preselection.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": [],
+  "features": [],
+  "notes": "please refer to m63117 for more information"
+}

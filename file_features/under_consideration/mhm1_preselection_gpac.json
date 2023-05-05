@@ -1,0 +1,1410 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "mhm1_preselection.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mp42",
+      "@MinorVersion": "0",
+      "BrandEntry": {
+        "@AlternateBrand": "mp42"
+      }
+    },
+    "MovieBox": {
+      "@Size": "2490",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3764301427",
+        "@ModificationTime": "3764301427",
+        "@TimeScale": "600",
+        "@Duration": "3000",
+        "@NextTrackID": "2"
+      },
+      "TrackGroupDescriptionBox": {
+        "@Size": "822",
+        "@Type": "tkgd",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "PreselectionTrackGroupEntryBox": [
+          {
+            "@Size": "407",
+            "@Type": "prse",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "tkgd",
+            "@TrackGroupID": "0",
+            "@NumTracks": "1",
+            "@PreselectionTag": "0",
+            "@SelectionPriority": "0",
+            "Label": {
+              "@Size": "29",
+              "@Type": "labl",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "prse udta aelm aesb",
+              "@isGroupLabel": "0",
+              "@labelID": "0",
+              "@Language": "en-GB",
+              "@Label": "Default"
+            },
+            "ChannelLayoutBox": {
+              "@Size": "22",
+              "@Type": "chnl",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "audio_sample_entry aelm prse",
+              "@stream_structure": "1",
+              "@definedLayout": "6",
+              "@omittedChannelsMap": "0"
+            },
+            "AudioElement": {
+              "@Size": "52",
+              "@Type": "aelm",
+              "@Specification": "p12",
+              "@Container": "prse aesb",
+              "AudioElementDescription": {
+                "@Size": "15",
+                "@Type": "aedb",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "aelm",
+                "@AudioElementTag": "0",
+                "@isToggleable": "1",
+                "@isDefaultEnabled": "1"
+              },
+              "Label": {
+                "@Size": "29",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "prse udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "5.1 Bed"
+              }
+            },
+            "AudioElementSelection": {
+              "@Size": "284",
+              "@Type": "aesb",
+              "@Specification": "p12",
+              "@Container": "prse",
+              "AudioElementSelectionDescription": {
+                "@Size": "14",
+                "@Type": "aesd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "aesb",
+                "@SelectionTag": "0"
+              },
+              "Label": {
+                "@Size": "30",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "prse udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "Language"
+              },
+              "AudioElement": [
+                {
+                  "@Size": "116",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "prse aesb",
+                  "AudioElementDescription": {
+                    "@Size": "16",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "10",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia prse aelm",
+                    "@LanguageCode": "en-GB"
+                  },
+                  "Label": {
+                    "@Size": "32",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "prse udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Center: D1"
+                  },
+                  "AudioElementPosInteractivityPolar": {
+                    "@Size": "18",
+                    "@Type": "aepp",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minAzimuth": "-109",
+                    "@maxAzimuth": "109",
+                    "@defaultAzimuth": "0"
+                  },
+                  "AudioElementProminenceInteractivity": {
+                    "@Size": "24",
+                    "@Type": "aepr",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minProminence": "0.000000",
+                    "@maxProminence": "9.000000",
+                    "@defaultProminence": "0.000000"
+                  }
+                },
+                {
+                  "@Size": "116",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "prse aesb",
+                  "AudioElementDescription": {
+                    "@Size": "16",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "11",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "0"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia prse aelm",
+                    "@LanguageCode": "es-ES"
+                  },
+                  "Label": {
+                    "@Size": "32",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "prse udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Center: D2"
+                  },
+                  "AudioElementPosInteractivityPolar": {
+                    "@Size": "18",
+                    "@Type": "aepp",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minAzimuth": "-109",
+                    "@maxAzimuth": "109",
+                    "@defaultAzimuth": "0"
+                  },
+                  "AudioElementProminenceInteractivity": {
+                    "@Size": "24",
+                    "@Type": "aepr",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minProminence": "0.000000",
+                    "@maxProminence": "9.000000",
+                    "@defaultProminence": "0.000000"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@Size": "407",
+            "@Type": "prse",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "tkgd",
+            "@TrackGroupID": "10",
+            "@NumTracks": "1",
+            "@PreselectionTag": "10",
+            "Label": {
+              "@Size": "29",
+              "@Type": "labl",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "prse udta aelm aesb",
+              "@isGroupLabel": "0",
+              "@labelID": "0",
+              "@Language": "en-GB",
+              "@Label": "Dialog+"
+            },
+            "ChannelLayoutBox": {
+              "@Size": "22",
+              "@Type": "chnl",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "audio_sample_entry aelm prse",
+              "@stream_structure": "1",
+              "@definedLayout": "6",
+              "@omittedChannelsMap": "0"
+            },
+            "AudioElement": {
+              "@Size": "52",
+              "@Type": "aelm",
+              "@Specification": "p12",
+              "@Container": "prse aesb",
+              "AudioElementDescription": {
+                "@Size": "15",
+                "@Type": "aedb",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "aelm",
+                "@AudioElementTag": "0",
+                "@isToggleable": "1",
+                "@isDefaultEnabled": "1"
+              },
+              "Label": {
+                "@Size": "29",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "prse udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "5.1 Bed"
+              }
+            },
+            "AudioElementSelection": {
+              "@Size": "284",
+              "@Type": "aesb",
+              "@Specification": "p12",
+              "@Container": "prse",
+              "AudioElementSelectionDescription": {
+                "@Size": "14",
+                "@Type": "aesd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "aesb",
+                "@SelectionTag": "0"
+              },
+              "Label": {
+                "@Size": "30",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "prse udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "Language"
+              },
+              "AudioElement": [
+                {
+                  "@Size": "116",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "prse aesb",
+                  "AudioElementDescription": {
+                    "@Size": "16",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "10",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia prse aelm",
+                    "@LanguageCode": "en-GB"
+                  },
+                  "Label": {
+                    "@Size": "32",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "prse udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Center: D1"
+                  },
+                  "AudioElementPosInteractivityPolar": {
+                    "@Size": "18",
+                    "@Type": "aepp",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minAzimuth": "-109",
+                    "@maxAzimuth": "109",
+                    "@defaultAzimuth": "0"
+                  },
+                  "AudioElementProminenceInteractivity": {
+                    "@Size": "24",
+                    "@Type": "aepr",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minProminence": "0.000000",
+                    "@maxProminence": "9.000000",
+                    "@defaultProminence": "9.000000"
+                  }
+                },
+                {
+                  "@Size": "116",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "prse aesb",
+                  "AudioElementDescription": {
+                    "@Size": "16",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "11",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "0"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia prse aelm",
+                    "@LanguageCode": "es-ES"
+                  },
+                  "Label": {
+                    "@Size": "32",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "prse udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Center: D2"
+                  },
+                  "AudioElementPosInteractivityPolar": {
+                    "@Size": "18",
+                    "@Type": "aepp",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minAzimuth": "-109",
+                    "@maxAzimuth": "109",
+                    "@defaultAzimuth": "0"
+                  },
+                  "AudioElementProminenceInteractivity": {
+                    "@Size": "24",
+                    "@Type": "aepr",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@minProminence": "0.000000",
+                    "@maxProminence": "9.000000",
+                    "@defaultProminence": "9.000000"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "TrackBox": {
+        "@Size": "1552",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "7",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3764301427",
+          "@ModificationTime": "3764301427",
+          "@TrackID": "1",
+          "@Duration": "3000",
+          "@Volume": "1.00"
+        },
+        "MediaBox": {
+          "@Size": "1412",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3764301427",
+            "@ModificationTime": "3764301427",
+            "@TimeScale": "48000",
+            "@Duration": "240000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "37",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "soun",
+            "@Name": "soun",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "1335",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "SoundMediaHeaderBox": {
+              "@Size": "16",
+              "@Type": "smhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "1275",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "191",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "MHASampleEntry": {
+                  "@Size": "175",
+                  "@Type": "mhm1",
+                  "@Specification": "mpegh3Daudio",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@SampleRate": "48000",
+                  "@Channels": "0",
+                  "@BitsPerSample": "16",
+                  "MHAConfigurationBox": {
+                    "@Size": "139",
+                    "@Type": "mhaC",
+                    "@Specification": "mpegh3Daudio",
+                    "@Container": "mha1 mha2 mhm1 mhm2 wave",
+                    "@configurationVersion": "1",
+                    "@mpegh3daProfileLevelIndication": "0x11",
+                    "@referenceChannelLayout": "6",
+                    "@data": "data:application/octet-string,111941840A008080406F981A7950441020C8110408820440110000207FD8032040C00210000206CC8032040D64591640310000206400C81034010040010400001DFC032040C001C89D80A73C14E7829CF814E7829CF0539E0A73F00217880A00025E2118F2F50000118F2D000000463CB450000118F2D160000463CB0000"
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "32",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "TimeToSampleEntry": [
+                  {
+                    "@SampleDelta": "1024",
+                    "@SampleCount": "234"
+                  },
+                  {
+                    "@SampleDelta": "384",
+                    "@SampleCount": "1"
+                  }
+                ]
+              },
+              "SampleToChunkBox": {
+                "@Size": "28",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SampleToChunkEntry": {
+                  "@FirstChunk": "1",
+                  "@SamplesPerChunk": "235",
+                  "@SampleDescriptionIndex": "1"
+                }
+              },
+              "SampleSizeBox": {
+                "@Size": "960",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "235",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "3317"
+                  },
+                  {
+                    "@Size": "1388"
+                  },
+                  {
+                    "@Size": "1370"
+                  },
+                  {
+                    "@Size": "1358"
+                  },
+                  {
+                    "@Size": "1345"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1308"
+                  },
+                  {
+                    "@Size": "1312"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1324"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1337"
+                  },
+                  {
+                    "@Size": "1324"
+                  },
+                  {
+                    "@Size": "1320"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1340"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1317"
+                  },
+                  {
+                    "@Size": "1337"
+                  },
+                  {
+                    "@Size": "1347"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1332"
+                  },
+                  {
+                    "@Size": "1320"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1349"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1339"
+                  },
+                  {
+                    "@Size": "1320"
+                  },
+                  {
+                    "@Size": "1386"
+                  },
+                  {
+                    "@Size": "3067"
+                  },
+                  {
+                    "@Size": "1294"
+                  },
+                  {
+                    "@Size": "1315"
+                  },
+                  {
+                    "@Size": "1308"
+                  },
+                  {
+                    "@Size": "1306"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1339"
+                  },
+                  {
+                    "@Size": "1320"
+                  },
+                  {
+                    "@Size": "1345"
+                  },
+                  {
+                    "@Size": "1347"
+                  },
+                  {
+                    "@Size": "1338"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1338"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1342"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1317"
+                  },
+                  {
+                    "@Size": "1328"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1350"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1340"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1313"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1308"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1317"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1339"
+                  },
+                  {
+                    "@Size": "1377"
+                  },
+                  {
+                    "@Size": "3072"
+                  },
+                  {
+                    "@Size": "1298"
+                  },
+                  {
+                    "@Size": "1324"
+                  },
+                  {
+                    "@Size": "1313"
+                  },
+                  {
+                    "@Size": "1309"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1303"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1341"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1328"
+                  },
+                  {
+                    "@Size": "1345"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1346"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1348"
+                  },
+                  {
+                    "@Size": "1328"
+                  },
+                  {
+                    "@Size": "1309"
+                  },
+                  {
+                    "@Size": "1311"
+                  },
+                  {
+                    "@Size": "1340"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1328"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1324"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1339"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1323"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1403"
+                  },
+                  {
+                    "@Size": "3088"
+                  },
+                  {
+                    "@Size": "1293"
+                  },
+                  {
+                    "@Size": "1307"
+                  },
+                  {
+                    "@Size": "1300"
+                  },
+                  {
+                    "@Size": "1311"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1309"
+                  },
+                  {
+                    "@Size": "1312"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1316"
+                  },
+                  {
+                    "@Size": "1340"
+                  },
+                  {
+                    "@Size": "1323"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1350"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1346"
+                  },
+                  {
+                    "@Size": "1352"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1321"
+                  },
+                  {
+                    "@Size": "1332"
+                  },
+                  {
+                    "@Size": "1348"
+                  },
+                  {
+                    "@Size": "1317"
+                  },
+                  {
+                    "@Size": "1325"
+                  },
+                  {
+                    "@Size": "1327"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1340"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1318"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1314"
+                  },
+                  {
+                    "@Size": "1370"
+                  },
+                  {
+                    "@Size": "1342"
+                  },
+                  {
+                    "@Size": "1335"
+                  },
+                  {
+                    "@Size": "1306"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1375"
+                  },
+                  {
+                    "@Size": "3063"
+                  },
+                  {
+                    "@Size": "1305"
+                  },
+                  {
+                    "@Size": "1293"
+                  },
+                  {
+                    "@Size": "1317"
+                  },
+                  {
+                    "@Size": "1305"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1312"
+                  },
+                  {
+                    "@Size": "1319"
+                  },
+                  {
+                    "@Size": "1324"
+                  },
+                  {
+                    "@Size": "1332"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1310"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1338"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1320"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1331"
+                  },
+                  {
+                    "@Size": "1328"
+                  },
+                  {
+                    "@Size": "1323"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1333"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1341"
+                  },
+                  {
+                    "@Size": "1329"
+                  },
+                  {
+                    "@Size": "1344"
+                  },
+                  {
+                    "@Size": "1334"
+                  },
+                  {
+                    "@Size": "1323"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1336"
+                  },
+                  {
+                    "@Size": "1326"
+                  },
+                  {
+                    "@Size": "1343"
+                  },
+                  {
+                    "@Size": "1322"
+                  },
+                  {
+                    "@Size": "1330"
+                  },
+                  {
+                    "@Size": "1306"
+                  },
+                  {
+                    "@Size": "1509"
+                  },
+                  {
+                    "@Size": "1391"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "20",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "ChunkEntry": {
+                  "@offset": "2518"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "36",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "5",
+                "SyncSampleEntry": [
+                  {
+                    "@sampleNumber": "1"
+                  },
+                  {
+                    "@sampleNumber": "49"
+                  },
+                  {
+                    "@sampleNumber": "97"
+                  },
+                  {
+                    "@sampleNumber": "145"
+                  },
+                  {
+                    "@sampleNumber": "193"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "TrackGroupBox": {
+          "@Size": "40",
+          "@Type": "trgr",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "TrackGroupTypeBox": [
+            {
+              "@Size": "16",
+              "@Type": "pres",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "trgr",
+              "@track_group_id": "0"
+            },
+            {
+              "@Size": "16",
+              "@Type": "pres",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "trgr",
+              "@track_group_id": "10"
+            }
+          ]
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "321608",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "321600"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev197-g9539b70f4-master"
+}
