@@ -1,0 +1,664 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "restricted.mp4",
+    "FileTypeBox": {
+      "@Size": "32",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso5",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "isom"
+        },
+        {
+          "@AlternateBrand": "iso5"
+        },
+        {
+          "@AlternateBrand": "avc1"
+        },
+        {
+          "@AlternateBrand": "mp41"
+        }
+      ]
+    },
+    "FreeSpaceBox": {
+      "@Size": "8",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "0"
+    },
+    "MediaDataBox": {
+      "@Size": "411436",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "411428"
+    },
+    "MovieBox": {
+      "@Size": "1312",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "0",
+        "@ModificationTime": "0",
+        "@TimeScale": "1000",
+        "@Duration": "2000",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "1098",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "3",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "0",
+          "@ModificationTime": "0",
+          "@TrackID": "1",
+          "@Duration": "2000",
+          "@Width": "1280.00",
+          "@Height": "720.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "EditBox": {
+          "@Size": "36",
+          "@Type": "edts",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "EditListBox": {
+            "@Size": "28",
+            "@Type": "elst",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "edts",
+            "@EntryCount": "1",
+            "EditListEntry": {
+              "@Duration": "2000",
+              "@MediaTime": "1024",
+              "@MediaRate": "1"
+            }
+          }
+        },
+        "MediaBox": {
+          "@Size": "962",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "0",
+            "@ModificationTime": "0",
+            "@TimeScale": "12800",
+            "@Duration": "25600",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "45",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "VideoHandler",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "877",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "813",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "229",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "MPEGVisualSampleDescriptionBox": {
+                  "@Size": "213",
+                  "@Type": "resv",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "1280",
+                  "@Height": "720",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "AVCConfigurationBox": {
+                    "@Size": "51",
+                    "@Type": "avcC",
+                    "@Specification": "p15",
+                    "@Container": "avc1 avc2 avc3 avc4 encv resv ipco dva1 dvav",
+                    "AVCDecoderConfigurationRecord": {
+                      "@configurationVersion": "1",
+                      "@AVCProfileIndication": "100",
+                      "@profile_compatibility": "0",
+                      "@AVCLevelIndication": "31",
+                      "@nal_unit_size": "4",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@luma_bit_depth": "8",
+                      "@chroma_bit_depth": "8",
+                      "SequenceParameterSet": {
+                        "@size": "26",
+                        "@content": "data:application/octet-string,6764001FACD9405005BB011000000300100000030320F1831960"
+                      },
+                      "PictureParameterSet": {
+                        "@size": "6",
+                        "@content": "data:application/octet-string,68EBE3CB22C0"
+                      }
+                    }
+                  },
+                  "RestrictedSchemeInfoBox": {
+                    "@Size": "76",
+                    "@Type": "rinf",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "avc1"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "stvi",
+                      "@scheme_version": "1"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "36",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "StereoVideoBox": {
+                        "@Size": "28",
+                        "@Type": "stvi",
+                        "@Version": "0",
+                        "@Flags": "0",
+                        "@Specification": "p12",
+                        "@Container": "schi",
+                        "@single_view_allowed": "0",
+                        "@stereo_scheme": "1",
+                        "@stereo_indication_type": "0x00000003"
+                      }
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "512",
+                  "@SampleCount": "50"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "20",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SyncSampleEntry": {
+                  "@sampleNumber": "1"
+                }
+              },
+              "CompositionOffsetBox": {
+                "@Size": "264",
+                "@Type": "ctts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "31",
+                "CompositionOffsetEntry": [
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "2"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "3"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "2"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "9"
+                  },
+                  {
+                    "@CompositionOffset": "2560",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "0",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "1024",
+                    "@SampleCount": "8"
+                  },
+                  {
+                    "@CompositionOffset": "1536",
+                    "@SampleCount": "1"
+                  },
+                  {
+                    "@CompositionOffset": "512",
+                    "@SampleCount": "1"
+                  }
+                ]
+              },
+              "SampleToChunkBox": {
+                "@Size": "28",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SampleToChunkEntry": {
+                  "@FirstChunk": "1",
+                  "@SamplesPerChunk": "50",
+                  "@SampleDescriptionIndex": "1"
+                }
+              },
+              "SampleSizeBox": {
+                "@Size": "220",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "50",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "63179"
+                  },
+                  {
+                    "@Size": "11446"
+                  },
+                  {
+                    "@Size": "18216"
+                  },
+                  {
+                    "@Size": "4844"
+                  },
+                  {
+                    "@Size": "2540"
+                  },
+                  {
+                    "@Size": "2234"
+                  },
+                  {
+                    "@Size": "10525"
+                  },
+                  {
+                    "@Size": "7537"
+                  },
+                  {
+                    "@Size": "9477"
+                  },
+                  {
+                    "@Size": "22124"
+                  },
+                  {
+                    "@Size": "3483"
+                  },
+                  {
+                    "@Size": "1732"
+                  },
+                  {
+                    "@Size": "1908"
+                  },
+                  {
+                    "@Size": "9341"
+                  },
+                  {
+                    "@Size": "12280"
+                  },
+                  {
+                    "@Size": "15721"
+                  },
+                  {
+                    "@Size": "3014"
+                  },
+                  {
+                    "@Size": "1592"
+                  },
+                  {
+                    "@Size": "1503"
+                  },
+                  {
+                    "@Size": "12374"
+                  },
+                  {
+                    "@Size": "2805"
+                  },
+                  {
+                    "@Size": "1478"
+                  },
+                  {
+                    "@Size": "1415"
+                  },
+                  {
+                    "@Size": "15869"
+                  },
+                  {
+                    "@Size": "4198"
+                  },
+                  {
+                    "@Size": "1773"
+                  },
+                  {
+                    "@Size": "1788"
+                  },
+                  {
+                    "@Size": "9204"
+                  },
+                  {
+                    "@Size": "9037"
+                  },
+                  {
+                    "@Size": "6740"
+                  },
+                  {
+                    "@Size": "8193"
+                  },
+                  {
+                    "@Size": "6510"
+                  },
+                  {
+                    "@Size": "7799"
+                  },
+                  {
+                    "@Size": "6126"
+                  },
+                  {
+                    "@Size": "7506"
+                  },
+                  {
+                    "@Size": "5618"
+                  },
+                  {
+                    "@Size": "15149"
+                  },
+                  {
+                    "@Size": "6172"
+                  },
+                  {
+                    "@Size": "2837"
+                  },
+                  {
+                    "@Size": "2317"
+                  },
+                  {
+                    "@Size": "9555"
+                  },
+                  {
+                    "@Size": "9260"
+                  },
+                  {
+                    "@Size": "7231"
+                  },
+                  {
+                    "@Size": "9203"
+                  },
+                  {
+                    "@Size": "7557"
+                  },
+                  {
+                    "@Size": "8824"
+                  },
+                  {
+                    "@Size": "6354"
+                  },
+                  {
+                    "@Size": "6309"
+                  },
+                  {
+                    "@Size": "6683"
+                  },
+                  {
+                    "@Size": "2848"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "20",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "ChunkEntry": {
+                  "@offset": "48"
+                }
+              }
+            }
+          }
+        }
+      },
+      "UserDataBox": {
+        "@Size": "98",
+        "@Type": "udta",
+        "@Specification": "p12",
+        "@Container": "moov trak moof traf",
+        "MetaBox": {
+          "@Size": "90",
+          "@Type": "meta",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "file moov trak moof traf udta",
+          "HandlerBox": {
+            "@Size": "33",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "mdir",
+            "@Name": "",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "ItemListBox": {
+            "@Size": "45",
+            "@Type": "ilst",
+            "@Specification": "apple",
+            "@Container": "meta",
+            "tool": {
+              "@Size": "37",
+              "@Type": "A9too",
+              "@Specification": "apple",
+              "@Container": "ilst data",
+              "@value": "Lavf55.26.100",
+              "data": {
+                "@Size": "29",
+                "@Type": "data",
+                "@Version": "0",
+                "@Flags": "1",
+                "@Specification": "apple",
+                "@Container": "ilst *"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

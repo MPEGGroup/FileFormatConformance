@@ -1,0 +1,105 @@
+name: Conformance File Contribution
+
+on:
+  workflow_call:
+
+jobs:
+  create-ff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "poetry"
+
+      - name: Install dependencies
+        working-directory: ./src
+        run: |
+          poetry env use "3.11"
+          poetry install --no-interaction
+
+      - name: Restore GPAC Cache
+        uses: actions/cache/restore@v3
+        with:
+          path: /tmp/gpac
+          key: ${{ runner.os }}-gpac-
+          restore-keys: ${{ runner.os }}-gpac-
+
+      - name: Setup MP4Box
+        run: |
+          mkdir -p $HOME/.gpac
+          mkdir -p $HOME/.local/bin
+          touch $HOME/.gpac/creds.key
+          cp -r /tmp/gpac/ $HOME/.local/bin
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Configure GitHub handle
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create LFS file list
+        id: lfs-id
+        run: |
+          echo "lfs-id=$(git lfs ls-files --long | cut -d ' ' -f1 | sort \
+          | sha256sum | cut -d ' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: LFS Cache
+        uses: actions/cache@v3
+        with:
+          path: .git/lfs/objects
+          key: ${{ runner.os }}-lfs-${{ steps.lfs-id.outputs.lfs-id }}
+          restore-keys: ${{ runner.os }}-lfs-
+
+      - name: Git LFS Pull
+        run: git lfs pull
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v37
+
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
+      - name: Install Prettier
+        run: npm install -g prettier
+
+      - name: Create File Features
+        working-directory: ./src
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ $file == *.json ]]; then
+              continue
+            fi
+            if [[ $file == *"data/file_features/under_consideration/"* ]]; then
+              echo "Creating file features for $file"
+              poetry run extract-file-features -m -i ../$file
+              dir=$(realpath $(dirname ../$file))
+              prettier --parser json $dir/*.json --write
+            fi
+          done
+
+      - name: Commit File Features
+        run: |
+          git add data/file_features/under_consideration
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Add file features for ${{ github.event.pull_request.head.ref }}"
+          fi
+
+      - name: Push changes
+        run: git push origin HEAD:${{ github.event.pull_request.head.ref }}

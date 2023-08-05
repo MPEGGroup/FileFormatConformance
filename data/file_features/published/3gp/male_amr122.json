@@ -1,0 +1,22 @@
+{
+  "contributor": "Ericsson",
+  "description": "Simple Audio",
+  "md5": "f7f5276d42809948a6f4b88683af9ce3",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "track reference",
+    "video track",
+    "audio track",
+    "sync table"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./male_amr122.3gp",
+  "mdms_number": "",
+  "conforms_to": []
+}

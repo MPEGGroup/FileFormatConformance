@@ -1,0 +1,1154 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "a10-foreman_QCIF-raw.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mp42",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mp42"
+        },
+        {
+          "@AlternateBrand": "isom"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "1788",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3234467064",
+        "@ModificationTime": "3234467064",
+        "@TimeScale": "600",
+        "@Duration": "6000",
+        "@NextTrackID": "2"
+      },
+      "ObjectDescriptorBox": {
+        "@Size": "33",
+        "@Type": "iods",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p14",
+        "@Container": "moov",
+        "MP4InitialObjectDescriptor": {
+          "@objectDescriptorID": "od1",
+          "@binaryID": "1",
+          "Profile": {
+            "@audioProfileLevelIndication": "255",
+            "@visualProfileLevelIndication": "255",
+            "@sceneProfileLevelIndication": "255",
+            "@graphicsProfileLevelIndication": "255",
+            "@ODProfileLevelIndication": "255"
+          },
+          "Descr": {
+            "esDescrInc": {
+              "ES_ID_Inc": {
+                "@trackID": "1"
+              }
+            }
+          }
+        }
+      },
+      "TrackBox": {
+        "@Size": "1639",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "7",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3234467064",
+          "@ModificationTime": "3234467064",
+          "@TrackID": "1",
+          "@Duration": "6000",
+          "@Width": "176.00",
+          "@Height": "144.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "1539",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3234467064",
+            "@ModificationTime": "3234467064",
+            "@TimeScale": "600",
+            "@Duration": "6000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "37",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "vide",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "1462",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "1398",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "20",
+                  "@SampleCount": "300"
+                }
+              },
+              "SampleDescriptionBox": {
+                "@Size": "102",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "YUV420SampleEntryBox": {
+                  "@Size": "86",
+                  "@Type": "j420",
+                  "@Specification": "apple",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "176",
+                  "@Height": "144",
+                  "@Version": "0",
+                  "@Revision": "0",
+                  "@Vendor": "00000000",
+                  "@TemporalQuality": "0",
+                  "@SpatialQuality": "0",
+                  "@FramesPerSample": "1",
+                  "@ColorTableIndex": "-1",
+                  "@XDPI": "72",
+                  "@YDPI": "72",
+                  "@BitDepth": "24"
+                }
+              },
+              "SampleSizeBox": {
+                "@Size": "20",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "300",
+                "@ConstantSampleSize": "38016"
+              },
+              "SampleToChunkBox": {
+                "@Size": "28",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SampleToChunkEntry": {
+                  "@FirstChunk": "1",
+                  "@SamplesPerChunk": "1",
+                  "@SampleDescriptionIndex": "1"
+                }
+              },
+              "ChunkOffsetBox": {
+                "@Size": "1216",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "300",
+                "ChunkEntry": [
+                  {
+                    "@offset": "1820"
+                  },
+                  {
+                    "@offset": "39836"
+                  },
+                  {
+                    "@offset": "77852"
+                  },
+                  {
+                    "@offset": "115868"
+                  },
+                  {
+                    "@offset": "153884"
+                  },
+                  {
+                    "@offset": "191900"
+                  },
+                  {
+                    "@offset": "229916"
+                  },
+                  {
+                    "@offset": "267932"
+                  },
+                  {
+                    "@offset": "305948"
+                  },
+                  {
+                    "@offset": "343964"
+                  },
+                  {
+                    "@offset": "381980"
+                  },
+                  {
+                    "@offset": "419996"
+                  },
+                  {
+                    "@offset": "458012"
+                  },
+                  {
+                    "@offset": "496028"
+                  },
+                  {
+                    "@offset": "534044"
+                  },
+                  {
+                    "@offset": "572060"
+                  },
+                  {
+                    "@offset": "610076"
+                  },
+                  {
+                    "@offset": "648092"
+                  },
+                  {
+                    "@offset": "686108"
+                  },
+                  {
+                    "@offset": "724124"
+                  },
+                  {
+                    "@offset": "762140"
+                  },
+                  {
+                    "@offset": "800156"
+                  },
+                  {
+                    "@offset": "838172"
+                  },
+                  {
+                    "@offset": "876188"
+                  },
+                  {
+                    "@offset": "914204"
+                  },
+                  {
+                    "@offset": "952220"
+                  },
+                  {
+                    "@offset": "990236"
+                  },
+                  {
+                    "@offset": "1028252"
+                  },
+                  {
+                    "@offset": "1066268"
+                  },
+                  {
+                    "@offset": "1104284"
+                  },
+                  {
+                    "@offset": "1142300"
+                  },
+                  {
+                    "@offset": "1180316"
+                  },
+                  {
+                    "@offset": "1218332"
+                  },
+                  {
+                    "@offset": "1256348"
+                  },
+                  {
+                    "@offset": "1294364"
+                  },
+                  {
+                    "@offset": "1332380"
+                  },
+                  {
+                    "@offset": "1370396"
+                  },
+                  {
+                    "@offset": "1408412"
+                  },
+                  {
+                    "@offset": "1446428"
+                  },
+                  {
+                    "@offset": "1484444"
+                  },
+                  {
+                    "@offset": "1522460"
+                  },
+                  {
+                    "@offset": "1560476"
+                  },
+                  {
+                    "@offset": "1598492"
+                  },
+                  {
+                    "@offset": "1636508"
+                  },
+                  {
+                    "@offset": "1674524"
+                  },
+                  {
+                    "@offset": "1712540"
+                  },
+                  {
+                    "@offset": "1750556"
+                  },
+                  {
+                    "@offset": "1788572"
+                  },
+                  {
+                    "@offset": "1826588"
+                  },
+                  {
+                    "@offset": "1864604"
+                  },
+                  {
+                    "@offset": "1902620"
+                  },
+                  {
+                    "@offset": "1940636"
+                  },
+                  {
+                    "@offset": "1978652"
+                  },
+                  {
+                    "@offset": "2016668"
+                  },
+                  {
+                    "@offset": "2054684"
+                  },
+                  {
+                    "@offset": "2092700"
+                  },
+                  {
+                    "@offset": "2130716"
+                  },
+                  {
+                    "@offset": "2168732"
+                  },
+                  {
+                    "@offset": "2206748"
+                  },
+                  {
+                    "@offset": "2244764"
+                  },
+                  {
+                    "@offset": "2282780"
+                  },
+                  {
+                    "@offset": "2320796"
+                  },
+                  {
+                    "@offset": "2358812"
+                  },
+                  {
+                    "@offset": "2396828"
+                  },
+                  {
+                    "@offset": "2434844"
+                  },
+                  {
+                    "@offset": "2472860"
+                  },
+                  {
+                    "@offset": "2510876"
+                  },
+                  {
+                    "@offset": "2548892"
+                  },
+                  {
+                    "@offset": "2586908"
+                  },
+                  {
+                    "@offset": "2624924"
+                  },
+                  {
+                    "@offset": "2662940"
+                  },
+                  {
+                    "@offset": "2700956"
+                  },
+                  {
+                    "@offset": "2738972"
+                  },
+                  {
+                    "@offset": "2776988"
+                  },
+                  {
+                    "@offset": "2815004"
+                  },
+                  {
+                    "@offset": "2853020"
+                  },
+                  {
+                    "@offset": "2891036"
+                  },
+                  {
+                    "@offset": "2929052"
+                  },
+                  {
+                    "@offset": "2967068"
+                  },
+                  {
+                    "@offset": "3005084"
+                  },
+                  {
+                    "@offset": "3043100"
+                  },
+                  {
+                    "@offset": "3081116"
+                  },
+                  {
+                    "@offset": "3119132"
+                  },
+                  {
+                    "@offset": "3157148"
+                  },
+                  {
+                    "@offset": "3195164"
+                  },
+                  {
+                    "@offset": "3233180"
+                  },
+                  {
+                    "@offset": "3271196"
+                  },
+                  {
+                    "@offset": "3309212"
+                  },
+                  {
+                    "@offset": "3347228"
+                  },
+                  {
+                    "@offset": "3385244"
+                  },
+                  {
+                    "@offset": "3423260"
+                  },
+                  {
+                    "@offset": "3461276"
+                  },
+                  {
+                    "@offset": "3499292"
+                  },
+                  {
+                    "@offset": "3537308"
+                  },
+                  {
+                    "@offset": "3575324"
+                  },
+                  {
+                    "@offset": "3613340"
+                  },
+                  {
+                    "@offset": "3651356"
+                  },
+                  {
+                    "@offset": "3689372"
+                  },
+                  {
+                    "@offset": "3727388"
+                  },
+                  {
+                    "@offset": "3765404"
+                  },
+                  {
+                    "@offset": "3803420"
+                  },
+                  {
+                    "@offset": "3841436"
+                  },
+                  {
+                    "@offset": "3879452"
+                  },
+                  {
+                    "@offset": "3917468"
+                  },
+                  {
+                    "@offset": "3955484"
+                  },
+                  {
+                    "@offset": "3993500"
+                  },
+                  {
+                    "@offset": "4031516"
+                  },
+                  {
+                    "@offset": "4069532"
+                  },
+                  {
+                    "@offset": "4107548"
+                  },
+                  {
+                    "@offset": "4145564"
+                  },
+                  {
+                    "@offset": "4183580"
+                  },
+                  {
+                    "@offset": "4221596"
+                  },
+                  {
+                    "@offset": "4259612"
+                  },
+                  {
+                    "@offset": "4297628"
+                  },
+                  {
+                    "@offset": "4335644"
+                  },
+                  {
+                    "@offset": "4373660"
+                  },
+                  {
+                    "@offset": "4411676"
+                  },
+                  {
+                    "@offset": "4449692"
+                  },
+                  {
+                    "@offset": "4487708"
+                  },
+                  {
+                    "@offset": "4525724"
+                  },
+                  {
+                    "@offset": "4563740"
+                  },
+                  {
+                    "@offset": "4601756"
+                  },
+                  {
+                    "@offset": "4639772"
+                  },
+                  {
+                    "@offset": "4677788"
+                  },
+                  {
+                    "@offset": "4715804"
+                  },
+                  {
+                    "@offset": "4753820"
+                  },
+                  {
+                    "@offset": "4791836"
+                  },
+                  {
+                    "@offset": "4829852"
+                  },
+                  {
+                    "@offset": "4867868"
+                  },
+                  {
+                    "@offset": "4905884"
+                  },
+                  {
+                    "@offset": "4943900"
+                  },
+                  {
+                    "@offset": "4981916"
+                  },
+                  {
+                    "@offset": "5019932"
+                  },
+                  {
+                    "@offset": "5057948"
+                  },
+                  {
+                    "@offset": "5095964"
+                  },
+                  {
+                    "@offset": "5133980"
+                  },
+                  {
+                    "@offset": "5171996"
+                  },
+                  {
+                    "@offset": "5210012"
+                  },
+                  {
+                    "@offset": "5248028"
+                  },
+                  {
+                    "@offset": "5286044"
+                  },
+                  {
+                    "@offset": "5324060"
+                  },
+                  {
+                    "@offset": "5362076"
+                  },
+                  {
+                    "@offset": "5400092"
+                  },
+                  {
+                    "@offset": "5438108"
+                  },
+                  {
+                    "@offset": "5476124"
+                  },
+                  {
+                    "@offset": "5514140"
+                  },
+                  {
+                    "@offset": "5552156"
+                  },
+                  {
+                    "@offset": "5590172"
+                  },
+                  {
+                    "@offset": "5628188"
+                  },
+                  {
+                    "@offset": "5666204"
+                  },
+                  {
+                    "@offset": "5704220"
+                  },
+                  {
+                    "@offset": "5742236"
+                  },
+                  {
+                    "@offset": "5780252"
+                  },
+                  {
+                    "@offset": "5818268"
+                  },
+                  {
+                    "@offset": "5856284"
+                  },
+                  {
+                    "@offset": "5894300"
+                  },
+                  {
+                    "@offset": "5932316"
+                  },
+                  {
+                    "@offset": "5970332"
+                  },
+                  {
+                    "@offset": "6008348"
+                  },
+                  {
+                    "@offset": "6046364"
+                  },
+                  {
+                    "@offset": "6084380"
+                  },
+                  {
+                    "@offset": "6122396"
+                  },
+                  {
+                    "@offset": "6160412"
+                  },
+                  {
+                    "@offset": "6198428"
+                  },
+                  {
+                    "@offset": "6236444"
+                  },
+                  {
+                    "@offset": "6274460"
+                  },
+                  {
+                    "@offset": "6312476"
+                  },
+                  {
+                    "@offset": "6350492"
+                  },
+                  {
+                    "@offset": "6388508"
+                  },
+                  {
+                    "@offset": "6426524"
+                  },
+                  {
+                    "@offset": "6464540"
+                  },
+                  {
+                    "@offset": "6502556"
+                  },
+                  {
+                    "@offset": "6540572"
+                  },
+                  {
+                    "@offset": "6578588"
+                  },
+                  {
+                    "@offset": "6616604"
+                  },
+                  {
+                    "@offset": "6654620"
+                  },
+                  {
+                    "@offset": "6692636"
+                  },
+                  {
+                    "@offset": "6730652"
+                  },
+                  {
+                    "@offset": "6768668"
+                  },
+                  {
+                    "@offset": "6806684"
+                  },
+                  {
+                    "@offset": "6844700"
+                  },
+                  {
+                    "@offset": "6882716"
+                  },
+                  {
+                    "@offset": "6920732"
+                  },
+                  {
+                    "@offset": "6958748"
+                  },
+                  {
+                    "@offset": "6996764"
+                  },
+                  {
+                    "@offset": "7034780"
+                  },
+                  {
+                    "@offset": "7072796"
+                  },
+                  {
+                    "@offset": "7110812"
+                  },
+                  {
+                    "@offset": "7148828"
+                  },
+                  {
+                    "@offset": "7186844"
+                  },
+                  {
+                    "@offset": "7224860"
+                  },
+                  {
+                    "@offset": "7262876"
+                  },
+                  {
+                    "@offset": "7300892"
+                  },
+                  {
+                    "@offset": "7338908"
+                  },
+                  {
+                    "@offset": "7376924"
+                  },
+                  {
+                    "@offset": "7414940"
+                  },
+                  {
+                    "@offset": "7452956"
+                  },
+                  {
+                    "@offset": "7490972"
+                  },
+                  {
+                    "@offset": "7528988"
+                  },
+                  {
+                    "@offset": "7567004"
+                  },
+                  {
+                    "@offset": "7605020"
+                  },
+                  {
+                    "@offset": "7643036"
+                  },
+                  {
+                    "@offset": "7681052"
+                  },
+                  {
+                    "@offset": "7719068"
+                  },
+                  {
+                    "@offset": "7757084"
+                  },
+                  {
+                    "@offset": "7795100"
+                  },
+                  {
+                    "@offset": "7833116"
+                  },
+                  {
+                    "@offset": "7871132"
+                  },
+                  {
+                    "@offset": "7909148"
+                  },
+                  {
+                    "@offset": "7947164"
+                  },
+                  {
+                    "@offset": "7985180"
+                  },
+                  {
+                    "@offset": "8023196"
+                  },
+                  {
+                    "@offset": "8061212"
+                  },
+                  {
+                    "@offset": "8099228"
+                  },
+                  {
+                    "@offset": "8137244"
+                  },
+                  {
+                    "@offset": "8175260"
+                  },
+                  {
+                    "@offset": "8213276"
+                  },
+                  {
+                    "@offset": "8251292"
+                  },
+                  {
+                    "@offset": "8289308"
+                  },
+                  {
+                    "@offset": "8327324"
+                  },
+                  {
+                    "@offset": "8365340"
+                  },
+                  {
+                    "@offset": "8403356"
+                  },
+                  {
+                    "@offset": "8441372"
+                  },
+                  {
+                    "@offset": "8479388"
+                  },
+                  {
+                    "@offset": "8517404"
+                  },
+                  {
+                    "@offset": "8555420"
+                  },
+                  {
+                    "@offset": "8593436"
+                  },
+                  {
+                    "@offset": "8631452"
+                  },
+                  {
+                    "@offset": "8669468"
+                  },
+                  {
+                    "@offset": "8707484"
+                  },
+                  {
+                    "@offset": "8745500"
+                  },
+                  {
+                    "@offset": "8783516"
+                  },
+                  {
+                    "@offset": "8821532"
+                  },
+                  {
+                    "@offset": "8859548"
+                  },
+                  {
+                    "@offset": "8897564"
+                  },
+                  {
+                    "@offset": "8935580"
+                  },
+                  {
+                    "@offset": "8973596"
+                  },
+                  {
+                    "@offset": "9011612"
+                  },
+                  {
+                    "@offset": "9049628"
+                  },
+                  {
+                    "@offset": "9087644"
+                  },
+                  {
+                    "@offset": "9125660"
+                  },
+                  {
+                    "@offset": "9163676"
+                  },
+                  {
+                    "@offset": "9201692"
+                  },
+                  {
+                    "@offset": "9239708"
+                  },
+                  {
+                    "@offset": "9277724"
+                  },
+                  {
+                    "@offset": "9315740"
+                  },
+                  {
+                    "@offset": "9353756"
+                  },
+                  {
+                    "@offset": "9391772"
+                  },
+                  {
+                    "@offset": "9429788"
+                  },
+                  {
+                    "@offset": "9467804"
+                  },
+                  {
+                    "@offset": "9505820"
+                  },
+                  {
+                    "@offset": "9543836"
+                  },
+                  {
+                    "@offset": "9581852"
+                  },
+                  {
+                    "@offset": "9619868"
+                  },
+                  {
+                    "@offset": "9657884"
+                  },
+                  {
+                    "@offset": "9695900"
+                  },
+                  {
+                    "@offset": "9733916"
+                  },
+                  {
+                    "@offset": "9771932"
+                  },
+                  {
+                    "@offset": "9809948"
+                  },
+                  {
+                    "@offset": "9847964"
+                  },
+                  {
+                    "@offset": "9885980"
+                  },
+                  {
+                    "@offset": "9923996"
+                  },
+                  {
+                    "@offset": "9962012"
+                  },
+                  {
+                    "@offset": "10000028"
+                  },
+                  {
+                    "@offset": "10038044"
+                  },
+                  {
+                    "@offset": "10076060"
+                  },
+                  {
+                    "@offset": "10114076"
+                  },
+                  {
+                    "@offset": "10152092"
+                  },
+                  {
+                    "@offset": "10190108"
+                  },
+                  {
+                    "@offset": "10228124"
+                  },
+                  {
+                    "@offset": "10266140"
+                  },
+                  {
+                    "@offset": "10304156"
+                  },
+                  {
+                    "@offset": "10342172"
+                  },
+                  {
+                    "@offset": "10380188"
+                  },
+                  {
+                    "@offset": "10418204"
+                  },
+                  {
+                    "@offset": "10456220"
+                  },
+                  {
+                    "@offset": "10494236"
+                  },
+                  {
+                    "@offset": "10532252"
+                  },
+                  {
+                    "@offset": "10570268"
+                  },
+                  {
+                    "@offset": "10608284"
+                  },
+                  {
+                    "@offset": "10646300"
+                  },
+                  {
+                    "@offset": "10684316"
+                  },
+                  {
+                    "@offset": "10722332"
+                  },
+                  {
+                    "@offset": "10760348"
+                  },
+                  {
+                    "@offset": "10798364"
+                  },
+                  {
+                    "@offset": "10836380"
+                  },
+                  {
+                    "@offset": "10874396"
+                  },
+                  {
+                    "@offset": "10912412"
+                  },
+                  {
+                    "@offset": "10950428"
+                  },
+                  {
+                    "@offset": "10988444"
+                  },
+                  {
+                    "@offset": "11026460"
+                  },
+                  {
+                    "@offset": "11064476"
+                  },
+                  {
+                    "@offset": "11102492"
+                  },
+                  {
+                    "@offset": "11140508"
+                  },
+                  {
+                    "@offset": "11178524"
+                  },
+                  {
+                    "@offset": "11216540"
+                  },
+                  {
+                    "@offset": "11254556"
+                  },
+                  {
+                    "@offset": "11292572"
+                  },
+                  {
+                    "@offset": "11330588"
+                  },
+                  {
+                    "@offset": "11368604"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "11404808",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "11404800"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

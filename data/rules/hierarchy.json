@@ -1,0 +1,8 @@
+{
+  "udta:Box": {
+    "action": "skip-rule",
+    "conditions": {
+      "path_has": ["moov:Box"]
+    }
+  }
+}

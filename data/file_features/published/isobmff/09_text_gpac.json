@@ -1,0 +1,364 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "09_text.mp4",
+    "FileTypeBox": {
+      "@Size": "36",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "3gp5",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "isom"
+        },
+        {
+          "@AlternateBrand": "3gp5"
+        },
+        {
+          "@AlternateBrand": "3gp4"
+        },
+        {
+          "@AlternateBrand": "mp41"
+        },
+        {
+          "@AlternateBrand": "mp42"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "756",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3234950105",
+        "@ModificationTime": "3234950105",
+        "@TimeScale": "600",
+        "@Duration": "3600",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "528",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3234950105",
+          "@ModificationTime": "3234950105",
+          "@TrackID": "1",
+          "@Duration": "3600",
+          "@Width": "400.00",
+          "@Height": "60.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "428",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3234950105",
+            "@ModificationTime": "3234950105",
+            "@TimeScale": "1000",
+            "@Duration": "6000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "60",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "text",
+            "@Name": "GPAC Streaming Text Handler",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "328",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "MPEGMediaHeaderBox": {
+              "@Size": "12",
+              "@Type": "nmhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "272",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "144",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "Tx3gSampleEntryBox": [
+                  {
+                    "@Size": "64",
+                    "@Type": "tx3g",
+                    "@Specification": "3gpp",
+                    "@Container": "stsd",
+                    "@dataReferenceIndex": "1",
+                    "@displayFlags": "40000",
+                    "@horizontal-justification": "1",
+                    "@vertical-justification": "-1",
+                    "@backgroundColor": "ff 0 0 ff",
+                    "DefaultBox": {
+                      "BoxRecord": {
+                        "@top": "0",
+                        "@left": "0",
+                        "@bottom": "60",
+                        "@right": "400"
+                      },
+                      "FontTableBox": {
+                        "@Size": "18",
+                        "@Type": "ftab",
+                        "@Specification": "3gpp",
+                        "@Container": "tx3g text enct",
+                        "FontRecord": {
+                          "@ID": "1",
+                          "@name": "Serif"
+                        }
+                      }
+                    },
+                    "DefaultStyle": {
+                      "StyleRecord": {
+                        "@startChar": "0",
+                        "@endChar": "0",
+                        "@fontID": "1",
+                        "@styles": "Normal",
+                        "@fontSize": "18",
+                        "@textColor": "ff ff ff ff"
+                      }
+                    },
+                    "FontTableBox": {
+                      "@Size": "18",
+                      "@Type": "ftab",
+                      "@Specification": "3gpp",
+                      "@Container": "tx3g text enct",
+                      "FontRecord": {
+                        "@ID": "1",
+                        "@name": "Serif"
+                      }
+                    }
+                  },
+                  {
+                    "@Size": "64",
+                    "@Type": "tx3g",
+                    "@Specification": "3gpp",
+                    "@Container": "stsd",
+                    "@dataReferenceIndex": "1",
+                    "@displayFlags": "40000",
+                    "@horizontal-justification": "1",
+                    "@vertical-justification": "-1",
+                    "@backgroundColor": "ff 0 ff ff",
+                    "DefaultBox": {
+                      "BoxRecord": {
+                        "@top": "0",
+                        "@left": "0",
+                        "@bottom": "60",
+                        "@right": "400"
+                      },
+                      "FontTableBox": {
+                        "@Size": "18",
+                        "@Type": "ftab",
+                        "@Specification": "3gpp",
+                        "@Container": "tx3g text enct",
+                        "FontRecord": {
+                          "@ID": "2",
+                          "@name": "Serif"
+                        }
+                      }
+                    },
+                    "DefaultStyle": {
+                      "StyleRecord": {
+                        "@startChar": "0",
+                        "@endChar": "0",
+                        "@fontID": "2",
+                        "@styles": "Bold Underlined ",
+                        "@fontSize": "20",
+                        "@textColor": "ff ff ff ff"
+                      }
+                    },
+                    "FontTableBox": {
+                      "@Size": "18",
+                      "@Type": "ftab",
+                      "@Specification": "3gpp",
+                      "@Container": "tx3g text enct",
+                      "FontRecord": {
+                        "@ID": "2",
+                        "@name": "Serif"
+                      }
+                    }
+                  }
+                ]
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "2000",
+                  "@SampleCount": "3"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "2",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "2",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "2"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "32",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "3",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "18"
+                  },
+                  {
+                    "@Size": "2"
+                  },
+                  {
+                    "@Size": "23"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "24",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "ChunkEntry": [
+                  {
+                    "@offset": "800"
+                  },
+                  {
+                    "@offset": "820"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "UserDataBox": {
+        "@Size": "112",
+        "@Type": "udta",
+        "@Specification": "p12",
+        "@Container": "moov trak moof traf",
+        "CopyrightBox": {
+          "@Size": "104",
+          "@Type": "cprt",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "udta",
+          "@LanguageCode": "und",
+          "@CopyrightNotice": "ENST IsoMedia Conformance Files - ENST (c) 2006 - Rights released for ISO Conformance use"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "51",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "43"
+    },
+    "FreeSpaceBox": {
+      "@Size": "51",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "43"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

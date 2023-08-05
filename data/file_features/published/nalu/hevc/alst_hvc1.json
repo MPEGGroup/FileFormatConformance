@@ -1,0 +1,18 @@
+{
+  "contributor": "Nokia",
+  "description": "alternative startup sequence sample group, RAP sample group, and  hvc1 sample entry",
+  "md5": "0f59fd049b9652640a8a49beb1a882ce",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Alt. startup properties and sample group",
+    "RAP sample group",
+    "hvc1 sample entry"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./alst_hvc1.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

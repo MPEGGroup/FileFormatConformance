@@ -1,0 +1,15 @@
+{
+  "avc1 sample entry": "Simple AVC streams using parameter sets in the sample entry",
+  "layering and subseq grps": "Sample groups are used for layering and sub-sequences",
+  "switch tracks": "Tracks for switch pictures are present, with their track references",
+  "separate param stream": "A separate parameter set stream is used.",
+  "Extractors": "",
+  "Aggregators": "",
+  "Temporal Meta-data": "",
+  "Implicit Reconstruction": "",
+  "sbas track reference": "",
+  "scal track reference": "",
+  "oinf, linf and oref track reference": "",
+  "tbas and sabt track reference": "",
+  "hvc1 sample entry": ""
+}

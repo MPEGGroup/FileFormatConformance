@@ -1,0 +1,29 @@
+{
+  "contributor": "Nokia",
+  "description": "A base quality and an enhanced quality presentations of same image. The baselayer is an AVC-coded item.",
+  "md5": "307a61934ba899601e5e9d1b4a013527",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B023": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Scalable Main profile encoded enhancement layer for external baselayer",
+        "same_input_content": " SNR scalability (1024x512 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B023.265"
+      },
+      "B024": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 AVC encoded frame (1024x512 resolution)",
+        "same_input_content": "B20",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B024.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./multilayer004.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

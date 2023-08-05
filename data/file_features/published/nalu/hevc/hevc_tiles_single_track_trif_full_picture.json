@@ -1,0 +1,30 @@
+{
+  "contributor": "Telecom ParisTech",
+  "description": "HEVC Tiled Tracks",
+  "md5": "8a14edab3470c4985a23068d25c4657d",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "track enabled bit",
+    "track reference",
+    "video track",
+    "ctts offsets",
+    "sync table",
+    "hev1 sample entry",
+    "hvc1 sample entry",
+    "hev2 sample entry",
+    "hvc2 sample entry",
+    "hvt1 sample entry",
+    "tbas and sabt track reference"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./hevc_tiles_single_track_trif_full_picture.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

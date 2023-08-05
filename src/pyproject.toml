@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "feature-extractor-toolset"
+version = "0.1.0"
+description = "Set of tools to extract features from specs and files."
+authors = ["Dimitri Podborski", "Deniz Ugur"]
+packages = [
+    { include = "common", from = "." },
+    { include = "construct", from = "." },
+    { include = "feature_extractor", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.10.0"
+lxml = "^4.6.3"
+openpyxl = "^3.0.9"
+xmltodict = "^0.13.0"
+python-docx = "^0.8.11"
+tqdm = "^4.65.0"
+loguru = "^0.7.0"
+gitpython = "^3.1.32"
+jsonschema = "^4.18.4"
+pytest-check = "^2.2.0"
+pytest-dependency = "^0.5.1"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+# Spec features
+extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
+update-spec-features = "feature_extractor.spec_features:update_spec_features"
+check-spec-features = "feature_extractor.spec_features:check_spec_features"
+
+# File features
+contribute-files = "feature_extractor.file_features:contribute_files"
+extract-file-features = "feature_extractor.file_features:extract_file_features"
+update-file-features = "feature_extractor.file_features:update_file_features"
+update-heif-features = "feature_extractor.file_features:update_heif_features"
+update-ff-conformance-xls = "feature_extractor.file_features:update_ff_conformance_xls"
+
+# Construct files
+construct-all = "construct.construct_all:main"
+construct-boxes = "construct.boxes:main"
+construct-dictionary = "construct.dictionary:main"
+construct-hierarchy = "construct.hierarchy:main"
+construct-files = "construct.files:main"
+
+# Create coverage report
+coverage = "construct.coverage:main"
+
+# Validation
+validate-files = "validate.files:main"
+validate-standard = "validate.standard:main"

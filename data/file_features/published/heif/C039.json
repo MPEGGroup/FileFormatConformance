@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "Identity derived \u2018iden\u2019 item derived from another \u2018iden\u2019 item. Both \u2018iden\u2019 items have associated essential transformative \u2018clap\u2019 and \u2018irot\u2019 properties.",
+  "md5": "ec0b22ebdead21d47180d108c441d420",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C039.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

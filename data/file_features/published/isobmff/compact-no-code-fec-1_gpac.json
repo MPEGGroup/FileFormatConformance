@@ -1,0 +1,1009 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "compact-no-code-fec-1.iso3",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso3",
+      "@MinorVersion": "0",
+      "BrandEntry": {
+        "@AlternateBrand": "iso2"
+      }
+    },
+    "MovieBox": {
+      "@Size": "1417",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3281926948",
+        "@ModificationTime": "3281926948",
+        "@TimeScale": "10000",
+        "@Duration": "65535",
+        "@NextTrackID": "4096"
+      },
+      "TrackBox": {
+        "@Size": "1301",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3281926948",
+          "@ModificationTime": "3281926948",
+          "@TrackID": "1",
+          "@Duration": "65535"
+        },
+        "MediaBox": {
+          "@Size": "1201",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3281926948",
+            "@ModificationTime": "3281926948",
+            "@TimeScale": "90000",
+            "@Duration": "65535",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "33",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "hint",
+            "@Name": "",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "1128",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "HintMediaHeaderBox": {
+              "@Size": "28",
+              "@Type": "hmhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "@MaximumPDUSize": "0",
+              "@AveragePDUSize": "0",
+              "@MaxBitRate": "0",
+              "@AverageBitRate": "0"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "1056",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "40",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "FDPHintSampleEntryBox": {
+                  "@Size": "24",
+                  "@Type": "fdp ",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@HintTrackVersion": "1",
+                  "@LastCompatibleVersion": "1",
+                  "@partition_entry_ID": "1",
+                  "@FEC_overhead": "0"
+                }
+              },
+              "SampleSizeBox": {
+                "@Size": "20",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "236",
+                "@ConstantSampleSize": "60"
+              },
+              "SampleToChunkBox": {
+                "@Size": "28",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SampleToChunkEntry": {
+                  "@FirstChunk": "1",
+                  "@SamplesPerChunk": "1",
+                  "@SampleDescriptionIndex": "1"
+                }
+              },
+              "ChunkOffsetBox": {
+                "@Size": "960",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "236",
+                "ChunkEntry": [
+                  {
+                    "@offset": "1700"
+                  },
+                  {
+                    "@offset": "1760"
+                  },
+                  {
+                    "@offset": "1820"
+                  },
+                  {
+                    "@offset": "1880"
+                  },
+                  {
+                    "@offset": "1940"
+                  },
+                  {
+                    "@offset": "2000"
+                  },
+                  {
+                    "@offset": "2060"
+                  },
+                  {
+                    "@offset": "2120"
+                  },
+                  {
+                    "@offset": "2180"
+                  },
+                  {
+                    "@offset": "2240"
+                  },
+                  {
+                    "@offset": "2300"
+                  },
+                  {
+                    "@offset": "2360"
+                  },
+                  {
+                    "@offset": "2420"
+                  },
+                  {
+                    "@offset": "2480"
+                  },
+                  {
+                    "@offset": "2540"
+                  },
+                  {
+                    "@offset": "2600"
+                  },
+                  {
+                    "@offset": "2660"
+                  },
+                  {
+                    "@offset": "2720"
+                  },
+                  {
+                    "@offset": "2780"
+                  },
+                  {
+                    "@offset": "2840"
+                  },
+                  {
+                    "@offset": "2900"
+                  },
+                  {
+                    "@offset": "2960"
+                  },
+                  {
+                    "@offset": "3020"
+                  },
+                  {
+                    "@offset": "3080"
+                  },
+                  {
+                    "@offset": "3140"
+                  },
+                  {
+                    "@offset": "3200"
+                  },
+                  {
+                    "@offset": "3260"
+                  },
+                  {
+                    "@offset": "3320"
+                  },
+                  {
+                    "@offset": "3380"
+                  },
+                  {
+                    "@offset": "3440"
+                  },
+                  {
+                    "@offset": "3500"
+                  },
+                  {
+                    "@offset": "3560"
+                  },
+                  {
+                    "@offset": "3620"
+                  },
+                  {
+                    "@offset": "3680"
+                  },
+                  {
+                    "@offset": "3740"
+                  },
+                  {
+                    "@offset": "3800"
+                  },
+                  {
+                    "@offset": "3860"
+                  },
+                  {
+                    "@offset": "3920"
+                  },
+                  {
+                    "@offset": "3980"
+                  },
+                  {
+                    "@offset": "4040"
+                  },
+                  {
+                    "@offset": "4100"
+                  },
+                  {
+                    "@offset": "4160"
+                  },
+                  {
+                    "@offset": "4220"
+                  },
+                  {
+                    "@offset": "4280"
+                  },
+                  {
+                    "@offset": "4340"
+                  },
+                  {
+                    "@offset": "4400"
+                  },
+                  {
+                    "@offset": "4460"
+                  },
+                  {
+                    "@offset": "4520"
+                  },
+                  {
+                    "@offset": "4580"
+                  },
+                  {
+                    "@offset": "4640"
+                  },
+                  {
+                    "@offset": "4700"
+                  },
+                  {
+                    "@offset": "4760"
+                  },
+                  {
+                    "@offset": "4820"
+                  },
+                  {
+                    "@offset": "4880"
+                  },
+                  {
+                    "@offset": "4940"
+                  },
+                  {
+                    "@offset": "5000"
+                  },
+                  {
+                    "@offset": "5060"
+                  },
+                  {
+                    "@offset": "5120"
+                  },
+                  {
+                    "@offset": "5180"
+                  },
+                  {
+                    "@offset": "5240"
+                  },
+                  {
+                    "@offset": "5300"
+                  },
+                  {
+                    "@offset": "5360"
+                  },
+                  {
+                    "@offset": "5420"
+                  },
+                  {
+                    "@offset": "5480"
+                  },
+                  {
+                    "@offset": "5540"
+                  },
+                  {
+                    "@offset": "5600"
+                  },
+                  {
+                    "@offset": "5660"
+                  },
+                  {
+                    "@offset": "5720"
+                  },
+                  {
+                    "@offset": "5780"
+                  },
+                  {
+                    "@offset": "5840"
+                  },
+                  {
+                    "@offset": "5900"
+                  },
+                  {
+                    "@offset": "5960"
+                  },
+                  {
+                    "@offset": "6020"
+                  },
+                  {
+                    "@offset": "6080"
+                  },
+                  {
+                    "@offset": "6140"
+                  },
+                  {
+                    "@offset": "6200"
+                  },
+                  {
+                    "@offset": "6260"
+                  },
+                  {
+                    "@offset": "6320"
+                  },
+                  {
+                    "@offset": "6380"
+                  },
+                  {
+                    "@offset": "6440"
+                  },
+                  {
+                    "@offset": "6500"
+                  },
+                  {
+                    "@offset": "6560"
+                  },
+                  {
+                    "@offset": "6620"
+                  },
+                  {
+                    "@offset": "6680"
+                  },
+                  {
+                    "@offset": "6740"
+                  },
+                  {
+                    "@offset": "6800"
+                  },
+                  {
+                    "@offset": "6860"
+                  },
+                  {
+                    "@offset": "6920"
+                  },
+                  {
+                    "@offset": "6980"
+                  },
+                  {
+                    "@offset": "7040"
+                  },
+                  {
+                    "@offset": "7100"
+                  },
+                  {
+                    "@offset": "7160"
+                  },
+                  {
+                    "@offset": "7220"
+                  },
+                  {
+                    "@offset": "7280"
+                  },
+                  {
+                    "@offset": "7340"
+                  },
+                  {
+                    "@offset": "7400"
+                  },
+                  {
+                    "@offset": "7460"
+                  },
+                  {
+                    "@offset": "7520"
+                  },
+                  {
+                    "@offset": "7580"
+                  },
+                  {
+                    "@offset": "7640"
+                  },
+                  {
+                    "@offset": "7700"
+                  },
+                  {
+                    "@offset": "7760"
+                  },
+                  {
+                    "@offset": "7820"
+                  },
+                  {
+                    "@offset": "7880"
+                  },
+                  {
+                    "@offset": "7940"
+                  },
+                  {
+                    "@offset": "8000"
+                  },
+                  {
+                    "@offset": "8060"
+                  },
+                  {
+                    "@offset": "8120"
+                  },
+                  {
+                    "@offset": "8180"
+                  },
+                  {
+                    "@offset": "8240"
+                  },
+                  {
+                    "@offset": "8300"
+                  },
+                  {
+                    "@offset": "8360"
+                  },
+                  {
+                    "@offset": "8420"
+                  },
+                  {
+                    "@offset": "8480"
+                  },
+                  {
+                    "@offset": "8540"
+                  },
+                  {
+                    "@offset": "8600"
+                  },
+                  {
+                    "@offset": "8660"
+                  },
+                  {
+                    "@offset": "8720"
+                  },
+                  {
+                    "@offset": "8780"
+                  },
+                  {
+                    "@offset": "8840"
+                  },
+                  {
+                    "@offset": "8900"
+                  },
+                  {
+                    "@offset": "8960"
+                  },
+                  {
+                    "@offset": "9020"
+                  },
+                  {
+                    "@offset": "9080"
+                  },
+                  {
+                    "@offset": "9140"
+                  },
+                  {
+                    "@offset": "9200"
+                  },
+                  {
+                    "@offset": "9260"
+                  },
+                  {
+                    "@offset": "9320"
+                  },
+                  {
+                    "@offset": "9380"
+                  },
+                  {
+                    "@offset": "9440"
+                  },
+                  {
+                    "@offset": "9500"
+                  },
+                  {
+                    "@offset": "9560"
+                  },
+                  {
+                    "@offset": "9620"
+                  },
+                  {
+                    "@offset": "9680"
+                  },
+                  {
+                    "@offset": "9740"
+                  },
+                  {
+                    "@offset": "9800"
+                  },
+                  {
+                    "@offset": "9860"
+                  },
+                  {
+                    "@offset": "9920"
+                  },
+                  {
+                    "@offset": "9980"
+                  },
+                  {
+                    "@offset": "10040"
+                  },
+                  {
+                    "@offset": "10100"
+                  },
+                  {
+                    "@offset": "10160"
+                  },
+                  {
+                    "@offset": "10220"
+                  },
+                  {
+                    "@offset": "10280"
+                  },
+                  {
+                    "@offset": "10340"
+                  },
+                  {
+                    "@offset": "10400"
+                  },
+                  {
+                    "@offset": "10460"
+                  },
+                  {
+                    "@offset": "10520"
+                  },
+                  {
+                    "@offset": "10580"
+                  },
+                  {
+                    "@offset": "10640"
+                  },
+                  {
+                    "@offset": "10700"
+                  },
+                  {
+                    "@offset": "10760"
+                  },
+                  {
+                    "@offset": "10820"
+                  },
+                  {
+                    "@offset": "10880"
+                  },
+                  {
+                    "@offset": "10940"
+                  },
+                  {
+                    "@offset": "11000"
+                  },
+                  {
+                    "@offset": "11060"
+                  },
+                  {
+                    "@offset": "11120"
+                  },
+                  {
+                    "@offset": "11180"
+                  },
+                  {
+                    "@offset": "11240"
+                  },
+                  {
+                    "@offset": "11300"
+                  },
+                  {
+                    "@offset": "11360"
+                  },
+                  {
+                    "@offset": "11420"
+                  },
+                  {
+                    "@offset": "11480"
+                  },
+                  {
+                    "@offset": "11540"
+                  },
+                  {
+                    "@offset": "11600"
+                  },
+                  {
+                    "@offset": "11660"
+                  },
+                  {
+                    "@offset": "11720"
+                  },
+                  {
+                    "@offset": "11780"
+                  },
+                  {
+                    "@offset": "11840"
+                  },
+                  {
+                    "@offset": "11900"
+                  },
+                  {
+                    "@offset": "11960"
+                  },
+                  {
+                    "@offset": "12020"
+                  },
+                  {
+                    "@offset": "12080"
+                  },
+                  {
+                    "@offset": "12140"
+                  },
+                  {
+                    "@offset": "12200"
+                  },
+                  {
+                    "@offset": "12260"
+                  },
+                  {
+                    "@offset": "12320"
+                  },
+                  {
+                    "@offset": "12380"
+                  },
+                  {
+                    "@offset": "12440"
+                  },
+                  {
+                    "@offset": "12500"
+                  },
+                  {
+                    "@offset": "12560"
+                  },
+                  {
+                    "@offset": "12620"
+                  },
+                  {
+                    "@offset": "12680"
+                  },
+                  {
+                    "@offset": "12740"
+                  },
+                  {
+                    "@offset": "12800"
+                  },
+                  {
+                    "@offset": "12860"
+                  },
+                  {
+                    "@offset": "12920"
+                  },
+                  {
+                    "@offset": "12980"
+                  },
+                  {
+                    "@offset": "13040"
+                  },
+                  {
+                    "@offset": "13100"
+                  },
+                  {
+                    "@offset": "13160"
+                  },
+                  {
+                    "@offset": "13220"
+                  },
+                  {
+                    "@offset": "13280"
+                  },
+                  {
+                    "@offset": "13340"
+                  },
+                  {
+                    "@offset": "13400"
+                  },
+                  {
+                    "@offset": "13460"
+                  },
+                  {
+                    "@offset": "13520"
+                  },
+                  {
+                    "@offset": "13580"
+                  },
+                  {
+                    "@offset": "13640"
+                  },
+                  {
+                    "@offset": "13700"
+                  },
+                  {
+                    "@offset": "13760"
+                  },
+                  {
+                    "@offset": "13820"
+                  },
+                  {
+                    "@offset": "13880"
+                  },
+                  {
+                    "@offset": "13940"
+                  },
+                  {
+                    "@offset": "14000"
+                  },
+                  {
+                    "@offset": "14060"
+                  },
+                  {
+                    "@offset": "14120"
+                  },
+                  {
+                    "@offset": "14180"
+                  },
+                  {
+                    "@offset": "14240"
+                  },
+                  {
+                    "@offset": "14300"
+                  },
+                  {
+                    "@offset": "14360"
+                  },
+                  {
+                    "@offset": "14420"
+                  },
+                  {
+                    "@offset": "14480"
+                  },
+                  {
+                    "@offset": "14540"
+                  },
+                  {
+                    "@offset": "14600"
+                  },
+                  {
+                    "@offset": "14660"
+                  },
+                  {
+                    "@offset": "14720"
+                  },
+                  {
+                    "@offset": "14780"
+                  },
+                  {
+                    "@offset": "14840"
+                  },
+                  {
+                    "@offset": "14900"
+                  },
+                  {
+                    "@offset": "14960"
+                  },
+                  {
+                    "@offset": "15020"
+                  },
+                  {
+                    "@offset": "15080"
+                  },
+                  {
+                    "@offset": "15140"
+                  },
+                  {
+                    "@offset": "15200"
+                  },
+                  {
+                    "@offset": "15260"
+                  },
+                  {
+                    "@offset": "15320"
+                  },
+                  {
+                    "@offset": "15380"
+                  },
+                  {
+                    "@offset": "15440"
+                  },
+                  {
+                    "@offset": "15500"
+                  },
+                  {
+                    "@offset": "15560"
+                  },
+                  {
+                    "@offset": "15620"
+                  },
+                  {
+                    "@offset": "15680"
+                  },
+                  {
+                    "@offset": "15740"
+                  },
+                  {
+                    "@offset": "15800"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "MetaBox": {
+      "@Size": "255",
+      "@Type": "meta",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file moov trak moof traf udta",
+      "HandlerBox": {
+        "@Size": "33",
+        "@Type": "hdlr",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "mdia meta minf",
+        "@hdlrType": "null",
+        "@Name": "",
+        "@reserved1": "0",
+        "@reserved2": "data:application/octet-string,000000000000000000000000"
+      },
+      "ItemLocationBox": {
+        "@Size": "30",
+        "@Type": "iloc",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@offset_size": "4",
+        "@length_size": "4",
+        "@base_offset_size": "0",
+        "@index_size": "0",
+        "ItemLocationEntry": {
+          "@item_ID": "1",
+          "@data_reference_index": "0",
+          "@base_offset": "0",
+          "@construction_method": "0",
+          "ItemExtentEntry": {
+            "@extent_offset": "15860",
+            "@extent_length": "336345",
+            "@extent_index": "0"
+          }
+        }
+      },
+      "ItemInfoBox": {
+        "@Size": "106",
+        "@Type": "iinf",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemInfoEntryBox": {
+          "@Size": "92",
+          "@Type": "infe",
+          "@Version": "1",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "iinf",
+          "@item_ID": "1",
+          "@item_protection_index": "0",
+          "@item_name": "file3.jpg",
+          "@content_type": "(null)",
+          "@content_encoding": "(null)",
+          "@item_type": "00000000"
+        }
+      },
+      "FDItemInformationBox": {
+        "@Size": "74",
+        "@Type": "fiin",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "FDPartitionEntryBox": {
+          "@Size": "43",
+          "@Type": "paen",
+          "@Specification": "p12",
+          "@Container": "fiin",
+          "FilePartitionBox": {
+            "@Size": "35",
+            "@Type": "fpar",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "paen",
+            "@itemID": "1",
+            "@FEC_encoding_ID": "0",
+            "@FEC_instance_ID": "0",
+            "@max_source_block_length": "255",
+            "@encoding_symbol_length": "1428",
+            "@max_number_of_encoding_symbols": "0",
+            "@scheme_specific_info": "",
+            "FilePartitionBoxEntry": {
+              "@block_count": "1",
+              "@block_size": "336345"
+            }
+          }
+        },
+        "FDSessionGroupBox": {
+          "@Size": "17",
+          "@Type": "segr",
+          "@Specification": "p12",
+          "@Container": "fiin",
+          "FDSessionGroupBoxEntry": {
+            "@groupIDs": "",
+            "@channels": "1 "
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "350513",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "350505"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

@@ -1,0 +1,26 @@
+{
+  "contributor": "Ericsson",
+  "description": "Restriced video",
+  "md5": "f38f51702c2ffca5e2ce273f9f3230cb",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Free/skip",
+    "Movie box",
+    "late' order (mdat first)",
+    "video track",
+    "track fragment decode time",
+    "sync table",
+    "Level assignment",
+    "Sub-tracks",
+    "Restricted sample entry"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./restricted.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

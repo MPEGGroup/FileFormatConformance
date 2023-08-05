@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./sg-tl-st.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.udta.strk",
+      "box": {
+        "@Size": "26",
+        "@Type": "stsg",
+        "@Specification": "unknown",
+        "@Container": "strk",
+        "@data": "0x0000000074656C6500020000000100000002"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-paper;
+}
+
+#root {
+    @apply h-screen w-screen flex flex-col;
+}
+
+code.basic {
+    @apply rounded bg-gray-300 px-1 font-mono text-black;
+}
+
+table {
+    @apply border-1 border-black bg-neutral-100;
+}
+
+thead {
+    @apply bg-black text-white;
+}
+
+tbody th {
+    @apply border-b-2 border-black px-2 text-center;
+}
+
+tbody tr {
+    @apply border-b-1 border-black bg-white text-center last:border-0;
+}
+
+tbody td {
+    @apply px-2;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+}

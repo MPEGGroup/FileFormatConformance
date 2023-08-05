@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "file delivery with >1 hint track, MBMS FEC",
+  "md5": "76c7cf968e2e89993bae91e89bc21f57",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "file-level",
+    "item naming etc.",
+    "FD hint tracks",
+    "FEC reservoir",
+    "FD session group box"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./mbms-fec.iso3",
+  "mdms_number": "",
+  "conforms_to": []
+}

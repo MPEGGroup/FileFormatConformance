@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "A multi-layer multiview file with 'ster' grouping.",
+  "md5": "4996ac8d67fcbac6ef1ec31aea54fab3",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B025": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC encoded multi-layer frame. Layer 0 is the left view",
+        "same_input_content": " layer 1 is the right view.  (512x256 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B025.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./multilayer005.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

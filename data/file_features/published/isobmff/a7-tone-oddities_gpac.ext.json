@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./a7-tone-oddities.mp4",
+  "extensions": [
+    {
+      "location": "file.moov",
+      "box": {
+        "@Size": "21",
+        "@Type": "junk",
+        "@Specification": "unknown",
+        "@Container": "moov",
+        "@data": "0x74686973206973206A756E6B00"
+      }
+    }
+  ]
+}

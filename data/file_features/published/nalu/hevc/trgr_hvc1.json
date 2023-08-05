@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "track groups and hvc1 sample entry",
+  "md5": "d64e96559d27d3c51457b58281bb0a99",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": ["Track groups", "hvc1 sample entry"],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./trgr_hvc1.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

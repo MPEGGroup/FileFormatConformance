@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./multilayer005.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "10",
+        "@Type": "lsel",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0001"
+      }
+    }
+  ]
+}

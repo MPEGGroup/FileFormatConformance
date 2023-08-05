@@ -1,0 +1,21 @@
+{
+  "contributor": "Apple",
+  "description": "Unk video",
+  "md5": "3762518688b90bc2234bb81fcd6d0a4f",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "video track",
+    "unknown codec type"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a10-foreman_QCIF-raw.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

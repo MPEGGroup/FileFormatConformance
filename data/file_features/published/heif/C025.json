@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "A grid of 3x2 dimension. Uses the first 6 frames.",
+  "md5": "a9c70c03464ca26748d851ba92e838af",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B037": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main profile encoded bitstream made up of 20 frames (128x72 resolution)",
+        "same_input_content": "B007",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B037.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C025.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

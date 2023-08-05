@@ -1,0 +1,23 @@
+{
+  "contributor": "Ericsson",
+  "description": "Simple Hinted",
+  "md5": "d083dc839c5bfc1ef9d9691362fe89b8",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "track reference",
+    "video track",
+    "audio track",
+    "sync table",
+    "RTP hint tracks"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./female_amr67_hinted.3gp",
+  "mdms_number": "",
+  "conforms_to": []
+}

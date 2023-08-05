@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "A derived image of type \"grid\" from first 4 images and it is set as the primary image item.",
+  "md5": "0ee5b557f13f6ada1c01aafd28ad9c4e",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B036": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main profile encoded bitstream made up of 20 frames (1280x720 resolution)",
+        "same_input_content": "B004",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B036.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C007.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

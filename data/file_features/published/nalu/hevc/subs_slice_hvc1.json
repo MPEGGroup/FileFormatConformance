@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "Slice sub-sample information box for HEVC",
+  "md5": "4ccf89617f15dbae859e5a3d7607c45c",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": ["sub-sample information"],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./subs_slice_hvc1.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

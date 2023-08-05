@@ -1,0 +1,395 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "19_ttml.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "isom",
+      "@MinorVersion": "1",
+      "BrandEntry": {
+        "@AlternateBrand": "isom"
+      }
+    },
+    "MovieBox": {
+      "@Size": "804",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3538938796",
+        "@ModificationTime": "3538938796",
+        "@TimeScale": "600",
+        "@Duration": "18000",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "688",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3538938796",
+          "@ModificationTime": "3538938796",
+          "@TrackID": "1",
+          "@Duration": "18000"
+        },
+        "MediaBox": {
+          "@Size": "588",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3538938796",
+            "@ModificationTime": "3538938796",
+            "@TimeScale": "1000",
+            "@Duration": "30000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "76",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "subt",
+            "@Name": "ttml@GPAC0.5.2-DEV-rev1182-g65e1b58-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "472",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "MPEGMediaHeaderBox": {
+              "@Size": "12",
+              "@Type": "sthd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "416",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "60",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "XMLSubtitleSampleEntryBox": {
+                  "@Size": "44",
+                  "@Type": "stpp",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@namespace": "http://www.w3.org/ns/ttml"
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1000",
+                  "@SampleCount": "30"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "52",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "3",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "2",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "2",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "29",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "140",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "30",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "742"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  },
+                  {
+                    "@Size": "744"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "132",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "29",
+                "ChunkEntry": [
+                  {
+                    "@offset": "832"
+                  },
+                  {
+                    "@offset": "2316"
+                  },
+                  {
+                    "@offset": "3058"
+                  },
+                  {
+                    "@offset": "3800"
+                  },
+                  {
+                    "@offset": "4542"
+                  },
+                  {
+                    "@offset": "5284"
+                  },
+                  {
+                    "@offset": "6026"
+                  },
+                  {
+                    "@offset": "6768"
+                  },
+                  {
+                    "@offset": "7510"
+                  },
+                  {
+                    "@offset": "8254"
+                  },
+                  {
+                    "@offset": "8998"
+                  },
+                  {
+                    "@offset": "9742"
+                  },
+                  {
+                    "@offset": "10486"
+                  },
+                  {
+                    "@offset": "11230"
+                  },
+                  {
+                    "@offset": "11974"
+                  },
+                  {
+                    "@offset": "12718"
+                  },
+                  {
+                    "@offset": "13462"
+                  },
+                  {
+                    "@offset": "14206"
+                  },
+                  {
+                    "@offset": "14950"
+                  },
+                  {
+                    "@offset": "15694"
+                  },
+                  {
+                    "@offset": "16438"
+                  },
+                  {
+                    "@offset": "17182"
+                  },
+                  {
+                    "@offset": "17926"
+                  },
+                  {
+                    "@offset": "18670"
+                  },
+                  {
+                    "@offset": "19414"
+                  },
+                  {
+                    "@offset": "20158"
+                  },
+                  {
+                    "@offset": "20902"
+                  },
+                  {
+                    "@offset": "21646"
+                  },
+                  {
+                    "@offset": "22390"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "22310",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "22302"
+    },
+    "FreeSpaceBox": {
+      "@Size": "75",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "67"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

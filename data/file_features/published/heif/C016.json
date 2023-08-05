@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "A derived image item where an image item is overlaid on a black canvas. Total output w,h = 1440, 960. Image corner offset is (80,120). All canvas_fill_values are 0, except opacity 65535.",
+  "md5": "0a3cbb8d492364c34cfdc24aa5b452b2",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C016.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

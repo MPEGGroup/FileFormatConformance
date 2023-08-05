@@ -1,0 +1,27 @@
+{
+  "contributor": "panasonic",
+  "description": "fragment random access",
+  "md5": "515ab2abcff5db65691e6c04974bbc2f",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "normal' order (moov-mdat)",
+    "track enabled bit",
+    "video track",
+    "audio track",
+    "sync table",
+    "Movie fragment box",
+    "mov. Ext header",
+    "fragment random access",
+    "mp4a sample entry",
+    "mp4v sample entry"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./fragment-random-access-1+AF8-rev1.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

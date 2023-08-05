@@ -1,0 +1,27 @@
+{
+  "contributor": "Nokia",
+  "description": "2 images, cropped with \"clap\" properties (0,0,300,300).",
+  "md5": "fb96f8d247a24b80e80c5ca1c93421cb",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B003": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B003.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C013.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

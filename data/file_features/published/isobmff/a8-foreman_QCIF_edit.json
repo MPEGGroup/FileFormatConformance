@@ -1,0 +1,21 @@
+{
+  "contributor": "Apple",
+  "description": "Edits",
+  "md5": "c889092cb2e2ea807e6b96beb385a32d",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "edit list",
+    "audio track",
+    "sync table"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a8-foreman_QCIF_edit.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "An image sequence with inter prediction but no intra-pred in inter-predicted frames.",
+  "md5": "3f8fafa597b2217dde3b86361ad006c4",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B010": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main Profile inter-prediction used bitstream (1280x720 resolution) made up of 16 frames",
+        "same_input_content": " but no intra-prediction in the inter-predicted frames.",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B010.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C027.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

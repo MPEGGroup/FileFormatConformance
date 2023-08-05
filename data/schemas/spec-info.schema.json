@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Schema for specification info",
+  "type": "object",
+  "properties": {
+    "ISO": {
+      "type": "string",
+      "description": "ISO number of the specification"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the specification"
+    },
+    "version": {
+      "type": "integer",
+      "description": "Version of the specification"
+    },
+    "mp4ra_reference": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "The MP4RA reference for the specification"
+      },
+      "minItems": 1
+    },
+    "amendmends": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "corrigenda": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["ISO", "name", "version", "mp4ra_reference"]
+}

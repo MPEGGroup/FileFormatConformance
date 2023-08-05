@@ -1,0 +1,28 @@
+{
+  "contributor": "Nokia",
+  "description": "An image item with an associated alpha mask auxiliary image.",
+  "md5": "f3a7956f2236403c79d0dc3214d049ff",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B006": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Alpha mask of the image - HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "same_input_content": "B001",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B006.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C006.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

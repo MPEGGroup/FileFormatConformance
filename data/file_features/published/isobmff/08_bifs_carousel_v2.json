@@ -1,0 +1,28 @@
+{
+  "contributor": "Telecom ParisTech",
+  "description": "bifs_carousel",
+  "md5": "5716dc9d8d56868fa3cf76efb9d46a3e",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Free/skip",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "track enabled bit",
+    "sync table",
+    "Copyright box",
+    "sample dependency",
+    "Systems tracks etc.",
+    "IOD box",
+    "mp4s sample entry",
+    "Single BIFS + IOD"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./08_bifs_carousel_v2.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

@@ -1,0 +1,34 @@
+{
+  "contributor": "Nokia",
+  "description": "File with 10 images, 10 thumbnails and 1 additional image item. The additional image item is pre-derived from two thumbnail images.",
+  "md5": "293c50b47c6b24b64b62a2d421d478b0",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B036": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main profile encoded bitstream made up of 20 frames (1280x720 resolution)",
+        "same_input_content": "B004",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B036.265"
+      },
+      "B037": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main profile encoded bitstream made up of 20 frames (128x72 resolution)",
+        "same_input_content": "B007",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B037.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C012.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

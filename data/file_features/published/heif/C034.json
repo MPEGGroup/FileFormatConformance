@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "An image item with associated EXIF metadata.",
+  "md5": "bd2712e225ceeac4a2fc2855f183bd83",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B013": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Convert an image to JPEG and extract the EXIF data as a blob file for further use",
+        "same_input_content": "B001",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B013.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C034.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

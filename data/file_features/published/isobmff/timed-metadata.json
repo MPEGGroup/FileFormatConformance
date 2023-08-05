@@ -1,0 +1,14 @@
+{
+  "contributor": "Klagenfurt University",
+  "description": "timed metadata",
+  "md5": "ba20172d771195319fef70f93c67af1a",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": ["meta-data track"],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./timed-metadata.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

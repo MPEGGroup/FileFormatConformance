@@ -1,0 +1,27 @@
+{
+  "contributor": "Nokia",
+  "description": "Identity derived image item with rotation as the primary item.",
+  "md5": "3e18edc21392b8015a5fb860d63ef18b",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B003": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B003.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C008.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

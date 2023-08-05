@@ -1,0 +1,458 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "a3-tone-protected.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mp42",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mp42"
+        },
+        {
+          "@AlternateBrand": "isom"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "897",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3234899490",
+        "@ModificationTime": "3234899490",
+        "@TimeScale": "600",
+        "@Duration": "601",
+        "@NextTrackID": "2"
+      },
+      "ObjectDescriptorBox": {
+        "@Size": "33",
+        "@Type": "iods",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p14",
+        "@Container": "moov",
+        "MP4InitialObjectDescriptor": {
+          "@objectDescriptorID": "od1",
+          "@binaryID": "1",
+          "Profile": {
+            "@audioProfileLevelIndication": "1",
+            "@visualProfileLevelIndication": "255",
+            "@sceneProfileLevelIndication": "255",
+            "@graphicsProfileLevelIndication": "255",
+            "@ODProfileLevelIndication": "255"
+          },
+          "Descr": {
+            "esDescrInc": {
+              "ES_ID_Inc": {
+                "@trackID": "1"
+              }
+            }
+          }
+        }
+      },
+      "TrackBox": {
+        "@Size": "748",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "7",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3234899490",
+          "@ModificationTime": "3234899490",
+          "@TrackID": "1",
+          "@Duration": "601",
+          "@Volume": "1.00"
+        },
+        "MediaBox": {
+          "@Size": "648",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3234899490",
+            "@ModificationTime": "3234899490",
+            "@TimeScale": "48000",
+            "@Duration": "48128",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "37",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "soun",
+            "@Name": "soun",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "571",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "SoundMediaHeaderBox": {
+              "@Size": "16",
+              "@Type": "smhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "511",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1024",
+                  "@SampleCount": "47"
+                }
+              },
+              "SampleDescriptionBox": {
+                "@Size": "227",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "AudioSampleDescriptionBox": {
+                  "@Size": "211",
+                  "@Type": "enca",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@SampleRate": "48000",
+                  "@Channels": "2",
+                  "@BitsPerSample": "16",
+                  "MPEG4ESDescriptorBox": {
+                    "@Size": "61",
+                    "@Type": "esds",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p14",
+                    "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                    "ES_Descriptor": {
+                      "@ES_ID": "es0",
+                      "decConfigDescr": {
+                        "DecoderConfigDescriptor": {
+                          "@objectTypeIndication": "64",
+                          "@streamType": "5",
+                          "@bufferSizeDB": "12288",
+                          "@maxBitrate": "128000",
+                          "@avgBitrate": "128000",
+                          "decSpecificInfo": {
+                            "DecoderSpecificInfo": {
+                              "@type": "auto",
+                              "@src": "data:application/octet-string,%11%80%08%C4%00%00%20%00%00%00%00%00"
+                            }
+                          }
+                        }
+                      },
+                      "slConfigDescr": {
+                        "SLConfigDescriptor": {
+                          "predefined": {
+                            "@value": "2"
+                          },
+                          "custom": null
+                        }
+                      }
+                    }
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "114",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "mp4a"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "39",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "1",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "iAEC",
+                      "@scheme_version": "1",
+                      "@scheme_uri": "http://www.isma.tv"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "55",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "KMSBox": {
+                        "@Size": "32",
+                        "@Type": "iKMS",
+                        "@Version": "0",
+                        "@Flags": "0",
+                        "@Specification": "isma",
+                        "@Container": "schi",
+                        "@kms_URI": "http://kms.isma.tv/"
+                      },
+                      "ISMASampleFormat": {
+                        "@Size": "15",
+                        "@Type": "iSFM",
+                        "@Version": "0",
+                        "@Flags": "0",
+                        "@Specification": "isma",
+                        "@Container": "schi",
+                        "@selective_encryption": "0",
+                        "@key_indicator_length": "0",
+                        "@IV_length": "8"
+                      }
+                    }
+                  }
+                }
+              },
+              "SampleSizeBox": {
+                "@Size": "20",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "47",
+                "@ConstantSampleSize": "33"
+              },
+              "SampleToChunkBox": {
+                "@Size": "28",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SampleToChunkEntry": {
+                  "@FirstChunk": "1",
+                  "@SamplesPerChunk": "1",
+                  "@SampleDescriptionIndex": "1"
+                }
+              },
+              "ChunkOffsetBox": {
+                "@Size": "204",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "47",
+                "ChunkEntry": [
+                  {
+                    "@offset": "929"
+                  },
+                  {
+                    "@offset": "962"
+                  },
+                  {
+                    "@offset": "995"
+                  },
+                  {
+                    "@offset": "1028"
+                  },
+                  {
+                    "@offset": "1061"
+                  },
+                  {
+                    "@offset": "1094"
+                  },
+                  {
+                    "@offset": "1127"
+                  },
+                  {
+                    "@offset": "1160"
+                  },
+                  {
+                    "@offset": "1193"
+                  },
+                  {
+                    "@offset": "1226"
+                  },
+                  {
+                    "@offset": "1259"
+                  },
+                  {
+                    "@offset": "1292"
+                  },
+                  {
+                    "@offset": "1325"
+                  },
+                  {
+                    "@offset": "1358"
+                  },
+                  {
+                    "@offset": "1391"
+                  },
+                  {
+                    "@offset": "1424"
+                  },
+                  {
+                    "@offset": "1457"
+                  },
+                  {
+                    "@offset": "1490"
+                  },
+                  {
+                    "@offset": "1523"
+                  },
+                  {
+                    "@offset": "1556"
+                  },
+                  {
+                    "@offset": "1589"
+                  },
+                  {
+                    "@offset": "1622"
+                  },
+                  {
+                    "@offset": "1655"
+                  },
+                  {
+                    "@offset": "1688"
+                  },
+                  {
+                    "@offset": "1721"
+                  },
+                  {
+                    "@offset": "1754"
+                  },
+                  {
+                    "@offset": "1787"
+                  },
+                  {
+                    "@offset": "1820"
+                  },
+                  {
+                    "@offset": "1853"
+                  },
+                  {
+                    "@offset": "1886"
+                  },
+                  {
+                    "@offset": "1919"
+                  },
+                  {
+                    "@offset": "1952"
+                  },
+                  {
+                    "@offset": "1985"
+                  },
+                  {
+                    "@offset": "2018"
+                  },
+                  {
+                    "@offset": "2051"
+                  },
+                  {
+                    "@offset": "2084"
+                  },
+                  {
+                    "@offset": "2117"
+                  },
+                  {
+                    "@offset": "2150"
+                  },
+                  {
+                    "@offset": "2183"
+                  },
+                  {
+                    "@offset": "2216"
+                  },
+                  {
+                    "@offset": "2249"
+                  },
+                  {
+                    "@offset": "2282"
+                  },
+                  {
+                    "@offset": "2315"
+                  },
+                  {
+                    "@offset": "2348"
+                  },
+                  {
+                    "@offset": "2381"
+                  },
+                  {
+                    "@offset": "2414"
+                  },
+                  {
+                    "@offset": "2447"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "1559",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "1551"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

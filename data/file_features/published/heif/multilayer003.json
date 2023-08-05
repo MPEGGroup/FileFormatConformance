@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "A multi-view file with 'ster' grouping.",
+  "md5": "52c9c6b045c5883d405f490929e0f1b7",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B022": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "2 HEVC Main profile intra encoded frames (1024x512 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B022.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./multilayer003.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}
