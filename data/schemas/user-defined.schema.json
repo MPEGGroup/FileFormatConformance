@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User defined features schema",
+  "type": "object",
+  "patternProperties": {
+    "^.*$": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

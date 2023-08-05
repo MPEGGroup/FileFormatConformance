@@ -1,0 +1,1434 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "meta_2500000bps_0.mp4m",
+    "FileTypeBox": {
+      "@Size": "32",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso5",
+      "@MinorVersion": "1",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "iso5"
+        },
+        {
+          "@AlternateBrand": "dsms"
+        },
+        {
+          "@AlternateBrand": "msix"
+        },
+        {
+          "@AlternateBrand": "dash"
+        }
+      ]
+    },
+    "FreeSpaceBox": {
+      "@Size": "59",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "51"
+    },
+    "MovieBox": {
+      "@Size": "538",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3496985606",
+        "@ModificationTime": "3496985606",
+        "@TimeScale": "600",
+        "@Duration": "0",
+        "@NextTrackID": "2"
+      },
+      "MovieExtendsBox": {
+        "@Size": "56",
+        "@Type": "mvex",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "MovieExtendsHeaderBox": {
+          "@Size": "16",
+          "@Type": "mehd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "mvex",
+          "@fragmentDuration": "18600"
+        },
+        "TrackExtendsBox": {
+          "@Size": "32",
+          "@Type": "trex",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "mvex",
+          "@TrackID": "1",
+          "@SampleDescriptionIndex": "1",
+          "@SampleDuration": "2000",
+          "@SampleSize": "3",
+          "DefaultSampleFlags": {
+            "@IsLeading": "0",
+            "@SampleDependsOn": "0",
+            "@SampleIsDependedOn": "0",
+            "@SampleHasRedundancy": "0",
+            "@SamplePadding": "0",
+            "@SampleSync": "1",
+            "@SampleDegradationPriority": "0"
+          }
+        }
+      },
+      "TrackBox": {
+        "@Size": "366",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3496985606",
+          "@ModificationTime": "3496985606",
+          "@TrackID": "1",
+          "@Duration": "0",
+          "@Width": "320.00",
+          "@Height": "240.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "266",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3496985606",
+            "@ModificationTime": "3496985606",
+            "@TimeScale": "1000",
+            "@Duration": "0",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "59",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "text",
+            "@Name": "nhml@GPAC0.5.1-DEV-rev5339",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "167",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "MPEGMediaHeaderBox": {
+              "@Size": "12",
+              "@Type": "nmhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "111",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "35",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "SampleDescriptionEntryBox": {
+                  "@Size": "0",
+                  "@Type": "depi",
+                  "@Specification": "unknown",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@ExtensionDataSize": "0"
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "16",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              },
+              "SampleToChunkBox": {
+                "@Size": "16",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              },
+              "SampleSizeBox": {
+                "@Size": "20",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "0"
+              },
+              "ChunkOffsetBox": {
+                "@Size": "16",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              }
+            }
+          }
+        }
+      }
+    },
+    "SegmentIndexBox": {
+      "@Size": "224",
+      "@Type": "sidx",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@reference_ID": "1",
+      "@timescale": "1000",
+      "@earliest_presentation_time": "0",
+      "@first_offset": "0",
+      "Reference": [
+        {
+          "@type": "0",
+          "@size": "103",
+          "@duration": "1000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        },
+        {
+          "@type": "0",
+          "@size": "99",
+          "@duration": "2000",
+          "@startsWithSAP": "1",
+          "@SAP_type": "1",
+          "@SAPDeltaTime": "0"
+        }
+      ]
+    },
+    "MovieFragmentBox": [
+      {
+        "@Size": "92",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "1"
+        },
+        "TrackFragmentBox": {
+          "@Size": "68",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "24",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131112",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SampleDuration": "1000",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "0"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "100"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "2"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "1000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "3"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "3000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "4"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "5000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "5"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "7000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "6"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "9000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "7"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "11000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "8"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "13000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "9"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "15000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "10"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "17000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "11"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "19000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "12"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "21000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "13"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "23000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "14"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "25000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "15"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "27000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      },
+      {
+        "@Size": "88",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "16"
+        },
+        "TrackFragmentBox": {
+          "@Size": "64",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "20",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131104",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof",
+            "@SamplePadding": "0",
+            "@Sync": "1",
+            "@DegradationPriority": "0",
+            "@IsLeading": "0",
+            "@DependsOn": "2",
+            "@IsDependedOn": "0",
+            "@HasRedundancy": "0"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "29000"
+          },
+          "TrackRunBox": {
+            "@Size": "20",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "1",
+            "@DataOffset": "96"
+          }
+        }
+      }
+    ],
+    "MediaDataBox": [
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      },
+      {
+        "@Size": "11",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "3"
+      }
+    ]
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

@@ -1,0 +1,64 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      is-cfc: ${{ steps.check-cfc.outputs.is_cfc }}
+      is-page: ${{ steps.check-page.outputs.is_page }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v37
+
+      - name: Check for new under consideration files
+        id: check-cfc
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ $file == *"data/file_features/under_consideration/"* ]]; then
+              echo "is_cfc=true" >> $GITHUB_OUTPUT
+              break
+            fi
+          done
+
+      - name: Check for changes to the page
+        id: check-page
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ $file == *"conformance-search/"* ]]; then
+              echo "is_page=true" >> $GITHUB_OUTPUT
+              break
+            fi
+          done
+
+  cfc:
+    needs: changes
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
+      needs.changes.outputs.is-cfc == 'true'
+    uses: ./.github/workflows/cfc.yml
+
+  test:
+    needs: [changes, cfc]
+    if: |
+      always() &&
+      (needs.cfc.result == 'success' || needs.cfc.result == 'skipped')
+    uses: ./.github/workflows/test.yml
+    with:
+      test-page: ${{ needs.changes.outputs.is-page == 'true' }}

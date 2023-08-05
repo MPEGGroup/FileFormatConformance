@@ -1,0 +1,129 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Database > dictionary > should return a correct snapshot for =$moov 1`] = `
+{
+  "fourccs": [
+    "free",
+    "meta",
+    "mvex",
+    "mvhd",
+    "skip",
+    "trak",
+    "udta",
+    "uuid",
+  ],
+  "types": [
+    "Box",
+    "FullBox",
+  ],
+}
+`;
+
+exports[`Database > dictionary > should return a correct snapshot for =$trak 1`] = `
+{
+  "fourccs": [
+    "edts",
+    "free",
+    "mdia",
+    "meta",
+    "skip",
+    "tkhd",
+    "tref",
+    "trgr",
+    "ttyp",
+    "udta",
+    "uuid",
+  ],
+  "types": [
+    "Box",
+    "FullBox",
+    "GeneralTypeBox",
+  ],
+}
+`;
+
+exports[`Database > files > should return 2 files for hdlr under =moov.trak.meta 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/maf/vsaf/1.mp4",
+]
+`;
+
+exports[`Database > files > should return 2 files for meta under trak 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/maf/vsaf/1.mp4",
+]
+`;
+
+exports[`Database > files > should return 3 files for hdlr under =moov.meta 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+]
+`;
+
+exports[`Database > files > should return 3 files for stz2 1`] = `
+[
+  "published/isobmff/02_dref_edts_img.mp4",
+  "published/isobmff/04_bifs_video.mp4",
+  "published/isobmff/a7-tone-oddities.mp4",
+]
+`;
+
+exports[`Database > files > should return 5 files for hdlr under moov.FullBox 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+  "published/maf/vsaf/1.mp4",
+  "published/isobmff/restricted.mp4",
+]
+`;
+
+exports[`Database > files > should return 5 files for hdlr under moov.meta 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+  "published/maf/vsaf/1.mp4",
+  "published/isobmff/restricted.mp4",
+]
+`;
+
+exports[`Database > files > should return 12 files for idat under =file.meta 1`] = `
+[
+  "published/heif/C007.heic",
+  "published/heif/C015.heic",
+  "published/heif/C016.heic",
+  "published/heif/C017.heic",
+  "published/heif/C018.heic",
+  "published/heif/C019.heic",
+  "published/heif/C020.heic",
+  "published/heif/C021.heic",
+  "published/heif/C022.heic",
+  "published/heif/C023.heic",
+  "published/heif/C024.heic",
+  "published/heif/C025.heic",
+]
+`;
+
+exports[`Database > files > should return 14 files for idat under file.meta 1`] = `
+[
+  "published/heif/C007.heic",
+  "published/heif/C015.heic",
+  "published/heif/C016.heic",
+  "published/heif/C017.heic",
+  "published/heif/C018.heic",
+  "published/heif/C019.heic",
+  "published/heif/C020.heic",
+  "published/heif/C021.heic",
+  "published/heif/C022.heic",
+  "published/heif/C023.heic",
+  "published/heif/C024.heic",
+  "published/heif/C025.heic",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+]
+`;

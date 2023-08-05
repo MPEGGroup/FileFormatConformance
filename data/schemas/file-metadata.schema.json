@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Metadata scheme for contributed files",
+  "type": "object",
+  "properties": {
+    "contributor": {
+      "type": "string",
+      "description": "Source of the file, e.g. company name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the file"
+    },
+    "md5": {
+      "type": "string",
+      "description": "MD5 checksum of the file"
+    },
+    "version": {
+      "type": "integer",
+      "description": "Version number of the file"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the file is published or not"
+    },
+    "associated_files": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^./.*$"
+      },
+      "description": "List of associated files"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of features as defined in the standard"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ],
+      "description": "Notes about the file"
+    },
+    "license": {
+      "type": "string",
+      "description": "License of the file"
+    },
+    "rel_filepath": {
+      "type": "string",
+      "pattern": "^./.*$",
+      "description": "Relative path to the conformance file"
+    },
+    "mdms_number": {
+      "anyOf": [
+        { "type": "string", "pattern": "^m[0-9]+$" },
+        {
+          "type": "string",
+          "maxLength": 0
+        }
+      ],
+      "description": "MPEG Document Management System Number"
+    },
+    "conforms_to": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ISO": {
+            "type": "string",
+            "description": "ISO number of the specification"
+          },
+          "version": {
+            "type": "integer",
+            "description": "Version of the specification"
+          },
+          "amendmends": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "corrigenda": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["ISO", "version"]
+      }
+    }
+  },
+  "required": [
+    "contributor",
+    "description",
+    "md5",
+    "rel_filepath",
+    "version",
+    "published",
+    "associated_files",
+    "features",
+    "license",
+    "mdms_number",
+    "conforms_to"
+  ]
+}

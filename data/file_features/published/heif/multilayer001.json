@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "A base quality and an enhanced quality presentations of same image.",
+  "md5": "fc0ebf371a6bc0ae5278bd5437deb3b0",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B020": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Scalable Main profile encoded frame",
+        "same_input_content": " 2 layers",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B020.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./multilayer001.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

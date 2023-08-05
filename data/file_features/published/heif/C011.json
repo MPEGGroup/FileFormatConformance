@@ -1,0 +1,33 @@
+{
+  "contributor": "Nokia",
+  "description": "A primary item, and two hidden \"altr\" grouped image items.",
+  "md5": "a28859f6b770b6572ee97948fab88132",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B003": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B003.265"
+      },
+      "B008": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile all-Intra encoded Frame (640x360 resolution)",
+        "same_input_content": "B001",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B008.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C011.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./pdin_example.3gp",
+  "extensions": [
+    {
+      "location": "file.moov.udta",
+      "box": {
+        "@Size": "29",
+        "@Type": "rtng",
+        "@Specification": "unknown",
+        "@Container": "udta",
+        "@data": "0x000000004D5041410000000015C747000000000000"
+      }
+    }
+  ]
+}

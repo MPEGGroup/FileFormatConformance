@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "Two image grid derived items, 2x2 each. Image items in the second grid have enhanced SNR.",
+  "md5": "6012bcf7b11c019d721e1e20746117a0",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B021": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "4 HEVC Scalable Main profile encoded frames",
+        "same_input_content": " 2 layers",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B021.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./multilayer002.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

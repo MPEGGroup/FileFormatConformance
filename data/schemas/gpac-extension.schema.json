@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GPAC MP4Box extension declaration schema",
+  "$defs": {
+    "box": {
+      "type": "object",
+      "properties": {
+        "@Size": {
+          "anyOf": [
+            { "type": "integer" },
+            { "type": "string", "pattern": "^[0-9]+$" }
+          ]
+        },
+        "@Type": {
+          "type": "string",
+          "description": "fourcc of the box",
+          "pattern": "^[0-9a-zA-Z]{4}$"
+        },
+        "@Version": {
+          "anyOf": [
+            { "type": "integer" },
+            { "type": "string", "pattern": "^[0-9]+$" }
+          ]
+        },
+        "@Flags": {
+          "anyOf": [
+            { "type": "integer" },
+            { "type": "string", "pattern": "^[0-9]+$" }
+          ],
+          "description": "Combined flags in base 10"
+        },
+        "@Specification": { "type": "string" },
+        "@Container": { "type": "string" },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/box" }
+        }
+      },
+      "additionalProperties": true,
+      "required": ["@Type"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "mp4boxVersion": {
+      "type": "string",
+      "description": "First line of 'MP4Box -version'"
+    },
+    "rel_filepath": {
+      "type": "string",
+      "pattern": "^./.*$",
+      "description": "Relative path to the conformance file"
+    },
+    "extensions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "pattern": "^file(?>\\.[0-9a-zA-Z]{4})*$",
+            "description": "Dot seperated location of the box in relation to the file"
+          },
+          "box": { "$ref": "#/$defs/box" }
+        },
+        "required": ["location", "box"]
+      },
+      "description": "List of extensions to the MP4Box output of the conformance file",
+      "default": []
+    }
+  },
+  "required": ["mp4boxVersion", "rel_filepath", "extensions"]
+}

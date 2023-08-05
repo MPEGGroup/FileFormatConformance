@@ -1,0 +1,54 @@
+[
+  {
+    "fourcc": "meta",
+    "type": "MetaBox",
+    "containers": [
+      { "fourcc": "moov", "type": "ContainerBox" },
+      { "fourcc": "file", "type": "ContainerBox" },
+      { "fourcc": "*", "type": "FreeBox" }
+    ]
+  },
+  {
+    "fourcc": "trak",
+    "type": "ContainerBox",
+    "containers": [{ "fourcc": "moov", "type": "ContainerBox" }]
+  },
+  { "fourcc": "unkw", "type": "ContainerBox", "containers": [] },
+  { "fourcc": "file", "type": "ContainerBox", "containers": [] },
+  {
+    "fourcc": "skip",
+    "type": "FreeBox",
+    "containers": [
+      { "fourcc": "file", "type": "ContainerBox" },
+      { "fourcc": "unkw", "type": "ContainerBox" }
+    ]
+  },
+  {
+    "fourcc": "free",
+    "type": "FreeBox",
+    "containers": [
+      { "fourcc": "file", "type": "ContainerBox" },
+      { "fourcc": "unkw", "type": "ContainerBox" }
+    ]
+  },
+  {
+    "fourcc": "moov",
+    "type": "ContainerBox",
+    "containers": [{ "fourcc": "file", "type": "ContainerBox" }]
+  },
+  {
+    "fourcc": "md5i",
+    "type": "InternalMD5Box",
+    "containers": [{ "fourcc": "meta", "type": "MetaBox" }]
+  },
+  {
+    "fourcc": "all ",
+    "type": "MetaBox",
+    "containers": [{ "fourcc": "*", "type": "*" }]
+  },
+  {
+    "fourcc": "all2",
+    "type": "MetaBox",
+    "containers": [{ "fourcc": "*", "type": "*" }]
+  }
+]

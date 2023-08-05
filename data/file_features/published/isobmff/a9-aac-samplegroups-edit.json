@@ -1,0 +1,24 @@
+{
+  "contributor": "Apple",
+  "description": "Group",
+  "md5": "37a4ed77ee71f0535fdddac1a9a88d0e",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "edit list",
+    "audio track",
+    "sync table",
+    "sample groups",
+    "pre-roll group",
+    "IOD box"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a9-aac-samplegroups-edit.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

@@ -1,0 +1,406 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "multilayer004.heic",
+    "FileTypeBox": {
+      "@Size": "28",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "heis",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mif1"
+        },
+        {
+          "@AlternateBrand": "heis"
+        },
+        {
+          "@AlternateBrand": "avci"
+        }
+      ]
+    },
+    "MetaBox": {
+      "@Size": "607",
+      "@Type": "meta",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file moov trak moof traf udta",
+      "HandlerBox": {
+        "@Size": "33",
+        "@Type": "hdlr",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "mdia meta minf",
+        "@hdlrType": "pict",
+        "@Name": "",
+        "@reserved1": "0",
+        "@reserved2": "data:application/octet-string,000000000000000000000000"
+      },
+      "PrimaryItemBox": {
+        "@Size": "14",
+        "@Type": "pitm",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@item_ID": "20003"
+      },
+      "ItemLocationBox": {
+        "@Size": "52",
+        "@Type": "iloc",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@offset_size": "4",
+        "@length_size": "4",
+        "@base_offset_size": "4",
+        "@index_size": "0",
+        "ItemLocationEntry": [
+          {
+            "@item_ID": "20003",
+            "@data_reference_index": "0",
+            "@base_offset": "643",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "6829",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "20004",
+            "@data_reference_index": "0",
+            "@base_offset": "7480",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "6636",
+              "@extent_index": "0"
+            }
+          }
+        ]
+      },
+      "ItemInfoBox": {
+        "@Size": "79",
+        "@Type": "iinf",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemInfoEntryBox": [
+          {
+            "@Size": "30",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "20003",
+            "@item_protection_index": "0",
+            "@item_name": "AVC Image",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "avc1"
+          },
+          {
+            "@Size": "33",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "20004",
+            "@item_protection_index": "0",
+            "@item_name": "L-HEVC Image",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "lhv1"
+          }
+        ]
+      },
+      "ItemReferenceBox": {
+        "@Size": "26",
+        "@Type": "iref",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemReferenceBox": {
+          "@Size": "14",
+          "@Type": "exbl",
+          "@Specification": "p12",
+          "@Container": "iref",
+          "@from_item_id": "20004",
+          "ItemReferenceBoxEntry": {
+            "@ItemID": "20003"
+          }
+        }
+      },
+      "ItemPropertiesBox": {
+        "@Size": "355",
+        "@Type": "iprp",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "ItemPropertyContainerBox": {
+          "@Size": "319",
+          "@Type": "ipco",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "AVCConfigurationBox": {
+            "@Size": "52",
+            "@Type": "avcC",
+            "@Specification": "p15",
+            "@Container": "avc1 avc2 avc3 avc4 encv resv ipco dva1 dvav",
+            "AVCDecoderConfigurationRecord": {
+              "@configurationVersion": "1",
+              "@AVCProfileIndication": "66",
+              "@profile_compatibility": "128",
+              "@AVCLevelIndication": "30",
+              "@nal_unit_size": "4",
+              "SequenceParameterSet": {
+                "@size": "26",
+                "@content": "data:application/octet-string,67640028AC72044040041A1000000300100000030320F1831846"
+              },
+              "PictureParameterSet": {
+                "@size": "7",
+                "@content": "data:application/octet-string,68E8438392C8B0"
+              }
+            }
+          },
+          "ImageSpatialExtentsPropertyBox": {
+            "@Size": "20",
+            "@Type": "ispe",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "@image_width": "1024",
+            "@image_height": "512"
+          },
+          "OperatingPointsInformationPropertyBox": {
+            "@Size": "78",
+            "@Type": "oinf",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "OperatingPointsInformation": {
+              "@scalability_mask": "8192 (unknown)",
+              "@num_profile_tier_level": "2",
+              "@num_operating_points": "2",
+              "@dependency_layers": "1",
+              "ProfileTierLevel": [
+                {
+                  "@general_profile_space": "0",
+                  "@general_tier_flag": "0",
+                  "@general_profile_idc": "1",
+                  "@general_profile_compatibility_flags": "80000000",
+                  "@general_constraint_indicator_flags": "0"
+                },
+                {
+                  "@general_profile_space": "0",
+                  "@general_tier_flag": "0",
+                  "@general_profile_idc": "1",
+                  "@general_profile_compatibility_flags": "80000000",
+                  "@general_constraint_indicator_flags": "0"
+                }
+              ],
+              "OperatingPoint": [
+                {
+                  "@output_layer_set_idx": "0",
+                  "@max_temporal_id": "0",
+                  "@layer_count": "1",
+                  "@minPicWidth": "1024",
+                  "@minPicHeight": "512",
+                  "@maxPicWidth": "1024",
+                  "@maxPicHeight": "512",
+                  "@maxChromaFormat": "1",
+                  "@maxBitDepth": "8",
+                  "@frame_rate_info_flag": "0",
+                  "@bit_rate_info_flag": "0"
+                },
+                {
+                  "@output_layer_set_idx": "1",
+                  "@max_temporal_id": "0",
+                  "@layer_count": "2",
+                  "@minPicWidth": "1024",
+                  "@minPicHeight": "512",
+                  "@maxPicWidth": "1024",
+                  "@maxPicHeight": "512",
+                  "@maxChromaFormat": "1",
+                  "@maxBitDepth": "8",
+                  "@frame_rate_info_flag": "0",
+                  "@bit_rate_info_flag": "0"
+                }
+              ],
+              "Layer": {
+                "@dependent_layerID": "1",
+                "@num_layers_dependent_on": "1",
+                "@dependent_on_layerID": "0 ",
+                "@dimension_identifier": "1 "
+              }
+            }
+          },
+          "TargetOLSPropertyBox": {
+            "@Size": "14",
+            "@Type": "tols",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "@target_ols_index": "1"
+          },
+          "L-HEVCConfigurationBox": {
+            "@Size": "147",
+            "@Type": "lhvC",
+            "@Specification": "p15",
+            "@Container": "hvc1 hev1 hvc2 hev2 lhv1 lhe1 encv resv ipco",
+            "L-HEVCDecoderConfigurationRecord": {
+              "@nal_unit_size": "4",
+              "@configurationVersion": "1",
+              "@min_spatial_segmentation_idc": "0",
+              "@parallelismType": "0",
+              "ParameterSetArray": [
+                {
+                  "@nalu_type": "33",
+                  "@complete_set": "1",
+                  "ParameterSet": [
+                    {
+                      "@size": "10",
+                      "@content": "data:application/octet-string,42090E859246D9EDA808"
+                    },
+                    {
+                      "@size": "10",
+                      "@content": "data:application/octet-string,42090E859246D9EDA808"
+                    }
+                  ]
+                },
+                {
+                  "@nalu_type": "34",
+                  "@complete_set": "1",
+                  "ParameterSet": [
+                    {
+                      "@size": "9",
+                      "@content": "data:application/octet-string,44094819095813D02A"
+                    },
+                    {
+                      "@size": "9",
+                      "@content": "data:application/octet-string,44094819095813D02A"
+                    }
+                  ]
+                },
+                {
+                  "@nalu_type": "32",
+                  "@complete_set": "1",
+                  "ParameterSet": {
+                    "@size": "76",
+                    "@content": "data:application/octet-string,40010411FFFF0180000003000003000003000003007BF056FF1000043028E030000003000003000003000003000F70780000030000F8800000030007BAC82000100500FCF9FF085010101608"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "ItemPropertyAssociationBox": {
+          "@Size": "28",
+          "@Type": "ipma",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "@entry_count": "2",
+          "AssociationEntry": [
+            {
+              "@item_ID": "20003",
+              "@association_count": "2",
+              "Property": [
+                {
+                  "@index": "1",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "20004",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "3",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "5",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "GroupListBox": {
+        "@Size": "36",
+        "@Type": "grpl",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "EntityToGroupTypeBox": {
+          "@Size": "28",
+          "@Type": "altr",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "grpl",
+          "@group_id": "20005",
+          "EntityToGroupTypeBoxEntry": [
+            {
+              "@EntityID": "20004"
+            },
+            {
+              "@EntityID": "20003"
+            }
+          ]
+        }
+      }
+    },
+    "MediaDataBox": [
+      {
+        "@Size": "6837",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "6829"
+      },
+      {
+        "@Size": "6644",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "6636"
+      },
+      {
+        "@Size": "16",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "8"
+      }
+    ]
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

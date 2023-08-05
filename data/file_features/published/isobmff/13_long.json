@@ -1,0 +1,23 @@
+{
+  "contributor": "Telecom ParisTech",
+  "description": "long",
+  "md5": "8c06ddd0fe15cc4f00ba32823af987f4",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Free/skip",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "64-bit mv/tr/md headers",
+    "track enabled bit",
+    "Copyright box"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./13_long.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

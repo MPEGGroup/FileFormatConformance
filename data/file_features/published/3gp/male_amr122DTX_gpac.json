@@ -1,0 +1,811 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "male_amr122DTX.3gp",
+    "FileTypeBox": {
+      "@Size": "28",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "3gp5",
+      "@MinorVersion": "256",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "3gp5"
+        },
+        {
+          "@AlternateBrand": "isom"
+        },
+        {
+          "@AlternateBrand": "3gp4"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "1306",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3234784040",
+        "@ModificationTime": "3234784040",
+        "@TimeScale": "600",
+        "@Duration": "19320",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "1190",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "7",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3234784040",
+          "@ModificationTime": "3234784040",
+          "@TrackID": "1",
+          "@Duration": "19320",
+          "@Volume": "1.00"
+        },
+        "MediaBox": {
+          "@Size": "1090",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3234784040",
+            "@ModificationTime": "3234784040",
+            "@TimeScale": "8000",
+            "@Duration": "257600",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "37",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "soun",
+            "@Name": "soun",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "1013",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "SoundMediaHeaderBox": {
+              "@Size": "16",
+              "@Type": "smhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "953",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "69",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "AMRSampleDescriptionBox": {
+                  "@Size": "53",
+                  "@Type": "samr",
+                  "@Specification": "3gpp",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@SampleRate": "8000",
+                  "@Channels": "2",
+                  "@BitsPerSample": "16",
+                  "AMRConfigurationBox": {
+                    "@Size": "17",
+                    "@Type": "damr",
+                    "@Specification": "3gpp",
+                    "@Container": "samr sawb enca",
+                    "@Vendor": "erat",
+                    "@Version": "0",
+                    "@FramesPerSample": "10",
+                    "@SupportedModes": "8180",
+                    "@ModeRotating": "0"
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1600",
+                  "@SampleCount": "161"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "5",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "33",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "664",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "161",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "232"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "77"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "294"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "144"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "144"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "175"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "170"
+                  },
+                  {
+                    "@Size": "294"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "196"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "144"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "165"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "51"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "108"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "144"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "232"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "320"
+                  },
+                  {
+                    "@Size": "113"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "20"
+                  },
+                  {
+                    "@Size": "15"
+                  },
+                  {
+                    "@Size": "2"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "148",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "33",
+                "ChunkEntry": [
+                  {
+                    "@offset": "1342"
+                  },
+                  {
+                    "@offset": "1639"
+                  },
+                  {
+                    "@offset": "2996"
+                  },
+                  {
+                    "@offset": "4596"
+                  },
+                  {
+                    "@offset": "5865"
+                  },
+                  {
+                    "@offset": "6379"
+                  },
+                  {
+                    "@offset": "7979"
+                  },
+                  {
+                    "@offset": "9403"
+                  },
+                  {
+                    "@offset": "9483"
+                  },
+                  {
+                    "@offset": "9563"
+                  },
+                  {
+                    "@offset": "10589"
+                  },
+                  {
+                    "@offset": "12189"
+                  },
+                  {
+                    "@offset": "13034"
+                  },
+                  {
+                    "@offset": "13548"
+                  },
+                  {
+                    "@offset": "15148"
+                  },
+                  {
+                    "@offset": "16448"
+                  },
+                  {
+                    "@offset": "16533"
+                  },
+                  {
+                    "@offset": "16794"
+                  },
+                  {
+                    "@offset": "18394"
+                  },
+                  {
+                    "@offset": "19994"
+                  },
+                  {
+                    "@offset": "20808"
+                  },
+                  {
+                    "@offset": "21953"
+                  },
+                  {
+                    "@offset": "23553"
+                  },
+                  {
+                    "@offset": "25153"
+                  },
+                  {
+                    "@offset": "25574"
+                  },
+                  {
+                    "@offset": "25654"
+                  },
+                  {
+                    "@offset": "27042"
+                  },
+                  {
+                    "@offset": "28642"
+                  },
+                  {
+                    "@offset": "29156"
+                  },
+                  {
+                    "@offset": "29753"
+                  },
+                  {
+                    "@offset": "31353"
+                  },
+                  {
+                    "@offset": "32953"
+                  },
+                  {
+                    "@offset": "33131"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "31799",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "31791"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "RTP and RTCP reception hint tracks",
+  "md5": "da94ab16200d99c24c4bdb3ab4811795",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "video track",
+    "audio track",
+    "hint track setup",
+    "sdp boxes (moov and track)",
+    "hint stats boxes",
+    "RTP sample contructor on self track",
+    "RTP etc. reception hint track"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./rtp_rtcp_reception_hint_tracks_v2.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

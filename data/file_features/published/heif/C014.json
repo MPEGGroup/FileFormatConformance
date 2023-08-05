@@ -1,0 +1,27 @@
+{
+  "contributor": "Nokia",
+  "description": "Two derived image items. The primary item has associated 90-degree rotation and clean aperture (0,0,300,300) properties. The other iden item has an associated 180-degree rotation property.",
+  "md5": "926d2b137ab7038d42fb1aa150a678fa",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B001": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B001.265"
+      },
+      "B003": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B003.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C014.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

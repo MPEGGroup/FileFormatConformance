@@ -1,0 +1,23 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "pytest",
+      "pattern": [
+        {
+          "regexp": "^(FAILURE):\\s(.+)$",
+          "message": 2
+        }
+      ]
+    },
+    {
+      "owner": "loguru",
+      "pattern": [
+        {
+          "regexp": "(ERROR|WARNING).*\\|.+(?:\\[3[13]m.\\[1m)(?:(.*).\\[0m)$",
+          "severity": 1,
+          "message": 2
+        }
+      ]
+    }
+  ]
+}

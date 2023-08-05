@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "An all-intra encoded image sequence with an edit list with repeat flag, repeating infinitely.",
+  "md5": "0ff80786c96ad83c5088419ce373c746",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B002": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main Profile all-intra encoded bitstream made up of 8 frames (1280x720 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B002.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C038.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

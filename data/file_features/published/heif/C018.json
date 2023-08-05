@@ -1,0 +1,29 @@
+{
+  "contributor": "Nokia",
+  "description": "A derived image item where an image item is overlaid on another image. Total output w,h = 1440, 960. Second image on top of the first one with an offset of (640,360). All canvas_fill_values are 0.",
+  "md5": "ea76dc6b312a84731816036294929e94",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B008": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile all-Intra encoded Frame (640x360 resolution)",
+        "same_input_content": "B001",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B008.265"
+      },
+      "B009": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile Intra encoded Frame (640x360 resolution)",
+        "same_input_content": "B003",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B009.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C018.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

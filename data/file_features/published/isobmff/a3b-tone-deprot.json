@@ -1,0 +1,23 @@
+{
+  "contributor": "Apple",
+  "description": "Protected",
+  "md5": "e58e9e4da634ff531b49825795a9e541",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "sync table",
+    "Protected streams (basic)",
+    "IOD box"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a3b-tone-deprot.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

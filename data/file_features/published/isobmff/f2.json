@@ -1,0 +1,26 @@
+{
+  "contributor": "Fraunhofer IIS",
+  "description": "Proteced A/V",
+  "md5": "484468147e422150b2fd094bdd0ff063",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "normal' order (moov-mdat)",
+    "video track",
+    "audio track",
+    "Protected streams (basic)",
+    "Interleaved data",
+    "IOD box",
+    "mp4a sample entry",
+    "avc1 sample entry"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./f2.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

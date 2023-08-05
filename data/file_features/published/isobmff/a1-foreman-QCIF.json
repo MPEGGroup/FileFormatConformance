@@ -1,0 +1,26 @@
+{
+  "contributor": "Apple",
+  "description": "Basic MP4v/a",
+  "md5": "b9da5db62ee3751e2d3163e0a9ff7ff4",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "sync table",
+    "Interleaved data",
+    "IOD box",
+    "mp4a sample entry",
+    "mp4v sample entry",
+    "mp4s sample entry"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a1-foreman-QCIF.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

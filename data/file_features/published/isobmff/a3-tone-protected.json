@@ -1,0 +1,23 @@
+{
+  "contributor": "Apple",
+  "description": "Protected",
+  "md5": "0ca4e979d1baabb89559d72be35ae372",
+  "version": 1,
+  "published": true,
+  "associated_files": ["./a3c-prot-keys.txt"],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "sync table",
+    "Protected streams (basic)",
+    "IOD box"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a3-tone-protected.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

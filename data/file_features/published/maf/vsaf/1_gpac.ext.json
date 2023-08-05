@@ -1,0 +1,26 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./1.mp4",
+  "extensions": [
+    {
+      "location": "file.meta",
+      "box": {
+        "@Size": "76",
+        "@Type": "vsmi",
+        "@Specification": "unknown",
+        "@Container": "meta",
+        "@data": "0x3445394339354641384334373432380000CCCCCCCCCCCCCCCCCCCCCCCCCCCC0000CCCCCCCCCCCCCCCCCCCCCCCCCCCC0001BA77026F2F711001BA7702AACA3B1000000000"
+      }
+    },
+    {
+      "location": "file.moov.trak.meta",
+      "box": {
+        "@Size": "24",
+        "@Type": "cami",
+        "@Specification": "unknown",
+        "@Container": "meta",
+        "@data": "0x34453943393546413843343734323900"
+      }
+    }
+  ]
+}

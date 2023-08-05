@@ -1,0 +1,104 @@
+name: Test
+
+on:
+  workflow_call:
+    inputs:
+      upload:
+        default: false
+        required: false
+        type: boolean
+      test-page:
+        default: true
+        required: false
+        type: boolean
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: ${{ github.ref }}
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Check format of JSON files
+        run: npx -y prettier --check --parser json "data/**/*.json"
+
+  page:
+    runs-on: ubuntu-latest
+    if: inputs.test-page
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - name: Install dependencies
+        working-directory: conformance-search
+        run: npm ci
+
+      - name: Test page
+        working-directory: conformance-search
+        run: |
+          npm run test:ci
+          npm run prebuild
+
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "poetry"
+
+      - name: Install dependencies
+        working-directory: ./src
+        run: |
+          poetry env use "3.11"
+          poetry install --no-interaction
+
+      - name: Add pattern matcher
+        run: echo "::add-matcher::${{ github.workspace }}/.github/problem-matchers.json"
+
+      - name: Run construct
+        working-directory: ./src
+        run: poetry run construct-all
+
+      - name: Run coverage
+        working-directory: ./src
+        run: poetry run coverage
+
+      - name: Check output
+        run: |
+          if [ -s /tmp/construct.log ]; then
+            exit 1
+          fi
+
+      - name: Validate output
+        working-directory: ./src
+        run: poetry run pytest -- --check-max-tb=0
+
+      - name: Upload output
+        if: inputs.upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: ./src/output
+          retention-days: 1

@@ -1,0 +1,22 @@
+{
+  "contributor": "Nokia",
+  "description": "An image sequence with a non-display sample (the first Intra frame) and 8 more inter-frames in it",
+  "md5": "5ae9f234cab8ab2a96e9062c0f1723a3",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B019": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "1 HEVC Main Profile intra frame followed by 8 inter frames (1920x1080 resolution)",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B019.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C041.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

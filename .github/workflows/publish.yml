@@ -1,0 +1,100 @@
+name: Build and Publish
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/**"
+      - "conformance-search/**"
+      - "src/**"
+      - "data/**"
+      - "!data/**/*.md"
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+    with:
+      upload: true
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Download output
+        uses: actions/download-artifact@v3
+        with:
+          name: output
+          path: ./src/output
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - name: Install dependencies
+        working-directory: conformance-search
+        run: npm ci
+
+      - name: Create LFS file list
+        id: lfs-id
+        run: |
+          echo "lfs-id=$(git lfs ls-files --long | cut -d ' ' -f1 | sort \
+          | sha256sum | cut -d ' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: LFS Cache
+        uses: actions/cache@v3
+        with:
+          path: .git/lfs/objects
+          key: ${{ runner.os }}-lfs-${{ steps.lfs-id.outputs.lfs-id }}
+          restore-keys: ${{ runner.os }}-lfs-
+
+      - name: Git LFS Pull
+        run: git lfs pull
+
+      - name: Copy LFS files to public folder
+        run: |
+          files=$(git lfs ls-files --long | cut -d ' ' -f3)
+          for file in $files; do
+              dir=$(dirname ${file#*/*/})
+              mkdir -p ./conformance-search/public/files/$dir
+              cp $file ./conformance-search/public/files/${file#*/*/}
+          done
+
+      - name: Check data size
+        run: |
+          dsize=$(du -sm ./conformance-search/public | cut -f1)
+          if [ $dsize -gt 1000 ]; then
+            echo "FAILURE: Data size is $dsize MB, which is larger than the 1 GB limit."
+            exit 1
+          fi
+
+      - name: Build
+        working-directory: conformance-search
+        run: |
+          npm run copy:data
+          npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./conformance-search/dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1

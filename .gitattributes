@@ -1,0 +1,4 @@
+data/file_features/**/* filter=lfs diff=lfs merge=lfs -text
+data/file_features/**/*.json !filter !diff !merge text
+data/file_features/**/*.md !filter !diff !merge text
+data/file_features/.cfignore !filter !diff !merge text

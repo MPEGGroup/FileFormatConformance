@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master",
+  "rel_filepath": "./FX-VY-9436R.3_qhd-variant.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.udta",
+      "box": {
+        "@Size": "76",
+        "@Type": "A9swr",
+        "@Specification": "unknown",
+        "@Container": "udta",
+        "@data": "0x004000004D616E7A616E6974612053797374656D73204D50344D75782076332E302E313720726166363933353730204D50344D3538313000000000000000000000000000"
+      }
+    }
+  ]
+}

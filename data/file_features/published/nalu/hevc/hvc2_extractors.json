@@ -1,0 +1,19 @@
+{
+  "contributor": "Nokia",
+  "description": "Extractors in 'hvc2' track",
+  "md5": "f157db18c7212cd640680c43e2957d51",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "video track",
+    "hvc1 sample entry",
+    "hvc2 sample entry",
+    "Extractors"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./hvc2_extractors.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

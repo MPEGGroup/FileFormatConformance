@@ -1,0 +1,22 @@
+{
+  "contributor": "Apple",
+  "description": "Multi-file",
+  "md5": "1e7efbe1f9ff0d4df489e69b24457ad4",
+  "version": 1,
+  "published": true,
+  "associated_files": ["./myData.dat"],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "video track",
+    "audio track",
+    "data ref to other file",
+    "sync table"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a6_tone_multifile.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

@@ -1,0 +1,26 @@
+{
+  "contributor": "Apple",
+  "description": "Oddities",
+  "md5": "d7f2af6d77225f61b146c7b910fe7ecb",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "implied length (size=0)",
+    "FTYP box",
+    "UUID box",
+    "Free/skip",
+    "Unknown box",
+    "Movie box",
+    "track enabled bit",
+    "audio track",
+    "sync table",
+    "pad bits"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./a7-tone-oddities.mp4",
+  "mdms_number": "",
+  "conforms_to": []
+}

@@ -1,0 +1,843 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "07_bifs_sprite.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mp42",
+      "@MinorVersion": "1",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "isom"
+        },
+        {
+          "@AlternateBrand": "mp42"
+        }
+      ]
+    },
+    "MediaDataBox": {
+      "@Size": "488",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "480"
+    },
+    "FreeSpaceBox": {
+      "@Size": "51",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "43"
+    },
+    "MovieBox": {
+      "@Size": "1763",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3235470177",
+        "@ModificationTime": "3235470177",
+        "@TimeScale": "600",
+        "@Duration": "3001",
+        "@NextTrackID": "4"
+      },
+      "ObjectDescriptorBox": {
+        "@Size": "33",
+        "@Type": "iods",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p14",
+        "@Container": "moov",
+        "MP4InitialObjectDescriptor": {
+          "@objectDescriptorID": "od1",
+          "@binaryID": "1",
+          "Profile": {
+            "@sceneProfileLevelIndication": "1",
+            "@graphicsProfileLevelIndication": "1",
+            "@ODProfileLevelIndication": "1"
+          },
+          "Descr": {
+            "esDescrInc": {
+              "ES_ID_Inc": [
+                {
+                  "@trackID": "1"
+                },
+                {
+                  "@trackID": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "TrackBox": [
+        {
+          "@Size": "428",
+          "@Type": "trak",
+          "@Specification": "p12",
+          "@Container": "moov",
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "@CreationTime": "3235470177",
+            "@ModificationTime": "3235470177",
+            "@TrackID": "1",
+            "@Duration": "600",
+            "@Width": "120.00",
+            "@Height": "116.00",
+            "Matrix": {
+              "@m11": "0x00010000",
+              "@m12": "0x00000000",
+              "@m13": "0x00000000",
+              "@m21": "0x00000000",
+              "@m22": "0x00010000",
+              "@m23": "0x00000000",
+              "@m31": "0x00000000",
+              "@m32": "0x00000000",
+              "@m33": "0x40000000"
+            }
+          },
+          "MediaBox": {
+            "@Size": "328",
+            "@Type": "mdia",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "MediaHeaderBox": {
+              "@Size": "32",
+              "@Type": "mdhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "@CreationTime": "3235470177",
+              "@ModificationTime": "3235470177",
+              "@TimeScale": "1000",
+              "@Duration": "1000",
+              "@LanguageCode": "und"
+            },
+            "HandlerBox": {
+              "@Size": "57",
+              "@Type": "hdlr",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia meta minf",
+              "@hdlrType": "sdsm",
+              "@Name": "GPAC MPEG-4 BIFS Handler",
+              "@reserved1": "0",
+              "@reserved2": "data:application/octet-string,000000000000000000000000"
+            },
+            "MediaInformationBox": {
+              "@Size": "231",
+              "@Type": "minf",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "MPEGMediaHeaderBox": {
+                "@Size": "12",
+                "@Type": "nmhd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "minf"
+              },
+              "DataInformationBox": {
+                "@Size": "36",
+                "@Type": "dinf",
+                "@Specification": "p12",
+                "@Container": "minf meta",
+                "DataReferenceBox": {
+                  "@Size": "28",
+                  "@Type": "dref",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "dinf",
+                  "URLDataEntryBox": {
+                    "@Size": "12",
+                    "@Type": "url ",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "dref"
+                  }
+                }
+              },
+              "SampleTableBox": {
+                "@Size": "175",
+                "@Type": "stbl",
+                "@Specification": "p12",
+                "@Container": "minf",
+                "SampleDescriptionBox": {
+                  "@Size": "75",
+                  "@Type": "stsd",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "MPEGSystemsSampleDescriptionBox": {
+                    "@Size": "59",
+                    "@Type": "mp4s",
+                    "@Specification": "p14",
+                    "@Container": "stsd",
+                    "@DataReferenceIndex": "1",
+                    "MPEG4ESDescriptorBox": {
+                      "@Size": "43",
+                      "@Type": "esds",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p14",
+                      "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                      "ES_Descriptor": {
+                        "@ES_ID": "es0",
+                        "decConfigDescr": {
+                          "DecoderConfigDescriptor": {
+                            "@objectTypeIndication": "1",
+                            "@streamType": "3",
+                            "@bufferSizeDB": "96",
+                            "decSpecificInfo": {
+                              "BIFSConfig": {
+                                "@nodeIDbits": "1",
+                                "commandStream": {
+                                  "@pixelMetric": "true",
+                                  "size": {
+                                    "@pixelWidth": "120",
+                                    "@pixelHeight": "116"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "slConfigDescr": {
+                          "SLConfigDescriptor": {
+                            "predefined": {
+                              "@value": "2"
+                            },
+                            "custom": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "TimeToSampleBox": {
+                  "@Size": "24",
+                  "@Type": "stts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "TimeToSampleEntry": {
+                    "@SampleDelta": "1000",
+                    "@SampleCount": "1"
+                  }
+                },
+                "SampleToChunkBox": {
+                  "@Size": "28",
+                  "@Type": "stsc",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "SampleToChunkEntry": {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                },
+                "SampleSizeBox": {
+                  "@Size": "20",
+                  "@Type": "stsz",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@SampleCount": "1",
+                  "@ConstantSampleSize": "96"
+                },
+                "ChunkOffsetBox": {
+                  "@Size": "20",
+                  "@Type": "stco",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "ChunkEntry": {
+                    "@offset": "40"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "@Size": "624",
+          "@Type": "trak",
+          "@Specification": "p12",
+          "@Container": "moov",
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "@CreationTime": "3235470177",
+            "@ModificationTime": "3235470177",
+            "@TrackID": "3",
+            "@Duration": "3001"
+          },
+          "TrackReferenceBox": {
+            "@Size": "32",
+            "@Type": "tref",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "TrackReferenceTypeBox": [
+              {
+                "@Size": "12",
+                "@Type": "dpnd",
+                "@Specification": "p12",
+                "@Container": "tref",
+                "TrackReferenceEntry": {
+                  "@TrackID": "1"
+                }
+              },
+              {
+                "@Size": "12",
+                "@Type": "sync",
+                "@Specification": "p12",
+                "@Container": "tref",
+                "TrackReferenceEntry": {
+                  "@TrackID": "3"
+                }
+              }
+            ]
+          },
+          "MediaBox": {
+            "@Size": "492",
+            "@Type": "mdia",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "MediaHeaderBox": {
+              "@Size": "32",
+              "@Type": "mdhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "@CreationTime": "3235470177",
+              "@ModificationTime": "3235470177",
+              "@TimeScale": "1000",
+              "@Duration": "5002",
+              "@LanguageCode": "und"
+            },
+            "HandlerBox": {
+              "@Size": "57",
+              "@Type": "hdlr",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia meta minf",
+              "@hdlrType": "sdsm",
+              "@Name": "GPAC MPEG-4 BIFS Handler",
+              "@reserved1": "0",
+              "@reserved2": "data:application/octet-string,000000000000000000000000"
+            },
+            "MediaInformationBox": {
+              "@Size": "395",
+              "@Type": "minf",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "MPEGMediaHeaderBox": {
+                "@Size": "12",
+                "@Type": "nmhd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "minf"
+              },
+              "DataInformationBox": {
+                "@Size": "36",
+                "@Type": "dinf",
+                "@Specification": "p12",
+                "@Container": "minf meta",
+                "DataReferenceBox": {
+                  "@Size": "28",
+                  "@Type": "dref",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "dinf",
+                  "URLDataEntryBox": {
+                    "@Size": "12",
+                    "@Type": "url ",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "dref"
+                  }
+                }
+              },
+              "SampleTableBox": {
+                "@Size": "339",
+                "@Type": "stbl",
+                "@Specification": "p12",
+                "@Container": "minf",
+                "SampleDescriptionBox": {
+                  "@Size": "75",
+                  "@Type": "stsd",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "MPEGSystemsSampleDescriptionBox": {
+                    "@Size": "59",
+                    "@Type": "mp4s",
+                    "@Specification": "p14",
+                    "@Container": "stsd",
+                    "@DataReferenceIndex": "1",
+                    "MPEG4ESDescriptorBox": {
+                      "@Size": "43",
+                      "@Type": "esds",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p14",
+                      "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                      "ES_Descriptor": {
+                        "@ES_ID": "es0",
+                        "decConfigDescr": {
+                          "DecoderConfigDescriptor": {
+                            "@objectTypeIndication": "1",
+                            "@streamType": "3",
+                            "@bufferSizeDB": "13",
+                            "@maxBitrate": "312",
+                            "@avgBitrate": "124",
+                            "decSpecificInfo": {
+                              "BIFSConfig": {
+                                "@nodeIDbits": "1",
+                                "commandStream": {
+                                  "@pixelMetric": "true",
+                                  "size": {
+                                    "@pixelWidth": "120",
+                                    "@pixelHeight": "116"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "slConfigDescr": {
+                          "SLConfigDescriptor": {
+                            "predefined": {
+                              "@value": "2"
+                            },
+                            "custom": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "TimeToSampleBox": {
+                  "@Size": "72",
+                  "@Type": "stts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "7",
+                  "TimeToSampleEntry": [
+                    {
+                      "@SampleDelta": "1000",
+                      "@SampleCount": "2"
+                    },
+                    {
+                      "@SampleDelta": "1",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@SampleDelta": "999",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@SampleDelta": "1000",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@SampleDelta": "1",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@SampleDelta": "999",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@SampleDelta": "1",
+                      "@SampleCount": "2"
+                    }
+                  ]
+                },
+                "SyncSampleBox": {
+                  "@Size": "40",
+                  "@Type": "stss",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "6",
+                  "SyncSampleEntry": [
+                    {
+                      "@sampleNumber": "1"
+                    },
+                    {
+                      "@sampleNumber": "3"
+                    },
+                    {
+                      "@sampleNumber": "4"
+                    },
+                    {
+                      "@sampleNumber": "6"
+                    },
+                    {
+                      "@sampleNumber": "7"
+                    },
+                    {
+                      "@sampleNumber": "9"
+                    }
+                  ]
+                },
+                "SyncShadowBox": {
+                  "@Size": "40",
+                  "@Type": "stsh",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "3",
+                  "SyncShadowEntry": [
+                    {
+                      "@ShadowedSample": "3",
+                      "@SyncSample": "4"
+                    },
+                    {
+                      "@ShadowedSample": "6",
+                      "@SyncSample": "7"
+                    },
+                    {
+                      "@ShadowedSample": "8",
+                      "@SyncSample": "9"
+                    }
+                  ]
+                },
+                "SampleToChunkBox": {
+                  "@Size": "28",
+                  "@Type": "stsc",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "SampleToChunkEntry": {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "9",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                },
+                "SampleSizeBox": {
+                  "@Size": "56",
+                  "@Type": "stsz",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@SampleCount": "9",
+                  "SampleSizeEntry": [
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "96"
+                    },
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "96"
+                    },
+                    {
+                      "@Size": "13"
+                    },
+                    {
+                      "@Size": "96"
+                    }
+                  ]
+                },
+                "ChunkOffsetBox": {
+                  "@Size": "20",
+                  "@Type": "stco",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "ChunkEntry": {
+                    "@offset": "136"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "@Size": "450",
+          "@Type": "trak",
+          "@Specification": "p12",
+          "@Container": "moov",
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "@CreationTime": "3235470177",
+            "@ModificationTime": "3235470177",
+            "@TrackID": "2",
+            "@Duration": "600"
+          },
+          "TrackReferenceBox": {
+            "@Size": "32",
+            "@Type": "tref",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "TrackReferenceTypeBox": [
+              {
+                "@Size": "12",
+                "@Type": "sync",
+                "@Specification": "p12",
+                "@Container": "tref",
+                "TrackReferenceEntry": {
+                  "@TrackID": "1"
+                }
+              },
+              {
+                "@Size": "12",
+                "@Type": "mpod",
+                "@Specification": "p12",
+                "@Container": "tref",
+                "TrackReferenceEntry": {
+                  "@TrackID": "3"
+                }
+              }
+            ]
+          },
+          "MediaBox": {
+            "@Size": "318",
+            "@Type": "mdia",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "MediaHeaderBox": {
+              "@Size": "32",
+              "@Type": "mdhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "@CreationTime": "3235470177",
+              "@ModificationTime": "3235470177",
+              "@TimeScale": "1000",
+              "@Duration": "1000",
+              "@LanguageCode": "und"
+            },
+            "HandlerBox": {
+              "@Size": "55",
+              "@Type": "hdlr",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia meta minf",
+              "@hdlrType": "odsm",
+              "@Name": "GPAC MPEG-4 OD Handler",
+              "@reserved1": "0",
+              "@reserved2": "data:application/octet-string,000000000000000000000000"
+            },
+            "MediaInformationBox": {
+              "@Size": "223",
+              "@Type": "minf",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "MPEGMediaHeaderBox": {
+                "@Size": "12",
+                "@Type": "nmhd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "minf"
+              },
+              "DataInformationBox": {
+                "@Size": "36",
+                "@Type": "dinf",
+                "@Specification": "p12",
+                "@Container": "minf meta",
+                "DataReferenceBox": {
+                  "@Size": "28",
+                  "@Type": "dref",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "dinf",
+                  "URLDataEntryBox": {
+                    "@Size": "12",
+                    "@Type": "url ",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "dref"
+                  }
+                }
+              },
+              "SampleTableBox": {
+                "@Size": "167",
+                "@Type": "stbl",
+                "@Specification": "p12",
+                "@Container": "minf",
+                "SampleDescriptionBox": {
+                  "@Size": "67",
+                  "@Type": "stsd",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "MPEGSystemsSampleDescriptionBox": {
+                    "@Size": "51",
+                    "@Type": "mp4s",
+                    "@Specification": "p14",
+                    "@Container": "stsd",
+                    "@DataReferenceIndex": "1",
+                    "MPEG4ESDescriptorBox": {
+                      "@Size": "35",
+                      "@Type": "esds",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p14",
+                      "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                      "ES_Descriptor": {
+                        "@ES_ID": "es0",
+                        "decConfigDescr": {
+                          "DecoderConfigDescriptor": {
+                            "@objectTypeIndication": "1",
+                            "@streamType": "1",
+                            "@bufferSizeDB": "10"
+                          }
+                        },
+                        "slConfigDescr": {
+                          "SLConfigDescriptor": {
+                            "predefined": {
+                              "@value": "2"
+                            },
+                            "custom": null
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "TimeToSampleBox": {
+                  "@Size": "24",
+                  "@Type": "stts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "TimeToSampleEntry": {
+                    "@SampleDelta": "1000",
+                    "@SampleCount": "1"
+                  }
+                },
+                "SampleToChunkBox": {
+                  "@Size": "28",
+                  "@Type": "stsc",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "SampleToChunkEntry": {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                },
+                "SampleSizeBox": {
+                  "@Size": "20",
+                  "@Type": "stsz",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@SampleCount": "1",
+                  "@ConstantSampleSize": "10"
+                },
+                "ChunkOffsetBox": {
+                  "@Size": "20",
+                  "@Type": "stco",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "ChunkEntry": {
+                    "@offset": "502"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "UserDataBox": {
+        "@Size": "112",
+        "@Type": "udta",
+        "@Specification": "p12",
+        "@Container": "moov trak moof traf",
+        "CopyrightBox": {
+          "@Size": "104",
+          "@Type": "cprt",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "udta",
+          "@LanguageCode": "und",
+          "@CopyrightNotice": "ENST IsoMedia Conformance Files - ENST (c) 2006 - Rights released for ISO Conformance use"
+        }
+      }
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev466-g1b7355ad-master"
+}

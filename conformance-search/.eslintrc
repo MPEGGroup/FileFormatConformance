@@ -1,0 +1,101 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "plugins": [
+        "vitest",
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "tailwindcss",
+        "jest"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript",
+        "airbnb",
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "globals": {
+        "BUILD_TIMESTAMP": true,
+        "MP4BOX_BASE": true
+    },
+    "rules": {
+        // Prettier
+        "prettier/prettier": "error",
+        // Typescript
+        "no-bitwise": [
+            "error",
+            {
+                "allow": [
+                    "|",
+                    "&"
+                ]
+            }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        // react
+        "react/react-in-jsx-scope": "off", // React 17 does not require this anymore
+        "react/jsx-sort-props": "error",
+        "react/sort-default-props": "error",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        // Import
+        "import/extensions": "off",
+        "import/no-cycle": [
+            "error",
+            {
+                "maxDepth": 1
+            }
+        ],
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": [
+                    "@/components/*/*"
+                ]
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "contributor": "Nokia",
+  "description": "file delivery with 1 hint track, no FEC",
+  "md5": "fd6364b045eeff17148419f6055782db",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [
+    "Ordinary box",
+    "FTYP box",
+    "Movie box",
+    "file-level",
+    "item naming etc.",
+    "FD hint tracks"
+  ],
+  "notes": "",
+  "license": "",
+  "rel_filepath": "./compact-no-code-fec-1.iso3",
+  "mdms_number": "",
+  "conforms_to": []
+}

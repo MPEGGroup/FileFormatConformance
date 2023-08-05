@@ -1,0 +1,23 @@
+{
+  "contributor": "Nokia",
+  "description": "10 image items sharing the same decoder configuration property.",
+  "md5": "6fabdbba3d6ed39b860c291a04780e82",
+  "version": 2,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B036": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "HEVC Main profile encoded bitstream made up of 20 frames (1280x720 resolution)",
+        "same_input_content": "B004",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B036.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C004.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}

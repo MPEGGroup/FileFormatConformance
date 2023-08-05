@@ -1,0 +1,43 @@
+{
+  "contributor": "Nokia",
+  "description": "A pre-derived coded image (a pre-rendered 2x2 grid) as the primary item.",
+  "md5": "f559555ab43e9bc21a574ed8765e45b5",
+  "version": 1,
+  "published": true,
+  "associated_files": [],
+  "features": [],
+  "notes": {
+    "bitstreams": {
+      "B014": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "A grid of 4 Images downsampled to 512x288 resolution and positioned to a 2x2 grid",
+        "same_input_content": " then encoded as a single HD HEVC Main Profile bitstream.",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B014.265"
+      },
+      "B015": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Image downsampled to 512x288 and then encoded using HEVC Main Profile",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B015.265"
+      },
+      "B016": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B016.265"
+      },
+      "B017": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B017.265"
+      },
+      "B018": {
+        "commit": "f17e517f7518984b4450349a88edc09519082c74",
+        "description": "Image downsampled to 512x288  and then encoded using HEVC Main Profile",
+        "url": "https://github.com/nokiatech/heif_conformance/blob/master/bitstreams/B018.265"
+      }
+    }
+  },
+  "license": "",
+  "rel_filepath": "./C040.heic",
+  "mdms_number": "m42431",
+  "conforms_to": []
+}
