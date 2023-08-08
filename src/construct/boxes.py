@@ -3,12 +3,14 @@ import os
 import json
 from glob import glob
 from loguru import logger
+from functools import cache
 from dataclasses import dataclass, field
 
 from common import get_mp4ra_boxes
 
 BOXES = {}
 EXTENSIONS = {}
+TYPE_HIERARCHY = {}
 
 
 @dataclass
@@ -41,6 +43,22 @@ class Box:
             "containers": self.containers,
             "syntax": self.syntax,
         }
+
+
+@cache
+def get_all_inheritors(cls):
+    """
+    Get all inheritors of a class. Skip subclasses that are not in TYPE_HIERARCHY.
+    If requested class is not in TYPE_HIERARCHY, return a set with only the requested class.
+    """
+    if cls not in TYPE_HIERARCHY:
+        return set([cls])
+    subclasses = set(sc for sc in TYPE_HIERARCHY[cls] if sc in TYPE_HIERARCHY)
+    return (
+        set([cls])
+        | subclasses
+        | set(s for c in subclasses for s in get_all_inheritors(c))
+    )
 
 
 def get_all_boxes(json_file):
@@ -114,7 +132,8 @@ def update_container(_spec, _box):
                 {"fourcc": container_box.fourcc, "type": container_box.type}
             )
         else:
-            _box.containers.append({"fourcc": "*", "type": container_box["type"]})
+            for inheritor in get_all_inheritors(container_box["type"]):
+                _box.containers.append({"fourcc": "*", "type": inheritor})
 
     for container_box in [_box for _box in container_boxes if isinstance(_box, Box)]:
         if container_box.incomplete:
@@ -135,6 +154,25 @@ def main():
     for file in files:
         get_all_boxes(file)
 
+    # Get all available syntaxes
+    extract_syntax = re.compile(
+        r"(?:[Cc]lass\s*([a-zA-Z0-9]+).*extends\s*([a-zA-Z0-9]+)).*{",
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    syntaxes = set()
+    for value in BOXES.values():
+        for _box in value:
+            matches = extract_syntax.findall(_box.syntax)
+            for match in matches:
+                syntaxes.add(match)
+
+    # Extract type hierarchy
+    for cls, ext in syntaxes:
+        if ext not in TYPE_HIERARCHY:
+            TYPE_HIERARCHY[ext] = set()
+        TYPE_HIERARCHY[ext].add(cls)
+
+    # Update containers
     for spec, boxes in BOXES.items():
         for _box in boxes:
             update_container(spec, _box)
