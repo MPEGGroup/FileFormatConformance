@@ -20,7 +20,7 @@ tqdm = "^4.65.0"
 loguru = "^0.7.0"
 gitpython = "^3.1.32"
 jsonschema = "^4.19.0"
-pytest-check = "^2.2.0"
+pytest-check = "^2.2.1"
 pytest-dependency = "^0.5.1"
 requests = "^2.31.0"
 
