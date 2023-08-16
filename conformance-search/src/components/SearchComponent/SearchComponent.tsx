@@ -4,11 +4,12 @@ import { AiOutlineLoading } from "react-icons/ai";
 import { MdAddCircle, MdClose, MdFilterAlt, MdRemoveCircle } from "react-icons/md";
 
 import clsx from "clsx";
-import { useThrottle } from "react-use";
+import { useDebounce } from "react-use";
 import { Input, Select } from "@/components";
 import Search, { FILTER_OPTIONS } from "@/lib/search";
 import { Box, Feature, Filter, SearchResult } from "@/types";
 import useFilters from "./hooks/useFilters";
+import useQueryParams from "./hooks/useQueryParams";
 
 export default function SearchComponent({
     className,
@@ -20,31 +21,17 @@ export default function SearchComponent({
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
     const [filters, { addFilter, removeFilter, updateFilter, resetFilters }] = useFilters();
+    const [queryParams, setQueryParams] = useQueryParams();
     const [query, setQuery] = useState("");
     const [ready, setReady] = useState(false);
 
-    // Throttle query
-    const throttleQuery = useThrottle(query, 250);
-
     // Load the search state from the URL
     useEffect(() => {
-        // Load query and filters from URL
-        if ("URLSearchParams" in window) {
-            const params = new URLSearchParams(window.location.search);
-            const state = params.get("s");
-            if (!state) return;
-
-            try {
-                const { query: queryFromURL, filters: filtersFromURL } = JSON.parse(
-                    window.atob(state)
-                );
-                if (queryFromURL) setQuery(queryFromURL);
-                if (filtersFromURL) resetFilters(filtersFromURL);
-            } catch (_) {
-                window.history.replaceState({}, "", window.location.pathname);
-            }
+        if (queryParams && !ready) {
+            setQuery(queryParams.query);
+            resetFilters(queryParams.filters);
         }
-    }, []);
+    }, [queryParams, ready]);
 
     // Remove container filter if it already exists
     const getFilterOptions = (currentFilter: string) => {
@@ -57,27 +44,21 @@ export default function SearchComponent({
     };
 
     // Execute search
-    useEffect(() => {
-        const execute = async () => {
+    useDebounce(
+        async () => {
             const search = await Search.getInstance();
             setReady(true);
 
-            if ("URLSearchParams" in window) {
-                if (query || filters.length > 0) {
-                    const params = new URLSearchParams(window.location.search);
-                    params.set("s", window.btoa(JSON.stringify({ query, filters })));
-                    window.history.replaceState({}, "", `${window.location.pathname}?${params}`);
-                } else window.history.replaceState({}, "", window.location.pathname);
-            }
-
+            // Update URL
+            setQueryParams(query, filters);
             setLoading(true);
             const { boxes, features } = await search.search(query, filters);
             await onResult(boxes, features);
             setLoading(false);
-        };
-
-        execute().catch(console.error);
-    }, [throttleQuery, filters]);
+        },
+        250,
+        [query, filters]
+    );
 
     // Show/hide title
     useEffect(() => {
