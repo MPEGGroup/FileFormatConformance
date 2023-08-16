@@ -69,6 +69,20 @@ describe("Search", () => {
         });
     });
 
+    describe("search with other filters", () => {
+        let search: Search;
+        beforeAll(async () => {
+            search = await Search.getInstance();
+        });
+
+        it("with a spec filter", async () => {
+            const { boxes } = await search.search("", [{ type: "spec", value: "14496-12" }]);
+
+            expect(boxes.length).toBeGreaterThan(0);
+            expect(boxes.map((r) => r.item.fourcc)).toMatchSnapshot();
+        });
+    });
+
     describe("search with container filter", () => {
         let search: Search;
         beforeAll(async () => {

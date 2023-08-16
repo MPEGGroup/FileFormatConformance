@@ -71,10 +71,8 @@ class Search {
                 name: "registered_type",
                 weight: 30
             },
-            {
-                name: "syntax",
-                weight: 15
-            }
+            { name: "spec" },
+            { name: "syntax" }
         ]
     };
 
