@@ -1,3 +1,4 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import CoverageView from "@/pages/CoveragePage";
@@ -21,5 +22,7 @@ const router = createHashRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <RouterProvider router={router} />
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
 );

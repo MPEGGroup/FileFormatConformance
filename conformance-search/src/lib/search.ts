@@ -369,16 +369,20 @@ class Search {
         const spec = this.filters.find((filter) => filter?.spec)?.spec;
         const constructedQueryForFeature: Fuse.Expression = {
             $and: [
-                {
-                    $or: [
-                        {
-                            name: query
-                        },
-                        {
-                            description: query
-                        }
-                    ]
-                },
+                ...(query
+                    ? [
+                          {
+                              $or: [
+                                  {
+                                      name: query
+                                  },
+                                  {
+                                      description: query
+                                  }
+                              ]
+                          }
+                      ]
+                    : []),
                 ...(spec ? [{ spec }] : [])
             ]
         };
