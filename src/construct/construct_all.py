@@ -9,12 +9,12 @@ from construct.files import main as construct_files_main
 def main():
     construct_boxes_main()
     logger.success("Construct boxes")
-    construct_dictionary_main()
-    logger.success("Construct dictionary")
     construct_hierarchy_main()
     logger.success("Construct hierarchy")
     construct_files_main()
     logger.success("Construct files")
+    construct_dictionary_main()
+    logger.success("Construct dictionary")
 
 
 if __name__ == "__main__":
