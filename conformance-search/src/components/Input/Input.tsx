@@ -22,6 +22,8 @@ export default function Input({
     if (filter.type !== "container")
         return (
             <input
+                // eslint-disable-next-line jsx-a11y/no-autofocus
+                autoFocus
                 className="grow px-3 text-sm focus:outline-none"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     updateFilter(index, (e.target as HTMLInputElement).value)

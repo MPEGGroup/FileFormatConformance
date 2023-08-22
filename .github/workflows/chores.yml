@@ -1,4 +1,4 @@
-name: Build MP4Box
+name: Chores
 
 on:
   workflow_dispatch:
@@ -7,6 +7,7 @@ on:
 
 jobs:
   gpac:
+    name: Build GPAC
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,3 +35,23 @@ jobs:
           make -j$(nproc)
           mkdir -p /tmp/gpac
           cp -r bin/gcc/ /tmp/gpac
+
+  lfscache:
+    name: Keep LFS Cache Warm
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create LFS file list
+        id: lfs-id
+        run: |
+          echo "lfs-id=$(git lfs ls-files --long | cut -d ' ' -f1 | sort \
+          | sha256sum | cut -d ' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: LFS Cache
+        uses: actions/cache/restore@v3
+        with:
+          path: .git/lfs/objects
+          key: ${{ runner.os }}-lfs-${{ steps.lfs-id.outputs.lfs-id }}
+          restore-keys: ${{ runner.os }}-lfs-

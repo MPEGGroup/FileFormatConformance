@@ -71,10 +71,8 @@ class Search {
                 name: "registered_type",
                 weight: 30
             },
-            {
-                name: "syntax",
-                weight: 15
-            }
+            { name: "spec" },
+            { name: "syntax" }
         ]
     };
 
@@ -371,16 +369,20 @@ class Search {
         const spec = this.filters.find((filter) => filter?.spec)?.spec;
         const constructedQueryForFeature: Fuse.Expression = {
             $and: [
-                {
-                    $or: [
-                        {
-                            name: query
-                        },
-                        {
-                            description: query
-                        }
-                    ]
-                },
+                ...(query
+                    ? [
+                          {
+                              $or: [
+                                  {
+                                      name: query
+                                  },
+                                  {
+                                      description: query
+                                  }
+                              ]
+                          }
+                      ]
+                    : []),
                 ...(spec ? [{ spec }] : [])
             ]
         };

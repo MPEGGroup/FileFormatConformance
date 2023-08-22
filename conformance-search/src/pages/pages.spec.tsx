@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { fireEvent, render, screen, within } from "@testing-library/react";
+import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import { describe, expect, it, vi } from "vitest";
 import Search from "@/lib/search";
@@ -50,42 +50,47 @@ describe("Views", () => {
 describe("Search", () => {
     const search = async (query: string) => {
         // Render
-        render(
-            <BrowserRouter>
-                <HomeView />
-            </BrowserRouter>
-        );
+        act(() => {
+            render(
+                <BrowserRouter>
+                    <HomeView />
+                </BrowserRouter>
+            );
+        });
 
         // Search for the query and wait for the results to appear
         const input = await screen.findByTestId(/search-input/i);
-        fireEvent.input(input, {
-            target: { value: query }
+        act(() => {
+            fireEvent.input(input, {
+                target: { value: query }
+            });
         });
     };
 
     const validate = async (query: string | number[]) => {
         let resultCounts = query;
         if (typeof query === "string") {
-            // Get actual result counts
-            const mSearch = await Search.getInstance();
-            const { boxes, features } = await mSearch.search(query);
-            const { files } = mSearch.refine(
-                boxes.map((box) => ({
-                    ...box,
-                    exclude: false,
-                    count: 0,
-                    type: "box"
-                })),
-                features.map((feature) => ({
-                    ...feature,
-                    exclude: false,
-                    count: 0,
-                    type: "feature"
-                })),
-                true
-            );
-
-            resultCounts = [boxes.length + features.length, files.length];
+            await act(async () => {
+                // Get actual result counts
+                const mSearch = await Search.getInstance();
+                const { boxes, features } = await mSearch.search(query);
+                const { files } = mSearch.refine(
+                    boxes.map((box) => ({
+                        ...box,
+                        exclude: false,
+                        count: 0,
+                        type: "box"
+                    })),
+                    features.map((feature) => ({
+                        ...feature,
+                        exclude: false,
+                        count: 0,
+                        type: "feature"
+                    })),
+                    true
+                );
+                resultCounts = [boxes.length + features.length, files.length];
+            });
         }
 
         // Wait for the results to appear
@@ -140,7 +145,9 @@ describe("Search", () => {
 
         // Uncheck the first result
         const checkbox = within(lelements[1]).getByTestId(/list-item-checkbox/i);
-        fireEvent.click(checkbox);
+        act(() => {
+            fireEvent.click(checkbox);
+        });
 
         // Check that box order and files are updated
         const newCounts: number[] = resultCounts as number[];
@@ -156,11 +163,15 @@ describe("Search", () => {
 
         // Open versions drawer
         const drawerButton = await within(lelements[0]).findByText(/Versions/i);
-        fireEvent.click(drawerButton);
+        act(() => {
+            fireEvent.click(drawerButton);
+        });
 
         // Wait for drawer to open
         const firstVersion = await within(lelements[0]).findByTestId(/list-item-version-0/i);
-        fireEvent.click(firstVersion);
+        act(() => {
+            fireEvent.click(firstVersion);
+        });
 
         // Check that files are updated
         const {
@@ -179,11 +190,15 @@ describe("Search", () => {
 
         // Open versions drawer
         const drawerButton = await within(lelements[0]).findByText(/Flags/i);
-        fireEvent.click(drawerButton);
+        act(() => {
+            fireEvent.click(drawerButton);
+        });
 
         // Wait for drawer to open
         const firstFlag = await within(lelements[0]).findByTestId(/list-item-flag-0/i);
-        fireEvent.click(firstFlag);
+        act(() => {
+            fireEvent.click(firstFlag);
+        });
 
         // Check that files are updated
         const {
