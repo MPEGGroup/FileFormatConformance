@@ -98,7 +98,8 @@ function CoverageTables({
                         <td>
                             {(
                                 (processedCoverageStats.lists.boxes.covered.length /
-                                    processedCoverageStats.lists.boxes.not_covered.length) *
+                                    (processedCoverageStats.lists.boxes.not_covered.length +
+                                        processedCoverageStats.lists.boxes.covered.length)) *
                                 100
                             ).toFixed(2)}
                             %
