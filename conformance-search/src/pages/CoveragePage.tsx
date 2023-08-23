@@ -13,19 +13,24 @@ function HighlightBox({ children }: { children: string }) {
     const path = children.split(".").slice(0, -1).join(".");
     const last = children.split(".").slice(-1)[0];
     return (
-        <div className="text-sm xs:text-base">
-            <span className="text-neutral-500">
-                {path.includes("*") ? (
-                    <>
-                        {path.split("*")[0]}
-                        <FaExpandAlt className="z-0 mx-1 inline-block rotate-45 text-xl text-red-400" />
-                        {path.split("*")[1]}
-                    </>
-                ) : (
-                    path
-                )}
+        <div className="table w-full table-fixed text-sm xs:text-base">
+            <span className="table-cell truncate text-left" style={{ direction: "rtl" }}>
+                <span className="text-neutral-500">
+                    {path.includes("*") ? (
+                        <>
+                            {path.split("*")[0]}
+                            <FaExpandAlt className="z-0 mx-1 inline-block rotate-45 text-xl text-red-400" />
+                            {path.split("*")[1]}
+                        </>
+                    ) : (
+                        path
+                    )}
+                    .
+                </span>
+                <a className="font-bold duration-200 hover:text-blue-400" href={`?query==${last}`}>
+                    {last}
+                </a>
             </span>
-            <span className="font-bold">.{last}</span>
         </div>
     );
 }
@@ -96,7 +101,8 @@ function CoverageTables({
                         <td>
                             {(
                                 (processedCoverageStats.lists.boxes.covered.length /
-                                    processedCoverageStats.lists.boxes.not_covered.length) *
+                                    (processedCoverageStats.lists.boxes.not_covered.length +
+                                        processedCoverageStats.lists.boxes.covered.length)) *
                                 100
                             ).toFixed(2)}
                             %
@@ -382,6 +388,24 @@ export default function CoveragePage() {
         return { boxes, features };
     }, [fuses, processedCoverageStats, throttledSearch]);
 
+    const maxDepth = useMemo(() => {
+        let max = 0;
+        if (!coverageStats) return max;
+        coverageStats.lists.boxes.covered.forEach((path) => {
+            const split = path.split(".");
+            if (split.length > max) max = split.length;
+        });
+        coverageStats.lists.boxes.not_covered.forEach((path) => {
+            const split = path.split(".");
+            if (split.length > max) max = split.length;
+        });
+        coverageStats.lists.boxes.under_consideration.forEach((path) => {
+            const split = path.split(".");
+            if (split.length > max) max = split.length;
+        });
+        return max;
+    }, [coverageStats]);
+
     // If screen is smaller than 1000px, then #root should have height: auto
     useEffect(() => {
         if (mobile) document.getElementById("root")?.style.setProperty("height", "auto");
@@ -425,10 +449,10 @@ export default function CoveragePage() {
                     <div className="flex w-full flex-row items-center gap-4">
                         <span className="text-2xl font-bold">Depth Setting</span>
                         <Slider
-                            className="basis-1/3"
+                            className="basis-1/2 lg:basis-1/3"
                             defaultValue={3}
                             marks
-                            max={6}
+                            max={maxDepth}
                             min={1}
                             onChange={(_, value) => setDepth(value as number)}
                             step={1}
