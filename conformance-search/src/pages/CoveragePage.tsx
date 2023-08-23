@@ -25,8 +25,11 @@ function HighlightBox({ children }: { children: string }) {
                     ) : (
                         path
                     )}
+                    .
                 </span>
-                <span className="font-bold">.{last}</span>
+                <a className="font-bold duration-200 hover:text-blue-400" href={`?query==${last}`}>
+                    {last}
+                </a>
             </span>
         </div>
     );
