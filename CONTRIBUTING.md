@@ -1,4 +1,4 @@
-# How to contribute to this resository
+# How to contribute to this repository
 
 ## 1. How to contribute new conformance files (for file contributors)
 
