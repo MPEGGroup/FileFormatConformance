@@ -15,13 +15,13 @@ Welcome to the File Format Conformance Framework, a repository dedicated to supp
 The main goals for the File Format Conformance Framework are:
 
 - to provide a way to contribute new files to the conformance suite.
-- to manage exising files and gather additional metadata associated with the files.
-- to create a dump of the contents of the files by utiilzing automation tools with the ability to add additional information which could not be automatically determined.
+- to manage existing files and gather additional metadata associated with the files.
+- to create a dump of the contents of the files by utilizing automation tools with the ability to add additional information which could not be automatically determined.
 - to export all features (e.g. boxes, sample groups, etc.) from our specifications to a json format which we can later use to map conformance files to them which claim to be conformant to these features.
 - to utilize automation tools to check for validity of contributed files by checking the metadata extracted from specifications (this metadata includes checking box types, version, flags, location of the boxes, user defined features from specifications which files claim to be conformant to, etc.).
   > NOTE: This framework **DOES NOT** validate the conformance of each feature, but rather provides a mapping from contributed files to features that are defined in our specifications. We check for correct box definitions and locations as well as defined versions and flags.
 - to automate validation of the registered boxes from [MP4RA](https://mp4ra.org/).
-- to provide visualization of exising files and its mapping to specifications, as well as providing a search tool to quickly find files with desired features.
+- to provide visualization of existing files and its mapping to specifications, as well as providing a search tool to quickly find files with desired features.
 - to visualize the coverage page, which shows how many features can be found in files contributed to the framework. This information is used to understand the current status of the files that we have currently in our suite and how many files we still need to gather to provide example files to every feature defined our specifications.
 
 Conformance files themselves are stored on [this GitHub repository](https://github.com/MPEGGroup/FileFormatConformance) using the Git Large File Storage (LFS).
