@@ -21,8 +21,8 @@ Because the MP4Box will not be able to parse new features which are currently be
 
 - Checkout the branch associated with the contributor’s PR
 - For each contribution’s MP4Box extension file (suffix with `_gpac.ext.json`)
-  - If the file does not exist, then there wasn't any unknown boxes found in the file. If you are modifying a known box then crete the file manually and add the box to the extension file.
-  - Go through all the unknown boxes and provide the structure of that box and its descedants.
+  - If the file does not exist, then there were no unknown boxes found in the file. If you are modifying a known box then create the file manually and add the box to the extension file.
+  - Go through all the unknown boxes and provide the structure of that box and its descendants.
   - If a node is not related to your contribution, you can just skip it.
   - Add the relevant boxes to the standard features as well. Without that this contribution wouldn't be shown in the conformance search tool.
 - If necessary for each conformance metadata file `<filename>.json` add or edit other fields. In particular check `associated_files`, `features`, `license` or add additional information to `notes`.
