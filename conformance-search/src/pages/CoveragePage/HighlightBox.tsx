@@ -1,4 +1,5 @@
 import { FaExpandAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function HighlightBox({ children }: { children: string }) {
     const path = children.split(".").slice(0, -1).join(".");
@@ -18,12 +19,16 @@ export default function HighlightBox({ children }: { children: string }) {
                     )}
                     .
                 </span>
-                <a
+                <Link
                     className="font-bold duration-200 hover:text-blue-400"
-                    href={`?query=="${last}"`}
+                    state={{
+                        query: `="${last}"`,
+                        filters: []
+                    }}
+                    to="/"
                 >
                     {last}
-                </a>
+                </Link>
             </span>
         </div>
     );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Filter } from "@/types";
+import { useLocation } from "react-router-dom";
 
 type QueryParams = {
     query: string;
@@ -10,6 +11,7 @@ export default function useQueryParams(): [
     QueryParams,
     (query?: string, filters?: Filter[]) => void
 ] {
+    const { state } = useLocation();
     const [params, setParams] = useState<QueryParams>({
         query: "",
         filters: []
@@ -24,7 +26,8 @@ export default function useQueryParams(): [
             .join(",");
     };
 
-    const decodeFilters = (filters: string): Filter[] => {
+    const decodeFilters = (filters: string | null): Filter[] => {
+        if (!filters) return [];
         return filters
             .split(",")
             .map((filter) => {
@@ -36,24 +39,21 @@ export default function useQueryParams(): [
 
     // Load the search state from the URL
     useEffect(() => {
-        if ("URLSearchParams" in window) {
-            const newParams: QueryParams = {
-                query: "",
-                filters: []
-            };
+        // Check the state
+        let { query, filters } = state || {};
 
+        // If no state in history, check the URL
+        if (window.location.search !== "") {
             const rawParams = new URLSearchParams(window.location.search);
-
-            // Query
-            newParams.query = rawParams.get("query") || "";
-
-            // Filters
-            const filters = rawParams.get("filters") || "";
-            newParams.filters = decodeFilters(filters);
-
-            // Update state
-            setParams(newParams);
+            query ||= rawParams.get("query");
+            filters ||= decodeFilters(rawParams.get("filters"));
         }
+
+        // Update the state
+        setParams((prev) => ({
+            query: query || prev.query,
+            filters: filters || prev.filters
+        }));
     }, []);
 
     const setQuery = (query?: string, filters?: Filter[]) => {

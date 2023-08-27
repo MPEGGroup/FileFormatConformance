@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { SearchComponent } from "@/components";
 import Search from "@/lib/search";
+import { StaticRouter } from "react-router-dom/server";
 
 describe("Search Component", () => {
     beforeEach(async () => {
@@ -12,7 +13,11 @@ describe("Search Component", () => {
 
     it("should be possible to apply a container filter", async () => {
         const onResult = vi.fn();
-        render(<SearchComponent onResult={onResult} />);
+        render(
+            <StaticRouter location="/">
+                <SearchComponent onResult={onResult} />
+            </StaticRouter>
+        );
 
         // Wait for component to load
         await screen.findByPlaceholderText(/Start by/i);
