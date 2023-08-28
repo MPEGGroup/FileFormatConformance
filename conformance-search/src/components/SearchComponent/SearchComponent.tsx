@@ -51,7 +51,6 @@ export default function SearchComponent({
 
             // Update URL
             setQueryParams(query, filters);
-            setLoading(true);
             const { boxes, features } = await search.search(query, filters);
             await onResult(boxes, features);
             setLoading(false);
@@ -86,9 +85,10 @@ export default function SearchComponent({
                             className="h-16 min-w-0 grow rounded-md px-5 text-sm focus:outline-none disabled:bg-transparent"
                             data-testid="search-input"
                             disabled={!ready}
-                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                                setQuery((e.target as HTMLInputElement).value)
-                            }
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                                setQuery((e.target as HTMLInputElement).value);
+                                setLoading(true);
+                            }}
                             placeholder={!ready ? "Loading..." : "Start by typing a search term..."}
                             spellCheck="false"
                             type="text"
@@ -96,8 +96,10 @@ export default function SearchComponent({
                         />
                         <button
                             className={clsx(
-                                "flex-col items-center justify-center px-3",
-                                !query && filters.length === 0 ? "hidden" : "flex"
+                                "w-14 flex-col items-center justify-center",
+                                !ready || loading || (!query && filters.length === 0)
+                                    ? "hidden"
+                                    : "flex"
                             )}
                             disabled={!ready || loading}
                             onClick={() => {
@@ -109,8 +111,8 @@ export default function SearchComponent({
                             <MdClose className="text-2xl" />
                             <span className="text-[10px] font-semibold">Reset</span>
                         </button>
-                        {!ready && (
-                            <div className="flex items-center justify-center px-3">
+                        {(!ready || loading) && (
+                            <div className="flex w-14 items-center justify-center">
                                 <AiOutlineLoading className="animate-spin text-2xl" />
                             </div>
                         )}
