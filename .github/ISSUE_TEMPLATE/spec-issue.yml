@@ -1,0 +1,29 @@
+name: 📚 Specification related issue
+description: Use this template if something is wrong with the data we extracted from the specifications.
+labels: ["inconsistent data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug.
+        Please fill out the following template to help us understanding the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a description of the problem. What is wrong?
+      placeholder: "The ISOBMFF spec defines this, but the data seems to be not available on this repository."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: (If applicable) What steps do we need to follow to see the problem with our own eyes?
+      placeholder: |
+        1. Do this
+        2. And then do this
+    validations:
+      required: false

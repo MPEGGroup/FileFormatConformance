@@ -1,6 +1,5 @@
 name: 🌎 Website Bug
 description: Use this template if something is wrong with the website. This may include visual bugs, typos, broken links, etc.
-title: "[Website] "
 labels: ["website"]
 body:
   - type: markdown
