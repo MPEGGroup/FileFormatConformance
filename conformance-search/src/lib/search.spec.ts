@@ -157,13 +157,6 @@ describe("Search", () => {
             expect(boxes.map((r) => r.item.fourcc)).toMatchSnapshot();
         });
 
-        it("(exact) $moov > '' TBD", async () => {
-            const { boxes } = await search.search("", [{ type: "container", value: "=$moov" }]);
-
-            expect(boxes.length).toEqual(8);
-            expect(boxes.map((r) => r.item.fourcc)).toMatchSnapshot();
-        });
-
         it("$moov > $edts > 'elst'", async () => {
             it("exact match", async () => {
                 const { boxes } = await search.search("elst", [

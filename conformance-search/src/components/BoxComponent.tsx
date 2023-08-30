@@ -103,19 +103,13 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                     <h3 className="-mb-1 text-xs font-bold">
                         {box.item.type || "N/A"} &bull; {box.item.spec}
                     </h3>
-                    <h2
-                        className="text-4xl font-extralight tracking-tight"
-                        data-testid="list-item-key"
-                    >
-                        {box.item.fourcc}
-                    </h2>
+                    <h2 className="text-4xl font-extralight tracking-tight">{box.item.fourcc}</h2>
                     <p className="text-justify text-sm italic text-neutral-500">
                         {box.item.description}
                     </p>
                 </div>
                 <button
                     className="flex flex-col items-start text-xl"
-                    data-testid="list-item-checkbox"
                     onClick={() => {
                         setChecked(!checked);
                         refineHandler(
@@ -165,11 +159,10 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                 </Drawer>
                 <Drawer hidden={box.item.versions.length < 1} title="Versions">
                     <ul className="p-3">
-                        {box.item.versions.map((version, index) => (
+                        {box.item.versions.map((version) => (
                             <li key={version} className="flex flex-row items-center gap-2">
                                 <button
                                     className="flex flex-col items-start"
-                                    data-testid={`list-item-version-${index}`}
                                     onClick={() => {
                                         // Create refinements object if it doesn't exist
                                         let { refinements } = box;
@@ -221,7 +214,7 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                     title="Flags"
                 >
                     <ul className="p-3">
-                        {box.item.flags.map((flag, index) => {
+                        {box.item.flags.map((flag) => {
                             if ("wildcard" in flag) return null;
                             const { name, value, description: flagDescription } = flag;
                             return (
@@ -231,7 +224,6 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                 >
                                     <button
                                         className="flex flex-col items-start"
-                                        data-testid={`list-item-flag-${index}`}
                                         onClick={() => {
                                             // Create refinements object if it doesn't exist
                                             let { refinements } = box;

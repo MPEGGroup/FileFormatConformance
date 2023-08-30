@@ -64,6 +64,14 @@ exports[`Database > files > should return 3 files for hdlr under =moov.meta 1`] 
 ]
 `;
 
+exports[`Database > files > should return 3 files for meta under =moov 1`] = `
+[
+  "published/isobmff/12_metas_v2.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+]
+`;
+
 exports[`Database > files > should return 3 files for stz2 1`] = `
 [
   "published/isobmff/02_dref_edts_img.mp4",
