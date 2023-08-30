@@ -297,10 +297,7 @@ export default function FileComponent({ file }: { file: FileSearchResult }) {
                         )}
                     </div>
                     <span className="table w-full table-fixed">
-                        <h2
-                            className="table-cell truncate text-2xl font-extralight tracking-tight"
-                            data-testid="list-item-key"
-                        >
+                        <h2 className="table-cell truncate text-2xl font-extralight tracking-tight">
                             {file.item.rel_filepath.split("/").pop()}
                         </h2>
                     </span>

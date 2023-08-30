@@ -83,7 +83,6 @@ export default function SearchComponent({
                             autoComplete="off"
                             autoCorrect="off"
                             className="h-16 min-w-0 grow rounded-md px-5 text-sm focus:outline-none disabled:bg-transparent"
-                            data-testid="search-input"
                             disabled={!ready}
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                 setQuery((e.target as HTMLInputElement).value);

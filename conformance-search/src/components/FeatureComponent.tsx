@@ -21,16 +21,10 @@ export default function FeatureComponent({ feature }: { feature: SearchResultRef
             <div className="flex flex-row items-start p-3 !pb-0">
                 <div className="grow">
                     <h3 className="-mb-1 text-xs font-bold">Feature &bull; {feature.item.spec}</h3>
-                    <h2
-                        className="text-3xl font-extralight tracking-tight"
-                        data-testid="list-item-key"
-                    >
-                        {feature.item.name}
-                    </h2>
+                    <h2 className="text-3xl font-extralight tracking-tight">{feature.item.name}</h2>
                 </div>
                 <button
                     className="ml-2 flex flex-col items-start text-xl"
-                    data-testid="list-item-checkbox"
                     onClick={() => {
                         setChecked(!checked);
                         refineHandler(

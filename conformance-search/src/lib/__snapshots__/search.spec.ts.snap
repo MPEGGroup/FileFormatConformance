@@ -112,19 +112,6 @@ exports[`Search > search with container filter > (exact) $moov > $trak > $meta >
 ]
 `;
 
-exports[`Search > search with container filter > (exact) $moov > '' TBD 1`] = `
-[
-  "free",
-  "meta",
-  "mvex",
-  "mvhd",
-  "skip",
-  "trak",
-  "udta",
-  "uuid",
-]
-`;
-
 exports[`Search > search with container filter > (exact) $trak > '' 1`] = `
 [
   "edts",

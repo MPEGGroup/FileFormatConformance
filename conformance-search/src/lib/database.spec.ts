@@ -92,6 +92,14 @@ describe("Database", () => {
             expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
         });
 
+        it("should return 3 files for meta under =moov", async () => {
+            await database.updateDatabase([{ container: "=$moov" }]);
+            const results = database.getMatchingFilesByBox([getBox("meta")]);
+
+            expect(results.length).toEqual(3);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
         it("should return more than 0 files after removing a container filter", async () => {
             await search.search("meta", [{ type: "container", value: "$trak" }]);
             const { boxes } = await search.search("mvex", []);
