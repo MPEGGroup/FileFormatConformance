@@ -26,7 +26,7 @@ body:
         1. Download file `foo.mp4`
         2. ...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: affected-specifications
@@ -37,7 +37,7 @@ body:
         - ISO/IEC 14496-12
         - ISO/IEC 14496-15
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: affected-files
