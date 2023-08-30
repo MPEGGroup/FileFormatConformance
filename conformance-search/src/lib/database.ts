@@ -359,7 +359,11 @@ class Database {
                     let latchAfterFirst = 0;
                     for (let i = 0; i < path.length; i += 1) {
                         // if we have already matched all the filters, we can break out of the loop
-                        if (totalMatched === filterValues.configuration.length) break;
+                        if (totalMatched === filterValues.configuration.length) {
+                            // on exact match, totalMatched should be equal to path.length or we also include other descendants
+                            if (filterValues.exact && totalMatched !== path.length) matched = false;
+                            break;
+                        }
 
                         // on exact match, we can break out of the loop if order of the filters are not met
                         if (filterValues.exact && totalMatched !== latchAfterFirst) {
