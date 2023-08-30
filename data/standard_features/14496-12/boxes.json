@@ -919,7 +919,7 @@
     },
     {
       "fourcc": "leva",
-      "description": "Leval assignment",
+      "description": "Level assignment box",
       "containers": ["mvex"],
       "type": "FullBox",
       "versions": [0],
