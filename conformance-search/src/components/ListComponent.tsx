@@ -36,20 +36,13 @@ export default function ListComponent({
             </div>
         );
     return (
-        <div
-            className={clsx(className, "flex flex-col items-center justify-between gap-4")}
-            data-testid="list-view"
-        >
+        <div className={clsx(className, "flex flex-col items-center justify-between gap-4")}>
             <span className="w-full self-start px-2">
                 Search resulted in <b>{children.length}</b> hits
             </span>
             <ul className="flex w-full grow flex-col gap-4 overflow-y-auto p-2 pt-0">
                 {children.map((item) => {
-                    return (
-                        <li key={item.key} data-testid="list-item">
-                            {item}
-                        </li>
-                    );
+                    return <li key={item.key}>{item}</li>;
                 })}
             </ul>
         </div>
