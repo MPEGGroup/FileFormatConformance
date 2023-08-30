@@ -1,0 +1,51 @@
+name: 🔥 Conformance File Issue
+description: Use this template if something is wrong with conformance files
+labels: ["conformance issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug in the conformance files.
+        Please fill out the following template to help us reproduce the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a description of the problem. What is wrong in the files?
+      placeholder: "File `foo.mp4` has a wrong value for `bar`"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: What steps do we need to follow to see the problem with our own eyes?
+      placeholder: |
+        1. Download file `foo.mp4`
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-specifications
+    attributes:
+      label: Affected specifications
+      description: Provide a list of specs which are relevant for this issue.
+      placeholder: |
+        - ISO/IEC 14496-12
+        - ISO/IEC 14496-15
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-files
+    attributes:
+      label: Affected files
+      description: Provide the files like this.
+      placeholder: |
+        - [file1.mp4](./data/file_features/published/isobmff/file1.mp4)
+        - [file2.mp4](./data/file_features/published/isobmff/file2.mp4)
+    validations:
+      required: true
