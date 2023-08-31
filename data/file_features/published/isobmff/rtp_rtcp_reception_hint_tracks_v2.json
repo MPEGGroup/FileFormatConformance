@@ -9,7 +9,7 @@
     "video track",
     "audio track",
     "hint track setup",
-    "sdp boxes (moov and track)",
+    "sdp boxes",
     "hint stats boxes",
     "RTP sample contructor on self track",
     "RTP etc. reception hint track"

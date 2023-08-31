@@ -5,14 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "edit list",
-    "audio track",
-    "sync table"
-  ],
+  "features": ["audio track"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a8-foreman_QCIF_edit.mp4",

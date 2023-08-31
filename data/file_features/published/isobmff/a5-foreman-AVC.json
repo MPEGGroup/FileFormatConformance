@@ -5,17 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "video track",
-    "audio track",
-    "ctts offsets",
-    "sync table",
-    "sample dependency",
-    "avc1 sample entry"
-  ],
+  "features": ["video track", "audio track", "sample dependency"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a5-foreman-AVC.mp4",

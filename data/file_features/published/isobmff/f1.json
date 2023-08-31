@@ -6,16 +6,11 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "normal' order (moov-mdat)",
     "video track",
     "audio track",
     "Interleaved data",
     "IOD box",
-    "mp4a sample entry",
-    "avc1 sample entry"
+    "mp4a sample entry"
   ],
   "notes": "",
   "license": "",

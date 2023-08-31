@@ -5,16 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Free/skip",
-    "Movie box",
-    "normal' order (moov-mdat)",
-    "64-bit mv/tr/md headers",
-    "track enabled bit",
-    "Copyright box"
-  ],
+  "features": ["64-bit mv/tr/md headers"],
   "notes": "",
   "license": "",
   "rel_filepath": "./13_long.mp4",

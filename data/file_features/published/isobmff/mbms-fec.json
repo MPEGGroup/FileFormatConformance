@@ -6,11 +6,8 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
     "file-level",
-    "item naming etc.",
+    "item naming",
     "FD hint tracks",
     "FEC reservoir",
     "FD session group box"

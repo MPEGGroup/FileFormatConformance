@@ -6,13 +6,7 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "normal' order (moov-mdat)",
-    "track enabled bit",
     "video track",
-    "ctts offsets",
-    "Movie fragment box",
     "mov. Ext header",
     "fragment random access",
     "mp4v sample entry"

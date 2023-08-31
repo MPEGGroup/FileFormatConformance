@@ -5,16 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "video track",
-    "audio track",
-    "sync table",
-    "Movie fragment box",
-    "IOD box"
-  ],
+  "features": ["video track", "audio track", "IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a4-tone-fragmented.mp4",

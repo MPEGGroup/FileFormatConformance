@@ -5,15 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "track reference",
-    "video track",
-    "audio track",
-    "sync table"
-  ],
+  "features": ["video track", "audio track"],
   "notes": "",
   "license": "",
   "rel_filepath": "./male_amr122.3gp",

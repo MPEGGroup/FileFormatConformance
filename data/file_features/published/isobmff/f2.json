@@ -8,7 +8,7 @@
   "features": [
     "video track",
     "audio track",
-    "Protected streams (basic)",
+    "Protected basic",
     "Interleaved data",
     "IOD box"
   ],

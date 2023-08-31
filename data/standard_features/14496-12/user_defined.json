@@ -13,6 +13,8 @@
   "RTP hint tracks": "Regular RTP hint tracks are present. They should be ignored for local playback.",
   "implied length": "(size=0) Box with the length running to end of file (last box)",
   "unknown box": "A box with an 'unknown' code is present in the file and should be ignored. The box type used for testing could be one of 'junk', 'mess', etc.",
+  "unknown codec type": "",
+  "unknown track type": "",
   "late order": "(mdat first) The 'mdat' first and the 'moov' late, and boxes in the 'moov' in funny order.",
   "multiple mdats": "two or more mdat boxes are present",
   "multiple sample descriptions": "There is one track ujsing several sample entries, not just one",

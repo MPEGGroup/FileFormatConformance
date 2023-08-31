@@ -5,16 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "track reference",
-    "video track",
-    "audio track",
-    "sync table",
-    "RTP hint tracks"
-  ],
+  "features": ["video track", "audio track", "RTP hint tracks"],
   "notes": "",
   "license": "",
   "rel_filepath": "./female_amr67DTX_hinted.3gp",
