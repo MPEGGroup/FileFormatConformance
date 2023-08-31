@@ -6,7 +6,6 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "file-level",
     "item naming",
     "FD hint tracks",
     "FEC reservoir",

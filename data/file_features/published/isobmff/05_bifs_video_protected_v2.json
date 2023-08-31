@@ -8,7 +8,6 @@
   "features": [
     "video track",
     "Protected basic",
-    "file-level",
     "item naming",
     "Systems tracks etc.",
     "IOD box",

@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "file-level",
-    "item naming",
-    "FD hint tracks",
-    "FD session group box"
-  ],
+  "features": ["item naming", "FD hint tracks", "FD session group box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./compact-no-code-fec-2.iso3",
