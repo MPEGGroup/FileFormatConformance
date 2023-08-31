@@ -72,6 +72,11 @@ def crawl_hierarchy_gpac(root_hierarchy, can_be_found_anywhere, mp4ra_check=True
                 if mp4ra_check and fourcc not in get_mp4ra_boxes():
                     continue
 
+                # Special case for sample group entries
+                if "@grouping_type" in value:
+                    sg_entry = {"@Type": value["@grouping_type"]}
+                    add_variant(add, sg_entry, path + [fourcc])
+
                 add_variant(add, value, path)
                 crawl(value, path + [fourcc])
             elif isinstance(value, list):
