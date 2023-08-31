@@ -199,21 +199,19 @@ export default function CoveragePage() {
         <>
             <NavigationBar />
             <div className="mx-auto flex min-h-0 w-full max-w-7xl flex-[1] flex-col items-start gap-3 p-2 xs:gap-4 xs:p-6">
-                <div className="flex w-full flex-col gap-4">
-                    <CoverageHeader
-                        coverageStats={coverageStats}
-                        depth={depth}
-                        processedCoverageStats={processedCoverageStats}
-                    />
-                </div>
+                <CoverageHeader
+                    coverageStats={coverageStats}
+                    depth={depth}
+                    processedCoverageStats={processedCoverageStats}
+                />
                 <div className="flex w-full flex-col items-start gap-2">
                     <input
-                        className="w-full rounded-md border-1 border-black px-3 py-2"
+                        className="w-full rounded border-1 px-3 py-2 shadow-md"
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                             setSearch((e.target as HTMLInputElement).value)
                         }
                         placeholder="Start by typing a feature or box fourcc..."
-                        type="text"
+                        type="search"
                         value={search}
                     />
                     <span className="ml-1 text-xs text-gray-600">
@@ -222,11 +220,10 @@ export default function CoveragePage() {
                         for features/boxes ending in <code className="basic">avcC</code>.
                     </span>
                     <div className="flex w-full flex-row items-center gap-4">
-                        <span className="text-2xl font-bold">Depth Setting</span>
+                        <span className="whitespace-nowrap text-xl font-bold">Depth Setting</span>
                         <Slider
-                            className="basis-1/2 lg:basis-1/3"
+                            className="mr-1 grow lg:grow-0 lg:basis-1/3"
                             defaultValue={3}
-                            marks
                             max={maxDepth}
                             min={1}
                             onChange={(_, value) => setDepth(value as number)}
