@@ -8,7 +8,6 @@
   "features": [
     "video track",
     "audio track",
-    "rate share group",
     "Interleaved data",
     "mp4a sample entry"
   ],

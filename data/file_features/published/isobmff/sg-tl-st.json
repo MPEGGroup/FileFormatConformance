@@ -5,11 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "Temporal level sample group",
-    "layering and subseq grps"
-  ],
+  "features": ["video track", "layering and subseq grps"],
   "notes": "",
   "license": "",
   "rel_filepath": "./sg-tl-st.mp4",
