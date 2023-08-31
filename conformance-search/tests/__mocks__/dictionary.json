@@ -369,6 +369,7 @@
         "xml "
     ],
     "types": [
+        "",
         "A3DSampleEntry",
         "AVC2MVCSampleEntry",
         "AVC2SampleEntry",
@@ -405,7 +406,6 @@
         "SimpleTextSampleEntry",
         "SingleItemTypeReferenceBox",
         "SubtitleSampleEntry",
-        "TBD",
         "TrackGroupTypeBox",
         "TrackReferenceTypeBox",
         "VisualSampleEntry",
@@ -415,6 +415,7 @@
     ],
     "specs": [
         "14496-12",
+        "14496-14",
         "14496-15",
         "14496-30",
         "23008-12"
