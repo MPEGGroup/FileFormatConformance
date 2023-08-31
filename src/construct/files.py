@@ -213,7 +213,6 @@ def main():
                         "key": key,
                         "description": value,
                         "spec": spec,
-                        "source": "spec",
                         "files": [],
                     }
                 else:
@@ -225,17 +224,9 @@ def main():
             if feature in feature_file_map:
                 feature_file_map[feature]["files"].append(path)
             else:
-                # FIXME: This should be an error
-                logger.warning(
-                    f'Feature "{feature}" not found in user_defined.json. Adding a empty entry for now.'
+                logger.error(
+                    f'Feature "{feature}" not found in standard features. File: {path}'
                 )
-                feature_file_map[feature] = {
-                    "key": feature,
-                    "description": "N/A",
-                    "spec": "N/A",
-                    "source": "file",
-                    "files": [path],
-                }
 
     # Sort files
     for key, value in feature_file_map.items():
