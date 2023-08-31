@@ -15,6 +15,10 @@
       "type": "integer",
       "description": "Version of the specification"
     },
+    "date": {
+      "type": "integer",
+      "description": "Year of the specification"
+    },
     "mp4ra_reference": {
       "type": "array",
       "items": {
@@ -38,5 +42,5 @@
       "minItems": 1
     }
   },
-  "required": ["ISO", "name", "version", "mp4ra_reference"]
+  "required": ["ISO", "name", "version", "date", "mp4ra_reference"]
 }

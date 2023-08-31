@@ -282,6 +282,23 @@
     "fourcc": "aebr",
     "spec": "23008-12",
     "codec": null,
+    "description": "Auto exposure bracketing",
+    "type": "VisualSampleGroupEntry",
+    "registered_type": "Sample Groups",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "sgpd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "aligned(8) class AutoExposureBracketingEntry\nextends VisualSampleGroupEntry('aebr') {\n\tint(8) exposure_step;\n\tint(8) exposure_numerator;\n}"
+  },
+  {
+    "fourcc": "aebr",
+    "spec": "23008-12",
+    "codec": null,
     "description": "Auto exposure bracketing entity group",
     "type": "EntityToGroupBox",
     "registered_type": "Entity Group Types",
@@ -312,23 +329,6 @@
       {
         "fourcc": "ipco",
         "type": "Box"
-      }
-    ],
-    "syntax": "aligned(8) class AutoExposureBracketingEntry\nextends VisualSampleGroupEntry('aebr') {\n\tint(8) exposure_step;\n\tint(8) exposure_numerator;\n}"
-  },
-  {
-    "fourcc": "aebr",
-    "spec": "23008-12",
-    "codec": null,
-    "description": "Auto exposure bracketing",
-    "type": "VisualSampleGroupEntry",
-    "registered_type": "Sample Groups",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "sgpd",
-        "type": "FullBox"
       }
     ],
     "syntax": "aligned(8) class AutoExposureBracketingEntry\nextends VisualSampleGroupEntry('aebr') {\n\tint(8) exposure_step;\n\tint(8) exposure_numerator;\n}"
@@ -584,6 +584,30 @@
       {
         "fourcc": "*",
         "type": "SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
       }
     ],
     "syntax": "aligned(8) class AuxiliaryTypeInfoBox extends FullBox ('auxi', 0, 0)\n{\n\tstring aux_track_type;\n}"
@@ -627,23 +651,6 @@
     "spec": "14496-15",
     "codec": null,
     "description": "AVC video with parameter sets only in the Sample Entry",
-    "type": "AVCSampleEntry",
-    "registered_type": "Codecs",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class AVCSampleEntry() extends VisualSampleEntry (type) {\r\n\tAVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
-  },
-  {
-    "fourcc": "avc1",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "AVC video with parameter sets only in the Sample Entry",
     "type": "AVCMVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -655,6 +662,23 @@
       }
     ],
     "syntax": "class AVCMVCSampleEntry() extends AVCSampleEntry ('avc1') {\r\n\tViewScalabilityInformationSEIBox\tscalability;\t// optional\r\n\tViewIdentifierBox\t\tview_identifiers;\t// optional\r\n\tMVCConfigurationBox\tmvcconfig;\t\t// optional\r\n\tMVCViewPriorityAssignmentBox\tview_priority_method;\t// optional\r\n\tIntrinsicCameraParametersBox\tintrinsic_camera_params;\t// optional\r\n\tExtrinsicCameraParametersBox\textrinsic_camera_params;\t// optional\r\n\tMVCDConfigurationBox\tmvcdconfig;\t// optional\r\n\tMVDScalabilityInformationSEIBox\tmvdscalinfosei;\t// optional\r\n\tA3DConfigurationBox\ta3dconfig;\t// optional\r\n}"
+  },
+  {
+    "fourcc": "avc1",
+    "spec": "14496-15",
+    "codec": null,
+    "description": "AVC video with parameter sets only in the Sample Entry",
+    "type": "AVCSampleEntry",
+    "registered_type": "Codecs",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class AVCSampleEntry() extends VisualSampleEntry (type) {\r\n\tAVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
     "fourcc": "avc2",
@@ -695,23 +719,6 @@
     "spec": "14496-15",
     "codec": null,
     "description": "AVC video with parameter sets in the Sample Entry or samples",
-    "type": "AVCMVCSampleEntry",
-    "registered_type": "Codecs",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class AVCMVCSampleEntry() extends AVCSampleEntry ('avc3') {\r\n\tViewScalabilityInformationSEIBox\tscalability;\t// optional\r\n\tViewIdentifierBox\t\tview_identifiers;\t// optional\r\n\tMVCConfigurationBox\tmvcconfig;\t\t// optional\r\n\tMVCViewPriorityAssignmentBox\tview_priority_method;\t// optional\r\n\tIntrinsicCameraParametersBox\tintrinsic_camera_params;\t// optional\r\n\tExtrinsicCameraParametersBox\textrinsic_camera_params;\t// optional\r\n\tMVCDConfigurationBox\tmvcdconfig;\t// optional\r\n\tMVDScalabilityInformationSEIBox\tmvdscalinfosei;\t// optional\r\n\tA3DConfigurationBox\ta3dconfig;\t// optional\r\n}"
-  },
-  {
-    "fourcc": "avc3",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "AVC video with parameter sets in the Sample Entry or samples",
     "type": "AVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -725,11 +732,11 @@
     "syntax": "class AVCSampleEntry() extends VisualSampleEntry (type) {\r\n\tAVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
-    "fourcc": "avc4",
+    "fourcc": "avc3",
     "spec": "14496-15",
     "codec": null,
-    "description": "AVC video with parameter sets only in the Sample Entry or samples. With additional features",
-    "type": "AVC2SampleEntry",
+    "description": "AVC video with parameter sets in the Sample Entry or samples",
+    "type": "AVCMVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
     "flags": [],
@@ -739,7 +746,7 @@
         "type": "FullBox"
       }
     ],
-    "syntax": "class AVC2SampleEntry() extends VisualSampleEntry (type) {\r\n\tAVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
+    "syntax": "class AVCMVCSampleEntry() extends AVCSampleEntry ('avc3') {\r\n\tViewScalabilityInformationSEIBox\tscalability;\t// optional\r\n\tViewIdentifierBox\t\tview_identifiers;\t// optional\r\n\tMVCConfigurationBox\tmvcconfig;\t\t// optional\r\n\tMVCViewPriorityAssignmentBox\tview_priority_method;\t// optional\r\n\tIntrinsicCameraParametersBox\tintrinsic_camera_params;\t// optional\r\n\tExtrinsicCameraParametersBox\textrinsic_camera_params;\t// optional\r\n\tMVCDConfigurationBox\tmvcdconfig;\t// optional\r\n\tMVDScalabilityInformationSEIBox\tmvdscalinfosei;\t// optional\r\n\tA3DConfigurationBox\ta3dconfig;\t// optional\r\n}"
   },
   {
     "fourcc": "avc4",
@@ -759,21 +766,21 @@
     "syntax": "class AVC2MVCSampleEntry() extends AVC2SampleEntry ('avc4') {\r\n\tViewScalabilityInformationSEIBox\tscalability;\t// optional\r\n\tViewIdentifierBox\t\tview_identifiers;\t// optional\r\n\tMVCConfigurationBox\tmvcconfig;\t\t// optional\tMVCViewPriorityAssignmentBox\tview_priority_method;\t// optional\r\n\tIntrinsicCameraParametersBox\tintrinsic_camera_params;\t// optional\r\n\tExtrinsicCameraParametersBox\textrinsic_camera_params\t// optional\r\n\tMVCDConfigurationBox\tmvcdconfig;\t// optional\r\n\tMVDScalabilityInformationSEIBox\tmvdscalinfosei;\t// optional\r\n\tA3DConfigurationBox\ta3dconfig;\t// optional\r\n}"
   },
   {
-    "fourcc": "avcC",
-    "spec": "23008-12",
+    "fourcc": "avc4",
+    "spec": "14496-15",
     "codec": null,
-    "description": "AVC Image item configuration",
-    "type": "ItemProperty",
-    "registered_type": "Item Properties",
+    "description": "AVC video with parameter sets only in the Sample Entry or samples. With additional features",
+    "type": "AVC2SampleEntry",
+    "registered_type": "Codecs",
     "versions": [],
     "flags": [],
     "containers": [
       {
-        "fourcc": "ipco",
-        "type": "Box"
+        "fourcc": "stsd",
+        "type": "FullBox"
       }
     ],
-    "syntax": "class AVCConfigurationBox extends Box('avcC') {\n\tAVCDecoderConfigurationRecord() AVCConfig;\n}"
+    "syntax": "class AVC2SampleEntry() extends VisualSampleEntry (type) {\r\n\tAVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
     "fourcc": "avcC",
@@ -816,6 +823,23 @@
       {
         "fourcc": "avcp",
         "type": "VisualSampleEntry"
+      }
+    ],
+    "syntax": "class AVCConfigurationBox extends Box('avcC') {\n\tAVCDecoderConfigurationRecord() AVCConfig;\n}"
+  },
+  {
+    "fourcc": "avcC",
+    "spec": "23008-12",
+    "codec": null,
+    "description": "AVC Image item configuration",
+    "type": "ItemProperty",
+    "registered_type": "Item Properties",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "ipco",
+        "type": "Box"
       }
     ],
     "syntax": "class AVCConfigurationBox extends Box('avcC') {\n\tAVCDecoderConfigurationRecord() AVCConfig;\n}"
@@ -954,6 +978,30 @@
       {
         "fourcc": "*",
         "type": "SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
       }
     ],
     "syntax": "class BitRateBox extends Box('btrt'){\n\tunsigned int(32) bufferSizeDB;\n\tunsigned int(32) maxBitrate;\n\tunsigned int(32) avgBitrate;\n}"
@@ -1014,7 +1062,19 @@
     "containers": [
       {
         "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
         "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class ContentColourVolumeBox extends Box('cclv'){\n\tunsigned int(1) reserved1 = 0;\t// ccv_cancel_flag\n\tunsigned int(1) reserved2 = 0;\t// ccv_persistence_flag\n\tunsigned int(1) ccv_primaries_present_flag;\n\tunsigned int(1) ccv_min_luminance_value_present_flag;\n\tunsigned int(1) ccv_max_luminance_value_present_flag;\n\tunsigned int(1) ccv_avg_luminance_value_present_flag;\n\tunsigned int(2) ccv_reserved_zero_2bits = 0;\n\tif( ccv_primaries_present_flag ) {\n\t\tfor( c = 0; c < 3; c++ ) {\n\t\t\tsigned int(32) ccv_primaries_x[ c ];\n\t\t\tsigned int(32) ccv_primaries_y[ c ];\n\t\t}\n\t}\n\tif( ccv_min_luminance_value_present_flag )\n\t\tunsigned int(32) ccv_min_luminance_value;\n\tif( ccv_max_luminance_value_present_flag )\n \t\tunsigned int(32) ccv_max_luminance_value;\n\tif( ccv_avg_luminance_value_present_flag )\n \t\tunsigned int(32) ccv_avg_luminance_value;\n}"
@@ -1051,6 +1111,30 @@
       {
         "fourcc": "*",
         "type": "SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
       }
     ],
     "syntax": "class CodingConstraintsBox extends FullBox('ccst', version = 0, flags = 0){\n\tunsigned int(1) all_ref_pics_intra;\n\tunsigned int(1) intra_pred_used;\n\tunsigned int(4) max_ref_per_pic;\n\tunsigned int(26) reserved;\n}\n"
@@ -1121,7 +1205,19 @@
     "containers": [
       {
         "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
         "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class CleanApertureBox extends Box('clap'){\n\tunsigned int(32) cleanApertureWidthN;\n\tunsigned int(32) cleanApertureWidthD;\n\n\tunsigned int(32) cleanApertureHeightN;\n\tunsigned int(32) cleanApertureHeightD;\n\n\n\tunsigned int(32) horizOffN;\n\tunsigned int(32) horizOffD;\n\n\n\tunsigned int(32) vertOffN;\n\tunsigned int(32) vertOffD;\n\n}"
@@ -1155,7 +1251,19 @@
     "containers": [
       {
         "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
         "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class ContentLightLevelBox extends Box('clli'){\n\tunsigned int(16) max_content_light_level;\n\tunsigned int(16) max_pic_average_light_level;\n}"
@@ -1198,23 +1306,6 @@
   },
   {
     "fourcc": "colr",
-    "spec": "14496-12",
-    "codec": null,
-    "description": "Color information",
-    "type": "Box",
-    "registered_type": "Boxes",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "*",
-        "type": "VisualSampleEntry"
-      }
-    ],
-    "syntax": "class ColourInformationBox extends Box('colr'){\n\tunsigned int(32) colour_type;\n\tif (colour_type == 'nclx')\t/* on-screen colours */\n\t{\n\t\tunsigned int(16) colour_primaries;\n\t\tunsigned int(16) transfer_characteristics;\n\t\tunsigned int(16) matrix_coefficients;\n\t\tunsigned int(1)  full_range_flag;\n\t\tunsigned int(7)  reserved = 0;\n\t}\n\telse if (colour_type == 'rICC')\n\t{\n\t\tICC_profile;\t// restricted ICC profile\n\t}\n\telse if (colour_type == 'prof')\n\t{\n\t\tICC_profile;\t// unrestricted ICC profile\n\t}\n}"
-  },
-  {
-    "fourcc": "colr",
     "spec": "23008-12",
     "codec": null,
     "description": "Colour information",
@@ -1226,6 +1317,35 @@
       {
         "fourcc": "ipco",
         "type": "Box"
+      }
+    ],
+    "syntax": "class ColourInformationBox extends Box('colr'){\n\tunsigned int(32) colour_type;\n\tif (colour_type == 'nclx')\t/* on-screen colours */\n\t{\n\t\tunsigned int(16) colour_primaries;\n\t\tunsigned int(16) transfer_characteristics;\n\t\tunsigned int(16) matrix_coefficients;\n\t\tunsigned int(1)  full_range_flag;\n\t\tunsigned int(7)  reserved = 0;\n\t}\n\telse if (colour_type == 'rICC')\n\t{\n\t\tICC_profile;\t// restricted ICC profile\n\t}\n\telse if (colour_type == 'prof')\n\t{\n\t\tICC_profile;\t// unrestricted ICC profile\n\t}\n}"
+  },
+  {
+    "fourcc": "colr",
+    "spec": "14496-12",
+    "codec": null,
+    "description": "Color information",
+    "type": "Box",
+    "registered_type": "Boxes",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class ColourInformationBox extends Box('colr'){\n\tunsigned int(32) colour_type;\n\tif (colour_type == 'nclx')\t/* on-screen colours */\n\t{\n\t\tunsigned int(16) colour_primaries;\n\t\tunsigned int(16) transfer_characteristics;\n\t\tunsigned int(16) matrix_coefficients;\n\t\tunsigned int(1)  full_range_flag;\n\t\tunsigned int(7)  reserved = 0;\n\t}\n\telse if (colour_type == 'rICC')\n\t{\n\t\tICC_profile;\t// restricted ICC profile\n\t}\n\telse if (colour_type == 'prof')\n\t{\n\t\tICC_profile;\t// unrestricted ICC profile\n\t}\n}"
@@ -1542,6 +1662,23 @@
     "fourcc": "dobr",
     "spec": "23008-12",
     "codec": null,
+    "description": "Depth of field information",
+    "type": "ItemFullProperty",
+    "registered_type": "Item Properties",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "ipco",
+        "type": "Box"
+      }
+    ],
+    "syntax": "aligned(8) class DepthOfFieldBracketingEntry\nextends VisualSampleGroupEntry('dobr') {\n\tint(8) f_stop_numerator;\n\tint(8) f_stop_denominator;\n}"
+  },
+  {
+    "fourcc": "dobr",
+    "spec": "23008-12",
+    "codec": null,
     "description": "Depth of field bracketing entity group",
     "type": "EntityToGroupBox",
     "registered_type": "Entity Group Types",
@@ -1556,23 +1693,6 @@
       }
     ],
     "syntax": "aligned(8) class EntityToGroupBox(grouping_type, version, flags)\nextends FullBox(grouping_type, version, flags) {\n\tunsigned int(32) group_id;\n\tunsigned int(32) num_entities_in_group;\n\tfor(i=0; i<num_entities_in_group; i++)\n\t\tunsigned int(32) entity_id;\n// the remaining data may be specified for a particular grouping_type}"
-  },
-  {
-    "fourcc": "dobr",
-    "spec": "23008-12",
-    "codec": null,
-    "description": "Depth of field information",
-    "type": "ItemFullProperty",
-    "registered_type": "Item Properties",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "ipco",
-        "type": "Box"
-      }
-    ],
-    "syntax": "aligned(8) class DepthOfFieldBracketingEntry\nextends VisualSampleGroupEntry('dobr') {\n\tint(8) f_stop_numerator;\n\tint(8) f_stop_denominator;\n}"
   },
   {
     "fourcc": "dpnd",
@@ -1745,23 +1865,6 @@
     "spec": "14496-12",
     "codec": null,
     "description": "Encrypted/Protected audio",
-    "type": "AudioSampleEntryV1",
-    "registered_type": "Boxes",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\r\n\tunsigned int(16) entry_version;\t// shall be 1, \r\n\t\t\t\t\t\t\t// and shall be in an stsd with version ==1\r\n\tconst unsigned int(16)[3] reserved = 0;\r\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\r\n\ttemplate unsigned int(16) samplesize = 16;\r\n\tunsigned int(16) pre_defined = 0;\r\n\tconst unsigned int(16) reserved = 0 ;\r\n\ttemplate unsigned int(32) samplerate = 1<<16;\r\n\t// optional boxes follow\r\n\tSamplingRateBox();\r\n\tBox ();\t\t// further boxes as needed\r\n\tChannelLayout();\r\n\tDownMixInstructions() [];\r\n\tDRCCoefficientsBasic() [];\r\n\tDRCInstructionsBasic() [];\r\n\tDRCCoefficientsUniDRC() [];\r\n\tDRCInstructionsUniDRC() [];\r\n\t// we permit only one DRC Extension box:\r\n\tUniDrcConfigExtension();\r\n\t// optional boxes follow\r\n\tChannelLayout();\r\n}"
-  },
-  {
-    "fourcc": "enca",
-    "spec": "14496-12",
-    "codec": null,
-    "description": "Encrypted/Protected audio",
     "type": "AudioSampleEntry",
     "registered_type": "Boxes",
     "versions": [],
@@ -1773,6 +1876,23 @@
       }
     ],
     "syntax": "class AudioSampleEntry(codingname) extends SampleEntry (codingname){\n\tconst unsigned int(32)[2] reserved = 0;\n\tunsigned int(16) channelcount;\n\ttemplate unsigned int(16) samplesize = 16;\n\tunsigned int(16) pre_defined = 0;\n\tconst unsigned int(16) reserved = 0 ;\n\ttemplate unsigned int(32) samplerate = { default samplerate of media}<<16;\n\t// optional boxes follow\n\tBox ();\t\t// further boxes as needed\n\tChannelLayout();\n\tDownMixInstructions() [];\n\tDRCCoefficientsBasic() [];\n\tDRCInstructionsBasic() [];\n\tDRCCoefficientsUniDRC() [];\n\tDRCInstructionsUniDRC() [];\n\t// we permit only one DRC Extension box:\n\tUniDrcConfigExtension();\n\t// optional boxes follow\n\tSamplingRateBox();\n\tChannelLayout();\n}\n\nclass AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\n\tunsigned int(16) entry_version;\t// shall be 1, \n\t// and shall be in an stsd with version ==1\n\tconst unsigned int(16)[3] reserved = 0;\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\n\ttemplate unsigned int(16) samplesize = 16;\n\tunsigned int(16) pre_defined = 0;\n\tconst unsigned int(16) reserved = 0 ;\n\ttemplate unsigned int(32) samplerate = 1<<16;\n\t// optional boxes follow\n\tSamplingRateBox();\n\tBox ();\t\t// further boxes as needed\n\tChannelLayout();\n\tDownMixInstructions() [];\n\tDRCCoefficientsBasic() [];\n\tDRCInstructionsBasic() [];\n\tDRCCoefficientsUniDRC() [];\n\tDRCInstructionsUniDRC() [];\n\t// we permit only one DRC Extension box:\n\tUniDrcConfigExtension();\n\t// optional boxes follow\n\tChannelLayout();\n}"
+  },
+  {
+    "fourcc": "enca",
+    "spec": "14496-12",
+    "codec": null,
+    "description": "Encrypted/Protected audio",
+    "type": "AudioSampleEntryV1",
+    "registered_type": "Boxes",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\r\n\tunsigned int(16) entry_version;\t// shall be 1, \r\n\t\t\t\t\t\t\t// and shall be in an stsd with version ==1\r\n\tconst unsigned int(16)[3] reserved = 0;\r\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\r\n\ttemplate unsigned int(16) samplesize = 16;\r\n\tunsigned int(16) pre_defined = 0;\r\n\tconst unsigned int(16) reserved = 0 ;\r\n\ttemplate unsigned int(32) samplerate = 1<<16;\r\n\t// optional boxes follow\r\n\tSamplingRateBox();\r\n\tBox ();\t\t// further boxes as needed\r\n\tChannelLayout();\r\n\tDownMixInstructions() [];\r\n\tDRCCoefficientsBasic() [];\r\n\tDRCInstructionsBasic() [];\r\n\tDRCCoefficientsUniDRC() [];\r\n\tDRCInstructionsUniDRC() [];\r\n\t// we permit only one DRC Extension box:\r\n\tUniDrcConfigExtension();\r\n\t// optional boxes follow\r\n\tChannelLayout();\r\n}"
   },
   {
     "fourcc": "encf",
@@ -1931,23 +2051,6 @@
     "fourcc": "eqiv",
     "spec": "23008-12",
     "codec": null,
-    "description": "equivalent samples",
-    "type": "VisualSampleGroupEntry",
-    "registered_type": "Sample Groups",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "sgpd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class VisualEquivalenceEntry() extends VisualSampleGroupEntry ('eqiv')\n{\n\tsigned int(16)   time_offset;\n\tunsigned int(16) timescale_multiplier;\n}"
-  },
-  {
-    "fourcc": "eqiv",
-    "spec": "23008-12",
-    "codec": null,
     "description": "equivalent entity grouping",
     "type": "EntityToGroupBox",
     "registered_type": "Entity Group Types",
@@ -1962,6 +2065,23 @@
       }
     ],
     "syntax": "aligned(8) class EntityToGroupBox(grouping_type, version, flags)\nextends FullBox(grouping_type, version, flags) {\n\tunsigned int(32) group_id;\n\tunsigned int(32) num_entities_in_group;\n\tfor(i=0; i<num_entities_in_group; i++)\n\t\tunsigned int(32) entity_id;\n// the remaining data may be specified for a particular grouping_type}"
+  },
+  {
+    "fourcc": "eqiv",
+    "spec": "23008-12",
+    "codec": null,
+    "description": "equivalent samples",
+    "type": "VisualSampleGroupEntry",
+    "registered_type": "Sample Groups",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "sgpd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class VisualEquivalenceEntry() extends VisualSampleGroupEntry ('eqiv')\n{\n\tsigned int(16)   time_offset;\n\tunsigned int(16) timescale_multiplier;\n}"
   },
   {
     "fourcc": "etyp",
@@ -2388,23 +2508,6 @@
     "spec": "14496-15",
     "codec": null,
     "description": "HEVC video with parameter sets in the Sample Entry or samples",
-    "type": "HEVCSampleEntry",
-    "registered_type": "Codecs",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hev1'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
-  },
-  {
-    "fourcc": "hev1",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "HEVC video with parameter sets in the Sample Entry or samples",
     "type": "HEVCLHVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -2416,6 +2519,23 @@
       }
     ],
     "syntax": "class HEVCLHVCSampleEntry() extends HEVCSampleEntry() {\r\n\tLHEVCConfigurationBox\t\tlhvcconfig;\r\n}"
+  },
+  {
+    "fourcc": "hev1",
+    "spec": "14496-15",
+    "codec": null,
+    "description": "HEVC video with parameter sets in the Sample Entry or samples",
+    "type": "HEVCSampleEntry",
+    "registered_type": "Codecs",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hev1'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
     "fourcc": "hev2",
@@ -2456,23 +2576,6 @@
     "spec": "14496-15",
     "codec": null,
     "description": "HEVC video with extractors and/or aggregators and parameter sets in the Sample Entry or samples",
-    "type": "HEVCSampleEntry",
-    "registered_type": "Codecs",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hev3'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
-  },
-  {
-    "fourcc": "hev3",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "HEVC video with extractors and/or aggregators and parameter sets in the Sample Entry or samples",
     "type": "HEVCLHVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -2484,6 +2587,23 @@
       }
     ],
     "syntax": "class HEVCLHVCSampleEntry() extends HEVCSampleEntry() {\r\n\tLHEVCConfigurationBox\t\tlhvcconfig;\r\n}"
+  },
+  {
+    "fourcc": "hev3",
+    "spec": "14496-15",
+    "codec": null,
+    "description": "HEVC video with extractors and/or aggregators and parameter sets in the Sample Entry or samples",
+    "type": "HEVCSampleEntry",
+    "registered_type": "Codecs",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hev3'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
     "fourcc": "hind",
@@ -2577,23 +2697,6 @@
     "spec": "14496-15",
     "codec": null,
     "description": "HEVC video with parameter sets only in the Sample Entry",
-    "type": "HEVCLHVCSampleEntry",
-    "registered_type": "Codecs",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class HEVCLHVCSampleEntry() extends HEVCSampleEntry() {\r\n\tLHEVCConfigurationBox\t\tlhvcconfig;\r\n}"
-  },
-  {
-    "fourcc": "hvc1",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "HEVC video with parameter sets only in the Sample Entry",
     "type": "HEVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -2607,10 +2710,10 @@
     "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hvc1'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
   },
   {
-    "fourcc": "hvc2",
+    "fourcc": "hvc1",
     "spec": "14496-15",
     "codec": null,
-    "description": "HEVC video with constrained extractors and/or aggregators and parameter sets only in the Sample Entry",
+    "description": "HEVC video with parameter sets only in the Sample Entry",
     "type": "HEVCLHVCSampleEntry",
     "registered_type": "Codecs",
     "versions": [],
@@ -2639,6 +2742,23 @@
       }
     ],
     "syntax": "class HEVCSampleEntry() extends VisualSampleEntry ('hvc2'){\r\n\tHEVCConfigurationBox\tconfig;\r\n\tMPEG4ExtensionDescriptorsBox ();\t// optional\r\n}"
+  },
+  {
+    "fourcc": "hvc2",
+    "spec": "14496-15",
+    "codec": null,
+    "description": "HEVC video with constrained extractors and/or aggregators and parameter sets only in the Sample Entry",
+    "type": "HEVCLHVCSampleEntry",
+    "registered_type": "Codecs",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class HEVCLHVCSampleEntry() extends HEVCSampleEntry() {\r\n\tLHEVCConfigurationBox\t\tlhvcconfig;\r\n}"
   },
   {
     "fourcc": "hvc3",
@@ -2673,6 +2793,23 @@
       }
     ],
     "syntax": "class HEVCLHVCSampleEntry() extends HEVCSampleEntry() {\r\n\tLHEVCConfigurationBox\t\tlhvcconfig;\r\n}"
+  },
+  {
+    "fourcc": "hvcC",
+    "spec": "23008-12",
+    "codec": null,
+    "description": "HEVC Image item configuration",
+    "type": "ItemProperty",
+    "registered_type": "Item Properties",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "ipco",
+        "type": "Box"
+      }
+    ],
+    "syntax": "class HEVCConfigurationBox extends Box('hvcC') {\n\tHEVCDecoderConfigurationRecord() HEVCConfig;\n}"
   },
   {
     "fourcc": "hvcC",
@@ -2743,23 +2880,6 @@
       {
         "fourcc": "encv",
         "type": "VisualSampleEntry"
-      }
-    ],
-    "syntax": "class HEVCConfigurationBox extends Box('hvcC') {\n\tHEVCDecoderConfigurationRecord() HEVCConfig;\n}"
-  },
-  {
-    "fourcc": "hvcC",
-    "spec": "23008-12",
-    "codec": null,
-    "description": "HEVC Image item configuration",
-    "type": "ItemProperty",
-    "registered_type": "Item Properties",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "ipco",
-        "type": "Box"
       }
     ],
     "syntax": "class HEVCConfigurationBox extends Box('hvcC') {\n\tHEVCDecoderConfigurationRecord() HEVCConfig;\n}"
@@ -3462,7 +3582,19 @@
     "containers": [
       {
         "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
         "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class MasteringDisplayColourVolumeBox extends Box('mdcv'){\n\tfor (c = 0; c<3; c++) {\n\t\tunsigned int(16) display_primaries_x;\n\t\tunsigned int(16) display_primaries_y;\n\t}\n\tunsigned int(16) white_point_x;\n\tunsigned int(16) white_point_y;\n\tunsigned int(32) max_display_mastering_luminance;\n\tunsigned int(32) min_display_mastering_luminance;\n}"
@@ -4249,6 +4381,23 @@
   },
   {
     "fourcc": "oinf",
+    "spec": "14496-15",
+    "codec": null,
+    "description": "L-HEVC operating points information",
+    "type": "VisualSampleGroupEntry",
+    "registered_type": "Sample Groups",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "sgpd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class OperatingPointsInformation extends VisualSampleGroupEntry ('oinf') {\n\tOperatingPointsRecord oinf;\n}"
+  },
+  {
+    "fourcc": "oinf",
     "spec": "23008-12",
     "codec": null,
     "description": "HEVC operating point",
@@ -4265,23 +4414,6 @@
       }
     ],
     "syntax": "aligned(8) class OperatingPointsInformationProperty\nextends ItemFullProperty('oinf', version = 0, flags = 0){\n\tOperatingPointsRecord op_info; // specified in ISO/IEC 14496-15\n}"
-  },
-  {
-    "fourcc": "oinf",
-    "spec": "14496-15",
-    "codec": null,
-    "description": "L-HEVC operating points information",
-    "type": "VisualSampleGroupEntry",
-    "registered_type": "Sample Groups",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "sgpd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class OperatingPointsInformation extends VisualSampleGroupEntry ('oinf') {\n\tOperatingPointsRecord oinf;\n}"
   },
   {
     "fourcc": "opeg",
@@ -4397,15 +4529,15 @@
     "fourcc": "pano",
     "spec": "23008-12",
     "codec": null,
-    "description": "Panorama sample group",
-    "type": "VisualSampleGroupEntry",
-    "registered_type": "Sample Groups",
+    "description": "Panorama information",
+    "type": "ItemFullProperty",
+    "registered_type": "Item Properties",
     "versions": [],
     "flags": [],
     "containers": [
       {
-        "fourcc": "sgpd",
-        "type": "FullBox"
+        "fourcc": "ipco",
+        "type": "Box"
       }
     ],
     "syntax": "aligned(8) class PanoramaEntry\nextends VisualSampleGroupEntry('pano') {\n\tunsigned int(16) frame_number;\n}\n"
@@ -4433,15 +4565,15 @@
     "fourcc": "pano",
     "spec": "23008-12",
     "codec": null,
-    "description": "Panorama information",
-    "type": "ItemFullProperty",
-    "registered_type": "Item Properties",
+    "description": "Panorama sample group",
+    "type": "VisualSampleGroupEntry",
+    "registered_type": "Sample Groups",
     "versions": [],
     "flags": [],
     "containers": [
       {
-        "fourcc": "ipco",
-        "type": "Box"
+        "fourcc": "sgpd",
+        "type": "FullBox"
       }
     ],
     "syntax": "aligned(8) class PanoramaEntry\nextends VisualSampleGroupEntry('pano') {\n\tunsigned int(16) frame_number;\n}\n"
@@ -4465,23 +4597,6 @@
   },
   {
     "fourcc": "pasp",
-    "spec": "14496-12",
-    "codec": null,
-    "description": "Pixel aspect ratio",
-    "type": "Box",
-    "registered_type": "Boxes",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "*",
-        "type": "VisualSampleEntry"
-      }
-    ],
-    "syntax": "class PixelAspectRatioBox extends Box('pasp'){\n\tunsigned int(32) hSpacing;\n\tunsigned int(32) vSpacing;\n}"
-  },
-  {
-    "fourcc": "pasp",
     "spec": "23008-12",
     "codec": null,
     "description": "Pixel aspect ratio",
@@ -4493,6 +4608,35 @@
       {
         "fourcc": "ipco",
         "type": "Box"
+      }
+    ],
+    "syntax": "class PixelAspectRatioBox extends Box('pasp'){\n\tunsigned int(32) hSpacing;\n\tunsigned int(32) vSpacing;\n}"
+  },
+  {
+    "fourcc": "pasp",
+    "spec": "14496-12",
+    "codec": null,
+    "description": "Pixel aspect ratio",
+    "type": "Box",
+    "registered_type": "Boxes",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "class PixelAspectRatioBox extends Box('pasp'){\n\tunsigned int(32) hSpacing;\n\tunsigned int(32) vSpacing;\n}"
@@ -4784,23 +4928,6 @@
     "spec": "14496-12",
     "codec": null,
     "description": "Restricted audio",
-    "type": "AudioSampleEntryV1",
-    "registered_type": "Boxes",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "stsd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "class AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\r\n\tunsigned int(16) entry_version;\t// shall be 1, \r\n\t\t\t\t\t\t\t// and shall be in an stsd with version ==1\r\n\tconst unsigned int(16)[3] reserved = 0;\r\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\r\n\ttemplate unsigned int(16) samplesize = 16;\r\n\tunsigned int(16) pre_defined = 0;\r\n\tconst unsigned int(16) reserved = 0 ;\r\n\ttemplate unsigned int(32) samplerate = 1<<16;\r\n\t// optional boxes follow\r\n\tSamplingRateBox();\r\n\tBox ();\t\t// further boxes as needed\r\n\tChannelLayout();\r\n\tDownMixInstructions() [];\r\n\tDRCCoefficientsBasic() [];\r\n\tDRCInstructionsBasic() [];\r\n\tDRCCoefficientsUniDRC() [];\r\n\tDRCInstructionsUniDRC() [];\r\n\t// we permit only one DRC Extension box:\r\n\tUniDrcConfigExtension();\r\n\t// optional boxes follow\r\n\tChannelLayout();\r\n}"
-  },
-  {
-    "fourcc": "resa",
-    "spec": "14496-12",
-    "codec": null,
-    "description": "Restricted audio",
     "type": "AudioSampleEntry",
     "registered_type": "Boxes",
     "versions": [],
@@ -4812,6 +4939,23 @@
       }
     ],
     "syntax": "class AudioSampleEntry(codingname) extends SampleEntry (codingname){\r\n\tconst unsigned int(32)[2] reserved = 0;\r\n\tunsigned int(16) channelcount;\r\n\ttemplate unsigned int(16) samplesize = 16;\r\n\tunsigned int(16) pre_defined = 0;\r\n\tconst unsigned int(16) reserved = 0 ;\r\n\ttemplate unsigned int(32) samplerate = { default samplerate of media}<<16;\r\n\t// optional boxes follow\r\n\tBox ();\t\t// further boxes as needed\r\n\tChannelLayout();\r\n\tDownMixInstructions() [];\r\n\tDRCCoefficientsBasic() [];\r\n\tDRCInstructionsBasic() [];\r\n\tDRCCoefficientsUniDRC() [];\r\n\tDRCInstructionsUniDRC() [];\r\n\t// we permit only one DRC Extension box:\r\n\tUniDrcConfigExtension();\r\n\t// optional boxes follow\r\n\tSamplingRateBox();\r\n\tChannelLayout();\r\n}"
+  },
+  {
+    "fourcc": "resa",
+    "spec": "14496-12",
+    "codec": null,
+    "description": "Restricted audio",
+    "type": "AudioSampleEntryV1",
+    "registered_type": "Boxes",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "stsd",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "class AudioSampleEntryV1(codingname) extends SampleEntry (codingname){\r\n\tunsigned int(16) entry_version;\t// shall be 1, \r\n\t\t\t\t\t\t\t// and shall be in an stsd with version ==1\r\n\tconst unsigned int(16)[3] reserved = 0;\r\n\ttemplate unsigned int(16) channelcount;\t// shall be correct\r\n\ttemplate unsigned int(16) samplesize = 16;\r\n\tunsigned int(16) pre_defined = 0;\r\n\tconst unsigned int(16) reserved = 0 ;\r\n\ttemplate unsigned int(32) samplerate = 1<<16;\r\n\t// optional boxes follow\r\n\tSamplingRateBox();\r\n\tBox ();\t\t// further boxes as needed\r\n\tChannelLayout();\r\n\tDownMixInstructions() [];\r\n\tDRCCoefficientsBasic() [];\r\n\tDRCInstructionsBasic() [];\r\n\tDRCCoefficientsUniDRC() [];\r\n\tDRCInstructionsUniDRC() [];\r\n\t// we permit only one DRC Extension box:\r\n\tUniDrcConfigExtension();\r\n\t// optional boxes follow\r\n\tChannelLayout();\r\n}"
   },
   {
     "fourcc": "resf",
@@ -4869,7 +5013,7 @@
     "spec": "14496-12",
     "codec": null,
     "description": "Restricted system",
-    "type": "TBD",
+    "type": "",
     "registered_type": "Boxes",
     "versions": [],
     "flags": [],
@@ -4945,6 +5089,30 @@
       {
         "fourcc": "*",
         "type": "SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
       },
       {
         "fourcc": "*",
@@ -5428,6 +5596,30 @@
         "type": "SampleEntry"
       },
       {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
+      },
+      {
         "fourcc": "ipco",
         "type": "Box"
       }
@@ -5526,7 +5718,19 @@
       },
       {
         "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
         "type": "VisualSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
       }
     ],
     "syntax": "aligned(8) class SeiInformationBox extends Box('seii') {\n\tunsigned int(16) numRequiredSEIs;\n\tfor (i\u00a0=\u00a00; i\u00a0<\u00a0numRequiredSEIs; i++) {\n\tunsigned int(16) requiredSEI_ID;\n\t}\n\tunsigned int(16) numNotRequiredSEIs;\n\tfor (i\u00a0=\u00a00; i\u00a0<\u00a0numNotRequiredSEIs; i++) {\n\tunsigned int(16) notrequiredSEI_ID;\n\t}\n}"
@@ -5593,6 +5797,30 @@
       {
         "fourcc": "*",
         "type": "SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HintSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "HEVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "MetaDataSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVCSampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "AVC2SampleEntry"
+      },
+      {
+        "fourcc": "*",
+        "type": "VisualSampleEntry"
       }
     ],
     "syntax": "aligned(8) class ProtectionSchemeInfoBox(fmt) extends Box('sinf') {\n\tOriginalFormatBox(fmt)\toriginal_format;\n\n\tSchemeTypeBox\t\t\tscheme_type_box;\t\t// optional\n\tSchemeInformationBox\tinfo;\t\t\t\t\t\t// optional\n}"
@@ -6722,23 +6950,6 @@
   },
   {
     "fourcc": "thmb",
-    "spec": "23008-12",
-    "codec": null,
-    "description": "Thumbnail image item reference",
-    "type": "SingleItemTypeReferenceBox",
-    "registered_type": "Item References",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "iref",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "aligned(8) class SingleItemTypeReferenceBox(referenceType) extends Box(referenceType) {\n\tunsigned int(16) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(16) to_item_ID;\n\t}\n}\n\n\naligned(8) class SingleItemTypeReferenceBoxLarge(referenceType) extends Box(referenceType) {\n\tunsigned int(32) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(32) to_item_ID;\n\t}\n}"
-  },
-  {
-    "fourcc": "thmb",
     "spec": "14496-12",
     "codec": null,
     "description": "Thumbnail track reference",
@@ -6753,6 +6964,23 @@
       }
     ],
     "syntax": "aligned(8) class TrackReferenceTypeBox (unsigned int(32) reference_type) extends Box(reference_type) {\n\tunsigned int(32) track_IDs[];\n}"
+  },
+  {
+    "fourcc": "thmb",
+    "spec": "23008-12",
+    "codec": null,
+    "description": "Thumbnail image item reference",
+    "type": "SingleItemTypeReferenceBox",
+    "registered_type": "Item References",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "iref",
+        "type": "FullBox"
+      }
+    ],
+    "syntax": "aligned(8) class SingleItemTypeReferenceBox(referenceType) extends Box(referenceType) {\n\tunsigned int(16) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(16) to_item_ID;\n\t}\n}\n\n\naligned(8) class SingleItemTypeReferenceBoxLarge(referenceType) extends Box(referenceType) {\n\tunsigned int(32) from_item_ID;\n\tunsigned int(16) reference_count;\n\tfor (j=0; j<reference_count; j++) {\n\t\tunsigned int(32) to_item_ID;\n\t}\n}"
   },
   {
     "fourcc": "tibr",
@@ -7843,23 +8071,6 @@
     "fourcc": "wbbr",
     "spec": "23008-12",
     "codec": null,
-    "description": "White balance bracketing",
-    "type": "VisualSampleGroupEntry",
-    "registered_type": "Sample Groups",
-    "versions": [],
-    "flags": [],
-    "containers": [
-      {
-        "fourcc": "sgpd",
-        "type": "FullBox"
-      }
-    ],
-    "syntax": "aligned(8) class WhiteBalanceBracketingEntry\nextends VisualSampleGroupEntry('wbbr') {\n\tunsigned int(16) blue_amber;\n\tint(8) green_magenta;\n}"
-  },
-  {
-    "fourcc": "wbbr",
-    "spec": "23008-12",
-    "codec": null,
     "description": "White balance bracketing entity group",
     "type": "EntityToGroupBox",
     "registered_type": "Entity Group Types",
@@ -7888,6 +8099,23 @@
       {
         "fourcc": "ipco",
         "type": "Box"
+      }
+    ],
+    "syntax": "aligned(8) class WhiteBalanceBracketingEntry\nextends VisualSampleGroupEntry('wbbr') {\n\tunsigned int(16) blue_amber;\n\tint(8) green_magenta;\n}"
+  },
+  {
+    "fourcc": "wbbr",
+    "spec": "23008-12",
+    "codec": null,
+    "description": "White balance bracketing",
+    "type": "VisualSampleGroupEntry",
+    "registered_type": "Sample Groups",
+    "versions": [],
+    "flags": [],
+    "containers": [
+      {
+        "fourcc": "sgpd",
+        "type": "FullBox"
       }
     ],
     "syntax": "aligned(8) class WhiteBalanceBracketingEntry\nextends VisualSampleGroupEntry('wbbr') {\n\tunsigned int(16) blue_amber;\n\tint(8) green_magenta;\n}"

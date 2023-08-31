@@ -2,7 +2,7 @@ import json
 from glob import glob
 from loguru import logger
 
-from common import get_ignored_files, get_mp4ra_boxes
+from common import *
 
 
 def main():
@@ -272,7 +272,9 @@ def main():
     SPEC_INFO = []
     for spec_info in spec_infos:
         with open(spec_info, "r", encoding="utf-8") as f:
-            SPEC_INFO.append(json.load(f))
+            spec = json.load(f)
+            spec["link"] = get_document_status_link(spec["ISO"])
+            SPEC_INFO.append(spec)
 
     # Detailed information about boxes
     BOXES = {
