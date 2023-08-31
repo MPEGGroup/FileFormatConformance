@@ -3,8 +3,8 @@ import hash from "object-hash";
 
 import { Box, Feature, FileSearchResult, Filter, SearchResult, SearchResultRefined } from "@/types";
 import { Files } from "@/types/json";
+import { normalizeResultScores } from "@/utils";
 import Database from "./database";
-import { normalizeResultScores } from "./utils";
 
 /**
  * This is the list of filter options

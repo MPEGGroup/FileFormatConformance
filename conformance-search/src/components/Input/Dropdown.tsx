@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Fuse from "fuse.js";
 import { useEffect, useRef, useState } from "react";
 import { useEvent, useIntersection } from "react-use";
-import { normalizeResultScores } from "@/lib/utils";
+import { normalizeResultScores } from "@/utils";
 import { Chip } from "@/components";
 import { FuseSearchWithScore } from "@/types";
 

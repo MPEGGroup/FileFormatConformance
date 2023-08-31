@@ -43,6 +43,8 @@ export type Coverage = {
         ISO: string;
         name: string;
         version: number;
+        date: number;
+        link: string;
         amendmends?: Array<string>;
         corrigenda?: Array<string>;
     }>;

@@ -5,6 +5,9 @@ from loguru import logger
 from functools import cache
 
 MP4RA_BOXES_URL = "https://mp4ra.org/boxes.json"
+DOCUMENT_STATUS_URL = (
+    "https://github.com/MPEGGroup/FileFormat/blob/master/DocumentStatus.md"
+)
 
 
 @cache
@@ -20,7 +23,7 @@ def get_ignored_files():
 
 @cache
 def get_mp4ra_boxes():
-    response = requests.get(MP4RA_BOXES_URL)
+    response = requests.get(MP4RA_BOXES_URL, timeout=15)
     if response.status_code != 200:
         logger.critical(f"Failed to get MP4RA boxes: {response.status_code}")
         exit(1)
@@ -40,3 +43,25 @@ def get_mp4ra_boxes():
             boxes.add(box["code"].replace("$20", " "))
 
     return boxes
+
+
+@cache
+def get_document_status_toc():
+    response = requests.get(DOCUMENT_STATUS_URL, timeout=15)
+    if response.status_code != 200:
+        logger.critical(f"Failed to get document status: {response.status_code}")
+        exit(1)
+
+    payload = response.json()["payload"]
+    toc = payload["blob"]["headerInfo"]["toc"]
+    return {
+        heading["text"]: DOCUMENT_STATUS_URL + f"#{heading['anchor']}"
+        for heading in toc
+    }
+
+
+def get_document_status_link(iso):
+    toc = get_document_status_toc()
+    match = [key for key in toc if iso in key]
+    assert len(match) == 1, f"Failed to find document status section for {iso}"
+    return toc[match[0]]
