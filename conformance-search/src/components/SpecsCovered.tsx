@@ -22,7 +22,7 @@ export default function SpecsCovered({
                         key={info.ISO}
                         className={clsx(
                             "group flex items-center justify-between gap-2 truncate px-3 py-2 font-light hover:bg-gray-100",
-                            compact && "!py-1 text-sm font-normal"
+                            compact && "text-sm font-normal"
                         )}
                         href={info.link}
                         rel="noreferrer"
