@@ -28,7 +28,7 @@ export default function SearchPage() {
     }, []);
 
     // When a result is received, refine the search results
-    const onResult = async (inBoxes: SearchResult<Box>[], inFeatures: SearchResult<Feature>[]) => {
+    const onResult = (inBoxes: SearchResult<Box>[], inFeatures: SearchResult<Feature>[]) => {
         if (!search) return;
         setState(
             search.refine(
@@ -101,13 +101,13 @@ export default function SearchPage() {
             <NavigationBar />
             <div className="flex min-h-0 flex-[1] flex-col items-center gap-6 p-2 xs:p-6">
                 <SearchComponent
-                    className="z-20 flex w-full max-w-2xl select-none flex-col"
+                    className="z-20 flex w-full max-w-2xl select-none flex-col p-2"
                     onResult={onResult}
                 />
                 {combinedResults.length > 0 && mobileW && (
                     <Tabs
                         classes={{
-                            root: "w-full max-w-7xl -mb-4"
+                            root: "w-full max-w-7xl -mb-4 p-2"
                         }}
                         onChange={(_, value) => setTab(value)}
                         value={tab}
