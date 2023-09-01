@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "Extractors",
-    "Implicit Reconstruction",
-    "oinf, linf and oref track reference"
-  ],
+  "features": ["video track", "Extractors", "Implicit Reconstruction"],
   "notes": "",
   "license": "",
   "rel_filepath": "./shvc_hvc1_lhv1_multiple_tracks_implicit.mp4",
