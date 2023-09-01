@@ -7,14 +7,6 @@
   "associated_files": [],
   "features": [
     "video track",
-    "avc1 sample entry",
-    "avc3 sample entry",
-    "hev1 sample entry",
-    "hvc1 sample entry",
-    "hev2 sample entry",
-    "hvc2 sample entry",
-    "lhe1 sample entry",
-    "lhv1 sample entry",
     "Extractors",
     "Implicit Reconstruction",
     "oinf, linf and oref track reference"

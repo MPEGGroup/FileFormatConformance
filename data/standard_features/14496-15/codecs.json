@@ -246,6 +246,13 @@
       "type": "A3DSampleEntry",
       "containers": ["stsd"],
       "syntax": "class A3DSampleEntry() extends VisualSampleEntry ('a3d4') {\r\n\tA3DConfigurationBox\ta3dconfig;\t\t// mandatory\r\n\tMVDScalabilityInformationSEIBox\tmvdscalinfosei;\t// optional\r\n\tViewIdentifierBox\tview_identifiers;\t\t// mandatory\r\n\tMPEG4ExtensionDescriptorsBox descr;\t\t// optional\tIntrinsicCameraParametersBox\tintrinsic_camera_params;\t// optional\r\n\tExtrinsicCameraParametersBox\textrinsic_camera_params\t// optional\r\n}"
+    },
+    {
+      "fourcc": "hvt1",
+      "description": "HEVC tile track",
+      "type": "VisualSampleEntry",
+      "containers": ["stsd"],
+      "syntax": "class HEVCTileSampleEntry() extends VisualSampleEntry ('hvt1'){\r\n\tHEVCTileConfigurationBox\tconfig(); // optional\r\n}"
     }
   ]
 }
