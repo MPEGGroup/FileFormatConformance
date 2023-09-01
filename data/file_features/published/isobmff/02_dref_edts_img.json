@@ -7,7 +7,7 @@
   "associated_files": [],
   "features": [
     "audio track",
-    "image track (no sync table)",
+    "image track",
     "data ref to other file",
     "compact stz2",
     "Interleaved data",
