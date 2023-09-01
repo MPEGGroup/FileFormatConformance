@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "tbas and sabt track reference"],
+  "features": ["video track"],
   "notes": "",
   "license": "",
   "rel_filepath": "./hevc_tiles_multiple_tracks.mp4",
