@@ -30,20 +30,13 @@ jobs:
           poetry env use "3.11"
           poetry install --no-interaction
 
-      - name: Restore GPAC Cache
-        uses: actions/cache/restore@v3
-        with:
-          path: /tmp/gpac
-          key: ${{ runner.os }}-gpac-
-          restore-keys: ${{ runner.os }}-gpac-
-
-      - name: Setup MP4Box
+      - name: Install GPAC
         run: |
+          wget -O /tmp/gpac.deb https://download.tsi.telecom-paristech.fr/gpac/new_builds/gpac_latest_head_linux64.deb
+          sudo apt update
+          sudo apt install -y /tmp/gpac.deb
           mkdir -p $HOME/.gpac
-          mkdir -p $HOME/.local/bin
           touch $HOME/.gpac/creds.key
-          cp -r /tmp/gpac/ $HOME/.local/bin
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Configure GitHub handle
         run: |
