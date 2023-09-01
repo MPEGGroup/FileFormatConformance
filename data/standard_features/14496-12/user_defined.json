@@ -19,6 +19,7 @@
   "multiple mdats": "two or more mdat boxes are present",
   "multiple sample descriptions": "There is one track ujsing several sample entries, not just one",
   "metadata references": "Some meta-data is in external files and linked by data references",
+  "data reference to other file": "Data references to another file",
   "sample dependency": "The sample dependency table is present",
   "Interleaved data": "The media data is interleaved on a sensible scale (e.g. .5 second) and in order",
   "pad bits": "At least one track (audio, probably) has a padding bits table for non byte-lengthed AUs",

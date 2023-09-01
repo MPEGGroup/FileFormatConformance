@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "mov. Ext header", "mp4v sample entry"],
+  "features": ["video track", "mp4v sample entry"],
   "notes": "",
   "license": "",
   "rel_filepath": "./fragment_random_access-2.mp4",

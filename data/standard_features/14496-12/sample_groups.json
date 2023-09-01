@@ -18,7 +18,7 @@
     },
     {
       "fourcc": "prol",
-      "description": "Audio pre-roll",
+      "description": "Preroll (audio)",
       "containers": ["sgpd"],
       "type": "AudioSampleGroupEntry",
       "syntax": "class AudioPreRollEntry() extends AudioSampleGroupEntry ('prol')\n{\n\tsigned int(16) roll_distance;\n}"
@@ -39,7 +39,7 @@
     },
     {
       "fourcc": "roll",
-      "description": "Pre/Post roll group",
+      "description": "Preroll / Postroll group",
       "containers": ["sgpd"],
       "type": "AudioSampleGroupEntry",
       "syntax": "class AudioRollRecoveryEntry() extends AudioSampleGroupEntry ('roll')\n{\n\tsigned int(16) roll_distance;\n}"

@@ -8,8 +8,7 @@
   "features": [
     "audio track",
     "image track",
-    "data ref to other file",
-    "compact stz2",
+    "data reference to other file",
     "Interleaved data",
     "Systems tracks etc.",
     "IOD box",

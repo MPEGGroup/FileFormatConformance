@@ -7,8 +7,7 @@
   "associated_files": [],
   "features": [
     "video track",
-    "data ref to other file",
-    "compact stz2",
+    "data reference to other file",
     "Systems tracks etc.",
     "IOD box",
     "mp4v sample entry",

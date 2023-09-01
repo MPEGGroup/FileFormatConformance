@@ -8,8 +8,6 @@
   "features": [
     "video track",
     "audio track",
-    "mov. Ext header",
-    "fragment random access",
     "mp4a sample entry",
     "mp4v sample entry"
   ],

@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["image track", "data refs", "item naming"],
+  "features": ["image track", "item naming"],
   "notes": "",
   "license": "",
   "rel_filepath": "./12_metas_v2.mp4",

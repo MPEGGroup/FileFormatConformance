@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": ["./myData.dat"],
-  "features": ["video track", "audio track", "data ref to other file"],
+  "features": ["video track", "audio track", "data reference to other file"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a6_tone_multifile.mp4",
