@@ -1133,9 +1133,9 @@
     {
       "fourcc": "ress",
       "description": "Restricted system",
-      "type": "",
+      "type": "MP4VisualSampleEntry",
       "containers": ["stsd"],
-      "syntax": "TODO: Not clear"
+      "syntax": "System streams are defined in ISO/IEC 14496-14"
     },
     {
       "fourcc": "resf",
