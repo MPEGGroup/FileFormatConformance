@@ -14,26 +14,23 @@ code.basic {
     @apply rounded bg-gray-300 px-1 font-mono text-black;
 }
 
-table {
-    @apply border-1 border-black bg-neutral-100;
+progress[value] {
+    /* Reset the default appearance */
+    appearance: none;
 }
 
-thead {
-    @apply bg-black text-white;
+progress[value]::-webkit-progress-bar {
+    @apply bg-gray-300;
 }
 
-tbody th {
-    @apply border-b-2 border-black px-2 text-center;
+progress[value].low::-webkit-progress-value {
+    @apply bg-red-600;
 }
 
-tbody tr {
-    @apply border-b-1 border-black bg-white text-center last:border-0;
+progress[value].med::-webkit-progress-value {
+    @apply bg-yellow-600;
 }
 
-tbody td {
-    @apply px-2;
-}
-
-input[type="number"]::-webkit-inner-spin-button {
-    opacity: 1;
+progress[value].high::-webkit-progress-value {
+    @apply bg-green-600;
 }
