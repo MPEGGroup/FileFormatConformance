@@ -274,6 +274,17 @@ def main():
             f"Boxes with empty type ({len(set(buffer))}): {set(sorted(buffer))}"
         )
 
+    # Show boxes with empty fourcc
+    buffer = []
+    for _box in all_boxes:
+        if _box.incomplete:
+            continue
+        if _box.fourcc == "":
+            buffer.append(f"{_box.fourcc} ({_box.type})")
+
+    if len(buffer) > 0:
+        logger.error(f"There are {len(set(buffer))} box(es) with empty fourcc")
+
     # Show duplicates (same fourcc)
     buffer = []
     for _box in all_boxes:
