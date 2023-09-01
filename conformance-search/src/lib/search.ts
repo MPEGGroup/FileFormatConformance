@@ -428,8 +428,8 @@ class Search {
         boxes = boxes.filter((box) => box.item.fourcc !== "file");
 
         // Normalize scores
-        boxes = normalizeResultScores(boxes, query === "" ? 1.0 : 0.2);
-        features = normalizeResultScores(features, query === "" ? 1.0 : 0.2);
+        boxes = normalizeResultScores(boxes, query === "");
+        features = normalizeResultScores(features, query === "");
 
         // Filter out results with low scores
         boxes = boxes.filter((result) => result.score <= 0.2);
