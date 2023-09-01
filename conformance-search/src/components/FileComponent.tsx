@@ -277,7 +277,7 @@ export default function FileComponent({ file }: { file: FileSearchResult }) {
                         >
                             {file.item.published ? "Published" : "Under Consideration"}
                         </span>
-                        {file.matches.slice(0, 8).map((match) => {
+                        {file.matches.slice(0, 4).map((match) => {
                             return (
                                 <span
                                     key={match.value}
@@ -290,9 +290,9 @@ export default function FileComponent({ file }: { file: FileSearchResult }) {
                                 </span>
                             );
                         })}
-                        {file.matches.length > 8 && (
+                        {file.matches.length > 4 && (
                             <span className="flex h-4 items-center justify-center whitespace-nowrap rounded-full bg-gray-500 px-2 text-xs font-bold text-white opacity-40">
-                                +{file.matches.length - 6} more
+                                +{file.matches.length - 4} more
                             </span>
                         )}
                     </div>
