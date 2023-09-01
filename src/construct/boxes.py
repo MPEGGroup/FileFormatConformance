@@ -211,11 +211,20 @@ def main():
         for container in _box.containers:
             if isinstance(container, dict):
                 if "type" in container:
-                    if container["type"] not in [_box.type for _box in all_boxes]:
-                        # Ignore '*'
-                        if container["type"] == "*":
-                            continue
-                        buffer.append(f"{container['type']}")
+                    # If type is already in all_boxes, skip
+                    if container["type"] in [_box.type for _box in all_boxes]:
+                        continue
+
+                    # If type is in TYPE_HIERARCHY, skip
+                    if container["type"] in TYPE_HIERARCHY:
+                        continue
+
+                    # If type is *, skip
+                    if container["type"] == "*":
+                        continue
+
+                    # Could not find the type
+                    buffer.append(f"{container['type']}")
 
     if len(buffer) > 0:
         logger.error(f"Unknown types ({len(set(buffer))}): {set(sorted(buffer))}")
@@ -260,9 +269,8 @@ def main():
         if _box.type == "":
             buffer.append(f"{_box.fourcc} ({_box.type})")
 
-    # FIXME: This should be an error
     if len(buffer) > 0:
-        logger.warning(
+        logger.error(
             f"Boxes with empty type ({len(set(buffer))}): {set(sorted(buffer))}"
         )
 
