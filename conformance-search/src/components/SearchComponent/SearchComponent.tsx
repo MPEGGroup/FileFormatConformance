@@ -16,7 +16,7 @@ export default function SearchComponent({
     onResult
 }: {
     className?: string;
-    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => Promise<void>;
+    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => void;
 }) {
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -52,7 +52,7 @@ export default function SearchComponent({
             // Update URL
             setQueryParams(query, filters);
             const { boxes, features } = await search.search(query, filters);
-            await onResult(boxes, features);
+            onResult(boxes, features);
             setLoading(false);
         },
         250,
@@ -63,6 +63,10 @@ export default function SearchComponent({
     useEffect(() => {
         const newState = filters.length > 0 && open;
         setOpen(newState);
+
+        // If open, disable scroll
+        if (newState) document.body.style.overflow = "hidden";
+        else document.body.style.overflow = "auto";
     }, [open, filters]);
 
     return (
@@ -122,7 +126,7 @@ export default function SearchComponent({
                                 filters.map((filter: Filter, index: number) => (
                                     <div
                                         key={filter.value}
-                                        className="flex flex-row items-stretch divide-x-1 px-3"
+                                        className="flex flex-row items-stretch divide-x-1 overflow-x-scroll px-3"
                                     >
                                         <button
                                             className="my-3 mr-3 cursor-pointer"

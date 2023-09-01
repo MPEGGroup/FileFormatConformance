@@ -29,7 +29,7 @@ export default function Input({
                     updateFilter(index, (e.target as HTMLInputElement).value)
                 }
                 placeholder={placeholder}
-                type="text"
+                type="search"
                 value={filter.value}
             />
         );

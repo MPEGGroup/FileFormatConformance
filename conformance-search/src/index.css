@@ -6,6 +6,10 @@ body {
     @apply bg-paper;
 }
 
+b {
+    @apply font-bold;
+}
+
 #root {
     @apply h-screen w-screen flex flex-col;
 }

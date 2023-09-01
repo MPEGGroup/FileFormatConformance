@@ -5,6 +5,7 @@ import { useClickAway } from "react-use";
 import Search from "@/lib/search";
 import { Chip } from "@/components";
 import { Filter } from "@/types";
+import { Popper } from "@mui/material";
 import Dropdown from "../Dropdown";
 import stripSpecialChars from "../helpers";
 
@@ -95,13 +96,16 @@ export default function ContainerInput({
         updateFuse(search);
     }, [parsed, search]);
 
+    // Focus the input when the parsed value changes
+    const inputRef = useRef<HTMLInputElement>(null);
+    useEffect(() => {
+        inputRef.current?.focus();
+    }, [parsed]);
+
     // Dropdown menu
+    const dropdownContainerRef = useRef<HTMLDivElement>(null);
     const dropdownRef = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState(false);
-
-    const handleClickOutside = () => {
-        setOpen(false);
-    };
 
     // Capture delete key
     const onKeyDown = async (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -119,7 +123,15 @@ export default function ContainerInput({
         }
     };
 
-    useClickAway(dropdownRef, handleClickOutside);
+    useClickAway(
+        dropdownContainerRef,
+        (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            if (dropdownRef.current?.contains(target)) return;
+            setOpen(false);
+        },
+        ["mouseup"]
+    );
 
     return (
         <div className="relative flex grow flex-row items-center pl-3 text-sm">
@@ -159,25 +171,38 @@ export default function ContainerInput({
                     </Chip>
                 ))}
             </div>
-            <div ref={dropdownRef} className="relative flex h-full grow flex-row">
+            <div ref={dropdownContainerRef} className="relative flex h-full grow flex-row">
                 <input
-                    className="w-full focus:outline-none"
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                        setQuery((e.target as HTMLInputElement).value)
-                    }
+                    ref={inputRef}
+                    autoCapitalize="off"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className="w-fit focus:outline-none xs:w-full"
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                        setQuery((e.target as HTMLInputElement).value);
+                        setOpen(true);
+                    }}
                     onClick={() => setOpen(true)}
                     onKeyDown={onKeyDown}
                     placeholder={placeholder}
-                    type="text"
+                    spellCheck="false"
+                    type="search"
                     value={query}
                 />
                 {fuse && (
-                    <Dropdown
-                        fuse={fuse}
-                        hidden={!open || query === ""}
-                        parseValue={parseValue}
-                        query={query}
-                    />
+                    <Popper
+                        anchorEl={inputRef.current}
+                        className="z-20"
+                        open={open && query !== ""}
+                        placement="bottom-start"
+                    >
+                        <Dropdown
+                            ref={dropdownRef}
+                            fuse={fuse}
+                            parseValue={parseValue}
+                            query={query}
+                        />
+                    </Popper>
                 )}
             </div>
         </div>
