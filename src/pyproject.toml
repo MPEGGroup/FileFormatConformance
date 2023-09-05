@@ -33,9 +33,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 # Spec features
-extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
-update-spec-features = "feature_extractor.spec_features:update_spec_features"
-check-spec-features = "feature_extractor.spec_features:check_spec_features"
+# these are obsolete now (I'll keep them for now, just in case)
+# extract-spec-features = "feature_extractor.spec_features:extract_spec_features"
+# update-spec-features = "feature_extractor.spec_features:update_spec_features"
+# check-spec-features = "feature_extractor.spec_features:check_spec_features"
+update-standard-features = "feature_extractor.standard_features:update"
 
 # File features
 contribute-files = "feature_extractor.file_features:contribute_files"
