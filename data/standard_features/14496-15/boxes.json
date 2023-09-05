@@ -523,7 +523,7 @@
     {
       "fourcc": "svop",
       "description": "SVC dependency range",
-      "containers": [],
+      "containers": ["sgpd"],
       "type": "Box",
       "syntax": "class SVCDependencyRangeBox extends Box('svop') {\n\tunsigned int(3) min_dependency_id;\n\tunsigned int(3) min_temporal_id;\n\tbit(6) reserved = 0;\n\tunsigned int(4) min_quality_id;\n\tunsigned int(3) max_dependency_id;\n\tunsigned int(3) max_temporal_id;\n\tbit(6) reserved = 0;\n\tunsigned int(4) max_quality_id;\n}"
     },
