@@ -595,6 +595,17 @@
       ],
       "type": "FullBox",
       "syntax": "class SVCMetadataSampleConfigBox extends FullBox('svmC')\n{\n\tint i;\t\t// local variable, not a field\n\tunsigned int(8) sample_statement_type;\t/* normally group, or seq */\n\tunsigned int(8) default_statement_type;\n\tunsigned int(8) default_statement_length;\n\tunsigned int(8) entry_count;\n\tfor (i=1; i<=entry_count; i++) {\n\t\tunsigned int(8) statement_type;\t// from the user extension ranges\n\t\tstring statement_namespace;\n\t}"
+    },
+    {
+      "fourcc": "evsC",
+      "description": "Configuration for EVC slice component track",
+      "containers": [
+        {
+          "EVCSliceComponentTrackSampleEntry": ["evs1", "evs2"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class EVCSliceComponentTrackConfigurationBox extends Box('evsC') {\n\tEVCSliceComponentTrackConfigurationRecord() config;\n}"
     }
   ]
 }
