@@ -92,7 +92,7 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
     return (
         <div
             className={clsx(
-                "relative flex w-full flex-col divide-y-1 rounded-md bg-white shadow-md",
+                "relative flex w-full flex-col divide-y-1 overflow-hidden rounded-md bg-white shadow-md",
                 box.score === 0 && "border-l-4 border-green-400",
                 box.score > 0 && "border-l-4 border-yellow-400",
                 box.count === 0 && "border-l-4 !border-red-400 opacity-40"

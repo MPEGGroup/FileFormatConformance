@@ -16,7 +16,7 @@ export default function SearchComponent({
     onResult
 }: {
     className?: string;
-    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => Promise<void>;
+    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => void;
 }) {
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -52,7 +52,7 @@ export default function SearchComponent({
             // Update URL
             setQueryParams(query, filters);
             const { boxes, features } = await search.search(query, filters);
-            await onResult(boxes, features);
+            onResult(boxes, features);
             setLoading(false);
         },
         250,
@@ -63,6 +63,10 @@ export default function SearchComponent({
     useEffect(() => {
         const newState = filters.length > 0 && open;
         setOpen(newState);
+
+        // If open, disable scroll
+        if (newState) document.body.style.overflow = "hidden";
+        else document.body.style.overflow = "auto";
     }, [open, filters]);
 
     return (
@@ -82,7 +86,7 @@ export default function SearchComponent({
                             autoCapitalize="off"
                             autoComplete="off"
                             autoCorrect="off"
-                            className="h-16 min-w-0 grow rounded-md px-5 text-sm focus:outline-none disabled:bg-transparent"
+                            className="h-16 min-w-0 grow rounded-tl-md bg-transparent px-5 text-lg only:rounded-t-md focus:outline-none disabled:bg-gray-100"
                             disabled={!ready}
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                 setQuery((e.target as HTMLInputElement).value);
@@ -93,23 +97,20 @@ export default function SearchComponent({
                             type="text"
                             value={query}
                         />
-                        <button
-                            className={clsx(
-                                "w-14 flex-col items-center justify-center",
-                                !ready || loading || (!query && filters.length === 0)
-                                    ? "hidden"
-                                    : "flex"
-                            )}
-                            disabled={!ready || loading}
-                            onClick={() => {
-                                setQuery("");
-                                resetFilters();
-                            }}
-                            type="button"
-                        >
-                            <MdClose className="text-2xl" />
-                            <span className="text-[10px] font-semibold">Reset</span>
-                        </button>
+                        {ready && !loading && (query || filters.length > 0) && (
+                            <button
+                                className="flex w-14 flex-col items-center justify-center"
+                                onClick={() => {
+                                    setQuery("");
+                                    resetFilters();
+                                }}
+                                type="button"
+                            >
+                                <MdClose className="text-2xl" />
+                                <span className="text-[10px] font-semibold">Reset</span>
+                            </button>
+                        )}
+
                         {(!ready || loading) && (
                             <div className="flex w-14 items-center justify-center">
                                 <AiOutlineLoading className="animate-spin text-2xl" />
@@ -122,7 +123,7 @@ export default function SearchComponent({
                                 filters.map((filter: Filter, index: number) => (
                                     <div
                                         key={filter.value}
-                                        className="flex flex-row items-stretch divide-x-1 px-3"
+                                        className="flex flex-row items-stretch divide-x-1 overflow-x-scroll px-3"
                                     >
                                         <button
                                             className="my-3 mr-3 cursor-pointer"

@@ -21,25 +21,30 @@ export default function SpecsCovered({
                     <a
                         key={info.ISO}
                         className={clsx(
-                            "group flex items-center justify-between gap-2 truncate px-3 py-2 font-light hover:bg-gray-100",
+                            "group flex items-center justify-between gap-2 px-3 py-2 font-light hover:bg-gray-100",
                             compact && "text-sm font-normal"
                         )}
                         href={info.link}
                         rel="noreferrer"
                         target="_blank"
                     >
-                        <span>
-                            ISO/IEC {info.ISO}:{info.date} (
-                            <span className="font-bold">{info.name}</span>):{" "}
-                            {addOrdinalSuffix(info.version)} Edition{" "}
-                            {info.amendmends &&
-                                info.amendmends.length > 0 &&
-                                `, ${info.amendmends.join(", ")}`}
-                            {info.corrigenda &&
-                                info.corrigenda.length > 0 &&
-                                `, ${info.corrigenda.join(", ")}`}
-                        </span>
-                        <FaExternalLinkAlt className="text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+                        <div className="flex flex-wrap gap-1">
+                            <span>
+                                ISO/IEC {info.ISO}:{info.date}
+                            </span>
+                            <span>
+                                (<b>{info.name}</b>): {addOrdinalSuffix(info.version)} Edition
+                            </span>
+                            <span>
+                                {info.amendmends &&
+                                    info.amendmends.length > 0 &&
+                                    `, ${info.amendmends.join(", ")}`}
+                                {info.corrigenda &&
+                                    info.corrigenda.length > 0 &&
+                                    `, ${info.corrigenda.join(", ")}`}
+                            </span>
+                        </div>
+                        <FaExternalLinkAlt className="opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:text-xs" />
                     </a>
                 ))}
             </div>

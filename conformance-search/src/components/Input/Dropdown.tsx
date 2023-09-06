@@ -1,25 +1,25 @@
-import clsx from "clsx";
 import Fuse from "fuse.js";
-import { useEffect, useRef, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import { useEvent, useIntersection } from "react-use";
 import { normalizeResultScores } from "@/utils";
 import { Chip } from "@/components";
 import { FuseSearchWithScore } from "@/types";
 
-export default function Dropdown({
-    query,
-    fuse,
-    parseValue,
-    hidden
-}: {
-    query: string;
-    fuse: {
-        fourccs: Fuse<string>;
-        types: Fuse<string>;
-    };
-    parseValue: (value: string) => Promise<void>;
-    hidden: boolean;
-}) {
+function Dropdown(
+    {
+        query,
+        fuse,
+        parseValue
+    }: {
+        query: string;
+        fuse: {
+            fourccs: Fuse<string>;
+            types: Fuse<string>;
+        };
+        parseValue: (value: string) => Promise<void>;
+    },
+    ref: React.ForwardedRef<HTMLDivElement>
+) {
     const [activeIndex, setActiveIndex] = useState(-1);
     const [results, setResults] = useState<{
         fourccs: FuseSearchWithScore<string>[];
@@ -30,8 +30,7 @@ export default function Dropdown({
     });
 
     // Check if the dropdown is visible
-    const ref = useRef(null);
-    const intersection = useIntersection(ref, {
+    const intersection = useIntersection(ref as React.MutableRefObject<HTMLDivElement>, {
         root: null,
         rootMargin: "0px",
         threshold: 0.1
@@ -142,12 +141,7 @@ export default function Dropdown({
     return (
         <div
             ref={ref}
-            className={clsx(
-                "absolute bottom-[-1px] z-10 translate-y-full flex-col gap-3 bg-white p-3 shadow-lg outline outline-1 outline-gray-200 max-md:right-0 sm:left-[-3]",
-                hidden || (results.fourccs.length === 0 && results.types.length === 0)
-                    ? "hidden"
-                    : "flex"
-            )}
+            className="mt-[1.5px] flex flex-col gap-3 bg-white p-3 shadow-lg outline outline-1 outline-gray-200"
             data-testid="dropdown"
         >
             {dropdownSection({
@@ -162,3 +156,5 @@ export default function Dropdown({
         </div>
     );
 }
+
+export default forwardRef(Dropdown);

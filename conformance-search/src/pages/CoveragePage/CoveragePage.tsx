@@ -206,7 +206,7 @@ export default function CoveragePage() {
                 />
                 <div className="flex w-full flex-col items-start gap-2">
                     <input
-                        className="w-full rounded border-1 px-3 py-2 shadow-md"
+                        className="w-full rounded border-1 bg-transparent px-3 py-2 shadow-md"
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                             setSearch((e.target as HTMLInputElement).value)
                         }

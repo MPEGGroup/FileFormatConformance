@@ -23,13 +23,13 @@ export default function Input({
         return (
             <input
                 // eslint-disable-next-line jsx-a11y/no-autofocus
-                autoFocus
-                className="grow px-3 text-sm focus:outline-none"
+                autoFocus={filter.value !== ""}
+                className="grow rounded-none bg-transparent px-3 text-sm focus:outline-none"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     updateFilter(index, (e.target as HTMLInputElement).value)
                 }
                 placeholder={placeholder}
-                type="text"
+                type="search"
                 value={filter.value}
             />
         );

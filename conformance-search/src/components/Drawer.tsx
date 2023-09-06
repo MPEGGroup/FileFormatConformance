@@ -28,7 +28,7 @@ export default function Drawer({
 
     if (hidden) return null;
     return (
-        <div ref={ref} className="sticky last:border-b-1">
+        <div ref={ref} className="sticky">
             <div
                 className={clsx("sticky top-0 border-t-1 bg-white px-3 py-1", open && "border-b-1")}
             >

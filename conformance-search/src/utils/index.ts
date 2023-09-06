@@ -4,12 +4,14 @@ import { FuseSearchWithScore } from "@/types";
  * Normalize the scores of the given results.
  * @param results - the results to normalize
  */
-function normalizeResultScores<T>(results: FuseSearchWithScore<T>[], threshold = 0.2) {
+function normalizeResultScores<T>(results: FuseSearchWithScore<T>[], noQuery = false) {
+    const threshold = noQuery ? 1.0 : 0.2;
     let normalizedResults = results;
+
     if (results.length === 1) {
         normalizedResults = results.map((result) => ({
             ...result,
-            actualScore: result.score,
+            actualScore: noQuery ? 0 : result.score,
             score: 0
         }));
     } else if (results.length > 1) {
@@ -19,13 +21,13 @@ function normalizeResultScores<T>(results: FuseSearchWithScore<T>[], threshold =
         if (minScore === maxScore) {
             normalizedResults = results.map((result) => ({
                 ...result,
-                actualScore: result.score,
+                actualScore: noQuery ? 0 : result.score,
                 score: minScore < threshold ? 0 : 1
             }));
         } else {
             normalizedResults = results.map((result) => ({
                 ...result,
-                actualScore: result.score,
+                actualScore: noQuery ? 0 : result.score,
                 score: ((result.score || 0) - minScore) / (maxScore - minScore)
             }));
         }
