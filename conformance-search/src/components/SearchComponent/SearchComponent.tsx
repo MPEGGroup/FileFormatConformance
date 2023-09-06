@@ -86,7 +86,7 @@ export default function SearchComponent({
                             autoCapitalize="off"
                             autoComplete="off"
                             autoCorrect="off"
-                            className="h-16 min-w-0 grow rounded-md px-5 text-sm focus:outline-none disabled:bg-transparent"
+                            className="h-16 min-w-0 grow rounded-tl-md bg-transparent px-5 text-lg only:rounded-t-md focus:outline-none disabled:bg-gray-100"
                             disabled={!ready}
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                 setQuery((e.target as HTMLInputElement).value);
@@ -97,23 +97,20 @@ export default function SearchComponent({
                             type="text"
                             value={query}
                         />
-                        <button
-                            className={clsx(
-                                "w-14 flex-col items-center justify-center",
-                                !ready || loading || (!query && filters.length === 0)
-                                    ? "hidden"
-                                    : "flex"
-                            )}
-                            disabled={!ready || loading}
-                            onClick={() => {
-                                setQuery("");
-                                resetFilters();
-                            }}
-                            type="button"
-                        >
-                            <MdClose className="text-2xl" />
-                            <span className="text-[10px] font-semibold">Reset</span>
-                        </button>
+                        {ready && !loading && (query || filters.length > 0) && (
+                            <button
+                                className="flex w-14 flex-col items-center justify-center"
+                                onClick={() => {
+                                    setQuery("");
+                                    resetFilters();
+                                }}
+                                type="button"
+                            >
+                                <MdClose className="text-2xl" />
+                                <span className="text-[10px] font-semibold">Reset</span>
+                            </button>
+                        )}
+
                         {(!ready || loading) && (
                             <div className="flex w-14 items-center justify-center">
                                 <AiOutlineLoading className="animate-spin text-2xl" />
