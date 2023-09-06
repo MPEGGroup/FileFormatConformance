@@ -1,0 +1,2700 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "video_cenc_mkey_subs.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso4",
+      "@MinorVersion": "1",
+      "BrandEntry": {
+        "@AlternateBrand": "iso4"
+      }
+    },
+    "MovieBox": {
+      "@Size": "6201",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3701683911",
+        "@ModificationTime": "3701683911",
+        "@TimeScale": "600",
+        "@Duration": "1200",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "5976",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3701666790",
+          "@ModificationTime": "3701683911",
+          "@TrackID": "1",
+          "@Duration": "1200",
+          "@Width": "1280.00",
+          "@Height": "720.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "960",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3701666790",
+            "@ModificationTime": "3701683911",
+            "@TimeScale": "25000",
+            "@Duration": "50000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "82",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "hevc:dur=2@GPAC1.1.0-DEV-rev736-gd1e971268-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "838",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "774",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "282",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "MPEGVisualSampleDescriptionBox": {
+                  "@Size": "266",
+                  "@Type": "encv",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "1280",
+                  "@Height": "720",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "HEVCConfigurationBox": {
+                    "@Size": "112",
+                    "@Type": "hvcC",
+                    "@Specification": "p15",
+                    "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+                    "HEVCDecoderConfigurationRecord": {
+                      "@nal_unit_size": "4",
+                      "@configurationVersion": "1",
+                      "@profile_space": "0",
+                      "@tier_flag": "0",
+                      "@profile_idc": "1",
+                      "@general_profile_compatibility_flags": "60000000",
+                      "@progressive_source_flag": "1",
+                      "@interlaced_source_flag": "0",
+                      "@non_packed_constraint_flag": "0",
+                      "@frame_only_constraint_flag": "0",
+                      "@constraint_indicator_flags": "0",
+                      "@level_idc": "186",
+                      "@min_spatial_segmentation_idc": "0",
+                      "@parallelismType": "2",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@luma_bit_depth": "8",
+                      "@chroma_bit_depth": "8",
+                      "@avgFrameRate": "0",
+                      "@constantFrameRate": "0",
+                      "@numTemporalLayers": "2",
+                      "@temporalIdNested": "0",
+                      "ParameterSetArray": [
+                        {
+                          "@nalu_type": "32",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "25",
+                            "@content": "data:application/octet-string,40010C02FFFF0160000003008000000300000300BA00002C09"
+                          }
+                        },
+                        {
+                          "@nalu_type": "33",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "32",
+                            "@content": "data:application/octet-string,4201020160000003008000000300000300BA0000A00280802D1684E491CA2002"
+                          }
+                        },
+                        {
+                          "@nalu_type": "34",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "9",
+                            "@content": "data:application/octet-string,4401C1624F09B93240"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "BitRateBox": {
+                    "@Size": "20",
+                    "@Type": "btrt",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "@BufferSizeDB": "15991",
+                    "@avgBitRate": "515320",
+                    "@maxBitRate": "615752"
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "48",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "hvc1"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "cenc",
+                      "@scheme_version": "65536"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "8",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf"
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1000",
+                  "@SampleCount": "50"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "24",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SyncSampleEntry": [
+                  {
+                    "@sampleNumber": "1"
+                  },
+                  {
+                    "@sampleNumber": "26"
+                  }
+                ]
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "12",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "5",
+                    "@SamplesPerChunk": "2",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "220",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "50",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "5252"
+                  },
+                  {
+                    "@Size": "1165"
+                  },
+                  {
+                    "@Size": "1038"
+                  },
+                  {
+                    "@Size": "2023"
+                  },
+                  {
+                    "@Size": "1305"
+                  },
+                  {
+                    "@Size": "4254"
+                  },
+                  {
+                    "@Size": "1584"
+                  },
+                  {
+                    "@Size": "1632"
+                  },
+                  {
+                    "@Size": "2925"
+                  },
+                  {
+                    "@Size": "1743"
+                  },
+                  {
+                    "@Size": "3189"
+                  },
+                  {
+                    "@Size": "1731"
+                  },
+                  {
+                    "@Size": "1868"
+                  },
+                  {
+                    "@Size": "2696"
+                  },
+                  {
+                    "@Size": "1928"
+                  },
+                  {
+                    "@Size": "2200"
+                  },
+                  {
+                    "@Size": "2711"
+                  },
+                  {
+                    "@Size": "1989"
+                  },
+                  {
+                    "@Size": "2333"
+                  },
+                  {
+                    "@Size": "2492"
+                  },
+                  {
+                    "@Size": "2640"
+                  },
+                  {
+                    "@Size": "2177"
+                  },
+                  {
+                    "@Size": "2169"
+                  },
+                  {
+                    "@Size": "2814"
+                  },
+                  {
+                    "@Size": "2287"
+                  },
+                  {
+                    "@Size": "15991"
+                  },
+                  {
+                    "@Size": "2833"
+                  },
+                  {
+                    "@Size": "1876"
+                  },
+                  {
+                    "@Size": "2498"
+                  },
+                  {
+                    "@Size": "1802"
+                  },
+                  {
+                    "@Size": "2492"
+                  },
+                  {
+                    "@Size": "1756"
+                  },
+                  {
+                    "@Size": "1970"
+                  },
+                  {
+                    "@Size": "2090"
+                  },
+                  {
+                    "@Size": "1980"
+                  },
+                  {
+                    "@Size": "2096"
+                  },
+                  {
+                    "@Size": "2150"
+                  },
+                  {
+                    "@Size": "1877"
+                  },
+                  {
+                    "@Size": "2552"
+                  },
+                  {
+                    "@Size": "2014"
+                  },
+                  {
+                    "@Size": "2715"
+                  },
+                  {
+                    "@Size": "2184"
+                  },
+                  {
+                    "@Size": "2127"
+                  },
+                  {
+                    "@Size": "2589"
+                  },
+                  {
+                    "@Size": "2101"
+                  },
+                  {
+                    "@Size": "2546"
+                  },
+                  {
+                    "@Size": "2646"
+                  },
+                  {
+                    "@Size": "2272"
+                  },
+                  {
+                    "@Size": "3067"
+                  },
+                  {
+                    "@Size": "2462"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "36",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "5",
+                "ChunkEntry": [
+                  {
+                    "@offset": "6229"
+                  },
+                  {
+                    "@offset": "34070"
+                  },
+                  {
+                    "@offset": "62087"
+                  },
+                  {
+                    "@offset": "101758"
+                  },
+                  {
+                    "@offset": "129531"
+                  }
+                ]
+              },
+              "SampleGroupDescriptionBox": {
+                "@Size": "63",
+                "@Type": "sgpd",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "seig",
+                "@default_length": "39",
+                "CENCSampleEncryptionGroupEntry": {
+                  "@IsEncrypted": "1",
+                  "CENCKey": [
+                    {
+                      "@IV_size": "16",
+                      "@KID": "0x279926496A7F5D25DA69F2B3B2799A7E"
+                    },
+                    {
+                      "@IV_size": "16",
+                      "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+                    }
+                  ]
+                }
+              },
+              "SampleGroupBox": {
+                "@Size": "28",
+                "@Type": "sbgp",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "seig",
+                "SampleGroupBoxEntry": {
+                  "@sample_count": "50",
+                  "@group_description_index": "1"
+                }
+              },
+              "SampleAuxiliaryInfoSizeBox": {
+                "@Size": "25",
+                "@Type": "saiz",
+                "@Version": "0",
+                "@Flags": "1",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@default_sample_info_size": "98",
+                "@sample_count": "50",
+                "@aux_info_type": "0",
+                "@aux_info_type_parameter": "1"
+              },
+              "SampleAuxiliaryInfoOffsetBox": {
+                "@Size": "24",
+                "@Type": "saio",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@entry_count": "1",
+                "SAIChunkOffset": {
+                  "@offset": "1212"
+                }
+              }
+            }
+          }
+        },
+        "SampleEncryptionBox": {
+          "@Size": "4916",
+          "@Type": "senc",
+          "@Specification": "cenc",
+          "@Container": "trak traf",
+          "@sampleCount": "50",
+          "FullBoxInfo": {
+            "@Version": "1",
+            "@Flags": "0x2"
+          },
+          "SampleEncryptionEntry": [
+            {
+              "@sampleNumber": "1",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E039ED,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E039ED]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "185",
+                  "@NumEncryptedBytes": "16"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "98",
+                  "@NumEncryptedBytes": "48"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "761",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "3178",
+                  "@NumEncryptedBytes": "432"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "2",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E039FF,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A18]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "93",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "278",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "206",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "3",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A0B,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A2C]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "89",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "195",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "48"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "191",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "4",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A16,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A3F]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "23",
+                  "@NumEncryptedBytes": "16"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "78",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "468",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "562",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "5",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A26,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A63]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "96",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "27",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "223",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "226",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "6",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A36,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A7D]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "109",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "557",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "2517",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "7",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A4D,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AA4]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "100",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "379",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "251",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "8",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A5D,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AC4]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "92",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "24",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "360",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "375",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "9",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A6D,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AE1]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "109",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "416"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "826",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "653",
+                  "@NumEncryptedBytes": "320"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "10",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A83,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B1A]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "81",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "385",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "417",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "11",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03A93,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B3B]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "102",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "368"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "712",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "28",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "1051",
+                  "@NumEncryptedBytes": "464"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "12",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AA7,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B74]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "96",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "419",
+                  "@NumEncryptedBytes": "144"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "23",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "334",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "13",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AB6,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B97]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "88",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "483",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "307",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "14",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AC9,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03BBD]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "102",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "868",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "757",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "15",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03ADB,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03BE3]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "92",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "468",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "413",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "16",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03AF0,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C05]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "113",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "738",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "384",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "17",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B02,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C2A]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "102",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "825",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "23",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "773",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "18",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B15,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C51]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "103",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "622",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "335",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "19",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B26,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C75]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "89",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "950",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "352",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "20",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B37,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C9A]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "114",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "677",
+                  "@NumEncryptedBytes": "144"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "777",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "21",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B47,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CBF]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "100",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "560"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "955",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "340",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "22",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B59,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CF6]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "125",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "27",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "771",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "372",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "23",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B6A,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D18]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "196",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "638",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "374",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "24",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B7C,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D3D]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "239",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "974",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "23",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "611",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "25",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03B90,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D62]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "254",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "15",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "557",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "451",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "26",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03BA5,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D88]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "16"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "339",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "24",
+                  "@NumEncryptedBytes": "768"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "2557",
+                  "@NumEncryptedBytes": "320"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "528"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "9794",
+                  "@NumEncryptedBytes": "1328"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "27",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03BDB,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03E1B]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "145",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "667",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "931",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "28",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03BEF,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03E46]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "111",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "466",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "25",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "335",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "29",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C00,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03E6C]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "130",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "352"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "754",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "432",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "30",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C16,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03E9B]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "104",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "26",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "442",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "24",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "299",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "31",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C2A,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03EBD]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "107",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "560"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "715",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "324",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "32",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C41,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03EF5]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "104",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "486",
+                  "@NumEncryptedBytes": "160"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "289",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "33",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C52,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03F16]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "95",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "24",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "487",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "14",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "314",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "34",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C6B,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03F3B]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "104",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "744",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "310",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "35",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C7F,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03F5C]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "510",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "318",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "36",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03C97,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03F81]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "108",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "27",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "735",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "285",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "37",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CAA,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03FA5]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "114",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "685",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "28",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "348",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "38",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CBD,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03FCB]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "102",
+                  "@NumEncryptedBytes": "64"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "466",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "290",
+                  "@NumEncryptedBytes": "320"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "39",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CCF,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03FF4]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "104",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "21",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1014",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "28",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "335",
+                  "@NumEncryptedBytes": "336"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "40",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CE1,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E04021]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "101",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "538",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "371",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "41",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03CF5,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E04047]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "100",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "576"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "870",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "15",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "395",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "42",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D0B,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E04081]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "106",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "26",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "748",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "23",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "360",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "43",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D1F,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E040A4]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "108",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "336"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "695",
+                  "@NumEncryptedBytes": "144"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "332",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "44",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D30,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E040CC]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "100",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1091",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "27",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "342",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "45",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D43,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E040F6]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "107",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "604",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "315",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "46",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D58,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E0411F]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "108",
+                  "@NumEncryptedBytes": "128"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "320"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1044",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "26",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "317",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "47",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D6C,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E04149]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "136",
+                  "@NumEncryptedBytes": "176"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "18",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "876",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "26",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "364",
+                  "@NumEncryptedBytes": "320"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "48",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D84,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E0417B]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "222",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "654",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "341",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "49",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03D99,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E041A3]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "20",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "289",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "17",
+                  "@NumEncryptedBytes": "336"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1083",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "16",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "356",
+                  "@NumEncryptedBytes": "336"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "50",
+              "@multiIV": "[idx:1,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E03DB2,idx:2,iv_size:16,IV:0x0A610676CB88F302D10AC8BC66E041D9]",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "19",
+                  "@NumEncryptedBytes": "32"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "276",
+                  "@NumEncryptedBytes": "144"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "646",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "26",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "331",
+                  "@NumEncryptedBytes": "272"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "ProtectionSystemHeaderBox": {
+        "@Size": "109",
+        "@Type": "pssh",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "cenc",
+        "@Container": "moov moof meta",
+        "@SystemID": "0x6770616363656E6364726D746F6F6C31",
+        "PSSHKey": [
+          {
+            "@KID": "0x279926496A7F5D25DA69F2B3B2799A7E"
+          },
+          {
+            "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+          }
+        ],
+        "PSSHData": {
+          "@size": "41",
+          "@value": "0x084349443D47504143C30AF91588CC23DD89D9AAC629FF2349497D39DDBD09D0DC0626A39C7663ACF7"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "128839",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "128831"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}
