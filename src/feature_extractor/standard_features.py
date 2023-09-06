@@ -5,8 +5,9 @@ import json
 import re
 from git import Repo
 import csv
+import tempfile
 
-MP4RA_PATH = "./mp4ra"
+MP4RA_PATH = os.path.join(tempfile.gettempdir(), "mp4ra")
 MP4RA_URL = "https://github.com/mp4ra/mp4ra.github.io.git"
 
 
@@ -34,7 +35,9 @@ def get_mp4ra_entries(csv_file, feature_type):
 
 
 def get_4CC_and_class(boxsyntax):
-    # Initialize variables to None
+    # Replace special single quotes with standard single quotes
+    boxsyntax = boxsyntax.replace("‘", "'").replace("’", "'")
+
     class_name = None
     four_cc = None
 
@@ -189,7 +192,7 @@ def _update_codecs(entries, paragraphs, mp4ra_entries):
 def _update_entitygroups(entries, paragraphs, mp4ra_entries):
     filtered = []
     for paragraph in paragraphs:
-        # Search for 'extends SOME_TEXTEntityToGroupBox'
+        # Search for 'extends EntityToGroupBox'
         # print(paragraph)
         match = re.search(r"extends\s+(EntityToGroupBox)", paragraph)
         if match:
@@ -225,6 +228,48 @@ def _update_entitygroups(entries, paragraphs, mp4ra_entries):
             "versions": [0],
             "flags": [],
             "containers": ["grpl"],
+            "type": classname,
+            "syntax": syntax,
+        }
+        print(f"add new entry: {fourcc}")
+        entries.append(newentry)
+
+    return len(entries)
+
+
+def _update_samplegroups(entries, paragraphs, mp4ra_entries):
+    filtered = []
+    for paragraph in paragraphs:
+        # Search for 'extends SOME_TEXTSampleGroupEntry'
+        match = re.search(r"extends\s+(\w+SampleGroupEntry)", paragraph)
+        if match:
+            filtered.append(paragraph)
+
+    # let the user know what we found.
+    print(f"Found {len(filtered)} SampleGroups")
+    for entry in filtered:
+        classname, fourcc = get_4CC_and_class(entry)
+        print(f"{fourcc}: {classname}")
+    print(11 * "----")
+
+    # now see if we actually found something new
+    for syntax in filtered:
+        classname, fourcc = get_4CC_and_class(syntax)
+        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        assert len(foundentries) <= 1, f"More than 1 entries fround for {fourcc}"
+        if len(foundentries) == 1:
+            # TODO: change type based on classname add parenttype FooSampleEntry
+            continue
+        description = ""
+        ra_entries = [
+            ra_entry for ra_entry in mp4ra_entries if ra_entry["fourcc"] == fourcc
+        ]
+        if len(ra_entries) == 1:
+            description = ra_entries[0]["description"]
+        newentry = {
+            "fourcc": fourcc,
+            "description": description,
+            "containers": ["sgpd"],
             "type": classname,
             "syntax": syntax,
         }
@@ -312,6 +357,16 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "entity-groups")
         cnt_before = len(data["entries"])
         cnt_after = _update_entitygroups(data["entries"], codeparagraphs, mp4ra_entries)
+        print(f"New entries count: {cnt_after - cnt_before}")
+        with open(args.input, "w") as json_file:
+            json.dump(data, json_file, indent=2)
+    elif "sample_groups.json" in args.input:
+        # get associated type from MP4RA
+        tmp_path = os.path.join(MP4RA_PATH, "CSV", "entity-groups.csv")
+        with open(tmp_path, "r") as f:
+            mp4ra_entries = get_mp4ra_entries(f, "sample-groups")
+        cnt_before = len(data["entries"])
+        cnt_after = _update_samplegroups(data["entries"], codeparagraphs, mp4ra_entries)
         print(f"New entries count: {cnt_after - cnt_before}")
         with open(args.input, "w") as json_file:
             json.dump(data, json_file, indent=2)
