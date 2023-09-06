@@ -64,6 +64,20 @@
       "containers": ["sgpd"],
       "type": "VisualSampleGroupEntry",
       "syntax": "class TemporalLevelEntry() extends VisualSampleGroupEntry('tele')\n{\n\tbit(1)\tlevel_independently_decodable;\n\tbit(7)\treserved=0;\n}"
+    },
+    {
+      "fourcc": "pasr",
+      "description": "Pixel Aspect Ratio Sample Grouping",
+      "containers": ["sgpd"],
+      "type": "PixelAspectRatioEntry",
+      "syntax": "class PixelAspectRatioEntry() extends VisualSampleGroupEntry ('pasr'){\n\tunsigned int(32) hSpacing;\n\tunsigned int(32) vSpacing;\n}"
+    },
+    {
+      "fourcc": "casg",
+      "description": "Clean Aperture Sample Grouping",
+      "containers": ["sgpd"],
+      "type": "CleanAperture",
+      "syntax": "class CleanAperture Entry() extends VisualSampleGroupEntry ('casg'){\n\tunsigned int(32) cleanApertureWidthN;\n\tunsigned int(32) cleanApertureWidthD;\n\n\tunsigned int(32) cleanApertureHeightN;\n\tunsigned int(32) cleanApertureHeightD;\n\n\n\tunsigned int(32) horizOffN;\n\tunsigned int(32) horizOffD;\n\n\n\tunsigned int(32) vertOffN;\n\tunsigned int(32) vertOffD;\n\n}"
     }
   ]
 }
