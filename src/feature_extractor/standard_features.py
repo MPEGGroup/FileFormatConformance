@@ -337,9 +337,6 @@ def update():
 
         cnt_before = len(data["entries"])
         cnt_after = _update_boxes(data["entries"], codeparagraphs, mp4ra_entries)
-        print(f"New entries count: {cnt_after - cnt_before}")
-        with open(args.input, "w") as json_file:
-            json.dump(data, json_file, indent=2)
     elif "codecs.json" in args.input:
         # get associated type from MP4RA
         tmp_path = os.path.join(MP4RA_PATH, "CSV", "sample-entries.csv")
@@ -347,9 +344,6 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "sample-entries")
         cnt_before = len(data["entries"])
         cnt_after = _update_codecs(data["entries"], codeparagraphs, mp4ra_entries)
-        print(f"New entries count: {cnt_after - cnt_before}")
-        with open(args.input, "w") as json_file:
-            json.dump(data, json_file, indent=2)
     elif "entity_groups.json" in args.input:
         # get associated type from MP4RA
         tmp_path = os.path.join(MP4RA_PATH, "CSV", "entity-groups.csv")
@@ -357,9 +351,6 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "entity-groups")
         cnt_before = len(data["entries"])
         cnt_after = _update_entitygroups(data["entries"], codeparagraphs, mp4ra_entries)
-        print(f"New entries count: {cnt_after - cnt_before}")
-        with open(args.input, "w") as json_file:
-            json.dump(data, json_file, indent=2)
     elif "sample_groups.json" in args.input:
         # get associated type from MP4RA
         tmp_path = os.path.join(MP4RA_PATH, "CSV", "entity-groups.csv")
@@ -367,9 +358,11 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "sample-groups")
         cnt_before = len(data["entries"])
         cnt_after = _update_samplegroups(data["entries"], codeparagraphs, mp4ra_entries)
-        print(f"New entries count: {cnt_after - cnt_before}")
-        with open(args.input, "w") as json_file:
-            json.dump(data, json_file, indent=2)
     else:
         head, tail = os.path.split(args.input)
         print(f"No support for {tail} yet implemented.")
+
+    print(f"New entries count: {cnt_after - cnt_before}")
+    if (cnt_after - cnt_before) > 0:
+        with open(args.input, "w") as json_file:
+            json.dump(data, json_file, indent=2)
