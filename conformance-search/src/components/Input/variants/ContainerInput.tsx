@@ -99,7 +99,7 @@ export default function ContainerInput({
     // Focus the input when the parsed value changes
     const inputRef = useRef<HTMLInputElement>(null);
     useEffect(() => {
-        inputRef.current?.focus();
+        if (parsed.length > 0) inputRef.current?.focus();
     }, [parsed]);
 
     // Dropdown menu
@@ -177,7 +177,7 @@ export default function ContainerInput({
                     autoCapitalize="off"
                     autoComplete="off"
                     autoCorrect="off"
-                    className="w-fit focus:outline-none xs:w-full"
+                    className="w-fit bg-transparent focus:outline-none xs:w-full"
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                         setQuery((e.target as HTMLInputElement).value);
                         setOpen(true);
