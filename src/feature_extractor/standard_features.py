@@ -38,10 +38,12 @@ def get_4CC_and_class(boxsyntax):
     class_name = None
     four_cc = None
 
+    # Search for 'class NAME[ ]*()[ ]* extends ANY_TYPE'
     class_name_match = re.search(
-        r"class ([a-zA-Z0-9_]+) extends (Box|FullBox)", boxsyntax
+        r"class ([a-zA-Z0-9_]+)\s*\(\s*\)? extends ([a-zA-Z0-9_]+)", boxsyntax
     )
-    four_cc_match = re.search(r"(Box|FullBox)\('([^']+)'", boxsyntax)
+    # Search for "ANY_TYPE[ ]*('4CC')"
+    four_cc_match = re.search(r"([a-zA-Z0-9_]+)\s*\('([^']+)'", boxsyntax)
 
     if class_name_match:
         class_name = class_name_match.group(1)
@@ -55,6 +57,7 @@ def _update_boxes(entries, paragraphs, mp4ra_entries):
     boxes = []
     fullboxes = []
 
+    # filter out boxes / fullboxes
     for paragraph in paragraphs:
         matches = re.findall(
             r"(class [a-zA-Z0-9_]+ extends Box\([^)]*\)\s*{[^}]*})", paragraph
@@ -81,7 +84,6 @@ def _update_boxes(entries, paragraphs, mp4ra_entries):
         print(f"{fourcc}: {classname}")
     print(11 * "----")
 
-    # print(entries)
     # now see if we actually found something new
     for boxsyntax in boxes:
         classname, fourcc = get_4CC_and_class(boxsyntax)
@@ -133,6 +135,50 @@ def _update_boxes(entries, paragraphs, mp4ra_entries):
         }
         print(f"add new entry: {fourcc}")
         entries.append(newentry)
+    return len(entries)
+
+
+def _update_codecs(entries, paragraphs, mp4ra_entries):
+    filtered = []
+    for paragraph in paragraphs:
+        # Search for 'extends SOME_TEXTSampleEntry'
+        match = re.search(r"extends\s+(\w+SampleEntry)", paragraph)
+        if match:
+            filtered.append(paragraph)
+
+    # let the user know what we found.
+    print(f"Found {len(filtered)} Codecs")
+    for codec in filtered:
+        classname, fourcc = get_4CC_and_class(codec)
+        print(f"{fourcc}: {classname}")
+    print(11 * "----")
+
+    # now see if we actually found something new
+    for syntax in filtered:
+        classname, fourcc = get_4CC_and_class(syntax)
+        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        if len(foundentries) == 1:
+            # TODO: add parenttype FooSampleEntry
+            # entry = foundentries[0]
+            # if entry["type"] != classname:
+            #     print(f'Classname/Type mismatch {fourcc}. {classname}/{entry["type"]}')
+            continue
+        description = ""
+        ra_entries = [
+            ra_entry for ra_entry in mp4ra_entries if ra_entry["fourcc"] == fourcc
+        ]
+        if len(ra_entries) == 1:
+            description = ra_entries[0]["description"]
+        newentry = {
+            "fourcc": fourcc,
+            "description": description,
+            "containers": ["stsd"],
+            "type": classname,
+            "syntax": syntax,
+        }
+        print(f"add new entry: {fourcc}")
+        entries.append(newentry)
+
     return len(entries)
 
 
@@ -194,6 +240,16 @@ def update():
 
         cnt_before = len(data["entries"])
         cnt_after = _update_boxes(data["entries"], codeparagraphs, mp4ra_entries)
+        print(f"New entries count: {cnt_after - cnt_before}")
+        with open(args.input, "w") as json_file:
+            json.dump(data, json_file, indent=2)
+    elif "codecs.json" in args.input:
+        # get associated type from MP4RA
+        tmp_path = os.path.join(MP4RA_PATH, "CSV", "sample-entries.csv")
+        with open(tmp_path, "r") as f:
+            mp4ra_entries = get_mp4ra_entries(f, "sample-entries")
+        cnt_before = len(data["entries"])
+        cnt_after = _update_codecs(data["entries"], codeparagraphs, mp4ra_entries)
         print(f"New entries count: {cnt_after - cnt_before}")
         with open(args.input, "w") as json_file:
             json.dump(data, json_file, indent=2)
