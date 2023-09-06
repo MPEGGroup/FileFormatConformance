@@ -1,3 +1,4 @@
+from __future__ import annotations
 import re
 import os
 import json
@@ -25,10 +26,14 @@ class Box:
     flags: list = None
     containers: list = field(default_factory=list)
     syntax: str = None
-    incomplete: bool = False
+    defective: bool = False
+    ref: Box = None
 
     def __hash__(self):
         return hash(f"{self.fourcc}:{self.type}")
+
+    def __eq__(self, other):
+        return hash(self) == hash(other)
 
     def serialize(self):
         return {
@@ -89,7 +94,7 @@ def get_all_boxes(json_file):
             BOXES[_spec] = _boxes
 
 
-def search_box(fourcc, type=None):
+def search_box(fourcc, type=None, ref=None):
     for value in BOXES.values():
         for _box in value:
             if type is not None:
@@ -101,7 +106,8 @@ def search_box(fourcc, type=None):
 
     return Box(
         fourcc=fourcc,
-        incomplete=True,
+        defective=True,
+        ref=ref,
     )
 
 
@@ -112,14 +118,14 @@ def update_container(_spec, _box):
             if len(container) != 4:
                 container_boxes.append({"type": container})
             else:
-                container_boxes.append(search_box(container))
+                container_boxes.append(search_box(container, ref=_box))
         elif isinstance(container, dict):
             for key, value in container.items():
                 if not isinstance(value, list):
                     raise Exception("Unknown container type, found no list as value")
                 for fourcc in value:
-                    container_box = search_box(fourcc, key)
-                    if container_box.incomplete:
+                    container_box = search_box(fourcc, key, ref=_box)
+                    if container_box.defective:
                         container_box.type = key
                     container_boxes.append(container_box)
         else:
@@ -136,7 +142,7 @@ def update_container(_spec, _box):
                 _box.containers.append({"fourcc": "*", "type": inheritor})
 
     for container_box in [_box for _box in container_boxes if isinstance(_box, Box)]:
-        if container_box.incomplete:
+        if container_box.defective:
             if _spec not in EXTENSIONS:
                 EXTENSIONS[_spec] = set()
             EXTENSIONS[_spec].add(container_box)
@@ -183,15 +189,19 @@ def main():
             BOXES[spec] = set()
         BOXES[spec] = BOXES[spec].union(extensions)
 
-    # List incomplete boxes
+    # List defective boxes
     buffer = []
     for boxes in BOXES.values():
         for _box in boxes:
-            if _box.incomplete and _box.fourcc != "file":
-                buffer.append(f"{_box.fourcc} ({_box.type})")
+            if _box.defective and _box.fourcc != "file":
+                ref = f"{_box.ref.fourcc} ({_box.ref.type})"
+                defective = f"{_box.fourcc} ({_box.type})"
+                buffer.append(f"{defective} < {ref}")
 
     if len(buffer) > 0:
-        logger.error(f"Incomplete boxes ({len(set(buffer))}): {set(sorted(buffer))}")
+        logger.error(
+            f"Defective containers found ({len(set(buffer))}): {set(sorted(buffer))}"
+        )
 
     # Add spec to box and merge all
     for spec, boxes in BOXES.items():
@@ -206,7 +216,7 @@ def main():
     # if a container has {"type": something} that isnt found in any boxes's type then its unknown
     buffer = []
     for _box in all_boxes:
-        if _box.incomplete:
+        if _box.defective:
             continue
         for container in _box.containers:
             if isinstance(container, dict):
@@ -232,7 +242,7 @@ def main():
     # List unknown boxes
     buffer = []
     for _box in all_boxes:
-        if _box.incomplete:
+        if _box.defective:
             continue
         for container in _box.containers:
             if isinstance(container, dict):
@@ -264,7 +274,7 @@ def main():
     # Show boxes with empty type
     buffer = []
     for _box in all_boxes:
-        if _box.incomplete:
+        if _box.defective:
             continue
         if _box.type == "":
             buffer.append(f"{_box.fourcc} ({_box.type})")
@@ -277,7 +287,7 @@ def main():
     # Show boxes with empty fourcc
     buffer = []
     for _box in all_boxes:
-        if _box.incomplete:
+        if _box.defective:
             continue
         if _box.fourcc == "":
             buffer.append(f"{_box.fourcc} ({_box.type})")
