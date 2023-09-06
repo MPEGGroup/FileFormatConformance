@@ -295,6 +295,11 @@ def update():
         action="store_true",
         help="Use all paragraphs and not only those which are formatted with code",
     )
+    parser.add_argument(
+        "--dryrun",
+        action="store_true",
+        help="Don't modify json files, just show what was found.",
+    )
     args = parser.parse_args()
 
     # get/update MP4RA
@@ -363,6 +368,6 @@ def update():
         print(f"No support for {tail} yet implemented.")
 
     print(f"New entries count: {cnt_after - cnt_before}")
-    if (cnt_after - cnt_before) > 0:
+    if (cnt_after - cnt_before) > 0 and args.dryrun is False:
         with open(args.input, "w") as json_file:
             json.dump(data, json_file, indent=2)
