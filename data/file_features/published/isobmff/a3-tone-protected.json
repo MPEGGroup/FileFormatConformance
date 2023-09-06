@@ -5,16 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": ["./a3c-prot-keys.txt"],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "video track",
-    "audio track",
-    "sync table",
-    "Protected streams (basic)",
-    "IOD box"
-  ],
+  "features": ["video track", "audio track", "Protected basic", "IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a3-tone-protected.mp4",

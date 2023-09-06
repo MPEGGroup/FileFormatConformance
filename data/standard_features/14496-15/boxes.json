@@ -278,7 +278,10 @@
           "AVC2SampleEntry": ["avc2", "avc4"]
         },
         {
-          "VisualSampleEntry": ["encv", "avcp"]
+          "VisualSampleEntry": ["encv"]
+        },
+        {
+          "AVCParameterSampleEntry": ["avcp"]
         }
       ],
       "type": "Box",
@@ -342,6 +345,267 @@
       ],
       "type": "Box",
       "syntax": "class LHEVCConfigurationBox extends Box('lhvC') {\n\tLHEVCDecoderConfigurationRecord() LHEVCConfig;\n}"
+    },
+    {
+      "fourcc": "m4ds",
+      "description": "MPEG-4 descriptors",
+      "containers": [
+        {
+          "AVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2SampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "SVCSampleEntry": ["svc1", "svc2"]
+        },
+        {
+          "MVCSampleEntry": ["mvc1", "mvc2", "mvc3", "mvc4"]
+        },
+        {
+          "MVCDSampleEntry": ["mvd1", "mvd2", "mvd3", "mvd4"]
+        },
+        {
+          "A3DSampleEntry": ["a3d1", "a3d2", "a3d3", "a3d4"]
+        },
+        {
+          "HEVCSampleEntry": ["hvc1", "hev1"]
+        },
+        {
+          "LHEVCSampleEntry": ["lhv1", "lhe1"]
+        },
+        {
+          "VvcSampleEntry": ["vvc1", "vvi1"]
+        },
+        {
+          "EVCSampleEntry": ["evc1"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class MPEG4ExtensionDescriptorsBox extends Box('m4ds') {\n\tDescriptor Descr[0 .. 255];\n}"
+    },
+    {
+      "fourcc": "svcC",
+      "description": "SVC configuration",
+      "containers": [
+        {
+          "AVCSVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2SVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "SVCSampleEntry": ["svc1", "svc2"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class SVCConfigurationBox extends Box('svcC') {\n\tSVCDecoderConfigurationRecord() SVCConfig;\n}"
+    },
+    {
+      "fourcc": "seib",
+      "description": "Scalability information",
+      "containers": [
+        {
+          "AVCSVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2SVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "SVCSampleEntry": ["svc1", "svc2"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class ScalabilityInformationSEIBox extends Box('seib', size)\n{\n\tunsigned int(8*size-64)\tscalinfosei; \n}"
+    },
+    {
+      "fourcc": "svcP",
+      "description": "SVC priority assignments",
+      "containers": [
+        {
+          "AVCSVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2SVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "SVCSampleEntry": ["svc1", "svc2"]
+        },
+        {
+          "SVCMetadataSampleEntry": ["svcM"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class SVCPriorityAssignmentBox extends Box('svcP')\n{\n\tunsigned int(8)\tmethod_count;\n\tstring PriorityAssignmentURI[method_count]; \n}"
+    },
+    {
+      "fourcc": "vsib",
+      "description": "View scalability information",
+      "containers": [
+        {
+          "AVCMVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2MVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "MVCSampleEntry": ["mvc1", "mvc2", "mvc3", "mvc4"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class ViewScalabilityInformationSEIBox extends Box('vsib', size)\n{\n\tunsigned int(8*size-64)\tmvcscalinfosei; \n}"
+    },
+    {
+      "fourcc": "3sib",
+      "description": "MVD Scalability Information SEI Message Box",
+      "containers": [
+        {
+          "AVCMVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2MVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "MVCSampleEntry": ["mvc1", "mvc2", "mvc3", "mvc4"]
+        },
+        {
+          "MVCDSampleEntry": ["mvd1", "mvd2", "mvd3", "mvd4"]
+        },
+        {
+          "A3DSampleEntry": ["a3d1", "a3d2", "a3d3", "a3d4"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class MVDScalabilityInformationSEIBox extends Box('3sib', size)\n{\n\tunsigned int(8*size-64)\tmvdscalinfosei;\n}"
+    },
+    {
+      "fourcc": "mvcP",
+      "description": "MVC priority assignment",
+      "containers": [
+        {
+          "AVCMVCSampleEntry": ["avc1", "avc3"]
+        },
+        {
+          "AVC2MVCSampleEntry": ["avc2", "avc4"]
+        },
+        {
+          "MVCSampleEntry": ["mvc1", "mvc2", "mvc3", "mvc4"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class MVCViewPriorityAssignmentBox extends Box('mvcP')\n{\n\tunsigned int(8)\tmethod_count;\n\tstring PriorityAssignmentURI[method_count]; \n}"
+    },
+    {
+      "fourcc": "hvtC",
+      "description": "HEVC Tile Configuration",
+      "containers": [
+        {
+          "HEVCTileSampleEntry": ["hvt1"]
+        },
+        {
+          "HEVCTileSSHInfoSampleEntry": ["hvt3"]
+        },
+        {
+          "HEVCSliceSegmentDataSampleEntry": ["hvt2"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class HEVCTileConfigurationBox extends Box('hvtC') {\n\tHEVCTileTierLevelConfigurationRecord() HEVCTileTierLevelConfig;\n}"
+    },
+    {
+      "fourcc": "evcC",
+      "description": "EVC configuration",
+      "containers": [
+        {
+          "EVCSampleEntry": ["evc1"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class EVCConfigurationBox extends Box('evcC') {\n\tEVCDecoderConfigurationRecord() EVCConfig;\n}"
+    },
+    {
+      "fourcc": "svop",
+      "description": "SVC dependency range",
+      "containers": ["sgpd"],
+      "type": "Box",
+      "syntax": "class SVCDependencyRangeBox extends Box('svop') {\n\tunsigned int(3) min_dependency_id;\n\tunsigned int(3) min_temporal_id;\n\tbit(6) reserved = 0;\n\tunsigned int(4) min_quality_id;\n\tunsigned int(3) max_dependency_id;\n\tunsigned int(3) max_temporal_id;\n\tbit(6) reserved = 0;\n\tunsigned int(4) max_quality_id;\n}"
+    },
+    {
+      "fourcc": "qlif",
+      "description": "Layer quality assignments",
+      "containers": [
+        {
+          "SVCMetadataSampleEntry": ["svcM"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class SVCPriorityLayerInfoBox extends Box('qlif'){\n\tunsigned int(8) pr_layer_num;\n\tfor(j=0; j< pr_layer_num; j++){\n\t\tunsigned int(8) pr_layer;\n\t\tunsigned int(24) profile_level_idc;\n\t\tunsigned int(32) max_bitrate;\n\t\tunsigned int(32) avg_bitrate;\n\t}"
+    },
+    {
+      "fourcc": "vvcC",
+      "description": "VVC video configuration",
+      "versions": [0],
+      "flags": [],
+      "containers": [
+        {
+          "VvcSampleEntry": ["vvc1", "vvi1"]
+        }
+      ],
+      "type": "FullBox",
+      "syntax": "class VvcConfigurationBox extends FullBox('vvcC',version=0,flags) {\n\tVvcDecoderConfigurationRecord() VvcConfig;\n}"
+    },
+    {
+      "fourcc": "vvnC",
+      "description": "VVC Network Abstraction Layer unit configuration",
+      "versions": [0],
+      "flags": [],
+      "containers": [
+        {
+          "VvcSubpicSampleEntry": ["vvs1"]
+        },
+        {
+          "VvcNonVCLSampleEntry": ["vvcN"]
+        }
+      ],
+      "type": "FullBox",
+      "syntax": "class VvcNALUConfigBox extends FullBox('vvnC',version=0,flags) {\n\tunsigned int(6) reserved=0;\n\tunsigned int(2) LengthSizeMinusOne;\n}"
+    },
+    {
+      "fourcc": "dhec",
+      "description": "Default HEVC extractor constructor box",
+      "versions": [0],
+      "flags": [],
+      "containers": [
+        {
+          "HEVCSampleEntry": ["hvc3", "hev3"]
+        }
+      ],
+      "type": "FullBox",
+      "syntax": "class DefaultHevcExtractorConstructorBox extends FullBox('dhec'){\n\tunsigned int(32) num_entries;\n\tfor (i=1; i<= num_entries; i++) { \n\t\tunsigned int(8) constructor_type;\n\t\tunsigned int(8) flags; \n\t\tif( constructor_type == 0 ) \n\t\t\tSampleConstructor();\n\t\telse if( constructor_type == 2 ) \n\t\t\tInlineConstructor();\n\t\telse if( constructor_type == 3 ) \n\t\t\tSampleConstructorFromTrackGroup();\n\t\telse if( constructor_type == 6 ) \n\t\t\tNALUStartInlineConstructor ();\n\t}"
+    },
+    {
+      "fourcc": "svmC",
+      "description": "SVC information configuration",
+      "versions": [0],
+      "flags": [],
+      "containers": [
+        {
+          "SVCMetadataSampleEntry": ["svcM"]
+        }
+      ],
+      "type": "FullBox",
+      "syntax": "class SVCMetadataSampleConfigBox extends FullBox('svmC')\n{\n\tint i;\t\t// local variable, not a field\n\tunsigned int(8) sample_statement_type;\t/* normally group, or seq */\n\tunsigned int(8) default_statement_type;\n\tunsigned int(8) default_statement_length;\n\tunsigned int(8) entry_count;\n\tfor (i=1; i<=entry_count; i++) {\n\t\tunsigned int(8) statement_type;\t// from the user extension ranges\n\t\tstring statement_namespace;\n\t}"
+    },
+    {
+      "fourcc": "evsC",
+      "description": "Configuration for EVC slice component track",
+      "containers": [
+        {
+          "EVCSliceComponentTrackSampleEntry": ["evs1", "evs2"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class EVCSliceComponentTrackConfigurationBox extends Box('evsC') {\n\tEVCSliceComponentTrackConfigurationRecord() config;\n}"
     }
   ]
 }

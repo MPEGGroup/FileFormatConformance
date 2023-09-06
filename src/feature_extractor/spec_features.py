@@ -104,7 +104,7 @@ def extract_spec_features_mp4ra():
     # get/update MP4RA source
     if not os.path.exists(MP4RA_PATH):
         print(f"clone MP4RA repo {MP4RA_URL} to {MP4RA_PATH}")
-        Repo.clone_from(MP4RA_URL, MP4RA_PATH, branch="dev")
+        Repo.clone_from(MP4RA_URL, MP4RA_PATH, branch="main")
     else:
         print(f"pull MP4RA in {MP4RA_PATH}")
         repo = Repo(MP4RA_PATH)

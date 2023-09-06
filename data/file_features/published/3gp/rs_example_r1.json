@@ -6,20 +6,10 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "normal' order (moov-mdat)",
-    "track enabled bit",
     "video track",
     "audio track",
-    "track selection box",
-    "sync table",
-    "sample groups",
-    "rate share group",
     "Interleaved data",
-    "mp4a sample entry",
-    "avc1 sample entry"
+    "mp4a sample entry"
   ],
   "notes": "",
   "license": "",

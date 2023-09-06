@@ -5,20 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "64-bit length",
-    "FTYP box",
-    "Free/skip",
-    "Movie box",
-    "normal' order (moov-mdat)",
-    "track enabled bit",
-    "video track",
-    "64-bit chunks",
-    "ctts offsets",
-    "sync table",
-    "Copyright box"
-  ],
+  "features": ["64bit length", "video track", "64bit chunks"],
   "notes": {
     "compressed": true
   },

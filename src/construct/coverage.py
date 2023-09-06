@@ -57,8 +57,6 @@ def main():
             "count": "Total number of features",
             "published_features": "Number of features that has published files",
             "under_consideration_features": "Number of features that exclusively has under consideration files",
-            "features_from_spec": "Number of features that are from the spec",
-            "features_from_file": "Number of features that are added from files because they were not found in the spec",
         },
         "files": {
             "count": "Number of files that were submitted",
@@ -214,12 +212,6 @@ def main():
                 if len(f["files"]) > 0
                 and all(["under_consideration" in p for p in f["files"]])
             ]
-        ),
-        "features_from_spec": len(
-            [f for f in files["feature_file_map"].values() if f["source"] == "spec"]
-        ),
-        "features_from_file": len(
-            [f for f in files["feature_file_map"].values() if f["source"] == "file"]
         ),
     }
 

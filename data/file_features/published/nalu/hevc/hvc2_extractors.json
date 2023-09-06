@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "hvc1 sample entry",
-    "hvc2 sample entry",
-    "Extractors"
-  ],
+  "features": ["video track", "Extractors"],
   "notes": "",
   "license": "",
   "rel_filepath": "./hvc2_extractors.mp4",

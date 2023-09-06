@@ -5,17 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "edit list",
-    "audio track",
-    "sync table",
-    "sample groups",
-    "pre-roll group",
-    "IOD box"
-  ],
+  "features": ["audio track", "IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a9-aac-samplegroups-edit.mp4",

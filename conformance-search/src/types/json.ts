@@ -1,14 +1,21 @@
 export type Coverage = {
+    not_found: {
+        count: number;
+        percentage: number;
+        boxes: string[];
+        missing_extensions: string[];
+        paths: string[];
+    };
     lists: {
         boxes: {
-            covered: Array<string>;
-            not_covered: Array<string>;
-            under_consideration: Array<string>;
+            covered: string[];
+            not_covered: string[];
+            under_consideration: string[];
         };
         features: {
-            covered: Array<string>;
-            not_covered: Array<string>;
-            under_consideration: Array<string>;
+            covered: string[];
+            not_covered: string[];
+            under_consideration: string[];
         };
     };
     path_file_map: {
@@ -28,8 +35,6 @@ export type Coverage = {
         count: number;
         published_features: number;
         under_consideration_features: number;
-        features_from_spec: number;
-        features_from_file: number;
     };
     files: {
         count: number;
@@ -39,15 +44,16 @@ export type Coverage = {
     boxes: {
         count: number;
     };
-    spec_info: Array<{
+    spec_info: {
         ISO: string;
         name: string;
         version: number;
         date: number;
+        mp4ra_reference: string[];
         link: string;
-        amendmends?: Array<string>;
-        corrigenda?: Array<string>;
-    }>;
+        amendmends?: string[];
+        corrigenda?: string[];
+    }[];
 };
 
 export type FileMetadata = {
@@ -65,8 +71,8 @@ export type FileMetadata = {
     conforms_to: {
         ISO: string;
         version: number;
-        amendmends?: Array<string>;
-        corrigenda?: Array<string>;
+        amendmends?: string[];
+        corrigenda?: string[];
     }[];
     notes:
         | string
@@ -79,7 +85,6 @@ export type FeatureFileMap = {
     key: string;
     description: string;
     spec: string;
-    added_from_file: "spec" | "file";
     files: string[];
 };
 

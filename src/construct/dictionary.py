@@ -22,9 +22,6 @@ def main():
 
     # In case we missed some specs
     for feature in files["feature_file_map"].values():
-        # FIXME: This shouldn't be necessary
-        if feature["spec"] == "N/A":
-            continue
         specs.add(feature["spec"])
 
     # Sort the sets

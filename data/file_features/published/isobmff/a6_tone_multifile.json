@@ -5,15 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": ["./myData.dat"],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "video track",
-    "audio track",
-    "data ref to other file",
-    "sync table"
-  ],
+  "features": ["video track", "audio track", "data reference to other file"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a6_tone_multifile.mp4",

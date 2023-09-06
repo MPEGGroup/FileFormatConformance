@@ -6,12 +6,8 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
     "video track",
     "audio track",
-    "sync table",
     "Interleaved data",
     "IOD box",
     "mp4a sample entry",

@@ -5,14 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "file-level",
-    "item naming etc.",
-    "FD hint tracks"
-  ],
+  "features": ["item naming etc.", "FD hint tracks"],
   "notes": "",
   "license": "",
   "rel_filepath": "./compact-no-code-fec-1.iso3",

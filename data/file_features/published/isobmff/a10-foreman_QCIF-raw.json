@@ -5,14 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Movie box",
-    "normal' order (moov-mdat)",
-    "video track",
-    "unknown codec type"
-  ],
+  "features": ["video track", "unknown codec type"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a10-foreman_QCIF-raw.mp4",

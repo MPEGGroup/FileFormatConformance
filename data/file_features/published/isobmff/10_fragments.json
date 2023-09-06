@@ -6,19 +6,10 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "Ordinary box",
-    "FTYP box",
-    "Free/skip",
-    "Movie box",
-    "normal' order (moov-mdat)",
-    "track enabled bit",
     "video track",
     "audio track",
-    "Copyright box",
     "Interleaved data",
-    "Two or more mdats",
-    "Movie fragment box",
-    "mov. Ext header"
+    "multiple mdats"
   ],
   "notes": "",
   "license": "",
