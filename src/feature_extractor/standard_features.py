@@ -38,15 +38,12 @@ def get_4CC_and_class(boxsyntax):
     class_name = None
     four_cc = None
 
-    # Search for 'class NAME[ ]*()[ ]* extends ANY_TYPE'
-    class_name_match = re.search(
-        r"class ([a-zA-Z0-9_]+)\s*\(\s*\)? extends ([a-zA-Z0-9_]+)", boxsyntax
-    )
+    class_name_match = re.search(r"class ([a-zA-Z0-9_]+)", boxsyntax)
     # Search for "ANY_TYPE[ ]*('4CC')"
     four_cc_match = re.search(r"([a-zA-Z0-9_]+)\s*\('([^']+)'", boxsyntax)
 
     if class_name_match:
-        class_name = class_name_match.group(1)
+        class_name = class_name_match.group(1).strip().replace("(", "").replace(")", "")
     if four_cc_match:
         four_cc = four_cc_match.group(2)
 
@@ -129,6 +126,8 @@ def _update_boxes(entries, paragraphs, mp4ra_entries):
         newentry = {
             "fourcc": fourcc,
             "description": description,
+            "versions": [0],
+            "flags": [],
             "containers": [],
             "type": "Box",
             "syntax": boxsyntax,
@@ -178,6 +177,54 @@ def _update_codecs(entries, paragraphs, mp4ra_entries):
             "fourcc": fourcc,
             "description": description,
             "containers": ["stsd"],
+            "type": classname,
+            "syntax": syntax,
+        }
+        print(f"add new entry: {fourcc}")
+        entries.append(newentry)
+
+    return len(entries)
+
+
+def _update_entitygroups(entries, paragraphs, mp4ra_entries):
+    filtered = []
+    for paragraph in paragraphs:
+        # Search for 'extends SOME_TEXTEntityToGroupBox'
+        # print(paragraph)
+        match = re.search(r"extends\s+(EntityToGroupBox)", paragraph)
+        if match:
+            filtered.append(paragraph)
+
+    # let the user know what we found.
+    print(f"Found {len(filtered)} EntityToGroupBox'es")
+    for entry in filtered:
+        classname, fourcc = get_4CC_and_class(entry)
+        print(f"{fourcc}: {classname}")
+    print(11 * "----")
+
+    # now see if we actually found something new
+    for syntax in filtered:
+        classname, fourcc = get_4CC_and_class(syntax)
+        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        assert len(foundentries) <= 1, f"More than 1 entries fround for {fourcc}"
+        if len(foundentries) == 1:
+            # TODO: change type based on classname add parenttype FooSampleEntry
+            # entry = foundentries[0]
+            # if entry["type"] != classname:
+            #     print(f'Classname/Type mismatch {fourcc}. {classname}/{entry["type"]}')
+            continue
+        description = ""
+        ra_entries = [
+            ra_entry for ra_entry in mp4ra_entries if ra_entry["fourcc"] == fourcc
+        ]
+        if len(ra_entries) == 1:
+            description = ra_entries[0]["description"]
+        newentry = {
+            "fourcc": fourcc,
+            "description": description,
+            "versions": [0],
+            "flags": [],
+            "containers": ["grpl"],
             "type": classname,
             "syntax": syntax,
         }
@@ -255,6 +302,16 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "sample-entries")
         cnt_before = len(data["entries"])
         cnt_after = _update_codecs(data["entries"], codeparagraphs, mp4ra_entries)
+        print(f"New entries count: {cnt_after - cnt_before}")
+        with open(args.input, "w") as json_file:
+            json.dump(data, json_file, indent=2)
+    elif "entity_groups.json" in args.input:
+        # get associated type from MP4RA
+        tmp_path = os.path.join(MP4RA_PATH, "CSV", "entity-groups.csv")
+        with open(tmp_path, "r") as f:
+            mp4ra_entries = get_mp4ra_entries(f, "entity-groups")
+        cnt_before = len(data["entries"])
+        cnt_after = _update_entitygroups(data["entries"], codeparagraphs, mp4ra_entries)
         print(f"New entries count: {cnt_after - cnt_before}")
         with open(args.input, "w") as json_file:
             json.dump(data, json_file, indent=2)
