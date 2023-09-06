@@ -156,7 +156,12 @@ def _update_codecs(entries, paragraphs, mp4ra_entries):
     # now see if we actually found something new
     for syntax in filtered:
         classname, fourcc = get_4CC_and_class(syntax)
-        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        foundentries = [
+            entry
+            for entry in entries
+            if entry["fourcc"] == fourcc and entry["type"] == classname
+        ]
+        assert len(foundentries) <= 1, f"More than 1 entries fround for {fourcc}"
         if len(foundentries) == 1:
             # TODO: add parenttype FooSampleEntry
             # entry = foundentries[0]
