@@ -358,6 +358,20 @@
       "containers": ["stsd"],
       "type": "SVCMetadataSampleEntry",
       "syntax": "class SVCMetadataSampleEntry () extends MetadataSampleEntry('svcM')\n{\n\tSVCMetadataSampleConfigBox\tconfig;\n\tSVCPriorityAssignmentBox\tmethods;\t\t// optional\n\tSVCPriorityLayerInfoBox\t\tpriorities;\t// optional\n}"
+    },
+    {
+      "fourcc": "evs1",
+      "description": "Essential Video Coding slice component track without parameter sets",
+      "containers": ["stsd"],
+      "type": "EVCSliceComponentTrackSampleEntry",
+      "syntax": "class EVCSliceComponentTrackSampleEntry() \n      extends VisualSampleEntry ('evs1' or 'evs2'){\n\tEVCSliceComponentTrackConfigurationBox\tconfig;\n}"
+    },
+    {
+      "fourcc": "evs2",
+      "description": "Essential Video Coding slice component track without parameter sets",
+      "containers": ["stsd"],
+      "type": "EVCSliceComponentTrackSampleEntry",
+      "syntax": "class EVCSliceComponentTrackSampleEntry() \n      extends VisualSampleEntry ('evs1' or 'evs2'){\n\tEVCSliceComponentTrackConfigurationBox\tconfig;\n}"
     }
   ]
 }
