@@ -544,17 +544,21 @@
     {
       "fourcc": "vvcC",
       "description": "VVC video configuration",
+      "versions": [0],
+      "flags": [],
       "containers": [
         {
           "VvcSampleEntry": ["vvc1", "vvi1"]
         }
       ],
-      "type": "Box",
+      "type": "FullBox",
       "syntax": "class VvcConfigurationBox extends FullBox('vvcC',version=0,flags) {\n\tVvcDecoderConfigurationRecord() VvcConfig;\n}"
     },
     {
       "fourcc": "vvnC",
       "description": "VVC Network Abstraction Layer unit configuration",
+      "versions": [0],
+      "flags": [],
       "containers": [
         {
           "VvcSubpicSampleEntry": ["vvs1"]
@@ -563,29 +567,33 @@
           "VvcNonVCLSampleEntry": ["vvcN"]
         }
       ],
-      "type": "Box",
+      "type": "FullBox",
       "syntax": "class VvcNALUConfigBox extends FullBox('vvnC',version=0,flags) {\n\tunsigned int(6) reserved=0;\n\tunsigned int(2) LengthSizeMinusOne;\n}"
     },
     {
       "fourcc": "dhec",
       "description": "Default HEVC extractor constructor box",
+      "versions": [0],
+      "flags": [],
       "containers": [
         {
           "HEVCSampleEntry": ["hvc3", "hev3"]
         }
       ],
-      "type": "Box",
+      "type": "FullBox",
       "syntax": "class DefaultHevcExtractorConstructorBox extends FullBox('dhec'){\n\tunsigned int(32) num_entries;\n\tfor (i=1; i<= num_entries; i++) { \n\t\tunsigned int(8) constructor_type;\n\t\tunsigned int(8) flags; \n\t\tif( constructor_type == 0 ) \n\t\t\tSampleConstructor();\n\t\telse if( constructor_type == 2 ) \n\t\t\tInlineConstructor();\n\t\telse if( constructor_type == 3 ) \n\t\t\tSampleConstructorFromTrackGroup();\n\t\telse if( constructor_type == 6 ) \n\t\t\tNALUStartInlineConstructor ();\n\t}"
     },
     {
       "fourcc": "svmC",
       "description": "SVC information configuration",
+      "versions": [0],
+      "flags": [],
       "containers": [
         {
           "SVCMetadataSampleEntry": ["svcM"]
         }
       ],
-      "type": "Box",
+      "type": "FullBox",
       "syntax": "class SVCMetadataSampleConfigBox extends FullBox('svmC')\n{\n\tint i;\t\t// local variable, not a field\n\tunsigned int(8) sample_statement_type;\t/* normally group, or seq */\n\tunsigned int(8) default_statement_type;\n\tunsigned int(8) default_statement_length;\n\tunsigned int(8) entry_count;\n\tfor (i=1; i<=entry_count; i++) {\n\t\tunsigned int(8) statement_type;\t// from the user extension ranges\n\t\tstring statement_namespace;\n\t}"
     }
   ]
