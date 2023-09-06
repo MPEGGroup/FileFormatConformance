@@ -278,7 +278,10 @@
           "AVC2SampleEntry": ["avc2", "avc4"]
         },
         {
-          "VisualSampleEntry": ["encv", "avcp"]
+          "VisualSampleEntry": ["encv"]
+        },
+        {
+          "AVCParameterSampleEntry": ["avcp"]
         }
       ],
       "type": "Box",
