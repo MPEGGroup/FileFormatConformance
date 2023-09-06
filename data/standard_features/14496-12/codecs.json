@@ -54,77 +54,77 @@
     {
       "fourcc": "metx",
       "description": "XML timed metadata",
-      "type": "MetaDataSampleEntry",
+      "type": "XMLMetaDataSampleEntry",
       "containers": ["stsd"],
       "syntax": "class XMLMetaDataSampleEntry() extends MetaDataSampleEntry ('metx') {\n\tutf8string content_encoding; // optional\n\tutf8list namespace;\n\tutf8list schema_location; // optional\n}"
     },
     {
       "fourcc": "mett",
       "description": "Text timed metadata that is not XML",
-      "type": "MetaDataSampleEntry",
+      "type": "TextMetaDataSampleEntry",
       "containers": ["stsd"],
       "syntax": "class TextMetaDataSampleEntry() extends MetaDataSampleEntry ('mett') {\n\tutf8string content_encoding; // optional\n\tutf8string mime_format;\n\tTextConfigBox (); // optional\n}"
     },
     {
       "fourcc": "urim",
       "description": "Binary timed metadata identified by URI",
-      "type": "MetaDataSampleEntry",
+      "type": "URIMetaSampleEntry",
       "containers": ["stsd"],
       "syntax": "class URIMetaSampleEntry() extends MetaDataSampleEntry ('urim') {\n\tURIbox\t\t\tthe_label;\n\tURIInitBox\t\tinit;\t\t// optional\n}"
     },
     {
       "fourcc": "mebx",
       "description": "Timed metadata multiplex",
-      "type": "MetaDataSampleEntry",
+      "type": "BoxedMetadataSampleEntry",
       "containers": ["stsd"],
       "syntax": "aligned(8) class BoxedMetadataSampleEntry \n\textends MetadataSampleEntry ('mebx') {\n\tMetadataKeyTableBox();\t\t\t\t// mandatory\n\tBitRateBox ();\t\t\t\t\t\t\t// optional\n}"
     },
     {
       "fourcc": "fdp ",
       "description": "File delivery hints",
-      "type": "HintSampleEntry",
+      "type": "FDHintSampleEntry",
       "containers": ["stsd"],
       "syntax": "class FDHintSampleEntry() extends HintSampleEntry ('fdp ') {\n\tunsigned int(16)\thinttrackversion = 1;\n\tunsigned int(16)\thighestcompatibleversion = 1;\n\tunsigned int(16)\tpartition_entry_ID;\n\tunsigned int(16)\tFEC_overhead;\n}"
     },
     {
       "fourcc": "icpv",
       "description": "Incomplete video",
-      "type": "VisualSampleEntry",
+      "type": "IncompleteAVCSampleEntry",
       "containers": ["stsd"],
       "syntax": "class IncompleteAVCSampleEntry() extends VisualSampleEntry ('icpv'){\n\tCompleteTrackInfoBox();\n\tAVCConfigurationBox config;\n}"
     },
     {
       "fourcc": "pm2t",
       "description": "Protected MPEG-2 Transport",
-      "type": "MPEG2TSSampleEntry",
+      "type": "ProtectedMPEG2TransportStreamSampleEntry",
       "containers": ["stsd"],
       "syntax": "class ProtectedMPEG2TransportStreamSampleEntry\n\textends MPEG2TSSampleEntry('pm2t') {\n\tProtectionSchemeInfoBox\t\tSchemeInformation;\n}"
     },
     {
       "fourcc": "prtp",
       "description": "Protected RTP Reception",
-      "type": "RtpReceptionHintSampleEntry",
+      "type": "ProtectedRtpReceptionHintSampleEntry",
       "containers": ["stsd"],
       "syntax": "Class ProtectedRtpReceptionHintSampleEntry\n\textends RtpReceptionHintSampleEntry ('prtp') {\n\tProtectionSchemeInfoBox\t\tSchemeInformation;\n}"
     },
     {
       "fourcc": "rm2t",
       "description": "MPEG-2 Transport Reception",
-      "type": "MPEG2TSSampleEntry",
+      "type": "MPEG2TSReceptionSampleEntry",
       "containers": ["stsd"],
       "syntax": "class MPEG2TSReceptionSampleEntry extends MPEG2TSSampleEntry('rm2t') {}"
     },
     {
       "fourcc": "rrtp",
       "description": "RTP reception",
-      "type": "HintSampleEntry",
+      "type": "ReceivedRtpHintSampleEntry",
       "containers": ["stsd"],
       "syntax": "class ReceivedRtpHintSampleEntry() extends HintSampleEntry ('rrtp') {\n\tuint(16)\t\thinttrackversion = 1;\n\tuint(16)\t\thighestcompatibleversion = 1;\n\tuint(32)\t\tmaxpacketsize;\n}"
     },
     {
       "fourcc": "rsrp",
       "description": "SRTP Reception",
-      "type": "HintSampleEntry",
+      "type": "ReceivedSrtpHintSampleEntry",
       "containers": ["stsd"],
       "syntax": "class ReceivedSrtpHintSampleEntry() extends HintSampleEntry ('rsrp') {\n\tuint(16)\t\thinttrackversion = 1;\n\tuint(16)\t\thighestcompatibleversion = 1;\n\tuint(32)\t\tmaxpacketsize;\n}"
     },
@@ -145,21 +145,21 @@
     {
       "fourcc": "sbtt",
       "description": "Text subtitles",
-      "type": "SubtitleSampleEntry",
+      "type": "TextSubtitleSampleEntry",
       "containers": ["stsd"],
       "syntax": "class TextSubtitleSampleEntry() extends SubtitleSampleEntry ('sbtt') {\n\tutf8string content_encoding; // optional\n\tutf8string mime_format;\n\tTextConfigBox (); // optional\n}"
     },
     {
       "fourcc": "sm2t",
       "description": "MPEG-2 Transport Server",
-      "type": "MPEG2TSSampleEntry",
+      "type": "MPEG2TSServerSampleEntry",
       "containers": ["stsd"],
       "syntax": "class MPEG2TSServerSampleEntry extends MPEG2TSSampleEntry('sm2t') {}"
     },
     {
       "fourcc": "srtp",
       "description": "SRTP Hints",
-      "type": "HintSampleEntry",
+      "type": "SrtpHintSampleEntry",
       "containers": ["stsd"],
       "syntax": "class SrtpHintSampleEntry() extends HintSampleEntry ('srtp') {\n\tuint(16)\t\thinttrackversion = 1;\n\tuint(16)\t\thighestcompatibleversion = 1;\n\tuint(32)\t\tmaxpacketsize;\n}"
     },
@@ -173,14 +173,14 @@
     {
       "fourcc": "stpp",
       "description": "Subtitles (Timed Text)",
-      "type": "SubtitleSampleEntry",
+      "type": "XMLSubtitleSampleEntry",
       "containers": ["stsd"],
       "syntax": "class XMLSubtitleSampleEntry() extends SubtitleSampleEntry ('stpp') {\n\tutf8list namespace;\n\tutf8list schema_location; // optional\n\tutf8list auxiliary_mime_types;\n\t\t\t\t// optional, required if auxiliary resources are present\n}"
     },
     {
       "fourcc": "stxt",
       "description": "Simple timed text",
-      "type": "PlainTextSampleEntry",
+      "type": "SimpleTextSampleEntry",
       "containers": ["stsd"],
       "syntax": "class SimpleTextSampleEntry extends PlainTextSampleEntry ('stxt') {\n\tutf8string\tcontent_encoding;\t// optional\n\tutf8string\tmime_format; \n\tTextConfigBox ();\t\t\t\t\t// optional\n}"
     },
@@ -274,6 +274,13 @@
       "type": "VolumetricVisualSampleEntry",
       "containers": ["stsd"],
       "syntax": "class VolumetricVisualSampleEntry(codingname) \r\n\textends SampleEntry (codingname){\r\n\tunsigned int(8)[32] compressorname;\r\n\t// other boxes from derived specifications\r\n}"
+    },
+    {
+      "fourcc": "rtp ",
+      "description": "RTP Hints",
+      "containers": ["stsd"],
+      "type": "RtpHintSampleEntry",
+      "syntax": "class RtpHintSampleEntry() extends HintSampleEntry ('rtp ') {\n\tuint(16)\t\thinttrackversion = 1;\n\tuint(16)\t\thighestcompatibleversion = 1;\n\tuint(32)\t\tmaxpacketsize;\n}"
     }
   ]
 }

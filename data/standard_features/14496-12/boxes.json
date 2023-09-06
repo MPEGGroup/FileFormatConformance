@@ -8,7 +8,7 @@
       "type": "Box",
       "containers": [
         {
-          "HintSampleEntry": ["rrtp"]
+          "ReceivedRtpHintSampleEntry": ["rrtp"]
         }
       ],
       "syntax": "class ReceivedSsrcBox extends Box('rssr') {\n\tunsigned int(32)\tSSRC\n}"
@@ -19,7 +19,7 @@
       "type": "Box",
       "containers": [
         {
-          "HintSampleEntry": ["rrtp"]
+          "ReceivedRtpHintSampleEntry": ["rrtp"]
         }
       ],
       "syntax": "class timestampsynchrony() extends Box('tssy') {\n\tunsigned int(6) reserved;\n\tunsigned int(2) timestamp_sync;\n}"
@@ -30,7 +30,16 @@
       "type": "Box",
       "containers": [
         {
-          "HintSampleEntry": ["rrtp", "srtp", "rtp ", "fdp "]
+          "HintSampleEntry": ["rtp "]
+        },
+        {
+          "FDHintSampleEntry": ["fdp "]
+        },
+        {
+          "SrtpHintSampleEntry": ["srtp"]
+        },
+        {
+          "ReceivedRtpHintSampleEntry": ["rrtp"]
         }
       ],
       "syntax": "class timescaleentry() extends Box('tims') {\n\tuint(32)\ttimescale;\n}\n\nclass timeoffset() extends Box('tsro') {\n\tint(32)\t\toffset;\n}\n\nclass sequenceoffset() extends Box('snro') {\n\tint(32)\t\toffset;\n}"
@@ -41,7 +50,13 @@
       "type": "Box",
       "containers": [
         {
-          "HintSampleEntry": ["rrtp", "srtp", "rtp "]
+          "HintSampleEntry": ["rtp "]
+        },
+        {
+          "SrtpHintSampleEntry": ["srtp"]
+        },
+        {
+          "ReceivedRtpHintSampleEntry": ["rrtp"]
         }
       ],
       "syntax": "class timescaleentry() extends Box('tims') {\n\tuint(32)\ttimescale;\n}\n\nclass timeoffset() extends Box('tsro') {\n\tint(32)\t\toffset;\n}\n\nclass sequenceoffset() extends Box('snro') {\n\tint(32)\t\toffset;\n}"
@@ -52,7 +67,10 @@
       "type": "Box",
       "containers": [
         {
-          "HintSampleEntry": ["srtp", "rtp "]
+          "HintSampleEntry": ["rtp "]
+        },
+        {
+          "SrtpHintSampleEntry": ["srtp"]
         }
       ],
       "syntax": "class timescaleentry() extends Box('tims') {\n\tuint(32)\ttimescale;\n}\n\nclass timeoffset() extends Box('tsro') {\n\tint(32)\t\toffset;\n}\n\nclass sequenceoffset() extends Box('snro') {\n\tint(32)\t\toffset;\n}"
@@ -270,13 +288,13 @@
       "flags": [],
       "containers": [
         {
-          "MetaDataSampleEntry": ["mett"]
+          "TextMetaDataSampleEntry": ["mett"]
         },
         {
-          "PlainTextSampleEntry": ["stxt"]
+          "SimpleTextSampleEntry": ["stxt"]
         },
         {
-          "SubtitleSampleEntry": ["sbtt"]
+          "TextSubtitleSampleEntry": ["sbtt"]
         }
       ],
       "type": "FullBox",
@@ -287,7 +305,7 @@
       "description": "URI Information",
       "containers": [
         {
-          "MetaDataSampleEntry": ["urim"]
+          "URIMetaSampleEntry": ["urim"]
         }
       ],
       "type": "FullBox",
@@ -466,7 +484,7 @@
       "description": "complete track information",
       "containers": [
         {
-          "VisualSampleEntry": ["icpv"]
+          "IncompleteAVCSampleEntry": ["icpv"]
         }
       ],
       "type": "Box",
@@ -1443,6 +1461,37 @@
       "containers": ["file"],
       "type": "CompressedBox",
       "syntax": "aligned(8) class CompressedSubsegmentIndexBox\n\textends CompressedBox('!ssx', 'ssix') {\n}"
+    },
+    {
+      "fourcc": "amve",
+      "description": "",
+      "containers": ["VisualSampleEntry"],
+      "type": "Box",
+      "syntax": "class AmbientViewingEnvironmentBox extends Box('amve'){\n\tunsigned int(32) ambient_illuminance; \n\tunsigned int(16) ambient_light_x;\n\tunsigned int(16) ambient_light_y;\n}"
+    },
+    {
+      "fourcc": "keys",
+      "description": "",
+      "containers": [
+        {
+          "BoxedMetadataSampleEntry": ["mebx"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class MetadataKeyTableBox extends Box('keys') { \n\tMetadataKeyBox[];\n}"
+    },
+    {
+      "fourcc": "uri ",
+      "description": "URI box",
+      "versions": [0],
+      "flags": [],
+      "containers": [
+        {
+          "URIMetaSampleEntry": ["urim"]
+        }
+      ],
+      "type": "Box",
+      "syntax": "class URIBox extends FullBox('uri ', version = 0, 0) {\n\tutf8string theURI;\n}"
     }
   ]
 }
