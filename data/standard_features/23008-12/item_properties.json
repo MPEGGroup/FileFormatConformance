@@ -287,6 +287,87 @@
       "containers": ["ipco"],
       "type": "ItemProperty",
       "syntax": "class ContentLightLevelBox extends Box('clli'){\n\tunsigned int(16) max_content_light_level;\n\tunsigned int(16) max_pic_average_light_level;\n}"
+    },
+    {
+      "fourcc": "wipe",
+      "description": "Wipe transition effect",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class WipeTransitionEffectProperty\nextends ItemFullProperty('wipe', version=0, flags=0) {\n\tunsigned int(8) transition_direction;\n}"
+    },
+    {
+      "fourcc": "zoom",
+      "description": "Zoom transition effect",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class ZoomTransitionEffectProperty\nextends ItemFullProperty('zoom', version=0, flags=0) {\n\tunsigned int(1) transition_direction; \n\tunsigned int(7) transition_shape;\n}"
+    },
+    {
+      "fourcc": "fade",
+      "description": "Fade transition effect",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class FadeTransitionEffectProperty\nextends ItemFullProperty('fade', version=0, flags=0) {\n\tunsigned int(8) transition_direction;\n}"
+    },
+    {
+      "fourcc": "splt",
+      "description": "Split transition effect",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class SplitTransitionEffectProperty\nextends ItemFullProperty('splt', version=0, flags=0) {\n\tunsigned int(8) transition_direction;\n}"
+    },
+    {
+      "fourcc": "stpe",
+      "description": "Suggested transition period",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class SuggestedTransitionPeriodProperty\nextends ItemFullProperty('stpe', version=0, flags=0) {\n\tunsigned int(8) transition_period;\n}"
+    },
+    {
+      "fourcc": "ssld",
+      "description": "Suggested time display duraton",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class SuggestedTimeDisplayDurationProperty\nextends ItemFullProperty('ssld', version=0, flags=0) {\n\tunsigned int(16) duration;\n}"
+    },
+    {
+      "fourcc": "mskC",
+      "description": "Mask item configuration",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class MaskConfigurationProperty\nextends ItemFullProperty('mskC', version = 0, flags = 0){\n\tunsigned int(8) bits_per_pixel;\n}"
+    },
+    {
+      "fourcc": "spid",
+      "description": "Subpicture ID property",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class VvcSubpicIDProperty\nextends ItemFullProperty('spid', version = 0, flags = 0){\n\tVvcSubpicIDEntry sid_info; // specified in ISO/IEC\u00a014496-15\n}"
+    },
+    {
+      "fourcc": "spor",
+      "description": "Subpicture order property",
+      "versions": [0],
+      "flags": [],
+      "containers": ["ipco"],
+      "type": "Box",
+      "syntax": "class VvcSubpicOrderProperty\nextends ItemFullProperty('spor', version = 0, flags = 0){\n\tVvcSubpicOrderEntry sor_info; // specified in ISO/IEC\u00a014496-15\n}"
     }
   ]
 }

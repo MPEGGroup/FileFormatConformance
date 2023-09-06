@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 from docx import Document
 import json
 import re
@@ -60,13 +61,13 @@ def _update_boxes(entries, paragraphs, mp4ra_entries):
     # filter out boxes / fullboxes
     for paragraph in paragraphs:
         matches = re.findall(
-            r"(class [a-zA-Z0-9_]+ extends Box\([^)]*\)\s*{[^}]*})", paragraph
+            r"(class [a-zA-Z0-9_]+ extends Box\s*\([^)]*\)\s*{[^}]*})", paragraph
         )
         for match in matches:
             if match not in boxes:
                 boxes.append(match)
         matches = re.findall(
-            r"(class [a-zA-Z0-9_]+ extends FullBox\([^)]*\)\s*{[^}]*})", paragraph
+            r"(class [a-zA-Z0-9_]+ extends FullBox\s*\([^)]*\)\s*{[^}]*})", paragraph
         )
         for match in matches:
             if match not in boxes:
@@ -279,6 +280,96 @@ def _update_samplegroups(entries, paragraphs, mp4ra_entries):
     return len(entries)
 
 
+def _update_itemprops(entries, paragraphs, mp4ra_entries):
+    boxes = []
+    fullboxes = []
+
+    # filter out boxes / fullboxes
+    for paragraph in paragraphs:
+        matches = re.findall(
+            # TODO: in HEIF we always have \n before extends, but this regex should be more flexible
+            r"(class [a-zA-Z0-9_]+\nextends ItemProperty\s*\([^)]*\)\s*{[^}]*})",
+            paragraph,
+        )
+        for match in matches:
+            if match not in boxes:
+                boxes.append(match)
+        matches = re.findall(
+            r"(class [a-zA-Z0-9_]+\nextends ItemFullProperty\s*\([^)]*\)\s*{[^}]*})",
+            paragraph,
+        )
+        for match in matches:
+            if match not in boxes:
+                fullboxes.append(match)
+
+    # let the user know what we found.
+    print(f"Found {len(boxes) + len(fullboxes)} ItemProperty and ItemFullProperty")
+    print(f"{5*'----'} {len(boxes)} ItemProperties {5*'----'}")
+    for box in boxes:
+        classname, fourcc = get_4CC_and_class(box)
+        print(f"{fourcc}: {classname}")
+    print(f"{5*'----'} {len(fullboxes)} ItemFullProperties {5*'----'}")
+    for box in fullboxes:
+        classname, fourcc = get_4CC_and_class(box)
+        print(f"{fourcc}: {classname}")
+    print(11 * "----")
+
+    # now see if we actually found something new
+    for boxsyntax in boxes:
+        classname, fourcc = get_4CC_and_class(boxsyntax)
+        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        assert len(foundentries) <= 1, f"More than 1 entries fround for {fourcc}"
+        if len(foundentries) == 1:
+            # TODO: replace type with the classname and add parenttype Box
+            # entry = foundentries[0]
+            # if entry["type"] != classname:
+            #     print(f'Classname/Type mismatch {fourcc}. {classname}/{entry["type"]}')
+            continue
+        description = ""
+        ra_entries = [
+            ra_entry for ra_entry in mp4ra_entries if ra_entry["fourcc"] == fourcc
+        ]
+        if len(ra_entries) == 1:
+            description = ra_entries[0]["description"]
+        newentry = {
+            "fourcc": fourcc,
+            "description": description,
+            "containers": ["ipco"],
+            "type": "Box",
+            "syntax": boxsyntax,
+        }
+        print(f"add new entry: {fourcc}")
+        entries.append(newentry)
+    for boxsyntax in fullboxes:
+        classname, fourcc = get_4CC_and_class(boxsyntax)
+        foundentries = [entry for entry in entries if entry["fourcc"] == fourcc]
+        assert len(foundentries) <= 1, f"More than 1 entries fround for {fourcc}"
+        if len(foundentries) == 1:
+            # TODO: replace type with the classname and add parenttype FullBox
+            # entry = foundentries[0]
+            # if entry["type"] != classname:
+            #     print(f'Classname/Type mismatch {fourcc}. {classname}/{entry["type"]}')
+            continue
+        description = ""
+        ra_entries = [
+            ra_entry for ra_entry in mp4ra_entries if ra_entry["fourcc"] == fourcc
+        ]
+        if len(ra_entries) == 1:
+            description = ra_entries[0]["description"]
+        newentry = {
+            "fourcc": fourcc,
+            "description": description,
+            "versions": [0],
+            "flags": [],
+            "containers": ["ipco"],
+            "type": "Box",
+            "syntax": boxsyntax,
+        }
+        print(f"add new entry: {fourcc}")
+        entries.append(newentry)
+    return len(entries)
+
+
 def update():
     parser = argparse.ArgumentParser(
         description="Update standard features based on the spec word document and MP4RA."
@@ -363,9 +454,18 @@ def update():
             mp4ra_entries = get_mp4ra_entries(f, "sample-groups")
         cnt_before = len(data["entries"])
         cnt_after = _update_samplegroups(data["entries"], codeparagraphs, mp4ra_entries)
+    elif "item_properties.json" in args.input:
+        # get associated type from MP4RA
+        tmp_path = os.path.join(MP4RA_PATH, "CSV", "item-properties.csv")
+        with open(tmp_path, "r") as f:
+            mp4ra_entries = get_mp4ra_entries(f, "item-properties")
+        cnt_before = len(data["entries"])
+        # cnt_after = _update_boxes(data["entries"], codeparagraphs, mp4ra_entries)
+        cnt_after = _update_itemprops(data["entries"], codeparagraphs, mp4ra_entries)
     else:
         head, tail = os.path.split(args.input)
         print(f"No support for {tail} yet implemented.")
+        sys.exit(-1)
 
     print(f"New entries count: {cnt_after - cnt_before}")
     if (cnt_after - cnt_before) > 0 and args.dryrun is False:
