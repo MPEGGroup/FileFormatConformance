@@ -151,7 +151,6 @@ def contribute_files():
             if len(new_description) > 0:
                 description = new_description
         else:
-            print("deep copy")
             contributor = contributor_user
             mdms_number = mdms_number_user
             json_data = copy.deepcopy(FILE_ENTRY)
