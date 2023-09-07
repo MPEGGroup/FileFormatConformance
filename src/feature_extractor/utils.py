@@ -47,7 +47,9 @@ def dump_to_json(out_file, obj):
         f.write("\n")
 
 
-def read_json(in_file):
-    with open(in_file, "r") as f:
+def read_json(in_file, encoding="utf-8"):
+    if not os.path.exists(in_file):
+        return None
+    with open(in_file, "r", encoding=encoding) as f:
         data = json.load(f)
         return data
