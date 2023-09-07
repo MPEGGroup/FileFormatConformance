@@ -28,15 +28,15 @@ FILE_ENTRY = {
     "contributor": "",
     "description": "",
     "mdms_number": "",
-    "license": "",
-    "md5": "",
     "rel_filepath": "",
-    "version": 1,
-    "published": False,
     "associated_files": [],
+    "version": 1,
+    "md5": "",
+    "published": False,
     "features": [],
-    "notes": "",
     "conforms_to": [],
+    "notes": "",
+    "license": "",
 }
 
 # ignore files with the following extensions
@@ -57,23 +57,39 @@ EXCLUDELIST = [
 
 def contribute_files():
     parser = argparse.ArgumentParser(
-        description="Contribute new files to the conformance suite"
+        description="Contribute new files to the conformance framework"
     )
     parser.add_argument(
-        "-i", "--input", help="Input directory with new files", required=True
+        "-i",
+        "--input",
+        help="File(s) to contribute. Glob patterns supported.",
+        required=True,
     )
-    parser.add_argument("-l", "--license", help="Path to a .txt file with a license")
+    parser.add_argument(
+        "-f",
+        "--force",
+        help="Re-run MP4Box even if the md5's match.",
+        action="store_true",
+    )
+    parser.add_argument(
+        "-l",
+        "--license",
+        help="Path to a .txt file with a license",
+    )
     args = parser.parse_args()
 
-    print('Add (or update) conformance files in "under_consideration" folder.\n')
-    contributor = input("Contributor company name: ")
-    mdms_number = input("MPEG document number: ")
-    notes_text = ""
-    if len(mdms_number) == 0:
-        print("MDMS number is mandatory.")
-        sys.exit(-1)
+    # Load schemas for validation
+    with open("../data/schemas/file-metadata.schema.json", "r", encoding="utf-8") as f:
+        file_metadata_schema = json.load(f)
 
+    # gather all files we need to process
+    files_to_process = glob(args.input, recursive=True)
+    print(f"File(s) to process: {len(files_to_process)}")
+
+    contributor_user = input("Contributor company name: ").strip()
+    mdms_number_user = input("MPEG document number: ").strip()
     license_str = ""
+
     if args.license is None:
         print("WARNING: You didn't provide a license for files you want to contribute.")
         response = input(" Are you sure you want to continue? (y - yes): ")
@@ -82,93 +98,107 @@ def contribute_files():
             sys.exit(1)
     else:
         with open(args.license, "r", encoding="utf-8") as file:
-            license_str = file.read()
-
-    # get rid of the last slash if needed
-    if args.input[-1] == "/":
-        args.input = args.input[:-1]
-
-    if not os.path.isdir(args.input):
-        print("ERROR: input should be a directory")
-        sys.exit(-1)
-
-    input_base, input_last_folder = os.path.split(args.input)
-    output_root = os.path.join(
-        "../data/file_features/under_consideration", input_last_folder
-    )
-
-    print(f'Process files from "{input_last_folder}".')
+            license_str = file.read().strip()
 
     cnt = 0
-    for root, subdirs, files in os.walk(args.input):
-        for f in files:
-            input_filename, input_ext = os.path.splitext(f)
-            if input_ext in EXCLUDELIST:
-                continue
-            input_path = os.path.join(root, f)
-            if " " in input_path:
-                print(f'ERROR: spaces are not allowed. Remove spaces in "{input_path}"')
-                sys.exit(-1)
+    for f in files_to_process:
+        input_root, input_ext = os.path.splitext(f)
+        if input_ext in EXCLUDELIST:
+            print(f"Skip: {f}")
+            continue
+        if " " in f:
+            print(f'ERROR: spaces are not allowed. Remove spaces in "{f}"')
+            sys.exit(-1)
+        if "../data/file_features/" not in f:
+            print(f"ERROR: file is not inside ../data/file_features/ directory: {f}")
+            sys.exit(-1)
 
-            relative_path = os.path.relpath(root, args.input)
-            output_dir = os.path.join(output_root, relative_path)
-            output_json = os.path.join(output_dir, input_filename + ".json")
-            output_path = os.path.join(output_dir, input_filename + input_ext)
-            # print(f'output_file={output_file}')
+        json_path = input_root + ".json"
+        rel_filepath = "./" + os.path.splitext(os.path.basename(f))[0] + input_ext
+        json_gpac_path = input_root + "_gpac.json"
+        json_gpac_ext_path = input_root + "_gpac.ext.json"
 
-            print(f'\n* Processing: "{input_path}"')
-            md5_in = compute_file_md5(input_path)
-            md5_out = compute_file_md5(output_path)
+        file_md5 = compute_file_md5(f)
+        version = 1
+        description = ""
 
-            file_entry = None
-            version = 1
-            if os.path.exists(output_json):
-                existing_data = read_json(output_json)
-                if existing_data["md5"] == md5_in and md5_in == md5_out:
-                    print("skip duplicate file.")
+        json_data = None
+        if os.path.exists(json_path):
+            json_data = read_json(json_path)
+            validate(instance=json_data, schema=file_metadata_schema)
+
+        # json file found
+        if json_data is not None:
+            contributor = json_data["contributor"]
+            description = json_data["description"]
+            mdms_number = json_data["mdms_number"]
+            rel_filepath = json_data["rel_filepath"]
+            version = json_data["version"]
+
+            # is it a new version of the file?
+            if file_md5 == json_data["md5"]:
+                if args.force is False:
+                    print(f"Skip duplicate file: {f}")
                     continue
-                else:
-                    print(f"* new file version detected for {f}")
-                    file_entry = existing_data
-                    version = file_entry["version"] + 1
-                    description = file_entry["description"]
-
-            make_dirs_from_path(output_dir)
-            if not md5_in == md5_out:
-                print(f"* copy {input_path} to {output_path}")
-                shutil.copyfile(input_path, output_path)
-            if file_entry is None:
-                # try getting the description from the <filename>.txt
-                descr_path = os.path.join(root, input_filename + ".txt")
-                descr_file_text = file_to_text(descr_path)
-                if descr_file_text is None:
-                    description = input(f'* Provide short description for "{f}": ')
-                else:
-                    description = descr_file_text
             else:
-                new_description = input(
-                    f'* Update description for "{f}" (leave blank to keep the previous version): '
+                print(f"New file version detected for {f}")
+                version = json_data["version"] + 1
+
+            # new description?
+            new_description = input(
+                f'* Update description for "{f}" (leave blank to keep the previous version): '
+            )
+            if len(new_description) > 0:
+                description = new_description
+        else:
+            print("deep copy")
+            contributor = contributor_user
+            mdms_number = mdms_number_user
+            json_data = copy.deepcopy(FILE_ENTRY)
+            # try getting the description from the <filename>.txt
+            descr_file_text = file_to_text(input_root + ".txt")
+            if descr_file_text is None:
+                description = input(f'* Provide short description for "{f}": ')
+            else:
+                description = descr_file_text
+
+        json_data["contributor"] = contributor
+        json_data["description"] = description
+        json_data["mdms_number"] = mdms_number
+        json_data["rel_filepath"] = rel_filepath
+        json_data["version"] = version
+        json_data["md5"] = file_md5
+        json_data["license"] = license_str
+        dump_to_json(json_path, json_data)
+
+        # run MP4Box and update if needed
+        gpac_dict = _run_mp4box_on_file(f)
+        gpac_dict_old = read_json(json_gpac_path)
+        if gpac_dict_old is not None:
+            if gpac_dict_old["mp4boxVersion"] != gpac_dict["mp4boxVersion"]:
+                print(
+                    f'WARNING: GPAC file for "{f}" already exists but it has a different MP4Box version. Forcing overwrite!'
                 )
-                if len(new_description) > 0:
-                    description = new_description
+                dump_to_json(json_gpac_path, gpac_dict)
+        else:
+            dump_to_json(json_gpac_path, gpac_dict)
 
-            if file_entry is None:
-                file_entry = copy.deepcopy(FILE_ENTRY)
-            file_entry["contributor"] = contributor.strip()
-            file_entry["license"] = license_str.strip()
-            file_entry["md5"] = md5_in
-            file_entry["rel_filepath"] = f"./{f}"
-            file_entry["mdms_number"] = mdms_number
-            file_entry["description"] = description
-            file_entry["notes"] = notes_text
-            file_entry["version"] = version
-            file_entry["published"] = False
-            dump_to_json(output_json, file_entry)
-            cnt += 1
+        # Create GPAC extension
+        mp4ra_check = "under_consideration" not in os.path.dirname(json_path)
+        unknown_boxes = traverse_gpac_dict(gpac_dict, mp4ra_check)
+        if len(unknown_boxes) > 0:
+            gpac_extension = {
+                "mp4boxVersion": gpac_dict["mp4boxVersion"],
+                "rel_filepath": rel_filepath,
+                "extensions": unknown_boxes,
+            }
+            if os.path.exists(json_gpac_ext_path):
+                print(f'WARNING: "{json_gpac_ext_path}" already exists.')
+            else:
+                dump_to_json(json_gpac_ext_path, gpac_extension)
+
+        cnt += 1
     print(f"Processed {cnt} files.")
-
-    _extract_file_boxes_gpac(output_root)
-    _create_gpac_extension(output_root)
 
 
 def _isXml(value):
@@ -586,7 +616,7 @@ def extract_file_features():
         sys.exit(-1)
 
     if args.input is not None and args.dir_input is not None:
-        print("ERROR: You must provide either --input or --dir-input")
+        print("ERROR: You can only provide either --input or --dir-input")
         sys.exit(-1)
 
     if args.input is not None:
