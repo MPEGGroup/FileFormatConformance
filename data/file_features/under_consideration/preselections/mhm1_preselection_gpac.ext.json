@@ -1,0 +1,29 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./mhm1_preselection.mp4",
+  "extensions": [
+    {
+      "location": "file.moov",
+      "box": {
+        "@Size": "822",
+        "@Type": "tkgd",
+        "@Specification": "unknown",
+        "@Container": "moov",
+        "UnknownBox": [
+          {
+            "@Size": "407",
+            "@Type": "prse",
+            "@Specification": "unknown",
+            "@Container": "unknown"
+          },
+          {
+            "@Size": "407",
+            "@Type": "prse",
+            "@Specification": "unknown",
+            "@Container": "unknown"
+          }
+        ]
+      }
+    }
+  ]
+}
