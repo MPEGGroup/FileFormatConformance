@@ -58,7 +58,8 @@ jobs:
     needs: [changes, cfc]
     if: |
       always() &&
-      (needs.cfc.result == 'success' || needs.cfc.result == 'skipped')
+      (needs.cfc.result == 'success' || needs.cfc.result == 'skipped') &&
+      needs.cfc.outputs.created != 'true'
     uses: ./.github/workflows/test.yml
     with:
       test-page: ${{ needs.changes.outputs.is-page == 'true' }}
