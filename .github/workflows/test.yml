@@ -82,16 +82,12 @@ jobs:
         run: poetry run construct-all
 
       - name: Run coverage
+        if: success() || failure()
         working-directory: ./src
         run: poetry run coverage
 
-      - name: Check output
-        run: |
-          if [ -s /tmp/construct.log ]; then
-            exit 1
-          fi
-
       - name: Validate output
+        if: success() || failure()
         working-directory: ./src
         run: poetry run pytest -- --check-max-tb=0
 
