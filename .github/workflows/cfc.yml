@@ -12,6 +12,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
+          ssh-key: ${{ secrets.COMMIT_KEY }}
 
       - name: Setup Node
         uses: actions/setup-node@v3

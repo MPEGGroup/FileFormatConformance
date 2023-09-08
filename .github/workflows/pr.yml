@@ -7,11 +7,10 @@ on:
       - synchronize
       - reopened
       - labeled
-      - unlabeled
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   changes:
@@ -53,6 +52,7 @@ jobs:
       contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
       needs.changes.outputs.is-cfc == 'true'
     uses: ./.github/workflows/cfc.yml
+    secrets: inherit
 
   test:
     needs: [changes, cfc]
