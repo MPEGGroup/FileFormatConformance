@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./Text_Item_v1.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "26",
+        "@Type": "txlo",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0000000005A003C000800080656E2D555300"
+      }
+    }
+  ]
+}
