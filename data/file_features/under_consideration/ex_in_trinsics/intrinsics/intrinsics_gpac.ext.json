@@ -1,0 +1,26 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./intrinsics.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "24",
+        "@Type": "cmin",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00001A00020000000100000000800000"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "32",
+        "@Type": "cmin",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00011A01020000000100000000800000029CAAABFFFFFF37"
+      }
+    }
+  ]
+}
