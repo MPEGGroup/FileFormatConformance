@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./AAC.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.udta",
+      "box": {
+        "@Size": "46",
+        "@Type": "labl",
+        "@Specification": "unknown",
+        "@Container": "udta",
+        "@data": "0x00000000000001656E2D5553005468697320697320616E20456E676C69736820747261636B00"
+      }
+    }
+  ]
+}
