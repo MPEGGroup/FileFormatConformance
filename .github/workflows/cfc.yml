@@ -98,7 +98,7 @@ jobs:
         id: commit
         run: |
           git add data/file_features/under_consideration
-          if ! git diff-index --quiet HEAD --; then
+          if [[ $(git diff --name-only --cached | wc -c) -ne 0 ]]; then
             git commit -m "Add file features for ${{ github.event.pull_request.head.ref }}"
             echo "created=true" >> $GITHUB_OUTPUT
           fi
