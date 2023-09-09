@@ -16,6 +16,7 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
+      is-bot: ${{ steps.check-author.outputs.is_bot }}
       is-cfc: ${{ steps.check-cfc.outputs.is_cfc }}
       is-page: ${{ steps.check-page.outputs.is_page }}
     steps:
@@ -25,6 +26,14 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v37
+
+      - name: Check last commit author
+        id: check-author
+        run: |
+          lastauthor=$(git log -n 1 --pretty=format:%al ${{ github.event.pull_request.head.sha }})
+          if [[ $lastauthor == 'github-actions[bot]' ]]; then
+            echo "is_bot=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Check for new under consideration files
         id: check-cfc
@@ -50,7 +59,8 @@ jobs:
     needs: changes
     if: |
       contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
-      needs.changes.outputs.is-cfc == 'true'
+      needs.changes.outputs.is-cfc == 'true' &&
+      needs.changes.outputs.is-bot != 'true'
     uses: ./.github/workflows/cfc.yml
     secrets: inherit
 
