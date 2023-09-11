@@ -1,6 +1,8 @@
 name: Pull Request Checks
 
 on:
+  merge_group:
+    branches: [main]
   pull_request:
     types:
       - opened
@@ -14,6 +16,7 @@ concurrency:
 jobs:
   changes:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' }}
     outputs:
       is-bot: ${{ steps.check-author.outputs.is_bot }}
       is-cfc: ${{ steps.check-cfc.outputs.is_cfc }}
@@ -57,6 +60,7 @@ jobs:
   cfc:
     needs: changes
     if: |
+      github.event_name == 'pull_request' &&
       contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
       needs.changes.outputs.is-cfc == 'true' &&
       needs.changes.outputs.is-bot != 'true'
@@ -71,4 +75,4 @@ jobs:
       needs.cfc.outputs.created != 'true'
     uses: ./.github/workflows/test.yml
     with:
-      test-page: ${{ needs.changes.outputs.is-page == 'true' }}
+      test-page: ${{ github.event_name != 'pull_request' || needs.changes.outputs.is-page == 'true' }}
