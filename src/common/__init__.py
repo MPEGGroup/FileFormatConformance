@@ -1,3 +1,4 @@
+import os
 import json
 import requests
 from glob import glob
@@ -65,3 +66,15 @@ def get_document_status_link(iso):
     match = [key for key in toc if iso in key]
     assert len(match) == 1, f"Failed to find document status section for {iso}"
     return toc[match[0]]
+
+
+def check_logs_for_ci():
+    if "CI" not in os.environ:
+        return
+
+    with open("/tmp/construct.log", "r", encoding="utf-8") as f:
+        line_count = len(f.readlines())
+
+    if line_count > 0:
+        os.remove("/tmp/construct.log")
+        exit(1)

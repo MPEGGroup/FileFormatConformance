@@ -284,9 +284,11 @@ def test_folder_consistency(check):
         print(f"Unaccounted file: {file}")
 
     # Check if there are any files left
-    assert (
-        ALL_FILES == FOUND_FILES
-    ), f"Found {len(ALL_FILES) - len(FOUND_FILES)} unaccounted files."
+    with check:
+        consistent_files = ALL_FILES == FOUND_FILES
+        assert (
+            consistent_files
+        ), f"Found {len(ALL_FILES) - len(FOUND_FILES)} unaccounted files."
 
 
 @pytest.mark.dependency(depends=["test_folder_consistency"])
