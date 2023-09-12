@@ -113,7 +113,11 @@ function DetailsModal({ file }: { file: FileMetadata }) {
                                 <DetailItem className="col-span-2" label="MD5 Checksum">
                                     <code>{file.md5}</code>
                                 </DetailItem>
-                                <DetailItem className="col-span-2" label="Description" noTruncate>
+                                <DetailItem
+                                    className="col-span-2 whitespace-pre-line"
+                                    label="Description"
+                                    noTruncate
+                                >
                                     {file.description}
                                 </DetailItem>
                             </div>
@@ -323,7 +327,7 @@ export default function FileComponent({ file }: { file: FileSearchResult }) {
                             </>
                         )}
                     </p>
-                    <p className="line-clamp-3 text-justify text-sm text-neutral-800">
+                    <p className="line-clamp-3 whitespace-pre-line text-sm text-neutral-800">
                         {file.item.description === "" ? (
                             <span className="text-gray-500">No description available.</span>
                         ) : (
