@@ -26,10 +26,12 @@ function getDownloadURL(file: FileMetadata, relativeFile?: string) {
 function DetailItem({
     label,
     children,
+    noTruncate,
     className
 }: {
     label: string;
     children: string | React.ReactNode;
+    noTruncate?: boolean;
     className?: string;
 }) {
     return (
@@ -41,7 +43,9 @@ function DetailItem({
                         Not available
                     </span>
                 ) : (
-                    <span className="table-cell truncate text-sm">{children}</span>
+                    <span className={clsx("table-cell text-sm", !noTruncate && "truncate")}>
+                        {children}
+                    </span>
                 )}
             </span>
         </div>
@@ -49,7 +53,8 @@ function DetailItem({
 }
 
 DetailItem.defaultProps = {
-    className: ""
+    className: "",
+    noTruncate: false
 };
 
 function DetailsModal({ file }: { file: FileMetadata }) {
@@ -108,7 +113,11 @@ function DetailsModal({ file }: { file: FileMetadata }) {
                                 <DetailItem className="col-span-2" label="MD5 Checksum">
                                     <code>{file.md5}</code>
                                 </DetailItem>
-                                <DetailItem className="col-span-2" label="Description">
+                                <DetailItem
+                                    className="col-span-2 whitespace-pre-line"
+                                    label="Description"
+                                    noTruncate
+                                >
                                     {file.description}
                                 </DetailItem>
                             </div>
@@ -318,7 +327,7 @@ export default function FileComponent({ file }: { file: FileSearchResult }) {
                             </>
                         )}
                     </p>
-                    <p className="text-justify text-sm text-neutral-800">
+                    <p className="line-clamp-3 whitespace-pre-line text-sm text-neutral-800">
                         {file.item.description === "" ? (
                             <span className="text-gray-500">No description available.</span>
                         ) : (

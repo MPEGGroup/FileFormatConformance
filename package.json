@@ -2,13 +2,14 @@
   "name": "fileformatconformance",
   "version": "1.0.0",
   "scripts": {
+    "test": "npm run build:data && npm run test:data",
     "test:data": "cd src && poetry run pytest -- --check-max-tb=0",
-    "testall": "cd src && poetry run construct-all && poetry run coverage && poetry run pytest -- --check-max-tb=0",
     "build:data": "cd src && poetry run construct-all && poetry run coverage",
     "watch:data:full": "nodemon --watch data --exec \"npm run build:data && npm run test:data && npm --prefix conformance-search run copy:data\"",
     "watch:data": "nodemon --watch data --exec \"npm run build:data && npm --prefix conformance-search run copy:data\"",
     "dev:full": "concurrently \"npm run watch:data:full\" \"npm --prefix conformance-search run dev\"",
-    "dev": "concurrently \"npm run watch:data\" \"npm --prefix conformance-search run dev\""
+    "dev": "concurrently \"npm run watch:data\" \"npm --prefix conformance-search run dev\"",
+    "postinstall": "cd src && poetry install"
   },
   "dependencies": {
     "concurrently": "^8.2.1",

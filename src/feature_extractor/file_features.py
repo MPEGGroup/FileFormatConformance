@@ -618,6 +618,12 @@ def extract_file_features():
         print("ERROR: You can only provide either --input or --dir-input")
         sys.exit(-1)
 
+    # Exclude file if extension is in EXCLUDELIST
+    _, input_extension = os.path.splitext(args.input)
+    if input_extension in EXCLUDELIST:
+        print(f"Skip {args.input}")
+        sys.exit(0)
+
     if args.input is not None:
         _extract_file_features(args)
 
