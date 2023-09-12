@@ -1,22 +1,24 @@
 name: Pull Request Checks
 
 on:
+  merge_group:
+    branches: [main]
   pull_request:
     types:
       - opened
       - synchronize
       - reopened
       - labeled
-      - unlabeled
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   changes:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' }}
     outputs:
+      is-bot: ${{ steps.check-author.outputs.is_bot }}
       is-cfc: ${{ steps.check-cfc.outputs.is_cfc }}
       is-page: ${{ steps.check-page.outputs.is_page }}
     steps:
@@ -26,6 +28,14 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v37
+
+      - name: Check last commit author
+        id: check-author
+        run: |
+          lastauthor=$(git log -n 1 --pretty=format:%al ${{ github.event.pull_request.head.sha }})
+          if [[ $lastauthor == 'github-actions[bot]' ]]; then
+            echo "is_bot=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Check for new under consideration files
         id: check-cfc
@@ -50,15 +60,19 @@ jobs:
   cfc:
     needs: changes
     if: |
+      github.event_name == 'pull_request' &&
       contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
-      needs.changes.outputs.is-cfc == 'true'
+      needs.changes.outputs.is-cfc == 'true' &&
+      needs.changes.outputs.is-bot != 'true'
     uses: ./.github/workflows/cfc.yml
+    secrets: inherit
 
   test:
     needs: [changes, cfc]
     if: |
       always() &&
-      (needs.cfc.result == 'success' || needs.cfc.result == 'skipped')
+      (needs.cfc.result == 'success' || needs.cfc.result == 'skipped') &&
+      needs.cfc.outputs.created != 'true'
     uses: ./.github/workflows/test.yml
     with:
-      test-page: ${{ needs.changes.outputs.is-page == 'true' }}
+      test-page: ${{ github.event_name != 'pull_request' || needs.changes.outputs.is-page == 'true' }}
