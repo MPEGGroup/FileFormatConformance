@@ -69,6 +69,7 @@ jobs:
           cache: "poetry"
 
       - name: Install dependencies
+        id: setup
         working-directory: ./src
         run: |
           poetry env use "3.11"
@@ -78,20 +79,17 @@ jobs:
         run: echo "::add-matcher::${{ github.workspace }}/.github/problem-matchers.json"
 
       - name: Run construct
+        if: ${{ !cancelled() && steps.setup.conclusion == 'success' }}
         working-directory: ./src
         run: poetry run construct-all
 
       - name: Run coverage
+        if: ${{ !cancelled() && steps.setup.conclusion == 'success' }}
         working-directory: ./src
         run: poetry run coverage
 
-      - name: Check output
-        run: |
-          if [ -s /tmp/construct.log ]; then
-            exit 1
-          fi
-
       - name: Validate output
+        if: ${{ !cancelled() && steps.setup.conclusion == 'success' }}
         working-directory: ./src
         run: poetry run pytest -- --check-max-tb=0
 

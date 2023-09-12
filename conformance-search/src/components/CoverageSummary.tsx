@@ -55,17 +55,11 @@ export default function CoverageSummary({ className }: { className?: string }) {
             <h2 className="text-center text-lg font-light capitalize tracking-tight md:text-xl">
                 Coverage Statistics
             </h2>
-            <div className="mt-3 grid w-full max-w-4xl grid-cols-2 place-items-center justify-center text-lg md:mt-6">
+            <div className="mt-3 grid w-full max-w-3xl grid-cols-3 text-lg md:mt-6">
                 <div className="my-1.5 flex flex-col items-center justify-center md:my-3">
                     <Number value={coverageStats.files.published_count} />
                     <span className="text-center text-sm font-extralight uppercase tracking-wide md:text-lg">
-                        Files Submitted
-                    </span>
-                </div>
-                <div className="my-1.5 flex flex-col items-center justify-center md:my-3">
-                    <Number value={coverageStats.files.under_consideration_count} />
-                    <span className="text-center text-sm font-extralight uppercase tracking-wide md:text-lg">
-                        Files Under Consideration
+                        Files
                     </span>
                 </div>
                 <div className="my-1.5 flex flex-col items-center justify-center md:my-3">
@@ -80,8 +74,8 @@ export default function CoverageSummary({ className }: { className?: string }) {
                         Features
                     </span>
                 </div>
-                <SpecsCovered className="col-span-2 mt-3 md:mt-6" compact={mobile} />
             </div>
+            <SpecsCovered className="mt-3 md:mt-12" compact={mobile} />
         </div>
     );
 }

@@ -56,7 +56,7 @@ function StatisticDisplay({
                 </span>
             </div>
             <span className="text-xs font-light">
-                {value} of {adjustedTotal} {alt} {alt.includes("file") ? "published" : "covered"}
+                {value} of {adjustedTotal} {alt} covered
             </span>
             {excluded > 0 && (
                 <span className="text-xs font-light">
@@ -100,12 +100,6 @@ export default function CoverageHeader({
     return (
         <div className="flex w-full flex-col gap-4">
             <div className="flex flex-wrap items-stretch gap-4">
-                <StatisticDisplay
-                    alt="files"
-                    label="Conformance Files"
-                    total={processedCoverageStats.files.count}
-                    value={processedCoverageStats.files.published_count}
-                />
                 <StatisticDisplay
                     alt="features"
                     excluded={processedCoverageStats.lists.features.under_consideration.length}

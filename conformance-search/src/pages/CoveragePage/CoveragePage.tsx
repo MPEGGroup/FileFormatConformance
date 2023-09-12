@@ -14,7 +14,7 @@ export default function CoveragePage() {
     const mobile = useMobile();
     const [processedCoverageStats, setProcessedCoverageStats] = useState<Coverage>();
     const [search, setSearch] = useState("");
-    const [depth, setDepth] = useState(3);
+    const [depth, setDepth] = useState(1);
     const [fuses, setFuses] = useState<{
         boxes: {
             covered: Fuse<string>;
@@ -223,7 +223,7 @@ export default function CoveragePage() {
                         <span className="whitespace-nowrap text-xl font-bold">Depth Setting</span>
                         <Slider
                             className="mr-1 grow lg:grow-0 lg:basis-1/3"
-                            defaultValue={3}
+                            defaultValue={1}
                             max={maxDepth}
                             min={1}
                             onChange={(_, value) => setDepth(value as number)}
