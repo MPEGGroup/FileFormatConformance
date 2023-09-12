@@ -290,6 +290,8 @@ def main():
             indent=4,
         )
 
+    check_logs_for_ci()
+
 
 if __name__ == "__main__":
     main()
