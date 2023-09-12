@@ -9,8 +9,7 @@
     },
     "description": {
       "type": "string",
-      "description": "Description of the file",
-      "maxLength": 280
+      "description": "Description of the file"
     },
     "md5": {
       "type": "string",
