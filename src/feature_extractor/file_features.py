@@ -52,6 +52,8 @@ EXCLUDELIST = [
     ".docx",
     ".txt",
     ".m4s",
+    ".mpd",
+    ".json",
 ]
 
 
@@ -174,9 +176,9 @@ def contribute_files():
         gpac_dict = _run_mp4box_on_file(f)
         gpac_dict_old = read_json(json_gpac_path)
         if gpac_dict_old is not None:
-            if gpac_dict_old["mp4boxVersion"] != gpac_dict["mp4boxVersion"]:
+            if gpac_dict_old["IsoMediaFile"] != gpac_dict["IsoMediaFile"]:
                 print(
-                    f'WARNING: GPAC file for "{f}" already exists but it has a different MP4Box version. Forcing overwrite!'
+                    f'WARNING: GPAC file for "{f}" already exists but the contents have been changed. Forcing overwrite!'
                 )
                 dump_to_json(json_gpac_path, gpac_dict)
         else:
@@ -618,12 +620,6 @@ def extract_file_features():
         print("ERROR: You can only provide either --input or --dir-input")
         sys.exit(-1)
 
-    # Exclude file if extension is in EXCLUDELIST
-    _, input_extension = os.path.splitext(args.input)
-    if input_extension in EXCLUDELIST:
-        print(f"Skip {args.input}")
-        sys.exit(0)
-
     if args.input is not None:
         _extract_file_features(args)
 
@@ -635,6 +631,15 @@ def extract_file_features():
 
 
 def _extract_file_features(args, exit_on_error=True):
+    # Exclude file if extension is in EXCLUDELIST
+    _, input_extension = os.path.splitext(args.input)
+    if input_extension in EXCLUDELIST:
+        print(f"Skip {args.input}")
+        if exit_on_error:
+            sys.exit(0)
+        else:
+            return
+
     # During CI, we might try to process an associated file.
     # If that's the case, search if any metadata mentions the file
     with open("../data/schemas/file-metadata.schema.json", "r", encoding="utf-8") as f:

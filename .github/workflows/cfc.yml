@@ -89,10 +89,9 @@ jobs:
             if [[ $file == *"data/file_features/under_consideration/"* ]]; then
               echo "Creating file features for $file"
               poetry run extract-file-features -m -i ../$file
-              dir=$(realpath $(dirname ../$file))
-              prettier --parser json $dir/*.json --write
             fi
           done
+          prettier --parser json --write ../data/file_features/under_consideration/**/*.json
 
       - name: Commit File Features
         id: commit
