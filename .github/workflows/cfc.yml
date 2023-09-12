@@ -2,16 +2,23 @@ name: Conformance File Contribution
 
 on:
   workflow_call:
+    outputs:
+      created:
+        description: "Whether the file features were created and committed"
+        value: ${{ jobs.create-ff.outputs.created }}
 
 jobs:
   create-ff:
     runs-on: ubuntu-latest
+    outputs:
+      created: ${{ steps.commit.outputs.created }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
+          ssh-key: ${{ secrets.COMMIT_KEY }}
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -88,10 +95,12 @@ jobs:
           done
 
       - name: Commit File Features
+        id: commit
         run: |
           git add data/file_features/under_consideration
-          if ! git diff-index --quiet HEAD --; then
+          if [[ $(git diff --name-only --cached | wc -c) -ne 0 ]]; then
             git commit -m "Add file features for ${{ github.event.pull_request.head.ref }}"
+            echo "created=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Push changes

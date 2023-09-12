@@ -706,14 +706,14 @@ def _extract_file_features(args, exit_on_error=True):
         else:
             return
 
-    # If we already have the GPAC file and the version is different, update it
+    # If we already have the GPAC file and the contents have been changed, update it
     if os.path.exists(gpac_path):
         with open(gpac_path, "r", encoding="utf-8") as f:
             gpac_dict_gt = json.load(f)
 
-        if gpac_dict_gt["mp4boxVersion"] != gpac_dict["mp4boxVersion"]:
+        if gpac_dict_gt["IsoMediaFile"] != gpac_dict["IsoMediaFile"]:
             print(
-                f'WARNING: GPAC file for "{input_path}" already exists but it has a different MP4Box version. Forcing overwrite!'
+                f'WARNING: GPAC file for "{input_path}" already exists but the contents have been changed. Forcing overwrite!'
             )
             args.overwrite = True
 
