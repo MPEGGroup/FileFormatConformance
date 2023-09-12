@@ -3,16 +3,6 @@
   "rel_filepath": "./SRMP_AC4.mp4",
   "extensions": [
     {
-      "location": "file.moov.trak.mdia.minf.stbl.stsd.ac-4",
-      "box": {
-        "@Size": "88",
-        "@Type": "dac4",
-        "@Specification": "unknown",
-        "@Container": "ac-4",
-        "@data": "0x20A003600000001FFFFFFFE00112F9AC00004800008E501000008F10995B8080011A12B000004800008E2808000047884CADD404000001542656E0800112F8B4000042000002501000000310995CC080"
-      }
-    },
-    {
       "location": "file.moov.trak.udta",
       "box": {
         "@Size": "39",
