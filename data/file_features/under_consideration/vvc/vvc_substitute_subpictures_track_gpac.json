@@ -366,8 +366,8 @@
                         "@independent": "1",
                         "@full_picture": "0",
                         "@filter_disabled": "0",
-                        "@x": "768",
-                        "@y": "0",
+                        "@x": "0",
+                        "@y": "768",
                         "@w": "768",
                         "@h": "768"
                       },
@@ -377,8 +377,8 @@
                         "@independent": "1",
                         "@full_picture": "0",
                         "@filter_disabled": "0",
-                        "@x": "0",
-                        "@y": "768",
+                        "@x": "768",
+                        "@y": "0",
                         "@w": "768",
                         "@h": "768"
                       },
@@ -2629,5 +2629,5 @@
       "@dataSize": "64170"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev531-g61f1cf39-master"
 }
