@@ -77,6 +77,11 @@ def crawl_hierarchy_gpac(root_hierarchy, can_be_found_anywhere, mp4ra_check=True
                     sg_entry = {"@Type": value["@grouping_type"]}
                     add_variant(add, sg_entry, path + [fourcc])
 
+                # Special case for handlers
+                if "@hdlrType" in value:
+                    hdlr_entry = {"@Type": value["@hdlrType"]}
+                    add_variant(add, hdlr_entry, path + [fourcc])
+
                 add_variant(add, value, path)
                 crawl(value, path + [fourcc])
             elif isinstance(value, list):

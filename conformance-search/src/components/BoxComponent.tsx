@@ -324,7 +324,7 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                         </span>
                     </div>
                 </Drawer>
-                <Drawer title="Syntax">
+                <Drawer hidden={box.item.syntax === null} title="Syntax">
                     <SyntaxHighlighter
                         customStyle={{
                             fontSize: "0.75rem",

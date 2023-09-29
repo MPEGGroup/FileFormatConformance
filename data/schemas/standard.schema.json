@@ -51,7 +51,7 @@
             "description": "All the possible containers for this entry. If the element is a string then it is treated as fourcc or type. Otherwise if an object is provided then the only key in it will be treated as type and the items in that array will be treated as fourccs. The latter form will be used to differentiate between different types of containers that have the same fourcc."
           },
           "syntax": {
-            "type": "string",
+            "type": ["string", "null"],
             "description": "The full syntax of this entry, as specified in the standard."
           },
           "versions": {

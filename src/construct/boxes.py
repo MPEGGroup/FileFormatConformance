@@ -168,6 +168,8 @@ def main():
     syntaxes = set()
     for value in BOXES.values():
         for _box in value:
+            if _box.syntax is None:
+                continue
             matches = extract_syntax.findall(_box.syntax)
             for match in matches:
                 syntaxes.add(match)
