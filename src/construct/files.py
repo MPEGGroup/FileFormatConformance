@@ -82,6 +82,22 @@ def crawl_hierarchy_gpac(root_hierarchy, can_be_found_anywhere, mp4ra_check=True
                     hdlr_entry = {"@Type": value["@hdlrType"]}
                     add_variant(add, hdlr_entry, path + [fourcc])
 
+                # Special case for brands (no seperation between major vs compatible)
+                # TODO: Seperate the flavors
+                if "@MajorBrand" in value:
+                    brand_entry = {"@Type": value["@MajorBrand"]}
+                    add_variant(add, brand_entry, path + [fourcc])
+
+                    if "BrandEntry" in value:
+                        if isinstance(value["BrandEntry"], list):
+                            for brand in value["BrandEntry"]:
+                                brand_entry = {"@Type": brand["@AlternateBrand"]}
+                                add_variant(add, brand_entry, path + [fourcc])
+                        elif isinstance(value["BrandEntry"], dict):
+                            for brand in value["BrandEntry"].values():
+                                brand_entry = {"@Type": brand}
+                                add_variant(add, brand_entry, path + [fourcc])
+
                 add_variant(add, value, path)
                 crawl(value, path + [fourcc])
             elif isinstance(value, list):
