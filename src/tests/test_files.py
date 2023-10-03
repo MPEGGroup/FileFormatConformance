@@ -60,6 +60,9 @@ def test_variants(check):
             variant_file_map = files["path_file_map"][path]
             variant_keys = set(variant_file_map.keys())
 
+            # We don't care about variant metadata so strip it
+            variant_keys = set(":".join(k.split(":")[:2]) for k in variant_keys)
+
             # Check if there is a *:* variant
             if "*:*" in variant_keys:
                 # First check: if there is a *:* variant then there should be no other variants

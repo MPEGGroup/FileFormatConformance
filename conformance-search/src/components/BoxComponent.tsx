@@ -10,6 +10,7 @@ import { Box, SearchResultRefined } from "@/types";
 import RefinementContext from "@/contexts/RefinementContext";
 import Chip from "./Chip";
 import Drawer from "./Drawer";
+import Checkbox from "./Checkbox";
 
 SyntaxHighlighter.registerLanguage("javascript", js);
 
@@ -157,6 +158,146 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                         ))}
                     </div>
                 </Drawer>
+                <Drawer hidden={box.item.type !== "brand_type"} title="Brand Flavor">
+                    <ul className="p-3">
+                        <li className="flex flex-row items-center gap-2">
+                            <button
+                                onClick={() => {
+                                    // Create refinements object if it doesn't exist
+                                    let { refinements } = box;
+                                    if (!refinements)
+                                        refinements = {
+                                            variant: {
+                                                versions: {
+                                                    value: []
+                                                },
+                                                flags: {
+                                                    value: [],
+                                                    exact: false
+                                                },
+                                                metadata: {}
+                                            }
+                                        };
+
+                                    // Turn off the brand flavor
+                                    delete refinements.variant.metadata.BrandFlavor;
+
+                                    refineHandler(
+                                        {
+                                            ...box,
+                                            refinements
+                                        },
+                                        "box"
+                                    );
+                                }}
+                                type="button"
+                            >
+                                <Checkbox
+                                    checked={
+                                        box?.refinements?.variant.metadata.BrandFlavor === undefined
+                                    }
+                                    intermediate={box?.refinements?.variant.metadata.BrandFlavor}
+                                />
+                            </button>
+                            <span>All flavors</span>
+                        </li>
+                        <li className="ml-4 flex flex-row items-center gap-2">
+                            <button
+                                onClick={() => {
+                                    // Create refinements object if it doesn't exist
+                                    let { refinements } = box;
+                                    if (!refinements)
+                                        refinements = {
+                                            variant: {
+                                                versions: {
+                                                    value: []
+                                                },
+                                                flags: {
+                                                    value: [],
+                                                    exact: false
+                                                },
+                                                metadata: {}
+                                            }
+                                        };
+
+                                    // Turn on major brand
+                                    if (
+                                        refinements.variant.metadata.BrandFlavor &&
+                                        refinements.variant.metadata.BrandFlavor === "Major"
+                                    )
+                                        delete refinements.variant.metadata.BrandFlavor;
+                                    else refinements.variant.metadata.BrandFlavor = "Major";
+
+                                    refineHandler(
+                                        {
+                                            ...box,
+                                            refinements
+                                        },
+                                        "box"
+                                    );
+                                }}
+                                type="button"
+                            >
+                                <Checkbox
+                                    checked={
+                                        box?.refinements?.variant.metadata.BrandFlavor ===
+                                            undefined ||
+                                        box?.refinements?.variant.metadata.BrandFlavor === "Major"
+                                    }
+                                />
+                            </button>
+                            <span>Major brand</span>
+                        </li>
+                        <li className="ml-4 flex flex-row items-center gap-2">
+                            <button
+                                onClick={() => {
+                                    // Create refinements object if it doesn't exist
+                                    let { refinements } = box;
+                                    if (!refinements)
+                                        refinements = {
+                                            variant: {
+                                                versions: {
+                                                    value: []
+                                                },
+                                                flags: {
+                                                    value: [],
+                                                    exact: false
+                                                },
+                                                metadata: {}
+                                            }
+                                        };
+
+                                    // Turn on compatible brand
+                                    if (
+                                        refinements.variant.metadata.BrandFlavor &&
+                                        refinements.variant.metadata.BrandFlavor === "Compatible"
+                                    )
+                                        delete refinements.variant.metadata.BrandFlavor;
+                                    else refinements.variant.metadata.BrandFlavor = "Compatible";
+
+                                    refineHandler(
+                                        {
+                                            ...box,
+                                            refinements
+                                        },
+                                        "box"
+                                    );
+                                }}
+                                type="button"
+                            >
+                                <Checkbox
+                                    checked={
+                                        box?.refinements?.variant.metadata.BrandFlavor ===
+                                            undefined ||
+                                        box?.refinements?.variant.metadata.BrandFlavor ===
+                                            "Compatible"
+                                    }
+                                />
+                            </button>
+                            <span>Compatible brand</span>
+                        </li>
+                    </ul>
+                </Drawer>
                 <Drawer hidden={box.item.versions.length < 1} title="Versions">
                     <ul className="p-3">
                         {box.item.versions.map((version) => (
@@ -175,7 +316,8 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                                     flags: {
                                                         value: [],
                                                         exact: false
-                                                    }
+                                                    },
+                                                    metadata: {}
                                                 }
                                             };
 
@@ -197,12 +339,12 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                     }}
                                     type="button"
                                 >
-                                    {box.refinements &&
-                                    box.refinements.variant.versions.value.includes(version) ? (
-                                        <ImCheckboxChecked />
-                                    ) : (
-                                        <ImCheckboxUnchecked />
-                                    )}
+                                    <Checkbox
+                                        checked={
+                                            box.refinements &&
+                                            box.refinements.variant.versions.value.includes(version)
+                                        }
+                                    />
                                 </button>
                                 Version {version}
                             </li>
@@ -236,7 +378,8 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                                         flags: {
                                                             value: [],
                                                             exact: false
-                                                        }
+                                                        },
+                                                        metadata: {}
                                                     }
                                                 };
 
@@ -258,12 +401,12 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                         }}
                                         type="button"
                                     >
-                                        {box.refinements &&
-                                        box.refinements.variant.flags.value.includes(value) ? (
-                                            <ImCheckboxChecked />
-                                        ) : (
-                                            <ImCheckboxUnchecked />
-                                        )}
+                                        <Checkbox
+                                            checked={
+                                                box.refinements &&
+                                                box.refinements.variant.flags.value.includes(value)
+                                            }
+                                        />
                                     </button>
                                     <div className="flex flex-col">
                                         <span className="text-sm font-bold">
@@ -297,7 +440,8 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                             flags: {
                                                 value: [],
                                                 exact: false
-                                            }
+                                            },
+                                            metadata: {}
                                         }
                                     };
 
@@ -313,11 +457,11 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                             }}
                             type="button"
                         >
-                            {box.refinements && box.refinements.variant.flags.exact ? (
-                                <ImCheckboxChecked />
-                            ) : (
-                                <ImCheckboxUnchecked />
-                            )}
+                            <Checkbox
+                                checked={
+                                    box.refinements && box.refinements.variant.flags.exact === true
+                                }
+                            />
                         </button>
                         <span className="text-sm">
                             Combined flags must match exactly (no extra flags).
