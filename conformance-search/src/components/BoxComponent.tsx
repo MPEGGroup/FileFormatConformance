@@ -221,9 +221,11 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                         };
 
                                     // Turn on major brand
-                                    if (
-                                        refinements.variant.metadata.BrandFlavor &&
-                                        refinements.variant.metadata.BrandFlavor === "Major"
+                                    if (!refinements.variant.metadata.BrandFlavor)
+                                        refinements.variant.metadata.BrandFlavor = "Compatible";
+                                    else if (
+                                        refinements.variant.metadata.BrandFlavor === "Major" ||
+                                        refinements.variant.metadata.BrandFlavor === "Compatible"
                                     )
                                         delete refinements.variant.metadata.BrandFlavor;
                                     else refinements.variant.metadata.BrandFlavor = "Major";
@@ -268,9 +270,11 @@ export default function BoxComponent({ box }: { box: SearchResultRefined<Box> })
                                         };
 
                                     // Turn on compatible brand
-                                    if (
-                                        refinements.variant.metadata.BrandFlavor &&
-                                        refinements.variant.metadata.BrandFlavor === "Compatible"
+                                    if (!refinements.variant.metadata.BrandFlavor)
+                                        refinements.variant.metadata.BrandFlavor = "Major";
+                                    else if (
+                                        refinements.variant.metadata.BrandFlavor === "Compatible" ||
+                                        refinements.variant.metadata.BrandFlavor === "Major"
                                     )
                                         delete refinements.variant.metadata.BrandFlavor;
                                     else refinements.variant.metadata.BrandFlavor = "Compatible";
