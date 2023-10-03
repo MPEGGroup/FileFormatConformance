@@ -1492,6 +1492,10 @@
       ],
       "type": "Box",
       "syntax": "class URIBox extends FullBox('uri ', version = 0, 0) {\n\tutf8string theURI;\n}"
+    },
+    {
+      "fourcc": "mere",
+      "deprecated": true
     }
   ]
 }
