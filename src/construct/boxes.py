@@ -348,8 +348,8 @@ def main():
         if _box.fourcc not in get_mp4ra_boxes():
             buffer.append(_box.fourcc)
 
+    buffer = set(buffer) - DEPRECATED_BOXES
     if len(buffer) > 0:
-        buffer = set(buffer) - DEPRECATED_BOXES
         logger.warning(f"Missing boxes in MP4RA ({len(buffer)}): {sorted(buffer)}")
 
     # Check missing boxes in standard features
@@ -359,9 +359,9 @@ def main():
         if _box not in all_fourccs:
             buffer.append(_box)
 
+    buffer = set(buffer) - DEPRECATED_BOXES
     # FIXME: This should be an error
     if len(buffer) > 0:
-        buffer = set(buffer) - DEPRECATED_BOXES
         logger.warning(
             f"Missing boxes in standard features ({len(buffer)}): {sorted(buffer)}"
         )
