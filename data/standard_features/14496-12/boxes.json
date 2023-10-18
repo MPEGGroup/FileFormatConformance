@@ -1495,6 +1495,27 @@
     },
     {
       "fourcc": "mere",
+      "description": "Metabox Relation box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "meco",
+      "description": "Additional metadata container box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "imif",
+      "description": "IPMPInfoBox",
+      "deprecated": true
+    },
+    {
+      "fourcc": "ipmc",
+      "description": "IPMP control box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "stsl",
+      "description": "Sample scale box",
       "deprecated": true
     }
   ]
