@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "Neural-network post-filter characteristics sample group and activation sample group",
+  "mdms_number": "m65211",
+  "rel_filepath": "./vvc_nnsei_1.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "d7fe3298767c17bdc3d4a26a15fbec9e",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
