@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris / CANON Research Centre France",
+  "description": "HEVC with temporal sub-layer and linf sample group description (hvc1/hvc2 tracks)",
+  "mdms_number": "m64279",
+  "rel_filepath": "./hevc_hvc1_hvc2_implicit_v2.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "6ebdb6832b174a521c6cea867f04f61c",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}

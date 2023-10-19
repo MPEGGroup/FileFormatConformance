@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris / CANON Research Centre France",
+  "description": "HEVC Tile tracks with (default) trif sample group description",
+  "mdms_number": "m64279",
+  "rel_filepath": "./hevc_tiles_multiple_tracks_empty_base_v2.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "f73ccea234073833765ab3d46bcd78c3",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
