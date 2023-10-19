@@ -1,0 +1,2838 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "progressive-focus.heic",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mif1",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mif1"
+        },
+        {
+          "@AlternateBrand": "heic"
+        }
+      ]
+    },
+    "MetaBox": {
+      "@Size": "7439",
+      "@Type": "meta",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file moov trak moof traf udta",
+      "HandlerBox": {
+        "@Size": "45",
+        "@Type": "hdlr",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "mdia meta minf",
+        "@hdlrType": "pict",
+        "@Name": "pict Handler",
+        "@reserved1": "0",
+        "@reserved2": "data:application/octet-string,000000000000000000000000"
+      },
+      "PrimaryItemBox": {
+        "@Size": "14",
+        "@Type": "pitm",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@item_ID": "1"
+      },
+      "ItemLocationBox": {
+        "@Size": "716",
+        "@Type": "iloc",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@offset_size": "0",
+        "@length_size": "4",
+        "@base_offset_size": "4",
+        "@index_size": "0",
+        "ItemLocationEntry": [
+          {
+            "@item_ID": "2",
+            "@data_reference_index": "0",
+            "@base_offset": "7471",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3331",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "1",
+            "@data_reference_index": "0",
+            "@base_offset": "10802",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "8",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "4",
+            "@data_reference_index": "0",
+            "@base_offset": "10810",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "5499",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "5",
+            "@data_reference_index": "0",
+            "@base_offset": "16309",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4071",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "12",
+            "@data_reference_index": "0",
+            "@base_offset": "20380",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4113",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "13",
+            "@data_reference_index": "0",
+            "@base_offset": "24493",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4299",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "29",
+            "@data_reference_index": "0",
+            "@base_offset": "28792",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3413",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "32",
+            "@data_reference_index": "0",
+            "@base_offset": "32205",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4170",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "33",
+            "@data_reference_index": "0",
+            "@base_offset": "36375",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2860",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "40",
+            "@data_reference_index": "0",
+            "@base_offset": "39235",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2526",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "41",
+            "@data_reference_index": "0",
+            "@base_offset": "41761",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2423",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "3",
+            "@data_reference_index": "0",
+            "@base_offset": "44184",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "6332",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "6",
+            "@data_reference_index": "0",
+            "@base_offset": "50516",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3890",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "7",
+            "@data_reference_index": "0",
+            "@base_offset": "54406",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2356",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "8",
+            "@data_reference_index": "0",
+            "@base_offset": "56762",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3611",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "9",
+            "@data_reference_index": "0",
+            "@base_offset": "60373",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3310",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "10",
+            "@data_reference_index": "0",
+            "@base_offset": "63683",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3189",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "11",
+            "@data_reference_index": "0",
+            "@base_offset": "66872",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4134",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "14",
+            "@data_reference_index": "0",
+            "@base_offset": "71006",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3926",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "15",
+            "@data_reference_index": "0",
+            "@base_offset": "74932",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2989",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "16",
+            "@data_reference_index": "0",
+            "@base_offset": "77921",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3023",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "17",
+            "@data_reference_index": "0",
+            "@base_offset": "80944",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3063",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "18",
+            "@data_reference_index": "0",
+            "@base_offset": "84007",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2576",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "19",
+            "@data_reference_index": "0",
+            "@base_offset": "86583",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "5014",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "20",
+            "@data_reference_index": "0",
+            "@base_offset": "91597",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3933",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "21",
+            "@data_reference_index": "0",
+            "@base_offset": "95530",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3284",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "22",
+            "@data_reference_index": "0",
+            "@base_offset": "98814",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3004",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "23",
+            "@data_reference_index": "0",
+            "@base_offset": "101818",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "4104",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "24",
+            "@data_reference_index": "0",
+            "@base_offset": "105922",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2714",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "25",
+            "@data_reference_index": "0",
+            "@base_offset": "108636",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2626",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "26",
+            "@data_reference_index": "0",
+            "@base_offset": "111262",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1994",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "27",
+            "@data_reference_index": "0",
+            "@base_offset": "113256",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3373",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "28",
+            "@data_reference_index": "0",
+            "@base_offset": "116629",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3107",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "30",
+            "@data_reference_index": "0",
+            "@base_offset": "119736",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2714",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "31",
+            "@data_reference_index": "0",
+            "@base_offset": "122450",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3409",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "34",
+            "@data_reference_index": "0",
+            "@base_offset": "125859",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1718",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "35",
+            "@data_reference_index": "0",
+            "@base_offset": "127577",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "3367",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "36",
+            "@data_reference_index": "0",
+            "@base_offset": "130944",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2832",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "37",
+            "@data_reference_index": "0",
+            "@base_offset": "133776",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2564",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "38",
+            "@data_reference_index": "0",
+            "@base_offset": "136340",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2666",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "39",
+            "@data_reference_index": "0",
+            "@base_offset": "139006",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2548",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "42",
+            "@data_reference_index": "0",
+            "@base_offset": "141554",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2208",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "43",
+            "@data_reference_index": "0",
+            "@base_offset": "143762",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2661",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "44",
+            "@data_reference_index": "0",
+            "@base_offset": "146423",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1548",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "45",
+            "@data_reference_index": "0",
+            "@base_offset": "147971",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2946",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "46",
+            "@data_reference_index": "0",
+            "@base_offset": "150917",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1818",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "47",
+            "@data_reference_index": "0",
+            "@base_offset": "152735",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1666",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "48",
+            "@data_reference_index": "0",
+            "@base_offset": "154401",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1613",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "49",
+            "@data_reference_index": "0",
+            "@base_offset": "156014",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "2052",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "50",
+            "@data_reference_index": "0",
+            "@base_offset": "158066",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "1017",
+              "@extent_index": "0"
+            }
+          }
+        ]
+      },
+      "ItemInfoBox": {
+        "@Size": "1068",
+        "@Type": "iinf",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemInfoEntryBox": [
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "2",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "25",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "1",
+            "@item_protection_index": "0",
+            "@item_name": "Grid",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "grid"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "4",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "5",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "12",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "13",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "29",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "32",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "33",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "40",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "41",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "3",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "6",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "7",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "8",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "9",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "10",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "11",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "14",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "15",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "16",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "17",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "18",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "19",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "20",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "21",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "22",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "23",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "24",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "25",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "26",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "27",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "28",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "30",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "31",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "34",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "35",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "36",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "37",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "38",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "39",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "42",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "43",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "44",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "45",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "46",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "47",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "48",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "49",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "50",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          }
+        ]
+      },
+      "ItemReferenceBox": {
+        "@Size": "134",
+        "@Type": "iref",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemReferenceBox": [
+          {
+            "@Size": "14",
+            "@Type": "thmb",
+            "@Specification": "p12",
+            "@Container": "iref",
+            "@from_item_id": "2",
+            "ItemReferenceBoxEntry": {
+              "@ItemID": "1"
+            }
+          },
+          {
+            "@Size": "108",
+            "@Type": "dimg",
+            "@Specification": "p12",
+            "@Container": "iref",
+            "@from_item_id": "1",
+            "ItemReferenceBoxEntry": [
+              {
+                "@ItemID": "3"
+              },
+              {
+                "@ItemID": "4"
+              },
+              {
+                "@ItemID": "5"
+              },
+              {
+                "@ItemID": "6"
+              },
+              {
+                "@ItemID": "7"
+              },
+              {
+                "@ItemID": "8"
+              },
+              {
+                "@ItemID": "9"
+              },
+              {
+                "@ItemID": "10"
+              },
+              {
+                "@ItemID": "11"
+              },
+              {
+                "@ItemID": "12"
+              },
+              {
+                "@ItemID": "13"
+              },
+              {
+                "@ItemID": "14"
+              },
+              {
+                "@ItemID": "15"
+              },
+              {
+                "@ItemID": "16"
+              },
+              {
+                "@ItemID": "17"
+              },
+              {
+                "@ItemID": "18"
+              },
+              {
+                "@ItemID": "19"
+              },
+              {
+                "@ItemID": "20"
+              },
+              {
+                "@ItemID": "21"
+              },
+              {
+                "@ItemID": "22"
+              },
+              {
+                "@ItemID": "23"
+              },
+              {
+                "@ItemID": "24"
+              },
+              {
+                "@ItemID": "25"
+              },
+              {
+                "@ItemID": "26"
+              },
+              {
+                "@ItemID": "27"
+              },
+              {
+                "@ItemID": "28"
+              },
+              {
+                "@ItemID": "29"
+              },
+              {
+                "@ItemID": "30"
+              },
+              {
+                "@ItemID": "31"
+              },
+              {
+                "@ItemID": "32"
+              },
+              {
+                "@ItemID": "33"
+              },
+              {
+                "@ItemID": "34"
+              },
+              {
+                "@ItemID": "35"
+              },
+              {
+                "@ItemID": "36"
+              },
+              {
+                "@ItemID": "37"
+              },
+              {
+                "@ItemID": "38"
+              },
+              {
+                "@ItemID": "39"
+              },
+              {
+                "@ItemID": "40"
+              },
+              {
+                "@ItemID": "41"
+              },
+              {
+                "@ItemID": "42"
+              },
+              {
+                "@ItemID": "43"
+              },
+              {
+                "@ItemID": "44"
+              },
+              {
+                "@ItemID": "45"
+              },
+              {
+                "@ItemID": "46"
+              },
+              {
+                "@ItemID": "47"
+              },
+              {
+                "@ItemID": "48"
+              },
+              {
+                "@ItemID": "49"
+              },
+              {
+                "@ItemID": "50"
+              }
+            ]
+          }
+        ]
+      },
+      "ItemPropertiesBox": {
+        "@Size": "5414",
+        "@Type": "iprp",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "ItemPropertyContainerBox": {
+          "@Size": "5042",
+          "@Type": "ipco",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "ImageSpatialExtentsPropertyBox": [
+            {
+              "@Size": "20",
+              "@Type": "ispe",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "iff",
+              "@Container": "ipco",
+              "@image_width": "160",
+              "@image_height": "120"
+            },
+            {
+              "@Size": "20",
+              "@Type": "ispe",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "iff",
+              "@Container": "ipco",
+              "@image_width": "2016",
+              "@image_height": "1512"
+            },
+            {
+              "@Size": "20",
+              "@Type": "ispe",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "iff",
+              "@Container": "ipco",
+              "@image_width": "256",
+              "@image_height": "256"
+            }
+          ],
+          "PixelAspectRatioBox": {
+            "@Size": "16",
+            "@Type": "pasp",
+            "@Specification": "p12",
+            "@Container": "video_sample_entry ipco",
+            "@hSpacing": "1",
+            "@vSpacing": "1"
+          },
+          "HEVCConfigurationBox": [
+            {
+              "@Size": "2461",
+              "@Type": "hvcC",
+              "@Specification": "p15",
+              "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+              "HEVCDecoderConfigurationRecord": {
+                "@nal_unit_size": "4",
+                "@configurationVersion": "1",
+                "@profile_space": "0",
+                "@tier_flag": "0",
+                "@profile_idc": "1",
+                "@general_profile_compatibility_flags": "60000000",
+                "@progressive_source_flag": "1",
+                "@interlaced_source_flag": "0",
+                "@non_packed_constraint_flag": "0",
+                "@frame_only_constraint_flag": "1",
+                "@constraint_indicator_flags": "0",
+                "@level_idc": "30",
+                "@min_spatial_segmentation_idc": "0",
+                "@parallelismType": "0",
+                "@chroma_format": "YUV 4:2:0",
+                "@luma_bit_depth": "8",
+                "@chroma_bit_depth": "8",
+                "@avgFrameRate": "0",
+                "@constantFrameRate": "0",
+                "@numTemporalLayers": "1",
+                "@temporalIdNested": "1",
+                "ParameterSetArray": [
+                  {
+                    "@nalu_type": "32",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "24",
+                      "@content": "data:application/octet-string,40010C01FFFF01600000030090000003000003001E959809"
+                    }
+                  },
+                  {
+                    "@nalu_type": "33",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "44",
+                      "@content": "data:application/octet-string,42010101600000030090000003000003001EA014207965959A4932BC05B810102D2080000003008000000C84"
+                    }
+                  },
+                  {
+                    "@nalu_type": "34",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "7",
+                      "@content": "data:application/octet-string,4401C172B46240"
+                    }
+                  },
+                  {
+                    "@nalu_type": "39",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "2335",
+                      "@content": "data:application/octet-string,4E0105FFFFFFFFFFFFFFFFFF1A2CA2DE09B51747DBBB55A4FE7FC2FC4E7832363520286275696C642031393929202D20332E342B33312D3637323266636531663A5B4D6163204F5320585D5B636C616E672031322E302E305D5B3634206269745D20386269742B31306269742B3132626974202D20482E3236352F4845564320636F646563202D20436F7079726967687420323031332D3230313820286329204D756C7469636F7265776172652C20496E63202D20687474703A2F2F783236352E6F7267202D206F7074696F6E733A2063707569643D31313131303339206672616D652D746872656164733D3320777070206E6F2D706D6F6465206E6F2D706D65206E6F2D70736E72206E6F2D7373696D206C6F672D6C6576656C3D322062697464657074683D3820696E7075742D6373703D31206670733D32352F3120696E7075742D7265733D3136307831323020696E7465726C6163653D3020746F74616C2D6672616D65733D30206C6576656C2D6964633D3020686967682D746965723D31207568642D62643D30207265663D33206E6F2D616C6C6F772D6E6F6E2D636F6E666F726D616E6365206E6F2D7265706561742D6865616465727320616E6E657862206E6F2D617564206E6F2D68726420696E666F20686173683D30206E6F2D74656D706F72616C2D6C6179657273206F70656E2D676F70206D696E2D6B6579696E743D3235206B6579696E743D32353020676F702D6C6F6F6B61686561643D3020626672616D65733D3420622D61646170743D3220622D707972616D696420626672616D652D626961733D302072632D6C6F6F6B61686561643D3230206C6F6F6B61686561642D736C696365733D30207363656E656375743D343020686973742D7363656E656375743D30207261646C3D30206E6F2D73706C696365206E6F2D696E7472612D72656672657368206374753D3634206D696E2D63752D73697A653D38206E6F2D72656374206E6F2D616D70206D61782D74752D73697A653D33322074752D696E7465722D64657074683D312074752D696E7472612D64657074683D31206C696D69742D74753D302072646F712D6C6576656C3D302064796E616D69632D72643D302E3030206E6F2D7373696D2D7264207369676E68696465206E6F2D74736B6970206E722D696E7472613D30206E722D696E7465723D30206E6F2D636F6E73747261696E65642D696E747261207374726F6E672D696E7472612D736D6F6F7468696E67206D61782D6D657267653D33206C696D69742D726566733D31206E6F2D6C696D69742D6D6F646573206D653D31207375626D653D32206D6572616E67653D35372074656D706F72616C2D6D7670206E6F2D6672616D652D647570206E6F2D686D652077656967687470206E6F2D77656967687462206E6F2D616E616C797A652D7372632D70696373206465626C6F636B3D303A302073616F206E6F2D73616F2D6E6F6E2D6465626C6F636B2072643D332073656C6563746976652D73616F3D34206561726C792D736B69702072736B6970206E6F2D666173742D696E747261206E6F2D74736B69702D66617374206E6F2D63752D6C6F73736C65737320622D696E747261206E6F2D73706C697472642D736B697020726470656E616C74793D30207073792D72643D322E3030207073792D72646F713D302E3030206E6F2D72642D726566696E65206E6F2D6C6F73736C65737320636271706F6666733D3020637271706F6666733D302072633D637266206372663D32382E302071636F6D703D302E3630207170737465703D342073746174732D77726974653D302073746174732D726561643D30206970726174696F3D312E3430207062726174696F3D312E33302061712D6D6F64653D322061712D737472656E6774683D312E303020637574726565207A6F6E652D636F756E743D30206E6F2D7374726963742D6362722071672D73697A653D3332206E6F2D72632D677261696E2071706D61783D36392071706D696E3D30206E6F2D636F6E73742D766276207361723D31206F7665727363616E3D3020766964656F666F726D61743D352072616E67653D3120636F6C6F727072696D3D32207472616E736665723D3220636F6C6F726D61747269783D35206368726F6D616C6F633D31206368726F6D616C6F632D746F703D31206368726F6D616C6F632D626F74746F6D3D3120646973706C61792D77696E646F773D3020636C6C3D302C30206D696E2D6C756D613D30206D61782D6C756D613D323535206C6F67322D6D61782D706F632D6C73623D38207675692D74696D696E672D696E666F207675692D6872642D696E666F20736C696365733D31206E6F2D6F70742D71702D707073206E6F2D6F70742D7265662D6C6973742D6C656E6774682D707073206E6F2D6D756C74692D706173732D6F70742D727073207363656E656375742D626961733D302E303520686973742D7468726573686F6C643D302E3033206E6F2D6F70742D63752D64656C74612D7170206E6F2D61712D6D6F74696F6E206E6F2D6864723130206E6F2D68647231302D6F7074206E6F2D6468647231302D6F7074206E6F2D6964722D7265636F766572792D73656920616E616C797369732D72657573652D6C6576656C3D3020616E616C797369732D736176652D72657573652D6C6576656C3D3020616E616C797369732D6C6F61642D72657573652D6C6576656C3D30207363616C652D666163746F723D3020726566696E652D696E7472613D3020726566696E652D696E7465723D3020726566696E652D6D763D3120726566696E652D6374752D646973746F7274696F6E3D30206E6F2D6C696D69742D73616F206374752D696E666F3D30206E6F2D6C6F77706173732D64637420726566696E652D616E616C797369732D747970653D3020636F70792D7069633D31206D61782D617573697A652D666163746F723D312E30206E6F2D64796E616D69632D726566696E65206E6F2D73696E676C652D736569206E6F2D686576632D6171206E6F2D737674206E6F2D6669656C642071702D61646170746174696F6E2D72616E67653D312E3030207363656E656375742D61776172652D71703D30636F6E666F726D616E63652D77696E646F772D6F6666736574732072696768743D3020626F74746F6D3D30206465636F6465722D6D61782D726174653D30206E6F2D7662762D6C6976652D6D756C74692D7061737380"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@Size": "2463",
+              "@Type": "hvcC",
+              "@Specification": "p15",
+              "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+              "HEVCDecoderConfigurationRecord": {
+                "@nal_unit_size": "4",
+                "@configurationVersion": "1",
+                "@profile_space": "0",
+                "@tier_flag": "0",
+                "@profile_idc": "1",
+                "@general_profile_compatibility_flags": "60000000",
+                "@progressive_source_flag": "1",
+                "@interlaced_source_flag": "0",
+                "@non_packed_constraint_flag": "0",
+                "@frame_only_constraint_flag": "1",
+                "@constraint_indicator_flags": "0",
+                "@level_idc": "60",
+                "@min_spatial_segmentation_idc": "0",
+                "@parallelismType": "0",
+                "@chroma_format": "YUV 4:2:0",
+                "@luma_bit_depth": "8",
+                "@chroma_bit_depth": "8",
+                "@avgFrameRate": "0",
+                "@constantFrameRate": "0",
+                "@numTemporalLayers": "1",
+                "@temporalIdNested": "1",
+                "ParameterSetArray": [
+                  {
+                    "@nalu_type": "32",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "24",
+                      "@content": "data:application/octet-string,40010C01FFFF01600000030090000003000003003C959809"
+                    }
+                  },
+                  {
+                    "@nalu_type": "33",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "46",
+                      "@content": "data:application/octet-string,42010101600000030090000003000003003CA00808040596566924CAF016E04040B4820000030002000003003210"
+                    }
+                  },
+                  {
+                    "@nalu_type": "34",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "7",
+                      "@content": "data:application/octet-string,4401C172B46240"
+                    }
+                  },
+                  {
+                    "@nalu_type": "39",
+                    "@complete_set": "0",
+                    "ParameterSet": {
+                      "@size": "2335",
+                      "@content": "data:application/octet-string,4E0105FFFFFFFFFFFFFFFFFF1A2CA2DE09B51747DBBB55A4FE7FC2FC4E7832363520286275696C642031393929202D20332E342B33312D3637323266636531663A5B4D6163204F5320585D5B636C616E672031322E302E305D5B3634206269745D20386269742B31306269742B3132626974202D20482E3236352F4845564320636F646563202D20436F7079726967687420323031332D3230313820286329204D756C7469636F7265776172652C20496E63202D20687474703A2F2F783236352E6F7267202D206F7074696F6E733A2063707569643D31313131303339206672616D652D746872656164733D3320777070206E6F2D706D6F6465206E6F2D706D65206E6F2D70736E72206E6F2D7373696D206C6F672D6C6576656C3D322062697464657074683D3820696E7075742D6373703D31206670733D32352F3120696E7075742D7265733D3235367832353620696E7465726C6163653D3020746F74616C2D6672616D65733D30206C6576656C2D6964633D3020686967682D746965723D31207568642D62643D30207265663D33206E6F2D616C6C6F772D6E6F6E2D636F6E666F726D616E6365206E6F2D7265706561742D6865616465727320616E6E657862206E6F2D617564206E6F2D68726420696E666F20686173683D30206E6F2D74656D706F72616C2D6C6179657273206F70656E2D676F70206D696E2D6B6579696E743D3235206B6579696E743D32353020676F702D6C6F6F6B61686561643D3020626672616D65733D3420622D61646170743D3220622D707972616D696420626672616D652D626961733D302072632D6C6F6F6B61686561643D3230206C6F6F6B61686561642D736C696365733D30207363656E656375743D343020686973742D7363656E656375743D30207261646C3D30206E6F2D73706C696365206E6F2D696E7472612D72656672657368206374753D3634206D696E2D63752D73697A653D38206E6F2D72656374206E6F2D616D70206D61782D74752D73697A653D33322074752D696E7465722D64657074683D312074752D696E7472612D64657074683D31206C696D69742D74753D302072646F712D6C6576656C3D302064796E616D69632D72643D302E3030206E6F2D7373696D2D7264207369676E68696465206E6F2D74736B6970206E722D696E7472613D30206E722D696E7465723D30206E6F2D636F6E73747261696E65642D696E747261207374726F6E672D696E7472612D736D6F6F7468696E67206D61782D6D657267653D33206C696D69742D726566733D31206E6F2D6C696D69742D6D6F646573206D653D31207375626D653D32206D6572616E67653D35372074656D706F72616C2D6D7670206E6F2D6672616D652D647570206E6F2D686D652077656967687470206E6F2D77656967687462206E6F2D616E616C797A652D7372632D70696373206465626C6F636B3D303A302073616F206E6F2D73616F2D6E6F6E2D6465626C6F636B2072643D332073656C6563746976652D73616F3D34206561726C792D736B69702072736B6970206E6F2D666173742D696E747261206E6F2D74736B69702D66617374206E6F2D63752D6C6F73736C65737320622D696E747261206E6F2D73706C697472642D736B697020726470656E616C74793D30207073792D72643D322E3030207073792D72646F713D302E3030206E6F2D72642D726566696E65206E6F2D6C6F73736C65737320636271706F6666733D3020637271706F6666733D302072633D637266206372663D32382E302071636F6D703D302E3630207170737465703D342073746174732D77726974653D302073746174732D726561643D30206970726174696F3D312E3430207062726174696F3D312E33302061712D6D6F64653D322061712D737472656E6774683D312E303020637574726565207A6F6E652D636F756E743D30206E6F2D7374726963742D6362722071672D73697A653D3332206E6F2D72632D677261696E2071706D61783D36392071706D696E3D30206E6F2D636F6E73742D766276207361723D31206F7665727363616E3D3020766964656F666F726D61743D352072616E67653D3120636F6C6F727072696D3D32207472616E736665723D3220636F6C6F726D61747269783D35206368726F6D616C6F633D31206368726F6D616C6F632D746F703D31206368726F6D616C6F632D626F74746F6D3D3120646973706C61792D77696E646F773D3020636C6C3D302C30206D696E2D6C756D613D30206D61782D6C756D613D323535206C6F67322D6D61782D706F632D6C73623D38207675692D74696D696E672D696E666F207675692D6872642D696E666F20736C696365733D31206E6F2D6F70742D71702D707073206E6F2D6F70742D7265662D6C6973742D6C656E6774682D707073206E6F2D6D756C74692D706173732D6F70742D727073207363656E656375742D626961733D302E303520686973742D7468726573686F6C643D302E3033206E6F2D6F70742D63752D64656C74612D7170206E6F2D61712D6D6F74696F6E206E6F2D6864723130206E6F2D68647231302D6F7074206E6F2D6468647231302D6F7074206E6F2D6964722D7265636F766572792D73656920616E616C797369732D72657573652D6C6576656C3D3020616E616C797369732D736176652D72657573652D6C6576656C3D3020616E616C797369732D6C6F61642D72657573652D6C6576656C3D30207363616C652D666163746F723D3020726566696E652D696E7472613D3020726566696E652D696E7465723D3020726566696E652D6D763D3120726566696E652D6374752D646973746F7274696F6E3D30206E6F2D6C696D69742D73616F206374752D696E666F3D30206E6F2D6C6F77706173732D64637420726566696E652D616E616C797369732D747970653D3020636F70792D7069633D31206D61782D617573697A652D666163746F723D312E30206E6F2D64796E616D69632D726566696E65206E6F2D73696E676C652D736569206E6F2D686576632D6171206E6F2D737674206E6F2D6669656C642071702D61646170746174696F6E2D72616E67653D312E3030207363656E656375742D61776172652D71703D30636F6E666F726D616E63652D77696E646F772D6F6666736574732072696768743D3020626F74746F6D3D30206465636F6465722D6D61782D726174653D30206E6F2D7662762D6C6976652D6D756C74692D7061737380"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "PixelInformationPropertyBox": {
+            "@Size": "16",
+            "@Type": "pixi",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "BitPerChannel": [
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              }
+            ]
+          },
+          "UnknownBox": {
+            "@Size": "18",
+            "@Type": "prdi",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "@data": "0x00000000000200090027"
+          }
+        },
+        "ItemPropertyAssociationBox": {
+          "@Size": "364",
+          "@Type": "ipma",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "@entry_count": "50",
+          "AssociationEntry": [
+            {
+              "@item_ID": "2",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "1",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "3",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "1",
+              "@association_count": "2",
+              "Property": [
+                {
+                  "@index": "5",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "8",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "4",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "5",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "12",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "13",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "29",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "32",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "33",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "40",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "41",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "3",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "6",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "7",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "8",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "9",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "10",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "11",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "14",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "15",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "16",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "17",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "18",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "19",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "20",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "21",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "22",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "23",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "24",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "25",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "26",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "27",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "28",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "30",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "31",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "34",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "35",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "36",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "37",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "38",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "39",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "42",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "43",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "44",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "45",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "46",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "47",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "48",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "49",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "50",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "6",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "7",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "GroupListBox": {
+        "@Size": "36",
+        "@Type": "grpl",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "EntityToGroupTypeBox": {
+          "@Size": "28",
+          "@Type": "prgr",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "grpl",
+          "@group_id": "51",
+          "EntityToGroupTypeBoxEntry": [
+            {
+              "@EntityID": "2"
+            },
+            {
+              "@EntityID": "1"
+            }
+          ]
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "151620",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "151612"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}

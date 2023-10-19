@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./progressive-diagonal.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "26",
+        "@Type": "prdi",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x000000000006000100020003000300020001"
+      }
+    }
+  ]
+}
