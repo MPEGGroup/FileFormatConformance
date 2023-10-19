@@ -1,0 +1,14 @@
+{
+  "contributor": "CANON Research Centre France",
+  "description": "Mask region with 'udes' annotation, where the mask is defined as an item.",
+  "mdms_number": "m63203",
+  "rel_filepath": "./region-mask.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "f3061c0cd579f6ce0013865891d053f2",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
