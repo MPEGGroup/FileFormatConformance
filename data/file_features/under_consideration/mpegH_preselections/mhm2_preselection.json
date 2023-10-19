@@ -1,0 +1,14 @@
+{
+  "contributor": "Fraunhofer IIS",
+  "description": "Preselections for multistream MPEG-H 3D Audio (mhm2). The audio scene contains a channel bed as well as 3 languages (English, German and Korean).",
+  "mdms_number": "m65264",
+  "rel_filepath": "./mhm2_preselection.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "02bbf3e3ff3c2fb20aa3bb801a64d0ae",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": "Copyright (c) 2023 Fraunhofer-Gesellschaft zur F\u00f6rderung der angewandten Forschung e.V.\nAll rights reserved.\n\nThe Conformance File is licensed under the\nCreative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+}
