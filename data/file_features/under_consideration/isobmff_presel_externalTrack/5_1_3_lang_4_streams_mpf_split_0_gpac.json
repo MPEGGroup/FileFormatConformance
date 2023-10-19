@@ -17,7 +17,7 @@
       "@Size": "2538",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file cmvd",
+      "@Container": "file",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -49,21 +49,118 @@
               "@Type": "pres",
               "@Version": "0",
               "@Flags": "12288",
-              "@Specification": "iff",
+              "@Specification": "p12",
               "@Container": "grpl",
               "@group_id": "4096",
+              "@preselection_tag": "0",
+              "@selection_priority": "0",
+              "@interleaving_tag": "",
               "EntityToGroupTypeBoxEntry": {
                 "@EntityID": "1"
-              }
+              },
+              "Label": {
+                "@Size": "29",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "pres udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "English"
+              },
+              "ChannelLayoutBox": {
+                "@Size": "22",
+                "@Type": "chnl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "audio_sample_entry aelm pres",
+                "@stream_structure": "1",
+                "@definedLayout": "19",
+                "@omittedChannelsMap": "0"
+              },
+              "AudioElement": [
+                {
+                  "@Size": "48",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "0",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "Label": {
+                    "@Size": "25",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Bed"
+                  }
+                },
+                {
+                  "@Size": "70",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "1",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia pres aelm",
+                    "@LanguageCode": "en-GB"
+                  },
+                  "Label": {
+                    "@Size": "29",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "English"
+                  }
+                }
+              ]
             },
             {
               "@Size": "202",
               "@Type": "pres",
               "@Version": "0",
               "@Flags": "4096",
-              "@Specification": "iff",
+              "@Specification": "p12",
               "@Container": "grpl",
               "@group_id": "4097",
+              "@preselection_tag": "1",
+              "@interleaving_tag": "mhm2",
               "EntityToGroupTypeBoxEntry": [
                 {
                   "@EntityID": "1"
@@ -71,6 +168,98 @@
                 {
                   "@EntityID": "2"
                 }
+              ],
+              "Label": {
+                "@Size": "28",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "pres udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "German"
+              },
+              "ChannelLayoutBox": {
+                "@Size": "22",
+                "@Type": "chnl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "audio_sample_entry aelm pres",
+                "@stream_structure": "1",
+                "@definedLayout": "19",
+                "@omittedChannelsMap": "0"
+              },
+              "AudioElement": [
+                {
+                  "@Size": "48",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "0",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "Label": {
+                    "@Size": "25",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Bed"
+                  }
+                },
+                {
+                  "@Size": "69",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "2",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia pres aelm",
+                    "@LanguageCode": "de-DE"
+                  },
+                  "Label": {
+                    "@Size": "28",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "German"
+                  }
+                }
               ]
             },
             {
@@ -78,9 +267,11 @@
               "@Type": "pres",
               "@Version": "0",
               "@Flags": "4096",
-              "@Specification": "iff",
+              "@Specification": "p12",
               "@Container": "grpl",
               "@group_id": "4098",
+              "@preselection_tag": "2",
+              "@interleaving_tag": "mhm2",
               "EntityToGroupTypeBoxEntry": [
                 {
                   "@EntityID": "1"
@@ -88,55 +279,163 @@
                 {
                   "@EntityID": "3"
                 }
+              ],
+              "Label": {
+                "@Size": "28",
+                "@Type": "labl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "pres udta aelm aesb",
+                "@isGroupLabel": "0",
+                "@labelID": "0",
+                "@Language": "en-GB",
+                "@Label": "Korean"
+              },
+              "ChannelLayoutBox": {
+                "@Size": "22",
+                "@Type": "chnl",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "audio_sample_entry aelm pres",
+                "@stream_structure": "1",
+                "@definedLayout": "19",
+                "@omittedChannelsMap": "0"
+              },
+              "AudioElement": [
+                {
+                  "@Size": "48",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "0",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "Label": {
+                    "@Size": "25",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Bed"
+                  }
+                },
+                {
+                  "@Size": "69",
+                  "@Type": "aelm",
+                  "@Specification": "p12",
+                  "@Container": "pres aesb",
+                  "AudioElementDescription": {
+                    "@Size": "15",
+                    "@Type": "aedb",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "aelm",
+                    "@AudioElementTag": "3",
+                    "@isToggleable": "1",
+                    "@isDefaultEnabled": "1"
+                  },
+                  "ExtendedLanguageBox": {
+                    "@Size": "18",
+                    "@Type": "elng",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "mdia pres aelm",
+                    "@LanguageCode": "ko-KR"
+                  },
+                  "Label": {
+                    "@Size": "28",
+                    "@Type": "labl",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p12",
+                    "@Container": "pres udta aelm aesb",
+                    "@isGroupLabel": "0",
+                    "@labelID": "0",
+                    "@Language": "en-GB",
+                    "@Label": "Korean"
+                  }
+                }
               ]
             }
           ]
         }
       },
-      "UnknownBox": [
+      "ExternalTrackBox": [
         {
           "@Size": "157",
           "@Type": "extk",
-          "@Specification": "unknown",
-          "@Container": "unknown",
-          "UnknownBox": [
-            {
-              "@Size": "57",
-              "@Type": "extl",
-              "@Specification": "unknown",
-              "@Container": "unknown",
-              "@data": "0x0000000000000001736F756E355F315F335F6C616E675F345F73747265616D735F6D70665F73706C69745F312E6D703400"
-            },
-            {
-              "@Size": "92",
-              "@Type": "tkhd",
-              "@Specification": "unknown",
-              "@Container": "unknown",
-              "@data": "0x00000005E131B17EE131B17E000000020000000000000BB8000000000000000000000000010000000001000000000000000000000000000000010000000000000000000000000000400000000000000000000000"
-            }
-          ]
+          "@Specification": "p12",
+          "@Container": "moov",
+          "ExternalTrackLocationBox": {
+            "@Size": "57",
+            "@Type": "extl",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "extk",
+            "@location": "5_1_3_lang_4_streams_mpf_split_1.mp4",
+            "@referenced_track_id": "1",
+            "@referenced_track_handler": "soun"
+          },
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "5",
+            "@Specification": "p12",
+            "@Container": "trak extk",
+            "@CreationTime": "3778130302",
+            "@ModificationTime": "3778130302",
+            "@TrackID": "2",
+            "@Duration": "3000",
+            "@Volume": "1.00"
+          }
         },
         {
           "@Size": "157",
           "@Type": "extk",
-          "@Specification": "unknown",
-          "@Container": "unknown",
-          "UnknownBox": [
-            {
-              "@Size": "57",
-              "@Type": "extl",
-              "@Specification": "unknown",
-              "@Container": "unknown",
-              "@data": "0x0000000000000001736F756E355F315F335F6C616E675F345F73747265616D735F6D70665F73706C69745F322E6D703400"
-            },
-            {
-              "@Size": "92",
-              "@Type": "tkhd",
-              "@Specification": "unknown",
-              "@Container": "unknown",
-              "@data": "0x00000005E131B17EE131B17E000000030000000000000BB8000000000000000000000000010000000001000000000000000000000000000000010000000000000000000000000000400000000000000000000000"
-            }
-          ]
+          "@Specification": "p12",
+          "@Container": "moov",
+          "ExternalTrackLocationBox": {
+            "@Size": "57",
+            "@Type": "extl",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "extk",
+            "@location": "5_1_3_lang_4_streams_mpf_split_2.mp4",
+            "@referenced_track_id": "1",
+            "@referenced_track_handler": "soun"
+          },
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "5",
+            "@Specification": "p12",
+            "@Container": "trak extk",
+            "@CreationTime": "3778130302",
+            "@ModificationTime": "3778130302",
+            "@TrackID": "3",
+            "@Duration": "3000",
+            "@Volume": "1.00"
+          }
         }
       ],
       "TrackBox": {
@@ -150,7 +449,7 @@
           "@Version": "0",
           "@Flags": "7",
           "@Specification": "p12",
-          "@Container": "trak",
+          "@Container": "trak extk",
           "@CreationTime": "3778130302",
           "@ModificationTime": "3778130302",
           "@TrackID": "1",
@@ -1055,5 +1354,6 @@
       "@dataSize": "280926"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev602-ged842430-master"
+  "manualDump": true,
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev223-g4dcb4c2a5-preselection_reading"
 }
