@@ -722,7 +722,13 @@ def _extract_file_features(args, exit_on_error=True):
         with open(gpac_path, "r", encoding="utf-8") as f:
             gpac_dict_gt = json.load(f)
 
-        if gpac_dict_gt["IsoMediaFile"] != gpac_dict["IsoMediaFile"]:
+        # Check if this was manual dump
+        manual_dump = gpac_dict_gt.get("manualDump", False)
+
+        if (
+            gpac_dict_gt["IsoMediaFile"] != gpac_dict["IsoMediaFile"]
+            and not manual_dump
+        ):
             print(
                 f'WARNING: GPAC file for "{input_path}" already exists but the contents have been changed. Forcing overwrite!'
             )
@@ -733,10 +739,19 @@ def _extract_file_features(args, exit_on_error=True):
     else:
         dump_to_json(gpac_path, gpac_dict)
 
+    # If it was a manual dump, use that as the GPAC file
+    if not args.overwrite and manual_dump:
+        print(f'WARNING: "{gpac_path}" was a manual dump. Using that as the GPAC file.')
+        gpac_dict = gpac_dict_gt
+
     # Create GPAC extension
     mp4ra_check = "under_consideration" not in os.path.dirname(metadata_path)
     unknown_boxes = traverse_gpac_dict(gpac_dict, mp4ra_check)
     if len(unknown_boxes) == 0:
+        # Remove GPAC extension if there are no unknown boxes anymore
+        if os.path.exists(gpac_extension_path):
+            os.remove(gpac_extension_path)
+
         if exit_on_error:
             sys.exit(0)
         else:
