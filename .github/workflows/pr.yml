@@ -61,8 +61,8 @@ jobs:
       - name: Check if action is label but it is unrelated
         id: check-skip
         run: |
-          if [[ ${{ github.event.action }} == 'labeled' ]]; then
-            if [[ ${{ github.event.label.name }} != 'conformance-file' ]]; then
+          if [[ '${{ github.event.action }}' == 'labeled' ]]; then
+            if [[ '${{ github.event.label.name }}' != 'conformance-file' ]]; then
               echo "is_skip=true" >> $GITHUB_OUTPUT
             fi
           fi
