@@ -3,10 +3,10 @@ import re
 import os
 import json
 from glob import glob
-from loguru import logger
 from functools import cache
 from dataclasses import dataclass, field
 
+from common.unique_logger import logger
 from common import get_mp4ra_boxes
 
 BOXES = {}
@@ -160,7 +160,6 @@ def update_container(_spec, _box):
 
 
 def main():
-    logger.add("/tmp/construct.log", level="ERROR")
     files = glob("../data/standard_features/**/*.json")
 
     # Ignore unrelated files
