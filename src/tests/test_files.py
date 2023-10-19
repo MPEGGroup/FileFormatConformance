@@ -313,9 +313,11 @@ def test_gpac_ext_consistency(check):
         with open(gpac_ext, "r", encoding="utf-8") as f:
             gpac_ext_dict = json.load(f)
 
-        # Test if locations are the same
-        gt_locations = [ub["location"] for ub in unknown_boxes]
-        ref_locations = [ub["location"] for ub in gpac_ext_dict["extensions"]]
+        # Test if boxes are the same
+        gt_locations = [(ub["location"], ub["box"]["@data"]) for ub in unknown_boxes]
+        ref_locations = [
+            (ub["location"], ub["box"]["@data"]) for ub in gpac_ext_dict["extensions"]
+        ]
 
         # Reference must match exactly
         with check:
