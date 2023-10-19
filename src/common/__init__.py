@@ -2,7 +2,6 @@ import os
 import json
 import requests
 from glob import glob
-from loguru import logger
 from functools import cache
 
 MP4RA_BOXES_URL = "https://mp4ra.org/boxes.json"

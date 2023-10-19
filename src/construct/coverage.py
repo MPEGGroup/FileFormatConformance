@@ -1,13 +1,11 @@
 import json
 from glob import glob
-from loguru import logger
 
+from common.unique_logger import logger
 from common import *
 
 
 def main():
-    logger.add("/tmp/construct.log", level="ERROR")
-
     with open("output/dictionary.json", "r", encoding="utf-8") as f:
         dictionary = json.load(f)
 
