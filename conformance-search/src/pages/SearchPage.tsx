@@ -107,7 +107,7 @@ export default function SearchPage() {
                 {combinedResults.length > 0 && mobileW && (
                     <Tabs
                         classes={{
-                            root: "w-full max-w-7xl -mb-4 p-2"
+                            root: "w-full shrink-0 max-w-7xl -mb-4 p-2"
                         }}
                         onChange={(_, value) => setTab(value)}
                         value={tab}
