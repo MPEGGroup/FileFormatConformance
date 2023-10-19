@@ -20,10 +20,13 @@ export default function SearchComponent({
 }) {
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
-    const [filters, { addFilter, removeFilter, updateFilter, resetFilters }] = useFilters();
     const [queryParams, setQueryParams] = useQueryParams();
     const [query, setQuery] = useState("");
     const [ready, setReady] = useState(false);
+
+    // Filters
+    const [filters, { addFilter, removeFilter, updateFilter, resetFilters }] = useFilters();
+    const activeFilters = filters.filter((f) => f.value !== "");
 
     // Load the search state from the URL
     useEffect(() => {
@@ -122,7 +125,8 @@ export default function SearchComponent({
                             {open &&
                                 filters.map((filter: Filter, index: number) => (
                                     <div
-                                        key={filter.value}
+                                        // eslint-disable-next-line react/no-array-index-key
+                                        key={`${filter.value || filter.type}-${index}`}
                                         className="flex flex-row items-stretch divide-x-1 overflow-x-scroll px-3"
                                     >
                                         <button
@@ -155,7 +159,7 @@ export default function SearchComponent({
                                     <button
                                         className={clsx(
                                             "my-3 flex cursor-pointer flex-row items-center gap-2",
-                                            filters.length > 0 && "text-blue-400"
+                                            activeFilters.length > 0 && "text-blue-400"
                                         )}
                                         onClick={() => {
                                             if (filters.length === 0) addFilter();
@@ -165,9 +169,11 @@ export default function SearchComponent({
                                     >
                                         <MdFilterAlt className="text-xl" />
                                         <span className="text-xs font-semibold">
-                                            {filters.length === 0
+                                            {activeFilters.length === 0
                                                 ? "Add a filter"
-                                                : `${filters.length} filters active, click here to edit them`}
+                                                : `${activeFilters.length} filter${
+                                                      activeFilters.length > 1 ? "s" : ""
+                                                  } active, click here to edit them`}
                                         </span>
                                     </button>
                                 </div>
