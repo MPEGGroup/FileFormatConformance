@@ -17,7 +17,7 @@
       "@Size": "1562",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file",
+      "@Container": "file cmvd",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -42,7 +42,7 @@
           "@Version": "0",
           "@Flags": "5",
           "@Specification": "p12",
-          "@Container": "trak extk",
+          "@Container": "trak",
           "@CreationTime": "3778468031",
           "@ModificationTime": "3778468031",
           "@TrackID": "1",
@@ -947,5 +947,5 @@
       "@dataSize": "40284"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev223-g4dcb4c2a5-preselection_reading"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev602-ged842430-master"
 }
