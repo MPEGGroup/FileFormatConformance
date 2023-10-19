@@ -145,7 +145,7 @@ def main():
         logger.warning(f"Found {len(ignored)} ignored files.")
 
     file_metadata = {}
-    not_found = set()
+    not_found = {}
 
     for file in files:
         # metadata is the one without the _gpac.json
@@ -187,7 +187,9 @@ def main():
 
         for path, variants in paths_contained.items():
             if path not in path_file_map:
-                not_found.add(path)
+                if path not in not_found:
+                    not_found[path] = set()
+                not_found[path].add(key_name)
                 continue
 
             for variant in variants:
@@ -247,7 +249,7 @@ def main():
     with open("output/files.json", "w", encoding="utf-8") as f:
         json.dump(
             {
-                "not_found": list(not_found),
+                "not_found": {path: sorted(files) for path, files in not_found.items()},
                 "path_file_map": path_file_map,
                 "feature_file_map": feature_file_map,
                 "file_metadata": file_metadata,
