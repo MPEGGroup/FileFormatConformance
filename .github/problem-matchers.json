@@ -13,7 +13,7 @@
       "owner": "loguru",
       "pattern": [
         {
-          "regexp": "(ERROR|WARNING).*\\|.+(?:\\[3[13]m.\\[1m)(?:(.*).\\[0m)$",
+          "regexp": "^(ERROR|WARNING)\\s*:\\s(.+)$",
           "severity": 1,
           "message": 2
         }

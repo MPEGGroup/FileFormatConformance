@@ -1,8 +1,8 @@
 import os
 import json
 from glob import glob
-from loguru import logger
 
+from common.unique_logger import logger
 from common import get_ignored_files, get_mp4ra_boxes
 
 
@@ -112,8 +112,6 @@ def crawl_hierarchy_gpac_ext(extension, mp4ra_check=True):
 
 
 def main():
-    logger.add("/tmp/construct.log", level="ERROR")
-
     # Check which boxes can be found anywhere (container.fourcc=* && container.type=*)
     can_be_found_anywhere = set()
     with open("output/boxes.json", "r", encoding="utf-8") as f:

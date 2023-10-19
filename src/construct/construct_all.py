@@ -1,4 +1,4 @@
-from loguru import logger
+from common.unique_logger import logger
 
 from construct.boxes import main as construct_boxes_main
 from construct.dictionary import main as construct_dictionary_main

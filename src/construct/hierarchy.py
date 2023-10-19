@@ -1,7 +1,8 @@
 import json
-from loguru import logger
 from dataclasses import dataclass
 from argparse import ArgumentParser
+
+from common.unique_logger import logger
 
 
 @dataclass
@@ -317,8 +318,6 @@ def build_farm(_data, ruleset):
 
 
 def main():
-    logger.add("/tmp/construct.log", level="ERROR")
-
     parser = ArgumentParser()
     parser.add_argument(
         "-r",

@@ -1,13 +1,11 @@
 import json
 from glob import glob
-from loguru import logger
 
+from common.unique_logger import logger
 from common import *
 
 
 def main():
-    logger.add("/tmp/construct.log", level="ERROR")
-
     with open("output/dictionary.json", "r", encoding="utf-8") as f:
         dictionary = json.load(f)
 
@@ -78,9 +76,11 @@ def main():
     extensions = list(set(extensions) - ignored)
 
     missing_extensions = set()
+    fourcc_in_extensions = set()
     for extension in extensions:
         with open(extension, "r", encoding="utf-8") as f:
             ext_data = json.load(f)
+        fourcc_in_extensions.update([e["box"]["@Type"] for e in ext_data["extensions"]])
         missing_extensions.update(
             [f"{e['location']}.{e['box']['@Type']}" for e in ext_data["extensions"]]
         )
@@ -106,7 +106,10 @@ def main():
 
         if not known_box:
             # Check if this was in under consideration files
-            if any(["under_consideration" in f for f in in_files]):
+            if (
+                any(["under_consideration" in f for f in in_files])
+                and box_fourcc in fourcc_in_extensions
+            ):
                 extra = ""
                 if box_fourcc in get_mp4ra_boxes():
                     extra = " It exists in MP4RA though."
