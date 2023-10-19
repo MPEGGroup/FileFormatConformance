@@ -2227,8 +2227,8 @@
                   "@independent": "1",
                   "@full_picture": "1",
                   "@filter_disabled": "1",
-                  "@w": "960",
-                  "@h": "540"
+                  "@w": "540",
+                  "@h": "960"
                 }
               }
             }
@@ -2298,5 +2298,5 @@
       "@dataSize": "66"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev602-ged842430-master"
 }
