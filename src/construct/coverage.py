@@ -5,6 +5,26 @@ from common.unique_logger import logger
 from common import *
 
 
+def get_all_fourccs_inside(root):
+    fourccs = set([root["@Type"]])
+
+    def crawl(hierarchy):
+        for key, value in hierarchy.items():
+            if isinstance(value, dict):
+                if "@Type" not in value:
+                    continue
+                fourcc = value["@Type"]
+
+                fourccs.add(fourcc)
+                crawl(value)
+            elif isinstance(value, list):
+                for item in value:
+                    crawl({key: item})
+
+    crawl(root)
+    return fourccs
+
+
 def main():
     with open("output/dictionary.json", "r", encoding="utf-8") as f:
         dictionary = json.load(f)
@@ -80,10 +100,12 @@ def main():
     for extension in extensions:
         with open(extension, "r", encoding="utf-8") as f:
             ext_data = json.load(f)
-        fourcc_in_extensions.update([e["box"]["@Type"] for e in ext_data["extensions"]])
         missing_extensions.update(
             [f"{e['location']}.{e['box']['@Type']}" for e in ext_data["extensions"]]
         )
+
+        for e in ext_data["extensions"]:
+            fourcc_in_extensions.update(get_all_fourccs_inside(e["box"]))
 
     # Remove all known and unknown paths from missing extensions (to reduce redundancy)
     missing_extensions.difference_update(set(files["not_found"]))

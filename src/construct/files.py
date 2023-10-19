@@ -98,15 +98,30 @@ def crawl_hierarchy_gpac_ext(extension, mp4ra_check=True):
         paths[path].add(variant)
 
     def crawl(root, path):
-        if mp4ra_check and path[-1] not in get_mp4ra_boxes():
-            return
-        add_variant(add, root, path)
-        if "children" in root:
-            for child in root["children"]:
-                crawl(child, path + [root["@Type"]])
+        for key, value in root.items():
+            if isinstance(value, dict):
+                if "@Type" not in value:
+                    continue
+                fourcc = value["@Type"]
+
+                if mp4ra_check and fourcc not in get_mp4ra_boxes():
+                    continue
+
+                add_variant(add, value, path)
+                crawl(value, path + [fourcc])
+            elif isinstance(value, list):
+                for item in value:
+                    crawl({key: item}, path)
 
     for ext in extension["extensions"]:
-        crawl(ext["box"], ext["location"].split("."))
+        root = ext["box"]
+        path = ext["location"].split(".")
+
+        if mp4ra_check and path[-1] not in get_mp4ra_boxes():
+            continue
+
+        add_variant(add, root, path)
+        crawl(root, path + [root["@Type"]])
 
     return paths
 
