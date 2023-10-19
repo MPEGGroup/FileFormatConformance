@@ -31,13 +31,18 @@
         },
         "@Specification": { "type": "string" },
         "@Container": { "type": "string" },
+        "@data": {
+          "type": "string",
+          "description": "dump of the box in hexadecimal format",
+          "pattern": "^0x[0-9a-fA-F]+$"
+        },
         "children": {
           "type": "array",
           "items": { "$ref": "#/$defs/box" }
         }
       },
       "additionalProperties": true,
-      "required": ["@Type"]
+      "required": ["@Type", "@data"]
     }
   },
   "type": "object",
