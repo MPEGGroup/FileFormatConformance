@@ -4,7 +4,9 @@ export type Coverage = {
         percentage: number;
         boxes: string[];
         missing_extensions: string[];
-        paths: string[];
+        paths: {
+            [path: string]: string[];
+        };
     };
     lists: {
         boxes: {

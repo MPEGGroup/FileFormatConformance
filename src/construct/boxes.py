@@ -27,6 +27,7 @@ class Box:
     containers: list = field(default_factory=list)
     syntax: str = None
     defective: bool = False
+    ambiguous: bool = False
     ref: Box = None
 
     def __hash__(self):
@@ -95,20 +96,30 @@ def get_all_boxes(json_file):
 
 
 def search_box(fourcc, type=None, ref=None):
+    result = None
+    matches = 0
     for value in BOXES.values():
         for _box in value:
             if type is not None:
                 if _box.fourcc == fourcc and _box.type == type:
-                    return _box
+                    result = _box
+                    matches += 1
             else:
                 if _box.fourcc == fourcc:
-                    return _box
+                    result = _box
+                    matches += 1
 
-    return Box(
-        fourcc=fourcc,
-        defective=True,
-        ref=ref,
-    )
+    if matches == 1:
+        return result
+    if matches > 1:
+        result.ambiguous = True
+        return result
+    if matches == 0:
+        return Box(
+            fourcc=fourcc,
+            defective=True,
+            ref=ref,
+        )
 
 
 def update_container(_spec, _box):
@@ -188,6 +199,18 @@ def main():
         if spec not in BOXES:
             BOXES[spec] = set()
         BOXES[spec] = BOXES[spec].union(extensions)
+
+    # List ambiguous boxes
+    buffer = []
+    for boxes in BOXES.values():
+        for _box in boxes:
+            if _box.ambiguous and _box.fourcc != "file":
+                buffer.append(_box.fourcc)
+
+    if len(buffer) > 0:
+        logger.error(
+            f"Ambiguous containers found ({len(set(buffer))}): {set(sorted(buffer))}"
+        )
 
     # List defective boxes
     buffer = []

@@ -19,6 +19,7 @@ export default function useQueryParams(): [
 
     const encodeFilters = (filters: Filter[]): string => {
         return filters
+            .filter((filter) => filter.value !== "")
             .reduce((acc: string[], filter) => {
                 const { type, value } = filter;
                 return acc.concat([`${type}:${value}`]);
@@ -72,7 +73,8 @@ export default function useQueryParams(): [
 
             // Filters
             rawParams.delete("filters");
-            if (filters && filters.length > 0) rawParams.set("filters", encodeFilters(filters));
+            if (filters && filters.length > 0 && filters.some((filter) => filter.value !== ""))
+                rawParams.set("filters", encodeFilters(filters));
 
             const base = window.location.pathname;
 

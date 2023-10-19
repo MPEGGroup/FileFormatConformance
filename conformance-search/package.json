@@ -21,7 +21,7 @@
     "dependencies": {
         "@emotion/react": "^11.11.1",
         "@emotion/styled": "^11.11.0",
-        "@mui/material": "^5.14.5",
+        "@mui/material": "^5.14.9",
         "clsx": "^2.0.0",
         "fuse.js": "^6.6.2",
         "github-markdown-css": "^5.2.0",

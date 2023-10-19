@@ -94,17 +94,29 @@ def main():
         "percentage": len(files["not_found"]) / len(files["path_file_map"]),
         "boxes": list(set(p.split(".")[-1] for p in files["not_found"])),
         "missing_extensions": list(missing_extensions),
-        "paths": files["not_found"],
+        "paths": list(files["not_found"].keys()),
     }
 
     # FIXME: All the logs here should be errors, except for info
-    for upath in NOT_FOUND["paths"]:
+    for upath, in_files in files["not_found"].items():
         # Easy to access variables
         container_path = upath.split(".")[:-1]
         box_fourcc = upath.split(".")[-1]
         known_box = box_fourcc in dictionary["fourccs"]
 
         if not known_box:
+            # Check if this was in under consideration files
+            if any(["under_consideration" in f for f in in_files]):
+                extra = ""
+                if box_fourcc in get_mp4ra_boxes():
+                    extra = " It exists in MP4RA though."
+
+                logger.error(
+                    f"Box {box_fourcc} was found in under consideration files but it is not in our database."
+                    + extra
+                )
+                continue
+
             if box_fourcc not in get_mp4ra_boxes():
                 logger.info(f"Box {box_fourcc} is not in standard features or MP4RA")
             else:
