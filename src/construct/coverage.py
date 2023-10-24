@@ -1,13 +1,31 @@
 import json
 from glob import glob
-from loguru import logger
 
+from common.unique_logger import logger
 from common import *
 
 
-def main():
-    logger.add("/tmp/construct.log", level="ERROR")
+def get_all_fourccs_inside(root):
+    fourccs = set([root["@Type"]])
 
+    def crawl(hierarchy):
+        for key, value in hierarchy.items():
+            if isinstance(value, dict):
+                if "@Type" not in value:
+                    continue
+                fourcc = value["@Type"]
+
+                fourccs.add(fourcc)
+                crawl(value)
+            elif isinstance(value, list):
+                for item in value:
+                    crawl({key: item})
+
+    crawl(root)
+    return fourccs
+
+
+def main():
     with open("output/dictionary.json", "r", encoding="utf-8") as f:
         dictionary = json.load(f)
 
@@ -78,12 +96,16 @@ def main():
     extensions = list(set(extensions) - ignored)
 
     missing_extensions = set()
+    fourcc_in_extensions = set()
     for extension in extensions:
         with open(extension, "r", encoding="utf-8") as f:
             ext_data = json.load(f)
         missing_extensions.update(
             [f"{e['location']}.{e['box']['@Type']}" for e in ext_data["extensions"]]
         )
+
+        for e in ext_data["extensions"]:
+            fourcc_in_extensions.update(get_all_fourccs_inside(e["box"]))
 
     # Remove all known and unknown paths from missing extensions (to reduce redundancy)
     missing_extensions.difference_update(set(files["not_found"]))
@@ -94,17 +116,32 @@ def main():
         "percentage": len(files["not_found"]) / len(files["path_file_map"]),
         "boxes": list(set(p.split(".")[-1] for p in files["not_found"])),
         "missing_extensions": list(missing_extensions),
-        "paths": files["not_found"],
+        "paths": list(files["not_found"].keys()),
     }
 
     # FIXME: All the logs here should be errors, except for info
-    for upath in NOT_FOUND["paths"]:
+    for upath, in_files in files["not_found"].items():
         # Easy to access variables
         container_path = upath.split(".")[:-1]
         box_fourcc = upath.split(".")[-1]
         known_box = box_fourcc in dictionary["fourccs"]
 
         if not known_box:
+            # Check if this was in under consideration files
+            if (
+                any(["under_consideration" in f for f in in_files])
+                and box_fourcc in fourcc_in_extensions
+            ):
+                extra = ""
+                if box_fourcc in get_mp4ra_boxes():
+                    extra = " It exists in MP4RA though."
+
+                logger.error(
+                    f"Box {box_fourcc} was found in under consideration files but it is not in our database."
+                    + extra
+                )
+                continue
+
             if box_fourcc not in get_mp4ra_boxes():
                 logger.info(f"Box {box_fourcc} is not in standard features or MP4RA")
             else:

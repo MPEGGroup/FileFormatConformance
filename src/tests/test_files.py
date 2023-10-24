@@ -60,6 +60,9 @@ def test_variants(check):
             variant_file_map = files["path_file_map"][path]
             variant_keys = set(variant_file_map.keys())
 
+            # We don't care about variant metadata so strip it
+            variant_keys = set(":".join(k.split(":")[:2]) for k in variant_keys)
+
             # Check if there is a *:* variant
             if "*:*" in variant_keys:
                 # First check: if there is a *:* variant then there should be no other variants
@@ -313,7 +316,7 @@ def test_gpac_ext_consistency(check):
         with open(gpac_ext, "r", encoding="utf-8") as f:
             gpac_ext_dict = json.load(f)
 
-        # Test if locations are the same
+        # Test if boxes are the same
         gt_locations = [ub["location"] for ub in unknown_boxes]
         ref_locations = [ub["location"] for ub in gpac_ext_dict["extensions"]]
 

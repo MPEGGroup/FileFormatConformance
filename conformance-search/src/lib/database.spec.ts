@@ -10,8 +10,14 @@ describe("Database", () => {
         search = await Search.getInstance();
     });
 
-    function getBox(fourcc: string): SearchResultRefined<Box> {
-        const box = database.boxes.find((obox: Box) => obox.fourcc === fourcc);
+    function getBox(fourcc: string, type?: string): SearchResultRefined<Box> {
+        let box;
+        if (type !== undefined) {
+            box = database.boxes.find((obox: Box) => obox.fourcc === fourcc && obox.type === type);
+        } else {
+            box = database.boxes.find((obox: Box) => obox.fourcc === fourcc);
+        }
+
         if (!box) throw new Error(`Box ${fourcc} not found in database`);
         return {
             item: box,
@@ -23,6 +29,220 @@ describe("Database", () => {
             type: "box"
         };
     }
+
+    describe("get files with version and flags", () => {
+        beforeEach(async () => {
+            await database.updateDatabase([]);
+        });
+
+        it("with a 0x1 flag on trun", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: []
+                        },
+                        flags: {
+                            value: ["0x1"],
+                            exact: true
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(3);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with a 0x773 flag on trun", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: []
+                        },
+                        flags: {
+                            value: ["0x1", "0x4", "0x100", "0x200"],
+                            exact: true
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(2);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with a 0x773 flag on trun (no exact match)", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: []
+                        },
+                        flags: {
+                            value: ["0x1", "0x4", "0x100", "0x200"],
+                            exact: false
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(9);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with version 0 on trun", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: [0]
+                        },
+                        flags: {
+                            value: [],
+                            exact: false
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(18);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with version 1 on trun", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: [1]
+                        },
+                        flags: {
+                            value: [],
+                            exact: false
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(3);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with a 0x773 flag and version 0 on trun", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: [0]
+                        },
+                        flags: {
+                            value: ["0x1", "0x4", "0x100", "0x200"],
+                            exact: true
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(2);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("with a 0x773 flag and version 0 on trun (no exact match)", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("trun"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: [0]
+                        },
+                        flags: {
+                            value: ["0x1", "0x4", "0x100", "0x200"],
+                            exact: false
+                        },
+                        metadata: {}
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(7);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+    });
+
+    describe("get files with metadata", () => {
+        beforeEach(async () => {
+            await database.updateDatabase([]);
+        });
+
+        it("get all flavors of 'iso6'", () => {
+            const box = getBox("iso6");
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(24);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+
+        it("get major brands of 'iso6'", () => {
+            const box: SearchResultRefined<Box> = {
+                ...getBox("iso6"),
+                // Add refinements
+                refinements: {
+                    variant: {
+                        versions: {
+                            value: []
+                        },
+                        flags: {
+                            value: [],
+                            exact: false
+                        },
+                        metadata: {
+                            BrandFlavor: "Major"
+                        }
+                    }
+                }
+            };
+
+            const results = database.getMatchingFilesByBox([box]);
+
+            expect(results.length).toEqual(9);
+            expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
+        });
+    });
 
     describe("files", () => {
         beforeEach(async () => {
@@ -38,7 +258,7 @@ describe("Database", () => {
 
         it("should return 2 files for meta under trak", async () => {
             await database.updateDatabase([{ container: "$trak" }]);
-            const results = database.getMatchingFilesByBox([getBox("meta")]);
+            const results = database.getMatchingFilesByBox([getBox("meta", "FullBox")]);
 
             expect(results.length).toEqual(2);
             expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
@@ -94,7 +314,7 @@ describe("Database", () => {
 
         it("should return 3 files for meta under =moov", async () => {
             await database.updateDatabase([{ container: "=$moov" }]);
-            const results = database.getMatchingFilesByBox([getBox("meta")]);
+            const results = database.getMatchingFilesByBox([getBox("meta", "FullBox")]);
 
             expect(results.length).toEqual(3);
             expect(results.map((r) => r.item.abs_filepath)).toMatchSnapshot();
