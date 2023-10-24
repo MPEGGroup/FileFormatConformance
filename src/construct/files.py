@@ -7,11 +7,35 @@ from common import get_ignored_files, get_mp4ra_boxes
 
 
 ## Helper functions
-def add_variant(adder, value, path_prefix):
+def encode_metadata(metadata):
+    """
+    Metadata for a variant is extra attributes that are derived from files and not cross-checked with the spec.
+    Currently, we only have flavor information for brands
+    """
+    encoded = 0x0
+    if metadata is None:
+        return encoded
+
+    if "BrandFlavor" in metadata:
+        if metadata["BrandFlavor"] == "Major":
+            encoded |= 0x1
+        else:
+            encoded |= 0x2
+    return encoded
+
+
+def add_variant(adder, value, path_prefix, metadata=None):
     ver = "@Version" in value and value["@Version"] or "*"
     flags = "@Flags" in value and value["@Flags"] or "*"
     fourcc = "@Type" in value and value["@Type"] or None
-    adder(".".join(path_prefix + [fourcc]), (ver, flags))
+    adder(
+        ".".join(path_prefix + [fourcc]),
+        (
+            ver,
+            flags,
+            str(encode_metadata(metadata)),
+        ),
+    )
 
 
 def crawl_hierarchy(root_hierarchy, can_be_found_anywhere):
@@ -81,6 +105,36 @@ def crawl_hierarchy_gpac(root_hierarchy, can_be_found_anywhere, mp4ra_check=True
                 if "@hdlrType" in value:
                     hdlr_entry = {"@Type": value["@hdlrType"]}
                     add_variant(add, hdlr_entry, path + [fourcc])
+
+                # Special case for brands
+                if "@MajorBrand" in value:
+                    brand_entry = {"@Type": value["@MajorBrand"]}
+                    add_variant(
+                        add,
+                        brand_entry,
+                        path + [fourcc],
+                        {"BrandFlavor": "Major"},
+                    )
+
+                    if "BrandEntry" in value:
+                        if isinstance(value["BrandEntry"], list):
+                            for brand in value["BrandEntry"]:
+                                brand_entry = {"@Type": brand["@AlternateBrand"]}
+                                add_variant(
+                                    add,
+                                    brand_entry,
+                                    path + [fourcc],
+                                    {"BrandFlavor": "Compatible"},
+                                )
+                        elif isinstance(value["BrandEntry"], dict):
+                            for brand in value["BrandEntry"].values():
+                                brand_entry = {"@Type": brand}
+                                add_variant(
+                                    add,
+                                    brand_entry,
+                                    path + [fourcc],
+                                    {"BrandFlavor": "Compatible"},
+                                )
 
                 add_variant(add, value, path)
                 crawl(value, path + [fourcc])

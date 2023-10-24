@@ -1,4 +1,5 @@
 import BoxComponent from "./BoxComponent";
+import Checkbox from "./Checkbox";
 import Chip from "./Chip";
 import CoverageSummary from "./CoverageSummary";
 import Drawer from "./Drawer";
@@ -12,6 +13,7 @@ import Select from "./Select";
 
 export {
     BoxComponent,
+    Checkbox,
     Chip,
     CoverageSummary,
     Drawer,
