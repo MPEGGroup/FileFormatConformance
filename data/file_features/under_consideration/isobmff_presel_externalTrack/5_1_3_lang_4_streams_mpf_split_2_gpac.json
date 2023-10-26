@@ -1,4 +1,5 @@
 {
+  "manualDump": true,
   "IsoMediaFile": {
     "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
     "@Name": "5_1_3_lang_4_streams_mpf_split_2.mp4",
