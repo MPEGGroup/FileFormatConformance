@@ -25,8 +25,8 @@
         "@Flags": "0",
         "@Specification": "p12",
         "@Container": "moov",
-        "@CreationTime": "3778468031",
-        "@ModificationTime": "3778468031",
+        "@CreationTime": "3781076871",
+        "@ModificationTime": "3781076871",
         "@TimeScale": "600",
         "@Duration": "3000",
         "@NextTrackID": "2"
@@ -43,8 +43,8 @@
           "@Flags": "5",
           "@Specification": "p12",
           "@Container": "trak extk",
-          "@CreationTime": "3778468031",
-          "@ModificationTime": "3778468031",
+          "@CreationTime": "3781076871",
+          "@ModificationTime": "3781076871",
           "@TrackID": "1",
           "@Duration": "3000",
           "@Volume": "1.00"
@@ -61,8 +61,8 @@
             "@Flags": "0",
             "@Specification": "p12",
             "@Container": "mdia",
-            "@CreationTime": "3778468031",
-            "@ModificationTime": "3778468031",
+            "@CreationTime": "3781076871",
+            "@ModificationTime": "3781076871",
             "@TimeScale": "48000",
             "@Duration": "240000",
             "@LanguageCode": "und"
@@ -947,6 +947,5 @@
       "@dataSize": "40284"
     }
   },
-  "manualDump": true,
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev223-g4dcb4c2a5-preselection_reading"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev224-g551a1a528-preselection_reading"
 }
