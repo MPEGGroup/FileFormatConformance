@@ -2,6 +2,20 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "GPAC MP4Box extension declaration schema",
   "$defs": {
+    "box_descendant": {
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "@Type": {
+              "type": "string"
+            }
+          },
+          "required": ["@Type"]
+        },
+        { "$ref": "#/$defs/box" }
+      ]
+    },
     "box": {
       "type": "object",
       "properties": {
@@ -30,19 +44,23 @@
           "description": "Combined flags in base 10"
         },
         "@Specification": { "type": "string" },
-        "@Container": { "type": "string" },
-        "@data": {
-          "type": "string",
-          "description": "dump of the box in hexadecimal format",
-          "pattern": "^0x[0-9a-fA-F]+$"
-        },
-        "children": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/box" }
+        "@Container": { "type": "string" }
+      },
+      "patternProperties": {
+        "^(?!@).+": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/box_descendant"
+              }
+            },
+            { "$ref": "#/$defs/box_descendant" }
+          ]
         }
       },
       "additionalProperties": true,
-      "required": ["@Type", "@data"]
+      "required": ["@Type"]
     }
   },
   "type": "object",
