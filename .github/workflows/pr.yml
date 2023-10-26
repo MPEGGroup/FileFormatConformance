@@ -21,6 +21,7 @@ jobs:
       is-bot: ${{ steps.check-author.outputs.is_bot }}
       is-cfc: ${{ steps.check-cfc.outputs.is_cfc }}
       is-page: ${{ steps.check-page.outputs.is_page }}
+      is-skip: ${{ steps.check-skip.outputs.is_skip }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -57,13 +58,23 @@ jobs:
             fi
           done
 
+      - name: Check if action is label but it is unrelated
+        id: check-skip
+        run: |
+          if [[ '${{ github.event.action }}' == 'labeled' ]]; then
+            if [[ '${{ github.event.label.name }}' != 'conformance-file' ]]; then
+              echo "is_skip=true" >> $GITHUB_OUTPUT
+            fi
+          fi
+
   cfc:
     needs: changes
     if: |
       github.event_name == 'pull_request' &&
       contains(github.event.pull_request.labels.*.name, 'conformance-file') &&
       needs.changes.outputs.is-cfc == 'true' &&
-      needs.changes.outputs.is-bot != 'true'
+      needs.changes.outputs.is-bot != 'true' &&
+      needs.changes.outputs.is-skip != 'true'
     uses: ./.github/workflows/cfc.yml
     secrets: inherit
 
@@ -72,7 +83,8 @@ jobs:
     if: |
       always() &&
       (needs.cfc.result == 'success' || needs.cfc.result == 'skipped') &&
-      needs.cfc.outputs.created != 'true'
+      needs.cfc.outputs.created != 'true' &&
+      needs.changes.outputs.is-skip != 'true'
     uses: ./.github/workflows/test.yml
     with:
       test-page: ${{ github.event_name != 'pull_request' || needs.changes.outputs.is-page == 'true' }}
