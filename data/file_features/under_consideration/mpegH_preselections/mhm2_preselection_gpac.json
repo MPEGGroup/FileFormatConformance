@@ -1,5 +1,4 @@
 {
-  "manualDump": true,
   "IsoMediaFile": {
     "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
     "@Name": "mhm2_preselection.mp4",
@@ -18,7 +17,7 @@
       "@Size": "5197",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file",
+      "@Container": "file cmvd",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -62,118 +61,21 @@
               "@Type": "prsl",
               "@Version": "0",
               "@Flags": "12288",
-              "@Specification": "p12",
+              "@Specification": "iff",
               "@Container": "grpl",
               "@group_id": "4096",
-              "@preselection_tag": "0",
-              "@selection_priority": "0",
-              "@interleaving_tag": "",
               "EntityToGroupTypeBoxEntry": {
                 "@EntityID": "1"
-              },
-              "Label": {
-                "@Size": "29",
-                "@Type": "labl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "prsl udta aelm aesb",
-                "@isGroupLabel": "0",
-                "@labelID": "0",
-                "@Language": "en-GB",
-                "@Label": "English"
-              },
-              "ChannelLayoutBox": {
-                "@Size": "22",
-                "@Type": "chnl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "audio_sample_entry aelm prsl",
-                "@stream_structure": "1",
-                "@definedLayout": "19",
-                "@omittedChannelsMap": "0"
-              },
-              "AudioElement": [
-                {
-                  "@Size": "48",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "0",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "Label": {
-                    "@Size": "25",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "Bed"
-                  }
-                },
-                {
-                  "@Size": "70",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "1",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "ExtendedLanguageBox": {
-                    "@Size": "18",
-                    "@Type": "elng",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "mdia prsl aelm",
-                    "@LanguageCode": "en-GB"
-                  },
-                  "Label": {
-                    "@Size": "29",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "English"
-                  }
-                }
-              ]
+              }
             },
             {
               "@Size": "202",
               "@Type": "prsl",
               "@Version": "0",
               "@Flags": "4096",
-              "@Specification": "p12",
+              "@Specification": "iff",
               "@Container": "grpl",
               "@group_id": "4097",
-              "@preselection_tag": "1",
-              "@interleaving_tag": "mhm2",
               "EntityToGroupTypeBoxEntry": [
                 {
                   "@EntityID": "1"
@@ -181,98 +83,6 @@
                 {
                   "@EntityID": "2"
                 }
-              ],
-              "Label": {
-                "@Size": "28",
-                "@Type": "labl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "prsl udta aelm aesb",
-                "@isGroupLabel": "0",
-                "@labelID": "0",
-                "@Language": "en-GB",
-                "@Label": "German"
-              },
-              "ChannelLayoutBox": {
-                "@Size": "22",
-                "@Type": "chnl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "audio_sample_entry aelm prsl",
-                "@stream_structure": "1",
-                "@definedLayout": "19",
-                "@omittedChannelsMap": "0"
-              },
-              "AudioElement": [
-                {
-                  "@Size": "48",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "0",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "Label": {
-                    "@Size": "25",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "Bed"
-                  }
-                },
-                {
-                  "@Size": "69",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "2",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "ExtendedLanguageBox": {
-                    "@Size": "18",
-                    "@Type": "elng",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "mdia prsl aelm",
-                    "@LanguageCode": "de-DE"
-                  },
-                  "Label": {
-                    "@Size": "28",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "German"
-                  }
-                }
               ]
             },
             {
@@ -280,109 +90,15 @@
               "@Type": "prsl",
               "@Version": "0",
               "@Flags": "4096",
-              "@Specification": "p12",
+              "@Specification": "iff",
               "@Container": "grpl",
               "@group_id": "4098",
-              "@preselection_tag": "2",
-              "@interleaving_tag": "mhm2",
               "EntityToGroupTypeBoxEntry": [
                 {
                   "@EntityID": "1"
                 },
                 {
                   "@EntityID": "3"
-                }
-              ],
-              "Label": {
-                "@Size": "28",
-                "@Type": "labl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "prsl udta aelm aesb",
-                "@isGroupLabel": "0",
-                "@labelID": "0",
-                "@Language": "en-GB",
-                "@Label": "Korean"
-              },
-              "ChannelLayoutBox": {
-                "@Size": "22",
-                "@Type": "chnl",
-                "@Version": "0",
-                "@Flags": "0",
-                "@Specification": "p12",
-                "@Container": "audio_sample_entry aelm prsl",
-                "@stream_structure": "1",
-                "@definedLayout": "19",
-                "@omittedChannelsMap": "0"
-              },
-              "AudioElement": [
-                {
-                  "@Size": "48",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "0",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "Label": {
-                    "@Size": "25",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "Bed"
-                  }
-                },
-                {
-                  "@Size": "69",
-                  "@Type": "aelm",
-                  "@Specification": "p12",
-                  "@Container": "prsl aesb",
-                  "AudioElementDescription": {
-                    "@Size": "15",
-                    "@Type": "aedb",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "aelm",
-                    "@AudioElementTag": "3",
-                    "@isToggleable": "1",
-                    "@isDefaultEnabled": "1"
-                  },
-                  "ExtendedLanguageBox": {
-                    "@Size": "18",
-                    "@Type": "elng",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "mdia prsl aelm",
-                    "@LanguageCode": "ko-KR"
-                  },
-                  "Label": {
-                    "@Size": "28",
-                    "@Type": "labl",
-                    "@Version": "0",
-                    "@Flags": "0",
-                    "@Specification": "p12",
-                    "@Container": "prsl udta aelm aesb",
-                    "@isGroupLabel": "0",
-                    "@labelID": "0",
-                    "@Language": "en-GB",
-                    "@Label": "Korean"
-                  }
                 }
               ]
             }
@@ -401,7 +117,7 @@
             "@Version": "0",
             "@Flags": "7",
             "@Specification": "p12",
-            "@Container": "trak extk",
+            "@Container": "trak",
             "@CreationTime": "3781077041",
             "@ModificationTime": "3781077041",
             "@TrackID": "1",
@@ -1322,7 +1038,7 @@
             "@Version": "0",
             "@Flags": "5",
             "@Specification": "p12",
-            "@Container": "trak extk",
+            "@Container": "trak",
             "@CreationTime": "3781077041",
             "@ModificationTime": "3781077041",
             "@TrackID": "2",
@@ -2243,7 +1959,7 @@
             "@Version": "0",
             "@Flags": "5",
             "@Specification": "p12",
-            "@Container": "trak extk",
+            "@Container": "trak",
             "@CreationTime": "3781077041",
             "@ModificationTime": "3781077041",
             "@TrackID": "3",
@@ -3163,5 +2879,5 @@
       "@dataSize": "361496"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev224-g551a1a528-preselection_reading"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev617-g671976fc-master"
 }
