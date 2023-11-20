@@ -16,7 +16,7 @@ export default function SearchComponent({
     onResult
 }: {
     className?: string;
-    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => void;
+    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => Promise<void>;
 }) {
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -55,7 +55,7 @@ export default function SearchComponent({
             // Update URL
             setQueryParams(query, filters);
             const { boxes, features } = await search.search(query, filters);
-            onResult(boxes, features);
+            await onResult(boxes, features);
             setLoading(false);
         },
         250,
