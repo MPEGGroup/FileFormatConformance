@@ -305,6 +305,9 @@ def main():
             spec["link"] = get_document_status_link(spec["ISO"])
             SPEC_INFO.append(spec)
 
+    # Sort by ISO
+    SPEC_INFO = sorted(SPEC_INFO, key=lambda x: x["ISO"])
+
     # Detailed information about boxes
     BOXES = {
         "count": len(files["boxes"]),
