@@ -127,7 +127,7 @@ export default function SearchComponent({
                                     <div
                                         // eslint-disable-next-line react/no-array-index-key
                                         key={`${filter.value || filter.type}-${index}`}
-                                        className="flex flex-row items-stretch divide-x-1 overflow-x-scroll px-3"
+                                        className="flex flex-row items-stretch divide-x-1 px-3 max-md:overflow-x-scroll"
                                     >
                                         <button
                                             className="my-3 mr-3 cursor-pointer"
