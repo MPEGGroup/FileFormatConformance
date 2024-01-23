@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "audio track", "RTP hint tracks"],
+  "features": ["RTP hint tracks"],
   "notes": "",
   "license": "",
   "rel_filepath": "./female_amr67DTX_hinted.3gp",
