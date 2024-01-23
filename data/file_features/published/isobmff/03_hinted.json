@@ -6,7 +6,6 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "video track",
     "Interleaved data",
     "RTP hint tracks",
     "hint track setup",

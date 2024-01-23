@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["audio track", "IOD box"],
+  "features": ["IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a9-aac-samplegroups-edit.mp4",

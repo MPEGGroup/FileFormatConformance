@@ -5,13 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "audio track",
-    "Interleaved data",
-    "IOD box",
-    "mp4a sample entry"
-  ],
+  "features": ["Interleaved data", "IOD box", "mp4a sample entry"],
   "notes": "",
   "license": "",
   "rel_filepath": "./f1.mp4",

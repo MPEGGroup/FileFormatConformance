@@ -478,6 +478,7 @@ class Database {
 
                 // Quick catch-up if file key has *:* that means it can be any version:flag
                 // That can be seperate as well. 0:* means version 0, any flag
+                // We also have metadata at third column
                 // By any we mean GPAC couldn't find that version or flag in the JSON output
                 // If standard specifies a version/flag and a refinement is applied we will try to match it exactly
                 /*
@@ -498,7 +499,7 @@ class Database {
 
                 // versions is an array of numbers
                 // flags will be ORed and used as base 16
-                const { versions, flags } = currentBox.refinements.variant;
+                const { versions, flags, metadata } = currentBox.refinements.variant;
                 const ORedFlags = flags.value.reduce(
                     (accumulator, currentValue) =>
                         accumulator | parseInt(currentValue.split("0x")[1], 16),
@@ -511,16 +512,34 @@ class Database {
                     return (nFlag & ORedFlags) === nFlag;
                 };
 
+                const metadataMatcher = (meta: string) => {
+                    const nMeta = parseInt(meta, 16);
+                    // Brand flavor
+                    if ("BrandFlavor" in metadata) {
+                        if (metadata.BrandFlavor === "Major") return (nMeta & 0xf) === 0x1;
+                        if (metadata.BrandFlavor === "Compatible") return (nMeta & 0xf) === 0x2;
+                    }
+                    return true;
+                };
+
                 // We will filter the variants to collect based on the refinements
                 const variantsToCollect = Object.keys(this.#files.path_file_map[path]).filter(
                     (variant) => {
-                        const [vv, vf] = variant.split(":");
-                        return (
-                            !(
-                                versions.value.length > 0 &&
-                                !versions.value.includes(parseInt(vv, 10))
-                            ) && !(flags.value.length > 0 && !flagMatcher(vf))
-                        );
+                        const [vv, vf, vm] = variant.split(":");
+                        let matched = true;
+
+                        // Version check
+                        matched &&=
+                            versions.value.length === 0 ||
+                            versions.value.includes(parseInt(vv, 10));
+
+                        // Flag check
+                        matched &&= flags.value.length === 0 || flagMatcher(vf);
+
+                        // Metadata check
+                        matched &&= metadataMatcher(vm);
+
+                        return matched;
                     }
                 );
 

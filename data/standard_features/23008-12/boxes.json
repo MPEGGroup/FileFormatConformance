@@ -21,7 +21,7 @@
     {
       "fourcc": "md5i",
       "description": "MD5IntegrityBox",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0],
       "flags": [],

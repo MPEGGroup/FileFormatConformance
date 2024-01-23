@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "audio track", "sample dependency"],
+  "features": ["sample dependency"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a5-foreman-AVC.mp4",

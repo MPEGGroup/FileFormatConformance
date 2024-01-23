@@ -60,6 +60,9 @@ export type SearchResultRefined<T> = SearchResult<T> & {
                 value: string[];
                 exact: boolean;
             };
+            metadata: {
+                BrandFlavor?: "Major" | "Compatible";
+            };
         };
     };
 };

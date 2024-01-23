@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "Extractors", "Implicit Reconstruction"],
+  "features": ["Extractors", "Implicit Reconstruction"],
   "notes": "",
   "license": "",
   "rel_filepath": "./shvc_hev1_lhe1_multiple_tracks_implicit.mp4",

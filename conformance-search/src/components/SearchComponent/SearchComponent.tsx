@@ -16,7 +16,7 @@ export default function SearchComponent({
     onResult
 }: {
     className?: string;
-    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => void;
+    onResult: (boxes: SearchResult<Box>[], features: SearchResult<Feature>[]) => Promise<void>;
 }) {
     const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -55,7 +55,7 @@ export default function SearchComponent({
             // Update URL
             setQueryParams(query, filters);
             const { boxes, features } = await search.search(query, filters);
-            onResult(boxes, features);
+            await onResult(boxes, features);
             setLoading(false);
         },
         250,
@@ -127,7 +127,7 @@ export default function SearchComponent({
                                     <div
                                         // eslint-disable-next-line react/no-array-index-key
                                         key={`${filter.value || filter.type}-${index}`}
-                                        className="flex flex-row items-stretch divide-x-1 overflow-x-scroll px-3"
+                                        className="flex flex-row items-stretch divide-x-1 px-3 max-md:overflow-x-scroll"
                                     >
                                         <button
                                             className="my-3 mr-3 cursor-pointer"

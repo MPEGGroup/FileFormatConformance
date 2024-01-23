@@ -32,8 +32,93 @@
         },
         "free:Box": {},
         "ftyp:GeneralTypeBox": {
+            "avc1:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "comp:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "free:Box": {},
+            "iso2:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso3:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso4:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso5:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso6:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso7:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso8:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso9:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isoa:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isob:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isoc:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isom:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "mp71:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "relo:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "skip:Box": {},
+            "unif:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "uuid:Box": {}
         },
         "imda:Box": {
@@ -219,9 +304,64 @@
                 }
             },
             "hdlr:FullBox": {
+                "auxv:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
                 "free:Box": {},
+                "hapt:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "hint:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "meta:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "mp7b:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "mp7t:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "null:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
                 "skip:Box": {},
-                "uuid:Box": {}
+                "soun:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "subt:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "uuid:Box": {},
+                "vide:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                },
+                "volv:handler_type": {
+                    "free:Box": {},
+                    "skip:Box": {},
+                    "uuid:Box": {}
+                }
             },
             "idat:Box": {
                 "free:Box": {},
@@ -361,6 +501,11 @@
                         },
                         "uuid:Box": {}
                     },
+                    "fade:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "fobr:ItemFullProperty": {
                         "free:Box": {},
                         "skip:Box": {},
@@ -427,6 +572,11 @@
                         "skip:Box": {},
                         "uuid:Box": {}
                     },
+                    "mskC:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "oinf:ItemFullProperty": {
                         "free:Box": {},
                         "skip:Box": {},
@@ -463,6 +613,31 @@
                         "uuid:Box": {}
                     },
                     "skip:Box": {},
+                    "spid:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "splt:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "spor:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "ssld:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "stpe:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "subs:ItemProperty": {
                         "free:Box": {},
                         "skip:Box": {},
@@ -480,6 +655,16 @@
                     },
                     "uuid:Box": {},
                     "wbbr:ItemFullProperty": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "wipe:Box": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "zoom:Box": {
                         "free:Box": {},
                         "skip:Box": {},
                         "uuid:Box": {}
@@ -761,9 +946,64 @@
                     }
                 },
                 "hdlr:FullBox": {
+                    "auxv:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "free:Box": {},
+                    "hapt:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "hint:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "meta:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "mp7b:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "mp7t:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "null:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "skip:Box": {},
-                    "uuid:Box": {}
+                    "soun:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "subt:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "uuid:Box": {},
+                    "vide:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "volv:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    }
                 },
                 "idat:Box": {
                     "free:Box": {},
@@ -903,6 +1143,11 @@
                             },
                             "uuid:Box": {}
                         },
+                        "fade:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "fobr:ItemFullProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -969,6 +1214,11 @@
                             "skip:Box": {},
                             "uuid:Box": {}
                         },
+                        "mskC:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "oinf:ItemFullProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -1005,6 +1255,31 @@
                             "uuid:Box": {}
                         },
                         "skip:Box": {},
+                        "spid:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "splt:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "spor:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "ssld:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "stpe:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "subs:ItemProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -1022,6 +1297,16 @@
                         },
                         "uuid:Box": {},
                         "wbbr:ItemFullProperty": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "wipe:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "zoom:Box": {
                             "free:Box": {},
                             "skip:Box": {},
                             "uuid:Box": {}
@@ -1299,9 +1584,64 @@
                         }
                     },
                     "hdlr:FullBox": {
+                        "auxv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "free:Box": {},
+                        "hapt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "hint:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "meta:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7b:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7t:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "null:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "skip:Box": {},
-                        "uuid:Box": {}
+                        "soun:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "subt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "uuid:Box": {},
+                        "vide:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "volv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        }
                     },
                     "idat:Box": {
                         "free:Box": {},
@@ -1441,6 +1781,11 @@
                                 },
                                 "uuid:Box": {}
                             },
+                            "fade:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "fobr:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -1507,6 +1852,11 @@
                                 "skip:Box": {},
                                 "uuid:Box": {}
                             },
+                            "mskC:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "oinf:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -1543,6 +1893,31 @@
                                 "uuid:Box": {}
                             },
                             "skip:Box": {},
+                            "spid:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "splt:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "spor:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "ssld:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "stpe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "subs:ItemProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -1560,6 +1935,16 @@
                             },
                             "uuid:Box": {},
                             "wbbr:ItemFullProperty": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "wipe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "zoom:Box": {
                                 "free:Box": {},
                                 "skip:Box": {},
                                 "uuid:Box": {}
@@ -1702,6 +2087,11 @@
                         "skip:Box": {},
                         "uuid:Box": {}
                     },
+                    "casg:CleanAperture": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "dcfi:VisualSampleGroupEntry": {
                         "free:Box": {},
                         "skip:Box": {},
@@ -1819,6 +2209,11 @@
                         "uuid:Box": {}
                     },
                     "pase:VisualSampleGroupEntry": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "pasr:PixelAspectRatioEntry": {
                         "free:Box": {},
                         "skip:Box": {},
                         "uuid:Box": {}
@@ -1950,6 +2345,11 @@
                         "uuid:Box": {}
                     },
                     "sulm:VisualSampleGroupEntry": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "svop:Box": {
                         "free:Box": {},
                         "skip:Box": {},
                         "uuid:Box": {}
@@ -2312,9 +2712,64 @@
                             }
                         },
                         "hdlr:FullBox": {
+                            "auxv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "free:Box": {},
+                            "hapt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "hint:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "meta:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7b:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7t:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "null:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "skip:Box": {},
-                            "uuid:Box": {}
+                            "soun:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "subt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "uuid:Box": {},
+                            "vide:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "volv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            }
                         },
                         "idat:Box": {
                             "free:Box": {},
@@ -2454,6 +2909,11 @@
                                     },
                                     "uuid:Box": {}
                                 },
+                                "fade:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "fobr:ItemFullProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -2520,6 +2980,11 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
+                                "mskC:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "oinf:ItemFullProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -2556,6 +3021,31 @@
                                     "uuid:Box": {}
                                 },
                                 "skip:Box": {},
+                                "spid:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "splt:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "spor:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "ssld:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "stpe:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "subs:ItemProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -2573,6 +3063,16 @@
                                 },
                                 "uuid:Box": {},
                                 "wbbr:ItemFullProperty": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "wipe:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "zoom:Box": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
@@ -3014,9 +3514,64 @@
                         }
                     },
                     "hdlr:FullBox": {
+                        "auxv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "free:Box": {},
+                        "hapt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "hint:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "meta:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7b:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7t:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "null:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "skip:Box": {},
-                        "uuid:Box": {}
+                        "soun:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "subt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "uuid:Box": {},
+                        "vide:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "volv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        }
                     },
                     "idat:Box": {
                         "free:Box": {},
@@ -3156,6 +3711,11 @@
                                 },
                                 "uuid:Box": {}
                             },
+                            "fade:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "fobr:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -3222,6 +3782,11 @@
                                 "skip:Box": {},
                                 "uuid:Box": {}
                             },
+                            "mskC:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "oinf:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -3258,6 +3823,31 @@
                                 "uuid:Box": {}
                             },
                             "skip:Box": {},
+                            "spid:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "splt:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "spor:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "ssld:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "stpe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "subs:ItemProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -3275,6 +3865,16 @@
                             },
                             "uuid:Box": {},
                             "wbbr:ItemFullProperty": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "wipe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "zoom:Box": {
                                 "free:Box": {},
                                 "skip:Box": {},
                                 "uuid:Box": {}
@@ -3596,9 +4196,64 @@
                     }
                 },
                 "hdlr:FullBox": {
+                    "auxv:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "free:Box": {},
+                    "hapt:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "hint:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "meta:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "mp7b:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "mp7t:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "null:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
                     "skip:Box": {},
-                    "uuid:Box": {}
+                    "soun:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "subt:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "uuid:Box": {},
+                    "vide:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    },
+                    "volv:handler_type": {
+                        "free:Box": {},
+                        "skip:Box": {},
+                        "uuid:Box": {}
+                    }
                 },
                 "idat:Box": {
                     "free:Box": {},
@@ -3738,6 +4393,11 @@
                             },
                             "uuid:Box": {}
                         },
+                        "fade:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "fobr:ItemFullProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -3804,6 +4464,11 @@
                             "skip:Box": {},
                             "uuid:Box": {}
                         },
+                        "mskC:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "oinf:ItemFullProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -3840,6 +4505,31 @@
                             "uuid:Box": {}
                         },
                         "skip:Box": {},
+                        "spid:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "splt:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "spor:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "ssld:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "stpe:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "subs:ItemProperty": {
                             "free:Box": {},
                             "skip:Box": {},
@@ -3857,6 +4547,16 @@
                         },
                         "uuid:Box": {},
                         "wbbr:ItemFullProperty": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "wipe:Box": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "zoom:Box": {
                             "free:Box": {},
                             "skip:Box": {},
                             "uuid:Box": {}
@@ -4009,9 +4709,64 @@
                     },
                     "free:Box": {},
                     "hdlr:FullBox": {
+                        "auxv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "free:Box": {},
+                        "hapt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "hint:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "meta:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7b:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7t:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "null:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "skip:Box": {},
-                        "uuid:Box": {}
+                        "soun:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "subt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "uuid:Box": {},
+                        "vide:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "volv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        }
                     },
                     "mdhd:FullBox": {
                         "free:Box": {},
@@ -4051,9 +4806,64 @@
                         },
                         "free:Box": {},
                         "hdlr:FullBox": {
+                            "auxv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "free:Box": {},
+                            "hapt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "hint:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "meta:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7b:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7t:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "null:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "skip:Box": {},
-                            "uuid:Box": {}
+                            "soun:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "subt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "uuid:Box": {},
+                            "vide:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "volv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            }
                         },
                         "hmhd:FullBox": {
                             "free:Box": {},
@@ -4199,6 +5009,11 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
+                                "casg:CleanAperture": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "dcfi:VisualSampleGroupEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -4316,6 +5131,11 @@
                                     "uuid:Box": {}
                                 },
                                 "pase:VisualSampleGroupEntry": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "pasr:PixelAspectRatioEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
@@ -4451,6 +5271,11 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
+                                "svop:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "sync:VisualSampleGroupEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -4511,6 +5336,11 @@
                             },
                             "stsd:FullBox": {
                                 "a3d1:A3DSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -4522,6 +5352,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {},
                                     "vwid:FullBox": {
@@ -4531,6 +5366,11 @@
                                     }
                                 },
                                 "a3d2:A3DSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -4542,6 +5382,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {},
                                     "vwid:FullBox": {
@@ -4551,6 +5396,11 @@
                                     }
                                 },
                                 "a3d3:A3DSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -4562,6 +5412,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {},
                                     "vwid:FullBox": {
@@ -4571,6 +5426,11 @@
                                     }
                                 },
                                 "a3d4:A3DSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -4582,6 +5442,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {},
                                     "vwid:FullBox": {
@@ -4591,13 +5456,48 @@
                                     }
                                 },
                                 "avc1:AVCMVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "free:Box": {},
                                     "mvcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "mvcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "avc1:AVCSVCSampleEntry": {
+                                    "free:Box": {},
+                                    "seib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "uuid:Box": {}
                                 },
                                 "avc1:AVCSampleEntry": {
@@ -4607,6 +5507,11 @@
                                             "skip:Box": {},
                                             "uuid:Box": {}
                                         },
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "amve:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -4652,6 +5557,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mdcv:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -4756,16 +5666,56 @@
                                     }
                                 },
                                 "avc2:AVC2MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "free:Box": {},
                                     "mvcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "mvcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "avc2:AVC2SVCSampleEntry": {
+                                    "free:Box": {},
+                                    "seib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "uuid:Box": {}
                                 },
                                 "avc2:AVC2SampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -4807,6 +5757,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mdcv:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -4901,13 +5856,48 @@
                                     }
                                 },
                                 "avc3:AVCMVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "free:Box": {},
                                     "mvcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "mvcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "avc3:AVCSVCSampleEntry": {
+                                    "free:Box": {},
+                                    "seib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "uuid:Box": {}
                                 },
                                 "avc3:AVCSampleEntry": {
@@ -4917,6 +5907,11 @@
                                             "skip:Box": {},
                                             "uuid:Box": {}
                                         },
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "amve:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -4962,6 +5957,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mdcv:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -5066,16 +6066,56 @@
                                     }
                                 },
                                 "avc4:AVC2MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "free:Box": {},
                                     "mvcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "mvcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "avc4:AVC2SVCSampleEntry": {
+                                    "free:Box": {},
+                                    "seib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "uuid:Box": {}
                                 },
                                 "avc4:AVC2SampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -5117,6 +6157,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mdcv:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -5210,133 +6255,13 @@
                                         "uuid:Box": {}
                                     }
                                 },
-                                "avcp:VisualSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "avcp:AVCParameterSampleEntry": {
                                     "avcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "cclv:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "clap:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "clli:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "colr:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "free:Box": {},
-                                    "mdcv:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "pasp:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "seii:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
@@ -5470,93 +6395,8 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "encs:SampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "encs:MP4VisualSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
@@ -5571,6 +6411,11 @@
                                     "uuid:Box": {}
                                 },
                                 "encv:VisualSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -5710,93 +6555,43 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "fdp :HintSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
+                                "evc1:EVCSampleEntry": {
+                                    "evcC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
+                                    "m4ds:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "sinf:Box": {
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "evs1:EVCSliceComponentTrackSampleEntry": {
+                                    "evsC:Box": {
                                         "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "evs2:EVCSliceComponentTrackSampleEntry": {
+                                    "evsC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "fdp :FDHintSampleEntry": {
+                                    "free:Box": {},
                                     "skip:Box": {},
                                     "tims:Box": {
                                         "free:Box": {},
@@ -5822,6 +6617,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hev1:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -5864,6 +6664,11 @@
                                         "uuid:Box": {}
                                     },
                                     "lhvC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "m4ds:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -5972,6 +6777,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hev2:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -6122,6 +6932,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hev3:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -6153,6 +6968,11 @@
                                         "uuid:Box": {}
                                     },
                                     "colr:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "dhec:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -6272,6 +7092,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hvc1:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -6314,6 +7139,11 @@
                                         "uuid:Box": {}
                                     },
                                     "lhvC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "m4ds:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -6422,6 +7252,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hvc2:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -6572,6 +7407,11 @@
                                     "uuid:Box": {}
                                 },
                                 "hvc3:HEVCSampleEntry": {
+                                    "amve:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "auxi:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -6603,6 +7443,11 @@
                                         "uuid:Box": {}
                                     },
                                     "colr:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "dhec:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -6706,133 +7551,43 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "icpv:VisualSampleEntry": {
-                                    "auxi:FullBox": {
+                                "hvt1:HEVCTileSampleEntry": {
+                                    "free:Box": {},
+                                    "hvtC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "btrt:Box": {
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "hvt2:HEVCSliceSegmentDataSampleEntry": {
+                                    "free:Box": {},
+                                    "hvtC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "cclv:Box": {
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "hvt3:HEVCTileSSHInfoSampleEntry": {
+                                    "free:Box": {},
+                                    "hvtC:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "icpv:IncompleteAVCSampleEntry": {
                                     "cinf:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "clap:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "clli:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "colr:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "free:Box": {},
-                                    "mdcv:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "pasp:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "seii:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
@@ -6843,6 +7598,16 @@
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "lht1:LHEVCTileSampleEntry": {
+                                    "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
@@ -6853,186 +7618,26 @@
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "skip:Box": {},
-                                    "uuid:Box": {}
-                                },
-                                "mebx:MetaDataSampleEntry": {
-                                    "auxi:FullBox": {
+                                    "m4ds:Box": {
                                         "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "mett:MetaDataSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "mebx:BoxedMetadataSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
+                                    "keys:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "mett:TextMetaDataSampleEntry": {
+                                    "free:Box": {},
                                     "skip:Box": {},
                                     "txtC:FullBox": {
                                         "free:Box": {},
@@ -7041,97 +7646,17 @@
                                     },
                                     "uuid:Box": {}
                                 },
-                                "metx:MetaDataSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "metx:XMLMetaDataSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
                                 "mvc1:MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7143,7 +7668,17 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "mvcP:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -7160,6 +7695,11 @@
                                     },
                                     "skip:Box": {},
                                     "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "vwid:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -7167,6 +7707,11 @@
                                     }
                                 },
                                 "mvc2:MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7178,7 +7723,17 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "mvcP:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -7195,6 +7750,11 @@
                                     },
                                     "skip:Box": {},
                                     "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "vwid:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -7202,6 +7762,11 @@
                                     }
                                 },
                                 "mvc3:MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7213,7 +7778,17 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "mvcP:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -7230,6 +7805,11 @@
                                     },
                                     "skip:Box": {},
                                     "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "vwid:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -7237,6 +7817,11 @@
                                     }
                                 },
                                 "mvc4:MVCSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7248,7 +7833,17 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "mvcP:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
@@ -7265,6 +7860,11 @@
                                     },
                                     "skip:Box": {},
                                     "uuid:Box": {},
+                                    "vsib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "vwid:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -7272,6 +7872,11 @@
                                     }
                                 },
                                 "mvd1:MVCDSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7283,6 +7888,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvdC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7302,6 +7912,11 @@
                                     }
                                 },
                                 "mvd2:MVCDSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7313,6 +7928,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvdC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7332,6 +7952,11 @@
                                     }
                                 },
                                 "mvd3:MVCDSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7343,6 +7968,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvdC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7362,6 +7992,11 @@
                                     }
                                 },
                                 "mvd4:MVCDSampleEntry": {
+                                    "3sib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "a3dC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7373,6 +8008,11 @@
                                         "uuid:Box": {}
                                     },
                                     "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "mvdC:Box": {
                                         "3dpr:Box": {
                                             "free:Box": {},
@@ -7391,12 +8031,12 @@
                                         "uuid:Box": {}
                                     }
                                 },
-                                "pm2t:MPEG2TSSampleEntry": {
+                                "pm2t:ProtectedMPEG2TransportStreamSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "prtp:RtpReceptionHintSampleEntry": {
+                                "prtp:ProtectedRtpReceptionHintSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
@@ -7531,7 +8171,7 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "ress:": {
+                                "ress:MP4VisualSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
@@ -7601,100 +8241,15 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "rm2t:MPEG2TSSampleEntry": {
+                                "rm2t:MPEG2TSReceptionSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "rrtp:HintSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "rrtp:ReceivedRtpHintSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "rssr:Box": {
                                         "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
@@ -7716,93 +8271,8 @@
                                     },
                                     "uuid:Box": {}
                                 },
-                                "rsrp:HintSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "rsrp:ReceivedSrtpHintSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
@@ -8001,7 +8471,12 @@
                                     },
                                     "uuid:Box": {}
                                 },
-                                "sbtt:SubtitleSampleEntry": {
+                                "rtp :RtpHintSampleEntry": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "sbtt:TextSubtitleSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "txtC:FullBox": {
@@ -8012,98 +8487,13 @@
                                     "uuid:Box": {}
                                 },
                                 "skip:Box": {},
-                                "sm2t:MPEG2TSSampleEntry": {
+                                "sm2t:MPEG2TSServerSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "srtp:HintSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "srtp:SrtpHintSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "sinf:Box": {
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
                                     "skip:Box": {},
                                     "snro:Box": {
                                         "free:Box": {},
@@ -8217,12 +8607,12 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "stpp:SubtitleSampleEntry": {
+                                "stpp:XMLSubtitleSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
-                                "stxt:PlainTextSampleEntry": {
+                                "stxt:SimpleTextSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "txtC:FullBox": {
@@ -8232,94 +8622,84 @@
                                     },
                                     "uuid:Box": {}
                                 },
-                                "urim:MetaDataSampleEntry": {
-                                    "auxi:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "btrt:Box": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "ccst:FullBox": {
-                                        "free:Box": {},
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
+                                "svc1:SVCSampleEntry": {
                                     "free:Box": {},
-                                    "rinf:Box": {
-                                        "csch:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "skip:Box": {},
-                                        "uuid:Box": {}
-                                    },
-                                    "scrb:Box": {
+                                    "m4ds:Box": {
                                         "free:Box": {},
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
-                                    "sinf:Box": {
+                                    "seib:Box": {
                                         "free:Box": {},
-                                        "frma:Box": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
-                                        "schi:Box": {
-                                            "free:Box": {},
-                                            "seii:Box": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "skip:Box": {},
-                                            "stvi:FullBox": {
-                                                "free:Box": {},
-                                                "skip:Box": {},
-                                                "uuid:Box": {}
-                                            },
-                                            "uuid:Box": {}
-                                        },
-                                        "schm:FullBox": {
-                                            "free:Box": {},
-                                            "skip:Box": {},
-                                            "uuid:Box": {}
-                                        },
                                         "skip:Box": {},
                                         "uuid:Box": {}
                                     },
                                     "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "uuid:Box": {}
+                                },
+                                "svc2:SVCSampleEntry": {
+                                    "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "seib:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcC:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "uuid:Box": {}
+                                },
+                                "svcM:SVCMetadataSampleEntry": {
+                                    "free:Box": {},
+                                    "qlif:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "svcP:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "svmC:FullBox": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "uuid:Box": {}
+                                },
+                                "urim:URIMetaSampleEntry": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uri :Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
                                     "uriI:FullBox": {
                                         "free:Box": {},
                                         "skip:Box": {},
@@ -8328,6 +8708,56 @@
                                     "uuid:Box": {}
                                 },
                                 "uuid:Box": {},
+                                "vvc1:VvcSampleEntry": {
+                                    "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vvcC:FullBox": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "vvcN:VvcNonVCLSampleEntry": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vvnC:FullBox": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "vvi1:VvcSampleEntry": {
+                                    "free:Box": {},
+                                    "m4ds:Box": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    },
+                                    "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vvcC:FullBox": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
+                                "vvs1:VvcSubpicSampleEntry": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {},
+                                    "vvnC:FullBox": {
+                                        "free:Box": {},
+                                        "skip:Box": {},
+                                        "uuid:Box": {}
+                                    }
+                                },
                                 "wvtt:PlainTextSampleEntry": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -8564,9 +8994,64 @@
                         }
                     },
                     "hdlr:FullBox": {
+                        "auxv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "free:Box": {},
+                        "hapt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "hint:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "meta:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7b:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7t:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "null:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "skip:Box": {},
-                        "uuid:Box": {}
+                        "soun:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "subt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "uuid:Box": {},
+                        "vide:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "volv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        }
                     },
                     "idat:Box": {
                         "free:Box": {},
@@ -8706,6 +9191,11 @@
                                 },
                                 "uuid:Box": {}
                             },
+                            "fade:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "fobr:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -8772,6 +9262,11 @@
                                 "skip:Box": {},
                                 "uuid:Box": {}
                             },
+                            "mskC:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "oinf:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -8808,6 +9303,31 @@
                                 "uuid:Box": {}
                             },
                             "skip:Box": {},
+                            "spid:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "splt:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "spor:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "ssld:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "stpe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "subs:ItemProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -8825,6 +9345,16 @@
                             },
                             "uuid:Box": {},
                             "wbbr:ItemFullProperty": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "wipe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "zoom:Box": {
                                 "free:Box": {},
                                 "skip:Box": {},
                                 "uuid:Box": {}
@@ -9392,9 +9922,64 @@
                             }
                         },
                         "hdlr:FullBox": {
+                            "auxv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "free:Box": {},
+                            "hapt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "hint:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "meta:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7b:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "mp7t:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "null:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "skip:Box": {},
-                            "uuid:Box": {}
+                            "soun:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "subt:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "uuid:Box": {},
+                            "vide:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "volv:handler_type": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            }
                         },
                         "idat:Box": {
                             "free:Box": {},
@@ -9534,6 +10119,11 @@
                                     },
                                     "uuid:Box": {}
                                 },
+                                "fade:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "fobr:ItemFullProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -9600,6 +10190,11 @@
                                     "skip:Box": {},
                                     "uuid:Box": {}
                                 },
+                                "mskC:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "oinf:ItemFullProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -9636,6 +10231,31 @@
                                     "uuid:Box": {}
                                 },
                                 "skip:Box": {},
+                                "spid:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "splt:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "spor:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "ssld:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "stpe:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
                                 "subs:ItemProperty": {
                                     "free:Box": {},
                                     "skip:Box": {},
@@ -9653,6 +10273,16 @@
                                 },
                                 "uuid:Box": {},
                                 "wbbr:ItemFullProperty": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "wipe:Box": {
+                                    "free:Box": {},
+                                    "skip:Box": {},
+                                    "uuid:Box": {}
+                                },
+                                "zoom:Box": {
                                     "free:Box": {},
                                     "skip:Box": {},
                                     "uuid:Box": {}
@@ -10094,9 +10724,64 @@
                         }
                     },
                     "hdlr:FullBox": {
+                        "auxv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "free:Box": {},
+                        "hapt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "hint:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "meta:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7b:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "mp7t:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "null:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
                         "skip:Box": {},
-                        "uuid:Box": {}
+                        "soun:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "subt:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "uuid:Box": {},
+                        "vide:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        },
+                        "volv:handler_type": {
+                            "free:Box": {},
+                            "skip:Box": {},
+                            "uuid:Box": {}
+                        }
                     },
                     "idat:Box": {
                         "free:Box": {},
@@ -10236,6 +10921,11 @@
                                 },
                                 "uuid:Box": {}
                             },
+                            "fade:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "fobr:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -10302,6 +10992,11 @@
                                 "skip:Box": {},
                                 "uuid:Box": {}
                             },
+                            "mskC:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "oinf:ItemFullProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -10338,6 +11033,31 @@
                                 "uuid:Box": {}
                             },
                             "skip:Box": {},
+                            "spid:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "splt:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "spor:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "ssld:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "stpe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
                             "subs:ItemProperty": {
                                 "free:Box": {},
                                 "skip:Box": {},
@@ -10355,6 +11075,16 @@
                             },
                             "uuid:Box": {},
                             "wbbr:ItemFullProperty": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "wipe:Box": {
+                                "free:Box": {},
+                                "skip:Box": {},
+                                "uuid:Box": {}
+                            },
+                            "zoom:Box": {
                                 "free:Box": {},
                                 "skip:Box": {},
                                 "uuid:Box": {}
@@ -10543,8 +11273,93 @@
             "uuid:Box": {}
         },
         "styp:GeneralTypeBox": {
+            "avc1:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "comp:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "free:Box": {},
+            "iso2:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso3:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso4:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso5:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso6:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso7:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso8:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "iso9:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isoa:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isob:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isoc:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "isom:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "mp71:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
+            "relo:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "skip:Box": {},
+            "unif:brand_type": {
+                "free:Box": {},
+                "skip:Box": {},
+                "uuid:Box": {}
+            },
             "uuid:Box": {}
         },
         "uuid:Box": {}

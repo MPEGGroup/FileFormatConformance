@@ -150,26 +150,41 @@ export default function ContainerInput({
             <div
                 ref={chipsRef}
                 className={clsx(
-                    "flex max-w-[250px] flex-row flex-nowrap overflow-scroll shadow-sm",
-                    parsed.length > 0 && "mr-2"
+                    "flex-row flex-nowrap shadow-sm",
+                    parsed.length > 0 && "mr-2 flex",
+                    parsed.length === 0 && "hidden"
                 )}
             >
-                {parsed.map((value, i) => (
+                {parsed.length > 4 && (
                     <Chip
-                        key={value}
-                        className={clsx(
-                            "rounded-l-sm",
-                            i === 0 && parsed.length > 1 && "rounded-r-none",
-                            i === parsed.length - 1 && "rounded-r-sm",
-                            i > 0 &&
-                                parsed.length > 1 &&
-                                "rounded-none border-l-1 border-neutral-500"
-                        )}
-                        type={value[0] === "$" ? "fourcc" : "type"}
+                        alt={parsed
+                            .slice(0, parsed.length - 4)
+                            .map((value) => value.substring(1))
+                            .join(".")}
+                        className="rounded-l-sm"
                     >
-                        {value.substring(1)}
+                        &hellip;
                     </Chip>
-                ))}
+                )}
+                {parsed.slice(-4).map((value, idx) => {
+                    const i = parsed.length > 4 ? idx + 1 : idx;
+                    return (
+                        <Chip
+                            key={value}
+                            className={clsx(
+                                "rounded-l-sm",
+                                i === 0 && parsed.length > 1 && "rounded-r-none",
+                                i === parsed.length - 1 && "rounded-r-sm",
+                                i > 0 &&
+                                    parsed.length > 1 &&
+                                    "rounded-none border-l-1 border-neutral-500"
+                            )}
+                            type={value[0] === "$" ? "fourcc" : "type"}
+                        >
+                            {value.substring(1)}
+                        </Chip>
+                    );
+                })}
             </div>
             <div ref={dropdownContainerRef} className="relative flex h-full grow flex-row">
                 <input

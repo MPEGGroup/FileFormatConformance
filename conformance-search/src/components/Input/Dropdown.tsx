@@ -141,7 +141,7 @@ function Dropdown(
     return (
         <div
             ref={ref}
-            className="mt-[1.5px] flex flex-col gap-3 bg-white p-3 shadow-lg outline outline-1 outline-gray-200"
+            className="mt-[1.5px] flex flex-col gap-3 bg-white p-3 shadow-lg outline outline-1 outline-gray-200 empty:hidden"
             data-testid="dropdown"
         >
             {dropdownSection({

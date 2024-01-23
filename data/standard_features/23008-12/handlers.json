@@ -1,0 +1,13 @@
+{
+  "name": "Handlers",
+  "description": "Handler types defined in HEIF",
+  "entries": [
+    {
+      "fourcc": "pict",
+      "description": "Image Item and Image sequences",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    }
+  ]
+}

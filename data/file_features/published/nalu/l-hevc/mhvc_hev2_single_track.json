@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "Extractors", "Implicit Reconstruction"],
+  "features": ["Extractors", "Implicit Reconstruction"],
   "notes": "",
   "license": "",
   "rel_filepath": "./mhvc_hev2_single_track.mp4",

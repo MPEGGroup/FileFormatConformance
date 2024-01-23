@@ -1,6 +1,8 @@
 # How to contribute to this repository
 
-## 1. How to contribute new conformance files (for file contributors)
+## 1. How to contribute new conformance files
+
+### 1.1 General requirements
 
 In order to contribute new conformance files to the framework the contributor needs to follow these steps:
 
@@ -15,21 +17,33 @@ In order to contribute new conformance files to the framework the contributor ne
     - Associated files (if applicable). These are files which are required for processing of the conformance file.
 - Upload files (either in a zip together with the contribution or by providing a URL which can be used to obtain the files).
 
+### 1.2 Next steps
+
 During the MPEG meeting the File Format group will collect and review the files and open a pull request to the conformance repository using the above information. After opening the PR, automation scripts will run GPAC's MP4Box and export the metadata from each file into a JSON with a suffix `_gpac.json`.
 
 Because the MP4Box will not be able to parse new features which are currently being standardized, the contributor of the files will need to provide additional information about features / boxes the files are containing. This step comes after the PR has been opened for the conformance files to be contributed. The contributor has to follow these steps to appropriately fix the possible issues with the MP4Box’s output:
 
 - Checkout the branch associated with the contributor’s PR
-- For each contribution’s MP4Box extension file (suffix with `_gpac.ext.json`)
-  - If the file does not exist, then there were no unknown boxes found in the file. If you are modifying a known box then create the file manually and add the box to the extension file.
-  - Go through all the unknown boxes and provide the structure of that box and its descendants.
-  - If a node is not related to your contribution, you can just skip it.
-  - Add the relevant boxes to the standard features as well. Without that this contribution wouldn't be shown in the conformance search tool.
+- Provide file structure for each file. For that you have two options:
+  - (Recommended) For each contribution’s MP4Box extension file (suffix with `_gpac.ext.json`)
+    - If the file does not exist, then there were no unknown boxes found in the file.
+    - Go through all the unknown boxes and provide the structure of that box and its descendants.
+    - If a node is not related to your contribution, you can just skip it.
+  - Modify the MP4Box output file directly. Either with a modified version of MP4Box or manually.
+    - Be sure to add `manualDump: true` property to your MP4Box output.
+    - This is also available via `--preserve-gpac-output` flag on `poetry run contribute-files` command.
+- Add the relevant boxes to the standard features as well. Without that this contribution wouldn't be shown in the conformance search tool.
 - If necessary for each conformance metadata file `<filename>.json` add or edit other fields. In particular check `associated_files`, `features`, `license` or add additional information to `notes`.
 - Commit and push your modifications to that branch.
 - CI scripts will validate the structure of the file and run tests to see if it’s okay to use it.
 
+> If you are providing your own MP4Box output, and set the `manualDump` flag to `true`, then our automation scripts won't update your MP4Box output file.
+
 The PR will be accepted after all edits are done to completely describe conformance files in the associated PR. When the File Format group decides the file should be published, the published flag will be changed to true and the file will move from [under_consideration](./data/file_features/under_consideration/) directory to a [published](./data/file_features/published/) directory.
+
+### 1.3 Structure of JSON files
+
+All the JSON files in this repository conform to a schema found within this repository. You can view all the available schemas [here](./data/schemas/). For example, MP4Box outputs conform to the schema found [here](./data/schemas/gpac.schema.json). Upon analyzing the schema, you will notice that we require the presence of `@Type` (fourcc) in all boxes as a bare minimum.
 
 ## 2. How to open a new PR for new conformance files
 

@@ -135,3 +135,125 @@ exports[`Database > files > should return 14 files for idat under file.meta 1`] 
   "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
 ]
 `;
+
+exports[`Database > get files with metadata > get all flavors of 'iso6' 1`] = `
+[
+  "published/green/video_2500000bps_0.mp4",
+  "published/isobmff/17_negative_ctso.mp4",
+  "published/isobmff/21_segment.mp4",
+  "published/isobmff/sg-tl-st.mp4",
+  "published/nalu/hevc/aggr_hvc1.mp4",
+  "published/nalu/hevc/alst_hvc1.mp4",
+  "published/nalu/hevc/subs_slice_hvc1.mp4",
+  "published/nalu/hevc/subs_tile_hvc1.mp4",
+  "published/nalu/hevc/trgr_hvc1.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R1_seg-0005.3gs",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0003.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0003.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0003.mp4",
+]
+`;
+
+exports[`Database > get files with metadata > get major brands of 'iso6' 1`] = `
+[
+  "published/green/video_2500000bps_0.mp4",
+  "published/isobmff/sg-tl-st.mp4",
+  "published/nalu/hevc/aggr_hvc1.mp4",
+  "published/nalu/hevc/alst_hvc1.mp4",
+  "published/nalu/hevc/subs_slice_hvc1.mp4",
+  "published/nalu/hevc/subs_tile_hvc1.mp4",
+  "published/nalu/hevc/trgr_hvc1.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep.mp4",
+]
+`;
+
+exports[`Database > get files with version and flags > with a 0x1 flag on trun 1`] = `
+[
+  "published/green/meta_2500000bps_0.mp4m",
+  "published/isobmff/a4-tone-fragmented.mp4",
+  "published/isobmff/fragment-random-access-1+AF8-rev1.mp4",
+]
+`;
+
+exports[`Database > get files with version and flags > with a 0x773 flag and version 0 on trun (no exact match) 1`] = `
+[
+  "published/isobmff/10_fragments.mp4",
+  "published/isobmff/fragment-random-access-1+AF8-rev1.mp4",
+  "published/isobmff/sg-tl-st.mp4",
+  "published/green/meta_2500000bps_0.mp4m",
+  "published/isobmff/a4-tone-fragmented.mp4",
+  "published/isobmff/fragment_random_access-2.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+]
+`;
+
+exports[`Database > get files with version and flags > with a 0x773 flag and version 0 on trun 1`] = `
+[
+  "published/isobmff/fragment_random_access-2.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+]
+`;
+
+exports[`Database > get files with version and flags > with a 0x773 flag on trun (no exact match) 1`] = `
+[
+  "published/isobmff/10_fragments.mp4",
+  "published/isobmff/fragment-random-access-1+AF8-rev1.mp4",
+  "published/isobmff/sg-tl-st.mp4",
+  "published/green/meta_2500000bps_0.mp4m",
+  "published/isobmff/a4-tone-fragmented.mp4",
+  "published/isobmff/fragment_random_access-2.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+]
+`;
+
+exports[`Database > get files with version and flags > with a 0x773 flag on trun 1`] = `
+[
+  "published/isobmff/fragment_random_access-2.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+]
+`;
+
+exports[`Database > get files with version and flags > with version 0 on trun 1`] = `
+[
+  "published/isobmff/10_fragments.mp4",
+  "published/isobmff/fragment-random-access-1+AF8-rev1.mp4",
+  "published/isobmff/sg-tl-st.mp4",
+  "published/green/meta_2500000bps_0.mp4m",
+  "published/isobmff/a4-tone-fragmented.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R1-0003.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R2-0003.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0001.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0002.mp4",
+  "published/nalu/svc/mp4-live-LastTime-depRep-R3-0003.mp4",
+  "published/isobmff/fragment_random_access-2.mp4",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R2_seg-0005.3gs",
+  "published/nalu/mvc/DDF_10s_25fps-dynamic_rep-R1_seg-0005.3gs",
+  "published/green/video_2500000bps_0.mp4",
+]
+`;
+
+exports[`Database > get files with version and flags > with version 1 on trun 1`] = `
+[
+  "published/isobmff/21_segment.mp4",
+  "published/uvvu/Solekai002_1280_23_1x1_v7clear.uvvu",
+  "published/uvvu/Solekai007_1920_29_1x1_v7clear.uvu",
+]
+`;

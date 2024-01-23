@@ -4,10 +4,30 @@ import Database from "./database";
 import Search from "./search";
 
 describe("Search", () => {
-    describe("search of empty", () => {
+    describe("sanity checks", async () => {
         let search: Search;
         beforeAll(async () => {
             search = await Search.getInstance();
+        });
+
+        it("search every box", async () => {
+            const allBoxes = (await Database.getInstance()).boxes;
+
+            const notFound: string[] = [];
+            // eslint-disable-next-line no-restricted-syntax
+            for await (const box of allBoxes) {
+                const { boxes } = await search.search(`="${box.fourcc}"`, [
+                    {
+                        type: "type",
+                        value: `="${box.type}"`
+                    }
+                ]);
+                if (box.fourcc !== "file" && boxes.length !== 1) {
+                    notFound.push(box.fourcc);
+                }
+            }
+
+            expect(notFound).toEqual([]);
         });
 
         it("should not return anything", async () => {
@@ -202,9 +222,9 @@ describe("Search", () => {
             expect(boxes.map((r) => r.item.fourcc)).toMatchSnapshot();
         });
 
-        it("#SampleEntry > ''", async () => {
+        it("#VisualSampleEntry > ''", async () => {
             const { boxes } = await search.search("", [
-                { type: "container", value: "#SampleEntry" }
+                { type: "container", value: "#VisualSampleEntry" }
             ]);
 
             expect(boxes.length).toBeGreaterThan(0);
