@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./region-point.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "33",
+        "@Type": "udes",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000000656E2D474200486962697363757320627564000000"
+      }
+    }
+  ]
+}
