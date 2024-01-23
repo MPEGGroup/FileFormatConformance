@@ -824,5 +824,6 @@
       "@dataSize": "3078"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "manualDump": true
 }
