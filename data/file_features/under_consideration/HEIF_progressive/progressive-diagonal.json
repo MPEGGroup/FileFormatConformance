@@ -1,0 +1,14 @@
+{
+  "contributor": "Canon Research Centre France",
+  "description": "Diagonal progressive rendering of a grid derived item using 'prdi' item property and 'prgr' entity group.",
+  "mdms_number": "m63202",
+  "rel_filepath": "./progressive-diagonal.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "2e33050a41c20f8b874e5534cb546413",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "The progressive-diagonal.heic conformance sample is an example where a base quality image is progressively refined starting from the top-left and ending at the bottom-right. In this figure, for each cell, the large number indicates the item_id of the corresponding input image, and the small number at the bottom left indicates the progressive rendering step for this cell.",
+  "license": ""
+}
