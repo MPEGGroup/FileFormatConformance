@@ -5,13 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "audio track",
-    "Protected basic",
-    "Interleaved data",
-    "IOD box"
-  ],
+  "features": ["Protected basic", "Interleaved data", "IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./f2.mp4",
