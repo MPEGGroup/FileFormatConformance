@@ -1,0 +1,55 @@
+{
+  "name": "Brands",
+  "description": "Brand types defined in NALUFF",
+  "entries": [
+    {
+      "fourcc": "hvce",
+      "description": "L-HEVC explicit reconstruction",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "hvci",
+      "description": "L-HEVC implicit reconstruction",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "hvcx",
+      "description": "L-HEVC extended explicit reconstruction brand",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "hvti",
+      "description": "HEVC Tile Track",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "lhte",
+      "description": "L-HEVC Tile Track Explicit brand",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "lhti",
+      "description": "L-HEVC Tile Track Implicit brand",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "nras",
+      "description": "No Leading Picture Sync Brand",
+      "containers": ["ftyp", "styp"],
+      "type": "brand_type",
+      "syntax": null
+    }
+  ]
+}
