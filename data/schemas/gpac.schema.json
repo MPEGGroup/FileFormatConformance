@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "GPAC MP4Box extension declaration schema",
+  "title": "GPAC MP4Box declaration schema",
   "$defs": {
     "mp4ra_boxes": {},
     "box_descendant": {
@@ -77,42 +77,32 @@
   },
   "type": "object",
   "properties": {
+    "IsoMediaFile": {
+      "type": "object",
+      "description": "Root box of the file",
+      "patternProperties": {
+        "^(?![@#]).+": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/box"
+              }
+            },
+            { "$ref": "#/$defs/box" }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "manualDump": {
+      "type": "boolean",
+      "description": "If true, the conformance file was manually dumped"
+    },
     "mp4boxVersion": {
       "type": "string",
       "description": "First line of 'MP4Box -version'"
-    },
-    "rel_filepath": {
-      "type": "string",
-      "pattern": "^./.*$",
-      "description": "Relative path to the conformance file"
-    },
-    "extensions": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "location": {
-            "type": "string",
-            "pattern": "^file(?>\\.[\\u0020-\\u007E]{4})*$",
-            "description": "Dot seperated location of the box in relation to the file"
-          },
-          "box": {
-            "anyOf": [
-              {
-                "type": "array",
-                "items": {
-                  "$ref": "#/$defs/box"
-                }
-              },
-              { "$ref": "#/$defs/box" }
-            ]
-          }
-        },
-        "required": ["location", "box"]
-      },
-      "description": "List of extensions to the MP4Box output of the conformance file",
-      "default": []
     }
   },
-  "required": ["mp4boxVersion", "rel_filepath", "extensions"]
+  "required": ["IsoMediaFile", "mp4boxVersion"]
 }

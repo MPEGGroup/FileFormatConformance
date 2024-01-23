@@ -42,7 +42,7 @@
       "description": "Encrypted Text",
       "type": "PlainTextSampleEntry",
       "containers": ["stsd"],
-      "syntax": ""
+      "syntax": null
     },
     {
       "fourcc": "encv",
@@ -168,7 +168,7 @@
       "description": "SRTCP reception hint track",
       "type": "HintSampleEntry",
       "containers": ["stsd"],
-      "syntax": ""
+      "syntax": null
     },
     {
       "fourcc": "stpp",
@@ -189,7 +189,7 @@
       "description": "Encrypted/Protected subtitles",
       "type": "PlainTextSampleEntry",
       "containers": ["stsd"],
-      "syntax": ""
+      "syntax": null
     },
     {
       "fourcc": "encp",
