@@ -348,8 +348,8 @@ class Search {
      * @param query - Search query
      * @param filters - List of filters to apply
      */
-    async search(query: string, filters?: Filter[]) {
-        if (filters) this.#filters = filters;
+    async search(query: string, filters: Filter[] = []) {
+        this.#filters = filters;
 
         // This is for searching multiple attributes with the same query with OR condition
         const attributes = query !== "" && [
