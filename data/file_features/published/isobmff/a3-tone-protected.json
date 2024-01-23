@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": ["./a3c-prot-keys.txt"],
-  "features": ["video track", "audio track", "Protected basic", "IOD box"],
+  "features": ["Protected basic", "IOD box"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a3-tone-protected.mp4",

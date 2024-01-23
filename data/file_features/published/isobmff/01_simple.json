@@ -6,8 +6,6 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "video track",
-    "audio track",
     "Interleaved data",
     "Systems tracks etc.",
     "IOD box",

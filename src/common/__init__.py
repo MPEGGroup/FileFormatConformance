@@ -6,7 +6,7 @@ from functools import cache
 
 from .unique_logger import logger
 
-MP4RA_BOXES_URL = "https://mp4ra.org/boxes.json"
+MP4RA_BOXES_URL = "https://mp4ra.org/api/boxes"
 DOCUMENT_STATUS_URL = (
     "https://github.com/MPEGGroup/FileFormat/blob/master/DocumentStatus.md"
 )
