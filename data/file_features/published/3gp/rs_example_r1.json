@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "audio track",
-    "Interleaved data",
-    "mp4a sample entry"
-  ],
+  "features": ["Interleaved data", "mp4a sample entry"],
   "notes": "",
   "license": "",
   "rel_filepath": "./rs_example_r1.3gp",
