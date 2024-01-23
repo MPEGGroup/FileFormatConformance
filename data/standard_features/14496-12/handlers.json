@@ -1,0 +1,83 @@
+{
+  "name": "Handlers",
+  "description": "Handler types defined in ISOBMFF",
+  "entries": [
+    {
+      "fourcc": "auxv",
+      "description": "Auxiliary video",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "hint",
+      "description": "Hint",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "meta",
+      "description": "Metadata",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "mp7b",
+      "description": "MPEG-7 (binary meta-data)",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "mp7t",
+      "description": "MPEG-7 (textual meta-data)",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "null",
+      "description": "No handling required (meta-data)",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "soun",
+      "description": "Audio",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "subt",
+      "description": "Subtitles",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "vide",
+      "description": "Video",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "volv",
+      "description": "Volumetric visual media",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    },
+    {
+      "fourcc": "hapt",
+      "description": "Haptics",
+      "containers": ["hdlr"],
+      "type": "handler_type",
+      "syntax": null
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["implied length", "unknown box", "audio track", "pad bits"],
+  "features": ["implied length", "unknown box", "pad bits"],
   "notes": "",
   "license": "",
   "rel_filepath": "./a7-tone-oddities.mp4",
