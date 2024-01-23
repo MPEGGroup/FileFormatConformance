@@ -1,0 +1,3114 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "RA_BodeMuseum_mixed_res_qp37.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso5",
+      "@MinorVersion": "1",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "iso5"
+        },
+        {
+          "@AlternateBrand": "dash"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "942",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3756736810",
+        "@ModificationTime": "3756736810",
+        "@TimeScale": "90000",
+        "@Duration": "0",
+        "@NextTrackID": "2"
+      },
+      "MovieExtendsBox": {
+        "@Size": "72",
+        "@Type": "mvex",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "MovieExtendsHeaderBox": {
+          "@Size": "16",
+          "@Type": "mehd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "mvex",
+          "@fragmentDuration": "900000"
+        },
+        "TrackExtendsBox": {
+          "@Size": "32",
+          "@Type": "trex",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "mvex",
+          "@TrackID": "1",
+          "@SampleDescriptionIndex": "1",
+          "@SampleDuration": "1500",
+          "@SampleSize": "0",
+          "DefaultSampleFlags": {
+            "@IsLeading": "0",
+            "@SampleDependsOn": "0",
+            "@SampleIsDependedOn": "0",
+            "@SampleHasRedundancy": "0",
+            "@SamplePadding": "0",
+            "@SampleSync": "0",
+            "@SampleDegradationPriority": "0"
+          }
+        },
+        "TrackExtensionPropertiesBox": {
+          "@Size": "16",
+          "@Type": "trep",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "mvex",
+          "@TrackID": "1"
+        }
+      },
+      "TrackBox": {
+        "@Size": "754",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "3",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3756736810",
+          "@ModificationTime": "3756736810",
+          "@TrackID": "1",
+          "@Duration": "0",
+          "@Width": "3840.00",
+          "@Height": "2160.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "EditBox": {
+          "@Size": "36",
+          "@Type": "edts",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "EditListBox": {
+            "@Size": "28",
+            "@Type": "elst",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "edts",
+            "@EntryCount": "1",
+            "EditListEntry": {
+              "@Duration": "0",
+              "@MediaTime": "7500",
+              "@MediaRate": "1"
+            }
+          }
+        },
+        "MediaBox": {
+          "@Size": "618",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3756736810",
+            "@ModificationTime": "3756736810",
+            "@TimeScale": "90000",
+            "@Duration": "0",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "45",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "VideoHandler",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "533",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "469",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "393",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "VVCSampleEntryBox": {
+                  "@Size": "377",
+                  "@Type": "vvi1",
+                  "@Specification": "p15",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "3840",
+                  "@Height": "2160",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "@CompressorName": "VVC CODING",
+                  "VVCConfigurationBox": {
+                    "@Size": "291",
+                    "@Type": "vvcC",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p15",
+                    "@Container": "vvc1 vvi1 encv resv ipco dvhe",
+                    "VVCDecoderConfigurationRecord": {
+                      "@nal_unit_size": "4",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@chroma_bit_depth": "10",
+                      "@avgFrameRate": "60",
+                      "@constantFrameRate": "1",
+                      "@numTemporalLayers": "1",
+                      "@maxWidth": "3840",
+                      "@maxHeight": "2160",
+                      "@general_profile_idc": "1",
+                      "@general_tier_flag": "0",
+                      "@general_sub_profile_idc": "0",
+                      "@general_constraint_info": "0x00",
+                      "@general_level_idc": "83",
+                      "ParameterSetArray": [
+                        {
+                          "@nalu_type": "15",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "237",
+                            "@content": "data:application/octet-string,007900AD02538000006003C04004388D400E6E88DD108D10A4C8DC26CAC608104F00262020820840C2108588842C9085A842F47AB525E4935259222D445E224D4448A488932444BA9222C442164842D42178424D4212292109324212EA4842424442122888424C44212EA2210914642126321097519085020B08410188840C9106A4026608210B0801058804042040202A1020101A42040202C4080404410080B208040484020640404420202C84040488081A040490207040C402164081108102C8408122041A081241070832045A104908710D0972395020B0801058804042040202A1020103FFFFEBF22040"
+                          }
+                        },
+                        {
+                          "@nalu_type": "16",
+                          "@complete_set": "0",
+                          "ParameterSet": {
+                            "@size": "16",
+                            "@content": "data:application/octet-string,008100000303C04004388A90059EC080"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "16",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              },
+              "SampleToChunkBox": {
+                "@Size": "16",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              },
+              "SampleSizeBox": {
+                "@Size": "20",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "0"
+              },
+              "ChunkOffsetBox": {
+                "@Size": "16",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "0"
+              }
+            }
+          }
+        }
+      }
+    },
+    "MovieFragmentBox": [
+      {
+        "@Size": "352",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "0"
+        },
+        "TrackFragmentBox": {
+          "@Size": "328",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "0"
+          },
+          "TrackRunBox": {
+            "@Size": "288",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "33",
+            "@DataOffset": "360",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "32405",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "2396",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "397",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "180",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "79",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "45",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "61",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "43",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "190",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "94",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "46",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "52",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "84",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "54000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "1"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "49500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "59400",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1126",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "622",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "204",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "115",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "73",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "72",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "40",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "168",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "63",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "84",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "531",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "142",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "78",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "89",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "51",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "187",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "91",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "113",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "41",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "66",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "5547",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1060",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "535",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "156",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "78",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "43",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "67",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "54",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "141",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "54",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "71",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "39",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "36",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "499",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "157",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "65",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "50",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "56",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "164",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "75",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "39",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "41",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "61",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "2"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "145500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "185463",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "6903",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "4229",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "674",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "294",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "153",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "117",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "217",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "114",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "158",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "666",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "249",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "113",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "128",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "267",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "134",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "107",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "4370",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "665",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "248",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "129",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "123",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "237",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "139",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "109",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "707",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "227",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "171",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "108",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "310",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "136",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "156",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "28986",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "7049",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "4119",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "622",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "203",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "100",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "87",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "167",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "100",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "68",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "655",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "188",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "78",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "95",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "141",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "85",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "88",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "4300",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "648",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "175",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "68",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "113",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "171",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "76",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "58",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "593",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "177",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "66",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "108",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "221",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "83",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "110",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "3"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "241500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "59483",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1308",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "637",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "187",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "73",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "65",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "58",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "46",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "167",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "46",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "57",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "591",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "172",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "72",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "81",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "43",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "178",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "77",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "41",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "63",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "71",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "6338",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1161",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "498",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "154",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "69",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "79",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "157",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "76",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "86",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "520",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "165",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "54",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "50",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "44",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "128",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "76",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "65",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "4"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "337500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "32627",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "378",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "227",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "74",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "55",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "36",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "21",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "61",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "21",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "178",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "84",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "90",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "40",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "2757",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "470",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "161",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "36",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "69",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "42",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "46",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "191",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "52",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "41",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "71",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "49",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "39",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "21",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "5"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "433500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "59497",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1249",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "588",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "179",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "103",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "56",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "36",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "55",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "127",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "74",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "42",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "54",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "598",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "147",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "60",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "67",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "195",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "44",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "75",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "50",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "7070",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1219",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "471",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "132",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "53",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "137",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "44",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "510",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "132",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "63",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "30",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "142",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "64",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "31",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "38",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "6"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "529500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "184078",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "7825",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "4739",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "635",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "270",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "116",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "57",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "135",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "78",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "86",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "568",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "179",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "105",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "85",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "158",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "56",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "75",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "4223",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "631",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "200",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "72",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "60",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "212",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "71",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "98",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "640",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "158",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "72",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "99",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "245",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "61",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "123",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "36385",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "7798",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "4319",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "570",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "181",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "78",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "103",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "158",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "108",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "103",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "503",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "162",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "87",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "88",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "139",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "94",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "106",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "4411",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "554",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "150",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "110",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "81",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "207",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "80",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "92",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "547",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "167",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "85",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "79",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "166",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "81",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "64",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "7"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "625500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "58629",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1218",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "621",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "164",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "83",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "61",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "163",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "59",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "35",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "49",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "33",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "575",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "166",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "59",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "52",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "206",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "60",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "98",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "36",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "71",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "7266",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "1176",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "519",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "162",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "42",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "52",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "99",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "47",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "66",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "555",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "142",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "50",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "28",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "121",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "45",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "@Size": "600",
+        "@Type": "moof",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@TrackFragments": "1",
+        "MovieFragmentHeaderBox": {
+          "@Size": "16",
+          "@Type": "mfhd",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "@FragmentSequenceNumber": "8"
+        },
+        "TrackFragmentBox": {
+          "@Size": "576",
+          "@Type": "traf",
+          "@Specification": "p12",
+          "@Container": "moof",
+          "TrackFragmentHeaderBox": {
+            "@Size": "16",
+            "@Type": "tfhd",
+            "@Version": "0",
+            "@Flags": "131072",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@TrackID": "1",
+            "@BaseDataOffset": "moof"
+          },
+          "TrackFragmentBaseMediaDecodeTimeBox": {
+            "@Size": "16",
+            "@Type": "tfdt",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@baseMediaDecodeTime": "721500"
+          },
+          "TrackRunBox": {
+            "@Size": "536",
+            "@Type": "trun",
+            "@Version": "0",
+            "@Flags": "2565",
+            "@Specification": "p12",
+            "@Container": "traf",
+            "@SampleCount": "64",
+            "@DataOffset": "608",
+            "FirstSampleFlags": {
+              "@IsLeading": "0",
+              "@SampleDependsOn": "0",
+              "@SampleIsDependedOn": "0",
+              "@SampleHasRedundancy": "0",
+              "@SamplePadding": "0",
+              "@SampleSync": "1",
+              "@SampleDegradationPriority": "0"
+            },
+            "TrackRunEntry": [
+              {
+                "@Size": "32349",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "400",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "222",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "55",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "41",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "21",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "45",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "59",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "45",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "34",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "189",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "50",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "52",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "38",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "64",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "37",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "22",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "44",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "3462",
+                "@CTSOffset": "54000"
+              },
+              {
+                "@Size": "463",
+                "@CTSOffset": "28500"
+              },
+              {
+                "@Size": "187",
+                "@CTSOffset": "15000"
+              },
+              {
+                "@Size": "62",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "18",
+                "@CTSOffset": "0"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "29",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "56",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "32",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "40",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "20",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "214",
+                "@CTSOffset": "16500"
+              },
+              {
+                "@Size": "49",
+                "@CTSOffset": "9000"
+              },
+              {
+                "@Size": "44",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "1500"
+              },
+              {
+                "@Size": "25",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "38",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "23",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "56",
+                "@CTSOffset": "10500"
+              },
+              {
+                "@Size": "27",
+                "@CTSOffset": "6000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "3000"
+              },
+              {
+                "@Size": "19",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "26",
+                "@CTSOffset": "7500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "4500"
+              },
+              {
+                "@Size": "24",
+                "@CTSOffset": "6000"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "MediaDataBox": [
+      {
+        "@Size": "36596",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "36588"
+      },
+      {
+        "@Size": "73083",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "73075"
+      },
+      {
+        "@Size": "257627",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "257619"
+      },
+      {
+        "@Size": "73980",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "73972"
+      },
+      {
+        "@Size": "38851",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "38843"
+      },
+      {
+        "@Size": "74265",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "74257"
+      },
+      {
+        "@Size": "264074",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "264066"
+      },
+      {
+        "@Size": "73651",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "73643"
+      },
+      {
+        "@Size": "39214",
+        "@Type": "mdat",
+        "@Specification": "p12",
+        "@Container": "file",
+        "@dataSize": "39206"
+      }
+    ]
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}
