@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "audio track",
-    "mp4a sample entry",
-    "mp4v sample entry"
-  ],
+  "features": ["mp4a sample entry", "mp4v sample entry"],
   "notes": "",
   "license": "",
   "rel_filepath": "./fragment-random-access-1+AF8-rev1.mp4",
