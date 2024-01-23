@@ -5,7 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": ["video track", "layering and subseq grps"],
+  "features": ["layering and subseq grps"],
   "notes": "",
   "license": "",
   "rel_filepath": "./sg-tl-st.mp4",

@@ -6,8 +6,6 @@
   "published": true,
   "associated_files": [],
   "features": [
-    "video track",
-    "audio track",
     "hint track setup",
     "sdp boxes",
     "hint stats boxes",
