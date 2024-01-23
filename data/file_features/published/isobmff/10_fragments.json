@@ -5,12 +5,7 @@
   "version": 1,
   "published": true,
   "associated_files": [],
-  "features": [
-    "video track",
-    "audio track",
-    "Interleaved data",
-    "multiple mdats"
-  ],
+  "features": ["Interleaved data", "multiple mdats"],
   "notes": "",
   "license": "",
   "rel_filepath": "./10_fragments.mp4",
