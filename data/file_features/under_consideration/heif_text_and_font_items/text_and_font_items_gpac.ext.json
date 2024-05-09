@@ -1,0 +1,36 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev16-g205bfe31-master",
+  "rel_filepath": "./text_and_font_items.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "30",
+        "@Type": "txlo",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0000000005A003C0008000800000000000006C747200"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "18",
+        "@Type": "elng",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000000656E2D555300"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "34",
+        "@Type": "fnch",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0000000043616C69627265006E6F726D616C006E6F726D616C00"
+      }
+    }
+  ]
+}
