@@ -1,0 +1,26 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./camera_parameters_2_v1.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "40",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0100002F00FFFFFF00FFFFFF00FFFFFF008E8CCC000FCE56FF51C10700000010"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "32",
+        "@Type": "cmin",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0001010100000168000002D0000001E0000000F000000001"
+      }
+    }
+  ]
+}

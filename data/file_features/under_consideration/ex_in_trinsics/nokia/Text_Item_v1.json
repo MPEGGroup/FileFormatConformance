@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "A text item with ImageSpatialExtentsProperty ('ispe') and TextLayoutProperty ('txlo').",
+  "mdms_number": "m63101",
+  "rel_filepath": "./Text_Item_v1.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "06f79b05046920e318b271f83862a745",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
