@@ -1,0 +1,2654 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "video_cbcs_mkey_const_iv_subs.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso4",
+      "@MinorVersion": "1",
+      "BrandEntry": {
+        "@AlternateBrand": "iso4"
+      }
+    },
+    "MovieBox": {
+      "@Size": "4435",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3701683911",
+        "@ModificationTime": "3701683911",
+        "@TimeScale": "600",
+        "@Duration": "1200",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "4210",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3701666790",
+          "@ModificationTime": "3701683911",
+          "@TrackID": "1",
+          "@Duration": "1200",
+          "@Width": "1280.00",
+          "@Height": "720.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "994",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3701666790",
+            "@ModificationTime": "3701683911",
+            "@TimeScale": "25000",
+            "@Duration": "50000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "82",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "hevc:dur=2@GPAC1.1.0-DEV-rev736-gd1e971268-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "872",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "808",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "282",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "MPEGVisualSampleDescriptionBox": {
+                  "@Size": "266",
+                  "@Type": "encv",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "1280",
+                  "@Height": "720",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "HEVCConfigurationBox": {
+                    "@Size": "112",
+                    "@Type": "hvcC",
+                    "@Specification": "p15",
+                    "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+                    "HEVCDecoderConfigurationRecord": {
+                      "@nal_unit_size": "4",
+                      "@configurationVersion": "1",
+                      "@profile_space": "0",
+                      "@tier_flag": "0",
+                      "@profile_idc": "1",
+                      "@general_profile_compatibility_flags": "60000000",
+                      "@progressive_source_flag": "1",
+                      "@interlaced_source_flag": "0",
+                      "@non_packed_constraint_flag": "0",
+                      "@frame_only_constraint_flag": "0",
+                      "@constraint_indicator_flags": "0",
+                      "@level_idc": "186",
+                      "@min_spatial_segmentation_idc": "0",
+                      "@parallelismType": "2",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@luma_bit_depth": "8",
+                      "@chroma_bit_depth": "8",
+                      "@avgFrameRate": "0",
+                      "@constantFrameRate": "0",
+                      "@numTemporalLayers": "2",
+                      "@temporalIdNested": "0",
+                      "ParameterSetArray": [
+                        {
+                          "@nalu_type": "32",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "25",
+                            "@content": "data:application/octet-string,40010C02FFFF0160000003008000000300000300BA00002C09"
+                          }
+                        },
+                        {
+                          "@nalu_type": "33",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "32",
+                            "@content": "data:application/octet-string,4201020160000003008000000300000300BA0000A00280802D1684E491CA2002"
+                          }
+                        },
+                        {
+                          "@nalu_type": "34",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "9",
+                            "@content": "data:application/octet-string,4401C1624F09B93240"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "BitRateBox": {
+                    "@Size": "20",
+                    "@Type": "btrt",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "@BufferSizeDB": "15991",
+                    "@avgBitRate": "515320",
+                    "@maxBitRate": "615752"
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "48",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "hvc1"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "cbcs",
+                      "@scheme_version": "65536"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "8",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf"
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1000",
+                  "@SampleCount": "50"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "24",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SyncSampleEntry": [
+                  {
+                    "@sampleNumber": "1"
+                  },
+                  {
+                    "@sampleNumber": "26"
+                  }
+                ]
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "12",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "5",
+                    "@SamplesPerChunk": "2",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "220",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "50",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "5252"
+                  },
+                  {
+                    "@Size": "1165"
+                  },
+                  {
+                    "@Size": "1038"
+                  },
+                  {
+                    "@Size": "2023"
+                  },
+                  {
+                    "@Size": "1305"
+                  },
+                  {
+                    "@Size": "4254"
+                  },
+                  {
+                    "@Size": "1584"
+                  },
+                  {
+                    "@Size": "1632"
+                  },
+                  {
+                    "@Size": "2925"
+                  },
+                  {
+                    "@Size": "1743"
+                  },
+                  {
+                    "@Size": "3189"
+                  },
+                  {
+                    "@Size": "1731"
+                  },
+                  {
+                    "@Size": "1868"
+                  },
+                  {
+                    "@Size": "2696"
+                  },
+                  {
+                    "@Size": "1928"
+                  },
+                  {
+                    "@Size": "2200"
+                  },
+                  {
+                    "@Size": "2711"
+                  },
+                  {
+                    "@Size": "1989"
+                  },
+                  {
+                    "@Size": "2333"
+                  },
+                  {
+                    "@Size": "2492"
+                  },
+                  {
+                    "@Size": "2640"
+                  },
+                  {
+                    "@Size": "2177"
+                  },
+                  {
+                    "@Size": "2169"
+                  },
+                  {
+                    "@Size": "2814"
+                  },
+                  {
+                    "@Size": "2287"
+                  },
+                  {
+                    "@Size": "15991"
+                  },
+                  {
+                    "@Size": "2833"
+                  },
+                  {
+                    "@Size": "1876"
+                  },
+                  {
+                    "@Size": "2498"
+                  },
+                  {
+                    "@Size": "1802"
+                  },
+                  {
+                    "@Size": "2492"
+                  },
+                  {
+                    "@Size": "1756"
+                  },
+                  {
+                    "@Size": "1970"
+                  },
+                  {
+                    "@Size": "2090"
+                  },
+                  {
+                    "@Size": "1980"
+                  },
+                  {
+                    "@Size": "2096"
+                  },
+                  {
+                    "@Size": "2150"
+                  },
+                  {
+                    "@Size": "1877"
+                  },
+                  {
+                    "@Size": "2552"
+                  },
+                  {
+                    "@Size": "2014"
+                  },
+                  {
+                    "@Size": "2715"
+                  },
+                  {
+                    "@Size": "2184"
+                  },
+                  {
+                    "@Size": "2127"
+                  },
+                  {
+                    "@Size": "2589"
+                  },
+                  {
+                    "@Size": "2101"
+                  },
+                  {
+                    "@Size": "2546"
+                  },
+                  {
+                    "@Size": "2646"
+                  },
+                  {
+                    "@Size": "2272"
+                  },
+                  {
+                    "@Size": "3067"
+                  },
+                  {
+                    "@Size": "2462"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "36",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "5",
+                "ChunkEntry": [
+                  {
+                    "@offset": "4463"
+                  },
+                  {
+                    "@offset": "32304"
+                  },
+                  {
+                    "@offset": "60321"
+                  },
+                  {
+                    "@offset": "99992"
+                  },
+                  {
+                    "@offset": "127765"
+                  }
+                ]
+              },
+              "SampleGroupDescriptionBox": {
+                "@Size": "97",
+                "@Type": "sgpd",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "seig",
+                "@default_length": "73",
+                "CENCSampleEncryptionGroupEntry": {
+                  "@IsEncrypted": "1",
+                  "CENCKey": [
+                    {
+                      "@IV_size": "0",
+                      "@KID": "0x279926496A7F5D25DA69F2B3B2799A7E",
+                      "@constant_IV_size": "16",
+                      "@constant_IV": "0x0A610676CB88F302D10AC8BC66E039ED"
+                    },
+                    {
+                      "@IV_size": "0",
+                      "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F",
+                      "@constant_IV_size": "16",
+                      "@constant_IV": "0x0A610676CB88F302D10AC8BC66E039ED"
+                    }
+                  ]
+                }
+              },
+              "SampleGroupBox": {
+                "@Size": "28",
+                "@Type": "sbgp",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "seig",
+                "SampleGroupBoxEntry": {
+                  "@sample_count": "50",
+                  "@group_description_index": "1"
+                }
+              },
+              "SampleAuxiliaryInfoSizeBox": {
+                "@Size": "25",
+                "@Type": "saiz",
+                "@Version": "0",
+                "@Flags": "1",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@default_sample_info_size": "62",
+                "@sample_count": "50",
+                "@aux_info_type": "0",
+                "@aux_info_type_parameter": "1"
+              },
+              "SampleAuxiliaryInfoOffsetBox": {
+                "@Size": "24",
+                "@Type": "saio",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@entry_count": "1",
+                "SAIChunkOffset": {
+                  "@offset": "1246"
+                }
+              }
+            }
+          }
+        },
+        "SampleEncryptionBox": {
+          "@Size": "3116",
+          "@Type": "senc",
+          "@Specification": "cenc",
+          "@Container": "trak traf",
+          "@sampleCount": "50",
+          "FullBoxInfo": {
+            "@Version": "1",
+            "@Flags": "0x2"
+          },
+          "SampleEncryptionEntry": [
+            {
+              "@sampleNumber": "1",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "184",
+                  "@NumEncryptedBytes": "17"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "92",
+                  "@NumEncryptedBytes": "54"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "10",
+                  "@NumEncryptedBytes": "217"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "746",
+                  "@NumEncryptedBytes": "79"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "10",
+                  "@NumEncryptedBytes": "211"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "3164",
+                  "@NumEncryptedBytes": "446"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "2",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "85",
+                  "@NumEncryptedBytes": "88"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "121"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "266",
+                  "@NumEncryptedBytes": "108"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "66"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "205",
+                  "@NumEncryptedBytes": "129"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "3",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "39"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "81",
+                  "@NumEncryptedBytes": "88"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "134"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "192",
+                  "@NumEncryptedBytes": "99"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "61"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "179",
+                  "@NumEncryptedBytes": "108"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "4",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "27"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "76",
+                  "@NumEncryptedBytes": "130"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "293"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "456",
+                  "@NumEncryptedBytes": "140"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "119"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "550",
+                  "@NumEncryptedBytes": "172"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "5",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "82",
+                  "@NumEncryptedBytes": "110"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "222"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "212",
+                  "@NumEncryptedBytes": "171"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "68"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "215",
+                  "@NumEncryptedBytes": "123"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "6",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "41"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "94",
+                  "@NumEncryptedBytes": "127"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "265"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "550",
+                  "@NumEncryptedBytes": "167"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "177"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "2514",
+                  "@NumEncryptedBytes": "259"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "7",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "96",
+                  "@NumEncryptedBytes": "100"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "246"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "364",
+                  "@NumEncryptedBytes": "175"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "76"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "248",
+                  "@NumEncryptedBytes": "179"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "8",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "83",
+                  "@NumEncryptedBytes": "73"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "203"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "349",
+                  "@NumEncryptedBytes": "171"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "70"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "375",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "9",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "106",
+                  "@NumEncryptedBytes": "179"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "420"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "821",
+                  "@NumEncryptedBytes": "213"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "113"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "640",
+                  "@NumEncryptedBytes": "333"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "10",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "79",
+                  "@NumEncryptedBytes": "98"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "243"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "376",
+                  "@NumEncryptedBytes": "169"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "69"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "409",
+                  "@NumEncryptedBytes": "200"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "11",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "91",
+                  "@NumEncryptedBytes": "91"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "377"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "710",
+                  "@NumEncryptedBytes": "194"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "111"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "1049",
+                  "@NumEncryptedBytes": "466"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "12",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "84",
+                  "@NumEncryptedBytes": "92"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "228"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "419",
+                  "@NumEncryptedBytes": "144"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "74"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "325",
+                  "@NumEncryptedBytes": "265"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "13",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "41"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "82",
+                  "@NumEncryptedBytes": "102"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "246"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "476",
+                  "@NumEncryptedBytes": "167"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "115"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "298",
+                  "@NumEncryptedBytes": "281"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "14",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "89",
+                  "@NumEncryptedBytes": "93"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "855",
+                  "@NumEncryptedBytes": "189"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "83"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "743",
+                  "@NumEncryptedBytes": "286"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "15",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "88",
+                  "@NumEncryptedBytes": "84"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "231"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "458",
+                  "@NumEncryptedBytes": "202"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "112"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "399",
+                  "@NumEncryptedBytes": "254"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "16",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "106",
+                  "@NumEncryptedBytes": "87"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "300"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "734",
+                  "@NumEncryptedBytes": "180"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "83"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "372",
+                  "@NumEncryptedBytes": "236"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "17",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "94",
+                  "@NumEncryptedBytes": "120"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "291"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "810",
+                  "@NumEncryptedBytes": "191"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "106"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "763",
+                  "@NumEncryptedBytes": "234"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "18",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "101",
+                  "@NumEncryptedBytes": "98"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "230"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "615",
+                  "@NumEncryptedBytes": "167"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "85"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "323",
+                  "@NumEncryptedBytes": "268"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "19",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "88",
+                  "@NumEncryptedBytes": "97"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "939",
+                  "@NumEncryptedBytes": "171"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "88"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "341",
+                  "@NumEncryptedBytes": "219"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "20",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "104",
+                  "@NumEncryptedBytes": "106"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "256"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "665",
+                  "@NumEncryptedBytes": "156"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "86"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "773",
+                  "@NumEncryptedBytes": "244"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "21",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "94",
+                  "@NumEncryptedBytes": "118"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "560"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "945",
+                  "@NumEncryptedBytes": "186"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "87"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "333",
+                  "@NumEncryptedBytes": "215"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "22",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "110",
+                  "@NumEncryptedBytes": "95"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "254"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "760",
+                  "@NumEncryptedBytes": "171"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "89"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "368",
+                  "@NumEncryptedBytes": "228"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "23",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "183",
+                  "@NumEncryptedBytes": "109"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "276"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "628",
+                  "@NumEncryptedBytes": "186"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "87"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "367",
+                  "@NumEncryptedBytes": "231"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "24",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "224",
+                  "@NumEncryptedBytes": "127"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "208"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "968",
+                  "@NumEncryptedBytes": "214"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "90"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "608",
+                  "@NumEncryptedBytes": "275"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "25",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "248",
+                  "@NumEncryptedBytes": "182"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "194"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "557",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "89"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "451",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "26",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "9",
+                  "@NumEncryptedBytes": "21"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "330",
+                  "@NumEncryptedBytes": "265"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "10",
+                  "@NumEncryptedBytes": "782"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "2549",
+                  "@NumEncryptedBytes": "328"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "10",
+                  "@NumEncryptedBytes": "543"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "9779",
+                  "@NumEncryptedBytes": "1343"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "27",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "132",
+                  "@NumEncryptedBytes": "189"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "285"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "662",
+                  "@NumEncryptedBytes": "197"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "98"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "927",
+                  "@NumEncryptedBytes": "244"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "28",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "100",
+                  "@NumEncryptedBytes": "171"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "230"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "461",
+                  "@NumEncryptedBytes": "165"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "93"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "330",
+                  "@NumEncryptedBytes": "229"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "29",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "116",
+                  "@NumEncryptedBytes": "174"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "359"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "740",
+                  "@NumEncryptedBytes": "238"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "97"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "432",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "30",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "41"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "91",
+                  "@NumEncryptedBytes": "109"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "253"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "441",
+                  "@NumEncryptedBytes": "209"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "91"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "297",
+                  "@NumEncryptedBytes": "210"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "31",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "106"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "568"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "703",
+                  "@NumEncryptedBytes": "252"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "100"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "319",
+                  "@NumEncryptedBytes": "245"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "32",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "93",
+                  "@NumEncryptedBytes": "107"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "244"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "478",
+                  "@NumEncryptedBytes": "168"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "83"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "281",
+                  "@NumEncryptedBytes": "200"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "33",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "95",
+                  "@NumEncryptedBytes": "80"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "315"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "475",
+                  "@NumEncryptedBytes": "284"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "97"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "306",
+                  "@NumEncryptedBytes": "216"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "34",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "94",
+                  "@NumEncryptedBytes": "74"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "280"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "739",
+                  "@NumEncryptedBytes": "213"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "86"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "300",
+                  "@NumEncryptedBytes": "202"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "35",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "96"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "288"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "496",
+                  "@NumEncryptedBytes": "270"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "105"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "311",
+                  "@NumEncryptedBytes": "215"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "36",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "93",
+                  "@NumEncryptedBytes": "95"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "302"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "729",
+                  "@NumEncryptedBytes": "198"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "84"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "279",
+                  "@NumEncryptedBytes": "214"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "37",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "101",
+                  "@NumEncryptedBytes": "77"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "294"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "670",
+                  "@NumEncryptedBytes": "191"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "111"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "335",
+                  "@NumEncryptedBytes": "269"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "38",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "94",
+                  "@NumEncryptedBytes": "72"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "275"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "459",
+                  "@NumEncryptedBytes": "183"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "84"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "285",
+                  "@NumEncryptedBytes": "325"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "39",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "101",
+                  "@NumEncryptedBytes": "83"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "312"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1005",
+                  "@NumEncryptedBytes": "185"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "95"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "325",
+                  "@NumEncryptedBytes": "346"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "40",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "96",
+                  "@NumEncryptedBytes": "101"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "292"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "537",
+                  "@NumEncryptedBytes": "209"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "84"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "358",
+                  "@NumEncryptedBytes": "237"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "41",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "131"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "576"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "857",
+                  "@NumEncryptedBytes": "237"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "98"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "395",
+                  "@NumEncryptedBytes": "224"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "42",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "95",
+                  "@NumEncryptedBytes": "107"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "270"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "748",
+                  "@NumEncryptedBytes": "192"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "107"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "356",
+                  "@NumEncryptedBytes": "212"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "43",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "42"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "101",
+                  "@NumEncryptedBytes": "103"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "341"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "687",
+                  "@NumEncryptedBytes": "152"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "101"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "317",
+                  "@NumEncryptedBytes": "223"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "44",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "115"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "304"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1082",
+                  "@NumEncryptedBytes": "201"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "95"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "331",
+                  "@NumEncryptedBytes": "267"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "45",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "97",
+                  "@NumEncryptedBytes": "138"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "310"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "603",
+                  "@NumEncryptedBytes": "209"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "105"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "303",
+                  "@NumEncryptedBytes": "236"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "46",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "95",
+                  "@NumEncryptedBytes": "141"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "326"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1036",
+                  "@NumEncryptedBytes": "216"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "94"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "315",
+                  "@NumEncryptedBytes": "226"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "47",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "121",
+                  "@NumEncryptedBytes": "191"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "309"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "872",
+                  "@NumEncryptedBytes": "260"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "109"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "351",
+                  "@NumEncryptedBytes": "333"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "48",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "208",
+                  "@NumEncryptedBytes": "110"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "314"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "649",
+                  "@NumEncryptedBytes": "213"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "100"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "341",
+                  "@NumEncryptedBytes": "240"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "49",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "282",
+                  "@NumEncryptedBytes": "199"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "340"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "1078",
+                  "@NumEncryptedBytes": "277"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "13",
+                  "@NumEncryptedBytes": "99"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "346",
+                  "@NumEncryptedBytes": "346"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            },
+            {
+              "@sampleNumber": "50",
+              "@SubsampleCount": "7",
+              "SubSampleEncryptionEntry": [
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "11",
+                  "@NumEncryptedBytes": "40"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "261",
+                  "@NumEncryptedBytes": "159"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "298"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "632",
+                  "@NumEncryptedBytes": "302"
+                },
+                {
+                  "@MultiKeyIndex": "1",
+                  "@NumClearBytes": "12",
+                  "@NumEncryptedBytes": "110"
+                },
+                {
+                  "@MultiKeyIndex": "2",
+                  "@NumClearBytes": "320",
+                  "@NumEncryptedBytes": "283"
+                },
+                {
+                  "@MultiKeyIndex": "0",
+                  "@NumClearBytes": "22",
+                  "@NumEncryptedBytes": "0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "ProtectionSystemHeaderBox": {
+        "@Size": "109",
+        "@Type": "pssh",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "cenc",
+        "@Container": "moov moof meta",
+        "@SystemID": "0x6770616363656E6364726D746F6F6C31",
+        "PSSHKey": [
+          {
+            "@KID": "0x279926496A7F5D25DA69F2B3B2799A7E"
+          },
+          {
+            "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+          }
+        ],
+        "PSSHData": {
+          "@size": "41",
+          "@value": "0x084349443D47504143C30AF91588CC23DD89D9AAC629FF2349497D39DDBD09D0DC0626A39C7663ACF7"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "128839",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "128831"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev531-g61f1cf39-master"
+}

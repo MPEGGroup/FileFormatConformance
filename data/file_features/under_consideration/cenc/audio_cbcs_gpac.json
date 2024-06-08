@@ -1,0 +1,1075 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "audio_cbcs.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "isom",
+      "@MinorVersion": "1",
+      "BrandEntry": {
+        "@AlternateBrand": "isom"
+      }
+    },
+    "MovieBox": {
+      "@Size": "2591",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3701668946",
+        "@ModificationTime": "3701668946",
+        "@TimeScale": "600",
+        "@Duration": "1212",
+        "@NextTrackID": "2"
+      },
+      "ObjectDescriptorBox": {
+        "@Size": "21",
+        "@Type": "iods",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p14",
+        "@Container": "moov",
+        "MP4InitialObjectDescriptor": {
+          "@objectDescriptorID": "od1",
+          "@binaryID": "1",
+          "Profile": {
+            "@audioProfileLevelIndication": "41",
+            "@visualProfileLevelIndication": "255",
+            "@sceneProfileLevelIndication": "255",
+            "@graphicsProfileLevelIndication": "255",
+            "@ODProfileLevelIndication": "255"
+          },
+          "Descr": null
+        }
+      },
+      "TrackBox": {
+        "@Size": "2377",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3701666818",
+          "@ModificationTime": "3701668946",
+          "@TrackID": "1",
+          "@Duration": "1212",
+          "@Volume": "1.00"
+        },
+        "MediaBox": {
+          "@Size": "869",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3701666818",
+            "@ModificationTime": "3701668946",
+            "@TimeScale": "44100",
+            "@Duration": "89088",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "81",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "soun",
+            "@Name": "aac:dur=2@GPAC1.1.0-DEV-rev736-gd1e971268-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "748",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "SoundMediaHeaderBox": {
+              "@Size": "16",
+              "@Type": "smhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "688",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "171",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "AudioSampleDescriptionBox": {
+                  "@Size": "155",
+                  "@Type": "enca",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@SampleRate": "44100",
+                  "@Channels": "1",
+                  "@BitsPerSample": "16",
+                  "MPEG4ESDescriptorBox": {
+                    "@Size": "39",
+                    "@Type": "esds",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p14",
+                    "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                    "ES_Descriptor": {
+                      "@ES_ID": "es0",
+                      "decConfigDescr": {
+                        "DecoderConfigDescriptor": {
+                          "@objectTypeIndication": "64",
+                          "@streamType": "5",
+                          "@bufferSizeDB": "215",
+                          "@maxBitrate": "63064",
+                          "@avgBitrate": "63904",
+                          "decSpecificInfo": {
+                            "DecoderSpecificInfo": {
+                              "@type": "auto",
+                              "@src": "data:application/octet-string,%12%08"
+                            }
+                          }
+                        }
+                      },
+                      "slConfigDescr": {
+                        "SLConfigDescriptor": {
+                          "predefined": {
+                            "@value": "2"
+                          },
+                          "custom": null
+                        }
+                      }
+                    }
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "80",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "mp4a"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "cbcs",
+                      "@scheme_version": "65536"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "40",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "TrackEncryptionBox": {
+                        "@Size": "32",
+                        "@Type": "tenc",
+                        "@Version": "1",
+                        "@Flags": "0",
+                        "@Specification": "cenc",
+                        "@Container": "schi",
+                        "@isEncrypted": "1",
+                        "@IV_size": "16",
+                        "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F",
+                        "@crypt_byte_block": "0",
+                        "@skip_byte_block": "0"
+                      }
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1024",
+                  "@SampleCount": "87"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "21",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "5",
+                    "@SamplesPerChunk": "3",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "368",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "87",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "135"
+                  },
+                  {
+                    "@Size": "59"
+                  },
+                  {
+                    "@Size": "140"
+                  },
+                  {
+                    "@Size": "152"
+                  },
+                  {
+                    "@Size": "162"
+                  },
+                  {
+                    "@Size": "155"
+                  },
+                  {
+                    "@Size": "162"
+                  },
+                  {
+                    "@Size": "163"
+                  },
+                  {
+                    "@Size": "163"
+                  },
+                  {
+                    "@Size": "166"
+                  },
+                  {
+                    "@Size": "160"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "159"
+                  },
+                  {
+                    "@Size": "181"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "178"
+                  },
+                  {
+                    "@Size": "176"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "165"
+                  },
+                  {
+                    "@Size": "183"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "178"
+                  },
+                  {
+                    "@Size": "185"
+                  },
+                  {
+                    "@Size": "181"
+                  },
+                  {
+                    "@Size": "180"
+                  },
+                  {
+                    "@Size": "189"
+                  },
+                  {
+                    "@Size": "197"
+                  },
+                  {
+                    "@Size": "183"
+                  },
+                  {
+                    "@Size": "184"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "196"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "204"
+                  },
+                  {
+                    "@Size": "201"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "180"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "129"
+                  },
+                  {
+                    "@Size": "174"
+                  },
+                  {
+                    "@Size": "94"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "212"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "196"
+                  },
+                  {
+                    "@Size": "207"
+                  },
+                  {
+                    "@Size": "207"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "190"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "198"
+                  },
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "185"
+                  },
+                  {
+                    "@Size": "209"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "186"
+                  },
+                  {
+                    "@Size": "215"
+                  },
+                  {
+                    "@Size": "193"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "208"
+                  },
+                  {
+                    "@Size": "204"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "201"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "193"
+                  },
+                  {
+                    "@Size": "158"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "36",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "5",
+                "ChunkEntry": [
+                  {
+                    "@offset": "2619"
+                  },
+                  {
+                    "@offset": "5970"
+                  },
+                  {
+                    "@offset": "9997"
+                  },
+                  {
+                    "@offset": "13991"
+                  },
+                  {
+                    "@offset": "18203"
+                  }
+                ]
+              },
+              "SampleAuxiliaryInfoSizeBox": {
+                "@Size": "17",
+                "@Type": "saiz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@default_sample_info_size": "16",
+                "@sample_count": "87"
+              },
+              "SampleAuxiliaryInfoOffsetBox": {
+                "@Size": "24",
+                "@Type": "saio",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@entry_count": "1",
+                "SAIChunkOffset": {
+                  "@offset": "1142"
+                }
+              }
+            }
+          }
+        },
+        "SampleEncryptionBox": {
+          "@Size": "1408",
+          "@Type": "senc",
+          "@Specification": "cenc",
+          "@Container": "trak traf",
+          "@sampleCount": "87",
+          "FullBoxInfo": {
+            "@Version": "0",
+            "@Flags": "0x0"
+          },
+          "SampleEncryptionEntry": [
+            {
+              "@sampleNumber": "1",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039ED"
+            },
+            {
+              "@sampleNumber": "2",
+              "@IV_size": "16",
+              "@IV": "0xF9E383CA83D4A5E1E274C5389ED9A10A"
+            },
+            {
+              "@sampleNumber": "3",
+              "@IV_size": "16",
+              "@IV": "0xF479BCB497E5A6EB06F885A3E8F5A62C"
+            },
+            {
+              "@sampleNumber": "4",
+              "@IV_size": "16",
+              "@IV": "0xE7D8DD62756A7189B882E6D6233D4095"
+            },
+            {
+              "@sampleNumber": "5",
+              "@IV_size": "16",
+              "@IV": "0x1A502B5FA4B1156DA248BE3F8BFB718A"
+            },
+            {
+              "@sampleNumber": "6",
+              "@IV_size": "16",
+              "@IV": "0x85E6D62702CAEED0236F72306242DD9C"
+            },
+            {
+              "@sampleNumber": "7",
+              "@IV_size": "16",
+              "@IV": "0xB003B00FF69C996B5653F402AD895061"
+            },
+            {
+              "@sampleNumber": "8",
+              "@IV_size": "16",
+              "@IV": "0xD0AC1252A6C388D9C23A5B4B2DA532A0"
+            },
+            {
+              "@sampleNumber": "9",
+              "@IV_size": "16",
+              "@IV": "0x312003009C6BF3A46EEE8118FE78CEF0"
+            },
+            {
+              "@sampleNumber": "10",
+              "@IV_size": "16",
+              "@IV": "0x9E96DE0790A66CAC843426620DA2C1DD"
+            },
+            {
+              "@sampleNumber": "11",
+              "@IV_size": "16",
+              "@IV": "0xDDF00172686B294FC3AAC0AA08F53B83"
+            },
+            {
+              "@sampleNumber": "12",
+              "@IV_size": "16",
+              "@IV": "0x04A54D1D15A2645EFAE0BC1731318EA0"
+            },
+            {
+              "@sampleNumber": "13",
+              "@IV_size": "16",
+              "@IV": "0x9FC2CB156630EAA1312DACBE5F3FCFA4"
+            },
+            {
+              "@sampleNumber": "14",
+              "@IV_size": "16",
+              "@IV": "0x8C7B211AE4B411F7EB25DFF885CDD1E6"
+            },
+            {
+              "@sampleNumber": "15",
+              "@IV_size": "16",
+              "@IV": "0x3CAA5DA172399326B0FD6315CAEABDD3"
+            },
+            {
+              "@sampleNumber": "16",
+              "@IV_size": "16",
+              "@IV": "0x8A0299235E3CE624522A81E4C865491D"
+            },
+            {
+              "@sampleNumber": "17",
+              "@IV_size": "16",
+              "@IV": "0x5023663E7E949F53A566DE6A2F184845"
+            },
+            {
+              "@sampleNumber": "18",
+              "@IV_size": "16",
+              "@IV": "0x0D7D87B8A6005D66D57F8E9C12873A72"
+            },
+            {
+              "@sampleNumber": "19",
+              "@IV_size": "16",
+              "@IV": "0x98B89E052E106CF7130EF5CC329F8E5E"
+            },
+            {
+              "@sampleNumber": "20",
+              "@IV_size": "16",
+              "@IV": "0xB3A9B56BA0EFD8B52294B8488C7FDB9D"
+            },
+            {
+              "@sampleNumber": "21",
+              "@IV_size": "16",
+              "@IV": "0xB157057A6E4B46890175AEC89CAF297E"
+            },
+            {
+              "@sampleNumber": "22",
+              "@IV_size": "16",
+              "@IV": "0xFB3CC7A076E89FCDE0CEB65B57B9A94A"
+            },
+            {
+              "@sampleNumber": "23",
+              "@IV_size": "16",
+              "@IV": "0xA421D63E995AF174A5F7A5B2B8798106"
+            },
+            {
+              "@sampleNumber": "24",
+              "@IV_size": "16",
+              "@IV": "0x79DB3071069DFCDB0940298E893DE688"
+            },
+            {
+              "@sampleNumber": "25",
+              "@IV_size": "16",
+              "@IV": "0x01438EF84EA01BD8D87EC4CE1F1E814A"
+            },
+            {
+              "@sampleNumber": "26",
+              "@IV_size": "16",
+              "@IV": "0xB27F437BF51923E946FD7A1425B9AA14"
+            },
+            {
+              "@sampleNumber": "27",
+              "@IV_size": "16",
+              "@IV": "0x78163855DB12EAC3C3B02137869AE9D7"
+            },
+            {
+              "@sampleNumber": "28",
+              "@IV_size": "16",
+              "@IV": "0xD6533C4EF1EEB8BDDAC5AF80778DF17D"
+            },
+            {
+              "@sampleNumber": "29",
+              "@IV_size": "16",
+              "@IV": "0x7F3FDC07DCC929C19D38238D853A53EF"
+            },
+            {
+              "@sampleNumber": "30",
+              "@IV_size": "16",
+              "@IV": "0xD0D5B82EE628AE2A268E9D6486B30FE9"
+            },
+            {
+              "@sampleNumber": "31",
+              "@IV_size": "16",
+              "@IV": "0xB0C199569B19E19E26FA5160DA042F4F"
+            },
+            {
+              "@sampleNumber": "32",
+              "@IV_size": "16",
+              "@IV": "0x7B68BFE566113BBFFD2D61927B199294"
+            },
+            {
+              "@sampleNumber": "33",
+              "@IV_size": "16",
+              "@IV": "0x06DEA3EAC32527179B3BCCFE7E28390E"
+            },
+            {
+              "@sampleNumber": "34",
+              "@IV_size": "16",
+              "@IV": "0x0D2E64C032A26D3A6946F89A6F879BBF"
+            },
+            {
+              "@sampleNumber": "35",
+              "@IV_size": "16",
+              "@IV": "0x7AD70215A83B172287DCF6B89B5ED3DD"
+            },
+            {
+              "@sampleNumber": "36",
+              "@IV_size": "16",
+              "@IV": "0xF3617A7B160C5F6FF601E690BE2D9455"
+            },
+            {
+              "@sampleNumber": "37",
+              "@IV_size": "16",
+              "@IV": "0xB07D08F8671F225775EBA3989D3A0FCE"
+            },
+            {
+              "@sampleNumber": "38",
+              "@IV_size": "16",
+              "@IV": "0x3F64832D9C27BC3EE4F425D7C6BAAAE9"
+            },
+            {
+              "@sampleNumber": "39",
+              "@IV_size": "16",
+              "@IV": "0xF0B1EBCC8FAF1026A32C6CFE2DD34BFB"
+            },
+            {
+              "@sampleNumber": "40",
+              "@IV_size": "16",
+              "@IV": "0x0D4F014A34947A5ECACF318E4C1864EB"
+            },
+            {
+              "@sampleNumber": "41",
+              "@IV_size": "16",
+              "@IV": "0x8C05215FDBE495E593B632D709614F26"
+            },
+            {
+              "@sampleNumber": "42",
+              "@IV_size": "16",
+              "@IV": "0x88932D16A3BF1C12B26FFC037346B8E1"
+            },
+            {
+              "@sampleNumber": "43",
+              "@IV_size": "16",
+              "@IV": "0x5445BC347914D96DF4A02206304514E3"
+            },
+            {
+              "@sampleNumber": "44",
+              "@IV_size": "16",
+              "@IV": "0xE72AAEA4C2AB4F820252E528189B1C71"
+            },
+            {
+              "@sampleNumber": "45",
+              "@IV_size": "16",
+              "@IV": "0x66800B01C8554B9CE7A3AD87D223170F"
+            },
+            {
+              "@sampleNumber": "46",
+              "@IV_size": "16",
+              "@IV": "0x858D790E5924A1BB39888FEB3CCE4798"
+            },
+            {
+              "@sampleNumber": "47",
+              "@IV_size": "16",
+              "@IV": "0x6DC2EBB8D09C12636891A0036364E93A"
+            },
+            {
+              "@sampleNumber": "48",
+              "@IV_size": "16",
+              "@IV": "0x59442DE5DF7DD9AD60637CD4CA9494CD"
+            },
+            {
+              "@sampleNumber": "49",
+              "@IV_size": "16",
+              "@IV": "0x2D1E9CA64B09EE8781FEA72727B0CFB7"
+            },
+            {
+              "@sampleNumber": "50",
+              "@IV_size": "16",
+              "@IV": "0x3E146287BA3575E0F6338826155FAB10"
+            },
+            {
+              "@sampleNumber": "51",
+              "@IV_size": "16",
+              "@IV": "0xB7D2988CF09E39D7739E2292560A3B53"
+            },
+            {
+              "@sampleNumber": "52",
+              "@IV_size": "16",
+              "@IV": "0xA418E85F255C12A054E3FB89AD27EFD4"
+            },
+            {
+              "@sampleNumber": "53",
+              "@IV_size": "16",
+              "@IV": "0x56F4FCB527EC99E34BBE33EA9ADCA23A"
+            },
+            {
+              "@sampleNumber": "54",
+              "@IV_size": "16",
+              "@IV": "0x1A85B8C04EC00D4492E3E6450EE9BD19"
+            },
+            {
+              "@sampleNumber": "55",
+              "@IV_size": "16",
+              "@IV": "0x91C907F355E683B2422F2C53B02CC178"
+            },
+            {
+              "@sampleNumber": "56",
+              "@IV_size": "16",
+              "@IV": "0x2C80DAFE5C462AC1AAA8D8D25C3A6DDD"
+            },
+            {
+              "@sampleNumber": "57",
+              "@IV_size": "16",
+              "@IV": "0xE90AF1A436EC74F8EE2873F201C9F2CD"
+            },
+            {
+              "@sampleNumber": "58",
+              "@IV_size": "16",
+              "@IV": "0x2A7B576A9F8DEB74ACD24988A8EB441B"
+            },
+            {
+              "@sampleNumber": "59",
+              "@IV_size": "16",
+              "@IV": "0xC92FB41B625C01A84696F47C461B2DC2"
+            },
+            {
+              "@sampleNumber": "60",
+              "@IV_size": "16",
+              "@IV": "0x34933E7203BEEB6184653D0212903DBB"
+            },
+            {
+              "@sampleNumber": "61",
+              "@IV_size": "16",
+              "@IV": "0x1DA47EBD2E394D6DE25BF7363385E845"
+            },
+            {
+              "@sampleNumber": "62",
+              "@IV_size": "16",
+              "@IV": "0xEE421F0244665D6960AF9F63E047D9FE"
+            },
+            {
+              "@sampleNumber": "63",
+              "@IV_size": "16",
+              "@IV": "0xFF3DA083AB967ECDBD6F767E653A220D"
+            },
+            {
+              "@sampleNumber": "64",
+              "@IV_size": "16",
+              "@IV": "0x1FC410BCAB67D22731A26B8975F5ABAA"
+            },
+            {
+              "@sampleNumber": "65",
+              "@IV_size": "16",
+              "@IV": "0x3257649DC5D70F765C209C51B42E8100"
+            },
+            {
+              "@sampleNumber": "66",
+              "@IV_size": "16",
+              "@IV": "0xD9416F33BA0B1425D0C400634E9BC88B"
+            },
+            {
+              "@sampleNumber": "67",
+              "@IV_size": "16",
+              "@IV": "0x0993AB8B6150916B5994BFB770C1D15D"
+            },
+            {
+              "@sampleNumber": "68",
+              "@IV_size": "16",
+              "@IV": "0xFFFCAEE75922723B2F4DC247DFAAD038"
+            },
+            {
+              "@sampleNumber": "69",
+              "@IV_size": "16",
+              "@IV": "0xF499E7ED1C01B051DDF1BC45D7017468"
+            },
+            {
+              "@sampleNumber": "70",
+              "@IV_size": "16",
+              "@IV": "0xB750668BCFE521A4B0067C2133C4A3CE"
+            },
+            {
+              "@sampleNumber": "71",
+              "@IV_size": "16",
+              "@IV": "0xE0D84A09D5B60A60DC5C3E223A94635C"
+            },
+            {
+              "@sampleNumber": "72",
+              "@IV_size": "16",
+              "@IV": "0x30547831D29B0643588542DFAB979F98"
+            },
+            {
+              "@sampleNumber": "73",
+              "@IV_size": "16",
+              "@IV": "0x6670C14376DAF773E95DFEB3099545CA"
+            },
+            {
+              "@sampleNumber": "74",
+              "@IV_size": "16",
+              "@IV": "0x9FBF3BA30C0EAEB43273DB13348842AF"
+            },
+            {
+              "@sampleNumber": "75",
+              "@IV_size": "16",
+              "@IV": "0x6EE855BCB78D64BBA0B2283F17F0654F"
+            },
+            {
+              "@sampleNumber": "76",
+              "@IV_size": "16",
+              "@IV": "0x983B9F20CDFB06EBE5958D1757C1094B"
+            },
+            {
+              "@sampleNumber": "77",
+              "@IV_size": "16",
+              "@IV": "0xBF90BB04CED1D331EBFF20F9CBAF7658"
+            },
+            {
+              "@sampleNumber": "78",
+              "@IV_size": "16",
+              "@IV": "0x6A5A84AFC6ED2D1B67BDE191D3DE0756"
+            },
+            {
+              "@sampleNumber": "79",
+              "@IV_size": "16",
+              "@IV": "0x24A5CABF235566E19880ECA75F4A9D7A"
+            },
+            {
+              "@sampleNumber": "80",
+              "@IV_size": "16",
+              "@IV": "0x4E93143E44B2BD3335EF35177FC791B7"
+            },
+            {
+              "@sampleNumber": "81",
+              "@IV_size": "16",
+              "@IV": "0x4239335172EE0F2CF5C9EDEC1689D7A4"
+            },
+            {
+              "@sampleNumber": "82",
+              "@IV_size": "16",
+              "@IV": "0x361FE5B9F5E8BA6085F42C25E77B7620"
+            },
+            {
+              "@sampleNumber": "83",
+              "@IV_size": "16",
+              "@IV": "0x5AEA5986D155412074FE7FDAB2F3C216"
+            },
+            {
+              "@sampleNumber": "84",
+              "@IV_size": "16",
+              "@IV": "0xB3D8A2F4451811FCC1C532A5951E25CC"
+            },
+            {
+              "@sampleNumber": "85",
+              "@IV_size": "16",
+              "@IV": "0xDDF4C2E604BD11EE999159DE717D9AAC"
+            },
+            {
+              "@sampleNumber": "86",
+              "@IV_size": "16",
+              "@IV": "0x2CA339E1818F0A9C24742BB3949572B9"
+            },
+            {
+              "@sampleNumber": "87",
+              "@IV_size": "16",
+              "@IV": "0xEFF37BC7C455D32CF86B3175BF2E36E0"
+            }
+          ]
+        }
+      },
+      "ProtectionSystemHeaderBox": {
+        "@Size": "77",
+        "@Type": "pssh",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "cenc",
+        "@Container": "moov moof meta",
+        "@SystemID": "0x6770616363656E6364726D746F6F6C31",
+        "PSSHKey": {
+          "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+        },
+        "PSSHData": {
+          "@size": "25",
+          "@value": "0x084349443D475041435A8E62EB7DF2829F7D583A722E60DA8A"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "16146",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "16138"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}
