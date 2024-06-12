@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./rotation_04.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "36",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0000001F000186A0000186A0FFFE79600F88D1830F77DD7CCD719448"
+      }
+    }
+  ]
+}

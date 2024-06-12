@@ -1,0 +1,271 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "rotation_00.heic",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "heic",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "heic"
+        },
+        {
+          "@AlternateBrand": "mif1"
+        }
+      ]
+    },
+    "MetaBox": {
+      "@Size": "393",
+      "@Type": "meta",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file moov trak moof traf udta",
+      "HandlerBox": {
+        "@Size": "33",
+        "@Type": "hdlr",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "mdia meta minf",
+        "@hdlrType": "pict",
+        "@Name": "",
+        "@reserved1": "0",
+        "@reserved2": "data:application/octet-string,000000000000000000000000"
+      },
+      "DataInformationBox": {
+        "@Size": "36",
+        "@Type": "dinf",
+        "@Specification": "p12",
+        "@Container": "minf meta",
+        "DataReferenceBox": {
+          "@Size": "28",
+          "@Type": "dref",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "dinf",
+          "URLDataEntryBox": {
+            "@Size": "12",
+            "@Type": "url ",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "dref"
+          }
+        }
+      },
+      "PrimaryItemBox": {
+        "@Size": "14",
+        "@Type": "pitm",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@item_ID": "1"
+      },
+      "ItemInfoBox": {
+        "@Size": "35",
+        "@Type": "iinf",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemInfoEntryBox": {
+          "@Size": "21",
+          "@Type": "infe",
+          "@Version": "2",
+          "@Flags": "0",
+          "@Specification": "p12",
+          "@Container": "iinf",
+          "@item_ID": "1",
+          "@item_protection_index": "0",
+          "@item_name": "(null)",
+          "@content_type": "(null)",
+          "@content_encoding": "(null)",
+          "@item_type": "hvc1"
+        }
+      },
+      "ItemPropertiesBox": {
+        "@Size": "233",
+        "@Type": "iprp",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "ItemPropertyContainerBox": {
+          "@Size": "201",
+          "@Type": "ipco",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "HEVCConfigurationBox": {
+            "@Size": "112",
+            "@Type": "hvcC",
+            "@Specification": "p15",
+            "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+            "HEVCDecoderConfigurationRecord": {
+              "@nal_unit_size": "4",
+              "@configurationVersion": "1",
+              "@profile_space": "0",
+              "@tier_flag": "0",
+              "@profile_idc": "3",
+              "@general_profile_compatibility_flags": "70000000",
+              "@progressive_source_flag": "1",
+              "@interlaced_source_flag": "0",
+              "@non_packed_constraint_flag": "1",
+              "@frame_only_constraint_flag": "1",
+              "@constraint_indicator_flags": "0",
+              "@level_idc": "93",
+              "@min_spatial_segmentation_idc": "0",
+              "@parallelismType": "0",
+              "@chroma_format": "YUV 4:2:0",
+              "@luma_bit_depth": "8",
+              "@chroma_bit_depth": "8",
+              "@avgFrameRate": "0",
+              "@constantFrameRate": "0",
+              "@numTemporalLayers": "1",
+              "@temporalIdNested": "0",
+              "ParameterSetArray": [
+                {
+                  "@nalu_type": "32",
+                  "@complete_set": "1",
+                  "ParameterSet": {
+                    "@size": "23",
+                    "@content": "data:application/octet-string,40010C01FFFF037000000300B0000003000003005D7024"
+                  }
+                },
+                {
+                  "@nalu_type": "33",
+                  "@complete_set": "1",
+                  "ParameterSet": {
+                    "@size": "34",
+                    "@content": "data:application/octet-string,420101037000000300B0000003000003005DA0020080301621EE45954DC080808020"
+                  }
+                },
+                {
+                  "@nalu_type": "34",
+                  "@complete_set": "1",
+                  "ParameterSet": {
+                    "@size": "9",
+                    "@content": "data:application/octet-string,4401C06172C8405324"
+                  }
+                }
+              ]
+            }
+          },
+          "ImageSpatialExtentsPropertyBox": {
+            "@Size": "20",
+            "@Type": "ispe",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "@image_width": "1024",
+            "@image_height": "768"
+          },
+          "ImageRotationBox": {
+            "@Size": "9",
+            "@Type": "irot",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "@angle": "180"
+          },
+          "PixelInformationPropertyBox": {
+            "@Size": "16",
+            "@Type": "pixi",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "BitPerChannel": [
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              }
+            ]
+          },
+          "UnknownBox": {
+            "@Size": "36",
+            "@Type": "cmex",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "@data": "0x0000001F000186A0000186A0FFFE79603F3AD35F06051812FAF2DE5A"
+          }
+        },
+        "ItemPropertyAssociationBox": {
+          "@Size": "24",
+          "@Type": "ipma",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "@entry_count": "1",
+          "AssociationEntry": {
+            "@item_ID": "1",
+            "@association_count": "5",
+            "Property": [
+              {
+                "@index": "1",
+                "@essential": "1"
+              },
+              {
+                "@index": "2",
+                "@essential": "0"
+              },
+              {
+                "@index": "3",
+                "@essential": "1"
+              },
+              {
+                "@index": "4",
+                "@essential": "0"
+              },
+              {
+                "@index": "5",
+                "@essential": "0"
+              }
+            ]
+          }
+        }
+      },
+      "ItemLocationBox": {
+        "@Size": "30",
+        "@Type": "iloc",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@offset_size": "4",
+        "@length_size": "4",
+        "@base_offset_size": "0",
+        "@index_size": "0",
+        "ItemLocationEntry": {
+          "@item_ID": "1",
+          "@data_reference_index": "0",
+          "@base_offset": "0",
+          "@construction_method": "0",
+          "ItemExtentEntry": {
+            "@extent_offset": "433",
+            "@extent_length": "295155",
+            "@extent_index": "0"
+          }
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "295171",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "295155"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}
