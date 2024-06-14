@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "VVC subpicture tracks with subpicture order sample grouping 'spor' with num_subpic_ref_idx greater than 0 (different order)",
+  "mdms_number": "m56817",
+  "license": "",
+  "md5": "d7c11a374de7ac8341a1354adf2be33e",
+  "rel_filepath": "./vvc_subpicture_tracks_spor_ordered.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": [],
+  "features": [],
+  "notes": "",
+  "conforms_to": []
+}

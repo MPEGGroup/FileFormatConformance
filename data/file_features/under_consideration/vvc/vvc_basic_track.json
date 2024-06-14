@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "Single layer coded bitstream in VVC track with sample entry 'vvc1'",
+  "mdms_number": "m56817",
+  "license": "",
+  "md5": "67a355d18e2f8330e888d6f708f0e0e4",
+  "rel_filepath": "./vvc_basic_track.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": [],
+  "features": [],
+  "notes": "",
+  "conforms_to": []
+}
