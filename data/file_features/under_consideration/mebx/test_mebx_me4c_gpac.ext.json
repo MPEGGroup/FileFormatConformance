@@ -1,0 +1,185 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./test_mebx_me4c.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.mdia.minf.stbl.stsd.mebx",
+      "box": {
+        "@Size": "357",
+        "@Type": "keys",
+        "@Specification": "unknown",
+        "@Container": "mebx",
+        "UnknownBox": [
+          {
+            "@Size": "42",
+            "@Type": "redd",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D65346372656464"
+              },
+              {
+                "@Size": "18",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E66696720524544"
+              }
+            ]
+          },
+          {
+            "@Size": "43",
+            "@Type": "blue",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D653463626C7565"
+              },
+              {
+                "@Size": "19",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E66696720424C5545"
+              }
+            ]
+          },
+          {
+            "@Size": "45",
+            "@Type": "ylow",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D653463796C6F77"
+              },
+              {
+                "@Size": "21",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E6669672059454C4C4F57"
+              }
+            ]
+          },
+          {
+            "@Size": "44",
+            "@Type": "whte",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D65346377687465"
+              },
+              {
+                "@Size": "20",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E666967205748495445"
+              }
+            ]
+          },
+          {
+            "@Size": "44",
+            "@Type": "blck",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D653463626C636B"
+              },
+              {
+                "@Size": "20",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E66696720424C41434B"
+              }
+            ]
+          },
+          {
+            "@Size": "66",
+            "@Type": "labl",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D6534636C61626C"
+              },
+              {
+                "@Size": "14",
+                "@Type": "loca",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x656E2D555300"
+              },
+              {
+                "@Size": "28",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E666967206C61626C6520454E474C495348"
+              }
+            ]
+          },
+          {
+            "@Size": "65",
+            "@Type": "labl",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "UnknownBox": [
+              {
+                "@Size": "16",
+                "@Type": "keyd",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x6D6534636C61626C"
+              },
+              {
+                "@Size": "14",
+                "@Type": "loca",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x64652D444500"
+              },
+              {
+                "@Size": "27",
+                "@Type": "setu",
+                "@Specification": "unknown",
+                "@Container": "unknown",
+                "@data": "0x436F6E666967206C61626C65204745524D414E"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
