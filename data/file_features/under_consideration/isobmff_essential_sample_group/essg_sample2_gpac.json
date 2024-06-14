@@ -1,0 +1,925 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "essg_sample2.mp4",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "iso4",
+      "@MinorVersion": "1",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "iso4"
+        },
+        {
+          "@AlternateBrand": "iso6"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "2078",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file cmvd",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3765170150",
+        "@ModificationTime": "3765170150",
+        "@TimeScale": "600",
+        "@Duration": "912",
+        "@NextTrackID": "2"
+      },
+      "TrackBox": {
+        "@Size": "1885",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "7",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3765170150",
+          "@ModificationTime": "3765170150",
+          "@TrackID": "1",
+          "@Duration": "912",
+          "@Width": "416.00",
+          "@Height": "240.00",
+          "Matrix": {
+            "@m11": "0x00010000",
+            "@m12": "0x00000000",
+            "@m13": "0x00000000",
+            "@m21": "0x00000000",
+            "@m22": "0x00010000",
+            "@m23": "0x00000000",
+            "@m31": "0x00000000",
+            "@m32": "0x00000000",
+            "@m33": "0x40000000"
+          }
+        },
+        "MediaBox": {
+          "@Size": "857",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3765170150",
+            "@ModificationTime": "3765170150",
+            "@TimeScale": "25000",
+            "@Duration": "38000",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "36",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "vide",
+            "@Name": "vvc",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "781",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "VideoMediaHeaderBox": {
+              "@Size": "20",
+              "@Type": "vmhd",
+              "@Version": "0",
+              "@Flags": "1",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "717",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "340",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "MPEGVisualSampleDescriptionBox": {
+                  "@Size": "324",
+                  "@Type": "resv",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@Width": "416",
+                  "@Height": "240",
+                  "@XDPI": "4718592",
+                  "@YDPI": "4718592",
+                  "@BitDepth": "24",
+                  "VVCConfigurationBox": {
+                    "@Size": "98",
+                    "@Type": "vvcC",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p15",
+                    "@Container": "vvc1 vvi1 encv resv ipco dvhe",
+                    "VVCDecoderConfigurationRecord": {
+                      "@nal_unit_size": "4",
+                      "@chroma_format": "YUV 4:2:0",
+                      "@chroma_bit_depth": "10",
+                      "@avgFrameRate": "0",
+                      "@constantFrameRate": "1",
+                      "@numTemporalLayers": "1",
+                      "@maxWidth": "416",
+                      "@maxHeight": "240",
+                      "@general_profile_idc": "1",
+                      "@general_tier_flag": "0",
+                      "@general_sub_profile_idc": "0",
+                      "@general_constraint_info": "0x000000000000000000000000",
+                      "@general_level_idc": "35",
+                      "ParameterSetArray": [
+                        {
+                          "@nalu_type": "15",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "36",
+                            "@content": "data:application/octet-string,0079000D02238000401A101E23501F446E88468852646E13628C54306F855C7F07E31020"
+                          }
+                        },
+                        {
+                          "@nalu_type": "16",
+                          "@complete_set": "1",
+                          "ParameterSet": {
+                            "@size": "13",
+                            "@content": "data:application/octet-string,008100001A101E22908031EC08"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "BitRateBox": {
+                    "@Size": "20",
+                    "@Type": "btrt",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "@BufferSizeDB": "46",
+                    "@avgBitRate": "8968",
+                    "@maxBitRate": "9632"
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "80",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "vvc1"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "cenc",
+                      "@scheme_version": "65536"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "40",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "TrackEncryptionBox": {
+                        "@Size": "32",
+                        "@Type": "tenc",
+                        "@Version": "0",
+                        "@Flags": "0",
+                        "@Specification": "cenc",
+                        "@Container": "schi",
+                        "@isEncrypted": "1",
+                        "@IV_size": "16",
+                        "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+                      }
+                    }
+                  },
+                  "RestrictedSchemeInfoBox": {
+                    "@Size": "40",
+                    "@Type": "rinf",
+                    "@Specification": "p12",
+                    "@Container": "sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "encv"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "essg",
+                      "@scheme_version": "0"
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1000",
+                  "@SampleCount": "38"
+                }
+              },
+              "SyncSampleBox": {
+                "@Size": "20",
+                "@Type": "stss",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "SyncSampleEntry": {
+                  "@sampleNumber": "1"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "12",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "4",
+                    "@SamplesPerChunk": "2",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "172",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "38",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "44"
+                  },
+                  {
+                    "@Size": "44"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "42"
+                  },
+                  {
+                    "@Size": "40"
+                  },
+                  {
+                    "@Size": "42"
+                  },
+                  {
+                    "@Size": "43"
+                  },
+                  {
+                    "@Size": "44"
+                  },
+                  {
+                    "@Size": "44"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "45"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  },
+                  {
+                    "@Size": "46"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "32",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "4",
+                "ChunkEntry": [
+                  {
+                    "@offset": "2110"
+                  },
+                  {
+                    "@offset": "2655"
+                  },
+                  {
+                    "@offset": "3179"
+                  },
+                  {
+                    "@offset": "3722"
+                  }
+                ]
+              },
+              "SampleGroupDescriptionBox": {
+                "@Size": "40",
+                "@Type": "sgpd",
+                "@Version": "3",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@grouping_type": "esgh",
+                "@default_length": "12",
+                "@default_group_index": "1",
+                "EssentialSampleGroupEntry": {
+                  "@samplegroup_types": "cenc stsd"
+                }
+              },
+              "SampleAuxiliaryInfoSizeBox": {
+                "@Size": "17",
+                "@Type": "saiz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@default_sample_info_size": "24",
+                "@sample_count": "38"
+              },
+              "SampleAuxiliaryInfoOffsetBox": {
+                "@Size": "24",
+                "@Type": "saio",
+                "@Version": "1",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl traf",
+                "@entry_count": "1",
+                "SAIChunkOffset": {
+                  "@offset": "1033"
+                }
+              }
+            }
+          }
+        },
+        "SampleEncryptionBox": {
+          "@Size": "928",
+          "@Type": "senc",
+          "@Specification": "cenc",
+          "@Container": "trak traf",
+          "@sampleCount": "38",
+          "FullBoxInfo": {
+            "@Version": "0",
+            "@Flags": "0x2"
+          },
+          "SampleEncryptionEntry": [
+            {
+              "@sampleNumber": "1",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039ED",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "2",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039EF",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "3",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039F1",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "4",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039F3",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "5",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039F5",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "6",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039F7",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "7",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039F9",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "8",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039FB",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "9",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039FD",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "10",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E039FF",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "11",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A01",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "12",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A03",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "13",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A05",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "14",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A07",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "15",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A09",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "16",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A0B",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "12",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "17",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A0D",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "12",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "18",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A0F",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "19",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A11",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "10",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "20",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A13",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "24",
+                "@NumEncryptedBytes": "16"
+              }
+            },
+            {
+              "@sampleNumber": "21",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A14",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "10",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "22",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A16",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "11",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "23",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A18",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "12",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "24",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A1A",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "12",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "25",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A1C",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "26",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A1E",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "27",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A20",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "28",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A22",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "29",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A24",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "30",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A26",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "31",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A28",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "32",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A2A",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "33",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A2C",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "34",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A2E",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "35",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A30",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "13",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "36",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A32",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "37",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A34",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            },
+            {
+              "@sampleNumber": "38",
+              "@IV_size": "16",
+              "@IV": "0x0A610676CB88F302D10AC8BC66E03A36",
+              "@SubsampleCount": "1",
+              "SubSampleEncryptionEntry": {
+                "@NumClearBytes": "14",
+                "@NumEncryptedBytes": "32"
+              }
+            }
+          ]
+        }
+      },
+      "ProtectionSystemHeaderBox": {
+        "@Size": "77",
+        "@Type": "pssh",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "cenc",
+        "@Container": "moov moof meta",
+        "@SystemID": "0x6770616363656E6364726D746F6F6C31",
+        "PSSHKey": {
+          "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+        },
+        "PSSHData": {
+          "@size": "25",
+          "@value": "0x084349443D546F746FC30AF91588CC23DD89D9AAC629FF234A"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "1712",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "1704"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+}
