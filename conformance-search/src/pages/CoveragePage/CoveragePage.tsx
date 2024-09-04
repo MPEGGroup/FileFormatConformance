@@ -232,7 +232,10 @@ export default function CoveragePage() {
                         />
                     </div>
                 </div>
-                <div className="flex w-full grow flex-col items-stretch gap-8 overflow-auto lg:flex-row lg:items-start">
+                <div
+                    className="flex w-full grow flex-col items-stretch gap-8 overflow-auto lg:flex-row lg:items-start"
+                    style={{ scrollbarGutter: "stable" }}
+                >
                     <Tables results={results} />
                 </div>
             </div>
