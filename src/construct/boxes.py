@@ -10,6 +10,7 @@ from common.unique_logger import logger
 from common import get_mp4ra_boxes
 
 BOXES = {}
+DEPRECATED_BOXES = set()
 EXTENSIONS = {}
 TYPE_HIERARCHY = {}
 
@@ -76,6 +77,11 @@ def get_all_boxes(json_file):
         _spec = os.path.basename(os.path.dirname(json_file))
 
         for entry in entries:
+            # Handle deprecated boxes
+            if "deprecated" in entry and entry["deprecated"]:
+                DEPRECATED_BOXES.add(entry["fourcc"])
+                continue
+
             _boxes.add(
                 Box(
                     fourcc=entry["fourcc"],
@@ -343,10 +349,9 @@ def main():
         if _box.fourcc not in get_mp4ra_boxes():
             buffer.append(_box.fourcc)
 
+    buffer = set(buffer) - DEPRECATED_BOXES
     if len(buffer) > 0:
-        logger.warning(
-            f"Missing boxes in MP4RA ({len(set(buffer))}): {set(sorted(buffer))}"
-        )
+        logger.warning(f"Missing boxes in MP4RA ({len(buffer)}): {sorted(buffer)}")
 
     # Check missing boxes in standard features
     all_fourccs = set(_box.fourcc for _box in all_boxes)
@@ -355,10 +360,11 @@ def main():
         if _box not in all_fourccs:
             buffer.append(_box)
 
+    buffer = set(buffer) - DEPRECATED_BOXES
     # FIXME: This should be an error
     if len(buffer) > 0:
         logger.warning(
-            f"Missing boxes in standard features ({len(set(buffer))}): {set(sorted(buffer))}"
+            f"Missing boxes in standard features ({len(buffer)}): {sorted(buffer)}"
         )
 
     # Sort all boxes by fourcc
