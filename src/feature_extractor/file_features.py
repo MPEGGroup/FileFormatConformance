@@ -4,7 +4,7 @@ import copy
 import sys
 import json
 import subprocess
-import shutil
+from difflib import SequenceMatcher
 from glob import glob
 from git import Repo
 from .utils import (
@@ -226,6 +226,12 @@ def _run_mp4box_on_file(input_path):
     return gpac_dict
 
 
+def json_difference(json1, json2):
+    str1 = json.dumps(json1, sort_keys=True)
+    str2 = json.dumps(json2, sort_keys=True)
+    return 1 - SequenceMatcher(None, str1, str2).ratio()
+
+
 def update_file_features():
     parser = argparse.ArgumentParser(
         description="Try to update file features with latest available MP4Box version"
@@ -241,6 +247,12 @@ def update_file_features():
         "--dry",
         help="Dry run. Do not update the files. Only print the changes.",
         action="store_true",
+    )
+    parser.add_argument(
+        "--skip-changes-below",
+        help="Skip files with changes below the given percentage",
+        type=float,
+        default=0.0,
     )
 
     args = parser.parse_args()
@@ -284,8 +296,21 @@ def update_file_features():
             print(f'Removing decompressed "{actual_file_path}"')
             os.remove(actual_file_path)
 
-        # Save the new GPAC file
+        # Check if the GPAC file has changed
         gpac_file_path = os.path.splitext(metadata_file)[0] + "_gpac.json"
+        percentage_changed = 1.0
+        if os.path.exists(gpac_file_path):
+            with open(gpac_file_path, "r") as f:
+                gpac_dict_gt = json.load(f)
+            percentage_changed = json_difference(gpac_dict, gpac_dict_gt)
+
+        if percentage_changed < args.skip_changes_below:
+            print(
+                f'Skipping "{actual_file_path}" as the changes are below the threshold. {percentage_changed * 100:.2f}% < {args.skip_changes_below * 100:.2f}%'
+            )
+            continue
+
+        # Save the new GPAC file
         if not args.dry:
             dump_to_json(gpac_file_path, gpac_dict)
             updated_files += 1
