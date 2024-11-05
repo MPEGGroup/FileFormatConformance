@@ -28,7 +28,7 @@
       "@Size": "5841",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file cmvd",
+      "@Container": "file",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -2477,5 +2477,5 @@
       "@dataSize": "63507"
     }
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev531-g61f1cf39-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev781-g3aa0e847-master"
 }
