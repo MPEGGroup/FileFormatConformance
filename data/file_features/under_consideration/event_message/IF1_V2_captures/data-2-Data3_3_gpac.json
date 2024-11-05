@@ -28,7 +28,7 @@
       "@Size": "532",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file cmvd",
+      "@Container": "file",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -172,13 +172,11 @@
                 "@Flags": "0",
                 "@Specification": "p12",
                 "@Container": "stbl",
-                "SampleDescriptionEntryBox": {
-                  "@Size": "0",
+                "GenericSampleDescriptionBox": {
+                  "@Size": "16",
                   "@Type": "evte",
-                  "@Specification": "unknown",
-                  "@Container": "stsd",
-                  "@DataReferenceIndex": "1",
-                  "@ExtensionDataSize": "0"
+                  "@Specification": "EventMessageTrack",
+                  "@Container": "stsd"
                 }
               },
               "TimeToSampleBox": {
@@ -10317,5 +10315,5 @@
       }
     ]
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev781-g3aa0e847-master"
 }
