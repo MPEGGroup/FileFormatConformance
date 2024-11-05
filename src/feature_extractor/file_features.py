@@ -200,6 +200,7 @@ def _run_mp4box_on_file(input_path):
             "-std",
             "-logs",
             "all@error",
+            "-keep-comp",
             "-no-check",
             input_path,
         ],
