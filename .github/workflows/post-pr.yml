@@ -1,0 +1,42 @@
+name: Move Files from Under Consideration to Published
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    if: |
+      github.event.pull_request.merged == true &&
+      contains(github.event.pull_request.labels.*.name, 'conformance-file')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.COMMIT_KEY }}
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v37
+
+      - name: Move files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ $file == *"data/file_features/under_consideration/"* ]]; then
+              relative_path="${file#*data/file_features/under_consideration/}"
+              mkdir -p "data/file_features/published/$(dirname "$relative_path")"
+              mv "$file" "data/file_features/published/$relative_path"
+            fi
+          done
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: Publish Conformance Files of ${{ github.event.pull_request.head.ref }}
+          commit-message: Move files from under consideration to published
+          body: |
+            This PR moves the conformance files submitted in #${{ github.event.number }} from under consideration to published.
+          branch: move-files-${{ github.event.pull_request.head.ref }}
+          delete-branch: true
