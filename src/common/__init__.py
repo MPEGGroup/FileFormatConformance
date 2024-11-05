@@ -3,6 +3,7 @@ import json
 import requests
 from glob import glob
 from functools import cache
+from bs4 import BeautifulSoup
 
 from .unique_logger import logger
 
@@ -54,7 +55,16 @@ def get_document_status_toc():
         logger.critical(f"Failed to get document status: {response.status_code}")
         exit(1)
 
-    payload = response.json()["payload"]
+    # Parse the HTML to get the TOC
+    soup = BeautifulSoup(response.text, "html.parser")
+    data = json.loads(
+        soup.find(
+            "script",
+            {"type": "application/json", "data-target": "react-app.embeddedData"},
+        ).string
+    )
+
+    payload = data["payload"]
     toc = payload["blob"]["headerInfo"]["toc"]
     return {
         heading["text"]: DOCUMENT_STATUS_URL + f"#{heading['anchor']}"
