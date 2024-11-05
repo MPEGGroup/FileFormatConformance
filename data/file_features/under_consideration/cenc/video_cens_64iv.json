@@ -7,7 +7,7 @@
   "rel_filepath": "./video_cens_64iv.mp4",
   "version": 1,
   "published": false,
-  "associated_files": [],
+  "associated_files": ["./drm_cfg/cens_64iv.xml"],
   "features": [],
   "notes": "",
   "conforms_to": []

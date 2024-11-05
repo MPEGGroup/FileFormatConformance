@@ -7,7 +7,7 @@
   "rel_filepath": "./audio_cbcs_const_iv.mp4",
   "version": 1,
   "published": false,
-  "associated_files": [],
+  "associated_files": ["./drm_cfg/cbcs_const_iv.xml"],
   "features": [],
   "notes": "",
   "conforms_to": []

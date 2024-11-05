@@ -7,7 +7,7 @@
   "rel_filepath": "./image_cbcs_mkey_const_iv_subs.heic",
   "version": 1,
   "published": false,
-  "associated_files": [],
+  "associated_files": ["./drm_cfg/cbcs_mkey_const_iv_subs.xml"],
   "features": [],
   "notes": "",
   "conforms_to": []

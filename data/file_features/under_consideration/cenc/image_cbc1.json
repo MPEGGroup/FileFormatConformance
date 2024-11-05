@@ -7,7 +7,7 @@
   "rel_filepath": "./image_cbc1.heic",
   "version": 1,
   "published": false,
-  "associated_files": [],
+  "associated_files": ["./drm_cfg/cbcs_const_iv.xml"],
   "features": [],
   "notes": "",
   "conforms_to": []

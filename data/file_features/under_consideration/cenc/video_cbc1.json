@@ -7,7 +7,7 @@
   "rel_filepath": "./video_cbc1.mp4",
   "version": 1,
   "published": false,
-  "associated_files": [],
+  "associated_files": ["./drm_cfg/cbc1.xml"],
   "features": [],
   "notes": "",
   "conforms_to": []
