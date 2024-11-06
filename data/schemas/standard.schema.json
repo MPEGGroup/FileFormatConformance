@@ -19,6 +19,9 @@
           "fourcc": {
             "type": "string"
           },
+          "deprecated": {
+            "type": "boolean"
+          },
           "description": {
             "type": "string"
           },
@@ -104,7 +107,23 @@
             }
           }
         },
-        "required": ["fourcc", "description", "type", "containers", "syntax"]
+        "required": ["fourcc"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "deprecated": {
+                  "not": {
+                    "const": true
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": ["description", "type", "containers", "syntax"]
+            }
+          }
+        ]
       },
       "minItems": 1
     }
