@@ -11,7 +11,7 @@ b {
 }
 
 #root {
-    @apply h-screen w-screen flex flex-col;
+    @apply h-screen w-full flex flex-col;
 }
 
 code.basic {
