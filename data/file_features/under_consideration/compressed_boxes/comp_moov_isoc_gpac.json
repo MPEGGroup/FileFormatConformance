@@ -1,0 +1,38 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "comp_moov_isoc.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "isoC",
+      "@MinorVersion": "0",
+      "BrandEntry": {
+        "@AlternateBrand": "isoC"
+      }
+    },
+    "CompressedMovieBox": {
+      "@Size": "589",
+      "@Type": "!mov",
+      "@Specification": "p12",
+      "@Container": "file"
+    },
+    "MediaDataBox": {
+      "@Size": "128839",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "128831"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f7170-master"
+}
