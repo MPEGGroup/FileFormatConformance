@@ -4,9 +4,11 @@ on:
   pull_request:
     types:
       - closed
+    branches:
+      - main
 
 jobs:
-  changes:
+  move:
     runs-on: ubuntu-latest
     if: |
       github.event.pull_request.merged == true &&
@@ -19,7 +21,7 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v37
+        uses: tj-actions/changed-files@v45
 
       - name: Move files
         run: |

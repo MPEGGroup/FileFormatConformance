@@ -61,7 +61,7 @@
       "@Size": "768",
       "@Type": "moov",
       "@Specification": "p12",
-      "@Container": "file cmvd",
+      "@Container": "file",
       "MovieHeaderBox": {
         "@Size": "108",
         "@Type": "mvhd",
@@ -336,313 +336,24 @@
         }
       }
     },
-    "SegmentIndexBox": {
-      "@Size": "56",
-      "@Type": "sidx",
-      "@Version": "0",
-      "@Flags": "0",
+    "CompressedSegmentIndexBox": {
+      "@Size": "53",
+      "@Type": "!six",
       "@Specification": "p12",
-      "@Container": "file",
-      "@reference_ID": "1",
-      "@timescale": "25000",
-      "@earliest_presentation_time": "0",
-      "@first_offset": "0",
-      "@compressedSize": "53",
-      "Reference": [
-        {
-          "@type": "0",
-          "@size": "58308",
-          "@duration": "25000",
-          "@startsWithSAP": "1",
-          "@SAP_type": "1",
-          "@SAPDeltaTime": "0"
-        },
-        {
-          "@type": "0",
-          "@size": "70851",
-          "@duration": "25000",
-          "@startsWithSAP": "1",
-          "@SAP_type": "1",
-          "@SAPDeltaTime": "0"
-        }
-      ]
+      "@Container": "file"
     },
-    "MovieFragmentBox": [
+    "CompressedMovieFragmentBox": [
       {
-        "@Size": "188",
-        "@Type": "moof",
+        "@Size": "155",
+        "@Type": "!mof",
         "@Specification": "p12",
-        "@Container": "file",
-        "@TrackFragments": "1",
-        "@compressedSize": "155",
-        "MovieFragmentHeaderBox": {
-          "@Size": "16",
-          "@Type": "mfhd",
-          "@Version": "0",
-          "@Flags": "0",
-          "@Specification": "p12",
-          "@Container": "moof",
-          "@FragmentSequenceNumber": "1"
-        },
-        "TrackFragmentBox": {
-          "@Size": "164",
-          "@Type": "traf",
-          "@Specification": "p12",
-          "@Container": "moof",
-          "TrackFragmentHeaderBox": {
-            "@Size": "16",
-            "@Type": "tfhd",
-            "@Version": "0",
-            "@Flags": "131072",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@TrackID": "1",
-            "@BaseDataOffset": "moof"
-          },
-          "TrackFragmentBaseMediaDecodeTimeBox": {
-            "@Size": "16",
-            "@Type": "tfdt",
-            "@Version": "0",
-            "@Flags": "0",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@baseMediaDecodeTime": "0"
-          },
-          "TrackRunBox": {
-            "@Size": "124",
-            "@Type": "trun",
-            "@Version": "0",
-            "@Flags": "517",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@SampleCount": "25",
-            "@DataOffset": "196",
-            "FirstSampleFlags": {
-              "@IsLeading": "0",
-              "@SampleDependsOn": "0",
-              "@SampleIsDependedOn": "0",
-              "@SampleHasRedundancy": "0",
-              "@SamplePadding": "0",
-              "@SampleSync": "1",
-              "@SampleDegradationPriority": "0"
-            },
-            "TrackRunEntry": [
-              {
-                "@Size": "5252"
-              },
-              {
-                "@Size": "1165"
-              },
-              {
-                "@Size": "1038"
-              },
-              {
-                "@Size": "2023"
-              },
-              {
-                "@Size": "1305"
-              },
-              {
-                "@Size": "4254"
-              },
-              {
-                "@Size": "1584"
-              },
-              {
-                "@Size": "1632"
-              },
-              {
-                "@Size": "2925"
-              },
-              {
-                "@Size": "1743"
-              },
-              {
-                "@Size": "3189"
-              },
-              {
-                "@Size": "1731"
-              },
-              {
-                "@Size": "1868"
-              },
-              {
-                "@Size": "2696"
-              },
-              {
-                "@Size": "1928"
-              },
-              {
-                "@Size": "2200"
-              },
-              {
-                "@Size": "2711"
-              },
-              {
-                "@Size": "1989"
-              },
-              {
-                "@Size": "2333"
-              },
-              {
-                "@Size": "2492"
-              },
-              {
-                "@Size": "2640"
-              },
-              {
-                "@Size": "2177"
-              },
-              {
-                "@Size": "2169"
-              },
-              {
-                "@Size": "2814"
-              },
-              {
-                "@Size": "2287"
-              }
-            ]
-          }
-        }
+        "@Container": "file"
       },
       {
-        "@Size": "188",
-        "@Type": "moof",
+        "@Size": "157",
+        "@Type": "!mof",
         "@Specification": "p12",
-        "@Container": "file",
-        "@TrackFragments": "1",
-        "@compressedSize": "157",
-        "MovieFragmentHeaderBox": {
-          "@Size": "16",
-          "@Type": "mfhd",
-          "@Version": "0",
-          "@Flags": "0",
-          "@Specification": "p12",
-          "@Container": "moof",
-          "@FragmentSequenceNumber": "2"
-        },
-        "TrackFragmentBox": {
-          "@Size": "164",
-          "@Type": "traf",
-          "@Specification": "p12",
-          "@Container": "moof",
-          "TrackFragmentHeaderBox": {
-            "@Size": "16",
-            "@Type": "tfhd",
-            "@Version": "0",
-            "@Flags": "131072",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@TrackID": "1",
-            "@BaseDataOffset": "moof"
-          },
-          "TrackFragmentBaseMediaDecodeTimeBox": {
-            "@Size": "16",
-            "@Type": "tfdt",
-            "@Version": "0",
-            "@Flags": "0",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@baseMediaDecodeTime": "25000"
-          },
-          "TrackRunBox": {
-            "@Size": "124",
-            "@Type": "trun",
-            "@Version": "0",
-            "@Flags": "517",
-            "@Specification": "p12",
-            "@Container": "traf",
-            "@SampleCount": "25",
-            "@DataOffset": "196",
-            "FirstSampleFlags": {
-              "@IsLeading": "0",
-              "@SampleDependsOn": "0",
-              "@SampleIsDependedOn": "0",
-              "@SampleHasRedundancy": "0",
-              "@SamplePadding": "0",
-              "@SampleSync": "1",
-              "@SampleDegradationPriority": "0"
-            },
-            "TrackRunEntry": [
-              {
-                "@Size": "15991"
-              },
-              {
-                "@Size": "2833"
-              },
-              {
-                "@Size": "1876"
-              },
-              {
-                "@Size": "2498"
-              },
-              {
-                "@Size": "1802"
-              },
-              {
-                "@Size": "2492"
-              },
-              {
-                "@Size": "1756"
-              },
-              {
-                "@Size": "1970"
-              },
-              {
-                "@Size": "2090"
-              },
-              {
-                "@Size": "1980"
-              },
-              {
-                "@Size": "2096"
-              },
-              {
-                "@Size": "2150"
-              },
-              {
-                "@Size": "1877"
-              },
-              {
-                "@Size": "2552"
-              },
-              {
-                "@Size": "2014"
-              },
-              {
-                "@Size": "2715"
-              },
-              {
-                "@Size": "2184"
-              },
-              {
-                "@Size": "2127"
-              },
-              {
-                "@Size": "2589"
-              },
-              {
-                "@Size": "2101"
-              },
-              {
-                "@Size": "2546"
-              },
-              {
-                "@Size": "2646"
-              },
-              {
-                "@Size": "2272"
-              },
-              {
-                "@Size": "3067"
-              },
-              {
-                "@Size": "2462"
-              }
-            ]
-          }
-        }
+        "@Container": "file"
       }
     ],
     "MediaDataBox": [
@@ -662,5 +373,5 @@
       }
     ]
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev527-gc0178683-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f7170-master"
 }
