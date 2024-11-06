@@ -232,7 +232,7 @@ export default function CoveragePage() {
                         />
                     </div>
                 </div>
-                <div className="flex w-full grow flex-col items-stretch gap-8 overflow-auto lg:flex-row lg:items-start">
+                <div className="flex w-full grow flex-col items-stretch gap-8 overflow-auto px-4 lg:flex-row lg:items-start lg:px-2">
                     <Tables results={results} />
                 </div>
             </div>

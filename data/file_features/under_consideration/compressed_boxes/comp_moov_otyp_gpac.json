@@ -1,0 +1,60 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "comp_moov_otyp.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "comp",
+      "@MinorVersion": "0",
+      "BrandEntry": {
+        "@AlternateBrand": "comp"
+      }
+    },
+    "OriginalFileTypeBox": {
+      "@Size": "32",
+      "@Type": "otyp",
+      "@Specification": "p12",
+      "@Container": "file",
+      "FileTypeBox": {
+        "@Size": "24",
+        "@Type": "ftyp",
+        "@Specification": "p12",
+        "@Container": "file otyp",
+        "@MajorBrand": "iso6",
+        "@MinorVersion": "0",
+        "BrandEntry": [
+          {
+            "@AlternateBrand": "iso6"
+          },
+          {
+            "@AlternateBrand": "dash"
+          }
+        ]
+      }
+    },
+    "CompressedMovieBox": {
+      "@Size": "589",
+      "@Type": "!mov",
+      "@Specification": "p12",
+      "@Container": "file"
+    },
+    "MediaDataBox": {
+      "@Size": "128839",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "128831"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f7170-master"
+}
