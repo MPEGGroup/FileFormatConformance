@@ -2,47 +2,77 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "GPAC MP4Box extension declaration schema",
   "$defs": {
+    "mp4ra_boxes": {},
+    "box_descendant": {
+      "if": {
+        "type": "object",
+        "properties": {
+          "@Type": {
+            "type": "string"
+          }
+        },
+        "required": ["@Type"]
+      },
+      "then": {
+        "$ref": "#/$defs/box"
+      }
+    },
     "box": {
       "type": "object",
-      "properties": {
-        "@Size": {
-          "anyOf": [
-            { "type": "integer" },
-            { "type": "string", "pattern": "^[0-9]+$" }
-          ]
+      "if": {
+        "properties": {
+          "@Type": {
+            "type": "string",
+            "$ref": "#/$defs/mp4ra_boxes"
+          }
         },
-        "@Type": {
-          "type": "string",
-          "description": "fourcc of the box",
-          "pattern": "^[\\u0020-\\u007E]{4}$"
-        },
-        "@Version": {
-          "anyOf": [
-            { "type": "integer" },
-            { "type": "string", "pattern": "^[0-9]+$" }
-          ]
-        },
-        "@Flags": {
-          "anyOf": [
-            { "type": "integer" },
-            { "type": "string", "pattern": "^[0-9]+$" }
-          ],
-          "description": "Combined flags in base 10"
-        },
-        "@Specification": { "type": "string" },
-        "@Container": { "type": "string" },
-        "@data": {
-          "type": "string",
-          "description": "dump of the box in hexadecimal format",
-          "pattern": "^0x[0-9a-fA-F]+$"
-        },
-        "children": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/box" }
-        }
+        "required": ["@Type"]
       },
-      "additionalProperties": true,
-      "required": ["@Type", "@data"]
+      "then": {
+        "properties": {
+          "@Size": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ]
+          },
+          "@Type": {
+            "type": "string",
+            "description": "fourcc of the box",
+            "pattern": "^[\\u0020-\\u007E]{4}$"
+          },
+          "@Version": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ]
+          },
+          "@Flags": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ],
+            "description": "Combined flags in base 10"
+          },
+          "@Specification": { "type": "string" },
+          "@Container": { "type": "string" }
+        },
+        "patternProperties": {
+          "^(?![@#]).+": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/box_descendant"
+                }
+              },
+              { "$ref": "#/$defs/box_descendant" }
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "required": ["@Type"]
+      }
     }
   },
   "type": "object",
@@ -66,7 +96,17 @@
             "pattern": "^file(?>\\.[\\u0020-\\u007E]{4})*$",
             "description": "Dot seperated location of the box in relation to the file"
           },
-          "box": { "$ref": "#/$defs/box" }
+          "box": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/box"
+                }
+              },
+              { "$ref": "#/$defs/box" }
+            ]
+          }
         },
         "required": ["location", "box"]
       },

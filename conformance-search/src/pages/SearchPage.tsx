@@ -1,6 +1,6 @@
 import { Tab, Tabs } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
-import { useAsync, useMedia } from "react-use";
+import { useMedia } from "react-use";
 import {
     BoxComponent,
     CoverageSummary,
@@ -22,14 +22,9 @@ export default function SearchPage() {
         files: FileSearchResult[];
     }>();
 
-    // Initialize search and database
-    const { value: search } = useAsync(async () => {
-        return Search.getInstance();
-    }, []);
-
     // When a result is received, refine the search results
-    const onResult = (inBoxes: SearchResult<Box>[], inFeatures: SearchResult<Feature>[]) => {
-        if (!search) return;
+    const onResult = async (inBoxes: SearchResult<Box>[], inFeatures: SearchResult<Feature>[]) => {
+        const search = await Search.getInstance();
         setState(
             search.refine(
                 inBoxes.map((box) => ({
@@ -77,7 +72,8 @@ export default function SearchPage() {
     // Refine handler for the refinement context
     const refineHandler = useCallback(
         async (result: SearchResultRefined<Box | Feature>, type: "box" | "feature") => {
-            if (!search || !state) return;
+            if (!state) return;
+            const search = await Search.getInstance();
 
             // Find and replace the result
             if (type === "box") state.boxes[result.refIndex] = result as SearchResultRefined<Box>;
@@ -85,7 +81,7 @@ export default function SearchPage() {
 
             setState(search.refine(state.boxes, state.features));
         },
-        [search, state]
+        [state]
     );
 
     // If screen is smaller than 700px, then #root should have height: auto

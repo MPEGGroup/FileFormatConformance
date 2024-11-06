@@ -457,7 +457,7 @@
     {
       "fourcc": "iprp",
       "description": "Item Properties Box",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "Box",
       "syntax": "aligned(8) class ItemPropertiesBox\n\t\textends Box('iprp') {\n\tItemPropertyContainerBox property_container;\n\tItemPropertyAssociationBox association[];\n }"
     },
@@ -473,7 +473,7 @@
     {
       "fourcc": "bxml",
       "description": "binary XML container",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0],
       "flags": [],
@@ -529,7 +529,7 @@
     {
       "fourcc": "dinf",
       "description": "data information box, container",
-      "containers": ["minf", "meta"],
+      "containers": [{ "FullBox": ["meta"] }, "minf"],
       "type": "Box",
       "syntax": "aligned(8) class DataInformationBox extends Box('dinf') {\n}"
     },
@@ -590,7 +590,7 @@
     {
       "fourcc": "fiin",
       "description": "FD Item Information",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "Box",
       "syntax": "aligned(8) class PartitionEntry extends Box('paen') {\n\tFilePartitionBox\tblocks_and_symbols;\n\tFECReservoirBox\tFEC_symbol_locations; //optional\n\tFileReservoirBox\tFile_symbol_locations; //optional\n}\n\naligned(8) class FDItemInformationBox\n\t\textends FullBox('fiin', version = 0, 0) {\n\tunsigned int(16)\tentry_count;\n\tPartitionEntry\t\tpartition_entries[ entry_count ];\n\tFDSessionGroupBox\tsession_info;\t\t\t//optional\n\tGroupIdToNameBox\tgroup_id_to_name;\t//optional\n}"
     },
@@ -645,14 +645,14 @@
     {
       "fourcc": "grpl",
       "description": "Groups list box",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "Box",
       "syntax": "aligned(8) class GroupsListBox extends Box('grpl') {\n}"
     },
     {
       "fourcc": "hdlr",
       "description": "handler, declares the media (handler) type",
-      "containers": ["mdia", "meta", "minf"],
+      "containers": [{ "FullBox": ["meta"] }, "mdia", "minf"],
       "type": "FullBox",
       "versions": [0],
       "flags": [],
@@ -670,14 +670,14 @@
     {
       "fourcc": "idat",
       "description": "Item data",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "Box",
       "syntax": "aligned(8) class ItemDataBox extends Box('idat') {\n\tbit(8) data[];\n}"
     },
     {
       "fourcc": "iinf",
       "description": "item information",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0, 1],
       "flags": [],
@@ -688,7 +688,7 @@
       "description": "item location box",
       "versions": [0, 1, 2],
       "flags": [],
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "syntax": "aligned(8) class ItemLocationBox extends FullBox('iloc', version, 0) {\n\tunsigned int(4)\toffset_size;\n\tunsigned int(4)\tlength_size;\n\tunsigned int(4)\tbase_offset_size;\n\tif ((version == 1) || (version == 2)) {\n\t\tunsigned int(4)\tindex_size;\n\t} else {\n\t\tunsigned int(4)\treserved;\n\t}\n\tif (version < 2) {\n\t\tunsigned int(16)\titem_count;\n\t} else if (version == 2) {\n\t\tunsigned int(32)\titem_count;\n\t}\n\tfor (i=0; i<item_count; i++) {\n\t\tif (version < 2) {\n\t\t\tunsigned int(16)\titem_ID;\n\t\t} else if (version == 2) {\n\t\t\tunsigned int(32)\titem_ID;\n\t\t}\n\t\tif ((version == 1) || (version == 2)) {\n\t\t\tunsigned int(12)\treserved = 0;\n\t\t\tunsigned int(4)\tconstruction_method;\n\t\t}\n\t\tunsigned int(16)\tdata_reference_index;\n\t\tunsigned int(base_offset_size*8)\tbase_offset;\n\t\tunsigned int(16)\t\textent_count;\n\t\tfor (j=0; j<extent_count; j++) {\n\t\t\tif (((version == 1) || (version == 2)) && (index_size > 0)) {\n\t\t\t\tunsigned int(index_size*8)\titem_reference_index;\n\t\t\t}\n\t\t\tunsigned int(offset_size*8)\textent_offset;\n\t\t\tunsigned int(length_size*8)\textent_length;\n\t\t}\n\t}\n}"
     },
@@ -717,7 +717,7 @@
     {
       "fourcc": "ipro",
       "description": "item protection",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0],
       "flags": [],
@@ -728,7 +728,7 @@
       "description": "Item reference box",
       "versions": [0, 1],
       "flags": [],
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "syntax": "aligned(8) class ItemReferenceBox extends FullBox('iref', version, 0) {\n\tif (version==0) {\n\t\tSingleItemTypeReferenceBox\t\t\t\treferences[];\n\t} else if (version==1) {\n\t\tSingleItemTypeReferenceBoxLarge\treferences[];\n\t}\n}"
     },
@@ -888,7 +888,7 @@
     {
       "fourcc": "pitm",
       "description": "primary item reference",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0, 1],
       "flags": [],
@@ -1428,7 +1428,7 @@
     {
       "fourcc": "xml ",
       "description": "XML container",
-      "containers": ["meta"],
+      "containers": [{ "FullBox": ["meta"] }],
       "type": "FullBox",
       "versions": [0],
       "flags": [],
@@ -1492,6 +1492,31 @@
       ],
       "type": "Box",
       "syntax": "class URIBox extends FullBox('uri ', version = 0, 0) {\n\tutf8string theURI;\n}"
+    },
+    {
+      "fourcc": "mere",
+      "description": "Metabox Relation box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "meco",
+      "description": "Additional metadata container box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "imif",
+      "description": "IPMPInfoBox",
+      "deprecated": true
+    },
+    {
+      "fourcc": "ipmc",
+      "description": "IPMP control box",
+      "deprecated": true
+    },
+    {
+      "fourcc": "stsl",
+      "description": "Sample scale box",
+      "deprecated": true
     }
   ]
 }

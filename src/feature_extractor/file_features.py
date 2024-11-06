@@ -4,7 +4,7 @@ import copy
 import sys
 import json
 import subprocess
-import shutil
+from difflib import SequenceMatcher
 from glob import glob
 from git import Repo
 from .utils import (
@@ -74,11 +74,17 @@ def contribute_files():
         action="store_true",
     )
     parser.add_argument(
+        "--preserve-gpac-output",
+        help="Preserve GPAC output files by adding manualDump flag. This would prevent the file from being updated by the CI.",
+        action="store_true",
+    )
+    parser.add_argument(
         "-l",
         "--license",
         help="Path to a .txt file with a license",
     )
     args = parser.parse_args()
+    setattr(args, "metadata", False)  # We are already creating metadata files here
 
     # Load schemas for validation
     with open("../data/schemas/file-metadata.schema.json", "r", encoding="utf-8") as f:
@@ -117,8 +123,6 @@ def contribute_files():
 
         json_path = input_root + ".json"
         rel_filepath = "./" + os.path.splitext(os.path.basename(f))[0] + input_ext
-        json_gpac_path = input_root + "_gpac.json"
-        json_gpac_ext_path = input_root + "_gpac.ext.json"
 
         file_md5 = compute_file_md5(f)
         version = 1
@@ -172,31 +176,9 @@ def contribute_files():
         json_data["license"] = license_str
         dump_to_json(json_path, json_data)
 
-        # run MP4Box and update if needed
-        gpac_dict = _run_mp4box_on_file(f)
-        gpac_dict_old = read_json(json_gpac_path)
-        if gpac_dict_old is not None:
-            if gpac_dict_old["IsoMediaFile"] != gpac_dict["IsoMediaFile"]:
-                print(
-                    f'WARNING: GPAC file for "{f}" already exists but the contents have been changed. Forcing overwrite!'
-                )
-                dump_to_json(json_gpac_path, gpac_dict)
-        else:
-            dump_to_json(json_gpac_path, gpac_dict)
-
-        # Create GPAC extension
-        mp4ra_check = "under_consideration" not in os.path.dirname(json_path)
-        unknown_boxes = traverse_gpac_dict(gpac_dict, mp4ra_check)
-        if len(unknown_boxes) > 0:
-            gpac_extension = {
-                "mp4boxVersion": gpac_dict["mp4boxVersion"],
-                "rel_filepath": rel_filepath,
-                "extensions": unknown_boxes,
-            }
-            if os.path.exists(json_gpac_ext_path):
-                print(f'WARNING: "{json_gpac_ext_path}" already exists.')
-            else:
-                dump_to_json(json_gpac_ext_path, gpac_extension)
+        # Run MP4Box
+        args.input = f
+        _extract_file_features(args, exit_on_error=False)
 
         cnt += 1
     print(f"Processed {cnt} files.")
@@ -218,6 +200,7 @@ def _run_mp4box_on_file(input_path):
             "-std",
             "-logs",
             "all@error",
+            "-keep-comp",
             "-no-check",
             input_path,
         ],
@@ -244,6 +227,12 @@ def _run_mp4box_on_file(input_path):
     return gpac_dict
 
 
+def json_difference(json1, json2):
+    str1 = json.dumps(json1, sort_keys=True)
+    str2 = json.dumps(json2, sort_keys=True)
+    return 1 - SequenceMatcher(None, str1, str2).ratio()
+
+
 def update_file_features():
     parser = argparse.ArgumentParser(
         description="Try to update file features with latest available MP4Box version"
@@ -259,6 +248,12 @@ def update_file_features():
         "--dry",
         help="Dry run. Do not update the files. Only print the changes.",
         action="store_true",
+    )
+    parser.add_argument(
+        "--skip-changes-below",
+        help="Skip files with changes below the given percentage",
+        type=float,
+        default=0.0,
     )
 
     args = parser.parse_args()
@@ -302,8 +297,21 @@ def update_file_features():
             print(f'Removing decompressed "{actual_file_path}"')
             os.remove(actual_file_path)
 
-        # Save the new GPAC file
+        # Check if the GPAC file has changed
         gpac_file_path = os.path.splitext(metadata_file)[0] + "_gpac.json"
+        percentage_changed = 1.0
+        if os.path.exists(gpac_file_path):
+            with open(gpac_file_path, "r") as f:
+                gpac_dict_gt = json.load(f)
+            percentage_changed = json_difference(gpac_dict, gpac_dict_gt)
+
+        if percentage_changed < args.skip_changes_below:
+            print(
+                f'Skipping "{actual_file_path}" as the changes are below the threshold. {percentage_changed * 100:.2f}% < {args.skip_changes_below * 100:.2f}%'
+            )
+            continue
+
+        # Save the new GPAC file
         if not args.dry:
             dump_to_json(gpac_file_path, gpac_dict)
             updated_files += 1
@@ -465,41 +473,6 @@ def get_gpac_version():
     return version
 
 
-def _extract_file_boxes_gpac(fileDir):
-    print(f'Run MP4Box on files in "{fileDir}"')
-    mp4box_version = get_gpac_version()
-
-    ret_code = execute_cmd("MP4Box -version")
-    if not ret_code == 0:
-        print("MP4Box is not installed on your system")
-        sys.exit(-1)
-
-    for root, subdirs, files in os.walk(fileDir):
-        for filename in files:
-            filename_noext, input_extension = os.path.splitext(filename)
-            if not input_extension == ".json" or "_gpac" in filename_noext:
-                print(f"Skip {filename}")
-                continue
-            input_path = os.path.join(root, filename)
-            json_data = read_json(input_path)
-
-            if "rel_filepath" not in json_data:
-                print(f'Skip {input_path} as no "rel_filepath" key was found.')
-                continue
-
-            mp4_path = os.path.join(root, json_data["rel_filepath"])
-            if not os.path.exists(mp4_path):
-                print(f'WARNING: mp4 file "{mp4_path}" not found!')
-                continue
-            out_path = os.path.splitext(input_path)[0] + "_gpac.json"
-            # pipe MP4Box to stdout and store it in out
-            try:
-                gpac_dict = _run_mp4box_on_file(actual_file_path)
-            except Exception:
-                continue
-            dump_to_json(out_path, gpac_dict)
-
-
 def traverse_gpac_dict(gpac_dict, mp4ra_check=True):
     """Traverse the GPAC dict and return a list of unknown boxes with their location"""
     unknown_boxes = []
@@ -600,8 +573,13 @@ def extract_file_features():
     )
     parser.add_argument(
         "-f",
-        "--overwrite",
+        "--force",
         help="Overwrite existing file features",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--preserve-gpac-output",
+        help="Preserve GPAC output files by adding manualDump flag. This would prevent the file from being updated by the CI.",
         action="store_true",
     )
     parser.add_argument(
@@ -686,13 +664,13 @@ def _extract_file_features(args, exit_on_error=True):
             print(
                 f'WARNING: Metadata for "{input_path}" already exists but it has a different md5 hash. Forcing overwrite!'
             )
-            args.overwrite = True
+            args.force = True
 
     # Create metadata file
     if args.metadata:
-        if not args.overwrite and os.path.exists(metadata_path):
+        if not args.force and os.path.exists(metadata_path):
             print(
-                f'WARNING: "{metadata_path}" already exists. Use --overwrite to overwrite.'
+                f'WARNING: "{metadata_path}" already exists. Use --force to overwrite.'
             )
         else:
             # If we already have the metadata file read it and update it
@@ -717,26 +695,46 @@ def _extract_file_features(args, exit_on_error=True):
         else:
             return
 
+    # Add manualDump flag if needed
+    if args.preserve_gpac_output:
+        print(
+            f'WARNING: "{gpac_path}" will be preserved. This would prevent the gpac dump from being updated by the CI. Use --force to overwrite.'
+        )
+        gpac_dict["manualDump"] = True
+
     # If we already have the GPAC file and the contents have been changed, update it
+    manualDump = False
     if os.path.exists(gpac_path):
         with open(gpac_path, "r", encoding="utf-8") as f:
             gpac_dict_gt = json.load(f)
 
-        if gpac_dict_gt["IsoMediaFile"] != gpac_dict["IsoMediaFile"]:
+        # Check if this was manual dump
+        manualDump = gpac_dict_gt.get("manualDump", False) or args.preserve_gpac_output
+
+        if gpac_dict_gt["IsoMediaFile"] != gpac_dict["IsoMediaFile"] and not manualDump:
             print(
                 f'WARNING: GPAC file for "{input_path}" already exists but the contents have been changed. Forcing overwrite!'
             )
-            args.overwrite = True
+            args.force = True
 
-    if not args.overwrite and os.path.exists(gpac_path):
-        print(f'WARNING: "{gpac_path}" already exists. Use --overwrite to overwrite.')
+    if not args.force and os.path.exists(gpac_path):
+        print(f'WARNING: "{gpac_path}" already exists. Use --force to overwrite.')
     else:
         dump_to_json(gpac_path, gpac_dict)
+
+    # If it was a manual dump, use that as the GPAC file
+    if not args.force and manualDump:
+        print(f'WARNING: "{gpac_path}" was a manual dump. Using that as the GPAC file.')
+        gpac_dict = gpac_dict_gt
 
     # Create GPAC extension
     mp4ra_check = "under_consideration" not in os.path.dirname(metadata_path)
     unknown_boxes = traverse_gpac_dict(gpac_dict, mp4ra_check)
     if len(unknown_boxes) == 0:
+        # Remove GPAC extension if there are no unknown boxes anymore
+        if os.path.exists(gpac_extension_path):
+            os.remove(gpac_extension_path)
+
         if exit_on_error:
             sys.exit(0)
         else:
@@ -748,9 +746,9 @@ def _extract_file_features(args, exit_on_error=True):
         "extensions": unknown_boxes,
     }
 
-    if not args.overwrite and os.path.exists(gpac_extension_path):
+    if not args.force and os.path.exists(gpac_extension_path):
         print(
-            f'WARNING: "{gpac_extension_path}" already exists. Use --overwrite to overwrite.'
+            f'WARNING: "{gpac_extension_path}" already exists. Use --force to overwrite.'
         )
     else:
         dump_to_json(gpac_extension_path, gpac_extension)

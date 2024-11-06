@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GPAC MP4Box declaration schema",
+  "$defs": {
+    "mp4ra_boxes": {},
+    "box_descendant": {
+      "if": {
+        "type": "object",
+        "properties": {
+          "@Type": {
+            "type": "string"
+          }
+        },
+        "required": ["@Type"]
+      },
+      "then": {
+        "$ref": "#/$defs/box"
+      }
+    },
+    "box": {
+      "type": "object",
+      "if": {
+        "properties": {
+          "@Type": {
+            "type": "string",
+            "$ref": "#/$defs/mp4ra_boxes"
+          }
+        },
+        "required": ["@Type"]
+      },
+      "then": {
+        "properties": {
+          "@Size": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ]
+          },
+          "@Type": {
+            "type": "string",
+            "description": "fourcc of the box",
+            "pattern": "^[\\u0020-\\u007E]{4}$"
+          },
+          "@Version": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ]
+          },
+          "@Flags": {
+            "anyOf": [
+              { "type": "integer" },
+              { "type": "string", "pattern": "^[0-9]+$" }
+            ],
+            "description": "Combined flags in base 10"
+          },
+          "@Specification": { "type": "string" },
+          "@Container": { "type": "string" }
+        },
+        "patternProperties": {
+          "^(?![@#]).+": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/box_descendant"
+                }
+              },
+              { "$ref": "#/$defs/box_descendant" }
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "required": ["@Type"]
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "IsoMediaFile": {
+      "type": "object",
+      "description": "Root box of the file",
+      "patternProperties": {
+        "^(?![@#]).+": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/box"
+              }
+            },
+            { "$ref": "#/$defs/box" }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "manualDump": {
+      "type": "boolean",
+      "description": "If true, the conformance file was manually dumped"
+    },
+    "mp4boxVersion": {
+      "type": "string",
+      "description": "First line of 'MP4Box -version'"
+    }
+  },
+  "required": ["IsoMediaFile", "mp4boxVersion"]
+}
