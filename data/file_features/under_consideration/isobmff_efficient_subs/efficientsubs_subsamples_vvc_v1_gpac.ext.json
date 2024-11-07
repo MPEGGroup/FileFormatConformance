@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f717-master",
+  "rel_filepath": "./efficientsubs_subsamples_vvc_v1.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.mdia.minf.stbl",
+      "box": {
+        "@Size": "16",
+        "@Type": "ssrt",
+        "@Specification": "unknown",
+        "@Container": "stbl",
+        "@data": "0x000000008220A000"
+      }
+    }
+  ]
+}
