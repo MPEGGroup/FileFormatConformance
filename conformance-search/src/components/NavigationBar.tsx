@@ -43,7 +43,7 @@ function Social({ className }: { className?: string }) {
         <div className={`flex flex-row gap-4 text-xl text-neutral-500 ${className}`}>
             <a
                 aria-label="Check us out on GitHub"
-                className="inline-flex items-center transition-all duration-500 hover:brightness-125"
+                className="inline-flex items-center transition-all duration-200 hover:brightness-125"
                 href={meta.social.github}
                 rel="noreferrer"
                 target="_blank"
@@ -233,8 +233,8 @@ export default function NavigationBar() {
     return (
         <header className="w-full bg-transparent text-neutral-800">
             <nav className="flex w-full max-w-[88rem] flex-row items-stretch justify-between border-b-1 border-neutral-200 xs:px-4 md:px-8 xl:mx-auto xl:border-0">
-                <LinkWrapper to="/">
-                    <span className="my-4 flex flex-row flex-wrap items-center text-lg font-medium leading-normal transition-all duration-200 hover:brightness-150 max-md:ml-3 xl:my-6">
+                <LinkWrapper className="transition-all duration-200 hover:brightness-150" to="/">
+                    <span className="my-4 flex flex-row flex-wrap items-center text-lg font-medium leading-normal max-md:ml-3 xl:my-6">
                         <span className="mr-1 whitespace-nowrap font-bold max-xs:text-sm">
                             File Format
                         </span>
