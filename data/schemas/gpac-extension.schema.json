@@ -55,7 +55,11 @@
             "description": "Combined flags in base 10"
           },
           "@Specification": { "type": "string" },
-          "@Container": { "type": "string" }
+          "@Container": { "type": "string" },
+          "example": {
+            "type": "boolean",
+            "description": "Set to true for example boxes"
+          }
         },
         "patternProperties": {
           "^(?![@#]).+": {
