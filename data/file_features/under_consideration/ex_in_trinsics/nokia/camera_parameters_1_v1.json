@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "An image item with CameraIntrinsicMatrixProperty ('cmin') and CameraExtrinsicMatrixProperty ('cmex').",
+  "mdms_number": "m63101",
+  "rel_filepath": "./camera_parameters_1_v1.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "5f22aa5f4c15549bef0809f49b09ff19",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
