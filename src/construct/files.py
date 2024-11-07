@@ -180,7 +180,7 @@ def crawl_hierarchy_gpac_ext(extension, mp4ra_check=True):
             continue
 
         add_variant(add, root, path)
-        crawl(root, path + [root["@Type"]])
+        crawl({"root": root}, path)
 
     return paths
 

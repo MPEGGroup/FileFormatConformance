@@ -7,6 +7,7 @@ from common import *
 
 def get_all_fourccs_inside(root):
     fourccs = set([root["@Type"]])
+    examples = set()
 
     def crawl(hierarchy):
         for key, value in hierarchy.items():
@@ -15,14 +16,19 @@ def get_all_fourccs_inside(root):
                     continue
                 fourcc = value["@Type"]
 
+                # Skip examples
+                if value.get("example", False):
+                    examples.add(fourcc)
+                    continue
+
                 fourccs.add(fourcc)
                 crawl(value)
             elif isinstance(value, list):
                 for item in value:
                     crawl({key: item})
 
-    crawl(root)
-    return fourccs
+    crawl({"root": root})
+    return fourccs, examples
 
 
 def main():
@@ -97,6 +103,7 @@ def main():
 
     missing_extensions = set()
     fourcc_in_extensions = set()
+    examples_in_extensions = set()
     for extension in extensions:
         with open(extension, "r", encoding="utf-8") as f:
             ext_data = json.load(f)
@@ -105,19 +112,13 @@ def main():
         )
 
         for e in ext_data["extensions"]:
-            fourcc_in_extensions.update(get_all_fourccs_inside(e["box"]))
+            fourccs, examples = get_all_fourccs_inside(e["box"])
+            fourcc_in_extensions.update(fourccs)
+            examples_in_extensions.update(examples)
 
     # Remove all known and unknown paths from missing extensions (to reduce redundancy)
     missing_extensions.difference_update(set(files["not_found"]))
     missing_extensions.difference_update(set(files["path_file_map"].keys()))
-
-    NOT_FOUND = {
-        "count": len(files["not_found"]),
-        "percentage": len(files["not_found"]) / len(files["path_file_map"]),
-        "boxes": list(set(p.split(".")[-1] for p in files["not_found"])),
-        "missing_extensions": list(missing_extensions),
-        "paths": list(files["not_found"].keys()),
-    }
 
     # FIXME: All the logs here should be errors, except for info
     for upath, in_files in files["not_found"].items():
@@ -125,6 +126,14 @@ def main():
         container_path = upath.split(".")[:-1]
         box_fourcc = upath.split(".")[-1]
         known_box = box_fourcc in dictionary["fourccs"]
+
+        # Check if this is an example box
+        if box_fourcc in examples_in_extensions:
+            if known_box:
+                logger.error(
+                    f"Box {box_fourcc} is an example box but it is in our database"
+                )
+            continue
 
         if not known_box:
             # Check if this was in under consideration files
@@ -182,6 +191,20 @@ def main():
                 logger.warning(
                     f"Path ~{'.'.join(broken_path)} is not listed as container for box {box_fourcc}"
                 )
+
+    # Remove all known examples from not_found
+    for not_found in list(files["not_found"].keys()):
+        last_4cc = not_found.split(".")[-1]
+        if last_4cc in examples_in_extensions:
+            del files["not_found"][not_found]
+
+    NOT_FOUND = {
+        "count": len(files["not_found"]),
+        "percentage": len(files["not_found"]) / len(files["path_file_map"]),
+        "boxes": list(set(p.split(".")[-1] for p in files["not_found"])),
+        "missing_extensions": list(missing_extensions),
+        "paths": list(files["not_found"].keys()),
+    }
 
     for path in NOT_FOUND["missing_extensions"]:
         logger.warning(
