@@ -57,11 +57,14 @@ def test_variants(check):
             if path == "file" or "*" in path:
                 continue
 
-            variant_file_map = files["path_file_map"][path]
-            variant_keys = set(variant_file_map.keys())
-
             # We don't care about variant metadata so strip it
-            variant_keys = set(":".join(k.split(":")[:2]) for k in variant_keys)
+            variant_file_map = files["path_file_map"][path]
+            variant_file_map = {
+                ":".join(k.split(":")[:2]): v for k, v in variant_file_map.items()
+            }
+
+            # Get variant keys
+            variant_keys = set(variant_file_map.keys())
 
             # Check if there is a *:* variant
             if "*:*" in variant_keys:
