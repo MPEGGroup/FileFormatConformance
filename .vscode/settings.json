@@ -5,6 +5,40 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "json.schemas": [
+    {
+      "fileMatch": ["data/file_features/**/*_gpac.ext.json"],
+      "url": "./data/schemas/gpac-extension.schema.json"
+    },
+    {
+      "fileMatch": ["data/file_features/**/*_gpac.json"],
+      "url": "./data/schemas/gpac.schema.json"
+    },
+    {
+      "fileMatch": [
+        "data/file_features/**/*.json",
+        "!data/file_features/**/*_gpac.ext.json",
+        "!data/file_features/**/*_gpac.json"
+      ],
+      "url": "./data/schemas/file-metadata.schema.json"
+    },
+    {
+      "fileMatch": ["data/standard_features/**/spec_info.json"],
+      "url": "./data/schemas/spec-info.schema.json"
+    },
+    {
+      "fileMatch": ["data/standard_features/**/user_defined.json"],
+      "url": "./data/schemas/user-defined.schema.json"
+    },
+    {
+      "fileMatch": [
+        "data/standard_features/**/*.json",
+        "!data/standard_features/**/spec_info.json",
+        "!data/standard_features/**/user_defined.json"
+      ],
+      "url": "./data/schemas/standard.schema.json"
+    }
+  ],
   "eslint.workingDirectories": [
     {
       "directory": "./conformance-search",
