@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris",
+  "description": "",
+  "mdms_number": "m56755",
+  "license": "",
+  "md5": "73f3bb22382c894717f4f627c333d739",
+  "rel_filepath": "./video_cbcs_mkey_const_iv_subs.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": ["./drm_cfg/cbcs_mkey_const_iv_subs.xml"],
+  "features": [],
+  "notes": "",
+  "conforms_to": []
+}
