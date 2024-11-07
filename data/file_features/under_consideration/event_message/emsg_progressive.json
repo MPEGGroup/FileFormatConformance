@@ -1,0 +1,14 @@
+{
+  "contributor": "Unified Streaming",
+  "description": "Progressive mp4 containing the audio CMAF track, video CMAF track and the event message track",
+  "mdms_number": "m67097",
+  "rel_filepath": "./emsg_progressive.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "ae2303cbc32c23e94c9b6d044e7e0945",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "The signaled metadata has a duration of 600 seconds, with 2-second segments and slots of 30-seconds every 180-seconds. The Event message track uses the splice insert command from SCTE-35. Alongside the event message track, the progressive MP4 file contains a CMAF video track encoded using AVC, and a CMAF audio track encoded using AAC.",
+  "license": "Copyright (c) 2024 Unified Streaming\nAll rights reserved.\n\nThe Conformance File is licensed under the\nCreative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+}
