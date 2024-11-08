@@ -358,7 +358,7 @@
             "@Container": "meta",
             "tool": {
               "@Size": "61",
-              "@Type": "A9too",
+              "@Type": "\u00a9too",
               "@Specification": "apple",
               "@Container": "ilst data",
               "@value": "GPAC-2.3-DEV-rev345-gc7c404d8f-master",
@@ -724,5 +724,5 @@
       }
     ]
   },
-  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev781-g3aa0e847-master"
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev820-g7f5d8a1e-master"
 }
