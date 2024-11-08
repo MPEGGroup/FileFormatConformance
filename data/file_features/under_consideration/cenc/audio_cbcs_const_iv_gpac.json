@@ -1,0 +1,606 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "audio_cbcs_const_iv.mp4",
+    "FileTypeBox": {
+      "@Size": "20",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "isom",
+      "@MinorVersion": "1",
+      "BrandEntry": {
+        "@AlternateBrand": "isom"
+      }
+    },
+    "MovieBox": {
+      "@Size": "1159",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3701668933",
+        "@ModificationTime": "3701668933",
+        "@TimeScale": "600",
+        "@Duration": "1212",
+        "@NextTrackID": "2"
+      },
+      "ObjectDescriptorBox": {
+        "@Size": "21",
+        "@Type": "iods",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p14",
+        "@Container": "moov",
+        "MP4InitialObjectDescriptor": {
+          "@objectDescriptorID": "od1",
+          "@binaryID": "1",
+          "Profile": {
+            "@audioProfileLevelIndication": "41",
+            "@visualProfileLevelIndication": "255",
+            "@sceneProfileLevelIndication": "255",
+            "@graphicsProfileLevelIndication": "255",
+            "@ODProfileLevelIndication": "255"
+          },
+          "Descr": null
+        }
+      },
+      "TrackBox": {
+        "@Size": "945",
+        "@Type": "trak",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "TrackHeaderBox": {
+          "@Size": "92",
+          "@Type": "tkhd",
+          "@Version": "0",
+          "@Flags": "1",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "@CreationTime": "3701666818",
+          "@ModificationTime": "3701668933",
+          "@TrackID": "1",
+          "@Duration": "1212",
+          "@Volume": "1.00"
+        },
+        "MediaBox": {
+          "@Size": "845",
+          "@Type": "mdia",
+          "@Specification": "p12",
+          "@Container": "trak",
+          "MediaHeaderBox": {
+            "@Size": "32",
+            "@Type": "mdhd",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "@CreationTime": "3701666818",
+            "@ModificationTime": "3701668933",
+            "@TimeScale": "44100",
+            "@Duration": "89088",
+            "@LanguageCode": "und"
+          },
+          "HandlerBox": {
+            "@Size": "81",
+            "@Type": "hdlr",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "mdia meta minf",
+            "@hdlrType": "soun",
+            "@Name": "aac:dur=2@GPAC1.1.0-DEV-rev736-gd1e971268-master",
+            "@reserved1": "0",
+            "@reserved2": "data:application/octet-string,000000000000000000000000"
+          },
+          "MediaInformationBox": {
+            "@Size": "724",
+            "@Type": "minf",
+            "@Specification": "p12",
+            "@Container": "mdia",
+            "SoundMediaHeaderBox": {
+              "@Size": "16",
+              "@Type": "smhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "minf"
+            },
+            "DataInformationBox": {
+              "@Size": "36",
+              "@Type": "dinf",
+              "@Specification": "p12",
+              "@Container": "minf meta",
+              "DataReferenceBox": {
+                "@Size": "28",
+                "@Type": "dref",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "dinf",
+                "URLDataEntryBox": {
+                  "@Size": "12",
+                  "@Type": "url ",
+                  "@Version": "0",
+                  "@Flags": "1",
+                  "@Specification": "p12",
+                  "@Container": "dref"
+                }
+              }
+            },
+            "SampleTableBox": {
+              "@Size": "664",
+              "@Type": "stbl",
+              "@Specification": "p12",
+              "@Container": "minf",
+              "SampleDescriptionBox": {
+                "@Size": "188",
+                "@Type": "stsd",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "AudioSampleDescriptionBox": {
+                  "@Size": "172",
+                  "@Type": "enca",
+                  "@Specification": "p12",
+                  "@Container": "stsd",
+                  "@DataReferenceIndex": "1",
+                  "@SampleRate": "44100",
+                  "@Channels": "1",
+                  "@BitsPerSample": "16",
+                  "MPEG4ESDescriptorBox": {
+                    "@Size": "39",
+                    "@Type": "esds",
+                    "@Version": "0",
+                    "@Flags": "0",
+                    "@Specification": "p14",
+                    "@Container": "mp4a mp4s mp4v encv enca encs resv wave",
+                    "ES_Descriptor": {
+                      "@ES_ID": "es0",
+                      "decConfigDescr": {
+                        "DecoderConfigDescriptor": {
+                          "@objectTypeIndication": "64",
+                          "@streamType": "5",
+                          "@bufferSizeDB": "215",
+                          "@maxBitrate": "63064",
+                          "@avgBitrate": "63904",
+                          "decSpecificInfo": {
+                            "DecoderSpecificInfo": {
+                              "@type": "auto",
+                              "@src": "data:application/octet-string,%12%08"
+                            }
+                          }
+                        }
+                      },
+                      "slConfigDescr": {
+                        "SLConfigDescriptor": {
+                          "predefined": {
+                            "@value": "2"
+                          },
+                          "custom": null
+                        }
+                      }
+                    }
+                  },
+                  "ProtectionSchemeInfoBox": {
+                    "@Size": "97",
+                    "@Type": "sinf",
+                    "@Specification": "p12",
+                    "@Container": "ipro sample_entry",
+                    "OriginalFormatBox": {
+                      "@Size": "12",
+                      "@Type": "frma",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@data_format": "mp4a"
+                    },
+                    "SchemeTypeBox": {
+                      "@Size": "20",
+                      "@Type": "schm",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "@scheme_type": "cbcs",
+                      "@scheme_version": "65536"
+                    },
+                    "SchemeInformationBox": {
+                      "@Size": "57",
+                      "@Type": "schi",
+                      "@Specification": "p12",
+                      "@Container": "sinf rinf",
+                      "TrackEncryptionBox": {
+                        "@Size": "49",
+                        "@Type": "tenc",
+                        "@Version": "1",
+                        "@Flags": "0",
+                        "@Specification": "cenc",
+                        "@Container": "schi",
+                        "@isEncrypted": "1",
+                        "@constant_IV_size": "16",
+                        "@constant_IV": "0x0A610676CB88F302D10AC8BC66E039ED",
+                        "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F",
+                        "@crypt_byte_block": "0",
+                        "@skip_byte_block": "0"
+                      }
+                    }
+                  }
+                }
+              },
+              "TimeToSampleBox": {
+                "@Size": "24",
+                "@Type": "stts",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "1",
+                "TimeToSampleEntry": {
+                  "@SampleDelta": "1024",
+                  "@SampleCount": "87"
+                }
+              },
+              "SampleToChunkBox": {
+                "@Size": "40",
+                "@Type": "stsc",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "2",
+                "SampleToChunkEntry": [
+                  {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "21",
+                    "@SampleDescriptionIndex": "1"
+                  },
+                  {
+                    "@FirstChunk": "5",
+                    "@SamplesPerChunk": "3",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                ]
+              },
+              "SampleSizeBox": {
+                "@Size": "368",
+                "@Type": "stsz",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@SampleCount": "87",
+                "SampleSizeEntry": [
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "135"
+                  },
+                  {
+                    "@Size": "59"
+                  },
+                  {
+                    "@Size": "140"
+                  },
+                  {
+                    "@Size": "152"
+                  },
+                  {
+                    "@Size": "162"
+                  },
+                  {
+                    "@Size": "155"
+                  },
+                  {
+                    "@Size": "162"
+                  },
+                  {
+                    "@Size": "163"
+                  },
+                  {
+                    "@Size": "163"
+                  },
+                  {
+                    "@Size": "166"
+                  },
+                  {
+                    "@Size": "160"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "159"
+                  },
+                  {
+                    "@Size": "181"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "178"
+                  },
+                  {
+                    "@Size": "176"
+                  },
+                  {
+                    "@Size": "168"
+                  },
+                  {
+                    "@Size": "165"
+                  },
+                  {
+                    "@Size": "183"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "178"
+                  },
+                  {
+                    "@Size": "185"
+                  },
+                  {
+                    "@Size": "181"
+                  },
+                  {
+                    "@Size": "180"
+                  },
+                  {
+                    "@Size": "189"
+                  },
+                  {
+                    "@Size": "197"
+                  },
+                  {
+                    "@Size": "183"
+                  },
+                  {
+                    "@Size": "184"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "196"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "204"
+                  },
+                  {
+                    "@Size": "201"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "180"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "129"
+                  },
+                  {
+                    "@Size": "174"
+                  },
+                  {
+                    "@Size": "94"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "191"
+                  },
+                  {
+                    "@Size": "212"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "196"
+                  },
+                  {
+                    "@Size": "207"
+                  },
+                  {
+                    "@Size": "207"
+                  },
+                  {
+                    "@Size": "200"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "190"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "192"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "198"
+                  },
+                  {
+                    "@Size": "188"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "185"
+                  },
+                  {
+                    "@Size": "209"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "202"
+                  },
+                  {
+                    "@Size": "210"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "205"
+                  },
+                  {
+                    "@Size": "186"
+                  },
+                  {
+                    "@Size": "215"
+                  },
+                  {
+                    "@Size": "193"
+                  },
+                  {
+                    "@Size": "195"
+                  },
+                  {
+                    "@Size": "208"
+                  },
+                  {
+                    "@Size": "204"
+                  },
+                  {
+                    "@Size": "194"
+                  },
+                  {
+                    "@Size": "201"
+                  },
+                  {
+                    "@Size": "203"
+                  },
+                  {
+                    "@Size": "193"
+                  },
+                  {
+                    "@Size": "158"
+                  }
+                ]
+              },
+              "ChunkOffsetBox": {
+                "@Size": "36",
+                "@Type": "stco",
+                "@Version": "0",
+                "@Flags": "0",
+                "@Specification": "p12",
+                "@Container": "stbl",
+                "@EntryCount": "5",
+                "ChunkEntry": [
+                  {
+                    "@offset": "1187"
+                  },
+                  {
+                    "@offset": "4538"
+                  },
+                  {
+                    "@offset": "8565"
+                  },
+                  {
+                    "@offset": "12559"
+                  },
+                  {
+                    "@offset": "16771"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "ProtectionSystemHeaderBox": {
+        "@Size": "77",
+        "@Type": "pssh",
+        "@Version": "1",
+        "@Flags": "0",
+        "@Specification": "cenc",
+        "@Container": "moov moof meta",
+        "@SystemID": "0x6770616363656E6364726D746F6F6C31",
+        "PSSHKey": {
+          "@KID": "0x279926496A7F5D25DA69F2B3B2799A7F"
+        },
+        "PSSHData": {
+          "@size": "25",
+          "@value": "0x084349443D475041435A8E62EB7DF2829F7D583A722E60DA8A"
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "16146",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "16138"
+    },
+    "FreeSpaceBox": {
+      "@Size": "76",
+      "@Type": "free",
+      "@Specification": "p12",
+      "@Container": "*",
+      "@dataSize": "68"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev781-g3aa0e847-master"
+}

@@ -7,6 +7,10 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   move:
     runs-on: ubuntu-latest
@@ -42,3 +46,4 @@ jobs:
             This PR moves the conformance files submitted in #${{ github.event.number }} from under consideration to published.
           branch: move-files-${{ github.event.pull_request.head.ref }}
           delete-branch: true
+          draft: always-true
