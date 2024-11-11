@@ -1,14 +1,14 @@
 {
   "contributor": "Fraunhofer IIS",
-  "description": "Conformance file containing an MPEG-H side stream used to showcase multi track preselection signaling with external tracks.",
+  "description": "Conformance file showcasing multi track preselection signaling with external tracks.",
   "mdms_number": "m65266",
   "rel_filepath": "./5_1_3_lang_4_streams_mpf_split_2.mp4",
   "associated_files": [],
-  "version": 3,
-  "md5": "26e463da011e7f8a7186f4c513be21c1",
+  "version": 1,
+  "md5": "c9ed27f23a0cf974f36fa78fb1692c25",
   "published": false,
   "features": [],
   "conforms_to": [],
   "notes": "",
-  "license": "Copyright (c) 2023 Fraunhofer-Gesellschaft zur F\u00f6rderung der angewandten Forschung e.V.\nAll rights reserved.\n\nThe Conformance File is licensed under the\nCreative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+  "license": "Copyright (c) 2024 Fraunhofer-Gesellschaft zur F\u00f6rderung der angewandten Forschung e.V.\nAll rights reserved.\n\nThe Conformance File is licensed under the\nCreative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
 }
