@@ -10,7 +10,7 @@
       "versions": [0],
       "flags": [
         {
-          "name": "",
+          "name": "unique",
           "value": "0x000001",
           "description": "Indicates the uniqueness of track_group_id"
         }
@@ -25,7 +25,7 @@
       "versions": [0],
       "flags": [
         {
-          "name": "",
+          "name": "unique",
           "value": "0x000001",
           "description": "Indicates the uniqueness of track_group_id"
         }
@@ -40,7 +40,7 @@
       "versions": [0],
       "flags": [
         {
-          "name": "",
+          "name": "unique",
           "value": "0x000001",
           "description": "Indicates the uniqueness of track_group_id"
         }

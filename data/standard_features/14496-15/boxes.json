@@ -553,7 +553,7 @@
       "versions": [0],
       "flags": [
         {
-          "name": "",
+          "name": "no_display",
           "value": "0x000001",
           "description": "The samples referencing the sample entry do not contain content intended for displaying."
         }
