@@ -9,6 +9,7 @@ on:
       - synchronize
       - reopened
       - labeled
+      - ready_for_review
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

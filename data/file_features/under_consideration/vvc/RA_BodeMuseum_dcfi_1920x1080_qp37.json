@@ -1,0 +1,14 @@
+{
+  "contributor": "Fraunhofer HHI",
+  "description": "",
+  "mdms_number": "m62084",
+  "rel_filepath": "./RA_BodeMuseum_dcfi_1920x1080_qp37.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "63cd4ba853f58502212164de458c44ca",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": "Copyright and License Information\n\nThese SDR video test sequences originate from https://www.hhi.fraunhofer.de/en/departments/vca/research-groups/video-coding-systems/8k-sequences.html#SDR\n\nDigital Video Sequences BodeMuseum, NeptuneFountain2, NeptuneFountain3, OberbaumSpree, QuadrigaTree, SubwayTree, TiergartenParkway\n\nCopyright (C) 2019 Fraunhofer HHI\nAuthor: Bj\u00f6rn Kowalewsky\n\n3840x2160p & 1920x1080p, YCbCr 4:2:0, BT.2020, 10 bit, narrow range, 60 fps, 600frames.\n\nCOPYRIGHT AND LICENSE INFORMATION\nNovember, 2021\n\nFraunhofer Heinrich Hertz Institute (HHI)\nVideo Communication and Applications\nEinsteinufer 37\n10587 Berlin, Germany\n\nThe video sequences provided above and all intellectual property rights therein remain the property of Fraunhofer HHI. The video sequences are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/"
+}

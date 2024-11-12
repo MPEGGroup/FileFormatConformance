@@ -1,0 +1,14 @@
+{
+  "contributor": "Apple",
+  "description": "Multiplexed timed metadata track with data describing colors of flags as described in m59330",
+  "mdms_number": "m59330",
+  "rel_filepath": "./test_mebx_me4c.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "b9da41585a3a8aeba36aa0af464e9f2a",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}

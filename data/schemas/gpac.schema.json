@@ -39,7 +39,7 @@
           "@Type": {
             "type": "string",
             "description": "fourcc of the box",
-            "pattern": "^[\\u0020-\\u007E]{4}$"
+            "pattern": "^[^\\x00-\\x1F\\x7F]{4}$"
           },
           "@Version": {
             "anyOf": [
