@@ -15,6 +15,7 @@
             "@Type": "redd",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -37,6 +38,7 @@
             "@Type": "blue",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -59,6 +61,7 @@
             "@Type": "ylow",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -81,6 +84,7 @@
             "@Type": "whte",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -103,6 +107,7 @@
             "@Type": "blck",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -125,6 +130,7 @@
             "@Type": "labl",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
@@ -154,6 +160,7 @@
             "@Type": "labl",
             "@Specification": "unknown",
             "@Container": "unknown",
+            "example": true,
             "UnknownBox": [
               {
                 "@Size": "16",
