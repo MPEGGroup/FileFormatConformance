@@ -1006,7 +1006,18 @@
       "fourcc": "sgpd",
       "description": "Sample group description box",
       "versions": [0, 1, 2],
-      "flags": [],
+      "flags": [
+        {
+          "name": "static_group_description",
+          "value": "0x000001",
+          "description": "There are no SampleGroupDescriptionBoxes of this grouping_type in any TrackFragmentBox of this track"
+        },
+        {
+          "name": "static_mapping",
+          "value": "0x000002",
+          "description": "There are no SampleToGroupBoxes of this grouping_type in this track. All samples therefore map to the default."
+        }
+      ],
       "containers": ["stbl", "traf"],
       "type": "FullBox",
       "syntax": "aligned(8) class SampleGroupDescriptionBox ()\n\textends FullBox('sgpd', version, flags){\n\tunsigned int(32) grouping_type;\n\tif (version>=1) { unsigned int(32) default_length; }\n\tif (version>=2) {\n\t\tunsigned int(32) default_group_description_index;\n\t}\n\tunsigned int(32) entry_count;\n\tint i;\n\tfor (i = 1 ; i <= entry_count ; i++){\n\t\tif (version>=1) {\n\t\t\tif (default_length==0) {\n\t\t\t\tunsigned int(32) description_length;\n\t\t\t}\n\t\t}\n\t\tSampleGroupDescriptionEntry (grouping_type);\n\t\t// an instance of a class derived from SampleGroupDescriptionEntry\n\t\t//  that is appropriate and permitted for the media type\n\t}\n}"
