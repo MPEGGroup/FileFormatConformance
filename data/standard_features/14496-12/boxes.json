@@ -900,7 +900,33 @@
       "containers": ["file"],
       "type": "FullBox",
       "versions": [0, 1],
-      "flags": [],
+      "flags": [
+        {
+          "name": "encoder_input_output",
+          "value": "0x000001",
+          "description": "UTC time represents the frame's input (0) or output (1) time for the encoder."
+        },
+        {
+          "name": "finalization_time",
+          "value": "0x000002",
+          "description": "UTC time is when the MovieFragmentBox was finalized; media_time is set to the earliest frame's presentation time."
+        },
+        {
+          "name": "file_write_time",
+          "value": "0x000004",
+          "description": "UTC time is when the MovieFragmentBox was written to file; media_time is set to the earliest frame's presentation time."
+        },
+        {
+          "name": "arbitrary_association",
+          "value": "0x000008",
+          "description": "Association between media_time and UTC time is arbitrary but consistent within the track."
+        },
+        {
+          "name": "realtime_offset",
+          "value": "0x000018",
+          "description": "UTC time has a consistent, small offset from the real-time experience depicted at media_time."
+        }
+      ],
       "syntax": "aligned(8) class ProducerReferenceTimeBox\n\textends FullBox('prft', version, flags) {\n\tunsigned int(32) reference_track_ID;\n\tunsigned int(64) ntp_timestamp;\n\tif (version==0) {\n\t\tunsigned int(32) media_time;\n\t} else {\n\t\tunsigned int(64) media_time;\n\t}\n}"
     },
     {
