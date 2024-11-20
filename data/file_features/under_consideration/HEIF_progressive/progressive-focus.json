@@ -1,0 +1,14 @@
+{
+  "contributor": "Canon Research Centre France",
+  "description": "Progressive focus rendering using 'prdi' and 'prgr'",
+  "mdms_number": "m63202",
+  "rel_filepath": "./progressive-focus.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "203b5b3c7d0283531470a77ebf768e1c",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "The progressive-focus.heic file, according to the \u2018prgr\u2019 entity group and the \u2018prdi\u2019 item properties stores the data with the thumbnail first, followed by the input images corresponding to the in-focus areas, and finishing with the remaining input images. The \u2018prgr\u2019 entity group and the \u2018prdi\u2019 item property indicate to a player that when realizing a progressive rendering of the grid, two intermediate reconstructions are of particular interest: a first preview of the primary item (the grid image item) using the thumbnail and an intermediate reconstruction (as shown on Figure 2) of the grid where the most interesting areas are displayed in high quality.",
+  "license": ""
+}
