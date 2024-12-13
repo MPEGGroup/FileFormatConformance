@@ -1,0 +1,1916 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "vvc_edrap_sap1.mp4",
+    "FileTypeBox": {
+      "@Size": "36",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mp41",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mp42"
+        },
+        {
+          "@AlternateBrand": "isom"
+        },
+        {
+          "@AlternateBrand": "mp41"
+        },
+        {
+          "@AlternateBrand": "vvc1"
+        },
+        {
+          "@AlternateBrand": "iso8"
+        }
+      ]
+    },
+    "MovieBox": {
+      "@Size": "3339",
+      "@Type": "moov",
+      "@Specification": "p12",
+      "@Container": "file",
+      "MovieHeaderBox": {
+        "@Size": "108",
+        "@Type": "mvhd",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "moov",
+        "@CreationTime": "3769381603",
+        "@ModificationTime": "3769381603",
+        "@TimeScale": "600",
+        "@Duration": "3840",
+        "@NextTrackID": "3"
+      },
+      "TrackBox": [
+        {
+          "@Size": "2410",
+          "@Type": "trak",
+          "@Specification": "p12",
+          "@Container": "moov",
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "7",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "@CreationTime": "3769381603",
+            "@ModificationTime": "3769381603",
+            "@TrackID": "1",
+            "@Duration": "3840",
+            "@Width": "240.00",
+            "@Height": "136.00",
+            "Matrix": {
+              "@m11": "0x00010000",
+              "@m12": "0x00000000",
+              "@m13": "0x00000000",
+              "@m21": "0x00000000",
+              "@m22": "0x00010000",
+              "@m23": "0x00000000",
+              "@m31": "0x00000000",
+              "@m32": "0x00000000",
+              "@m33": "0x40000000"
+            }
+          },
+          "MediaBox": {
+            "@Size": "2290",
+            "@Type": "mdia",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "MediaHeaderBox": {
+              "@Size": "32",
+              "@Type": "mdhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "@CreationTime": "3769381603",
+              "@ModificationTime": "3769381603",
+              "@TimeScale": "30000",
+              "@Duration": "192000",
+              "@LanguageCode": "und"
+            },
+            "HandlerBox": {
+              "@Size": "37",
+              "@Type": "hdlr",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia meta minf",
+              "@hdlrType": "vide",
+              "@Name": "vide",
+              "@reserved1": "0",
+              "@reserved2": "data:application/octet-string,000000000000000000000000"
+            },
+            "MediaInformationBox": {
+              "@Size": "2213",
+              "@Type": "minf",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "VideoMediaHeaderBox": {
+                "@Size": "20",
+                "@Type": "vmhd",
+                "@Version": "0",
+                "@Flags": "1",
+                "@Specification": "p12",
+                "@Container": "minf"
+              },
+              "DataInformationBox": {
+                "@Size": "36",
+                "@Type": "dinf",
+                "@Specification": "p12",
+                "@Container": "minf meta",
+                "DataReferenceBox": {
+                  "@Size": "28",
+                  "@Type": "dref",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "dinf",
+                  "URLDataEntryBox": {
+                    "@Size": "12",
+                    "@Type": "url ",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "dref"
+                  }
+                }
+              },
+              "SampleTableBox": {
+                "@Size": "2149",
+                "@Type": "stbl",
+                "@Specification": "p12",
+                "@Container": "minf",
+                "TimeToSampleBox": {
+                  "@Size": "24",
+                  "@Type": "stts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "TimeToSampleEntry": {
+                    "@SampleDelta": "1000",
+                    "@SampleCount": "192"
+                  }
+                },
+                "SampleDescriptionBox": {
+                  "@Size": "300",
+                  "@Type": "stsd",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "VVCSampleEntryBox": {
+                    "@Size": "284",
+                    "@Type": "vvc1",
+                    "@Specification": "p15",
+                    "@Container": "stsd",
+                    "@DataReferenceIndex": "1",
+                    "@Width": "240",
+                    "@Height": "136",
+                    "@XDPI": "4718592",
+                    "@YDPI": "4718592",
+                    "@BitDepth": "24",
+                    "VVCConfigurationBox": {
+                      "@Size": "198",
+                      "@Type": "vvcC",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p15",
+                      "@Container": "vvc1 vvi1 encv resv ipco dvhe",
+                      "VVCDecoderConfigurationRecord": {
+                        "@nal_unit_size": "4",
+                        "@chroma_format": "YUV 4:2:0",
+                        "@chroma_bit_depth": "10",
+                        "@avgFrameRate": "0",
+                        "@constantFrameRate": "0",
+                        "@numTemporalLayers": "1",
+                        "@maxWidth": "240",
+                        "@maxHeight": "136",
+                        "@general_profile_idc": "1",
+                        "@general_tier_flag": "0",
+                        "@general_sub_profile_idc": "0",
+                        "@general_constraint_info": "0x00",
+                        "@general_level_idc": "35",
+                        "ParameterSetArray": [
+                          {
+                            "@nalu_type": "15",
+                            "@complete_set": "0",
+                            "ParameterSet": {
+                              "@size": "107",
+                              "@content": "data:application/octet-string,0079000D02238000403C40448D4017D11BA211A214991984D958C10209E00D171111112F888897511112EE22225C911112E5888897344444B9E2222B7E4FCBFE5FD4BFB97F24BF965FCD2FE797F112FA8897DC44BE48897CB112F9A225F3C4435FF5AD7FFF71FDAEC62040"
+                            }
+                          },
+                          {
+                            "@nalu_type": "16",
+                            "@complete_set": "0",
+                            "ParameterSet": {
+                              "@size": "16",
+                              "@content": "data:application/octet-string,008100003C40448A4200267B21659620"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "SampleSizeBox": {
+                  "@Size": "788",
+                  "@Type": "stsz",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@SampleCount": "192",
+                  "SampleSizeEntry": [
+                    {
+                      "@Size": "755"
+                    },
+                    {
+                      "@Size": "75"
+                    },
+                    {
+                      "@Size": "75"
+                    },
+                    {
+                      "@Size": "86"
+                    },
+                    {
+                      "@Size": "87"
+                    },
+                    {
+                      "@Size": "101"
+                    },
+                    {
+                      "@Size": "110"
+                    },
+                    {
+                      "@Size": "133"
+                    },
+                    {
+                      "@Size": "298"
+                    },
+                    {
+                      "@Size": "113"
+                    },
+                    {
+                      "@Size": "160"
+                    },
+                    {
+                      "@Size": "113"
+                    },
+                    {
+                      "@Size": "120"
+                    },
+                    {
+                      "@Size": "125"
+                    },
+                    {
+                      "@Size": "97"
+                    },
+                    {
+                      "@Size": "112"
+                    },
+                    {
+                      "@Size": "334"
+                    },
+                    {
+                      "@Size": "76"
+                    },
+                    {
+                      "@Size": "75"
+                    },
+                    {
+                      "@Size": "76"
+                    },
+                    {
+                      "@Size": "75"
+                    },
+                    {
+                      "@Size": "76"
+                    },
+                    {
+                      "@Size": "75"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "205"
+                    },
+                    {
+                      "@Size": "76"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "92"
+                    },
+                    {
+                      "@Size": "90"
+                    },
+                    {
+                      "@Size": "123"
+                    },
+                    {
+                      "@Size": "536"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "103"
+                    },
+                    {
+                      "@Size": "93"
+                    },
+                    {
+                      "@Size": "177"
+                    },
+                    {
+                      "@Size": "97"
+                    },
+                    {
+                      "@Size": "86"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "85"
+                    },
+                    {
+                      "@Size": "108"
+                    },
+                    {
+                      "@Size": "91"
+                    },
+                    {
+                      "@Size": "91"
+                    },
+                    {
+                      "@Size": "89"
+                    },
+                    {
+                      "@Size": "88"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "87"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "105"
+                    },
+                    {
+                      "@Size": "90"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "113"
+                    },
+                    {
+                      "@Size": "562"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "92"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "129"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "114"
+                    },
+                    {
+                      "@Size": "552"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "100"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "95"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "113"
+                    },
+                    {
+                      "@Size": "534"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "91"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "116"
+                    },
+                    {
+                      "@Size": "91"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "78"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "88"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "79"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "80"
+                    },
+                    {
+                      "@Size": "81"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "82"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "83"
+                    },
+                    {
+                      "@Size": "83"
+                    }
+                  ]
+                },
+                "SampleToChunkBox": {
+                  "@Size": "28",
+                  "@Type": "stsc",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "SampleToChunkEntry": {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                },
+                "ChunkOffsetBox": {
+                  "@Size": "784",
+                  "@Type": "stco",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "192",
+                  "ChunkEntry": [
+                    {
+                      "@offset": "3383"
+                    },
+                    {
+                      "@offset": "4138"
+                    },
+                    {
+                      "@offset": "4213"
+                    },
+                    {
+                      "@offset": "4288"
+                    },
+                    {
+                      "@offset": "4374"
+                    },
+                    {
+                      "@offset": "4461"
+                    },
+                    {
+                      "@offset": "4562"
+                    },
+                    {
+                      "@offset": "4672"
+                    },
+                    {
+                      "@offset": "4805"
+                    },
+                    {
+                      "@offset": "5103"
+                    },
+                    {
+                      "@offset": "5216"
+                    },
+                    {
+                      "@offset": "5376"
+                    },
+                    {
+                      "@offset": "5489"
+                    },
+                    {
+                      "@offset": "5609"
+                    },
+                    {
+                      "@offset": "5734"
+                    },
+                    {
+                      "@offset": "5831"
+                    },
+                    {
+                      "@offset": "5943"
+                    },
+                    {
+                      "@offset": "6277"
+                    },
+                    {
+                      "@offset": "6353"
+                    },
+                    {
+                      "@offset": "6428"
+                    },
+                    {
+                      "@offset": "6504"
+                    },
+                    {
+                      "@offset": "6579"
+                    },
+                    {
+                      "@offset": "6655"
+                    },
+                    {
+                      "@offset": "6730"
+                    },
+                    {
+                      "@offset": "6810"
+                    },
+                    {
+                      "@offset": "7015"
+                    },
+                    {
+                      "@offset": "7091"
+                    },
+                    {
+                      "@offset": "7170"
+                    },
+                    {
+                      "@offset": "7250"
+                    },
+                    {
+                      "@offset": "7330"
+                    },
+                    {
+                      "@offset": "7422"
+                    },
+                    {
+                      "@offset": "7512"
+                    },
+                    {
+                      "@offset": "7635"
+                    },
+                    {
+                      "@offset": "8171"
+                    },
+                    {
+                      "@offset": "8252"
+                    },
+                    {
+                      "@offset": "8330"
+                    },
+                    {
+                      "@offset": "8408"
+                    },
+                    {
+                      "@offset": "8486"
+                    },
+                    {
+                      "@offset": "8564"
+                    },
+                    {
+                      "@offset": "8667"
+                    },
+                    {
+                      "@offset": "8760"
+                    },
+                    {
+                      "@offset": "8937"
+                    },
+                    {
+                      "@offset": "9034"
+                    },
+                    {
+                      "@offset": "9120"
+                    },
+                    {
+                      "@offset": "9199"
+                    },
+                    {
+                      "@offset": "9278"
+                    },
+                    {
+                      "@offset": "9357"
+                    },
+                    {
+                      "@offset": "9436"
+                    },
+                    {
+                      "@offset": "9521"
+                    },
+                    {
+                      "@offset": "9629"
+                    },
+                    {
+                      "@offset": "9720"
+                    },
+                    {
+                      "@offset": "9811"
+                    },
+                    {
+                      "@offset": "9900"
+                    },
+                    {
+                      "@offset": "9988"
+                    },
+                    {
+                      "@offset": "10069"
+                    },
+                    {
+                      "@offset": "10156"
+                    },
+                    {
+                      "@offset": "10236"
+                    },
+                    {
+                      "@offset": "10341"
+                    },
+                    {
+                      "@offset": "10431"
+                    },
+                    {
+                      "@offset": "10512"
+                    },
+                    {
+                      "@offset": "10594"
+                    },
+                    {
+                      "@offset": "10675"
+                    },
+                    {
+                      "@offset": "10757"
+                    },
+                    {
+                      "@offset": "10839"
+                    },
+                    {
+                      "@offset": "10952"
+                    },
+                    {
+                      "@offset": "11514"
+                    },
+                    {
+                      "@offset": "11592"
+                    },
+                    {
+                      "@offset": "11670"
+                    },
+                    {
+                      "@offset": "11762"
+                    },
+                    {
+                      "@offset": "11840"
+                    },
+                    {
+                      "@offset": "11919"
+                    },
+                    {
+                      "@offset": "11997"
+                    },
+                    {
+                      "@offset": "12076"
+                    },
+                    {
+                      "@offset": "12205"
+                    },
+                    {
+                      "@offset": "12284"
+                    },
+                    {
+                      "@offset": "12363"
+                    },
+                    {
+                      "@offset": "12442"
+                    },
+                    {
+                      "@offset": "12521"
+                    },
+                    {
+                      "@offset": "12601"
+                    },
+                    {
+                      "@offset": "12680"
+                    },
+                    {
+                      "@offset": "12760"
+                    },
+                    {
+                      "@offset": "12841"
+                    },
+                    {
+                      "@offset": "12921"
+                    },
+                    {
+                      "@offset": "13001"
+                    },
+                    {
+                      "@offset": "13081"
+                    },
+                    {
+                      "@offset": "13161"
+                    },
+                    {
+                      "@offset": "13242"
+                    },
+                    {
+                      "@offset": "13322"
+                    },
+                    {
+                      "@offset": "13403"
+                    },
+                    {
+                      "@offset": "13483"
+                    },
+                    {
+                      "@offset": "13564"
+                    },
+                    {
+                      "@offset": "13646"
+                    },
+                    {
+                      "@offset": "13728"
+                    },
+                    {
+                      "@offset": "13810"
+                    },
+                    {
+                      "@offset": "13892"
+                    },
+                    {
+                      "@offset": "13974"
+                    },
+                    {
+                      "@offset": "14088"
+                    },
+                    {
+                      "@offset": "14640"
+                    },
+                    {
+                      "@offset": "14718"
+                    },
+                    {
+                      "@offset": "14796"
+                    },
+                    {
+                      "@offset": "14874"
+                    },
+                    {
+                      "@offset": "14952"
+                    },
+                    {
+                      "@offset": "15031"
+                    },
+                    {
+                      "@offset": "15109"
+                    },
+                    {
+                      "@offset": "15188"
+                    },
+                    {
+                      "@offset": "15288"
+                    },
+                    {
+                      "@offset": "15367"
+                    },
+                    {
+                      "@offset": "15446"
+                    },
+                    {
+                      "@offset": "15525"
+                    },
+                    {
+                      "@offset": "15604"
+                    },
+                    {
+                      "@offset": "15684"
+                    },
+                    {
+                      "@offset": "15763"
+                    },
+                    {
+                      "@offset": "15843"
+                    },
+                    {
+                      "@offset": "15923"
+                    },
+                    {
+                      "@offset": "16003"
+                    },
+                    {
+                      "@offset": "16083"
+                    },
+                    {
+                      "@offset": "16163"
+                    },
+                    {
+                      "@offset": "16243"
+                    },
+                    {
+                      "@offset": "16324"
+                    },
+                    {
+                      "@offset": "16404"
+                    },
+                    {
+                      "@offset": "16485"
+                    },
+                    {
+                      "@offset": "16566"
+                    },
+                    {
+                      "@offset": "16647"
+                    },
+                    {
+                      "@offset": "16729"
+                    },
+                    {
+                      "@offset": "16824"
+                    },
+                    {
+                      "@offset": "16906"
+                    },
+                    {
+                      "@offset": "16988"
+                    },
+                    {
+                      "@offset": "17070"
+                    },
+                    {
+                      "@offset": "17183"
+                    },
+                    {
+                      "@offset": "17717"
+                    },
+                    {
+                      "@offset": "17795"
+                    },
+                    {
+                      "@offset": "17873"
+                    },
+                    {
+                      "@offset": "17952"
+                    },
+                    {
+                      "@offset": "18030"
+                    },
+                    {
+                      "@offset": "18109"
+                    },
+                    {
+                      "@offset": "18188"
+                    },
+                    {
+                      "@offset": "18267"
+                    },
+                    {
+                      "@offset": "18358"
+                    },
+                    {
+                      "@offset": "18437"
+                    },
+                    {
+                      "@offset": "18516"
+                    },
+                    {
+                      "@offset": "18596"
+                    },
+                    {
+                      "@offset": "18675"
+                    },
+                    {
+                      "@offset": "18755"
+                    },
+                    {
+                      "@offset": "18835"
+                    },
+                    {
+                      "@offset": "18915"
+                    },
+                    {
+                      "@offset": "18994"
+                    },
+                    {
+                      "@offset": "19074"
+                    },
+                    {
+                      "@offset": "19154"
+                    },
+                    {
+                      "@offset": "19235"
+                    },
+                    {
+                      "@offset": "19315"
+                    },
+                    {
+                      "@offset": "19396"
+                    },
+                    {
+                      "@offset": "19477"
+                    },
+                    {
+                      "@offset": "19558"
+                    },
+                    {
+                      "@offset": "19638"
+                    },
+                    {
+                      "@offset": "19719"
+                    },
+                    {
+                      "@offset": "19801"
+                    },
+                    {
+                      "@offset": "19884"
+                    },
+                    {
+                      "@offset": "19966"
+                    },
+                    {
+                      "@offset": "20049"
+                    },
+                    {
+                      "@offset": "20132"
+                    },
+                    {
+                      "@offset": "20248"
+                    },
+                    {
+                      "@offset": "20339"
+                    },
+                    {
+                      "@offset": "20417"
+                    },
+                    {
+                      "@offset": "20495"
+                    },
+                    {
+                      "@offset": "20574"
+                    },
+                    {
+                      "@offset": "20652"
+                    },
+                    {
+                      "@offset": "20731"
+                    },
+                    {
+                      "@offset": "20810"
+                    },
+                    {
+                      "@offset": "20889"
+                    },
+                    {
+                      "@offset": "20967"
+                    },
+                    {
+                      "@offset": "21046"
+                    },
+                    {
+                      "@offset": "21125"
+                    },
+                    {
+                      "@offset": "21205"
+                    },
+                    {
+                      "@offset": "21284"
+                    },
+                    {
+                      "@offset": "21364"
+                    },
+                    {
+                      "@offset": "21452"
+                    },
+                    {
+                      "@offset": "21532"
+                    },
+                    {
+                      "@offset": "21611"
+                    },
+                    {
+                      "@offset": "21691"
+                    },
+                    {
+                      "@offset": "21771"
+                    },
+                    {
+                      "@offset": "21852"
+                    },
+                    {
+                      "@offset": "21932"
+                    },
+                    {
+                      "@offset": "22013"
+                    },
+                    {
+                      "@offset": "22094"
+                    },
+                    {
+                      "@offset": "22175"
+                    },
+                    {
+                      "@offset": "22255"
+                    },
+                    {
+                      "@offset": "22336"
+                    },
+                    {
+                      "@offset": "22418"
+                    },
+                    {
+                      "@offset": "22501"
+                    },
+                    {
+                      "@offset": "22583"
+                    },
+                    {
+                      "@offset": "22666"
+                    },
+                    {
+                      "@offset": "22749"
+                    }
+                  ]
+                },
+                "CompositionOffsetBox": {
+                  "@Size": "24",
+                  "@Type": "ctts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "CompositionOffsetEntry": {
+                    "@CompositionOffset": "3000",
+                    "@SampleCount": "192"
+                  }
+                },
+                "SyncSampleBox": {
+                  "@Size": "24",
+                  "@Type": "stss",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "2",
+                  "SyncSampleEntry": [
+                    {
+                      "@sampleNumber": "1"
+                    },
+                    {
+                      "@sampleNumber": "1"
+                    }
+                  ]
+                },
+                "SampleGroupDescriptionBox": {
+                  "@Size": "61",
+                  "@Type": "sgpd",
+                  "@Version": "1",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl traf",
+                  "@grouping_type": "edrp",
+                  "@default_length": "0",
+                  "DefaultSampleGroupDescriptionEntry": [
+                    {
+                      "@size": "3",
+                      "@data": "data:application/octet-string,200001"
+                    },
+                    {
+                      "@size": "3",
+                      "@data": "data:application/octet-string,200002"
+                    },
+                    {
+                      "@size": "3",
+                      "@data": "data:application/octet-string,200003"
+                    },
+                    {
+                      "@size": "3",
+                      "@data": "data:application/octet-string,200004"
+                    },
+                    {
+                      "@size": "5",
+                      "@data": "data:application/octet-string,2400050001"
+                    }
+                  ]
+                },
+                "SampleGroupBox": {
+                  "@Size": "108",
+                  "@Type": "sbgp",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl traf",
+                  "@grouping_type": "edrp",
+                  "SampleGroupBoxEntry": [
+                    {
+                      "@sample_count": "32",
+                      "@group_description_index": "0"
+                    },
+                    {
+                      "@sample_count": "1",
+                      "@group_description_index": "1"
+                    },
+                    {
+                      "@sample_count": "31",
+                      "@group_description_index": "0"
+                    },
+                    {
+                      "@sample_count": "1",
+                      "@group_description_index": "2"
+                    },
+                    {
+                      "@sample_count": "31",
+                      "@group_description_index": "0"
+                    },
+                    {
+                      "@sample_count": "1",
+                      "@group_description_index": "3"
+                    },
+                    {
+                      "@sample_count": "31",
+                      "@group_description_index": "0"
+                    },
+                    {
+                      "@sample_count": "1",
+                      "@group_description_index": "4"
+                    },
+                    {
+                      "@sample_count": "31",
+                      "@group_description_index": "0"
+                    },
+                    {
+                      "@sample_count": "1",
+                      "@group_description_index": "5"
+                    },
+                    {
+                      "@sample_count": "31",
+                      "@group_description_index": "0"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "TrackReferenceBox": {
+            "@Size": "20",
+            "@Type": "tref",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "TrackReferenceTypeBox": {
+              "@Size": "12",
+              "@Type": "aest",
+              "@Specification": "p12",
+              "@Container": "tref",
+              "TrackReferenceEntry": {
+                "@TrackID": "2"
+              }
+            }
+          }
+        },
+        {
+          "@Size": "813",
+          "@Type": "trak",
+          "@Specification": "p12",
+          "@Container": "moov",
+          "TrackHeaderBox": {
+            "@Size": "92",
+            "@Type": "tkhd",
+            "@Version": "0",
+            "@Flags": "1",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "@CreationTime": "3769381603",
+            "@ModificationTime": "3769381603",
+            "@TrackID": "2",
+            "@Duration": "3220",
+            "@Width": "240.00",
+            "@Height": "136.00",
+            "Matrix": {
+              "@m11": "0x00010000",
+              "@m12": "0x00000000",
+              "@m13": "0x00000000",
+              "@m21": "0x00000000",
+              "@m22": "0x00010000",
+              "@m23": "0x00000000",
+              "@m31": "0x00000000",
+              "@m32": "0x00000000",
+              "@m33": "0x40000000"
+            }
+          },
+          "MediaBox": {
+            "@Size": "713",
+            "@Type": "mdia",
+            "@Specification": "p12",
+            "@Container": "trak",
+            "MediaHeaderBox": {
+              "@Size": "32",
+              "@Type": "mdhd",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "@CreationTime": "3769381603",
+              "@ModificationTime": "3769381603",
+              "@TimeScale": "30000",
+              "@Duration": "161000",
+              "@LanguageCode": "und"
+            },
+            "HandlerBox": {
+              "@Size": "37",
+              "@Type": "hdlr",
+              "@Version": "0",
+              "@Flags": "0",
+              "@Specification": "p12",
+              "@Container": "mdia meta minf",
+              "@hdlrType": "vide",
+              "@Name": "vide",
+              "@reserved1": "0",
+              "@reserved2": "data:application/octet-string,000000000000000000000000"
+            },
+            "MediaInformationBox": {
+              "@Size": "636",
+              "@Type": "minf",
+              "@Specification": "p12",
+              "@Container": "mdia",
+              "VideoMediaHeaderBox": {
+                "@Size": "20",
+                "@Type": "vmhd",
+                "@Version": "0",
+                "@Flags": "1",
+                "@Specification": "p12",
+                "@Container": "minf"
+              },
+              "DataInformationBox": {
+                "@Size": "36",
+                "@Type": "dinf",
+                "@Specification": "p12",
+                "@Container": "minf meta",
+                "DataReferenceBox": {
+                  "@Size": "28",
+                  "@Type": "dref",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "dinf",
+                  "URLDataEntryBox": {
+                    "@Size": "12",
+                    "@Type": "url ",
+                    "@Version": "0",
+                    "@Flags": "1",
+                    "@Specification": "p12",
+                    "@Container": "dref"
+                  }
+                }
+              },
+              "SampleTableBox": {
+                "@Size": "572",
+                "@Type": "stbl",
+                "@Specification": "p12",
+                "@Container": "minf",
+                "TimeToSampleBox": {
+                  "@Size": "32",
+                  "@Type": "stts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "2",
+                  "TimeToSampleEntry": [
+                    {
+                      "@SampleDelta": "32000",
+                      "@SampleCount": "5"
+                    },
+                    {
+                      "@SampleDelta": "1000",
+                      "@SampleCount": "1"
+                    }
+                  ]
+                },
+                "SampleDescriptionBox": {
+                  "@Size": "324",
+                  "@Type": "stsd",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "MPEGVisualSampleDescriptionBox": {
+                    "@Size": "308",
+                    "@Type": "resv",
+                    "@Specification": "p12",
+                    "@Container": "stsd",
+                    "@DataReferenceIndex": "1",
+                    "@Width": "320",
+                    "@Height": "240",
+                    "@XDPI": "4718592",
+                    "@YDPI": "4718592",
+                    "@BitDepth": "24",
+                    "RestrictedSchemeInfoBox": {
+                      "@Size": "61",
+                      "@Type": "rinf",
+                      "@Specification": "p12",
+                      "@Container": "sample_entry",
+                      "OriginalFormatBox": {
+                        "@Size": "12",
+                        "@Type": "frma",
+                        "@Specification": "p12",
+                        "@Container": "sinf rinf",
+                        "@data_format": "vvc1"
+                      },
+                      "SchemeTypeBox": {
+                        "@Size": "20",
+                        "@Type": "schm",
+                        "@Version": "0",
+                        "@Flags": "0",
+                        "@Specification": "p12",
+                        "@Container": "sinf rinf",
+                        "@scheme_type": "spkt",
+                        "@scheme_version": "0"
+                      },
+                      "SchemeInformationBox": {
+                        "@Size": "21",
+                        "@Type": "schi",
+                        "@Specification": "p12",
+                        "@Container": "sinf rinf",
+                        "UnknownBox": {
+                          "@Size": "13",
+                          "@Type": "spki",
+                          "@Specification": "unknown",
+                          "@Container": "unknown",
+                          "@data": "0x0000000001"
+                        }
+                      }
+                    },
+                    "VVCConfigurationBox": {
+                      "@Size": "161",
+                      "@Type": "vvcC",
+                      "@Version": "0",
+                      "@Flags": "0",
+                      "@Specification": "p15",
+                      "@Container": "vvc1 vvi1 encv resv ipco dvhe",
+                      "VVCDecoderConfigurationRecord": {
+                        "@nal_unit_size": "4",
+                        "@chroma_format": "YUV 4:2:0",
+                        "@chroma_bit_depth": "10",
+                        "@avgFrameRate": "0",
+                        "@constantFrameRate": "0",
+                        "@numTemporalLayers": "1",
+                        "@maxWidth": "240",
+                        "@maxHeight": "136",
+                        "@general_profile_idc": "1",
+                        "@general_tier_flag": "0",
+                        "@general_sub_profile_idc": "0",
+                        "@general_constraint_info": "0x00",
+                        "@general_level_idc": "35",
+                        "ParameterSetArray": [
+                          {
+                            "@nalu_type": "15",
+                            "@complete_set": "0",
+                            "ParameterSet": {
+                              "@size": "107",
+                              "@content": "data:application/octet-string,0079000D02238000403C40448D4017D11BA211A214991984D958C10209E00D171111112F888897511112EE22225C911112E5888897344444B9E2222B7E4FCBFE5FD4BFB97F24BF965FCD2FE797F112FA8897DC44BE48897CB112F9A225F3C4435FF5AD7FFF71FDAEC62040"
+                            }
+                          },
+                          {
+                            "@nalu_type": "16",
+                            "@complete_set": "0",
+                            "ParameterSet": {
+                              "@size": "16",
+                              "@content": "data:application/octet-string,008100003C40448A4200267B21659620"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "SampleSizeBox": {
+                  "@Size": "44",
+                  "@Type": "stsz",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@SampleCount": "6",
+                  "SampleSizeEntry": [
+                    {
+                      "@Size": "0"
+                    },
+                    {
+                      "@Size": "755"
+                    },
+                    {
+                      "@Size": "755"
+                    },
+                    {
+                      "@Size": "755"
+                    },
+                    {
+                      "@Size": "755"
+                    },
+                    {
+                      "@Size": "1289"
+                    }
+                  ]
+                },
+                "SampleToChunkBox": {
+                  "@Size": "28",
+                  "@Type": "stsc",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "1",
+                  "SampleToChunkEntry": {
+                    "@FirstChunk": "1",
+                    "@SamplesPerChunk": "1",
+                    "@SampleDescriptionIndex": "1"
+                  }
+                },
+                "ChunkOffsetBox": {
+                  "@Size": "40",
+                  "@Type": "stco",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "6",
+                  "ChunkEntry": [
+                    {
+                      "@offset": "4138"
+                    },
+                    {
+                      "@offset": "22832"
+                    },
+                    {
+                      "@offset": "23587"
+                    },
+                    {
+                      "@offset": "24342"
+                    },
+                    {
+                      "@offset": "25097"
+                    },
+                    {
+                      "@offset": "25852"
+                    }
+                  ]
+                },
+                "CompositionOffsetBox": {
+                  "@Size": "32",
+                  "@Type": "ctts",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "2",
+                  "CompositionOffsetEntry": [
+                    {
+                      "@CompositionOffset": "35000",
+                      "@SampleCount": "1"
+                    },
+                    {
+                      "@CompositionOffset": "3000",
+                      "@SampleCount": "5"
+                    }
+                  ]
+                },
+                "SyncSampleBox": {
+                  "@Size": "64",
+                  "@Type": "stss",
+                  "@Version": "0",
+                  "@Flags": "0",
+                  "@Specification": "p12",
+                  "@Container": "stbl",
+                  "@EntryCount": "12",
+                  "SyncSampleEntry": [
+                    {
+                      "@sampleNumber": "1"
+                    },
+                    {
+                      "@sampleNumber": "1"
+                    },
+                    {
+                      "@sampleNumber": "2"
+                    },
+                    {
+                      "@sampleNumber": "2"
+                    },
+                    {
+                      "@sampleNumber": "3"
+                    },
+                    {
+                      "@sampleNumber": "3"
+                    },
+                    {
+                      "@sampleNumber": "4"
+                    },
+                    {
+                      "@sampleNumber": "4"
+                    },
+                    {
+                      "@sampleNumber": "5"
+                    },
+                    {
+                      "@sampleNumber": "5"
+                    },
+                    {
+                      "@sampleNumber": "6"
+                    },
+                    {
+                      "@sampleNumber": "6"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "MediaDataBox": {
+      "@Size": "23766",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "23758"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f717-master"
+}
