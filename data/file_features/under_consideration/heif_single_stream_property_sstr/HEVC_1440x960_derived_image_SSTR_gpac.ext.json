@@ -1,0 +1,41 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./HEVC_1440x960_derived_image_SSTR.heic",
+  "extensions": [
+    {
+      "location": "file",
+      "box": {
+        "@Size": "24",
+        "@Type": "etyp",
+        "@Specification": "unknown",
+        "@Container": "file",
+        "UnknownBox": {
+          "@Size": "16",
+          "@Type": "tyco",
+          "@Specification": "unknown",
+          "@Container": "unknown",
+          "@data": "0x6D69663170726564"
+        }
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "17",
+        "@Type": "rref",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x000000000170726564"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "8",
+        "@Type": "sstr",
+        "@Specification": "unknown",
+        "@Container": "ipco"
+      }
+    }
+  ]
+}
