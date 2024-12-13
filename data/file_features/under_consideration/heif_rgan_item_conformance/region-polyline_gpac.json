@@ -1,0 +1,311 @@
+{
+  "IsoMediaFile": {
+    "@xmlns": "urn:mpeg:isobmff:schema:file:2016",
+    "@Name": "region-polyline.heic",
+    "FileTypeBox": {
+      "@Size": "24",
+      "@Type": "ftyp",
+      "@Specification": "p12",
+      "@Container": "file otyp",
+      "@MajorBrand": "mif1",
+      "@MinorVersion": "0",
+      "BrandEntry": [
+        {
+          "@AlternateBrand": "mif1"
+        },
+        {
+          "@AlternateBrand": "heic"
+        }
+      ]
+    },
+    "MetaBox": {
+      "@Size": "2538",
+      "@Type": "meta",
+      "@Version": "0",
+      "@Flags": "0",
+      "@Specification": "p12",
+      "@Container": "file moov trak moof traf udta",
+      "HandlerBox": {
+        "@Size": "45",
+        "@Type": "hdlr",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "mdia meta minf",
+        "@hdlrType": "pict",
+        "@Name": "pict Handler",
+        "@reserved1": "0",
+        "@reserved2": "data:application/octet-string,000000000000000000000000"
+      },
+      "PrimaryItemBox": {
+        "@Size": "14",
+        "@Type": "pitm",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@item_ID": "1"
+      },
+      "ItemLocationBox": {
+        "@Size": "44",
+        "@Type": "iloc",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "@offset_size": "0",
+        "@length_size": "4",
+        "@base_offset_size": "4",
+        "@index_size": "0",
+        "ItemLocationEntry": [
+          {
+            "@item_ID": "1",
+            "@data_reference_index": "0",
+            "@base_offset": "2570",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "145183",
+              "@extent_index": "0"
+            }
+          },
+          {
+            "@item_ID": "100",
+            "@data_reference_index": "0",
+            "@base_offset": "147753",
+            "@construction_method": "0",
+            "ItemExtentEntry": {
+              "@extent_offset": "0",
+              "@extent_length": "42",
+              "@extent_index": "0"
+            }
+          }
+        ]
+      },
+      "ItemInfoBox": {
+        "@Size": "62",
+        "@Type": "iinf",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemInfoEntryBox": [
+          {
+            "@Size": "21",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "1",
+            "@item_protection_index": "0",
+            "@item_name": "(null)",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "hvc1"
+          },
+          {
+            "@Size": "27",
+            "@Type": "infe",
+            "@Version": "2",
+            "@Flags": "0",
+            "@Specification": "p12",
+            "@Container": "iinf",
+            "@item_ID": "100",
+            "@item_protection_index": "0",
+            "@item_name": "Region",
+            "@content_type": "(null)",
+            "@content_encoding": "(null)",
+            "@item_type": "rgan"
+          }
+        ]
+      },
+      "ItemReferenceBox": {
+        "@Size": "26",
+        "@Type": "iref",
+        "@Version": "0",
+        "@Flags": "0",
+        "@Specification": "p12",
+        "@Container": "meta",
+        "ItemReferenceBox": {
+          "@Size": "14",
+          "@Type": "cdsc",
+          "@Specification": "p12",
+          "@Container": "iref",
+          "@from_item_id": "100",
+          "ItemReferenceBoxEntry": {
+            "@ItemID": "1"
+          }
+        }
+      },
+      "ItemPropertiesBox": {
+        "@Size": "2335",
+        "@Type": "iprp",
+        "@Specification": "iff",
+        "@Container": "meta",
+        "ItemPropertyContainerBox": {
+          "@Size": "2300",
+          "@Type": "ipco",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "ImageSpatialExtentsPropertyBox": {
+            "@Size": "20",
+            "@Type": "ispe",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "@image_width": "2016",
+            "@image_height": "1512"
+          },
+          "PixelAspectRatioBox": {
+            "@Size": "16",
+            "@Type": "pasp",
+            "@Specification": "p12",
+            "@Container": "video_sample_entry ipco",
+            "@hSpacing": "1",
+            "@vSpacing": "1"
+          },
+          "HEVCConfigurationBox": {
+            "@Size": "2208",
+            "@Type": "hvcC",
+            "@Specification": "p15",
+            "@Container": "hvc1 hev1 hvc2 hev2 encv resv ipco dvh1 dvhe",
+            "HEVCDecoderConfigurationRecord": {
+              "@nal_unit_size": "4",
+              "@configurationVersion": "1",
+              "@profile_space": "0",
+              "@tier_flag": "0",
+              "@profile_idc": "1",
+              "@general_profile_compatibility_flags": "60000000",
+              "@progressive_source_flag": "1",
+              "@interlaced_source_flag": "0",
+              "@non_packed_constraint_flag": "0",
+              "@frame_only_constraint_flag": "1",
+              "@constraint_indicator_flags": "0",
+              "@level_idc": "150",
+              "@min_spatial_segmentation_idc": "0",
+              "@parallelismType": "0",
+              "@chroma_format": "YUV 4:2:0",
+              "@luma_bit_depth": "8",
+              "@chroma_bit_depth": "8",
+              "@avgFrameRate": "0",
+              "@constantFrameRate": "0",
+              "@numTemporalLayers": "1",
+              "@temporalIdNested": "1",
+              "ParameterSetArray": [
+                {
+                  "@nalu_type": "32",
+                  "@complete_set": "0",
+                  "ParameterSet": {
+                    "@size": "24",
+                    "@content": "data:application/octet-string,40010C01FFFF016000000300900000030000030096959809"
+                  }
+                },
+                {
+                  "@nalu_type": "33",
+                  "@complete_set": "0",
+                  "ParameterSet": {
+                    "@size": "41",
+                    "@content": "data:application/octet-string,420101016000000300900000030000030096A003F08017A596566924CAE6C080000003008000000C84"
+                  }
+                },
+                {
+                  "@nalu_type": "34",
+                  "@complete_set": "0",
+                  "ParameterSet": {
+                    "@size": "7",
+                    "@content": "data:application/octet-string,4401C172B46240"
+                  }
+                },
+                {
+                  "@nalu_type": "39",
+                  "@complete_set": "0",
+                  "ParameterSet": {
+                    "@size": "2085",
+                    "@content": "data:application/octet-string,4E0105FFFFFFFFFFFFFFFF202CA2DE09B51747DBBB55A4FE7FC2FC4E7832363520286275696C642031373929202D20332E322E312B312D6235633836613634626262653A5B4C696E75785D5B47434320392E332E305D5B3634206269745D20386269742B31306269742B3132626974202D20482E3236352F4845564320636F646563202D20436F7079726967687420323031332D3230313820286329204D756C7469636F7265776172652C20496E63202D20687474703A2F2F783236352E6F7267202D206F7074696F6E733A2063707569643D31303832333637206672616D652D746872656164733D3120777070206E6F2D706D6F6465206E6F2D706D65206E6F2D70736E72206E6F2D7373696D206C6F672D6C6576656C3D322062697464657074683D3820696E7075742D6373703D31206670733D32352F3120696E7075742D7265733D32303136783135313220696E7465726C6163653D3020746F74616C2D6672616D65733D30206C6576656C2D6964633D3020686967682D746965723D31207568642D62643D30207265663D33206E6F2D616C6C6F772D6E6F6E2D636F6E666F726D616E6365206E6F2D7265706561742D6865616465727320616E6E657862206E6F2D617564206E6F2D68726420696E666F20686173683D30206E6F2D74656D706F72616C2D6C6179657273206F70656E2D676F70206D696E2D6B6579696E743D3235206B6579696E743D32353020676F702D6C6F6F6B61686561643D3020626672616D65733D3420622D61646170743D3220622D707972616D696420626672616D652D626961733D302072632D6C6F6F6B61686561643D3230206C6F6F6B61686561642D736C696365733D38207363656E656375743D3430207261646C3D30206E6F2D73706C696365206E6F2D696E7472612D72656672657368206374753D3634206D696E2D63752D73697A653D38206E6F2D72656374206E6F2D616D70206D61782D74752D73697A653D33322074752D696E7465722D64657074683D312074752D696E7472612D64657074683D31206C696D69742D74753D302072646F712D6C6576656C3D302064796E616D69632D72643D302E3030206E6F2D7373696D2D7264207369676E68696465206E6F2D74736B6970206E722D696E7472613D30206E722D696E7465723D30206E6F2D636F6E73747261696E65642D696E747261207374726F6E672D696E7472612D736D6F6F7468696E67206D61782D6D657267653D33206C696D69742D726566733D31206E6F2D6C696D69742D6D6F646573206D653D31207375626D653D32206D6572616E67653D35372074656D706F72616C2D6D7670206E6F2D686D652077656967687470206E6F2D77656967687462206E6F2D616E616C797A652D7372632D70696373206465626C6F636B3D303A302073616F206E6F2D73616F2D6E6F6E2D6465626C6F636B2072643D332073656C6563746976652D73616F3D34206561726C792D736B69702072736B6970206E6F2D666173742D696E747261206E6F2D74736B69702D66617374206E6F2D63752D6C6F73736C65737320622D696E747261206E6F2D73706C697472642D736B697020726470656E616C74793D30207073792D72643D322E3030207073792D72646F713D302E3030206E6F2D72642D726566696E65206E6F2D6C6F73736C65737320636271706F6666733D3020637271706F6666733D302072633D637266206372663D32382E302071636F6D703D302E3630207170737465703D342073746174732D77726974653D302073746174732D726561643D30206970726174696F3D312E3430207062726174696F3D312E33302061712D6D6F64653D322061712D737472656E6774683D312E303020637574726565207A6F6E652D636F756E743D30206E6F2D7374726963742D6362722071672D73697A653D3332206E6F2D72632D677261696E2071706D61783D36392071706D696E3D30206E6F2D636F6E73742D766276207361723D30206F7665727363616E3D3020766964656F666F726D61743D352072616E67653D3120636F6C6F727072696D3D32207472616E736665723D3220636F6C6F726D61747269783D32206368726F6D616C6F633D3020646973706C61792D77696E646F773D3020636C6C3D302C30206D696E2D6C756D613D30206D61782D6C756D613D323535206C6F67322D6D61782D706F632D6C73623D38207675692D74696D696E672D696E666F207675692D6872642D696E666F20736C696365733D31206E6F2D6F70742D71702D707073206E6F2D6F70742D7265662D6C6973742D6C656E6774682D707073206E6F2D6D756C74692D706173732D6F70742D727073207363656E656375742D626961733D302E3035206E6F2D6F70742D63752D64656C74612D7170206E6F2D61712D6D6F74696F6E206E6F2D686472206E6F2D6864722D6F7074206E6F2D6468647231302D6F7074206E6F2D6964722D7265636F766572792D73656920616E616C797369732D72657573652D6C6576656C3D35207363616C652D666163746F723D3020726566696E652D696E7472613D3020726566696E652D696E7465723D3020726566696E652D6D763D3120726566696E652D6374752D646973746F7274696F6E3D30206E6F2D6C696D69742D73616F206374752D696E666F3D30206E6F2D6C6F77706173732D64637420726566696E652D616E616C797369732D747970653D3020636F70792D7069633D31206D61782D617573697A652D666163746F723D312E30206E6F2D64796E616D69632D726566696E65206E6F2D73696E676C652D736569206E6F2D686576632D6171206E6F2D737674206E6F2D6669656C642071702D61646170746174696F6E2D72616E67653D312E303080"
+                  }
+                }
+              ]
+            }
+          },
+          "PixelInformationPropertyBox": {
+            "@Size": "16",
+            "@Type": "pixi",
+            "@Version": "0",
+            "@Flags": "0",
+            "@Specification": "iff",
+            "@Container": "ipco",
+            "BitPerChannel": [
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              },
+              {
+                "@bits_per_channel": "8"
+              }
+            ]
+          },
+          "UnknownBox": {
+            "@Size": "32",
+            "@Type": "udes",
+            "@Specification": "unknown",
+            "@Container": "unknown",
+            "@data": "0x00000000656E2D474200526F736520626F72646572000000"
+          }
+        },
+        "ItemPropertyAssociationBox": {
+          "@Size": "27",
+          "@Type": "ipma",
+          "@Version": "0",
+          "@Flags": "0",
+          "@Specification": "iff",
+          "@Container": "iprp",
+          "@entry_count": "2",
+          "AssociationEntry": [
+            {
+              "@item_ID": "1",
+              "@association_count": "4",
+              "Property": [
+                {
+                  "@index": "1",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "2",
+                  "@essential": "0"
+                },
+                {
+                  "@index": "3",
+                  "@essential": "1"
+                },
+                {
+                  "@index": "4",
+                  "@essential": "0"
+                }
+              ]
+            },
+            {
+              "@item_ID": "100",
+              "@association_count": "1",
+              "Property": {
+                "@index": "5",
+                "@essential": "0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "MediaDataBox": {
+      "@Size": "145233",
+      "@Type": "mdat",
+      "@Specification": "p12",
+      "@Container": "file",
+      "@dataSize": "145225"
+    }
+  },
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev16-g205bfe31-master"
+}
