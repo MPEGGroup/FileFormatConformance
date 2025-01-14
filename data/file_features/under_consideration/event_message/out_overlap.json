@@ -1,0 +1,14 @@
+{
+  "contributor": "Ateme, Unified Streaming",
+  "description": "Avail track generated with unified open- source implementation using reference with overlaps",
+  "mdms_number": "m59640",
+  "rel_filepath": "./out_overlap.cmfm",
+  "associated_files": ["./avail_overlap.mpd"],
+  "version": 1,
+  "md5": "c226b200ead4497cab6ea71a2ba2c277",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
