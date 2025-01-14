@@ -551,7 +551,13 @@
       "fourcc": "vvnC",
       "description": "VVC Network Abstraction Layer unit configuration",
       "versions": [0],
-      "flags": [],
+      "flags": [
+        {
+          "name": "no_display",
+          "value": "0x000001",
+          "description": "The samples referencing the sample entry do not contain content intended for displaying."
+        }
+      ],
       "containers": [
         {
           "VvcSubpicSampleEntry": ["vvs1"]

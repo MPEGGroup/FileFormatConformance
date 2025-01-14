@@ -77,7 +77,8 @@
                   "type": "object",
                   "properties": {
                     "name": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     },
                     "value": {
                       "type": "string",

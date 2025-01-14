@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris",
+  "description": "",
+  "mdms_number": "m56755",
+  "license": "",
+  "md5": "242a90729120461b0749334282d98110",
+  "rel_filepath": "./video_cenc_roll_frag1s.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": ["./drm_cfg/cenc_roll.xml"],
+  "features": [],
+  "notes": "",
+  "conforms_to": []
+}
