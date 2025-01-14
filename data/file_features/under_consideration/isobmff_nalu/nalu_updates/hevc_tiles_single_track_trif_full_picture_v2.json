@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris / CANON Research Centre France",
+  "description": "HEVC single track using trif default sample group description",
+  "mdms_number": "m64279",
+  "rel_filepath": "./hevc_tiles_single_track_trif_full_picture_v2.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "a89fcb82c4c65bf8f5009bcb02bf7dbf",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}

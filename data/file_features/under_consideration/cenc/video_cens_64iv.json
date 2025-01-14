@@ -1,0 +1,14 @@
+{
+  "contributor": "Telecom Paris",
+  "description": "",
+  "mdms_number": "m56755",
+  "license": "",
+  "md5": "0381e95b286f26ba428cb848c0eb150c",
+  "rel_filepath": "./video_cens_64iv.mp4",
+  "version": 1,
+  "published": false,
+  "associated_files": ["./drm_cfg/cens_64iv.xml"],
+  "features": [],
+  "notes": "",
+  "conforms_to": []
+}
