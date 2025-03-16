@@ -57,7 +57,7 @@ jobs:
           | sha256sum | cut -d ' ' -f1)" >> $GITHUB_OUTPUT
 
       - name: LFS Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .git/lfs/objects
           key: ${{ runner.os }}-lfs-${{ steps.lfs-id.outputs.lfs-id }}
