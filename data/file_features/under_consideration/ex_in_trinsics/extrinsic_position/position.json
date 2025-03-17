@@ -1,0 +1,14 @@
+{
+  "contributor": "Apple",
+  "description": "File contains 5 image items with various extrinsics positions.\n\nItem 1:\n\tCoordinate System ID: 0\n\tPosition: 0.0, 0.0, 0.0\n\t\tCoded as flags: 0; No values\n\nItem 2:\n\tCoordinate System ID: 1\n\tPosition: 0.01, 0.0, 0.0\n\t\tCoded as flags: 33; Values: [10000, 1]\n\nItem 3:\n\tCoordinate System ID: 0\n\tPosition: 0.0, 0.02, 0.0\n\t\tCoded as flags: 2; Values: [20000]\n\nItem 4:\n\tCoordinate System ID: 1\n\tPosition: 0.0, 0.0, -0.04\n\t\tCoded as flags: 36; Values: [-40000, 1]\n\nItem 5:\n\tCoordinate System ID: 1\n\tPosition: -0.03, 0.05, -0.08\n\t\tCoded as flags: 39; Values: [-30000, 50000, -80000, 1]\n\nItem 6:\n\tCoordinate System ID: 0\n\tPosition: 0.0, 0.0, 0.0\n\t\tCoded as flags: 0; No values\n\tCoordinate System ID: 1\n\tPosition: -0.03, 0.05, -0.08\n\t\tCoded as flags: 36; Values: [-30000, 50000, -80000, 1]\n",
+  "mdms_number": "m62054",
+  "rel_filepath": "./position.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "406d0ccd6e5cf4b4ca19c2cbc941bf88",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
