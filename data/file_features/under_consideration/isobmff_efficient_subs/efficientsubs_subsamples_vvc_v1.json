@@ -1,0 +1,14 @@
+{
+  "contributor": "CANON Research Centre France",
+  "description": "Subs optimisation for VVC NAL unit-based sub-samples",
+  "mdms_number": "m64792",
+  "rel_filepath": "./efficientsubs_subsamples_vvc_v1.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "31e8a9833de5e1212369ca7b0aca4e63",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
