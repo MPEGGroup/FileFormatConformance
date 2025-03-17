@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f717-master",
+  "rel_filepath": "./region-rectangle.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.mdia.minf.stbl.stsd.rgan",
+      "box": {
+        "@Size": "16",
+        "@Type": "rgaC",
+        "@Specification": "unknown",
+        "@Container": "rgan",
+        "@data": "0x00000000040002D0"
+      }
+    }
+  ]
+}

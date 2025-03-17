@@ -1,0 +1,14 @@
+{
+  "contributor": "CANON Research Centre France",
+  "description": "Region track with rectangular region using 'rgan' track, 'regm' sample group and 'udes' annotation",
+  "mdms_number": "m63204",
+  "rel_filepath": "./region-rectangle.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "3f216233101be3909d68dd4edbcecd39",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
