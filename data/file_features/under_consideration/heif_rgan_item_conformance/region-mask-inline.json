@@ -1,0 +1,14 @@
+{
+  "contributor": "CANON Research Centre France",
+  "description": "Mask region with \u2018udes\u2019 annotation, where the mask is defined inline in the region item",
+  "mdms_number": "m67639",
+  "rel_filepath": "./region-mask-inline.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "9154de893caecbfda34fb46c80da2d7b",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
