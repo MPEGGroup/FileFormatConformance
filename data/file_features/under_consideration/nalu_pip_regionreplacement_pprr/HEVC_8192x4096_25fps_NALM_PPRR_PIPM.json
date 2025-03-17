@@ -1,0 +1,14 @@
+{
+  "contributor": "Nokia",
+  "description": "A file with PicInPicRegionReplacementEntry when region_id_type is equal to 1",
+  "mdms_number": "m62051",
+  "rel_filepath": "./HEVC_8192x4096_25fps_NALM_PPRR_PIPM.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "4d73af9ee3530b7da3f67067dfe8b85f",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}
