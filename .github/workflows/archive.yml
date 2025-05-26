@@ -1,0 +1,97 @@
+name: Archive Data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: "archive"
+
+jobs:
+  check-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check tag
+        run: |
+          TAG="r$(date +%Y%m%d)"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+              echo "Tag $TAG already exists."
+              exit 1
+          fi
+
+  archive:
+    needs: check-tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          ssh-key: ${{ secrets.COMMIT_KEY }}
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "poetry"
+
+      - name: Install dependencies
+        working-directory: ./src
+        run: |
+          poetry env use "3.11"
+          poetry install --no-interaction
+
+      - name: Run construct
+        working-directory: ./src
+        run: poetry run construct-all
+
+      - name: Run coverage
+        working-directory: ./src
+        run: poetry run coverage
+
+      - name: Copy LFS files to public folder
+        run: |
+          files=$(git lfs ls-files --long | cut -d ' ' -f3)
+          mkdir -p ${{ runner.temp }}/files
+          for file in $files; do
+              dir=$(dirname ${file#*/*/})
+              mkdir -p ${{ runner.temp }}/files/$dir
+              cp $file ${{ runner.temp }}/files/${file#*/*/}
+          done
+
+      - name: Create archive
+        working-directory: ${{ runner.temp }}
+        run: |
+          ARCHIVE_NAME="conformance-files.tar.gz"
+          tar -czf $ARCHIVE_NAME files
+          echo "Archive created: $ARCHIVE_NAME"
+
+      - name: Configure GitHub handle
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create tag
+        id: create-tag
+        run: |
+          TAG="r$(date +%Y%m%d)"
+          git tag "$TAG"
+          git push origin "$TAG"
+          echo "TAG=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "${{ steps.create-tag.outputs.TAG }}"
+          name: "Release ${{ steps.create-tag.outputs.TAG }}"
+          files: |
+            ${{ runner.temp }}/conformance-files.tar.gz
+            ${{ github.workspace }}/src/output/*.json
