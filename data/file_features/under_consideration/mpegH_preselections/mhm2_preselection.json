@@ -1,0 +1,14 @@
+{
+  "contributor": "Fraunhofer IIS",
+  "description": "mhm2 file showcasing multi track preselection signaling.",
+  "mdms_number": "m65264",
+  "rel_filepath": "./mhm2_preselection.mp4",
+  "associated_files": [],
+  "version": 1,
+  "md5": "38bcbc626dbb918c0ed132226874d8d0",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": "Copyright (c) 2024 Fraunhofer-Gesellschaft zur F\u00f6rderung der angewandten Forschung e.V.\nAll rights reserved.\n\nThe Conformance File is licensed under the\nCreative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/."
+}
