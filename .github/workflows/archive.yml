@@ -59,7 +59,7 @@ jobs:
 
       - name: Copy LFS files to public folder
         run: |
-          files=$(git lfs ls-files --long | cut -d ' ' -f3)
+          files=$(find data/file_features -mindepth 2 -type f)
           mkdir -p ${{ runner.temp }}/files
           for file in $files; do
               dir=$(dirname ${file#*/*/})
