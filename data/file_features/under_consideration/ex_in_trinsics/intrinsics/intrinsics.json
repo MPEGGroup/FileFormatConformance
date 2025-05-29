@@ -1,0 +1,14 @@
+{
+  "contributor": "Apple",
+  "description": "Item 1:\n\tfx = 512\n\tfy = 512\n\ts = 0\n\tcx = 256\n\tcy = 96\n\tCoded as:\n\t\tflags: 6656\n\t\tValues: [33554432, 16777216, 8388608]\n\nItem 2:\n\tfx = 512\n\tfy = 501.5\n\ts = -100.5\n\tcx = 256\n\tcy = 96\n\tCoded as:\n\t\tflags: 72193\n\t\tValues: [33554432, 16777216, 8388608, 43821739, -201]\n\t",
+  "mdms_number": "m62054",
+  "rel_filepath": "./intrinsics.heic",
+  "associated_files": [],
+  "version": 1,
+  "md5": "1a1ae259bbc7e71d2ac5e5cd36fd24ae",
+  "published": false,
+  "features": [],
+  "conforms_to": [],
+  "notes": "",
+  "license": ""
+}

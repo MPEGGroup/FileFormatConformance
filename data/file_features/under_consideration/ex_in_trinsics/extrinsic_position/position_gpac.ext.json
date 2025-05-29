@@ -1,0 +1,56 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.3-DEV-rev526-gef57f603-master",
+  "rel_filepath": "./position.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "12",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000000"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "20",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x000000210000271000000001"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "16",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x0000000200004E20"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "20",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000024FFFF63C000000001"
+      }
+    },
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "28",
+        "@Type": "cmex",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000027FFFF8AD00000C350FFFEC78000000001"
+      }
+    }
+  ]
+}
