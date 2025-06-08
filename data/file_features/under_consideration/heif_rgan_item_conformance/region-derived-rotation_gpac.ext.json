@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev16-g205bfe31-master",
+  "rel_filepath": "./region-derived-rotation.heic",
+  "extensions": [
+    {
+      "location": "file.meta.iprp.ipco",
+      "box": {
+        "@Size": "29",
+        "@Type": "udes",
+        "@Specification": "unknown",
+        "@Container": "ipco",
+        "@data": "0x00000000656E2D4742004869626973637573000000"
+      }
+    }
+  ]
+}
