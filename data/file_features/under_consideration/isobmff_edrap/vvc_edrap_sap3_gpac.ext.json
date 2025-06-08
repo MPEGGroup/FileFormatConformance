@@ -1,0 +1,16 @@
+{
+  "mp4boxVersion": "MP4Box - GPAC version 2.5-DEV-rev787-g3241f717-master",
+  "rel_filepath": "./vvc_edrap_sap3.mp4",
+  "extensions": [
+    {
+      "location": "file.moov.trak.mdia.minf.stbl.stsd.resv.rinf.schi",
+      "box": {
+        "@Size": "13",
+        "@Type": "spki",
+        "@Specification": "unknown",
+        "@Container": "schi",
+        "@data": "0x0000000001"
+      }
+    }
+  ]
+}
